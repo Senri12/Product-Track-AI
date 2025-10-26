@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Материал learning_rate_decay.txt\nη_0 = 0.1\nt = 5\nT = 10\nРассматриваемую функцию обратного времени (уменьшает т) можно рассчитать по формуле:\n\nf(T) = f(0, f^(-1)(T))\n\nгде f(T) — функция обратного времени.\n\nРешая задачу, получаем:\n\nf(10) = f(5) * f^(−11)(10)\n= η_0 * η_(0, T)\n= 2,90\n\nСледовательно, learning rate decay: η(5) ≈ 0,029.",
+    "rating": ""
+  }
+]

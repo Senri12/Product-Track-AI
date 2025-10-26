@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "At each time step \\( t \\) from 1 to 10, the learning rate is calculated as follows:\n\n\\[\nη_t = η₀ + t \\times Δη\n\\]\n\nWhere:\n- \\( η₀ = 0.1 \\) (initial learning rate)\n- \\( Δη = \\frac{η_T - η₀}{T} = \\frac{0 - 0.1}{10} = -0.01 \\) (constant rate of decay per step)\n\nTherefore:\n\n\\[\nη_1 = 0.1 + 1 \\times (-0.01) = 0.09\n\\]\n\\[\nη_2 = 0.1 + 2 \\times (-0.01) = 0.08\n\\]\n\\[\n...\n\\]\n\\[\nη_{10} = 0.1 + 10 \\times (-0.01) = 0.0\n\\]\n\nEach learning rate decreases by 0.01 per step, resulting in a linear decay from 0.1 to 0 over 10 steps.\n\n**Answer:** At each time step \\( t \\), the learning rate is given by:\n\n\\[\nη_t = 0.1 - 0.01t\n\\]\n\nThus,\n\n\\[\nη_1 = 0.09, \\quad η_2 = 0.08, \\quad ..., \\quad η_{10} = 0.\n\\]",
+    "rating": ""
+  }
+]

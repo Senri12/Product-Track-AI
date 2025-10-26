@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Итак, в Adagrad:\n\n*   G_{t-1,ii} = 4\n*   g_t = 2\n*   η = 0.1\n*   ε = 1e-8\n\nОбновляем диагональную матрицу G_t:\n\nG_{t,ii} = G_{t-1,ii} + g_t^2 = 4 + 2^2 = 4 + 4 = 8\n\nТаким образом,  G_{t,ii} = 8.\n",
+    "rating": ""
+  }
+]

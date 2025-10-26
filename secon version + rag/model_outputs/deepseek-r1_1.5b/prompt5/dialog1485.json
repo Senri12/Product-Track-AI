@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "В спам-примере вычисли P(win|spam) с Laplace:\n\n$$\nP(win|spam) = \\frac{1 + 1}{8 + 7} = \\frac{2}{15}, \n$$\n\nгде:\n- 1 – количество фраз, в которых слово \"win\" appeared;\n- 7 – общее количество слов в словаре (включая предикторы);\n- 8 – общее количество слов в тексте.",
+    "rating": ""
+  }
+]

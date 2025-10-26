@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое манхэттенское расстояние?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Манхэттенское расстояние (Manhattan distance) — это measure, используемое в математике и в других scientific disciplines, например в machine learning и data science. Это нахождения суммы ненegative differences ( absolutных избытков) между координатами точек в каждой из этих координат.\n\nИспользуется для вычисления measuring distances between points in a grid-like space, таких как city grid, с учетом only movement along axes. 具体公式是:\n\n$$\n\\text{Manhattan distance} = \\sum_{i=1}^n |x_i - y_i|\n$$\n\nгде \\( x_i \\) и \\( y_i \\) — координаты точек в i-й из n измерений.\n\nМанхэттенское расстояние отличается от Euclidean distance (глобальной или сопротивительной) тем, что оно accountiert только ненegative differences. В отличие от Euclidean distance, который прорывает шедевры, Manhattan distance — сознано, как, например, taxi drivers по网格ах cities.\n\nС использованием Manhattan distance уcasesливаются diagonal movement, что делает в ним более гибким и надежным для задач, гдеonly axis-aligned movement.\n\nРазные применения Manhattan distance включают:\n\n- Математику и статистику.\n- Визуалную интеграцию данных.\n- Оптимизацию обработки линейных операторов.\n- Географию и топологии.",
+    "rating": ""
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для вычисления \\( v_t \\) в методе момента (Momentum) usage formulas:\n\n\\[ v_t = γ \\cdot v_{t-1} - η \\cdot \\nabla L(ω) \\]\n\nгде:\n- \\( γ = 0.9 \\),\n- \\( v_{t-1} = 1 \\),\n- \\( η = 0.1 \\),\n- \\( \\nabla L(ω) = 2 \\).\n\nП带到 формуле:\n\n\\[ v_t = 0.9 \\cdot 1 - 0.1 \\cdot 2 = 0.9 - 0.2 = 0.7 \\]\n\n**Ответ:** \\( v_t = 0.7 \\)",
+    "rating": ""
+  }
+]

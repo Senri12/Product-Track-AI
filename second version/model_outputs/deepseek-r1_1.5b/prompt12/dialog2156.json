@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для вычисления шага в SGD для функции \\( L(w) = w^2 \\), current weight \\( w = 3 \\), и learning rate \\( \\eta = 0.1 \\):\n\n**Шаг вычислений:**\n\n1. Найти градиент функции:\n   \\[\n   \\nabla_L w = \\frac{dL}{dw} = 2w\n   \\]\n   Для current weight \\( w = 3 \\):\n   \\[\n   \\nabla_L w = 2 \\times 3 = 6\n   \\]\n\n2. Вычислить шаг:\n   \\[\n   \\Delta w = \\eta \\times \\nabla_L w = 0.1 \\times 6 = 0.6\n   \\]\n\n**Ответ:**\n\\[\n\\boxed{0.6}\n\\]",
+    "rating": ""
+  }
+]

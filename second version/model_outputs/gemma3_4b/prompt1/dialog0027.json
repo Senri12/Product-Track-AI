@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "В Momentum:\n\n*   γ = 0.9 (коэффициент затухания)\n*   v<sub>t-1</sub> = 1 (скорость на предыдущем шаге)\n*   ∇L = 2 (градиент функции потерь)\n*   η = 0.1 (скорость обучения)\n\nФормула для вычисления v<sub>t</sub> в Momentum:\n\nv<sub>t</sub> = γ * v<sub>t-1</sub> + η * ∇L\n\nПодставляем значения:\n\nv<sub>t</sub> = 0.9 * 1 + 0.1 * 2\nv<sub>t</sub> = 0.9 + 0.2\nv<sub>t</sub> = 1.1\n\nТаким образом, v<sub>t</sub> = 1.1\n",
+    "rating": ""
+  }
+]

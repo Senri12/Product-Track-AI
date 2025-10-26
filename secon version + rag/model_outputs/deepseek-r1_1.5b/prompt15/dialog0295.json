@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое RMSProp?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "RMSProp (root mean square propagation) — это метод оптимизации нейронных сетей, который обновляет параметры на основе средней квадратной суммы градиента. differs from the standard gradient descent method by scaling the update direction by the root of the mean of squared gradients.\n\n### Основные моменты:\n1. **Критерий обновления**: RMSProp использует среднюю квадратную сумму градиентов для уменьшения изменения параметров.\n2. **Дifference от standard gradient descent**: В отличие от gradient descent, где every parameter update depends directly on the current gradient, RMSProp scales each gradient by a learning rate that is inversely proportional to the root of the mean squared norm of all gradients seen so far for that parameter.\n\n### Формула:\n\\[ \\Delta w = -\\frac{\\eta}{\\sqrt{E[g^2]}} \\cdot g \\]\nгде:\n- \\( \\Delta w \\) — изменение параметра,\n- \\( \\eta \\) — коэффициент уменьшения (rate of decay),\n- \\( E[g^2] \\) — средняя квадратическая сумма генераторных данных,\n- \\( g \\) — текущий градиент.\n\n### Важность:\nRMSProp подходит для задач с низкой корреляцией генераторных данных и линейными архитектурами. Он улучшает Convergence и обрабатывает большие gradient, что особенно полезно в initialize phase.\n\n### Использование:\nRMSProp popularized itself due to its effectiveness in practice and is often used alongside other optimization methods like Adam or SGD with momentum.",
+    "rating": ""
+  }
+]

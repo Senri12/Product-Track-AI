@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое Adam?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Adam (Adam – optimizer) — это оптимизатор, который используется для повышения эффективности обучения神经 networks. Основанный на SGD (SGD – gradient descent), Adam делает параметры модели обновлять с помощью градиентов, но с распределенной LearningRate. Это означает, что каждый параметр обновляется в зависимости от нормы градиента для этого parameter.\n\n- **Базовая идея**:adam обновляет параметры с использованием градиентов, но с распределенным LearningRate. Если gradient small (нужно больший LearningRate),Parameter remains static.\n  \n- **Распределение LearningRate**: Each parameter is updated by multiplying LearningRate by β1 raised to the power of its step number.\n\n- **Моментomentum**: В Adam есть Momentum – коэффициент для усреднеющего градиенты. Также optional normalizing gradients (γ).\n\n**Ссылки и документация**:  \n- TensorFlow official documentation: [https://www.tensorflow.org/](https://www.tensorflow.org/)\n- PyTorch official documentation: [https://pytorch.org/stable/index.html#optimization-algorithms](https://pytorch.org/stable/index.html#optimization-algorithms)",
+    "rating": ""
+  }
+]

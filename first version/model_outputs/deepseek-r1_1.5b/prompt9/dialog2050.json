@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем разница между k-NN и взвешенным k-NN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Answer:**\n\nThe primary distinction between k-Nearest Neighbors (k-NN) and Weighted k-Nearest Neighbors (weighted k-NN) lies in their approach to determining similarity or proximity among data points. Here's a detailed explanation:\n\n1. **k-NN Overview:**  \n   In k-NN, the prediction is made based on the majority vote of its nearest k neighbors. These neighbors are typically determined by their distance from the query point, often using Euclidean or Manhattan distance metrics.\n\n2. **Weighted k-NN Overview:**  \n   Weighted k-NN assigns weights to each of the k nearest neighbors. The closer a neighbor is to the query point, the higher its weight. This approach ensures that nearby data points have more influence on the prediction than those further away.\n\n3. **Mathematical Difference:**  \n   While both methods don't explicitly differ in terms of mathematical formulas, weighted k-NN introduces the concept of weights, which are derived based on proximity.\n\n4. **Practical Limitations:**  \n   - Weighted k-NN may reduce to regular k-NN when all neighbors have equal weight (e.g., 1/k). This can cause potential issues with predictions if no neighbors from the correct class fall in proximity.\n   - It requires careful selection of weights, as an incorrect assignment could lead to overfitting or underfitting.\n\n5. **Edge Cases:**  \n   In scenarios where all k-neighbors belong to other classes (resulting in a tie), weighted k-NN might completely ignore these neighbors, which can be problematic.\n\nIn summary, the main difference is that weighted k-NN assigns more weight to closer neighbors, potentially improving performance on datasets with varying densities but may introduce limitations like tied predictions.",
+    "rating": ""
+  }
+]

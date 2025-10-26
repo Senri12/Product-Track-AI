@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое RMSProp?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "RMSProp (keras.optimizers.rmsprop) – это алгоритм оптимизации, который пытается исправить недостатки Adagrad. Вместо накопления суммы градиентов (как в Adagrad), RMSProp вычисляет скользящее среднее этих градиентов. Это позволяет избежать чрезмерного уменьшения learning rate, когда градиенты становятся большими, что часто случается с Adagrad.  В целом, RMSProp — это попытка сделать градиентный спуск более стабильным и надежным.\n",
+    "rating": ""
+  }
+]

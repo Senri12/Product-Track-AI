@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем разница между k-NN и взвешенным k-NN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Конечно, в к-n-arest neighbors (k-NN) мы сначала определяем ближнейшие объекты и предполагаем, что их влияние одинаково. Это позволяет использовать простые методы, такие как Euclidean или Manhattan расстояния.\n\nВ взвешнутом к-n- nearest neighbors (voted k-NN) мы учитываем важность этих объектов для ближнейших close neighbors. Это позволяет учитывать их сильную визуальную прозрачность и помогать более точным классировке, особенно при наличии важных attribute.\n\nНо есть несколько отличий:\n1. В взвешнутом к-n-NN мы не определяем расстояния между объектами, а используем их weightage для ближнейших close neighbors.\n2. В standard k-NN мы предполагаем равные影响力 всех close neighbors, тогда как в weighted version each neighbor contributes differently based on its attributes and distances.\n\nТаким образом, в взвешнутом к-n-NN мы можем обрабатывать более сложные задачи с прозрачностью и точностью, особенно при наличии важных attribute, но это требует дополнительного изучения методов weigh-voting.",
+    "rating": ""
+  }
+]

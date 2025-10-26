@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем разница между k-NN и взвешенным k-NN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Lecture Summary:\n- k-NN (k-nearest neighbors) is an unsupervised learning algorithm used for classification tasks.\n- The model predicts a class label based on the majority vote of its 'k' nearest data points in feature space.\n\nQuiz Question: What does \"unsupervised\" mean when referring to machine learning algorithms like k-NN?\nWeak Area Revisit and Explanation:\nUnsurprisingly, this concept may be challenging for some students. An unsupervised learner operates without labeled outcomes or a target variable—it finds patterns within the data itself rather than predicting it.\n\nQuiz Question: How does weighted K-NN differ from regular K-NN in terms of its approach to classifying neighbors?\nWeak Area Revisit and Explanation:\nWeighted k-NN considers not only which 'k' nearest neighbors are closest but also their proximity weights, providing a nuanced view that factors the significance or reliability into classification. In contrast with standard methods where all neighboring points contribute equally (unweighted), weighted KNN can improve prediction accuracy by acknowledging varying levels of confidence in each neighbor's influence.\n\nQuiz Question: Can you explain why we might choose to use weighted k-NN instead of regular unweighted ones?",
+    "rating": ""
+  }
+]

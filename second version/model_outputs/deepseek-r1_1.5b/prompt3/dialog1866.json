@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое манхэттенское расстояние?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "The Manhattan distance, also known as the L1 distance, is a measure of distance between two points in a coordinate system where movement is restricted to horizontal and vertical directions. To calculate the Manhattan distance between two points (x1, y1) and (x2, y2), you sum the absolute differences of their Cartesian coordinates:\n\n\\[\n\\text{Manhattan Distance} = |x_2 - x_1| + |y_2 - y_1|\n\\]\n\nThis metric is particularly useful in scenarios such as navigating through city grids, where one must move along streets and avenues. It contrasts with other distance metrics like Euclidean (straight-line) or Chebyshev (maximum of horizontal and vertical distances). The Manhattan distance is also computationally efficient because it avoids the need for square root calculations or handling negative values.\n\nIn summary, the Manhattan distance is effective in systems where movement is constrained to orthogonal axes or grids, making it a valuable tool in various applications including city planning and computer algorithms.",
+    "rating": ""
+  }
+]

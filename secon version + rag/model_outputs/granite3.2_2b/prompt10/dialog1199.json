@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для просмотра их значений вы можете использовать формулу для линейного сокращения learning rates на каждом шаге (linear decay):\n\nη(t) = η0 * (T - t) / T\n\nЗдесь:\n- η0 – начальная значению learning rate, в этом случае 0.1\n- t – текущее шагу, в этом случае 5\n- T – общее число шагов, до которого будет сокращаться learning rate, в этом случае 10\n\nТаким образом:\nη(t) = 0.1 * (10 - 5) / 10 = 0.05\n\nОтвет: η(t) = 0.05",
+    "rating": ""
+  }
+]

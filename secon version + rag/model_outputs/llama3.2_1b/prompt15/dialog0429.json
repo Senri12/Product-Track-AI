@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как классифицировать письмо как спам в Naive Bayes?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Писать письмо как спам, или определить, что его содержит词, можно сделать, используя наивный байесовский классификатор. Давайте попробуем это.\n\nСначала мы сначала подсчитаем частоту каждого слова в тестовом писме. Например, если пишет \"Справедливые differential equations\", то есть у него 3 раза «дifferentials». Число этих WORDS можно получить, сгруппировав их по основной фразе: «Справедливые differential equations». Итак, мы можем подсчитать частоту каждого слова следующим образом:\n\n* «справедливые differential equations» - 1 (т.е. это единственное слог в test-ми)\n* «дифференциальные уравнения» - 4\n* «кольву» - 3\n* «поскольку» - 2\n\nТеперь мы можем вычислить вероятности, которые соответствуют каждому классу:\n\n* Класс <<спам>>. Число WORDS — 8. Вероятность того, что письмо содержит число WORDS, равна: P(#words) = 8/15\n* Класс <<крестики>>. Число WORDС — 4. Вероятность того, что письмо содержит число WORDS, равна: P(#words) = 4/10\n\nТеперь мы можем вычислить вероятности отнесения новому objetos к каждому классу:\n\n* Verbose words (words containing «differentials», «equations», «coulombs») — 1. Вероятность того, что письмо contains verbose words, равна: P(Verbose) = 1/15\n* Average word (word without any special characters) — 5. Вероятность того, что письмо contains average word, равна: P(Average Word) = 5/10\n\nТеперь мы можем вычислить вероятности отнесения нового объекта к каждому классу:\n\n* Класс <<спам>>. Вероятность того, что письмо contains verbose words and average words, равна: P(#words & (Verbose Word | Average word)) = 1/15\n* Класс <<крестики>>. Вероятность того, что письмо contains average words, равна: P( Average Word | #words) = 5/10\n\nТеперь мы можем вычислить вероятность отнесенияnew objectsklass=y^(*)=Arg max_y (P(#words & (Verbose Word | Average word)) P(#words & (Average word | #words))).\n\nОкончательный ответ — «Справедливые differential equations, differential equations».",
+    "rating": ""
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Рассчитаем значение G_{t,ii} для Adagrad.\n\nG_{t,ii} = G_{t-1,ii} + g_t^2\n\nГде:\n* G_{t-1,ii} = 4\n* g_t = 2\n* ε = 1e-8\n\nИтак:\n\nG_{t,ii} = 4 + 2^2 = 4 + 4 = 8\n\nЗначение G_{t,ii} равно 8.\n",
+    "rating": ""
+  }
+]

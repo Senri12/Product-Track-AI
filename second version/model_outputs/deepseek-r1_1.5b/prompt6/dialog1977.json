@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Используя формулу Momentum:\n\nv_t = γ * (v_{t-1} - η * gradient) / sqrt(1 + ε)\n\nПолагаем:\nγ = 0.9, v_{t-1} = 1, gradient = 2, η = 0.1, ε = 1e-7.\n\n1. 计算 (v_{t-1} - η * gradient):\n   1 - 0.1 * 2 = 0.8\n\n2. 乘以 γ：\n   0.9 * 0.8 = 0.72\n\n3. 计算 sqrt(1 + ε) ≈ 1.00000005\n\n4. 除以 sqrt(1 + ε):\n   0.72 / 1.00000005 ≈ 0.72\n\n**Ответ:** v_t = 0.72",
+    "rating": ""
+  }
+]

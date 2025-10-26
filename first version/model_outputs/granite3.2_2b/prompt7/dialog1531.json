@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое метод k-ближайших соседей?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "The K-Nearest Neighbors (KNN) method is a type of instance-based learning algorithm used for both classification and regression tasks in machine learning. It operates based on a simple “vote” mechanism to assign the new data point's class. \n\nHere's how it works: In KNN, every data point has \"K\" nearest neighbors, where 'K' is a user-defined parameter. The distance between these points and the new or test point is calculated using a suitable metric (like Euclidean distance). Once the distances are determined, the new point's class label is assigned as per the majority vote of its K nearest neighbors.\n\nPractice Problem: \n\nConsider you have a set of data with four features: [x1, x2, y1, z1], and another data point [x_new, y_new, z_new]. Your task is to classify this new point using the KNN method with 'K' = 3. Calculate the Euclidean distances between your new data point and each of the three nearest points in the dataset. Then predict the class label based on a majority vote among these neighbors.\n\n1. Identify 'K' (in this case, it's 3).\n2. For each data point in your dataset, calculate the Euclidean distance between [x_new, y_new, z_new] and that particular point using the formula:\n\n   d = sqrt((x1 - x_new)^2 + (y1 - y_new)^2 + (z1 - z_new)^2)\n\n3. Arrange these distances in ascending order to establish your 'K' nearest neighbors.\n4. Perform a majority vote amongst these K neighbors to determine the class label for [x_new, y_new, z_new]. \n\nLet's say you have the following data points and their respective labels: (1, 2, 3, 4) - 'A', (5, 6, 7, 8) - 'B', (9, 10, 11, 12) - 'C'.\n\nAfter computing KNN with K=3, you get distances [d1, d2, d3] in ascending order. The majority vote among your three nearest neighbors will then determine the classification for the point [x_new, y_new, z_new]. \n\nEvaluation: If students correctly perform these steps and predict the class label accurately based on a majority rule from their K-nearest points, they've demonstrated understanding of KNN method. Let's assume your dataset is structured as a list of lists in Python, where each inner list represents coordinates [x, y, z] for a data point along with its label:\n\n```python\ndataset = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], ...]\nnew_point = [x_new, y_new, z_new]\n```\n\nWith 'K' as 3:\n```python\ndistances = [(dataset[i][0]-new_point[0])**2 + (dataset[i][1]-new_point[1])**2 + (dataset[i][2]-new_point[2])**2 for i in range(len(dataset))]\nsorted_indices = sorted(range(len(distances)), key=lambda k: distances[k])\nnearest_points = [dataset[i] for i in sorted_indices[:3]]  # K-Nearest Neighbors\n# Next, predict class based on the majority vote. For simplicity let's assume a predefined dictionary 'labels': {'A': 0, 'B': 1, 'C': 2}\npredicted_label = max(set(label for point in nearest_points for label in labels.values() if point == new_point), default=None)\n```\n\nIf students arrive at the correct predicted class from this process, they've successfully demonstrated understanding of KNN.",
+    "rating": ""
+  }
+]

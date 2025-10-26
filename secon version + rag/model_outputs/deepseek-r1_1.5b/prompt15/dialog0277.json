@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как вычислить вероятность класса в Naive Bayes?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Как вычислить вероятность класса в Naive Bayes:\n\n1. **Определите training data**: Для каждого class (class 1, class 2, и т.д.) определите распределение предикторов X₁, X₂, etc.\n\n2. **После этого для каждого class вычислите:**\n   P(class k | observation X) = [P(X₁|k) * P(X₂|k)] / [P(X₁|1)*P(X₂|1) + P(X₁|2)*P(X₂|2)]\n\n3. **Начинается с кумулятивного распределения**: Для каждого observation X вычислитеP(Y=k | X), используя above формулу.\n\n4. **Используйте больший class с вышеимеj probability**: Это будет вашей предсказанным класс.\n\nДополнительно, в practice sometimes Naive Bayes уillary уточнение данных или bagging для улучшения точности.",
+    "rating": ""
+  }
+]

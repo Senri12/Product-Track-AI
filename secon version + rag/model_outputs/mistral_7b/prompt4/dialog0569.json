@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": " Для вычисления learning rate decay с linearnым западом используется формула:\n\nη = η0 - (η0 - ηf) * t / T\n\nгде:\n- η0 - начальное значение learning rate,\n- ηf - конечное значение learning rate,\n- t - текущий шаг,\n- T - общее количество шагов.\n\nПусть у нас такие параметры: η0 = 0.1, t = 5 и T = 10.\n\nТогда конечное значение learning rate будет равно нулю (ηf = 0), и мы получим:\n\nη = 0.1 - (0.1 - 0) * 5 / 10 = 0.1 * 0.5 = 0.05\n\nТо есть после пяти шагов learning rate упадет до 0,05.",
+    "rating": ""
+  }
+]

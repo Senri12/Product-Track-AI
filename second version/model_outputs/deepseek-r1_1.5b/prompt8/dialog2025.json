@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "P(win | spam) is calculated using Laplace's rule of succession, which estimates probabilities by adding pseudocounts for each possible outcome. Given S wins out of T spages, the formula becomes:\n\n\\[ P(\\text{win} | \\text{spam}) = \\frac{S + 1}{T + 2} \\]\n\nThis approach ensures that no single outcome is favored without data, providing a neutral starting point for probability estimation.",
+    "rating": ""
+  }
+]

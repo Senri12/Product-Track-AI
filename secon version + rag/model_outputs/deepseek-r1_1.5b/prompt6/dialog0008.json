@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое расстояние Чебышёва?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Кажется, расстояние Чебышёва – это межфакторное измерение, архивно отражает максимальную длину прямой между точками на плоскости или в других пространствах. Понятие源自 геометрии и используется для сравнения векторов на основе их maximal Euclidean distance.\n\nОпределения:\n\n1. def chebyshev_distance(x, y): return max(abs(a - b) for a, b in zip(x, y))\n\n2. def chebyshev_distance_2d(a, b):\n    return max(abs(a1 - b1), abs(a2 - b2))\n\n3. def chebyshev_distance_3d(a, b):\n    return max(abs(a1 - b1), abs(a2 - b2), abs(a3 - b3))\n\nЭти определения показывают, как расстояние Чебышё夫 вычисляется для двух векторов, которые обладают числами или табличными данными в二维 и三维 пространствах.",
+    "rating": ""
+  }
+]

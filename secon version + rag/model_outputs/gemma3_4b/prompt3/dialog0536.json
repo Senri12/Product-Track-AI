@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вычислим шаг в SGD для L(w)=w^2, w=3, η=0.1.\n\nL(w) = w^2\n∇L(w) = 2w\nη = 0.1\n\nШаг в SGD вычисляется по формуле:\n\nшаг = -η * ∇L(w) / ||∇L(w)||\n\n1.  Вычисляем ∇L(w):\n    ∇L(w) = 2w = 2 * 3 = 6\n\n2.  Вычисляем ||∇L(w)||:\n    ||∇L(w)|| = |6| = 6\n\n3.  Вычисляем шаг:\n    шаг = -0.1 * 6 / 6 = -0.1 * 1 = -0.1\n\nИтак, шаг в SGD равен -0.1.\n",
+    "rating": ""
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое RMSProp?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "RMSProp (Root Mean Squared Propagation) — это метод предсказания прогрессии в моделих, что позволяет нам обновлять их и вычислять их значения на основе предыдущих значений. Это часто используется в когнитивных 모델ах.\n\nВ более конкретном контексте RMSProp можно представить как:\n\nRMSProp = (Current Value - Previous Value) / 2 + Previous Value\n\nЭтот метод оценивает текущее значение и вычисляет его разницу с предыдущим значением, а затем добавляет это к предыдущему значению. Это приводит к более точному прогрессивному значениям.\n\nАлгоритм RMSProp включает три этапа:\n\n1. Вычисление差ения между текущим иPreviousValue\n2. Возведение в квадрат разницу\n3. Вычитание Previous Value из суммы квадратных различий\n\nПреобразование в алгоритм:\n\nRMSProp = (Current - Previous) / 2 + Previous\n\nРасширенный алгоритм RMSProp: \n\nRMSProp = Current - Previous + 0.999 * Previous",
+    "rating": ""
+  }
+]

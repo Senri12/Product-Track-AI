@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как классифицировать письмо как спам в Naive Bayes?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Классифицировать письмо как спам в Naive Bayes:\n\nДля классификации писм в Naive Bayes мы используем методProbably Classification с базовой идеей, что предсказываемые вероятности class-objects depend only on the feature-values of the object and not on other features. Это означает, что Naive Bayes предполагает независимость предикторов для каждого class-obj.\n\nПосле выбора metрик и распределений class-objects на каждом предикторе мы можем применить rule-based approach для более точного классификации писм. Используя(rule-based approach) с Naive Bayes, мы сможем определить, какие class-obj относятся к новому писю на основе их метрики.\n\nТаким образом, в Naive Bayes для классификации писма мы используем:\n\n-метрики accuracy, precision, recall и F1-score.\n-распределения class-objects на предикторах.\n- rule-based approach для более точного классификации.",
+    "rating": ""
+  }
+]

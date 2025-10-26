@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для вычисления шага в SGD при L(w) = w², w=3, η=0.1 следующий几步:\n\n1. Определите градиент функции:\n   \\[\n   \\nabla L(w) = 2w\n   \\]\n\n2. Выchoose当前位置:\n   \\[\n   w_0 = 3\n   \\]\n\n3. Подставьте в формулуSGD:\n   \\[\n   w_{1} = w_0 - \\eta \\cdot \\nabla L(w_0) = 3 - 0.1 \\cdot (2 \\cdot 3) = 3 - 0.6 = 2.4\n   \\]\n\n**Ответ:**\n\\[\nw_1 = 2.4\n\\]",
+    "rating": ""
+  }
+]

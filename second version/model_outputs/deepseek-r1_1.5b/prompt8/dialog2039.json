@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "eta(t) = eta0 * (1 - t/T)  \nAt t=5: eta(5) = 0.1 * (1 - 5/10) = 0.1 * 0.5 = 0.05.\n\n**Ответ:** learning rate decay at t=5 should be **0.05**.",
+    "rating": ""
+  }
+]

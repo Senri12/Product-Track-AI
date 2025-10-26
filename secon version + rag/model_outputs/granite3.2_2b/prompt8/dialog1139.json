@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для определения значение `η` в течение времени с использованием метода линейной резаккумуляции (linear), можно использовать формулу:\n\nη(t) = η₀ + (η₀ - 0.1) * t / T\n\nЗдесь:\n- `η₀` – начальный learning rate, в данном случае равен 0.1.\n- `t` – текущее число шагов.\n- `T` – общее число шагов до точки с минимизацией learning rate (в данном случае 10).\n\nСледующий код на Python может использоваться для вычисления:\n\n```python\ndef linear_decay(t, eta_init=0.1, T=10):\n    return eta_init + (eta_init - 0.1) * t / T\n\n# Пример использования\nt = 5\nlearning_rate = linear_decay(t)\nprint(f\"Заданное значение learning rate при числе {t} шагов: {learning_rate}\")\n```\n\nВ этом примере, когда `t` равно 5, вычисляется новое значение learning rate, которое будет равно `0.1 + (0.1 - 0.1) * 5 / 10 = 0.2`.",
+    "rating": ""
+  }
+]

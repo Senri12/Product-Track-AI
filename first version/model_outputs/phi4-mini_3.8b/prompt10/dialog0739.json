@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое over-fitting?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Overfitting occurs when a machine learning model learns not only from actual patterns in data but also captures noise or random fluctuations as if they were meaningful information that can lead to poor performance on new (unseen) datasets.\n\nImagine you're trying to fit your clothes perfectly; you've adjusted them countless times until they're so snug you can't move. This perfect, personalized fitting is like overfitting – the model fits its training data too well by capturing even tiny details or noise in it instead of learning general patterns that can apply broadly.\n\n\nTo help prevent this from happening:\n- You could try to keep your dataset large and diverse.\n- Simplify models (e.g., choose a simpler algorithm).\n- Use techniques like cross-validation, where you test the model on different subsets for better results.\n\nRemember: The goal is not just good performance with training data but also strong generalization capabilities.",
+    "rating": ""
+  }
+]

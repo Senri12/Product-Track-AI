@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как вычислить вероятность класса в Naive Bayes?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Explanation:**  \nNaive Bayes is based on applying Bayes' theorem with an assumption of independence among predictors. The probability P(class|data) can be computed by multiplying prior probabilities (P(data)) and conditional class probabilities.\n\nFor a binary classification problem:\n\nP(Class=Positive | Data=data) = [P(Data=data | Class=Positive) * P(Class=Positive)] / P(Data=data)\n\nHere, you need to calculate:\n- Prior probability of Positive or Negative classes.\n- Conditional probability given the features (for each feature).\n  \n**Question for Student:**  \nCan we list down how prior probabilities are determined in Naive Bayes?\n\n**Suggested Exercise:**  \nGiven a dataset with 100 instances where Class A is positive and Class B is negative, calculate P(Class=Positive) assuming equal distribution between classes.\n\n---\n\nP(C|D=data)= [P(D=data | C=positive) * P(C=positive)] / P(D=data)\n\nWhere:\n- P(C=positive): Prior probability of being in the Positive class.\n- P(D=data | C=positive): Likelihood, given that we know data belongs to positive cases.\n\n**Question for Student:**  \nHow do you calculate conditional probabilities like P(D|C=Positive)?\n\n**Suggested Exercise:**\nIf Class A (Positive) has 30 instances with feature X occurring in 20 and not occurring in 10; compute the likelihood of seeing this instance given it's Positive class using Naive Bayes formula.\n\n---\n\nFeedback Loop:\n- **Explanation:** Ensure students understand independence assumption.\n- **Question for Student:** How does assuming conditional features' independency affect probability computation?\n- **Suggested Exercise:** Calculate probabilities with and without dependence between two variables, then compare results. \n\nRemember: In real-world applications, the accuracy of Naive Bayes can be influenced significantly by how well you choose your model parameters (priors) based on prior knowledge or data-driven approaches such as Laplace smoothing to handle zero frequencies in categorical features.",
+    "rating": ""
+  }
+]

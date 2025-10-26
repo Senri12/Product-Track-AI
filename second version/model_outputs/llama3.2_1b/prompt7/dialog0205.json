@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое RMSProp?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "RMSProp — это частный вариант алгоритма Backpropagation (АБП) для обучения импульсно-вычислительных-networkов, основанных на математической и физической моделеции. Это предназначено для использования в приложениях, где требуется прямое подача данных и потенциальных значений output.\n\nРMSProp — это вариант алгоритма Backpropagation, который предназначен для упрощения определения gradientов. В отличие от Algo-BP, который требует учета значений hidden layer и activation functions, RMSProp позволяет использовать только значения hidden layer.\n\nRMSProp работает по принципу арифметического среднего аналога, где каждый шаг рассчитывается как ( Previous - Current ) / Current + 1/2. Это позволяет получить более быстрое и эффективное обучение_networkа, что может привести к улучшению accuracy и performances.",
+    "rating": ""
+  }
+]

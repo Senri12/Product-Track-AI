@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Возможно, для решения конкретной задачи на основе rule von Laplace в контексте SPAM-примеров и ближайших k-NN:\n\n1. Определить общий объем training data — n.\n2. Определить количество successful examples (SPAM) — m.\n3. Для нового примера, вычислите расстояния до каждого training example.\n4. Уточните ближайшие k examples (k-NN).\n5. Среди этих bлижайших k examples, выбрать те, которые соответствуют SPAM-primes.\n6. Используя rule von Laplace, предположить вероятностьSPAM-примера для нового примера равна m/n.\n\nТаким образом, для каждого нового примера, вероятностьSPAM-примера будетequal to the ratio of successful (m) examples in training data over total number of training examples.",
+    "rating": ""
+  }
+]

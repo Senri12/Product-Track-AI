@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Их learning rate decay — η0*exp(-t/T), где t — прошедшее с начала обучения время, а T — responds за скорость уменьшения η параметр. В этом случае η0 = 0,1 и t = 5, Т = 10, поэтому learning rate decay = 0,1 * exp(-5/10) ≈ 0,0459.",
+    "rating": ""
+  }
+]

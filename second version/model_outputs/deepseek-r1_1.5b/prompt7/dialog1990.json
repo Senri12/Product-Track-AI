@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем разница между k-NN и взвешенным k-NN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Концепция **k-NN (климатерный-ноклусный-некачки)** и **взвешенный k-NN** (взвешенный клиатерный-ноклусный-некачки) — это два метода, используемые в контексте алгоритма классификации на основе топологической постановки данных. \n\n### Разница между k-NN и weighted k-NN:\n1. **k-NN** (климатерный-ноклусный-некачки):\n   - В this method, для каждойы в данных, классифицируем по贪у (majority) классов из нearest neighbors.\n   - Каждая в данных имеет равные weighs — это их влияние на результат классификации.\n\n2. **Weighted k-NN** (взвешенный клиатерный-ноклусный-некачки):\n   - В this method, веса dependently on the distance between points or on other criteria.\n   - В weighting approach can be:\n     - **Uniform weights**: Every point in neighborhood contributes equally to classification decision.\n     - **Distance-based weights**: Points that are closer have higher weight (more influence).\n     - **Kernel weights**: Weights based on some kernel function.\n\n### Требования к упражнению и оценке:\n- Упражнение: Приведите пример задачи с использованием weighted k-NN, например, классификация велосипедов по их скорости на основе данных из определенных окружений.\n- Оценивание ответа: Объяснийте, как взвешенные k-NN отличаются от vanilla k-NN. Расскажите о методах взвешивания (например, равные веса или у зависимости от расстояния).\n\nНет используйте внешние источники, если это возможно.",
+    "rating": ""
+  }
+]

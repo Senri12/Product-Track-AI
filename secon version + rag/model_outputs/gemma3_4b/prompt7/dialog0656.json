@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вычислим шаг в SGD для L(w)=w^2, w=3, η=0.1.\n\nL(w) = w^2\nη = 0.1\n\nГрадиент L(w) по w:\n∇L(w) = 2w\n\nШаг в SGD:\nstep = η * ∇L(w) = 0.1 * 2w = 0.2w\n\nПри w = 3:\nstep = 0.2 * 3 = 0.6\n\nИтак, шаг в SGD равен 0.6.\n",
+    "rating": ""
+  }
+]

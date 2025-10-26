@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В примере с погодой, вычисли F(да) для теста.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "F(да) = ln(P(Kласс=да)|X₁,X₂,...,Xₚ) + ∑[ln(P(X₁|Класс=да)) + ln(P(X₂|Класс=да))] = ln((5/9) × (1/(1+e^(−4.564))) + (∑[(1/e^(F(да)|y) - 1/(1+∑[e^(F(y)|y)])), где y ∈ Y]) ≈ ln(0,606).",
+    "rating": ""
+  }
+]

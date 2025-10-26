@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "После подстановки данных в формулу:\n\nv_t = γ * v_{t-1} - η * gradient\n\nс knowing:\n- γ = 0.9 (последовательность Momentum)\n- v_{t-1} = 1\n- η = 0.1 (Learning Rate)\n- gradient = 2\n\nCalculations:\n\nv_t = 0.9 * 1 - 0.1 * 2 = 0.9 - 0.2 = 0.7\n\nОтвет: 0.7",
+    "rating": ""
+  }
+]

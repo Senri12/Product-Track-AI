@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое over-fitting?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Что такое over-fitting?**\n\nOver-fitting – это процесс, который может возникнуть при обучении модели. Это когда модель описывает обучающую выборку точно (включая параметры), но не точно на unseen data.\n\n### Основные определения:\n1. **over-fitting** occurs when a model performs well on training data but poorly on new, unseen data.\n2. This can be caused by complex models or excessive parameters in the model.\n\n### Примеры over-fitting:\n- Модель с высоким числом параметрами может описывать train dataExactно, но не предсказывать unseen datawell.\n- При обучении модели с высокой от dwarственностью (insensitivity to changes in input) может возникнуть over-fitting.\n\n### Решение over-fitting:\n1. 使用 cross-validation для оценки точности модели на unseen data.\n2. Applying early stopping, где trained until validation loss starts increasing.\n3. Using simpler models or pruning-ulearned approaches.\n\nOver-fitting приводит к **overfitting error**, который может быть удаленно при проверке модели на unseen data.",
+    "rating": ""
+  }
+]
