@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0829",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 31.1,
+    "precision": 37.0,
+    "recall": 56.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.737602"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Overfitting occurs when an algorithm is trained too well to its training data that it performs poorly at predicting new examples not included during model building (for example a test set). In other words, it's like memorizing answers instead of learning concepts - your machine-learning model learns patterns specific only to the sample dataset used for generating predictions. For instance:\n\n> Consider you're teaching someone how to recognize cats from pictures; initially you show them images containing dogs and animals similar in shape but not necessarily belonging to any category (for example, a lion). Your student can then correctly identify such items as 'not a cat'. Now when they're presented with an image of just one single animal that is either definitely or possibly very different - say the Statue of Liberty; they may incorrectly label it as ‘a dog’, because it's their first encounter and they've memorized all previous examples. In this example, your student over-learned to 'recognize cats' based on a sample dataset containing only pictures with dogs (for instance).\n\nIn machine learning terms:\n\n1. You create an algorithm that finds patterns in the training set.\n2. Your test data contains new information for which you want predictions.\n\nThe problem arises when such algorithms find ways of achieving very high accuracy scores, while their performance is still low on unseen or unknown examples; they have over-learned to accurately predict a dataset and do not generalize well onto other datasets that contain different characteristics compared with the training set (test data).\n\nTo illustrate this concept using Python code:\n\n```python\nfrom sklearn import datasets\nimport matplotlib.pyplot as plt\n\n# Load sample dataset containing cats, dogs etc.\niris = datasets.load_iris()\nX_data = iris.data[:, :2]  # only take first two features \nY_target = iris.target\n\nplt.scatter(X_data[Y_target == 0, 0], X_data[Y_target == 0, 1],\n            s=30, c='red', label ='not a cat')\nplt.xlabel('feature_1')\nplt.ylabel(\"feature_2\")\n\n# Plot the training set\nfor target in np.unique(Y_target):\n    plt.scatter(X_data[Y_target==target, 0], X_data[Y_target == target, 1],\n                s=60 + (300 * Y_target[target]), marker = 'X',\n               label='cat' if target!=4 else 'not a cat')\n```\n\nIn this example:\n\n- We are using the Iris dataset to train our machine learning algorithm.\n- The x-axis contains two features from iris: sepal length and petal width. (feature_1, feature_2)\n- On y-axis we have four possible values of Y_target which corresponds with species labels.\n\nThe above code generates a scatter plot representing different combinations of cats vs dogs in the training set where each cat or dog is represented by X markers on an x-y plane for visualization purposes:\n\nAs you can see from this graph, our algorithm seems to understand patterns well and predict that any new example (e.g. unknown) with given characteristics will also belong to a certain category based only upon previous experiences.\n\nIn contrast the test dataset contains different combinations of cats vs dogs where previously trained model might not be able to correctly classify them due its inability in generalizing on unseen data, which we call Overfitting issue.\n\n\n\n\n\n",
+      "rating": ""
+    }
+  ]
+}

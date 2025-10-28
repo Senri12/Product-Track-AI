@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0490",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 40.4,
+    "precision": 43.6,
+    "recall": 57.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.757449"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "k-NN (邻近均值法) - это машинное обучение алгоритм, который классифицирует новый объект, основываясь на ближайших примерам в наборе данных (набора). Ближайшие точки определяются расстоянием, например Euclidean distance.\n\nВзвешенная k-NN немного отличается. В дополнение к принципу взвешенного k-NN, он использует весовой мерилежду для каждого соседнего узла и веса присваиваются соответствующими точкам в наборе данных. Это позволяет учесть важность или надежность этих соседей при классификации.\n\nЧтобы уточнить разницу, вам нужно знать, какой именно тип взвешенной модели k-NN вы имеете в виду (например, Идентичная взвешенная модель k-NN, Пятичленковая weighted k-NN и т.д.)?",
+      "rating": ""
+    }
+  ]
+}

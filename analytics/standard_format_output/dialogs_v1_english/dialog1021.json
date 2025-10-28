@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1021",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое метод k-ближайших соседей?",
+    "f1": 43.4,
+    "precision": 47.8,
+    "recall": 47.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.240411"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод k-ближайших соседей?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Метод к-ближайших соседей (k-Nearest Neighbors, k-NN) - это статистический алгоритм машинного обучения, используемый для классификации и регрессии. В этом методе представленные данные разбиваются на два подмножества: обучающий и тестовый наборы.\n\nВо время процесса обучения алгоритм вычисляет расстояния между каждой точкой в обучающем наборе и всеми точками в данных, где мы задаем k (количество ближайших соседей) для классификации или среднее значение к-ближайших соседей для регрессии.\n\nПри классификации, когда мы получаем тестовый набор данных, алгоритм находит k-ближайших соседей в обучающем наборе и классифицирует точку по классу, который большинство из к-ближайших соседей имеют.\n\nПри регрессии мы вычисляем среднее значение y-координат (регуression target) у k ближайших соседей и возвращаем это как предсказанное значение для тестовой точки.\n\nЗадача: Разработайте алгоритм к-ближайших соседей на языке Python, который будет принимать списки данных (X - обучающие и Y - целевые) и параметр k, а также возвращать функцию классификации или регрессии.\n\n```python\ndef knn(X_train, y_train, X_test, k=3):\n    def euclidean_distance(x1, x2):\n        return ((x1 - x2) ** 2).sum()\n\n    def predict(x_test_point):\n        distances = [euclidean_distance(x_train_pt, x_test_point) for x_train_pt in X_train]\n        k_nearest_indices = sorted(range(len(X_train)), key=lambda i: distances[i])[:k]\n        classes = [y_train[i] for i in k_nearest_indices]\n        # Majority voting to find predicted class\n        if len(set(classes)) == 1:\n            return set(classes).pop()\n        else:\n            return \"No clear prediction\"\n\n    def knn_regression(x_test_point):\n        distances = [euclidean_distance(x_train_pt, x_test_point) for x_train_pt in X_train]\n        k_nearest_indices = sorted(range(len(X_train)), key=lambda i: distances[i])[:k]\n        y_values = [y_train[i] for i in k_nearest_indices]\n        # Mean of the k-nearest points as predicted value\n        return sum(y_values) / k\n\n    # Define whether you want to use classification or regression (change it accordingly)\n    if X_test.ndim == 1:\n        predict_func = predict\n    else:\n        predict_func = knn_regression\n\n    y_predictions = [predict_func(x) for x in X_test]\n    return y_predictions\n```",
+      "rating": ""
+    }
+  ]
+}

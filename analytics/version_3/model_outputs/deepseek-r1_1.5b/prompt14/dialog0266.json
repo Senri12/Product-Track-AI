@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для вычисления шага в SGD для функции loss(w) = w² при w=3 и η=0.1:\n\nФункция_loss(w) = w².\n\nН gradient(w) = 2w.\n\nПредположим current weight w=3.\nη=0.1.\n\nДля SGD на satu шага обновление weight будет:\nw_new = w - η * gradient\n\nПодставив значения:\nw_new = 3 - 0.1 * (2*3) = 3 - 0.6 = 2.4\n\nТаким образом, шаг в SGD для данной задачи будет 0.6.\n\nОтвет: 0.6",
+    "rating": ""
+  }
+]

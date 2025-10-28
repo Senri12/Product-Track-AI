@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0084",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое метод Ньютона?",
+    "f1": 34.6,
+    "precision": 34.9,
+    "recall": 45.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.9,
+    "hallucination": 11.9,
+    "faithfulness": 32.7,
+    "noise_sensitivity": 18.6,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.088484"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод Ньютона?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод Ньютона является оптимизационной методой, которая использует гессиан matrix для поискаMinimum faster than gradient descent. Он основывается на матрице частных deriveivативов функции потерь и используется в условиях, когда гессIAN easily computable. В отличие от градиентного спуска, который требует knowledge only of the gradient of L, метод Ньютона учитывает гessianian matrix для обновления learning rate и цепочки накопленных градиентов.\n\nФизика сферик помогает понять физическое运作е метода иimentов (Adam), что включает惯ial forces. Эта физика кажется логичной, так как на каждом шаге используются градиенты по всей цепочке накопленных градиентов, а также идентичности гессiansа.\n\nВ реальной жизни modern deep learning practice часто использует Adam optimizer, учитывая его performance на практике. Однако, в теории метода Ньютона гессIAN matrix Very expensive or impracticable to compute, что может быть негативно для practical implementation.\n\nТаким образом, метод Ньютона требует knowledge of both the gradient and Hessian, а метод иimentов – fewer parameters to adjust. Это может быть особенно полезно в сложных задачах с multiple Minimums or highly non-convex functions.",
+      "rating": ""
+    }
+  ]
+}

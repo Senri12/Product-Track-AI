@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1467",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 34.0,
+    "precision": 32.6,
+    "recall": 51.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.4,
+    "hallucination": 8.2,
+    "faithfulness": 36.3,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.017159"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "v_t = γ * v_{t−1} − η∇L(ω)\n\nПодставляем:\n\nγ = 0.9\n\nv_{t-1} = 1\n\nη = 0.1\n\n∇L = 2\n\nИтак,\n\nv_t = 0.9 * 1 - 0.1 * 2 = 0.9 - 0.2 = 0.7\n\nОтвет: 0.7",
+      "rating": ""
+    }
+  ]
+}

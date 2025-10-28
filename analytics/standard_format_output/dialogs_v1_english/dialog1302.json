@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1302",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 33.1,
+    "precision": 35.2,
+    "recall": 47.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.202031"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " To find the Euclidean distance between points (1, 2) and (3, 4), we use the formula:\n\nsqrt[(x2 - x1)² + (y2 - y1)²]\n\nLet's plug in our values:\n\n- x1 = 1\n- y1 = 2\n- x2 = 3\n- y2 = 4\n\nNow, we can calculate the Euclidean distance:\n\nsqrt[(3 - 1)² + (4 - 2)²]\nsqrt[(2)² + (2)²]\nsqrt[4 + 4]\nsqrt[8]\n2 * sqrt[2] ≈ 2.82846\n\nSo, the Euclidean distance between points (1, 2) and (3, 4) is approximately 2.83 units.",
+      "rating": ""
+    }
+  ]
+}

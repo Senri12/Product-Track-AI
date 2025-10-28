@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1369",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 33.7,
+    "precision": 30.9,
+    "recall": 53.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.1,
+    "hallucination": 11.2,
+    "faithfulness": 34.9,
+    "noise_sensitivity": 21.2,
+    "self_knowledge": 3.9,
+    "timestamp": "2025-10-28T13:24:20.081480"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "overfitting — это сценарий, когда модель or алгоритм обработки данных learnily на training set very well (low loss), но performs poorly on test set. Это связано со смещением or overfitting and underfitting model: overfitting — model learned too particular features from data, which are not relevant to generalization; underfitting — model learns too general features, which do not capture the underlying patterns in training data. Overfitting can be caused by high variance of the model (overcomplex), lack of sufficient regularization or capacity, and/or complexity that is too high relative to the amount of training data.",
+      "rating": ""
+    }
+  ]
+}

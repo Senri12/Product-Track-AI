@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1396",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 31.4,
+    "precision": 37.6,
+    "recall": 43.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.3,
+    "hallucination": 11.3,
+    "faithfulness": 31.8,
+    "noise_sensitivity": 16.0,
+    "self_knowledge": 6.9,
+    "timestamp": "2025-10-28T13:24:20.028840"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "autograd — это автоматный градиентный метод. Он используется в machine learning для automatic computation of gradients (градиентов) для функций, которые depend on input variables. В autograd можно automaticно расчётать градиенты за счет automaticной обработки операций в программном схеме. Это полезно, когда functions complex или не разрешены manually compute gradients.\n\nВ tensor frameworksах (например, TensorFlow и PyTorch) autograd используется для automatically computing gradients during the training process. В torch frameworkе autograd включает support automatic computation of gradients through operations in a programmatic graph.",
+      "rating": ""
+    }
+  ]
+}

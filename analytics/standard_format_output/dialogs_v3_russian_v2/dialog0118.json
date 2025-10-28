@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0118",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 36.1,
+    "precision": 36.5,
+    "recall": 46.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.2,
+    "hallucination": 8.6,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 21.8,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.064443"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Производительность алгоритма Adagrad на заданном примере определена следующим образом:\n\n1. **Learning Rate**:  \n   Выведен learning rate для current step equals -0.1, decrease rapidly in subsequent steps.\n\n2. **Sum of Squared Gradients (G)**:  \n   G decreases moderately with each step, as G_{t} = G_{t-1} + g_t^2.\n\n3. **Performance**:  \n   Converges quickly to optimal weights, but may be too aggressive for some tasks.\n\nВозможно, Adagrad обновляетlearning rate faster than SGD or Adam, yet maintains more stable learning rates compared to these methods.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0449",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 28.2,
+    "precision": 32.8,
+    "recall": 40.3,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 17.0,
+    "faithfulness": 29.4,
+    "noise_sensitivity": 12.9,
+    "self_knowledge": 3.6,
+    "timestamp": "2025-10-28T13:24:19.953943"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Имеем уравнение для learning rate decay:\n\nη(0) = η0\nе(у) = η0 - γ * η(у-1)\n\nгде γ —Parametr, меньший единиц (часто больший, чем 0,9).\n\nЧтобы найтиlearning rate decay, мы можем подставить значения в уравнение:\n\nη(0) = 0,1\nе(у) = 0,1 - γ * 0,1\n\nе(у-1) = 0,1 - γ * (0,1-0,1)\n\nе(у-1) = 0,1 - γ * 0\n\nТеперь подставьте это значение в уравнение для learning rate decay:\n\nη(у) = η0 - γ * η(у-1)\n= 0,1 - γ * (0,1-0)\n\nе(у-1) = 0,1 - γ * 0\n\nУпростите выражение:\n\nе(у-1) = 0,1/1 - г\n\nТеперь подставьте это значение в уравнение для learning rate decay:\n\nе(у) = η0 - γ * 0\n= η0 - γ * (0.1/1)\n\nе(у) = η0 - 0,1/10\n\nе(у) = 9,9η0/10\n\nУпростите выражение:\n\nе(у) ≈ 0,998η0/2\n\nИтак, learning rate decay для данного значения у0 и т=5 составляет примерно 0,998η0/2.\n\nПримечание: этот процесс можно продолжать, чтобы найти learnign rate decay для любого значения t.",
+      "rating": ""
+    }
+  ]
+}

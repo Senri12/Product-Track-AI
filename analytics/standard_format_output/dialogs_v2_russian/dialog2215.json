@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2215",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.008442"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (Root Mean Square Propagation) is an optimization algorithm designed for training deep neural networks. It was introduced by Kingma and Ba in 2014 as a variant of Adam, addressing some of the limitations of Adam, such as its aggressive learning rate that can lead to instability.\n\n### Key Concepts\n\nRMSProp maintains adaptive learning rates for each parameter based on their recent history of gradients. Unlike traditional methods that use a fixed or manually adjusted learning rate, RMSProp allows parameters with large gradients to be updated more slowly and those with small gradients to receive larger updates.\n\nThe algorithm works by maintaining two moving averages:\n1. **Squared Gradient Moving Average**: Tracks the sum of squared gradients for each parameter.\n2. **Parameter Moving Average**: Tracks the sum of squares of the gradients, which is used to compute the scaling factor for each parameter's update.\n\n### Update Rule\n\nFor a given parameter \\( \\theta_i \\), the update rule in RMSProp can be summarized as:\n\\[\nv_i = \\gamma v_{i-1} + (1 - \\gamma) g_i^2\n\\]\nwhere \\( v_i \\) is the squared gradient moving average, \\( g_i \\) is the current gradient, and \\( \\gamma \\) is the decay rate for each parameter.\n\nThe update step then scales the parameter's gradient by:\n\\[\nw_i = w_i - \\alpha \\frac{g_i}{\\sqrt{v_i + \\epsilon}}\n\\]\nwhere \\( \\alpha \\) is the learning rate (or scaling factor), and \\( \\epsilon \\) is a small value to prevent division by zero.\n\n### Variants\n\n- **Adam-Radam**: This variant uses an exponential moving average for the squared gradients, which makes it more robust than traditional RMSProp.\n- **AdaMax**: AdaMax maintains separate moving averages for gradient magnitude and parameter values but uses a different scaling mechanism.\n- **Adam**: While similar to RMSProp, Adam (Kingma and Ba 2014) uses a decaying average of the squared gradients, which can lead to better stability.\n\n### When to Use\n\nRMSProp is particularly useful when dealing with non-stationary objectives where gradient magnitude plays a significant role. It is effective for training deep neural networks due to its ability to adapt learning rates in an online manner.",
+      "rating": ""
+    }
+  ]
+}

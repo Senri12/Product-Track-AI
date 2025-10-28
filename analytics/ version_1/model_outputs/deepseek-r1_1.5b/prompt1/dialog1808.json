@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое расстояние Чебышёва?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Chebyshev distance, also known as the infinity norm or maximum metric, is a measure of distance between two points in n-dimensional space. It is defined as the greatest absolute difference between any pair of corresponding coordinates of the two points.\n\n### Formula:\nFor two points \\( A = (x_1, x_2, \\ldots, x_n) \\) and \\( B = (y_1, y_2, \\ldots, y_n) \\), the Chebyshev distance \\( D(A, B) \\) is given by:\n\n\\[\nD(A, B) = \\max_{i=1}^{n} |x_i - y_i|\n\\]\n\n### Example:\nConsider two points in 2D space: \\( A = (3, 4) \\) and \\( B = (1, 2) \\). The differences are \\( |3-1| = 2 \\) and \\( |4-2| = 2 \\), so the Chebyshev distance is:\n\n\\[\nD(A, B) = \\max(2, 2) = 2\n\\]\n\nAnother example: points \\( A = (0, 0) \\) and \\( B = (5, 7) \\). The differences are 5 and 7, so the Chebyshev distance is:\n\n\\[\nD(A, B) = \\max(5, 7) = 7\n\\]\n\n### Summary:\nChebyshev distance measures the maximum difference in any single dimension between two points. It is useful in algorithms where extreme values are more significant than sums of differences.",
+    "rating": ""
+  }
+]

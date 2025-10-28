@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0394",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В чем суть наивного байесовского классификатора?",
+    "f1": 30.8,
+    "precision": 37.7,
+    "recall": 36.9,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 30.6,
+    "hallucination": 18.7,
+    "faithfulness": 29.5,
+    "noise_sensitivity": 9.6,
+    "self_knowledge": 1.9,
+    "timestamp": "2025-10-28T13:24:19.906093"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем суть наивного байесовского классификатора?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Суть наивного байесовского классификатора заключается в том, что он построен на основе условной независимости предикаторов при условии определенной метки класса. Это означает, что для каждой информации (предиктора) из набора X мы вычисляем вероятность того, что объект X belongs to given class y, и тогда classify object z по выбору между двумя возможными классами y1 и y2. Оценивая вероятности и применяً к новому objetoе з, мы вычисляем предсказание для каждого класса y.",
+      "rating": ""
+    }
+  ]
+}

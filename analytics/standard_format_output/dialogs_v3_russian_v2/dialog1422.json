@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1422",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 33.7,
+    "precision": 39.6,
+    "recall": 44.6,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.3,
+    "hallucination": 10.5,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 19.0,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.020777"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "ЭтапыCalculating the Euclidean distance between the points (1, 2) and (3, 4):\n\n1. Найдем дierzensity each coordinate:\n   - X-coordinate: 3 - 1 = 2\n   - Y-coordinate: 4 - 2 = 2\n\n2. Квадрустирую эти differences:\n   - 2² = 4\n   - 2² = 4\n\n3. Суммирую квадраты:\n   - 4 + 4 = 8\n\n4. Вычислю корень квадратного суммы:\n   - √8 = 2.8284...\n\nИтак,Euclidean distance между точками (1, 2) и (3, 4) равен 2√2.",
+      "rating": ""
+    }
+  ]
+}

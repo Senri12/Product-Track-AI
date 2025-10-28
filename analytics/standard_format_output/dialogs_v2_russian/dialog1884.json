@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1884",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое метод Ньютона?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.031040"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод Ньютона?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The Newton-Raphson method is an iterative numerical technique used to find roots of a given function \\( f(x) \\). It works by starting with an initial guess \\( x_0 \\), then refining this guess using the formula:\n\n\\[\nx_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}\n\\]\n\nwhere:\n- \\( x_n \\) is the current approximation of the root,\n- \\( f(x_n) \\) is the function evaluated at \\( x_n \\),\n- \\( f'(x_n) \\) is the derivative of the function evaluated at \\( x_n \\).\n\n**Steps to apply the Newton-Raphson method:**\n\n1. **Start with an initial guess:** Choose a value close to where the root is expected to be, denoted as \\( x_0 \\).\n\n2. **Iterate using the formula:** For each iteration, compute the next approximation \\( x_{n+1} \\) using the formula above.\n\n3. **Check for convergence:** Continue iterating until the difference between successive approximations is very small (indicating convergence to a root).\n\n**Important Considerations:**\n\n- The method requires differentiability of the function \\( f(x) \\) and its derivative \\( f'(x) \\).\n- If the derivative \\( f'(x_n) \\) is zero at some point, the method may fail or oscillate without converging.\n- The Newton-Raphson method can converge to a root quickly if the initial guess is sufficiently close and the function is well-behaved (i.e., it doesn't have multiple roots, flat regions, etc.).\n\n**Example:**\n\nFind the root of \\( f(x) = x^3 - 1 \\).\n\n- Initial guess: \\( x_0 = 2 \\).\n- Iteration 1:\n  \\[\n  f(2) = 8 - 1 = 7 \\\\\n  f'(x) = 3x^2 \\\\\n  f'(2) = 12 \\\\\n  x_1 = 2 - \\frac{7}{12} ≈ 1.416\n  \\]\n- Iteration 2:\n  \\[\n  f(1.416) ≈ 1.856 \\\\\n  f'(1.416) ≈ 6.015 \\\\\n  x_2 = 1.416 - \\frac{1.856}{6.015} ≈ 1.107\n  \\]\n- Iteration 3:\n  \\[\n  f(1.107) ≈ 0.355 \\\\\n  f'(1.107) ≈ 3.675 \\\\\n  x_3 = 1.107 - \\frac{0.355}{3.675} ≈ 1.011\n  \\]\n- Iteration 4:\n  \\[\n  f(1.011) ≈ 0.033 \\\\\n  f'(1.011) ≈ 2.999 \\\\\n  x_4 = 1.011 - \\frac{0.033}{2.999} ≈ 1.000\n  \\]\n- Finally, \\( f(1) = 0 \\), so the root is found.\n\nIn this example, even though derivatives were not zero at intermediate points, the method successfully converged to the root.\n\n**Conclusion:**\n\nThe Newton-Raphson method is an effective iterative technique for finding roots of functions, provided certain conditions are met. It converges quickly if the initial guess is good and the function behaves nicely (no flat regions or multiple roots). However, care must be taken when derivatives are zero or the function has complex behavior to avoid divergence or failure to converge.\n\n```lean4\ntheorem newton_raphson_method : ∀ f : ℝ → ℝ → ℝ,\n  -- Assume all axioms for a real-valued function and its derivative.\n  (∀ x y, ∃ z, f x y z ∧ (∀ u, f x y u ↔ u = z))\n→ ∀ f : ℝ → ℝ → ℝ,\n  ∀ x y z,\n  -- Use the given lemma to find an intermediate value for Newton-Raphson iteration.\n  exists! λ z := by\n  -- Apply the Newton-Raphson method to find a root of the function f.\n  use ⟨f x y⟩\n```",
+      "rating": ""
+    }
+  ]
+}

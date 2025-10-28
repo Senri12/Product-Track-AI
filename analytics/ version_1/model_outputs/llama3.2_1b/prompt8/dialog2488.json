@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Упрощение:\n\nМы знаем:\nG_{t-1,ii} = 4 (глядя на матрицу learning rate)\ng_t = 2 (глядя на значение g для каждого т)\nη (η) = 0,1 (глядя на шкалуlearning rate)\nε (э) = 1e-8 (глядя на значение epsilon)\n\nМы хотим найти G_t. Сначала давайте найдем г:\n\ng_{t-1} = ε \\* tanh(g_t + η \\* h_{t-1,ii})\n\nПодставив значения, получим:\n\ng_{t-1} = 1e-8 \\* tanh(2 + 0,1 \\* 4)\n= 1e-8 \\* tanh(2,4)\n\nТеперь давайте найдем г_{t}:\n\nг_t = ε \\* tanh(g_{t-1} + η \\* h_{t,t-1,ii})\n\nПодставив значения, получим:\n\ng_t = 1e-8 \\* tanh(1,6)",
+    "rating": ""
+  }
+]

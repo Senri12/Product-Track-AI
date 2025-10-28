@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0479",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 31.4,
+    "precision": 44.0,
+    "recall": 56.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.826572"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Learning rate decay is used to gradually decrease the value of the learning rate during training as time progresses. A common approach for implementing a decaying learning rate linearly over iterations can be defined by adjusting it according to its initial value (η₀), iteration count at any point in time t (where 0 ≤ t < T) and total number of iterations N such that it's zero after reaching the end.\n\nGiven:\n- Initial Learning Rate, η₀ = 0.1\n- Current Iteration Count, t = 5 \n- Total Number of Iterations, T = 10\n\nIn this case (linear decay), we can compute learning rate for any iteration using:\n\nη_t = η₀ * (T - t) / T \n\nSo at the current time step where t=5:\nη_t = 0.1 * (10 - 5)/ 10\n         = 0.1 * 5/ 10 \n         = 0.05\n\nTherefore, learning rate decay for η₀ of 0.1 after iteration count is at T=10 and the current time step t equals to 5 would be: \n\nη_t = 0.05",
+      "rating": ""
+    }
+  ]
+}

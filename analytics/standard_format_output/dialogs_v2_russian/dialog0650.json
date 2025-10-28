@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0650",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 37.0,
+    "precision": 42.3,
+    "recall": 50.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.845378"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "SGD означает стоячий градиентный спуск (Stochastic Gradient Descent). Это алгоритм оптимизации, который широко используется в машинном обучении для минимизации.loss functions. В ходе обучения модель ищет набор весов, которые минимизируют ошибку между прогнозируемыми и фактическими результатами.\n\nУпражнение:\nПредставьте, что у вас есть функция ошибки на примере данных 3x1, которая выдается как f(x) = (x-2)^2. Используя стоячий градиентный спуск с начальным значением x0 = 10 и шагом.learning_rate = 0.01, вычислите новое значение x после одного итерации.\n\nОтвет:\nШаги: \n1. Вычислите градиент функции в точке x0: df(x)/dx = 2*(x-2)\n2. Умножьте на learning_rate для получения шаг обновления: delta_x = learning_rate * df(x)/dx\n3. Обновите x, добавив delta_x к начальному значению x0\n\nОтвет:\ndf(x)/dx в x0 = 2*(10-2) = 16\ndelta_x = 0.01 * 16 = 0.16\nx1 = x0 + delta_x = 10 + 0.16 = 10.16",
+      "rating": ""
+    }
+  ]
+}

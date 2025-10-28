@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое Adam?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": " Adam - это один из первых алгоритмов машинного обучения для решения задач классификации, основанных на глубине дерева решений. Он был разработан в 1984 году Брюсом Розенблаттом и Джоном Холл и получил свое название в честь первого человека по Библии - Адама.\n\nВопрос для проверки понимания: Каково название алгоритма машинного обучения, который был разработан Брюсом Розенблаттом и Джоном Холлом в 1984 году? (A) Adam (B) MLP (C) SVM\n\nУпражнение: Используя Adam для решения задачи классификации, предположите, что ваш алгоритм должен улучшить или снизить ошибку на базе данных MNIST. Скопируйте и измените код приведенный ниже для проведения эксперимента:\n\n```python\nfrom tensorflow import keras\nimport numpy as np\n\n# Загрузка данных MNIST\n(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()\n\n# Преобразование изображений в формат подходящий для ввода в сеть нейронов\nx_train = x_train.reshape(x_train.shape[0], 28 * 28).astype('float32') / 255\nx_test = x_test.reshape(x_test.shape[0], 28 * 28).astype('float32') / 255\n\n# Определение функции потерь и оптимизатора\nloss_fn = keras.losses.SparseCategoricalCrossentropy(from_logits=True)\noptimizer = keras.optimizers.Adam()\n\n# Определение сети нейронов\nmodel = keras.Sequential([\n    keras.layers.Flatten(input_shape=(28 * 28,)),\n    keras.layers.Dense(128, activation='relu'),\n    keras.layers.Dropout(0.2),\n    keras.layers.Dense(10)\n])\n\n# Обучение модели на базе данных MNIST\nmodel.compile(optimizer=optimizer, loss=loss_fn, metrics=['accuracy'])\nhistory = model.fit(x_train, y_train, epochs=5)\n\n# Проверка точности модели на тестовой базе данных MNIST\ntest_loss, test_acc = model.evaluate(x_test, y_test)\nprint('Потеря:', test_loss)\nprint('Точность:', test_acc)\n```\n\nЭксперимент продемонстрирует использование алгоритма Adam для решения задачи классификации по базе данных MNIST.",
+    "rating": ""
+  }
+]

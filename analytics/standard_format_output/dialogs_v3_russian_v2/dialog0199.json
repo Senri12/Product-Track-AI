@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0199",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 25.1,
+    "precision": 30.2,
+    "recall": 38.5,
+    "claim_recall": 34.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.5,
+    "hallucination": 13.2,
+    "faithfulness": 31.7,
+    "noise_sensitivity": 17.3,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.043370"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-Fitting — это ситуация в machine learning, где обучаемая сеть начинает обновлять не only learn the underlying patterns in the training data, but also memorize noise or random fluctuations present in it. Скорее всего, model trainит на(training set все более精细化细节 и может перекачивать на test set, который не был в训练е. Это приводит к over-fitting, что является схемой, которая требует тщательного поиска улучшений.\n\nТакже over-Fitting связан с их архитектурами, где слои обновляются слишком много, что создает сложное и необходимое функционирование. Для оценки over-fitting используются метрики или графики, которые показывают, насколько model learnет training data и может синтезировать его.\n\nДля сокращения времени и увеличить эффективность процессора работы tensorflow включает в себя архитектуру, которая позволяет тщательно обновлять слои и оптимизировать градиенты.",
+      "rating": ""
+    }
+  ]
+}

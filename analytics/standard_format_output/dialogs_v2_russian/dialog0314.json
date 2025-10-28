@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0314",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 30.5,
+    "precision": 35.9,
+    "recall": 39.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.997372"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить вероятность P(\"дарма | пасмурно, холодно, влажно\"), нам нужно сначала определить вероятность каждого condiionedного значения.\n\nВероятностьconditions = 1\nОкончательное значение = П(да) \\* Количество condition_да\nПасмурная = P(Пасмурно) = 0,6\nКольцеватная = P(Кольцеватно) = 0,2\nВодяной = P(Wet) = 0,1\n\nИтак, П(да | PASMURNO, КОЛЕСТНЫ, ВУДНО, DA) = Пасмурная * Количество condition_да / Общее количество условий\n= 0,6 * 2 / (0,6 + 0,2 + 0,1)\n\nЧтобы вычислить вероятность, нам нужно сложить все кратныеCondition_to_Da / Total_conditions.\n\nПасмурная * Количество condition_да / Общее количество условий = 1*2/ 8 = 0,25\n\nЕсть 8 условий (Pasmuroso, Cholero, Vetro), поэтому:\n\nP(дарма | PASMURNO, CHOLERO, VETRO) = 0,25",
+      "rating": ""
+    }
+  ]
+}

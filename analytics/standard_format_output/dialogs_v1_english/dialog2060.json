@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2060",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.044256"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Explanation:**\nSGD stands for Stochastic Gradient Descent. It is an iterative optimization algorithm used in machine learning to minimize the loss function by iteratively updating the model parameters. Unlike traditional batch methods where all training examples are processed (batch Gradient Descent) or just a subset is used (Stochastic Gradient Descent without shuffling, also called Batch SGD), SGD randomly selects one or more examples from the dataset and computes the gradient based on that example. This randomness introduces noise into the process, helping to avoid getting stuck in local minima and improves convergence speed.\n\n**Example:**\nHere's a simple implementation of SGD in Python:\n\n```python\nimport numpy as np\n\n# Function to compute gradient using mini-batch\ndef compute_gradient(X, y, mini_batch_indices):\n    N = len(y)\n    m = len(mini_batch_indices)  # number of samples in the mini-batch\n    x = X[mini_batch_indices]\n    y_true = y[mini_batch_indices]\n    \n    gradients = np.zeros(len(x[0]))\n    for i in range(m):\n        x_i = x[i, :]\n        y_i = y_true[i]\n        \n        loss = (y_i - x_i @ theta)**2\n        gradients += -(x_i.T).dot(y_i - x_i @ theta)\n    \n    gradients /= m\n    return gradients\n\n# Example implementation\ndef stoch GradientDescent(X, y, num_epochs=100, batch_size=32):\n    N = len(y)\n    theta_initial = np.random.randn(2)  # Initialize weights to some random values\n    \n    for epoch in range(num_epochs):\n        # Shuffle the data\n        idx = np.random.permutation(N)\n        \n        # Split into mini-batches\n        num_minibatches = N // batch_size\n        \n        for batch_idx in range(num_minibatches):\n            x_batch = X[idx[batch_idx * batch_size : (batch_idx + 1) * batch_size]]\n            y_batch = y[idx[batch_idx * batch_size : (batch_idx + 1) * batch_size]]\n            \n            # Compute gradient using mini-batch\n            gradients = compute_gradient(x_batch, y_batch, np.random.permutation(range(len(y_batch))))  # shuffling the current batch\n            \n            # Update parameters\n            theta_initial -= learning_rate * gradients\n\n    return theta_initial\n\n# Example usage with MNIST:\nfrom sklearn import datasets\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.linear_model import SGDClassifier\n\nmnist = datasets.load_digits()\nX = mnist.data.reshape(-1, 8)\ny = mnist.target\n\ntheta = stoch GradientDescent(X, y)\n\nprint(theta)\n```\n\n**Question for Student:**\nCan you explain what Stochastic Gradient Descent (SGD) is and provide an example of how it works?\n\n**Suggested Exercise:**\nWrite Python code to implement the SGD algorithm for a simple linear regression problem. Use a small dataset and demonstrate how the parameters are updated in each iteration.\n\n**Feedback Loop:**\n- Correct explanation.\n- Example with code.\n- Explanation of why shuffling is done (to avoid local minima).\n- Comparison with traditional methods like batch or mini-batch GD.\n- Define hyperparameters such as batch size, number of epochs, learning rate, and provide a real-world application.\n- Outline steps for implementing SGD in practice.\n\nThis exercise will help the student understand how SGD works by seeing each parameter update step-by-step.",
+      "rating": ""
+    }
+  ]
+}

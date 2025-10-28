@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0546",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое манхэттенское расстояние?",
+    "f1": 31.4,
+    "precision": 43.8,
+    "recall": 51.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.742327"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое манхэттенское расстояние?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Manhattan distance is an interesting concept used mainly for urban planning or computer science contexts like graph theory.\n\nThink of Manhattan as New York City’s boroughs: Manhattan itself (with its characteristic grid-like streets), Brooklyn, Queens and so forth – each with their own unique layout. The term refers to the idea that if you were walking through these neighborhoods without being able to turn left or right at intersections but only moving forward in straight lines like on a chessboard's diagonals would be akin to traversing Manhattan’s grid-like streets.\n\nIn simpler terms, imagine you're standing still and someone tells another person 3 blocks east (right) then up three more north (up). That's how the distance is measured: by counting all individual block moves rightwards followed directly upward. The total number of these steps gives you what we call 'Manhattan Distance'.\n\nIf it helps to visualize, imagine a chessboard with coordinates from A1 at one corner and H8 on another opposite side – moving diagonally isn't allowed here; you're confined either horizontally or vertically.\n\nThe beauty about Manhattan distance is that it's different than the straight-line (Euclidean) distance you'd get if you could walk in any direction. Instead of cutting across empty space, as with Euclidean distances between A1 and H8 directly through an open field would be √(3² + 3²), equating to around 4.24 blocks when measured diagonally on a chessboard - Manhattan Distance measures distance purely by number of horizontal plus vertical moves: just like walking across city streets, which is why it can sometimes give longer distances than you might intuitively expect.\n\nIt's quite handy for various computational problems where grid-like structures exist – think navigating through rooms in video games or plotting routes between multiple urban locations. It's also important to note that Manhattan distance isn't physically practical but offers useful insights and solutions within the world of algorithms!",
+      "rating": ""
+    }
+  ]
+}

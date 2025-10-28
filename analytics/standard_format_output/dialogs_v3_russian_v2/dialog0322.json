@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0322",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 28.6,
+    "precision": 32.5,
+    "recall": 34.1,
+    "claim_recall": 37.3,
+    "context_precision": 50.0,
+    "context_utilization": 28.8,
+    "hallucination": 19.0,
+    "faithfulness": 29.2,
+    "noise_sensitivity": 12.2,
+    "self_knowledge": 1.8,
+    "timestamp": "2025-10-28T13:24:19.996186"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Adam — это метод оптимизации, который combines предыдущие два метода: RMSProp (RMS Propagation) и Momentum. Adam был разработан для решения проблем с корректностью学习speed. Этот метод учитывает то, что седловые точки вMultivariateSpace можно рассматривать как линейные проблемы, а не точки минимума или максимума. В этом методе вычисляется общее скорость обучения, а также корреляция между learnRate и learning rate для каждого измерения на задаче. Это позволяет Adam оптимизировать学习 speed в одновременной упрощенности, как RMSProp, но с более корректным определением дистанции спуска для каждого из измерений в многомерном пространстве.",
+      "rating": ""
+    }
+  ]
+}

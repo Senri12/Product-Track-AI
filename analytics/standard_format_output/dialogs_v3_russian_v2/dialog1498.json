@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1498",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 38.8,
+    "precision": 42.1,
+    "recall": 46.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 26.2,
+    "hallucination": 9.5,
+    "faithfulness": 34.9,
+    "noise_sensitivity": 19.1,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.038259"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To find the minimum value of a function involving sum of squares by finding the gradient and setting it to zero isn't straightforward for large models with many parameters. Instead, techniques like Adagrad adjust the learning rate for each parameter based on their historical gradients, providing an adaptive scaling mechanism that helps escape local minima or plateaus.\n\n**Answer:**\n\nTo minimize a function involving sum of squares by finding the gradient and setting it to zero isn't feasible for large models due to issues with parameter scaling. Instead, techniques like **Adagrad** automatically adjust the learning rate for each parameter based on their historical gradients, making it safer to find the minimum value even when parameters are on different scales.\n\n```lean4\ntheorem adjagrad_zero: ∀ y₁ y₂ : ℝ → ℝ\n  η : ℝ := (1 / 2) * 0\n  ε : ℝ := 1e-8\n  h₁ : (fun a ↦ a.g ⨯ y₁ a).sum = 1 := by\n  intro y₁ y₂ η ε h₁\n  have h₂ : (fun a ↦ a.g ⨯ y₂ a).sum = 0 := by\n    simp_all [dotprod, mul_comm]\n  linarith\n```",
+      "rating": ""
+    }
+  ]
+}

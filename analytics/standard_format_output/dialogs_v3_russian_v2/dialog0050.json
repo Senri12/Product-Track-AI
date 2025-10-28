@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0050",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 31.4,
+    "precision": 33.2,
+    "recall": 47.1,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.9,
+    "hallucination": 11.7,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.9,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.069394"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стochastic gradient descent (SGD) — это метод оптимизации, который использует градиент из рандомногоbatchа данных для minimизации функции потерь в нейронных сетях. Основные параметры SGD включают:\n\n1. **Learning rate (η)**: Средняя скорость обучения.\n2. **Batch size**: Количество объектов из train set, используемое в один batch.\n3. **Momentum coefficient (γ)**: Пecе по градиенту в momentumSGD, добавляя инерцию к последующим gradient computations.\n\n**Основные моменты SGD:**\n\n- SGD работает на рандомныхbatchах данных и обновляет веса с помощью формулы:\n  $$v_t = \\gamma v_{t-1} - \\eta \\nabla L(\\omega)$$\n  $$\\omega = \\omega + v_t$$\n\n**Потенциальные alternatives:**\n\n- Batch-SGD использует все данные для вычисления г gradiente, что позволяет усилить скорость обучения и избежатьOverfitting.\n- SGD с MOMENTUMSGD добавляет инерцию (momentum), что позволяет скатывать в направлении г gradiente без перегрева.\n\n**Важность выбора параметров:**\n\n- Learning rate determines speed of initial gradient descent.\n- Batch size affects convergence and noise in gradient estimates.\n- Momentum coefficient affects stability and convergence speed.\n\n**Преимущества и недиапазоны SGD:**\n\n- Very popular due to its simplicity, efficiency, and effectiveness on large datasets.\n- Common implementations include scipy.optimize.SGD.\n\n**Comparing SGD with MomentumSGD:**\n\n- SGD provides faster initial training but may face issues with oscillations in complex landscapes.\n- MomentumSGD reduces these oscillations by incorporating momentum, leading to more stable training.\n\n**Conclusion:**\n\nSGD основа для оптимизации в нейронных сетях. Основные параметры — learning rate, batch size, momentum coefficient. MomentumSGD improves stability and flexibility compared to SGD with momentum.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0212",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 28.1,
+    "precision": 35.0,
+    "recall": 31.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.983821"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Количество соседей, взятых за основу к-ном neighbor-neighbors (k-NN), можно определить по следующей формуле:\n\nкНН = |С neighboring neighbors| = k \\* |Окружность neighbors| = k \\* 0,5 \\* общее количество neighbours\n\nДавайте проанализируем этот уравнение:\n\n* k — количество соседей (например, на одной линии или в прямоугольном квадрате).\n* |С neighboring neighbors| — количество соседей внутри этого круга (например, во внешнем полюсе круга или на перпендикулярных отрезках).\n* |Окружность neighbors| — общее количество соседей (так как все они равны).\n\nОбратите внимание, что количество соседей внутри одного круга одинаково, поскольку заEvery neighbor has every other neighbor in the same circle. \n\nТаким образом, можно сделать вывод:\n\nкНН = k \\* 0,5 \\* |Окружность neighbors| = к/2 \\* |С neighboring neighbors|\n\nЭто означает, что количество соседей, взятых за основу k-ном neighbor-neighbors, depends на общее количество соседей и размер круга.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0088",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 34.6,
+    "precision": 34.9,
+    "recall": 45.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.9,
+    "hallucination": 11.9,
+    "faithfulness": 32.7,
+    "noise_sensitivity": 18.6,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.089128"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для оптимизаторов в нейронных сетях Adagrad применяетсяlearning rate для каждого параметра на каждом шаге. ФормулыAdagrad:\n\n\\[ \\theta_{t+1,i} = \\theta_t,i - \\frac{\\eta}{\\sqrt{G_{t-1,i} + \\varepsilon}} \\cdot g_{t,i} \\]\n\nгде:\n- \\( G_{t-1,i} \\) — сумма квадратов градиентов по параметру \\( i \\) за все предыдущие шаги.\n- \\( g_{t,i} \\) — гradиент по параметру \\( i \\) на текущем шаге.\n- \\( \\eta \\) — learning rate, global для этого этапа оптимизатора.\n- \\( \\varepsilon \\) — константа для предотвращения нegative division by zero.\n\n**Пример вычисленияlearning rates:**\n\nДано:\n- \\( G_{t-1,i} = 4 \\)\n- \\( g_t = 2 \\)\n- \\( \\eta = 0.1 \\)\n- \\( \\varepsilon = 1e-8 \\)\n\n1. **Learning rate для параметра \\( i \\) на Current шаг:**\n   \\[ \\eta_{ii} = \\frac{0.1}{\\sqrt{4 + 1e-8}} \\times 2 \\approx \\frac{0.1}{2} \\times 2 = 0.1 \\]\n\n2. **Learning rate для параметра \\( i \\) на Next шаг:**\n   \\[ \\eta_{i+1,i} = \\frac{0.1}{\\sqrt{4 + (2)^2 + 1e-8}} \\approx \\frac{0.1}{\\sqrt{8 + 1e-8}} \\approx \\frac{0.1}{2.82842712474619} \\approx 0.03535464677 \\]\n\n**Ответ:**\n- Learning rate для параметра \\( i \\) на Current шаг: \\( 0.1 \\)\n- Learning rate для параметра \\( i \\) на Next шаг: \\( \\approx 0.03535 \\)\n\nТаким образом,learning rate Adagrad применяется к каждому параметру в зависимости от суммы квадратов градиентов, что позволяет адаптировать learning rate для каждого parameter.",
+      "rating": ""
+    }
+  ]
+}

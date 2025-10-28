@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2269",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 34.5,
+    "precision": 38.6,
+    "recall": 38.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.955186"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-fitting — это явление в machine learning, когдаモデル слишкомtightательноfit himself к данным, что приводит к неэффективности и предсказательной точности. Вместо того, чтобы modelo с большим количествомTraining data и способностью выразить сложную закономерность как можно более точно, онToo close to the training data and unable to generalize well.\n\nКогда model too tightly fit's data, он не может распознать и предсказывать новую информацию, что приводит к:\n\n1. Сокращению скорости обучения: Модель требуется больше времени, чтобы learns from new data, что снижает его производительность.\n2. Недаваемость значений: Модель не может предсказать значения, которые могут появляться в будущем, поскольку он слишком тесно связан с данными от training period.\n\nОvero-fitting имеет terrible consequences, таких как:\n\n* Значит, что модели могут предсказывать неверные или предвзятые данные.\n* Снижается точность предсказаний на новой информации.\n* Модели могут не быть способны распознавать закономерности и patterns, которые могут существовать в данных.\n\nЧтобы избежать оvero-fitting, нужно обеспечивать enough training data для моделей, чтобы они могли распознать и прогнозировать сложную закономерность.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1539",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 4.4,
+    "precision": 4.1,
+    "recall": 30.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.161258"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Naive Bayes is an algorithm commonly used for text classification, including spam detection in emails like letters. The core principle behind classifying texts as spam or not using the Naive Bayes approach is based on Bayes' theorem with a crucial simplification known as \"naivety.\"\n\nIn Naive Bayes for email classification, each word in an email is considered independent of all other words. This means that the presence of a specific word does not affect or influence the presence of any other word—a rather simplistic but computationally efficient approach to handling high-dimensional text data. \n\nHere's how you might build and apply this model for spam classification:\n\n1. **Preprocessing**: Clean your emails by converting all text to lowercase, removing punctuation, and possibly applying tokenization (breaking down the email into individual words).\n\n2. **Feature Extraction/Vectorization**: Convert these words into numerical features that the classifier can understand. One common method is using Bag of Words (BoW) or TF-IDF (Term Frequency-Inverse Document Frequency). BoW treats each email as a document and word frequency as a feature, while TF-IDF adjusts this by reflecting how important a word is to an email considering its overall length.\n\n3. **Model Training**: Utilize Naive Bayes' training phase where you would specify the class (spam or not spam) for each example in your dataset. This step involves calculating the prior probabilities of each class and conditional probabilities of each feature given that class. \n\n4. **Classification**: Once trained, use the model to classify new emails by computing the posterior probability for each class. The email is labeled as 'spam' if this value exceeds a pre-defined threshold for spam.\n\nFor your practice: Consider a set of 10 emails (5 are spam and 5 are not). You've already preprocessed them into word lists, and you have feature vectors (using TF-IDF) for each email. Now, let's build a Naive Bayes classifier with these features. \n\nThe quiz question would be:\n\n\"Given the following list of 10 emails and their corresponding TF-IDF feature vectors: \n\nEmail | TF-IDF Feature Vector\n1. \"Free money now!\" [0.2, 0.45, 0.8]\n2. \"Meeting at 3 PM.\" [0.1, 0.2, 0.3]\n3. \"Congratulations on your win!\" [0.6, 0.9, 0.7]\n...\n5. ...\n\nUsing the Naive Bayes algorithm with default parameters for simplicity, classify each email as either 'spam' or 'not spam'. Show your classification results and briefly explain how you arrived at these labels.\"\n\nRemember, this is a simplified exercise to give an understanding of how Naive Bayes works. In practice, you'd need more advanced techniques including smoothing methods like Laplace Smoothing to handle zero probabilities in the training data.",
+      "rating": ""
+    }
+  ]
+}

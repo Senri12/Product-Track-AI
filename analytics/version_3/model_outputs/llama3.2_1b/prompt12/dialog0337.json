@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как вычислить вероятность класса в Naive Bayes?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вероятность класса в Naive Bayes рассчитывается как произведение вероятностей предиктора и вероятности признака. Это можно выразить следующим образом:\n\nP(Klass=y) = P(X1|Klass=y) × P(X2|Klass=y) × ... × P(Xp|Klass=y)\n\nгде y ∈ Y — метка класса, а X1, X2, ..., Xp — предикторы.\n\nКроме того, вероятность признака P(Xi|Klass=y) можно рассчитать как:\n\nP(Xi|Klass=y) = P(Xi|Klass=y) × P(Y=y)\n\nгде Y — метка класса.\n\nВзяв произведение этих двух выражений для каждого i и сложив их, мы получим вероятность класса y:\n\nP(Klass=y) = ∑∑ P(X1|Klass=y) × P(X2|Klass=y) × ... × P(Xp|Klass=y)\n\nЭто тот же формулы, что и у Bayesa.",
+    "rating": ""
+  }
+]

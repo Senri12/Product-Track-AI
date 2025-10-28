@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0828",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое Keras?",
+    "f1": 31.1,
+    "precision": 37.0,
+    "recall": 56.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.737223"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Keras?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Keras — это высокоуровневый библиотека машинного обучения (ML) на основе графа, разработанная для быстрого прототипирования и исследовательской работы с нейронными сетями. Она была создана в департаменте медицинских исследований Университета Иерусалима и доступна как открытый исходный код под лицензией BSD.\n\nОсновное преимущество Keras заключается в его простоте, модульности и широкой поддержке глубинных и расширенных моделей нейронных сетей. Он работает поверх таких фреймворков, как TensorFlow или Theano, позволяя пользователям сосредоточиться на построении модели без необходимости разбираться в сложностях инфраструктуры.\n\nКлючевые особенности Keras включают:\n\n1. **Высокий уровень абстракции**: Позволяет легко создавать и экспериментировать с нейронными сетями.\n2. **Модульность**: Пользователи могут загружать предварительно обученные модели, а также использовать различные компоненты для создания сложных моделей.\n3. **Поддержка различных фреймворков**: В то время как его можно использовать в Keras, он работает на поверхностях таких фреймворков, как TensorFlow и Theano.\n\nПример простого использования Keras:\n\n```python\nimport keras\nfrom keras.models import Sequential\nfrom keras.layers import Dense\n\n# Создание пустой последовательной модели\nmodel = Sequential()\n\n# Добавление слоя с 32 нейронами и функцией активации ReLU, seguido шипом input_shape=784\nmodel.add(Dense(32, activation='relu', input_shape=(784,)))\nmodel.add(Dense(10, activation='softmax'))\n\n# Компиляция модели (используя Adam как оптимизатор с потерь MLP)\nmodel.compile(optimizer='adam',\n              loss='categorical_crossentropy',\n              metrics=['accuracy'])\n\nprint(model.summary())\n```\n\nВ этом примере мы создали простую модель последовательности для классификации изображений. Вы можете изменить параметры, добавлять больше слоев или экспериментировать с различными функциями активации и другими настройками.\n\nКлассические книги по Keras:\n- \"Deep Learning with Python: Second Edition\" от François Chollet.\n- \"Hands-On Machine Learning with Scikit-Learn and TensorFlow.\"\n\nПожалуйста, укажите, если вам нужно больше информации или конкретный вопрос о функциональности Keras.",
+      "rating": ""
+    }
+  ]
+}

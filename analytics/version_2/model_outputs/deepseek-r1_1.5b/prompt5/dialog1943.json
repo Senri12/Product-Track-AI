@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое learning rate?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Число Learning Rate — это параметр, который определяет, сколько шагов для Updates model parameters наeach iteration. В SGD (Stochastic Gradient Descent) и подобных методах градиентного descent, Learning Rate controlирует speed of parameter update.\n\nЕсли Learning Rate слишком велико, то модель может не сократиться после некоторых шагов (underfitting). Если Learning Rate слишком малый, это может привести к неприемvableной погрешности (high variance).\n\nДifferent types of Learning Rate:\n- Learning rate decay — каждый iteration уменьшает Learning Rate.\n- Momentum — добавляет шляпную производительность на каждом шаге.\n- Weight Decay — добавляет поправку для субъективных гиперпараметров.\n\nStrategies for changing Learning Rate:\n- Decreasing Learning Rate over time (step learning rate).\n- Adaptive Learning Rate Methods (Adam, RMSprop), которые automatically adjust Learning Rate based on gradient statistics.\n- Early stopping — используйте Learning Rate для оценки performance на пограничных данных.\n\nСпособы определения Learning Rate:\n- Основные гиперпараметры (batch size, Learning Rate range).\n- Визуализация процесса оптимизации.\n- Проверка performs on validation data.",
+    "rating": ""
+  }
+]

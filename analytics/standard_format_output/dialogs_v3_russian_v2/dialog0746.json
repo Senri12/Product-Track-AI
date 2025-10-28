@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0746",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 40.0,
+    "precision": 38.2,
+    "recall": 50.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.9,
+    "hallucination": 10.8,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 17.7,
+    "self_knowledge": 7.8,
+    "timestamp": "2025-10-28T13:24:20.285648"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Шаг в SGD (Stochastic Gradient Descent) для заданных параметров вычисляется по формуле $\\Delta w = -\\eta \\nabla L(w)$, где $\\eta$ - шаг обучения, а $\\nabla L(w)$ - градиент функции потерь $L(w)$.\n\nПусть у нас задана функция потерь $L(w) = w^2$, $w=3$, $\\eta=0.1$. Тогда градиент этой функции равен $\\nabla L(w) = 2w = 6$. Получим шаг обучения: $\\Delta w = -\\eta \\cdot \\nabla L(w) = -0.1 \\cdot 6 = -0.6$.\n\nТаким образом, после одного шага обучения значение веса $w$ уменьшится на 0.6 и станет равно $3-0.6=2.4$.",
+      "rating": ""
+    }
+  ]
+}

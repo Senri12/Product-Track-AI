@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0747",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 41.2,
+    "precision": 45.7,
+    "recall": 62.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.831992"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить новый вектор тока \\(v_t\\) при обновлении в контексте алгоритма momentum для оптимизации, необходимо следовать следующей формуле:\n\n\\[ v_t = \\gamma \\cdot v_{t-1} + \\eta \\cdot ∇L \\]\n\nгде:\n- \\(γ\\) (greedy factor) — это коэффициент momentum,\n- \\(v_{t-1}\\) — это вектор тока на предыдущем шаге,\n- \\(∇L\\) (градиент потерь) — это градиент потерь функции.loss_function с respecto к параметрам модели,\n- \\(η\\) (коэффициент обучения) — это коэффициент обучения.\n\nДаны значения:\n- \\(γ = 0.9\\),\n- \\(v_{t-1} = 1\\),\n- \\(∇L = 2\\),\n- \\(η = 0.1\\).\n\nПодставьте эти значения в формулу:\n\n\\[ v_t = 0.9 \\cdot 1 + 0.1 \\cdot 2 \\]\n\\[ v_t = 0.9 + 0.2 \\]\n\\[ v_t = 1.1 \\]\n\nТаким образом, новый вектор тока \\(v_t\\) составляет 1.1.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0373",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
+    "f1": 32.4,
+    "precision": 38.6,
+    "recall": 39.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.889427"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы рассчитать значение F(да), нам нужно использовать формулу:\n\nF(да) = С(Т) - Т + 237\n\nгде C(Т) — средняя скорость дошкольника при температуре T°C, а F(да) — значение средней температуры во времяTests.\n\nНапример, если средняя скорость дошкольника при_tempT°C = -5°C и средняя температура во время Tests составляет C(T) = 20°C, то:\n\nF(да) = С(Т) - Т + 237\n= -5 - 20 + 237\n= 212\n\nСледовательно, значение F(да) для этого例ла составляет 212 градусов Солнца.",
+      "rating": ""
+    }
+  ]
+}

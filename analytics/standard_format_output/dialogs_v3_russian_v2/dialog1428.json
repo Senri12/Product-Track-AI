@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1428",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Keras?",
+    "f1": 33.7,
+    "precision": 39.6,
+    "recall": 44.6,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.3,
+    "hallucination": 10.5,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 19.0,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.022642"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Keras?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Оптимизаторы – это методы для минимизации функций ошибки в machine learning models. Они позволяют обновлять параметры model, чтобы сократить ошибку и приcloseтись к minimize-урованию. Оптимизаторы разнообразны и depend on various parameters and properties.\n\nНекоторые ключевые оптимизаторы включают:\n\n1. **Momentum**: Добавляет предыдущий шаг с коэффициентом Momentum, чтобы уменьшить躁ность и обновлятьlearning rate.\n\n2. **RMSprop (Adadelta)**: Учитывает градиенты на Average, что позволяет избежать роста learning rate.\n\n3. **Adam**: Адаптивный optimizer с использованием градиентов по всем релевантным параметрам и Combine了许多 методов, предусловно вычисляю более точный gradient.\n\nКаждый оптимизатор имеет свои особенности в работе с функцией ошибки. Вы можете выбрать оптимизатор по требованиям задачи или традиционно из упомянутых типов.",
+      "rating": ""
+    }
+  ]
+}

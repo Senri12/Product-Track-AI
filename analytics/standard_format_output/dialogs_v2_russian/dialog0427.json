@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0427",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 29.0,
+    "precision": 32.0,
+    "recall": 42.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.938480"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вероятность класса в классе Naive Bayes определяется выражением:\n\nP(C) = ∏ P(x_i|C_i) \\* P(C_i)\n\nгде P(C_i) — вероятность класса C_i, а P(x_i|C_i) — вероятность класса i при классе C_i.\n\nДля наивного байесовского класса это можно упростить до:\n\nP(C) = ∏ (P(x|C)/P(x)) \\* P(C)\n\nгде P(x|C) — нормальная распределение, а P(x) — общая вероятность.\n\nВ этом случае мы можем предположить, что для каждого класса C_i имеется константа P(x), которая определяет частоту признаков x в классе C_i. Это можно представить как:\n\nP(x_i|C_i) = k_i / N\n\nгде k_i — количество признаков x_i, а N — общее количество признаков.\n\nИспользуя это, мы можем записать выражение для вероятности класса в классе Naive Bayes как:\n\nP(C) = ∏ (k_i / N / P(x)) \\* P(C)\n\nгде P(x) — общая вероятность.\n\nТеперь давай попробовать сделать вывод, что P(x_i|C_i) = k_i / N и P(C) - P(x).",
+      "rating": ""
+    }
+  ]
+}

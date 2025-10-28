@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0028",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 34.9,
+    "precision": 37.3,
+    "recall": 45.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.9,
+    "hallucination": 11.9,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.076617"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В our примере с Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8:\n\nИспользуя формулу Adagrad:\n$$\nv_{t} = - \\frac{\\eta}{\\sqrt{G_{t-1} + \\varepsilon}} g_{t}\n$$\n\nПодставляем значения:\n$$\nv_{t} = - \\frac{0.1}{\\sqrt{4 + 1e-8}} × 2 ≈ - (0.1 / 2.00000005) × 2 ≈ -0.09998\n$$\n\nИтак, изменение параметра ii на шаг t будет:\n$$\n\\Delta \\theta_{t,i} = v_{t} ≈ -0.09998\n$$\n\nТаким образом, параметр ii будет уменьшаться на приблизительно 0.1during training.",
+      "rating": ""
+    }
+  ]
+}

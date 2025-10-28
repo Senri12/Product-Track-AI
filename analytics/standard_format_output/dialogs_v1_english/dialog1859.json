@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1859",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.009416"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To compute the learning rate decay with initial η₀ = 0.1 at t=5, over a total of 10 iterations (T=10), using linear decay:\n\n- The number of decay steps D is T - (t₀) + 1 = 10 - 5 + 1 = 6.\n\nBut this depends on whether the initial rate η₀ is included in the count. If starting from t=5, the steps are 5,6,7,8,9,10 (six steps), then:\n\n- For each step t >=5:\n  η(t) = η₀ - (η₀ / D) * (t - t₀)\n  η(5) = 0.1\n  η(6) = 0.1 - (0.1/6)*(6-5)=0.0833\n  η(7)=0.0667\n  ... and so on until η(10)=0.\n\nThus, the learning rate decreases linearly from 0.1 at t=5 to 0 at t=10 after 6 steps.",
+      "rating": ""
+    }
+  ]
+}

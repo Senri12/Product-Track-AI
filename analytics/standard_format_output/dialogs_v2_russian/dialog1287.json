@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1287",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 41.1,
+    "precision": 41.1,
+    "recall": 52.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.270200"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Для вычисления скорости v_t в алгоритме Momentum необходимо применить уравнение обновления параметров:\n\nv_t = γ * v_{t-1} + ∇L\n\nВ нашем случае задано:\n\n* γ = 0.9\n* v_{t-1} = 1\n* ∇L = 2\n* η = 0.1 (эта константа не участвует в этом уравнении, но я включаю ее для полноты картины)\n\nПодставляя это в уравнение:\n\nv_t = γ * v_{t-1} + ∇L\n\nv_t = 0.9 * 1 + 2 = 3.9\n\nСогласно данным, скорость v_t равна 3.9.",
+      "rating": ""
+    }
+  ]
+}

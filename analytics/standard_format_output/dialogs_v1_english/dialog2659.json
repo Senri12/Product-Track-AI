@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2659",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 29.4,
+    "precision": 25.5,
+    "recall": 48.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.853160"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-fitting là một vấn đề thường gặp trong các mô hình chính thức, đặc biệt là khi chúng được thiết kế để dự đoán hoặc phân tích dữ liệu. Trong khi mục tiêu của các mô hình chính thức là để dự đoán hoặc dự báo một lượng nhất định về giá trị của một biến phụ thuộc vào nhiều yếu tố khác nhau (như dữ liệu đào tạo) thì over-fitting lại là tình trạng mà mô hình đã quá phù hợp với dữ liệu đào tạo, dẫn đến những kết quả sai lệch hoặc giả định không đủ chính xác.\n\nHãy xem một ví dụ:\n\nGiả sử bạn có một mô hình dự đoán giá của một công ty cổ phần dựa trên dữ liệu 10 năm về giá trị hàng ngày. Nếu mô hình này đã được đào tạo lên từ dữ liệu 100.000 trường hợp (10 năm x 10.000 hàng ngày), thì nó có thể quá phù hợp với dữ liệu đào tạo và dẫn đến những kết quả sai lệch khi dự đoán giá của công ty vào một thời điểm cụ thể trong tương lai.\n\nOver-fitting có thể xảy ra do một số lý do sau:\n\n- Sử dụng quá nhiều dữ liệu đào tạo: Nếu mô hình được đào tạo lên từ quá nhiều dữ liệu, nó sẽ mất khả năng thích nghi với những thay đổi bất ngờ trong thị trường hoặc môi trường.\n- Không có đủ biến số dự đoán: Mô hình chỉ có thể dự đoán hiệu suất của công ty dựa trên một số biến số nhất định và không có khả năng dự đoán hiệu suất khác được.\n- Sử dụng các thuật toán quá phức tạp: Các mô hình quá phức tạp dễ dẫn đến over-fitting nếu chúng không phù hợp với dữ liệu đào tạo.\n\nĐể tránh over-fiting, các kỹ sư thường sử dụng các biện pháp như:\n\n- Sử dụng mô hình chính thức và xác định khoảng thời gian để phân loại giữa mô hình đào tạo và dự báo.\n- Điều chỉnh thuật toán hoặc số lượng dữ liệu đào tạo.\n- Sử dụng các chiến lược dự đoán khác, chẳng hạn như dự đoán dựa trên hành vi thay đổi theo thời gian (time series forecasting).\n- Đánh giá độ chính xác của mô hình trước khi triển khai.",
+      "rating": ""
+    }
+  ]
+}

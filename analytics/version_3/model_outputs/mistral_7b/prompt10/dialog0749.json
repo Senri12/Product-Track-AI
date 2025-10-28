@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": " Для линейного обучения speed (learning rate) будет уменьшаться следующим образом:\n\neta = eta0 * t / T\n\nгде eta0 - начальное значение learning rate, t - текущая итерация, T - общее количество итераций.\n\nВ данном случае:\n\neta = 0.1 * 5 / 10 = 0.025 или 2.5% от начального значения.",
+    "rating": ""
+  }
+]

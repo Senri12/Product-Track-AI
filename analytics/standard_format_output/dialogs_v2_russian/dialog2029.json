@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2029",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.112389"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "overload-fitting определяется как ситуация, Where model performs well on the training data but poorly on new, unseen data. This occurs when the model is too complex or when there's not enough training data to generalize.\n\n### Step-by-Step Explanation:\n\n1. **Understanding Training and Test Data**: The over-fitting phenomenon arises when a machine learning model achieves excellent performance on the training dataset while performing poorly on an entirely independent test dataset.\n\n2. **Complexity of Model**: Overly complex models, which have too many parameters or decision boundaries, tend to capture noise in the training data rather than underlying patterns. This leads to overfitting because such models are not generalizable to new data.\n\n3. **High Variance Models**: Over-fitting is often associated with high variance models, which make large assumptions about the training data and do not generalize well to unseen data.\n\n4. **Leave-One-Out Cross-Validation (LOOCV)**: A technique used to detect overfitting by repeatedly using different subsets of data for evaluation. If a model consistently performs poorly on LOOCV, it suggests high variance.\n\n5. **Regularization**: Techniques like L1 regularization can help prevent overfitting by adding a penalty to the complexity of the model.\n\n### Final Answer:\n overload-fitting occurs when a model's performance on training data is superior compared to its ability to generalize to new, unseen data, often due to overly complex models or insufficient training data.",
+      "rating": ""
+    }
+  ]
+}

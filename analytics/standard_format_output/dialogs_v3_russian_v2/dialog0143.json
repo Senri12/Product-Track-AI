@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0143",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 39.8,
+    "precision": 42.2,
+    "recall": 51.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.8,
+    "hallucination": 8.7,
+    "faithfulness": 35.0,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:20.057673"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Что такое learning rate?**\n\nLearning rate — это параметр в нейронных сетях, который controlирует скорость обучения. Он определяетhow quickly model parameters are updated during the optimization process and typically controls the step size in gradient descent.\n\nИспользуемые параметры:\n- **size momentum ( impuls)**:this parameter determines how much we weigh previous gradients before current gradient. It's often set to a value like 0.9 or 0.5.\n- **learning rate (lr)**: this is the actual parameter that scales the gradient and adds it to model parameters, controlling their step size.\n\n**Пример метода mometums:**\nomega = omega + momentum * gradient\ngradient = grad(L(omega))\n\n**Popularны методы:**\n- SGD (stochastic gradient descent) — learning rate can be large or small.\n- Momentum — helps accelerate convergence and reduce oscillations in optimization.\n- Adam — combines momentum with averaged gradients across batches.\n\n**Дополнительные аспекты:**\n- Learning rate can vary per parameter, but often combined with size momentum.\n- Regularization techniques (weight decay) help prevent overfitting by penalizing large weights.\n- Batch normalization helps with learning rate optimization and stabilizes training.",
+      "rating": ""
+    }
+  ]
+}

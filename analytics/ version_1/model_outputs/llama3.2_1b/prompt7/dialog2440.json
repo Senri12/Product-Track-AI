@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем разница между k-NN и взвешенным k-NN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "К-НН (кnearest neighbor) и взвешенный к-НН — это два различных алгоритмов признания, используемые для выявленияclosest neighbor с заданной точностью.\n\n**K-NN**\n\nK-NN — это метод, который использует ближайшие neighbors с минимальной разностью (d) между различными членами данных. В частности, для каждого new observation (X) он определяет k closest neighbors из existing observations:\n\nХ - nearest neighbor\n\nК-NN works на основе следующей основы:\n\n* New observation X находится в средней точке набора neighbor.\n\nВзвешенный к-НН\n\nВзвешанный k-НН — это метод, который взвешивает важность каждой neighbors для определенияclosest neighbor с заданной точностью. Это achieved, используя математические функции коэффициентов, которые определяются следующими формулами:\n\nП (nearest neighbor) = \\frac{\\sum|D(X,y_i)|}{к}\n\nгде D(x,y_i) — расстояние между new observation X и existing observation y_i.\n\nОкончательный ответ: \"К-NN — это метод, который выбирает к closest neighbors с минимальной разностью, тогда как взвешенный k-НН — это метод, который взвешивает важность cada neighbor для определенияclosest neighbor.\"",
+    "rating": ""
+  }
+]

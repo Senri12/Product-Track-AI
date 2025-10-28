@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "For the given parameters and method (linear decay):\n\n- Initial learning rate η₀ = 0.1\n- Training steps t = 5: learning rate remains at η₀ until step 5\n- Total training steps T = 10: from step 6 to 10, η remains constant\n\nTherefore, the learning rate for all 10 training steps is:\n\nη = 0.1",
+    "rating": ""
+  }
+]

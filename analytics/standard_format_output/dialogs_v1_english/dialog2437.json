@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2437",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 28.1,
+    "precision": 25.6,
+    "recall": 49.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.934585"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вероятность класса Naive Bayes определяется формулой:\n\nP(class) = P(feature1)*P(feature2)*...*P(featureN)\n\nгде p(featurei) — частота features i, а P(class) — вероятность класса.\n\nНапример, если у нас есть набор данных с 4featureами (т.е._feature1, feature2, feature3 и feature4), а для каждого feature мы имеем:\n\n* P(feature1): 0,7\n* P(feature2): 0,9\n* P(feature3): 0,8\n* P(feature4): 0,6\n\nТеперь, suppose that class1 является вероятностью, что data belongs to Class A (feature 1 и feature 2), а class2 — вероятность, что data belongs к Class B (feature 3 и feature 4).\n\nP(class1) = 0,7*0,9 = 0,63\nP(class2) = 0,8*0,6 = 0,48\n\nТеперь мы можем вычислить вероятность класса Naive Bayes:\n\nP(class|feature1,feature2) = P(class1)*P(feature1)*P(feature2)/P(feature1)*P(feature2)*...*P(featureN)\n\nгде P(featurei) — частота features i.\n\nПоскольку в нашем наборе данных 6 featureов (т.е..feature1, feature2, feature3, feature4, feature5 и feature6), мы можем вычислить вероятность класса как:\n\nP(class|feature1,feature2) = 0,63*0,9*0,9/0,7*0,9*0,9*0,8*0,6\n\nЭта формула показывает, что вероятность класса Naive Bayes depends на вероятности feature и их взаимосвязи между собой. Если feature имеют связанные отношения, то вероятность класса будет увеличенна.\n\nОднако, чтобы вычислить вероятность класса Naive Bayes в реальном сценарии, необходимо учитывать большую часть предоставленной информации. Например, если у нас есть данные о том, что data принадлежит Class A (feature 1 и feature 2), а также о том, что Class B (feature 3 и feature 4) — Class C (feature 5 и feature 6), то вероятность класса Naive Bayes может быть рассчитана следующим образом:\n\nP(class|feature1(feature2(feature1(feature2(feature1(feature1(feature0(feature1(feature0(feature0(feature0)))))))))) = P(classA)*P(feature1)*P(feature2)*...*P(featureN)\n\nгде P(featurei) — частота feature i.\n\nЭта формула показывает, что вероятность класса Naive Bayes зависит от вероятностей feature и их взаимосвязей между собой. Если.feature имеют связанные отношения, то вероятность класса будет увеличенна.",
+      "rating": ""
+    }
+  ]
+}

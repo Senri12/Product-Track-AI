@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0837",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 49.5,
+    "precision": 51.6,
+    "recall": 61.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.780313"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить обновление скорости (v_t) для алгоритма momentum при оптимизации функции по градиенту, мы можем использовать следующую формулу:\n\n\\[ v_t = \\gamma \\cdot v_{t-1} + \\eta \\cdot \\nabla L \\]\n\nгде:\n- \\( v_t \\) — обновленная скорость,\n- \\( \\gamma \\) (также известный как коэффициент momentum) равен 0.9 в данном случае,\n- \\( v_{t-1} \\) — скорость предыдущей итерации, которая равна 1,\n- \\( \\eta \\) (соответствует калибруированной обучающейся скорости или шагу обновления learned rate) равен 0.1,\n- \\( \\nabla L \\) является градиентом функции по поводу потери на текущей итерации, который составляет 2.\n\nПодставив данные значения в формулу, получаем:\n\n\\[ v_t = 0.9 \\cdot 1 + 0.1 \\cdot 2 \\]\n\\[ v_t = 0.9 + 0.2 \\]\n\\[ v_t = 1.1 \\]\n\nТаким образом, обновленная скорость \\( v_t \\) равна 1.1 при данных значениях для алгоритма momentum.",
+      "rating": ""
+    }
+  ]
+}

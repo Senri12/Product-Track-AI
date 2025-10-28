@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2669",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 29.4,
+    "precision": 25.5,
+    "recall": 48.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.855120"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить learning rate decay (β), используя формулу:\n\nβ = η0 \\* e^(-r \\* t)\n\nпоскольку r представляет собой обратную величину времени (t).\n\nДанные: η0 = 0,1 (начальная цена), t = 5 (время, за которое выcheinется) и T = 10 (общее время)\n\nСначала вычисляем обратную величину r:\n\nr = -ln(β / η0)\n= -ln(0,1 / 0,1)\n= -ln(1)\n= 0\n\nТеперь мы можем подставить значения в формулу:\n\nβ = η0 \\* e^(-r \\* t)\n= 0,1 \\* e^(0 \\* 5)\n= 0,1 \\* e^0\n= 0,1 \\* 1\n= 0,1\n\nИтак, learning rate decay (β) составит 0,1.",
+      "rating": ""
+    }
+  ]
+}

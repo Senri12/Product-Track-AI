@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для вычисления шага в SGD для L(w) = w², w = 3, η = 0.1:\n\n1.  **Вычислите градиент L(w) по w:**\n    *   L(w) = w²\n    *   ∂L(w)/∂w = 2w\n\n2.  **Вычислите градиент в текущей точке:**\n    *   При w = 3, ∂L(w)/∂w = 2 * 3 = 6\n\n3.  **Вычислите шаг:**\n    *   Шаг = Learning rate * Градиент = η * ∂L(w)/∂w = 0.1 * 6 = 0.6\n\nОтвет: 0.6\n",
+    "rating": ""
+  }
+]

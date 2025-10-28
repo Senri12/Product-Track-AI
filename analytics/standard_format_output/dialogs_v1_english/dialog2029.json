@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2029",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.074670"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-fitting is a phenomenon observed in machine learning models where they achieve excellent performance on the training data but exhibit poor generalization to unseen data. This occurs due to the model becoming overly complex, capturing noise rather than the underlying patterns of the data.\n\nKey components contributing to over-fitting include:\n\n1. **High Bias**: The model is too simple, missing important details and capturing noise. This leads to poor predictions on new data.\n2. **High Variance**: The model's sensitivity to training data fluctuations increases, causing unstable predictions.\n3. **Both High Bias and High Variance**: These together result in poor generalization.\n\nTo detect over-fitting:\n- Use metrics like mean squared error or classification accuracy on validation sets during cross-validation.\n- Consider techniques such as pruning neural networks for reduced complexity.\n\nPreventing over-fitting involves simplifying models, using regularization, and employing early stopping to limit model complexity.",
+      "rating": ""
+    }
+  ]
+}

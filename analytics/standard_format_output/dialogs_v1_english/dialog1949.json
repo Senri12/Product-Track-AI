@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1949",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.017145"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To compute the learning rate decay with a linear schedule where η₀ = 0.1, t = 5, and T = 10, we can follow this approach:\n\n- The initial learning rate is η₀ = 0.1.\n- After completing 5 steps (t=5), the learning rate halves to η₁ = 0.05.\n- This halving occurs for each subsequent step until t reaches T=10.\n\nThus, the learning rates for each step are as follows:\n\n| Step | Learning Rate |\n|------|----------------|\n| 0    | 0.1             |\n| 1    | 0.05            |\n| 2    | 0.05            |\n| ...  | ...            |\n| 5    | 0.05            |\n| 6-9  | 0.05            |\n| 10   | 0.05            |\n\nThis linear decay ensures that the learning rate reduces by half after every 5 steps, maintaining a consistent reduction pattern throughout the training period.",
+      "rating": ""
+    }
+  ]
+}

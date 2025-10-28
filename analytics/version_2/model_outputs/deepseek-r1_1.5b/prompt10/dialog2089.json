@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое over-fitting?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Over-fitting — это то, когда Our model оценивается на(train) с высокой точностью, но не так же на(test). Важно понимать, что Our model learn too much from train data and starts to look for patterns in noise. Это может привести к убымам или ложным выводам при измерении actual predictive power.\n\nМы можем сократить over-fitting в несколько способов:\n\n1. **Зависимость от подразделений данных train**: Используя cross-validation, мониторируем performance our model на разбивках train data, чтобы убедиться, что it's not over-fitting.\n\n2. **Rule of thumb**: Если our sample size larger than 10x allows reduction of over-fitting when required, и rule of thumb suggests using 10x larger train data for small datasets.\n\n3. **Model complexity**: Учитывая Our model's complexity and its learning patterns, ensuring it doesn't learn too much from train data.\n\nТеперь мы можем применить эти знания на практике:\n\n- Используя cross-validation для мониторинг performance on different subsets of train data.\n- Применяя rule of thumb: larger sample size when possible.\n- Учитывая model complexity to avoid over-fitting.\n\nТаким образом, мы можем учитывать over-fitting и сократить его effects, предотвращив их влияние на реальную predictive power.",
+    "rating": ""
+  }
+]

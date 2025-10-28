@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0418",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 30.8,
+    "precision": 37.7,
+    "recall": 36.9,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 30.6,
+    "hallucination": 18.7,
+    "faithfulness": 29.5,
+    "noise_sensitivity": 9.6,
+    "self_knowledge": 1.9,
+    "timestamp": "2025-10-28T13:24:19.910553"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Используя заданные значения для Adagrad:\n\nG_{t-1,ii} = 4\ng_t = 2\nη = 0,1\nε = 1e-8\n\nРасчетное уравнение для g_t:\n\nг(t) = г(t-1) - η * градиент на шаге t\n= г(t-1) - η * 2*g(t)\n= г(t-1) - 2η*g(t)\n\nПодставив заданные значения, получим:\n\nг(0) = 4 – 2е0,1*2*4 = 4–8,2 = –4,2\nг(1) = –4,2 – 2е0,1*2*(-4,2) = –4,2 + 13.6 = 9,4\n\nИтак, в Adagrad у нас есть:\n\nG_{t-1,ii} = 4\ng_t = 2\nη = 0,1\nε = 1e-8\nг(0) = -4,2\nг(1) = 9,4",
+      "rating": ""
+    }
+  ]
+}

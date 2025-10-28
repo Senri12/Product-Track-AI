@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Пусть $P(\\text{win})$ — вероятность thắngнения, а $P(\\text{not win})$ — вероятность поражения.\n\nНапомним формулы распределения Поулета:\n\n$$\n\\begin{выровнять*}\n P(\\text{win}) &amp;= \\frac{\\sum_{i}f_i}{T}, \\\\\n P(\\text{not win}) &amp;= 1 - P(\\text{win}),\\\\\n P(\\text{спам}|(\\text{win})) &amp;= \\frac{P(\\text{win}\\cap\\text{спам})}{P(\\text{win})},\\\\\n P(\\text{спам}|(\\text{not win})) &amp;= \\frac{P(\\text{not win}\\cap\\text{спам})}{P(\\text{not win})}.\n\\end{выровнять*}\n$$\n\nНачнем с нахождения произведений:\n\n$$\n\\begin{выровнять*}\n P(\\text{win}) &amp;= \\frac{\\sum_{i}f_i}{T}, \\\\\n P(\\text{not win}) &amp;= 1 - P(\\text{win}).\\\\\n P(\\text{спам}|(\\text{win})) &amp;= \\frac{P(\\text{win}\\cap\\text{спам})}{P(\\text{win})}\\\\\n P(\\text{спам}|(\\text{not win})) &amp;= \\frac{P(\\text{not win}\\cap\\text{спам})}{P(\\text{not win})}.\n\\end{выровнять*}\n$$\n\nПрименяя формулу распределения Поулета для $\\mu_i$ (масштабы при игре) и $f_i$ (потерянные доходы, учитывая, что в спам-примере выигрыш равен 100), мы имеем:\n\n$$\n\\begin{выровнять*}\n P(\\text{win}) &amp;= \\frac{\\sum_{i}P(\\mu_i)}{T}, \\\\\n P(\\text{not win}) &amp;= 1 - P(\\text{win}).\\\\\n P(\\text{спам}|(\\text{win})) &amp;= \\frac{\\sum_{i}f_i}{\\sum_{j}P(\\mu_j)},\\\\\n P(\\text{спам}|(\\text{not win})) &amp;= \\frac{\\sum_{j}f_j}{1-\\sum_{i}P(\\mu_i)}.\n\\end{выровнять*}\n$$\n\nНаконец, чтобы найти $\\boxed{P(win|spam)}$, мы используем формулу:\n\n$$\n\\begin{выровнять*}\n P(win|спам) &amp;= \\frac{\\sum_{i}f_i}{\\sum_{j}P(\\mu_j)},\\\\\n P(win|спам) &amp;= \\frac{\\sum_{i}f_i}{\\sum_{j}\\min(P(\\text{win}|(1-i)),1-P(\\text{win}|(1-j)))},\n\\end{выровнять*}\n$$\n\nСледовательно, $\\boxed{P(win|спам)=\\frac{\\sum_{i}f_i}{\\sum_{j}\\min(P(\\text{win}|(1-i)),1-P(\\text{win}|(1-j)))}.$",
+    "rating": ""
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1490",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 38.8,
+    "precision": 42.1,
+    "recall": 46.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 26.2,
+    "hallucination": 9.5,
+    "faithfulness": 34.9,
+    "noise_sensitivity": 19.1,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.036759"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Stochastic Gradient Descent (SGD) is an iterative optimization algorithm used in machine learning for minimizing loss functions. It is particularly effective with large datasets due to its computational efficiency. Here's a structured overview of SGD:\n\n### Key Components of SGD:\n1. **Objective**: Minimize the loss function by adjusting model parameters.\n2. **Optimization Approach**: Uses gradient descent, which updates parameters based on gradients (derivatives) of the loss function.\n3. **Batch Size**: Unlike traditional Gradient Descent that processes all data at once, SGD uses a single or small batch of examples for each update.\n\n### Training Process:\n1. **Initialization**: Parameters are initialized with suitable values, often using techniques like Xavier or He initialization to improve convergence.\n2. **Iteration**: For each iteration (epoch):\n    - A random subset of data is selected as the current batch.\n    - Gradients based on this subset are computed.\n    - Model parameters are updated using these gradients and an optimization algorithm (e.g., SGD, often paired with AdamW).\n3. **Evaluation**: Performance on a validation set is monitored to assess overfitting or underfitting and adjust hyperparameters.\n\n### Challenges and Solutions:\n- **Local Minima Risk**: The stochastic nature of gradient estimation can lead to escaping local minima.\n- **Noise in Updates**: Reduces convergence speed compared to batch gradient descent.\n- **Learning Rate Tuning**: Includes adaptive methods (AdamW) that automatically adjust learning rates based on gradients.\n\n### Summary:\nSGD efficiently handles large datasets by processing only a subset of data per iteration, making it suitable for online learning and scenarios with memory constraints. Its effectiveness is underscored by its ability to escape local minima through randomization and the use of adaptive optimization techniques.",
+      "rating": ""
+    }
+  ]
+}

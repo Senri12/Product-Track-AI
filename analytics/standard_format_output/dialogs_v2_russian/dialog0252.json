@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0252",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 32.6,
+    "precision": 34.7,
+    "recall": 39.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.956768"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить расстояние между двумя точками в пространстве, мы используем формулу:\n\n\\(d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\\)\n\nгде \\(d\\) — расстояние, \\(x_1\\), \\(x_2\\) — координаты первой точки, а \\(y_1\\), \\(y_2\\) — координаты второй точки.\n\nИтак, чтобы найти расстояние между (1, 2) и (3, 4), мы воспользуемся этой формулой:\n\n\\(d = \\sqrt{(3 - 1)^2 + (4 - 2)^2} = \\sqrt{2^2 + 2^2}\\)\n\n\\(= \\sqrt{8}\\)\n\n\\(= \\boxed{2\\sqrt{2}}\\)",
+      "rating": ""
+    }
+  ]
+}

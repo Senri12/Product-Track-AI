@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0173",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.094808"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The learning rate in the context of gradient descent algorithms such as SGD (stochastic gradient descent) determines the step size at each iteration when updating model parameters to minimize a loss function. Here's a structured explanation:\n\n1. **Basic Gradient Descent Update**:\n   - The update rule is: \\( \\theta_{t+1} = \\theta_t - \\eta \\nabla_\\theta L(\\theta_t) \\)\n   - Where:\n     - \\( \\theta \\) are the model parameters.\n     - \\( \\eta \\) is the learning rate (step size).\n     - \\( \\nabla_\\theta L(\\theta_t) \\) is the gradient of the loss function with respect to \\( \\theta \\) at iteration \\( t \\).\n\n2. **Momentum in SGD**:\n   - Momentum adds a fraction of the previous weight update: \n     \\( v_{t} = \\gamma v_{t-1} - \\eta \\nabla_\\theta L(\\theta_{t-1}) \\)\n     \\( \\theta_t = \\theta_{t-1} + v_t \\)\n   - Where:\n     - \\( v \\) is the velocity (momentum term).\n     - \\( \\gamma \\) is the momentum coefficient.\n\n3. **Advanced Optimizers (e.g., Adam)**:\n   - Adam uses adaptive learning rates for each parameter, adjusting them based on initial gradients and parameters.\n   - Parameters like η0 (initial learning rate), T (time decay factor), and others are used to optimize convergence.\n\n4. **Learning Rate in Advanced Settings**:\n   - Learning rate can be fixed or adaptive.\n   - Momentum helps accelerate convergence but may require tuning of η0 and γ for optimal performance.\n   - In Adam, parameters like β1 (for exponential moving average) and β2 (for squared gradient moving average) are used to adjust parameter rates.\n\nIn summary, the learning rate in gradient descent algorithms like SGD with momentum and advanced optimizers determines the step size towards minimizing the loss function. Momentum adds a momentum term to accelerate convergence while potentially improving stability.",
+      "rating": ""
+    }
+  ]
+}

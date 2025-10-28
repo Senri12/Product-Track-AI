@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0626",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 32.6,
+    "precision": 40.3,
+    "recall": 52.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.817651"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Понял! Чтобы вычислить одно итерационное изменение веса (δw) с помощью метода стохастического градиентного спуска (SGD), нам нужно выполнить следующие шаги:\n\n1. Определить функцию.loss(w): L(w)=w^2\n2. Рассчитать частный производитель функции.loss по w: ∂L/∂w = 2*w\n3. Подставьте значение w и η, чтобы найти δw: δw = -η * (∂L/∂w)\n\nТеперь давайте пройдем через эти шаги:\n\n1. Функция.loss(w) равна L(w)=w^2.\n2. Частный производитель функции.loss по w равно ∂L/∂w=2*w.\n3. Подставьте значения: w = 3 и η = 0,1.\n\nТеперь найдем δw:\nδw = -η * (∂L/∂w)\nδw = -(0,1) * [2*3]\nδw = (-0,5)\n\nИтак, одно итерационное изменение веса при w=3 и η=0,1 равно δw=(-0,5).",
+      "rating": ""
+    }
+  ]
+}

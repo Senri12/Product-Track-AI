@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0041",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
+    "f1": 31.4,
+    "precision": 33.2,
+    "recall": 47.1,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.9,
+    "hallucination": 11.7,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.9,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.067845"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вопрос: Вычисли вероятность спама для слова 'приз' из примера.\n\nДля вычисления вероятности спама для слова 'приз', используем метрикуEuclidean-масштабирование. Потом перенумеруем объекты на основе квадратного расстояния и перечислить их метки в соответствии с ближнейми к слову. После этого определяем класс, который встречается чаще в первых k элементах.\n\nВозможно, результатов для слова 'приз'",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0092",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 36.1,
+    "precision": 36.5,
+    "recall": 46.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.2,
+    "hallucination": 8.6,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 21.8,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.059734"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Итак, чтобы определить параметр k в алгоритме k-NN, я должен:\n\n1. Сначала выбираться за допустимые значения k. commonly used values are small integers like 2,3,5,7,9, etc.\n\n2. Провести тестирование на подмножествах данных для оценки performance.\n\n3. Основываясь на результатах тестирования, выбрать оптимальное значение k.\n\n4. Проверить, как выбор k влияет на точность классификации и обобщение знаний.\n\nЭто будет ключевым шагом в разработке алгоритма k-NN для моей задачи классификации.",
+      "rating": ""
+    }
+  ]
+}

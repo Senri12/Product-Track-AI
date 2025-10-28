@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1759",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 10.5,
+    "precision": 9.5,
+    "recall": 28.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.089817"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Overfitting is a common issue in machine learning, where a model learns the training data too well – so well that it starts to memorize details and noise within those data points rather than capturing general patterns. \n\nHere's how you can understand this concept with an example:\n\nLet's say we have a dataset of 10 students (features) and their corresponding exam scores (target variable). The goal is to predict exam scores based on other characteristics like hours studied per week. \n\n1. **Underfitting**: A model that's too simple - perhaps it only considers whether the student studies more than 5 hours or not, might perform poorly. It can't capture the nuances, like students studying an extra hour each day would do better. This is underfitting – the model's complexity doesn't match the data complexity.\n\n2. **Overfitting**: Now imagine a model that's extremely complex and considers every possible minute spent studying, whether or not there was pizza involved in the study break, or even the exact type of light bulbs used during late-night sessions! Such a model will fit the training data very closely because it has many parameters to adjust. However, when it's presented with new, unseen data (students from another school), this complex model might perform fantastically – it predicted well for these students in the training set. But actually, it's just memorizing patterns specific to those 10 students. This is overfitting: the model has learned the noise and idiosyncrasies of the training data so well that it fails to generalize to new data.\n\nOverfitting occurs when a model is excessively tailored or adjusted to the details in your training dataset, resulting in poor performance on unseen data because the model has essentially memorized the noise in the training set instead of learning fundamental patterns.\n\nTo avoid overfitting:\n- Use simpler models (like linear regression instead of a high-degree polynomial)\n- Apply techniques like cross-validation and early stopping during training\n- Regularization methods (L1 or L2 regularization, dropout for neural networks)\n- Increase the amount of data available\n\nBy doing these strategies, you can help your model focus on learning general patterns from the data instead of memorizing specifics.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2189",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.988505"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To calculate the learning rate after 5 steps with a starting value of 0.1 and a total number of steps ( epochs ) of 10 using a linear decay method:\n\n**Formula:**\nη_t = η_0 - (t / T) * (η_0)\n\nwhere:\n- η_0 is the initial learning rate (0.1)\n- t is the current step (5 in this case)\n- T is the total number of steps (10)\n\n**Calculation:**\nη_5 = 0.1 - (5 / 10) * (0.1)\n= 0.1 - 0.5 * 0.1\n= 0.1 - 0.05\n= **0.05**\n\nSo, after 5 steps, the learning rate would be **0.05**.",
+      "rating": ""
+    }
+  ]
+}

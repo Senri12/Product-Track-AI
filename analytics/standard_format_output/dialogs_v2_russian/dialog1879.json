@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1879",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.030137"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Overfitting is a phenomenon observed in machine learning models, particularly in decision trees, where the model performs exceptionally well on training data but poorly on unseen, external data. This occurs when the model has learned patterns that are too specific to the training dataset, leading to excessive variance. Variance refers to both bias (simple models capturing noise) and complexity (too complex of a model). Overfitting combines these issues, resulting in poor generalization.\n\nThis problem arises due to decision trees over-fitting their features. Each feature might capture irrelevant details from the training data. Additionally, high variability can occur if the model's predictions vary across different subsets of the training data. Techniques like pruning the tree, limiting depth, or using ensemble methods (e.g., Random Forest) help reduce complexity and variance.\n\nIn practice, ensemble methods train multiple models on different subsets of the data, averaging their predictions to reduce overfitting. Thus, by preventing each individual model from capturing too much noise, these techniques mitigate overfitting across various datasets.\n\n**Final Answer:**\nOverfitting occurs when a model captures patterns specific to training data, leading to poor performance on unseen data. Regularization and ensemble methods help prevent this by reducing complexity and variance, ensuring models generalize better.",
+      "rating": ""
+    }
+  ]
+}

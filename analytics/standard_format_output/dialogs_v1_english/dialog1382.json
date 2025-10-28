@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1382",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 8.0,
+    "precision": 7.5,
+    "recall": 29.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.115324"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "As a text-based AI, I can provide an explanation on how to choose the number of neighbors 'k' in k-Nearest Neighbors (k-NN) using text-based instructions.\n\n1. **Understand your Data**: Before selecting 'k', it's crucial to understand your data set. 'k' should be a small, whole number that is less than or equal to the total count of observations in your dataset. The value of k influences how your model responds to new data points.\n\n2. **Efficiency and Computational Power**: Larger values of 'k' can significantly slow down computations due to more data comparison, which may not be feasible for large datasets. Smaller values (typically 5 or 3) are usually used for efficiency and computational power reasons in real-world applications.\n\n3. **Empirical Testing**: The best way to find an optimal 'k' is through trial and error using cross-validation techniques. This method involves dividing your data into a training set and a validation set, then running your k-NN model with different values of 'k'. You'd evaluate each model's performance based on appropriate metrics (like mean squared error for regression tasks or accuracy for classification) to pick the 'k' that gives the best results.\n\n4. **Domain Knowledge**: Utilize any domain knowledge you might have about your specific problem. For instance, in image recognition problems, a common value used is often 5 or 7 as it's found to provide good generalization while being computationally manageable.\n\n5. **Avoiding Overfitting and Underfitting**: Remember that 'k' can impact the risk of overfitting (when your model performs well on training data but poorly on unseen data) or underfitting (when your model is too simple to capture patterns in your data). A common approach is to start with smaller values, like 5, and increase if your model shows signs of underfitting.\n\nRemember, there's no definitive 'k' that works perfectly for every problem; it's an experimental process influenced by your data and computational resources.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1062",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 36.6,
+    "precision": 32.6,
+    "recall": 56.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 36.3,
+    "hallucination": 11.7,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 20.1,
+    "self_knowledge": 4.3,
+    "timestamp": "2025-10-28T13:24:20.176200"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Расстояние Евклида между двумя точками в двумерном пространстве (x1, y1) и (x2, y2) вычисляется по формуле:\n\nд = √[(x2 - x1)² + (y2 - y1)²]\n\nЗдесь (x1, y1) = (1, 2) и (x2, y2) = (3, 4).\n\nВведенные значения в формулу:\n\nd = √[(3 - 1)² + (4 - 2)²]\n  = √[2² + 2²]\n  = √[4 + 4]\n  = √8\n  ≈ 2.828\n\nТаким образом, расстояние между точками (1, 2) и (3, 4) составляет осталось ≈ 2.828 единиц.",
+      "rating": ""
+    }
+  ]
+}

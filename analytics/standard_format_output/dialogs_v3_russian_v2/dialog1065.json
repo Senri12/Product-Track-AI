@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1065",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 36.6,
+    "precision": 32.6,
+    "recall": 56.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 36.3,
+    "hallucination": 11.7,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 20.1,
+    "self_knowledge": 4.3,
+    "timestamp": "2025-10-28T13:24:20.176767"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "При использовании метода сглаживания по Лапласу для оценки вероятности слова \"win\" в письме, если классификатор определяет это письмо как <<спам>>, получаем:\n\nP(win|спам) = (1 + количество слов \"win\" в письме <<спам>>) / (общее число слов в письме <<спам>> + количество слов в письме, которые не являются \"win\")\n\nВ нашем примере с трех письмами: - Win a million rubles (спам), - Ruble drops again (не спам), - A million ways to get rich (спам)\n\nКоличество слов \"win\" в письмах <<спам>>: 1\n\nОбщее число слов в письмах <<спам>> + количество слов, которые не являются \"win\": 7 (все слова в письме <<спам>>, кроме \"win\")\n\nТаким образом, P(win|спам) = (1 + 1) / (7 + 0) ≈ 2/7 ≈ 0.2857\n\nТаким образом, вероятность встретения слова \"win\" в письме, если его классифицируют как <<спам>>, составляет около 0.286 (в десятичных видах).",
+      "rating": ""
+    }
+  ]
+}

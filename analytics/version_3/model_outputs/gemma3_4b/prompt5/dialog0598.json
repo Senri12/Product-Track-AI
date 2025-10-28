@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вот расчет для Adagrad:\n\n*   **G_{t,ii} = G_{t-1,ii} + g_t^2 = 4 + 2^2 = 8**\n*   **η / sqrt(G_{t,ii} + ε) = 0.1 / sqrt(8 + 1e-8) ≈ 0.1 / 2.828 ≈ 0.0353**\n\nСледовательно, значение обновления для i-го параметра равно 0.0353 * 2 = 0.0706\n",
+    "rating": ""
+  }
+]

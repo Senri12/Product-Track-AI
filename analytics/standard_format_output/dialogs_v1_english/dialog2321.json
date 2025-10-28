@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2321",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
+    "f1": 21.0,
+    "precision": 23.5,
+    "recall": 39.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.877942"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Давайте начнем с анализаExample: \"Этот человек получил приз в нацистском детском колонии.\"\n\nВ этом примере words, которые мы можем использовать для определения\tspама:\n\n* приз (выражение, связанное с признаком)\n\nСуществует 5 слов:\n1. Эт\n2. этот\n3. человек\n4. получил\n5. приз\n\nТеперь давайте посчитаем количество спама words:\n\n* 'приз' — 1 word\n* Other words (например, 'эти', 'ответов') — 0 word\n\nПоскольку всего 5 слов, а только 1 из них — спам, вероятность того, что вEXAMPLEе будет спам, равна 1/5 или 20%.\n\nИтак, если вы хотите проверить, есть ли другие words, которые можно использовать для определения спама, давайте попробуем определить другие words, которые являются spam.",
+      "rating": ""
+    }
+  ]
+}

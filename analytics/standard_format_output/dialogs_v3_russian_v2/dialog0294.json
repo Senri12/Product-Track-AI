@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0294",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое метод Ньютона?",
+    "f1": 31.7,
+    "precision": 32.3,
+    "recall": 53.0,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.7,
+    "hallucination": 10.8,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.4,
+    "self_knowledge": 6.4,
+    "timestamp": "2025-10-28T13:24:20.051420"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод Ньютона?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод Ньютона – это глубокий метод оптимизации, который используется в machine learning для минимизации функции потерь. Он основывается на градиенте и гессии (матрице частных производных) функции потерь. Используя гессиан, метод Ньютона позволяет найти точное решение на каждом шаге, учитывая градиент в предыдущем шаге. Это позволяет сократить обусловленные отклонения и повысить收敛цию. Однако в practice часто используются smaller-step-sizes для уменьшения обусловленных отклонений, чтобы улучшить сходимость и уменьшить обусловленные шум.\n\nВажно также note, что метод Ньютона требует гессианы для каждого шага, что может быть сложным в practice. Для этого часто используются приближения гессианов или smaller-step-sizes. В machine learning很多时候 используются Modified Momentum Gradient Descent (NAG) или Newton-CG, которые предпринимают smaller-step-sizes и уменьшают обусловленные отклонения.\n\nЕсли у вас есть дополнительная литература по методам Ньютона в machine learning, я думаю, это может быть полезно для более глубокого понимания.",
+      "rating": ""
+    }
+  ]
+}

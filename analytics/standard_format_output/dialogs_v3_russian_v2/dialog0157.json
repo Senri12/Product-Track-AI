@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0157",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.091068"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Классификация на основе метода ближайших соседей (k-NN) — это один из ключевых алгоритмов вductive learning. Он используетnear Neighbor principle, что делает его很简单 и интуитивно понятным.\n\n### Ключевые элементы метода:\n\n1. **Состав данных**: Данные отражают предикторы X₁, X₂, ..., X_p и метки классов Y.\n\n2. **Выбор количества ближайших соседей (k)**:\n   - **Компактное приorchаемение**: Используемsmaller k для краткого обоснования.\n   - **Среднее количество ближайших соседей**: typically, k=3 or 5.\n   - Учет дисбаланса классов:-weighted voting или other methods.\n\n3. **Использование метрики close neighbors**:\n   - Используемеверное расстояние между test object и training objects.\n   - Практика с критикой ошибок: учитывая тишику классов, их количества и дисбаланса.\n\n4. **Компьютерные аспекты**:\n   - Оптимизация расстояний для высокого performance.\n   - Использование KD-trees для векторных данных.\n\n5. **Версии метода**:\n   - Визуализация close neighbors.\n   - Регуляция баланса классов: weight voting, under/over-sampling.\n\n### Пример:\n\nПустьOur training data looks like this:\n\n```\nObject | X₁ | X₂ | Class\n---     ---  ---  ---\nA       1   1    1\nB       2   1    2\nC       3   1    2\nD       4   1    2\nE       5   1    2\n```\n\nnew test object F: X₁=6, X₂=1.\n\n- Среди closest neighbors (k=3): D, C, B. All are Class 2.\n- Всё предполагает, что F Class 2.\n\n### Итог:\n\nКлассификация на основе метода ближайших соседей позволяет упростить процесс и создать интуитивно понятный алгоритм для классификации. Однако важно определить выбор k, использовать абсолютные метрики и обновлять алгоритм в реальных контекстах с account для слабого обоснования и резюльта.\n\n**Теперь попробуем подробнее рассмотреть основную идею метода ближайших соседей (k-NN).**\n\n---\n\n### Основная идея метода ближайших соседей:\n\nКлассификация на основе метода ближайших соседей позволяет классифицировать объекты в зависимости от distances от training data. Согласно методу, test object 类似于near neighbors in terms of features and classes. Это позволяет оценивать сильное предположение о принятых метках class.\n\n---\n\n### Попробованный подход к классификации:\n\n1. **Найти closet neighbors**: Вычислить расстояния от test object до training objects.\n\n2. **Учитывать метки class**: Использовать weighted voting или другие методы для определения принятых class.\n\n3. **Определить принятое class**: Основывиться на majority vote Among closet neighbors.\n\n---\n\n### Пример реализации:\n\nПусть training data выглядит так:\n\n```\nX₁ | X₂ | Class\n---  ---  ---\n1   1    1\n2   1    2\n3   1    2\n4   1    2\n5   1    2\n```\n\nnew test object: X₁=6, X₂=1.\n\n- Среди closest neighbors (k=3): training objects with class 2.\n- Всё предполагает, что test object Class 2.\n\n---\n\n### Итог:\n\nКлассификация на основе метода ближайших соседей позволяет превращать сложную задачу классификации в простую и интуитивно понятную задачу изучения Nearby Objects. Однако важно учитывать выбор k, а также тишику class и их количества при резюльтах вычислений.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1401",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Momentum в оптимизации?",
+    "f1": 31.4,
+    "precision": 37.6,
+    "recall": 43.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.3,
+    "hallucination": 11.3,
+    "faithfulness": 31.8,
+    "noise_sensitivity": 16.0,
+    "self_knowledge": 6.9,
+    "timestamp": "2025-10-28T13:24:20.029790"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Momentum в оптимизации?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод Momentum в оптимизации означает метод с мгновением, гдеlearning rate умножается по формуле:\n\n\\[ \\text{learning\\_rate} = \\text{momentum} \\times (1 - \\text{momentum}) + \\text{learning\\_rate} \\]\n\nЭто позволяет использовать Momentum для обработки градиентов и улучшить выбор learning rate. Это может быть конкретным шагом в алгоритме оптимизации neural networks, такие как Adam и RMSprop.\n\nОднако, стоит обратить внимание на специфические детали, таких как Momentum в библиотеках PyTorch или Scikit-learn. Важно учитывать, что Momentum в оптимизации может быть разным для разных методов.",
+      "rating": ""
+    }
+  ]
+}

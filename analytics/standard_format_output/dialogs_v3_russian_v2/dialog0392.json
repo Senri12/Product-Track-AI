@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0392",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 30.8,
+    "precision": 37.7,
+    "recall": 36.9,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 30.6,
+    "hallucination": 18.7,
+    "faithfulness": 29.5,
+    "noise_sensitivity": 9.6,
+    "self_knowledge": 1.9,
+    "timestamp": "2025-10-28T13:24:19.905628"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Количество соседей k должно быть не менее 2, чтобы обеспечить точное отслеживание object за предикторами и чтобы метод был эффективен для вычисления вероятности отнесения object к одному из классов. Это связано с тем, что количество neighbour не может быть меньше двух, потому что в этом случае object не может отличаться от других объектов в заданном наборе данных.",
+      "rating": ""
+    }
+  ]
+}

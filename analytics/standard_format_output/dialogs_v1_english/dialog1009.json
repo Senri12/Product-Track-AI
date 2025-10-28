@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1009",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 39.0,
+    "precision": 36.5,
+    "recall": 52.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.222621"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Overfitting is a common problem that can occur when training a machine learning model on a dataset. Imagine you're trying to predict the price of a house based on various features such as its size, location, number of rooms, and so on. If you have access only to houses in a specific neighborhood, your model might start fitting the data too closely to that particular area, making it less effective at predicting house prices for other locations. This is known as overfitting because the model has learned the details or noise in the training data (the specific neighborhood) rather than the general pattern (housing price trends).\n\nIn simple terms, think of overfitting like memorizing all the answers to a test instead of understanding the concepts. The student may get perfect grades on that particular test but will struggle when faced with new questions or problems outside of that specific topic. To avoid overfitting in machine learning, we need to ensure our models are generalizable across different data points and not just memorizing the training data.\n\nPositive feedback: Great question! You're already starting to understand some key concepts in machine learning. Keep it up, and remember that understanding overfitting is an important step toward creating accurate and useful models.",
+      "rating": ""
+    }
+  ]
+}

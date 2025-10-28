@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2239",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.063266"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-fitting is a phenomenon in machine learning where a model learns the noise in the training data rather than the underlying trend, leading to poor generalization on unseen data. It occurs when a model is too complex and captures both the true relationship in the data (low bias) and high variance due to its sensitivity to fluctuations in the training set.\n\n### Key Points:\n1. **Bias-Variance Tradeoff**: \n   - **High Bias** suggests a simple model that doesn't capture the complexity of the data.\n   - **High Variance** indicates a complex model that is too sensitive to the training data, leading to overfitting.\n\n2. **Detection**:\n   - If the training error decreases but validation or test error increases, it suggests overfitting.\n\n3. **Prevention Strategies**:\n   - **Regularization**: Techniques like L1 or L2 regularization help reduce model complexity.\n   - **Cross-Validation**: Using methods to estimate bias and variance more accurately during training can prevent overfitting.\n\nBy balancing model complexity and using techniques like regularization and cross-validation, we aim to achieve a model that generalizes well to new data.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1807",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.063081"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To compute the probability that an instance belongs to a class given its features using Naive Bayes, follow these steps:\n\n1. **Initialize Data Structures**:\n   - Create a table where rows represent classes and columns represent feature values.\n   - Each cell in the table will store the count of how many times each feature value appears in instances of that class.\n\n2. **Calculate Feature Probabilities**:\n   - For each feature value `fi`:\n     - Sum the counts across all classes to get the total number of occurrences of `fi`.\n     - For each class `c`, compute the conditional probability `P(fi | c)` as the count of `fi` in class `c` divided by the total number of occurrences of `fi`.\n\n3. **Calculate Prior Probabilities**:\n   - For each class `c`, compute the prior probability `P(c)` as the number of instances in class `c` divided by the total number of instances.\n\n4. **Compute Joint Probabilities**:\n   - For each class `c` and feature value `fi`, compute the joint probability `P(C=c, Feature=fi)` as the product of `P(fi | c)` and `P(c)`.\n\n5. **Normalize Probabilities**:\n   - Ensure that the sum of all joint probabilities across classes equals 1 by dividing each by the total sum of all joint probabilities.\n\n6. **Classification**:\n   - For a new instance, combine its feature values using their respective conditional probabilities under the Naive Bayes assumption to get the posterior probability for each class.\n   - Assign the instance to the class with the highest posterior probability.\n\nThis method efficiently computes the probabilities needed for classification by leveraging the independence assumption among features and accurately incorporating both feature counts and prior class distributions.",
+      "rating": ""
+    }
+  ]
+}

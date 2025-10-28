@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1379",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 7.5,
+    "precision": 7.4,
+    "recall": 31.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.180755"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To calculate the learning rate decay with 'η' starting at 0.1, time step 't' as 5, total time steps 'T' as 10 using a linear decay method (also known as constant learning rate decrease), we can use the formula:\n\nη(t) = η0 * (T - t) / T\n\nGiven:\n- η0 = 0.1\n- t = 5\n- T = 10\n\nPlug these values into our formula:\n\nη(5) = 0.1 * ((10 - 5) / 10)\n     = 0.1 * (5 / 10)\n     = 0.1 * 0.5\n     = 0.05\n\nSo, the learning rate at time 't' equals to 5 would be 0.05 when using a linear decay method from η0 = 0.1.",
+      "rating": ""
+    }
+  ]
+}

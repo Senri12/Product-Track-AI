@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1453",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
+    "f1": 34.0,
+    "precision": 32.6,
+    "recall": 51.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.4,
+    "hallucination": 8.2,
+    "faithfulness": 36.3,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.014582"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Итак, чтобы докладать процесс определения класса элемента наивного байесовского классификатора, нужно:\n\n1. Составить список предикторов (X₁, X₂, ..., Xₚ) и их значения для объекта z.\n2. Определить оценки частот P(y) для каждого класса y в тренировочной выборке.\n3. Оценить оценки предикторов P(Xᵢ | y) для каждого class y.\n4. Calculated F(y) = ln P(y) + sum( ln P(Xᵢ | y) ) для каждого class y.\n5. Выбрать класс сmaximumным F(y).\n\nЭто основные шаги, которые используются в алгоритме наивного байесовского классификатора.",
+      "rating": ""
+    }
+  ]
+}

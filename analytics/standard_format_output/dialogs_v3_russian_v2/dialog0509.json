@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0509",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 37.7,
+    "precision": 36.0,
+    "recall": 51.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.5,
+    "hallucination": 10.0,
+    "faithfulness": 34.4,
+    "noise_sensitivity": 21.1,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.261555"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " η = 0.1 - (0.1 - 0) * 5 / 10 = 0.05\n\nЭто значение означает, что learning rate будет уменьшаться на 5% каждые 10 шагов, начиная с начального значения 0.1.",
+      "rating": ""
+    }
+  ]
+}

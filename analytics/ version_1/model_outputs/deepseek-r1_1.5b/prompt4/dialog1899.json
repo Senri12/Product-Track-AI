@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как классифицировать письмо как спам в Naive Bayes?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "To classify emails as spam or not using Naive Bayes, follow these steps:\n\n1. **Training Phase:**\n   - Collect a training set of emails labeled as either spam (1) or non-spam (0).\n   - Identify the most common words in non-spam emails and those that appear more frequently in spam emails.\n   - Calculate word frequencies and assign scores based on how indicative they are of each label.\n\n2. **Classification:**\n   - For each incoming email, analyze the presence or absence of key words using their frequency scores.\n   - Apply Naive Bayes to compute a score for the email being spam or not.\n   - Set threshold scores (e.g., 0.5) and classify emails based on whether they exceed these thresholds.\n\n3. **Example:**\n   - Words with high counts in spam are classified as spam, while those in non-spam remain classified appropriately.\n\nThis method uses word count to capture context-related patterns, making it effective yet simple compared to more advanced models.",
+    "rating": ""
+  }
+]

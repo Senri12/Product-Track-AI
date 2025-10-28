@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0387",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 32.4,
+    "precision": 38.6,
+    "recall": 39.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.892820"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы найти $v_t$, нам сначала нужно определить значение $\\gamma$. Мы знаем, что:\n\n$$\\gamma = \\frac{(\\Delta v)^2}{2 L}$$\n\nпотому что $L$ — это расстояние на которое моторная система преодолевает. \n\nРассчитаем $(\\Delta v)^2$ и разделим его на $2L$. Для этого нам нужно conheть значение $\\Delta v$, который представляет собой разницу между $v_t$ и $v_{t-1}$. Нам дано, что:\n\n$$v_{t-1}=1$$\n\nАналогично,\n\n$$v_t = 0.9 \\cdot (v_{t-1} + \\Delta v)$$\n\nПоскольку $L=2$, мы можем рассчитать $\\Delta v$ следующим образом:\n\n$$\\Delta v = v_t - v_{t-1} = 0.9 \\cdot (v_{t-1} + \\Delta v)$$\n\n$$\\Rightarrow \\quad \\Delta v = 0,9 \\cdot (1 + \\Delta v)$$\n\nРешая $\\Delta v$:\n\n$$\\begin{выровнять*}\n\\Delta v - 0,9 \\cdot \\Delta v &amp;= 1\\\\\n-0,1 \\cdot \\Delta v &amp;= 1 \\\\\n\\Rightarrow \\quad \\Delta v &amp;= -10\\\\\n\\end{align*}$$\n\nНаконец, подставив $(\\Delta v)^2$ и $L$, получим:\n\n$$\\gamma = \\frac{(-10)^2}{2(2)} = 25$$\n\nТеперь мы можем рассчитать $v_t$:\n\n$$v_t = 0.9 \\cdot (1 + (-10)) = -8.7$$\n\nСледовательно, $v_t=\\boxed{-8,7}$.",
+      "rating": ""
+    }
+  ]
+}

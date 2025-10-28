@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1960",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.056351"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Difference Between k-Nearest Neighbor (k-NN) and Weighted k-Nearest Neighbor (weighted k-NN):**\n\n1. **Equal Weights in k-NN:**\n   - In standard k-NN, each of the k nearest neighbors is given equal weight. This means every example's vote has the same influence on classification.\n\n2. **Variable Weights in weighted k-NN:**\n   - Weighted k-NN assigns different weights to each neighbor based on their proximity (distance) to the query point. Typically, closer neighbors are given higher weights. A common method is inverse square root weighting, which reduces computational complexity while enhancing performance by focusing on nearby examples.\n\n3. **Handling Ties and Imbalance:**\n   - Weighted k-NN can help mitigate ties in voting. Closer neighbors have more influence, potentially reducing the likelihood of tied classifications.\n   - It's particularly beneficial for imbalanced datasets, where underrepresented classes may benefit from higher weights, improving accuracy for minority classes.\n\n4. **Variations and Enhancements:**\n   - Variations include distance-based weighting (inverse square root) or other techniques like bagging or boosting to improve performance.\n\nIn conclusion, weighted k-NN varies the weight of each neighbor based on proximity, potentially enhancing classification accuracy, especially in imbalanced datasets.",
+      "rating": ""
+    }
+  ]
+}

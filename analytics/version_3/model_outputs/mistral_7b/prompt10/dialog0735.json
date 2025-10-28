@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": " Предположим, что словарь V содержит 7 слов (без учета повторений): win, ruble, again, drops, ways, get, rich. Применим сглаживание по Лапласу:\n\n$$\\mathsf P(X = \\text{win}| \\text{Класс} = \\text{спам}) = \\frac{1 + 1}{|V| + 7} = \\frac{2}{8} = \\frac{1}{4},$$\nгде |V| – количество слов в словаре.",
+    "rating": ""
+  }
+]

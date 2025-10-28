@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0299",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 43.5,
+    "precision": 42.1,
+    "recall": 55.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.671238"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Okay, let's tackle this learning rate decay problem!  It looks like we're dealing with a linear decay schedule.  Let's break it down.\n\n**What we know:**\n\n*   **η₀ (eta_0):** Initial learning rate = 0.1\n*   **t:** Current time step = 5\n*   **T:** Total number of time steps = 10\n*   **Linear:**  The decay is linear, meaning the learning rate decreases steadily over time.\n\n**The Goal:**\n\nWe need to calculate the learning rate (η) at time step 't'.\n\n**Let's start with the formula for linear decay:**\n\nη = η₀ * (1 - (t / T))\n\nCan you try plugging the values we have into this formula and calculating η?  Don’t worry about getting it perfect the first time – it’s a good exercise!\n\nI'm here to help if you get stuck.  Just tell me what you've calculated so far, or what you're finding confusing.  Let’s go step by step.",
+      "rating": ""
+    }
+  ]
+}

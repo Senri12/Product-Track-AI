@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Поскольку в спам-примере_words = { win } , r = 1. Поскольку r = 1, вычисляем F(спам): F(спам) = ln P(спам) + ln P(X = win|Класс = спам)+ +ln P(X = ruble|Класс = спам) + ln P(X = get|Класс = спам)+ +ln P(X = rich|Класс = спам)= $$= \\ln \\frac{2}{3} + \\ln \\frac{2}{16} + \\ln \\frac{2}{16} + \\ln \\frac{1}{16} + \\ln \\frac{2}{16} \\approx -9.416.$$",
+    "rating": ""
+  }
+]

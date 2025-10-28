@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0037",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 31.4,
+    "precision": 33.2,
+    "recall": 47.1,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.9,
+    "hallucination": 11.7,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.9,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.067173"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В our case, для вычисления вероятности класса Naive Bayes на основеdensity plots, мы follow these steps:\n\n1. **Построение Histogramов/Кernel Density Estimates (KDE):**\n\n   Для каждой из Our training data classes (class 0 и class 1), мы построим Histogramы для each feature (X₁ и X₂). Это показывает распределение данных для каждого класса.\n\n2. **Оценка Priors:**\n\n   Найдем количество данных для каждого класса в Our training set. Определим сопportные вероятности (priors)class 0 и class 1:\n\n   - priors[0] = number of data points in class 0 / total data points\n   - priors[1] = number of data points in class 1 / total data points\n\n3. **Проверка Density Functions:**\n\n   Для нового объекта с feature X₁=x и X₂=y, мы вычисляем их densities (verosnostей) вeach class на основе histogramов или KDE.\n\n4. **Calculating Likelihoods:**\n\n   Вычисляем вероятность для нового объекта:\n\n   - P(X|class 0) = density of x in class 0\n   - P(X₂|class 0) = density of y in class 0\n\n   Потом ищем multiplication of likelihoods.\n\n5. **Calculating Posterior Probabilities:**\n\n   Вычисляем сопportные вероятности:\n\n   - posterior[0] = priors[0] * P(X|class 0)\n   - posterior[1] = priors[1] * P(X|class 1)\n\n6. **Коррекция Class:**\n\n   Класс, который имеет Larger posterior probability, является предсказанным классом.\n\nВ our case, для точности these steps, я использую scipy.stats.gaussian_kde дляmultivariate KDE в Our training data.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2200",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.977196"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The key difference between k-Nearest Neighbors (k-NN) and weighted k-Nearest Neighbors (weighted k-NN) lies in how the influence of neighboring points is determined. Here's a structured summary:\n\n1. **Basic Concepts**:\n   - **k-NN**: Classifies new data by examining the k closest instances in the training set. Each instance votes for its class, and the majority wins.\n   - **Weighted k-NN**: Extends k-NN by assigning weights to each neighbor based on their proximity.\n\n2. **Influence Mechanism**:\n   - **k-NN**: Uses a simple majority vote without any weighting.\n   - **Weighted k-NN**: Assigns varying weights, typically higher to closer neighbors, allowing more significant influence from nearer instances.\n\n3. **Advantages of Weighted k-NN**:\n   - Better captures local decision boundaries by emphasizing close neighbors.\n   - Can lead to smoother classification decisions in edge cases or small datasets.\n\n4. **Considerations and Limitations**:\n   - **Weighting Scheme**: Crucial, requiring careful selection based on data features (e.g., Euclidean distance).\n   - **Edge Cases**: May behave differently with very small datasets or when all nearest neighbors are of the same class.\n   - **Computational Efficiency**: Potentiate processing time due to additional weight computation.\n\n5. **Example**:\n   - In an email classification task, weighted k-NN might classify emails more smoothly if closer neighbors from the same class have higher weights.\n\n6. **Conclusion**:\n   - Weighted k-NN offers enhanced accuracy by leveraging proximity but may increase computational demands and complexity in feature selection and weight determination.\n\nThis explanation highlights both the potential benefits and challenges of using weighted k-NN, emphasizing its ability to capture local patterns effectively.",
+      "rating": ""
+    }
+  ]
+}

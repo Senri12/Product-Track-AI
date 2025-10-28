@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1994",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.050058"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The probability \\( P(\\text{Da} \\mid \\text{Passur}, \\text{Wet}, \\text{Dry}) \\) cannot be directly computed because the variables are mutually exclusive in a way that a dry environment cannot be passurian. If \"Passur\" typically refers to wet grasslands, then being dry would not fit within this context, suggesting \\( P(\\text{Da} \\mid \\text{Passur}, \\ldots) = 0 \\). \n\n**Final Answer:**\n\\( P(\\text{Da} \\mid \\text{Passur}, \\text{Wet}, \\text{Dry}) = 0 \\)",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0806",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 47.3,
+    "precision": 55.4,
+    "recall": 57.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.817157"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить шаг обновления Стокса-Джонсона (SGD) для функции потерь L(w) = w^2 при начальном значении w = 3 и шагом обучения η = 0.1, выполните следующие действия:\n\nШаг в SGD := η * ∂L/∂w\n∂L/∂w = 2*w (производная L по отношению к w)\n\nПодставьте значение w = 3:\nШаг в SGD := 0.1 * (2*3)\nШаг в SGD := 0.1 * 6\nШаг в SGD := 0.6\n\nСледовательно, обновление для шага SGD при данном значении составляет 0.6.",
+      "rating": ""
+    }
+  ]
+}

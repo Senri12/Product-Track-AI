@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0285",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 32.8,
+    "precision": 37.9,
+    "recall": 42.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.949826"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Пусть количество обещаний, оправданных в спам-упадке, равно 10.\n\nКоличество неверных обещаний в спуме будет равен 1 (поскольку всего было 20 обещаний).\n\nИтак, P(win|спам) = К/Н = 10/21 ≈ 0,4762.",
+      "rating": ""
+    }
+  ]
+}

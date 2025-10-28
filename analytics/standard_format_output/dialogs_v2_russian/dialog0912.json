@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0912",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 41.6,
+    "precision": 49.5,
+    "recall": 49.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.356507"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Расстояние Евклида между точками (1, 2) и (3, 4) вычисляется по формуле $ \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.\n\nПеременные:\n- x1 = 1\n- x2 = 3\n- y1 = 2\n- y2 = 4\n\nПодставим значения в формулу:\n$ \\sqrt{(3 - 1)^2 + (4 - 2)^2} = \\sqrt{4 + 4} = \\sqrt{8} \\approx 2,8284$.\n\nТаким образом, расстояние между точками (1,2) и (3,4) по Евклидовой метрике составляет приблизительно 2,8284 единиц.",
+      "rating": ""
+    }
+  ]
+}

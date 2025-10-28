@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0497",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое TensorFlow?",
+    "f1": 37.7,
+    "precision": 36.0,
+    "recall": 51.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.5,
+    "hallucination": 10.0,
+    "faithfulness": 34.4,
+    "noise_sensitivity": 21.1,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.259613"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое TensorFlow?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " TensorFlow является открытым исходным кодом библиотекой написанной на Python для создания машинного обучения и глубокого обучения сетей (Deep Learning). Она разработана Google Brain Team в 2015 году, а первая стабильная версия была выпущена в ноябре 2015 года. TensorFlow обеспечивает гибкий инструментарий для создания и обучения моделей машинного обучения, позволяя разработчикам легко построить сложные и эффективные алгоритмы, а также реализовывать их на нескольких платформах, включая работу на GPU.\n\nБиблиотека поддерживает широкий спектр алгоритмов машинного обучения и глубокого обучения, в том числе:\n\n* Linear Algebra;\n* Neural Networks;\n* Convolutional Neural Networks (CNN);\n* Recurrent Neural Networks (RNN);\n* Support Vector Machines (SVM);\n* Principal Component Analysis (PCA).\n\nТакже TensorFlow позволяет легко масштабировать алгоритмы на большие объёмы данных, а также экспериментировать с различными методами обучения, в том числе с различными оптимизаторами.\n\nВ дополнение к открытой библиотеке TensorFlow, Google выпустил TF Lite, который позволяет разработчикам создавать модели машинного обучения и глубокого обучения с помощью TensorFlow, а затем оптимизировать их для работы на устройствах без доступа к сети Интернета или потребляющем мало ресурсов.\n\nВ последнее время TensorFlow также расширяется в сторону других областей, таких как автоматическое обнаружение объектов (Object Detection API) и генеративное обучение (Generative Adversarial Networks или GAN).",
+      "rating": ""
+    }
+  ]
+}

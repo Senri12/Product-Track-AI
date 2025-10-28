@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Используя формулу Learning Rate Decay с линейным спадом:\n\n\\[\n\\eta(t) = \\eta_0 \\times \\gamma^{\\frac{t}{T}}\n\\]\n\nгде:\n- \\(\\eta(t)\\) – Learning Rate на момент времени \\(t\\),\n- \\(\\eta_0\\) – начальный Learning Rate (\\(η_0 = 0.1\\)),\n- \\(\\gamma\\) – коэффициент сокращения (\\(\\gamma = 0.9\\)),\n- \\(T\\) – время конечного значения Learning Rate (\\(T = 10\\)).\n\nДля various values of \\(t\\) от 0 до \\(T=10\\) вычислим Learning Rate:\n\n- \\(t = 0\\):\n  \\[\n  \\eta(0) = 0.1 \\times (0.9)^{\\frac{0}{10}} = 0.1 \\times 1 = 0.1\n  \\]\n  \n- \\(t = 5\\):\n  \\[\n  \\eta(5) = 0.1 \\times (0.9)^{\\frac{5}{10}} = 0.1 \\times \\sqrt{0.9} \\approx 0.1 \\times 0.9487 \\approx 0.09487\n  \\]\n  \n- \\(t = 10\\):\n  \\[\n  \\eta(10) = 0.1 \\times (0.9)^{\\frac{10}{10}} = 0.1 \\times 0.9 = 0.09\n  \\]\n\n**Ответ:**\n\n- В момент времени \\(t = 5\\) Learning Rate \\(η(5)\\) составляет приблизительно 0,09487.\n- В момент времени \\(t = 10\\) Learning Rate \\(η(10)\\) составляет 0,09.",
+    "rating": ""
+  }
+]

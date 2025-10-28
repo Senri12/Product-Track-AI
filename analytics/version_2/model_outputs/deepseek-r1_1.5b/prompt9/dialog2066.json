@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Ответ:**\n\nДля функции \\( L(w) = w^2 \\), current value \\( w = 3 \\), learning rate \\( \\eta = 0.1 \\), шаг SGD рассчитывается по формуле:\n\\[\nw_{next} = w_t - \\eta * \\nabla L(w_t)\n\\]\nГрадиент функции \\( L(w) = w^2 \\) поw equal:\n\\[\n\\nabla L(w) = 2w\n\\]\nПодставляем current value \\( w = 3 \\):\n\\[\n\\nabla L(3) = 2 * 3 = 6\n\\]\nТогда,\n\\[\nw_{next} = 3 - 0.1 * 6 = 3 - 0.6 = 2.4\n\\]\n**Ответ: 2.4**",
+    "rating": ""
+  }
+]

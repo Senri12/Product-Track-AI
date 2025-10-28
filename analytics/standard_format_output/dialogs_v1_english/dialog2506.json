@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2506",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 32.8,
+    "precision": 36.0,
+    "recall": 42.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.929421"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Существует концепция叫 \"autograd\", которая определяется в математике. Auto-graduation — это термин, использованный для описания процесса вычисления производной функции при изменении неизвестного.\n\nПусть F(x) — любая функция, которая можно выразить через переменную x. Auto-graduation в терминах производнойFunctions F(x) по x будет показывать, что производная функции Ф, сгруппированная по x, равна\n\nF'(x).\n\n autoGrad: F(x) = x^2 + 3x - 7",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1377",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 9.9,
+    "precision": 9.9,
+    "recall": 29.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.237603"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления значения v_t, необходимо учитывать формулу, понятную в контексте гиперпараметров, используемых в задачах оптимизации с помощью методов градиентного спуска:\n\nv_t = γ * (1 - η) * v_{t-1} + η * ∇L\n\nЗаменим переданные значения на эту формулу:\n\nγ = 0.9,\nv_{t-1} = 1,\n∇L = 2,\nη = 0.1.\n\nтеперь вычисляем:\n\nv_t = 0.9 * (1 - 0.1) * 1 + 0.1 * 2\n    = 0.9 * 0.9 * 1 + 0.1 * 2\n    = 0.81 + 0.2\n    = 1\n\nТаким образом, v_t равно 1.",
+      "rating": ""
+    }
+  ]
+}

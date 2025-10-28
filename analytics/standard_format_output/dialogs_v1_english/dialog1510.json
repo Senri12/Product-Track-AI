@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1510",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 6.7,
+    "precision": 7.6,
+    "recall": 23.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.169278"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "As a Socratic tutor, let's explore the differences between k-Nearest Neighbors (k-NN) and Weighted k-Nearest Neighbors using inquiry techniques. \n\n1. **What is k-Nearest Neighbors (k-NN)?**\n   - By definition, k-NN is a type of instance-based learning algorithm used for classification or regression tasks. In the context of classification, it works by finding 'k' closest data points to an unlabeled point from the training dataset in a feature space.\n\n2. **What happens when 'k' equals 1?**\n   - When k=1, there's no notion of voting; only one nearest neighbor is considered. The prediction depends on just that single nearest neighbor. This can lead to instability as decisions can be highly sensitive to small fluctuations in the training data.\n\n3. **What happens when 'k' exceeds 1?**\n   - When k>1, more than one closest point comes into play. If we're using this for classification, say in a three-class problem, we'd select the class that has the majority of its nearest neighbors among our predictions. This helps reduce instability due to majority voting.\n\n4. **Now, what if we introduce weights?**\n   - Weighted k-NN applies weights to these nearest neighboring points based on certain criteria (like distance or confidence). It then computes an average where each point's contribution is proportional to its weight. \n\n5. **How does weighted k-NN improve upon standard k-NN?**\n   - By introducing weights, the algorithm becomes more robust and potentially less sensitive to noise in the data. Points closer to the query (the unlabeled point) get higher weights, thereby influencing our decision more significantly. This method can give a more nuanced balance between close neighbors' classes, reducing the impact of outliers or noisy data points.\n\nTo summarize, while standard k-NN considers all 'k' nearest neighbors equally when making predictions (which might be too simplistic and unstable), weighted k-NN modifies this by assigning different 'weights' to each neighbor based on certain rules. This leads to a more nuanced prediction that's potentially less affected by noise or outliers, thereby enhancing the overall predictive accuracy of the algorithm.",
+      "rating": ""
+    }
+  ]
+}

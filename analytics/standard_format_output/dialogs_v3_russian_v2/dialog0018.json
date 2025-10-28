@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0018",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Keras?",
+    "f1": 34.9,
+    "precision": 37.3,
+    "recall": 45.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.9,
+    "hallucination": 11.9,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.074771"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Keras?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Keras is an open-source Python library designed to simplify the creation and training of neural networks. Here's a structured overview of how it works:\n\n1. **Functionality**: Keras allows you to build complex neural network models by defining layers that process data through various operations. Each layer can be combined into a graph, representing the flow of data and parameters.\n\n2. **Graph Construction**: You define your model as a sequence of layers within a graph. This graph can then be trained using backpropagation, which calculates gradients for parameter updates based on loss functions.\n\n3. **Automatic Differentiation**: Keras leverages TensorFlow's autograd to automatically compute derivatives, eliminating the need for manual gradient calculations. This feature simplifies training and reduces coding errors.\n\n4. **Layers**: From basic operations like conv2d and Dense to custom layers, you can define a wide range of operations. Each layer is composed of nodes that perform computations on tensors.\n\n5. **Optimizers**: Keras supports various optimization algorithms such as Adam, SGD, RMSprop, and Adagrad, allowing you to choose the best method for your specific task.\n\n6. **Evaluation Metrics**: It offers metrics like accuracy, loss, and precision, which are crucial for assessing model performance during training and evaluation.\n\n7. **Training Process**: Keras provides flexible control over training parameters including epochs, validation split, batch size, etc., enabling efficient and effective learning.\n\n8. **Model Saving and Loading**: Models can be easily saved to disk for deployment or loaded from a file using functions like load_model(), facilitating model sharing and reusability.\n\n9. **Distributed Training**: TensorFlow's distributed training options support parallel computation on multiple GPUs, making it suitable for large-scale datasets.\n\n10. **Custom Layers**: Users can define custom layers by subclassing base Keras layers and overriding their compute function, offering flexibility in layer design.\n\n11. **Integration with TensorFlow**: Keras is built on top of TensorFlow, sharing the same computational graph and supporting all its features, ensuring consistency and ease of use.\n\n12. **Distribution and Visualization**: TensorFlow provides tools like TensorBoard for monitoring training progress, while Keras offers similar features for comprehensive model evaluation.\n\nIn summary, Keras simplifies neural network development by abstracting away many complexities, enabling users to focus on model design and optimization while leveraging TensorFlow's robust infrastructure.",
+      "rating": ""
+    }
+  ]
+}

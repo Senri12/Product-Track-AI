@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0333",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 28.6,
+    "precision": 37.2,
+    "recall": 32.1,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 26.2,
+    "hallucination": 15.9,
+    "faithfulness": 30.4,
+    "noise_sensitivity": 11.7,
+    "self_knowledge": 3.7,
+    "timestamp": "2025-10-28T13:24:19.943306"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Евклидовая метрика – это линейная функция, которая measure quantity из двух наборов данных, где каждое элемент отображается в линейное число. Это означает, что Euclidean distance (дистанцияEuclid) между двумя наборами данных можно вычислить как линейную функцию, а именно: $d(EUCLID, A,B)=\\sqrt{\\sum_{i=1}^{n}(\\mathsf I(A_i^T B_i)-\\mathsf I(A_i^T A_i))^2}$",
+      "rating": ""
+    }
+  ]
+}

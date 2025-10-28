@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое TensorFlow?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "TensorFlow — это открытый программный фреймворк для машинного обучения разработанный команды Гугла, который позволяет разрабатывать сложные нейронные сети и выполнять вычисления в графах данных. Он предлагает гибкие инструменты как для прототипирования, так и для производственной среды и поддерживает работу на нескольких платформах, включая TPU (дисплей TPUs), графические процессоры NVIDIA CUDA, мобильные устройства и традиционные процессоры x86.\n\nВот разбор примера использования TensorFlow:\n\nПредположим, вы хотите создать нейронную сеть для классификации изображений. С помощью TensorFlow можете выполнить следующие шаги:\n\n1. Импортируйте необходимые библиотеки:\n```python\nimport tensorflow as tf\n```\n2. Создайте график данных с использованием предварительно обученных шаблонов (область, слоя, тюнинг и метка):\n```python\nmodel = tf.keras.models.Sequential([\n    tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), activation='relu', input_shape=(image_height, image_width, channels)),\n    tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),\n    tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), activation='relu'),\n    tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(units=256, activation='relu'),\n    tf.keras.layers.Dense(units=num_classes, activation='softmax')\n])\n```\n3. Настройте модель с помощью оптимизатора и метрики:\n```python\nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])\n```\n4. Обучите модель данными train_images, train_labels:\n```python\nmodel.fit(train_images, train_labels, epochs=10)\n```\n5. Оцените эффективность модели с помощью test_images и test_labels:\n```pythonupyter\ntest_loss, test_acc = model.evaluate(test_images, test_labels)\nprint('Валидационная точность:', test_acc)\n```\n\nКак видите из примера, TensorFlow предоставляет удобный API для создания, обучения и использования машинных моделей. Он поддерживает различные типы моделей, включая глубокие нейронные сети, графовые модели и ансамблевые модели.\n\nАналогичная задача: Создайте модель для предсказания цен на недвижимость с использованием TensorFlow, учитывая такие факторы, как площадь участка, количество комнат и расположение. Импортируйте необходимые библиотеки, создайте график данных (серия разбиения), настройте модель с оптимизатором (например, AdamOptimizer) и метрикой (кросс-энтропический расщепление), обучите модель набором данных с ценами на недвижимость, а затем оцените ее эффективность, используя отдельный набор данных о продажах.",
+    "rating": ""
+  }
+]

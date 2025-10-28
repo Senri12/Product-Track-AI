@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1455",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 34.0,
+    "precision": 32.6,
+    "recall": 51.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.4,
+    "hallucination": 8.2,
+    "faithfulness": 36.3,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.014993"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To calculate the probability that each word appears in spam or not, we use the Laplace smoothing method with the formula:\n\n\\[\nP(word | category) = \\frac{number\\_of\\_times\\_word\\_appears + 1}{total\\_number\\_of\\_words\\_across\\_all\\_pisksma + total\\_unique\\_words}\n\\]\n\n### Example Calculations for Spam\n\n- **Win**: \n  - Count in spam: 1\n  - Unique words: 8 (win, a, million, rubles, drops, ways, get, rich)\n  - \\( P(win | spam) = \\frac{1 + 1}{(5+4+6) + 8} = \\frac{2}{23} \\approx 0.087 \\)\n\n- **A**: \n  - Count in spam: 1 (first pisksma)\n  - \\( P(A | spam) = \\frac{1 + 1}{(5+4+6) + 8} = \\frac{2}{23} \\approx 0.087 \\)\n\n- **Million**: \n  - Count in spam: 1 (first piskma)\n  - \\( P(million | spam) = \\frac{1 + 1}{(5+4+6) + 8} = \\frac{2}{23} \\approx 0.087 \\)\n\n- **Rubles**: \n  - Count in spam: 1 (first piskma)\n  - \\( P(rubles | spam) = \\frac{1 + 1}{(5+4+6) + 8} = \\frac{2}{23} \\approx 0.087 \\)\n\n- **Drops**: \n  - Count in spam: 1 (second piskma)\n  - \\( P(drops | spam) = \\frac{1 + 1}{(5+4+6) + 8} = \\frac{2}{23} \\approx 0.087 \\)\n\n- **Ways**: \n  - Count in spam: 1 (third piskma)\n  - \\( P(ways | spam) = \\frac{1 + 1}{(5+4+6) + 8} = \\frac{2}{23} \\approx 0.087 \\)\n\n- **Get**: \n  - Count in spam: 1 (third piskma)\n  - \\( P(get | spam) = \\frac{1 + 1}{(5+4+6) + 8} = \\frac{2}{23} \\approx 0.087 \\)\n\n- **Rich**: \n  - Count in spam: 1 (third piskma)\n  - \\( P(rich | spam) = \\frac{1 + 1}{(5+4+6) + 8} = \\frac{2}{23} \\approx 0.087 \\)\n\n### Example Calculations for Non-Spam\n\n- **Win**: \n  - Count in nonspam: 1\n  - \\( P(win | nonspam) = \\frac{1 + 1}{(5+4+6) + 3} = \\frac{2}{18} \\approx 0.111 \\)\n\n- **A**: \n  - Count in nonspam: 1 (first piskma)\n  - \\( P(A | nonspam) = \\frac{1 + 1}{(5+4+6) + 3} = \\frac{2}{18} \\approx 0.111 \\)\n\n- **Million**: \n  - Count in nonspam: 1 (first piskma)\n  - \\( P(million | nonspam) = \\frac{1 + 1}{(5+4+6) + 3} = \\frac{2}{18} \\approx 0.111 \\)\n\n- **Rubles**: \n  - Count in nonspam: 1 (first piskma)\n  - \\( P(rubles | nonspam) = \\frac{1 + 1}{(5+4+6) + 3} = \\frac{2}{18} \\approx 0.111 \\)\n\n- **Drops**: \n  - Count in nonspam: 1 (second piskma)\n  - \\( P(drops | nonspam) = \\frac{1 + 1}{(5+4+6) + 3} = \\frac{2}{18} \\approx 0.111 \\)\n\n- **Ways**: \n  - Count in nonspam: 1 (third piskma)\n  - \\( P(ways | nonspam) = \\frac{1 + 1}{(5+4+6) + 3} = \\frac{2}{18} \\approx 0.111 \\)\n\n- **Get**: \n  - Count in nonspam: 1 (second piskma)\n  - \\( P(get | nonspam) = \\frac{1 + 1}{(5+4+6) + 3} = \\frac{2}{18} \\approx 0.111 \\)\n\n- **Rich**: \n  - Count in nonspam: 1 (second piskma)\n  - \\( P(rich | nonspam) = \\frac{1 + 1}{(5+4+6) + 3} = \\frac{2}{18} \\approx 0.111 \\)\n\n### Conclusion\n\nUsing Laplace smoothing, we've calculated the probabilities of each word appearing in spam or not based on the given pisksma examples. The probabilities indicate that words like \"Win,\" \"A million ways,\" and others are relatively low, suggesting they are unlikely to be associated with spam or nonspam, but their exact classification depends on the overall distribution of these probabilities across all pisksma.",
+      "rating": ""
+    }
+  ]
+}

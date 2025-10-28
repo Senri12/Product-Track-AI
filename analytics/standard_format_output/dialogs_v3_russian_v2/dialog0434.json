@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0434",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 28.2,
+    "precision": 32.8,
+    "recall": 40.3,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 17.0,
+    "faithfulness": 29.4,
+    "noise_sensitivity": 12.9,
+    "self_knowledge": 3.6,
+    "timestamp": "2025-10-28T13:24:19.951551"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Пусть метрика d — евклидовая, равна 1, когда objetos идентичны, а между объектами нет разницы. Схожие объекты в diesem случае будут представлены как (x₁, y₁) и (x₂, y₂), где x₁ = x₂. Таким образом, расстояние между этими двумя objetoами будет равно:\n\nd(x₁, x₂) = √(x₁² + x₂²) = √((x₁ - x₂)²)\n\nПоскольку_objects pasmuri, khlovo i vachno, это означает, что d(x₁, x₂) = 0. Следовательно, вероятность того, что объект будет классифицироваться как пасмурно, холодно, влажно, да:\n\nP(да | пасмuri, хлoвoн, вачно, дa) = P(pasmuri и Cold и Humid and Yes)\n\n= 1/4 (поскольку у нас есть 2 объекта out of 4, что составляет 2/4 или 0,5).\n\nСледовательно, ответ:\n\nP(да | пасмuri, хлoвoн, вачно, дa) = 0,5",
+      "rating": ""
+    }
+  ]
+}

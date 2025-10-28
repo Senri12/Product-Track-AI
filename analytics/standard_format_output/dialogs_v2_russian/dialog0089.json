@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0089",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 29.7,
+    "precision": 32.3,
+    "recall": 39.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.908602"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить learning rate decay (еr), используя формулу:\n\ner = e-(-η0 * т/М)\n\nгде er —learning rate decay, η0 —начальное значение learning rate, t — thời gian, в течение которого обучение происходит.\n\nУчитывая значения:\n\nη0 = 0,1\nt = 5\nM = T = 10\n\nПодставив эти значения в формулу:\n\ner = e-(-0,1 * 5/10)\n= e-(-0,05)\n\nУпрощая:\n\ner = e^(0,05)\n\nе(0,05) ≈ 1,05127458\n\nИтак, learning rate decay составляет примерно 1,05.\n\nВ этом случае learning rate decay представляет собой общее выражение для вычисленияlearning rate decay.",
+      "rating": ""
+    }
+  ]
+}

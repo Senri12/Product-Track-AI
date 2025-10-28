@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0749",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 37.0,
+    "precision": 44.8,
+    "recall": 58.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.794993"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Sure! Let's calculate a simple time-based exponential decay function in your case where:\n\n- Initial learning rate (η₀) = 0.1\n- Current step (`t`) = 5\n- Total steps (`T`) = 10\n\nFor an exponentially decaying schedule with `linear` type, the formula is generally given by:\n\\[ \\eta_t = η_0 * (\\frac{current\\_step + 1}{total\\_steps}) ^ decay_rate \\]\n\nHowever, you mentioned 'linear' which typically means no actual exponential decay. For a linear learning rate over time (assuming `decay_rate` to be close-to zero), it will just linearly decrease or remain the same.\n\nIn this specific case:\n\\[ η_t = η₀ * (\\frac{t}{T}) \\]\nSubstituting in your values, we get:\n\n\\[ η_5 = 0.1 * ( \\frac{5}{10} )\\]\n\nThus,\n\n\\[ η_5 = 0.1 * 0.5\\]\n\\[ η_5 = 0.05\\]\n\nSo the learning rate at step t=5 with a total of T=10 steps and an initial learning rate of 0.1 will be:\n\n**η₅ = 0.05**\n\nHope that clarifies your query! Feel free to ask if you need any further details or another calculation type (like exponential decay).",
+      "rating": ""
+    }
+  ]
+}

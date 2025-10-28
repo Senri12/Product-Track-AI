@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2282",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 29.1,
+    "precision": 28.8,
+    "recall": 38.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.884393"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы выбрать правильное количество соседей k в k-NN (классификатор nearest neighbor), необходимо учитывать несколько факторов:\n\n1. **Связь между точками**: Если две точки имеют одинаковые характеристики, то к ним могут быть добавлены дополнительные neighbors.\n2. **Пределы приоритета neighbors**: Выберите количество neighbors, не являющихся соседями для любой другой точки (например, 1 или 0).\n3. **Кратность расстояния**: Обе точки должны находиться на разном расстоянии от каких-либо точек кNeighbors.\n\nВ общем, лучше выбирать значение k, которое позволяет представить к-НН в форме « nearest neighbor, не соседей». Например:\n\n* Если k=1, то каждый neighbour будет considered neighbors.\n* Если k=3, то все neighbours будут considered neighbors. \n\nЧтобы найти правильное количество neighbours, можно использовать метод «окантовой» или взять общее количество точек, а затем разделить на 2 (поскольку для каждого neighbours есть counterpart).",
+      "rating": ""
+    }
+  ]
+}

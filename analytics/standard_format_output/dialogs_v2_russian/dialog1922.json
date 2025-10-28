@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1922",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.041352"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To determine the optimal number of neighbors, k, in a k-NN algorithm, consider the following structured approach:\n\n1. **Cross-Validation**: Implement cross-validation to evaluate different values of k. This method helps balance model bias against variance by selecting k that minimizes validation error.\n\n2. **Default Values from Documentation**: Utilize scikit-learn's recommended default for k, which is typically 5 or allows selection if unsure through cross-validation.\n\n3. **Square Root Heuristic**: Set k to the square root of the number of samples. This heuristic helps avoid overfitting by preventing an excessive number of neighbors in high-dimensional spaces.\n\n4. **Cluster Statistics and Clustering Needs**: Consider cluster statistics, where k might be chosen based on how well clusters form. Ensure each class has a sufficient number of neighbors for accurate classification.\n\n5. **Automated Search with GridSearchCV**: Use scikit-learn's GridSearchCV to systematically try various k values, evaluating performance through cross-validation or out-of-sample data.\n\n6. **Heuristics for Small Datasets**: If the dataset is small and computational resources are limited, heuristics like 5 or a fixed value might suffice without excessive computation time.\n\n7. **Balancing Accuracy and Generalization**: While smaller k reduces variance (overfitting), larger values reduce bias but may increase variance (underfitting). Balance these factors based on data characteristics and domain knowledge.\n\nBy systematically applying these methods, you can effectively determine an optimal k that enhances model performance while avoiding overfitting or underfitting.",
+      "rating": ""
+    }
+  ]
+}

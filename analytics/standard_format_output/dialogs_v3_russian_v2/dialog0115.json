@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0115",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 36.1,
+    "precision": 36.5,
+    "recall": 46.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.2,
+    "hallucination": 8.6,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 21.8,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.063826"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (Root Mean Square Propagation) is an optimization algorithm designed to improve the training of deep neural networks by addressing issues such as unstable gradients and the need for parameter averaging. Here's a concise explanation of how RMSProp works:\n\n1. **Maintaining Running Averages**: Unlike momentum, which adds a fraction of the previous gradient to the current one, RMSProp maintains a running average of the squared gradients for each parameter. This moving average helps in normalizing the gradient contributions over time.\n\n2. **Gradient Squaring and Normalization**:\n   - For each parameter \\( w \\), compute the squared gradient contribution using an exponentially decaying average.\n   - The update rule involves dividing the current gradient by the square root of the running average of squared gradients plus a small epsilon to avoid division by zero.\n\n3. **Adaptive Learning Rate**: RMSProp introduces an adaptive learning rate for each parameter based on their moving averages, allowing parameters with more consistent gradient contributions to adjust faster than those with high variance.\n\n4. **Comparison with Momentum**: While momentum adds a fraction of the previous update to the current gradient, RMSProp normalizes these updates by averaging the squared gradients. This makes it more stable and less prone to oscillations during training.\n\n5. **Implementation in Keras**: The RMSProp layer is available in Keras, providing flexibility for various neural network architectures while maintaining its core principles of parameter-wise normalization.\n\nIn summary, RMSProp enhances the training process by normalizing gradient updates, making them more stable and efficient, particularly useful in scenarios where gradients are noisy or unstable.",
+      "rating": ""
+    }
+  ]
+}

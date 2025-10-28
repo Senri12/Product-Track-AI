@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0146",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 39.8,
+    "precision": 42.2,
+    "recall": 51.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.8,
+    "hallucination": 8.7,
+    "faithfulness": 35.0,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:20.058232"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "step = Learning rate * gradient = 0.1 * 6 = 0.6",
+      "rating": ""
+    }
+  ]
+}

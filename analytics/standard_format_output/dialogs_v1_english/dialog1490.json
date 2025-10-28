@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1490",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 10.8,
+    "precision": 13.0,
+    "recall": 32.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.125448"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "As an academic assistant focusing on your lecture material, I interpret your question as inquiring about Stochastic Gradient Descent (SGD). \n\nStochastic Gradient Descent is an optimization algorithm widely used for minimizing the loss function in machine learning. It's called \"stochastic\" because it computes the gradient of the error in the training set using one example at a time, rather than the entire dataset as in batch gradient descent. This method provides faster convergence and can be more robust to noisy data. \n\nTo challenge your understanding, consider this: Can you explain why SGD's ability to handle large datasets and its speed of convergence make it appealing for deep learning models?",
+      "rating": ""
+    }
+  ]
+}

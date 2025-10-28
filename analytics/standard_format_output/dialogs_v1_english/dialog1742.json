@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1742",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 10.5,
+    "precision": 9.5,
+    "recall": 28.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.085606"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "K-Nearest Neighbors (k-NN) is a simple yet powerful instance-based learning algorithm used for classification or regression tasks in machine learning. In this context, \"k\" refers to the number of nearest neighbors chosen from a given dataset around each point. Here's how you can determine an appropriate value for k:\n\n1. **Understand the problem and data**: Before choosing k, consider what your specific problem is (classification or regression), and understand the nature of your data. This will help guide your decision on k.\n\n   - For classification problems, if you expect noise in your data, smaller values like 3 or 5 for k are often used to reduce the influence of outliers.\n   - If your data is densely clustered with little noise, larger values such as 10, 20, or even more could be considered.\n\n2. **Use Cross-Validation**: This is a robust method to find an optimal k value. Here's how you can do it:\n\n   a. Divide your dataset into training and validation sets. Typically, you might use 70% for training and 30% for validation.\n   \n   b. For each possible k (you can start from a small number like 1, then go up to some upper limit), train your k-NN model on the training set.\n\n   c. For each prediction in the validation set, calculate the \"majority vote\" or average of the k nearest neighbors' predicted classes. This is how you'll make predictions with this k value.\n\n   d. Track and record the performance metric (e.g., accuracy for classification) for these k values.\n\n3. **Plot and Compare**: Plot the performance metrics against different k values, and look for a local minimum or plateau in your data. This point usually indicates the best k. A smaller \"k\" means you're considering more neighbors, but also potentially including noisier examples.\n\n4. **Consider Domain Knowledge**: If applicable, incorporate any domain knowledge about the problem to guide your choice of k. For instance, if points with a certain number of features are typically grouped closely together due to some underlying structure in the data, you might choose k larger than average to leverage this information.\n\n5. **Bear in Mind that there's No One 'Best' k**: There isn't an absolute best value for k in general. It depends on your specific problem and dataset, so choosing it requires experimentation. \n\nRemember, the goal of selecting k is to find a balance between bias (using too few neighbors might oversimplify the data) and variance (too many neighbors can make predictions noisy). The sweet spot would ideally minimize both errors and maximize performance on your validation set or test dataset.",
+      "rating": ""
+    }
+  ]
+}

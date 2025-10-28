@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1986",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое манхэттенское расстояние?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.085189"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое манхэттенское расстояние?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Manhattan Distance Explained**\n\nThe manhattan distance, also known as the L1 norm, is a measure of the distance between two points in a grid-based system. Here's a structured explanation:\n\n1. **Definition**: The manhattan distance between two points (x1, y1) and (x2, y2) on a grid is calculated as the sum of the absolute differences of their coordinates:\n   \\[\n   \\text{Manhattan Distance} = |x1 - x2| + |y1 - y2|\n   \\]\n   \n2. **Generalization**: This concept can be extended to higher dimensions, where the distance is the sum of the absolute differences across all axes.\n\n3. **Applications**:\n   - **City Planning**: Helps in understanding city layouts with streets arranged in a grid.\n   - **Game Development**: Useful for pathfinding and movement restrictions on grids.\n   - **Algorithm Design**: Often used as a heuristic in algorithms like A* to estimate distances.\n\n4. **Geometric Interpretation**: While on a grid, it can also represent the total horizontal and vertical distance traveled between two points.\n\n5. **Avoid Ambiguity**: Typically refers to the L1 norm or manhattan metric in any context where grid-based movement is considered.\n\n**Summary**: The manhattan distance is a straightforward measure of distance on a grid, applicable across various fields from programming to real-world planning, and extends naturally into higher dimensions. It's calculated by summing the absolute differences of coordinates, making it useful for understanding grid systems and pathfinding algorithms.",
+      "rating": ""
+    }
+  ]
+}

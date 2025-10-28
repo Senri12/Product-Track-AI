@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0883",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
+    "f1": 41.4,
+    "precision": 36.6,
+    "recall": 58.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.8,
+    "hallucination": 10.7,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 19.2,
+    "self_knowledge": 6.4,
+    "timestamp": "2025-10-28T13:24:20.276789"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " To compute F(da) for the test in the example with weather data, we first need to find the estimates of the probabilities P(Класс=y) and P(X_i| Класс=y).\n\n1. Probability P(Класс=y):\n\nSince there are two classes (Y = {да, нет}), let's calculate the number of matches that took place (played games) for each class:\n\n- For \"да\": 5 games out of 10 (since there are 5 \"da\" instances in the training data).\n- For \"нет\": 5 games out of 10 (since there are 5 \"net\" instances in the training data).\n\nSo, the probabilities P(Класс=да) and P(Класс=нет) are:\n\nP(Класс=да) = 5/10 = 0.5\nP(Класс=нет) = 5/10 = 0.5\n\n2. Probability P(X_i| Класс=y):\n\nNow, let's calculate the probabilities of each feature value given a class:\n\na) Probability P(X₁=пасмурно|Класс=да):\n\n- For \"да\": 2 games out of 5 (since there are 2 \"da\" instances with X₁=пасмурно in the training data).\n- For \"нет\": 1 game out of 5 (since there is 1 \"net\" instance with X₁=пасмурно in the training data).\n\nSo, P(X₁=пасмурно|Класс=да) = 2/5 and P(X₁=пасмурно|Класс=нет) = 1/5.\n\nb) Probability P(X₂=холодно|Класс=да):\n\n- For \"да\": 3 games out of 5 (since there are 3 \"da\" instances with X₂=холодно in the training data).\n- For \"нет\": 0 games out of 5 (since there are no \"net\" instances with X₂=холодно in the training data).\n\nSo, P(X₂=холодно|Класс=да) = 3/5 and P(X₂=холодно|Класс=нет) = 0.\n\nc) Probability P(X₃=влажно|Класс=да):\n\n- For \"да\": 4 games out of 5 (since there are 4 \"da\" instances with X₃=влажно in the training data).\n- For \"нет\": 1 game out of 5 (since there is 1 \"net\" instance with X₃=сухо in the training data).\n\nSo, P(X₃=влажно|Класс=да) = 4/5 and P(X₃=влажно|Класс=нет) = 0.\n\nd) Probability P(X₄=да|Класс=да):\n\n- For \"да\": 2 games out of 5 (since there are 2 \"da\" instances with X₄=да in the training data).\n- For \"нет\": 3 games out of 5 (since there are 3 \"net\" instances with X₄=да in the training data).\n\nSo, P(X₄=да|Класс=да) = 2/5 and P(X₄=да|Класс=нет) = 3/5.\n\nNow we can calculate F(da):\n\nF(да) = ln P(Класс=да) + sum (ln P(X_i| Класс=да)) for i from 1 to 4:\n\n- F(да) = ln 0.5 + ln (2/5) + ln (3/5) + ln (4/5) + ln (2/5)\n- F(да) = -ln 2 + ln 3 + ln 5 + ln 4 + ln 2\n- F(да) = approximately -0.6931 + 1.0986 + 1.3863 + 1.3863 + 0.6931\n- F(да) = approximately 3.6745 (rounded to three decimal places).\n\nSince there are two classes, we also need to calculate F(нет):\n\nF(нет) = ln P(Класс=нет) + sum (ln P(X_i| Класс=нет)) for i from 1 to 4:\n\n- F(нет) = ln 0.5 + ln (1/5) + ln (0) + ln (0) + ln (3/5)\n- F(нет) = -ln 5 + 0 + 0 + 0 + ln 3\n- F(нет) = -1.6094 + 1.0986\n- F(нет) = approximately 0.5108 (rounded to three decimal places).\n\nFinally, we can compare F(да) and F(нет) to decide the class of the test:\n\n- If F(да) > F(нет), then the test belongs to class \"да\".\n- If F(нет) > F(да), then the test belongs to class \"нет\".",
+      "rating": ""
+    }
+  ]
+}

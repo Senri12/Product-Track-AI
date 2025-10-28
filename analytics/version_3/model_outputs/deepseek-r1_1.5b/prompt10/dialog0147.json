@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вcorrektomethodomentum (метод импульсов) обновляет градиент по следующему правилу:\n\\[\nv_t = \\gamma v_{t-1} - \\eta \\nabla L\n\\]\nПредположим, что:\n- \\(\\gamma = 0.9\\)\n- \\(v_{t-1} = 1\\)\n- \\(\\nabla L = 2\\)\n- \\(\\eta = 0.1\\)\n\nПодставляем в формулу:\n\\[\nv_t = 0.9 \\times 1 - 0.1 \\times 2 = 0.9 - 0.2 = 0.7\n\\]\n\n**Ответ:** \\(v_t = 0.7\\)",
+    "rating": ""
+  }
+]

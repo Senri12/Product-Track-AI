@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0492",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 40.4,
+    "precision": 43.6,
+    "recall": 57.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.757851"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Расстояние Евклидова (или просто расстояние) между двумя точками в двумерном пространстве можно вычислить с помощью формулы:\n\nd = √((x₂ - x₁)² + (y₂ - y₁)²)\n\nДля данных точек A(1,2) и B(3,4), мы имеем:\n\nx₁ = 1, y₁ = 2\nx₂ = 3, y₂ = 4\n\nПодставляя эти значения в формулу расстояния, получаем:\n\nd = √((3 - 1)² + (4 - 2)²)\n= √(2² + 2²)\n= √(4 + 4)\n= √8\n≈ 2.83 единицы (округлено до двух десятичных знаков)\n\nРасстояние Евклидово между точками A и B приблизительно равно 2.83 единиц.",
+      "rating": ""
+    }
+  ]
+}

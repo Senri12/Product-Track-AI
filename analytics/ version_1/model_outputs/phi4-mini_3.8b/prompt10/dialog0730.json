@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем разница между k-NN и взвешенным k-NN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "k-Nearest Neighbors (k-NN) is a type of instance-based learning algorithm used in machine learning to classify new instances based on their similarity or distance from already known data points.\n\n\nThe main difference between standard k-NN and weighted k-NN lies within how they treat the importance, or 'weight', given to each neighboring point. In traditional unweighted k-NN:\n\n\n- Each of the *k* nearest neighbors contributes equally when determining what class a new instance belongs to.\n- The most common classification among those neighbours is chosen for prediction.\n\n\nWeighted k-NN takes this concept further by assigning different weights based on criteria such as distance or inverse distances from each neighbor. In weighted k-NN:\n\n\n- Neighbors closer (smaller Euclidean, Manhattan etc., norm differences) contribute more heavily to the decision.\n- The influence of neighbors decreases with increased distance; thus a distant neighbour has less impact.\n\n\nThis allows for potentially better accuracy in predictions since it can give greater importance where it's deemed most reliable and lesser weight on regions which might be noisy or unreliable.",
+    "rating": ""
+  }
+]

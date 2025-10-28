@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1813",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.064844"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "In the context of a test case with sunny weather, the function F(Da) can be defined to adjust the temperature based on whether it's sunny or not. Specifically:\n\n- When it is sunny (condition true):\n  \\[\n  F(Da) = Da + 10\n  \\]\n  \n- Otherwise:\n  \\[\n  F(Da) = Da - 5\n  \\]\n\nThus, for a sunny condition, the function adds 10 degrees Celsius to the ambient temperature.",
+      "rating": ""
+    }
+  ]
+}

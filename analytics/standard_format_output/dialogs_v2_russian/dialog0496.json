@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0496",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 41.3,
+    "precision": 51.8,
+    "recall": 56.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.798747"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Autograd — это библиотека, используемая для автоматического вычисления градиентов в нейронных сетях. Она помогает эффективно рассчитывать производные через слои сетки, что важно при обучении моделей с помощью метода обратного распространения ошибки (backpropagation). Autograd упрощает процесс;\\n\\n1. Позволяет пользователям сосредоточиться на создании и настройке модели,\\n2. Автоматически обрабатывает сложность вычислений градиентов.\\n3. Состоит из таких языков, как PyTorch с его tensor-объектом и derivative computation libraries.",
+      "rating": ""
+    }
+  ]
+}

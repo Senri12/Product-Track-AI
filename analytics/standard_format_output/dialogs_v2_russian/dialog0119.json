@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0119",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 33.4,
+    "precision": 40.2,
+    "recall": 43.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.900939"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Теорема Рейполя оlearn_rate_decay гласит, что функция learn_rate_decay можно вычислить по формуле:\n\nηt = η0 \\* e^(-α \\* (т-Н))\n\nгде:\n\n* ηt — learn_rate_decay (рассчитанный за t-номером)\n* η0 — initial learning rate (начальное learn_rate)\n* t — количество месяцев\n* N — общее количество записей в данных, что можно найти по формуле: N = (t \\* t) / 2\n\nПодставив данные значения, получим:\n\nη5 = 0,1 \\* e^(-α \\* (5-10))\n= 0,1 \\* e^(-α \\* (-5))\n= 0,1 \\* e^(5α)\n\nЧтобы найти α, мы можем использовать формулу:\n\nТолько для этого alpha можно рассчитать с помощью уравнения:\n(10 - 2) / (5 * ln(2)) = 1 / α\n\nЭто означает, что alpha равен 0,1797. Подставив это значение обратно в уравнение, получим:\n\nη5 = 0,1 \\* e^(-0,1797 \\* (5))\n= 0,1 \\* e^(0,8995)\n≈ 0,2\n\nОкончательный ответ — 0,2.",
+      "rating": ""
+    }
+  ]
+}

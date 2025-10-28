@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое Keras?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": " Керэс (Keras) - это открытая, небольшая библиотека для обучения нейронных сетей на питонском языке программирования. Она легко интегрируется с TensorFlow и Theano.\n\nKeras предназначено для быстрого прототипирования и исследовательских работ по построению нейронных сетей с архитектурами, такими как конвульсионные нейронные сети (CNN) и рекуррентные нейронные сети (RNN).\n\nПример использования Keras для обучения простой конвульсионной нейронной сети (CNN):\n\n1. Импортируем библиотеку Keras:\n```python\nfrom keras.models import Sequential\nfrom keras.layers import Conv2D, MaxPooling2D, Flatten, Dense\n```\n\n2. Определяем модель. Сначала создаем сериалную модель, а затем добавляем шаги для каждого слоя:\n```python\nmodel = Sequential()\nmodel.add(Conv2D(32, (3, 3), activation='relu', input_shape=(64, 64, 3)))\nmodel.add(MaxPooling2D((2, 2)))\nmodel.add(Conv2D(64, (3, 3), activation='relu'))\nmodel.add(MaxPooling2D((2, 2)))\nmodel.add(Flatten())\nmodel.add(Dense(10))\nmodel.add(Dense(1))\n```\n\n3. Скомпилировать модель с оптимизатором и потерей:\n```python\nmodel.compile(optimizer='adam', loss='mean_squared_error')\n```\n\n4. Сохранить или обучить модель:\n```python\nmodel.fit(X_train, y_train, epochs=5)\n```",
+    "rating": ""
+  }
+]

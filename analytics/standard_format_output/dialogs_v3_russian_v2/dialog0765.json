@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0765",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 36.3,
+    "precision": 37.2,
+    "recall": 47.8,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.3,
+    "hallucination": 10.5,
+    "faithfulness": 35.3,
+    "noise_sensitivity": 18.8,
+    "self_knowledge": 4.2,
+    "timestamp": "2025-10-28T13:24:20.320174"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Предположим, что количество писем в категории \"спам\", которые содержали слово \"win\", равно 2 (что подтверждается примером из текста), а общее число слов в категории \"спам\" равно 7 (также подтверждено примером). Тогда по формуле сглаживания по Лапласу, предложенной в лекции,\n\nP(win|спам) = (1 + 2) / (8 + 7) = 3 / 15,\n\nгде 8 - количество слов в категории \"спам\", не равное слову \"win\".",
+      "rating": ""
+    }
+  ]
+}

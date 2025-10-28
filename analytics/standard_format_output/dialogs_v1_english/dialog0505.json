@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0505",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 40.4,
+    "precision": 43.6,
+    "recall": 57.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.760583"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSprop (Root Mean Square Propagation) — это алгоритм оптимизации, который используется в машинном обучении для оптимизации параметров моделей путем минимизации функции потерь. Он был разработан Andrew Ng и его коллегами.\n\nОсновные особенности RMSprop:\n\n1. **Корректировка скоростей обучения**: Algoritм корректирует скорости обновления на основе средних значений квадратов спиндельного дрейфа (gradients) по признакам, позволяя более плавную оптимизацию.\n2. **Управление изменениями в зависимости от необходимости**: Он снижает частоту обновлений для параметров, которые мало меняются, и увеличивает их для тех, что активно меняются.\n\nОграничения:\n- Может быть чувствителен к начальному значению шага (learning rate).\n- Рекомендуется комбинировать с других методов оптимизации или адаптировать шаг по мере необходимости.",
+      "rating": ""
+    }
+  ]
+}

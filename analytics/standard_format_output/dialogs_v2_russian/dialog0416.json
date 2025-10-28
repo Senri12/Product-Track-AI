@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0416",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 27.7,
+    "precision": 32.4,
+    "recall": 37.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.884750"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Напомним формулу SGD:\n\n\\[ w_{t+1} = w_t - \\alpha \\left( r_t x_t + \\beta y_t + (1-\\beta) w_t^2\\right) \\]\n\nгде:\n\n*   \\(w\\) — вектор задачи, в данном случае \\(w = 3\\)\n*   \\(x_t\\) и \\(y_t\\) — данные, которые можно получить, применив функцию SGD к данных. Например, для использования L(w) = w^2.\n*   \\(\\alpha\\) — aprendizaje rate (качественый фактор), который будет на основе задаваемых данных определяться.\n*   \\(r_t\\), \\(\\beta\\) и \\((1-\\beta)\\) – коэффициенты для вычисления вектора learnings.\n\nНапример, если мы получим данные по числам:\n\n\\[x_t = 10, y_t = 15, r_t = 0.05, \\beta = 0.7, (1 - β) = 0.3\\]\n\nМы можем вычислить шаг SGD для этой задачи следующим образом:\n\n\\[w_{t+1} = w_t - \\alpha \\left( r_t x_t + \\beta y_t + (1-\\beta) w_t^2\\right)\\]\n\\[= 3 - \\alpha \\left( 0.05*10 + 0,7*15 + 0,3*3^2\\right)\\]\n\nСледовательно:\n\n\\[w_{t+1} = 3 - \\alpha (0.5 + 10.5 + 9) = 3 - \\alpha *21.\\]\n\nИспользуя значение α = 0.01 для заданного задачи, мы получаем:\n\n\\[w_{t+1} = 3 - 0,01*21 = 3 - 0,21 = 2,79\\]",
+      "rating": ""
+    }
+  ]
+}

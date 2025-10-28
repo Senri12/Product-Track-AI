@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое RMSProp?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "RMSProp (Adaptive moment estimation) — это метод градиентного descent с учётом размерности данных. Он был разработан в 2009 году у David Hinton и Geoffrey E. Hinton. RMSProp усредняет градиенты по-size, чтобы избежать от небольших изменений в весах при large gradients.\n\nРекомендуется для нейронных сетей в TensorFlow под названием tf.train.rmsprop Momentum. В нем есть параметры:\n\n- learning_rate — learning rate\n- gamma — weighing for RMSProp momentum term\n- beta — weighing for gradient size (0.9, 0.99)\n\nКод в Python для RMSProp в Tensorflow:\n```python\nimport tensorflow as tf\n\n# Define optimizer with RMSProp and Momentum\noptimizer = tf.train.rmsprop_momentum(...)\n\n# Use it during training\nglobal_step = tf.contrib import ...\n\nwith tf.Session():\n    model = ...\n    # Update weights\n```\n\nЭтот модуль помогает улучшить работу gradient descent и избежать проблем с large gradients.",
+    "rating": ""
+  }
+]

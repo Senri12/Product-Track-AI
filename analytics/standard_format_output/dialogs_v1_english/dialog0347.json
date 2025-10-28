@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0347",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое TensorFlow?",
+    "f1": 46.8,
+    "precision": 45.3,
+    "recall": 57.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.650935"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое TensorFlow?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Alright, let's talk about TensorFlow! I'll start with a summary and then we'll quiz you to make sure you’re comfortable with the basics.\n\n**What is TensorFlow?**\n\nIn a nutshell, TensorFlow is an **open-source software library for numerical computation and large-scale machine learning**.  Let's break that down:\n\n* **Open-source:**  This means it's free to use, modify, and distribute. A huge community of developers contributes to its development and support.\n* **Software Library:** It’s not an operating system or a standalone application. It's a collection of tools and functions that you use *within* other programs to perform specific tasks.\n* **Numerical Computation:**  It’s extremely powerful for performing mathematical operations efficiently, particularly linear algebra, calculus, and statistics – the building blocks of machine learning.\n* **Large-Scale Machine Learning:** This is its *primary* strength. TensorFlow is designed to handle incredibly complex models and massive datasets that traditional programming methods can’t.\n\n**Here’s a more detailed breakdown of key aspects:**\n\n* **Graphs:** TensorFlow uses a concept called \"computation graphs.\"  Think of it like a blueprint for a mathematical operation. You define *how* the data should be processed, and TensorFlow efficiently executes that computation.\n* **Automatic Differentiation:**  One of TensorFlow’s biggest strengths. It automatically calculates gradients (derivatives) – essential for training machine learning models. You don’t have to manually derive these gradients, which is incredibly time-consuming and prone to errors.\n* **Various Frameworks:** TensorFlow has evolved into several frameworks:\n    * **TensorFlow 1.x:** The original version, still widely used, especially in older research.\n    * **TensorFlow 2.x:**  A major revision with a more Pythonic API, making it easier to use.\n    * **TensorFlow Lite:** Optimized for running machine learning models on mobile and embedded devices.\n    * **TensorFlow.js:** Allows you to run TensorFlow models directly in a web browser.\n\n**Okay, let's test your understanding.  Ready for a quick quiz?**\n\n**Question 1:**  In your own words, what is the core idea behind using a “computation graph” in TensorFlow?  Don't just say it's for efficiency - explain the *concept* behind it.\n",
+      "rating": ""
+    }
+  ]
+}

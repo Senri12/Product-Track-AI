@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0043",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
+    "f1": 31.4,
+    "precision": 33.2,
+    "recall": 47.1,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.9,
+    "hallucination": 11.7,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.9,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.068160"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Посмотрев на примеры данных и расчеты расстояний, мы видим, что при выборе к 3-х ближайшими соседям объекта перца – овощ.  \nВозможно,Our classification for the test is consistent with the original data.\n\n**Ответ:**\n\nПроверяю расстояния и уточняю, что перце classifies как овощ в этом примере с погодой.",
+      "rating": ""
+    }
+  ]
+}

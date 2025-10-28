@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2560",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 28.4,
+    "precision": 32.6,
+    "recall": 36.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.968972"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "К-ННО (классификация на основе кратных neighbor) и взвешенный K-ННО - два popularны библиотеки, которые могут применяться для классификации данных. Разница между ними заключается в cách, по какому критериям они определяют neighbors.\n\n**К-ННО (классификация на основе кратных neighbor)**\n\nK-NN — это classical linear classifier, который определяется на основе критериев расстояния (кратного) zwischen объектами. Критерии расставляют neighbors в порядке увеличения расстояния до объекта target. Количество neighbor, который может быть учитán, указано наหน้า алгоритма.\n\n**Взвешенный K-ННО**\n\nВзвешенный K-NN — это more advanced classifier, который определяется на основе критериев взвешивания (кратного) между objectами и target. Критерии расставляют neighbors в порядке увеличения взвешенного расстояния (кратного). Количество neighbor, который может быть учитán, также указано наหน้า алгоритма.\n\nВзвешенный K-NN может принимать во внимание коэффициенты, которые определяют важность каждого neighbors для классификации. Это позволяет классификатору рассматривать более многосторON neighbors и принимать решения с большей точностью.\n\nНапример, если мы хотим выбрать 5 nearest neighbors для классификации объекта (например, для классификации людей по их возраст), взвешенный K-NN будет учитывать коэффициенты, определяющие важность каждого neighbors, а К-ННО не будет.\n\nВотExample в Python:\n```python\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn.model_selection import train_test_split\n\n# Данные дляexample\nX = [[1, 2], [3, 4], [5, 6]]\ny = [0, 0, 1]\n\n# К-ННО\nknn = KNeighborsClassifier(n_neighbors=3)\nknn.fit(X, y)\n\n# Взвешенный K-ННО\nvkt_knn = KNeighborsClassifier(n_estimators=100, weights='distance')\nvkt_knn.fit(X, y)\n\nprint(\"К-ННО с критерием расстояния:\")\nprint(knn.score(X, y))\n\nprint(\"\\nВзвешанный K-ННО с критерием взвешивания:\")\nprint(vkt_knn.score(X, y))\n```\nСледует отметить, что взвешенный K-NN может быть более точным для некоторых задач, но также более сложен и требует больше времени для настройки.",
+      "rating": ""
+    }
+  ]
+}

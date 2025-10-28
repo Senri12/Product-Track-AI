@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1829",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.107141"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисленияLearning rate decayηE используем формулу:\n\nηE = η0 / (number of steps) × e^(-η_per_step × E)\n\nη0 = 0.1  \nnumber of steps = T = 10  \nη_per_step = η0 / T = 0.1 / 10 = 0.01  \nE = 5\n\nηE = 0.1 / 10 × e^(-0.01 × 5) = 0.01 × e^(-0.05) ≈ 0.01 × 0.95123 ≈ 0.0095123\n\n**Ответ:**\n\nLearning rate decayηE equals approximately **0.0095** (отделивый Learning rate decayηafter5 epochsequalsabout0.0095).",
+      "rating": ""
+    }
+  ]
+}

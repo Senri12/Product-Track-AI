@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0668",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 40.7,
+    "precision": 39.1,
+    "recall": 51.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.5,
+    "hallucination": 10.7,
+    "faithfulness": 34.2,
+    "noise_sensitivity": 18.4,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.313047"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Расстояние Чебышёва - это метрика расстояния между двумя точками в многомерном пространстве, которая измеряет максимальное расстояние по координатам между точками. Другими словами, для двух n-мерных векторов x и y расстоянием Чебышёва между ними называется величина:\n\nd(x, y) = max(|xi - yi|), где i ∈ {1, 2, ..., n}.\n\nЭтот вид расстояния часто используется в алгоритмах классификации и регрессии для измерения расхождения между тренировочными и тестовыми данными.",
+      "rating": ""
+    }
+  ]
+}

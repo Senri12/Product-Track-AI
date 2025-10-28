@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0088",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 29.7,
+    "precision": 32.3,
+    "recall": 39.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.908418"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Преобразовав значения в стандартнуюScaler, получим:\n\nG_{t-1,ii} = 4\ng_t = 2\nη = 0,1\nε = 1e-8\n\nСложение значений G и g дает нам:\n\nG_{t,ii} + g_{t,ii} = 6 + 2\n= 8\n\nТеперь мы можем использовать формулу для определения gradients:\n\nг_{t,ii} = (G_{t,i+1} - G_t) / ε\n= (g_t + (G_{t-1,ii} - g_{t-1,i+1}) - G_t) / ε\n\nПодставив значения, получим:\n\nг_{т,ii} = ((2) + (4 - 0)) / ε\n= (6/ε)\n= (6/1e-8)\n\nРасширяя уравнение, мы находим:\n\nг_{т,ii} ≈ г_{т,ii}\n≈ 6.0\n\nТеперь давайте попробуем найтиGradieр г_{t,ii}. Мы можем сделать это, сложив два последних значения и разделив на ε:\n\nг_{t+1,ii} = g_t + (g_{t-1,i+1} - g_{t,i+2}) / ε\n= 2 + ((4) - 0) / ε\n≈ г_{т,ii}\n\nТаким образом,Gradieр г_{t,ii} равен примерно г_{т,ii}.",
+      "rating": ""
+    }
+  ]
+}

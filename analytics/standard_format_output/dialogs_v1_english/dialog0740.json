@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0740",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 37.0,
+    "precision": 44.8,
+    "recall": 58.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.793258"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "SGD означает Стochastic Gradient Descent (стochastic gradient descent). Это алгоритм обучения машинного моделирования, который используется для минимизации функции потерь. В отличие от стандартного градиентного спуска, которое использует данные по всем набору для вычисления градиента и обновления параметров модели одновременно, SGD обновляет параметры на основе маленькой выборке (или одномесячной выборке) данных за раз.\n\nЭтот метод особенно полезен при работе с большими наборами данных. Он экономит ресурсы и время, так как использует меньший выборочный набор для вычисления градиента. Однако это может привести к более неустойчивому процессу обучения в зависимости от выбора начального точку и размера шага. Этот риск можно смягчить, используя различные вариации SGD, такие как Mini-batch Gradient Descent или AdamOptimizer.\n\nМожете спросить об этом подробнее?",
+      "rating": ""
+    }
+  ]
+}

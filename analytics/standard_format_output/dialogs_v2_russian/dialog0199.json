@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0199",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 25.8,
+    "precision": 24.9,
+    "recall": 39.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.965464"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Оверфитинг (от английского terms \"overfitting\" и \"underfitting\") — это практическое предчувствие, когда лабораторный метод или алгоритм TOO «приблизается» к истинной функции или данных, а не TOO «отстает от них». Это происходит при insufficientном размереbatch данных или недостаточной сложности задачы.\n\nОверфитинг можно выявить, используя следующие критерии:\n\n1. **Высокая точность**: Лабораторный метод имеет высокую accuracy на первом этапе проверки.\n2. **Сlow Training Speed**: Тренироваться быстро и эффективно.\n3. **High Model Complexity**: Модель too сложная иtoo много层.\n4. **High Noise Resistance**: Модель too неустойчив к noise (площади наноточек).\n5. **Inadequate Data Collection**: insufficient data.\n\nПримечание: ओवरфитинг является общей проблемой при обучении и оценивает himself на каждом этапе процесса, но он наиболее опасен во втором этапе.",
+      "rating": ""
+    }
+  ]
+}

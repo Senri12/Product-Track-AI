@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1807",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.102413"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Возьмём данные об объектах, которые требуется предсказывать классы. Для каждого класса m определите frequency class probability P(class = m) как количество объектов с subclass m в обработанном наборе данных N.\n\nДля каждого атрибута X_i и каждогоsubclass m оцените probability of feature given the class P(X_i = x | class=m). Если предположение независимости between featuresholds naively, то для каждого объекта-X Feature-attribute pair X_i take on value x的概率 P(X_i = x) одинаков на всех classes.\n\nВсему объект-X Feature-attribute triple probabilities P(X_i = x | class=m) * P(class=m) умножьте на product over all features i=1 to n. Суммируйте это для каждогоsubclass m, чтобы получить P(X | subclass=m).\n\nТеперь вычислите вероятность subclass=m в обработанных данных: P(class=m | X) = (P(X | subclass=m) * P(class=m)) / P(X).\n\nКласс с максимальной вероятностью — это предсказанный класс.",
+      "rating": ""
+    }
+  ]
+}

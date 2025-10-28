@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вот расчет learning rate decay:\n\nη = η₀ * (1 - t/T)\n\nЗаменим значения:\n\nη = 0.1 * (1 - 5/10)\nη = 0.1 * (1 - 0.5)\nη = 0.1 * 0.5\nη = 0.05\n\nИтак, learning rate после 5 шагов будет равен 0.05.",
+    "rating": ""
+  }
+]

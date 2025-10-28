@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2244",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое метод Ньютона?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.064739"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод Ньютона?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The **Newton-Raphson method** is an iterative numerical technique used to find successively better approximations to the roots (or zeroes) of a real-valued function. It uses the function's derivative at each step to make linear approximations, converging quickly to the root when the initial guess is sufficiently close.\n\nHere's a concise explanation:\n\n1. **Initial Guess**: Start with an initial guess \\( x_0 \\) close to the actual root.\n2. **Linear Approximation**: At \\( x_0 \\), approximate the function \\( f(x) \\) using its tangent line:\n   \\[\n   y = f(x_0) + f'(x_0)(x - x_0)\n   \\]\n3. **Find Intersection**: Set \\( y = 0 \\) to find where the tangent intersects the x-axis, giving a new estimate:\n   \\[\n   x_1 = x_0 - \\frac{f(x_0)}{f'(x_0)}\n   \\]\n4. **Iterate**: Repeat the process with \\( x_1 \\) until the estimates converge to the root.\n\n**Why it Works**:\nThe method leverages linear approximation near each guess, making it efficient and reliable for many functions where derivatives are easy to compute. Each iteration reduces the error by a factor squared, leading to rapid convergence.\n\n**Considerations**:\n- Requires \\( f'(x) \\) to exist and be continuous around the root.\n- Can handle multiple roots but may require different initial guesses each time.\n- Suitable when derivative information is readily available, making it powerful for problems where derivatives are computationally expensive or non-existent.",
+      "rating": ""
+    }
+  ]
+}

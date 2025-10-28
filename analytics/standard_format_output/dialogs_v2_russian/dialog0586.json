@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0586",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 41.5,
+    "precision": 52.5,
+    "recall": 52.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.806626"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Autograd — это пакет, предоставляемый библиотекой PyTorch, предназначенный для автоматического вычисления производной математики функций, которую вы определяете в вашем графическом программном окружении (GPU). Он позволяет выполнять градиентный спуск путем автоматическойablaции через цепочки нейронных слоев на основе правила производной.\n\nЧтобы проверить ваши знания, предложите объяснение того, как autograd может быть использован для нахождения производных функции, которая является сложением двух других функций.",
+      "rating": ""
+    }
+  ]
+}

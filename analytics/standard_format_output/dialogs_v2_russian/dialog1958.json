@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1958",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.093440"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Chebyshev distance is a metric used to measure the distance between two points in space based on the maximum of the absolute differences along each axis. It is defined as:\n\n\\[ \\text{Chebyshev Distance} = \\max(|x1 - y1|, |x2 - y2|) \\]\n\nThis distance measure considers each dimension separately and focuses on the furthest coordinate between two points. It is particularly useful in optimization problems and approximation theory, especially when minimizing errors are involved.\n\n**Key Points:**\n- **Formula:** The Chebyshev distance is calculated as the maximum of the absolute differences in each dimension.\n- **Comparison to Other Distances:** It is intermediate between Manhattan (sum) and Euclidean (root sum of squares) distances. It considers only the furthest coordinate, making it sensitive to scale along that axis.\n\n**Applications:**\n- **Computer Graphics:** Used for comparing textures or images as multi-dimensional vectors.\n- **Robotics:** For efficient path planning in high-dimensional spaces.\n- **Machine Learning:** Effective in dealing with high-dimensional data due to its robustness against varying scales.\n\nChebyshev distance is a versatile metric, especially when handling data that may require sensitivity along specific dimensions without being overly influenced by others.",
+      "rating": ""
+    }
+  ]
+}

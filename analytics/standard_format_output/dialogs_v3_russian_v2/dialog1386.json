@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1386",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое манхэттенское расстояние?",
+    "f1": 31.4,
+    "precision": 37.6,
+    "recall": 43.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.3,
+    "hallucination": 11.3,
+    "faithfulness": 31.8,
+    "noise_sensitivity": 16.0,
+    "self_knowledge": 6.9,
+    "timestamp": "2025-10-28T13:24:20.026844"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое манхэттенское расстояние?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Манхиттское расстояние — это типичный термин, который включает геометрию с латинской фразой «Manhattan distance», где Manhattan означает Николая Харламсона. Это расстояние между точками на векторных пространствах рассчитывается как сумма отдельных из absolute value of differences in each coordinate.\n\nМанхиттское расстояние не takes into account the angle or direction between axes, аfonymetry. Оно включает измерения топологической геометрии и commonly used for practical applications where not only the difference between numbers but also their sign matters. It is often associated with Euclidean distance, which considers the straight-line path, while Manhattan distance sums up all the absolute differences in each dimension.\n\nThe manhattan distance can be useful in various fields, such as geography, engineering, and machine learning. In geology, it might represent the sum of distances between points on a map. In machine learning, it could be used to analyze data with linear or non-linear relationships.",
+      "rating": ""
+    }
+  ]
+}

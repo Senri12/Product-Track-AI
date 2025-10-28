@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0340",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 46.8,
+    "precision": 45.3,
+    "recall": 57.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.648550"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Okay, let's dive into the differences between k-NN (k-Nearest Neighbors) and Weighted k-NN. This is a crucial distinction in machine learning, and understanding it will significantly improve your accuracy and model performance.\n\n**Core Concept: k-NN – A Simple but Powerful Approach**\n\nFirst, let's recap basic k-NN.\n\n* **Principle:**  k-NN is a supervised learning algorithm used for both classification and regression. It's based on the idea that similar things should be similar in their target values.\n* **How it Works:**\n    1. **Distance Calculation:** For a new data point, k-NN calculates the distance (e.g., Euclidean distance) between that point and all the points in your training dataset.\n    2. **Nearest Neighbors:** It identifies the ‘k’ nearest neighbors (the ones closest in distance).\n    3. **Prediction:**\n        * **Classification:** The new point is assigned to the class that is most frequent among its k nearest neighbors.\n        * **Regression:** The new point’s value is predicted as the average (or weighted average) of the target values of its k nearest neighbors.\n\n\n**Now, let's talk about Weighted k-NN**\n\n* **The Problem with Standard k-NN:** Standard k-NN treats all the neighbors equally.  However, in many real-world scenarios, some neighbors are *more* influential than others.  For instance, a neighbor that’s closer to the new point carries more weight than one that's farther away.\n* **Weighted k-NN Solution:** Weighted k-NN addresses this by assigning *weights* to each of the k neighbors. This means some neighbors contribute more to the prediction than others.\n* **How it Works:**\n    1. **Weight Assignment:**  You define a weighting function.  Common weighting functions include:\n        * **Distance-Based:** Closer neighbors get higher weights.  For example, you might use an inverse distance weighting, where the weight decreases as the distance increases.  A simple formula could be `weight = 1 / distance^2`.\n        * **Uniform:** All neighbors have the same weight. This is essentially standard k-NN.\n    2. **Weighted Average:** The new point’s value is calculated as a weighted average of the target values of its k weighted neighbors.\n\n\n**Here’s a table summarizing the key differences:**\n\n| Feature           | k-NN (Standard) | Weighted k-NN |\n|--------------------|------------------|-----------------|\n| **Neighbor Weighting** | All neighbors equal | Neighbors have different weights |\n| **Weighting Function**| None             | Requires a defined function (e.g., inverse distance) |\n| **Sensitivity to Outliers**| More sensitive    | Less sensitive (especially with distance-based weighting) |\n| **Complexity**       | Simpler          | More complex due to the weighting function |\n\n\n---\n\n**Okay, let's test your understanding.  I'm going to ask you a few questions.  Don't worry about getting everything right immediately – this is a learning process!**\n\n**Question 1:**  Imagine you’re building a k-NN model to predict house prices based on square footage.  Why might you choose Weighted k-NN over standard k-NN?  Give me one reason.\n",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0588",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое Keras?",
+    "f1": 40.2,
+    "precision": 46.7,
+    "recall": 58.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.768078"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Keras?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Keras — это высокоуровневый графический интерфейс на основе модульного дизайна для создания нейронных сетей. Он построен на верхнем ядере Microsoft Cognitive Toolkit (CNTK), но позже был открыт к открытию и лицензионным привязкам Apache 2.\n\nОсновные особенности Keras включают:\n\n1. **Гибкость**: Вы можете создавать сложные архитектуры, используя простые компоненты.\n2. **Дружественное для новичков**: Простое использование API делает его доступным даже для тех, кто впервые сталкивается с нейронными сетями.\n3. **Поддержка TPU и GPU**: Можно легко использовать ускорители для улучшения производительности.\n4. **Векторизация**: Поддерживает векторную обработку разума (CPU) Keras для увеличения производительности.\n\nКлассическая модель в Keras выглядит следующим образом:\n\n```python\nimport keras\nfrom keras.models import Sequential\nfrom keras.layers import Dense\n\n# Создание модели последовательной, которая может быть использована для классификации MNIST.\nmodel = Sequential()\nmodel.add(Dense(512, activation='relu', input_shape=(784,)))\nmodel.add(Dense(10, activation='softmax'))\n\n# Компиляция модели с использованием метрик суждения и оптимизатор Adam.\nmodel.compile(loss=keras.losses.categorical_crossentropy,\n              optimizer=keras.optimizers.Adam(),\n              metrics=['accuracy'])\n\nprint(model.summary())\n```\n\nВ этом примере мы создаем модель последовательной, которая имеет два слоя нейронов. Первый слой использует активацию ReLU с 512 нейронами и вектором ввода длиной 784 (для MNIST). Второй слой является выходным слоем с 10 нейронами для классификации классов.\n\nKeras также может быть легко интегрирован с TensorFlow, Theano или Microsoft Cognitive Toolkit благодаря своему модульному дизайну. Это позволяет использовать возможности этих библиотек при работе в Keras.",
+      "rating": ""
+    }
+  ]
+}

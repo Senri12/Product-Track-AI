@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2647",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 29.4,
+    "precision": 25.5,
+    "recall": 48.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.849645"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вероятность класса в Naive Bayes определяется выражением:\n\nP(class) = P(data|класс) \\* P(klass)\n\nгде P(data|класс) — вероятность данных, соответствующие конкретному классу, а P(klass) — общая вероятность всех классов.\n\nЧтобы вычислить это выражение, давайте сначала воспользуемся формулой распределения Naive Bayes:\n\nP(data|класс) = (Победа в classified class) / (∑(Победа в каждом классе))\n\nгде Побeda в classified_class — вероятность правильного класса.\n\nДавайте посчитаем вероятности для каждого класса:\n\n* Вероятность правильного класса: P(correct_class)\n* Вероятность неправильного класса: P(incorrect_class) = 1 - P(correct_class)\n\nТеперь давайте воспользуемся формулой распределения Naive Bayes и вычислим вероятности данных, соответствующие каждого классу:\n\n* Вероятность данных в правильном классе: P(data|correct_class) = (Победа в classified_class) / (∑(Победа в каждом классе))\n* Вероятность данных в неправильном классе: P(data|incorrect_class) = 1 - P(data|correct_class)\n\nТеперь давайте воспользуемся формулой распределения для вероятности данных, соответствующей конкретному классу:\n\nP(data|classified class) = (Победа в classified_class) / (∑(Победа в каждом классе))\n\nЗатем умножьте вероятности данных, соответствующие каждого классу, и сложите их:\n\nP(correct_class) ≈ P(data|correct_class) \\* P(correct_class) + P(data|incorrect_class) \\* P(incorrect_class)\n\nТеперь давайте воспользуемся формулой распределения для вероятности данных, соответствующей конкретному классу:\n\nP(data|classified class) = (Победа в classified_class) / (∑(Победа в каждом классе))\n\nЗатем умножьте вероятности данных, соответствующие каждого классу, и сложите их:\n\nP(incorrect_class) ≈ P(data|incorrect_class) \\* P(incorrect_class)\n\nИспользуя эти выражения, мы можем вычислить вероятность класса в Naive Bayes.\n\nВероятность класса в Naive Bayes ≈\n1 - (1/2)^(|data|)\n= 1 - (1/2)^{|data|}\n\nЗдесь |data| — количество данных, соответствующих конкретному классу.",
+      "rating": ""
+    }
+  ]
+}

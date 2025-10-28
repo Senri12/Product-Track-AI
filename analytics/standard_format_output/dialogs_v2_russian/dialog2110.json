@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2110",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.118351"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В отличие от метода k-NN (контрольled nearest neighbors), метод weighthed k-NN включает вклады для некоторых данных. Взешенные данные об treated weight, что может уменьшить или увеличить их влияние на результаты.\n\n**Ответ:**\n\nВзвешенный k-NN учитывает веса для определённых learning samples. В отличие от单纯的 k-NN, который не использует весов,-weighted k-NN включает вклады в расстояния или предсказания, что позволяет уменьшать или увеличивать их влияние на результаты.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0530",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 38.0,
+    "precision": 34.7,
+    "recall": 52.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.0,
+    "hallucination": 12.3,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 20.2,
+    "self_knowledge": 4.7,
+    "timestamp": "2025-10-28T13:24:20.253664"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " SGD (Stochastic Gradient Descent) - это метод оптимизации для машинного обучения, который использует случайные градиенты вместо полных для минимизации целевой функции. Случайный градиент вычисляется по одному случайному экземпляру данных из набора в каждой итерации, что делает SGD более быстрым и простым, чем полный метод Gradient Descent. Этот алгоритм используется для обучения глубоких нейронных сетей, рекомендательных систем, линейных регрессии и классификации.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1017",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 32.5,
+    "precision": 30.1,
+    "recall": 51.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.2,
+    "hallucination": 10.7,
+    "faithfulness": 34.5,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 4.7,
+    "timestamp": "2025-10-28T13:24:20.116128"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления `v_t` в методе моментов (IMPULS), используя параметр `γ = 0.9`, прошлого градиента `v_{t-1} = 1` и корня функции потерь по вектору `∇L = 2` с шагом обучения `η = 0.1`, выполняется следующая формула:\n\n```\nv_t = γ * v_{t-1} - η * ∇L(ω)\n```\n\nЗамените значения в эту формулу:\n\n```\nv_t = 0.9 * 1 - 0.1 * 2\nv_t = 0.9 - 0.2\nv_t = 0.7\n```\n\nТаким образом, `v_t` в данном случае равно 0.7.",
+      "rating": ""
+    }
+  ]
+}

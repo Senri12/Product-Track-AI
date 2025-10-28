@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0715",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 39.5,
+    "precision": 40.8,
+    "recall": 48.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.1,
+    "hallucination": 9.4,
+    "faithfulness": 34.6,
+    "noise_sensitivity": 16.8,
+    "self_knowledge": 6.0,
+    "timestamp": "2025-10-28T13:24:20.292003"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " RMSProp (Root Mean Square Propagation) - это алгоритм оптимизации для Нейросеток. Это модификация градиентного спуска, которая отличается тем, что она учитывает временную всплывающую среднюю квадратичную скорость градиентов (Root Mean Square Gradients), чтобы уменьшить вероятность колебаний и повысить стабильность.\n\nАлгоритм RMSProp использует следующий обновление весов:\n\n```\nv[i] = decay_rate * v[i] + (1 - decay_rate) * gradient[i]^2\ntheta[i] = theta[i] - learning_rate * gradient[i] / sqrt(v[i] + epsilon)\n```\n\nгде:\n\n* `gradient[i]` - градиент потери по текущему весу\n* `theta[i]` - вес i-й нейрона\n* `decay_rate` - коэффициент затухания для средней квадратичной скорости градиентов (по умолчанию равен 0.9)\n* `learning_rate` - общий коэффициент обучения (один из важных параметров оптимизатора, позволяет контролировать скорость обучения)\n* `epsilon` - малая константа, которая предотвращает деление на нуль или очень малые значения (по умолчанию равен 1e-8 в TensorFlow)\n* `v[i]` - средняя квадратичная скорость градиентов по текущему весу.",
+      "rating": ""
+    }
+  ]
+}

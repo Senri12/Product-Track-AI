@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1804",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем суть наивного байесовского классификатора?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.062351"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем суть наивного байесовского классификатора?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The Naive Bayes classifier is a popular machine learning algorithm used for classification tasks. Here's a detailed explanation:\n\n1. **Bayesian Probability**: The Naive Bayes classifier operates on Bayesian probability, which updates the probability of a hypothesis based on evidence. It uses Bayes' theorem to calculate the posterior probabilities.\n\n2. **Formula**: For each class \\( C_k \\), the posterior probability is:\n   \\[\n   P(C_k | x) = \\frac{P(x | C_k) P(C_k)}{P(x)}\n   \\]\n   - \\( P(C_k) \\): Prior probability of class \\( C_k \\).\n   - \\( P(x | C_k) \\): Likelihood, the probability of data \\( x \\) given class \\( C_k \\).\n   - \\( P(x) \\): Evidence or marginal likelihood.\n\n3. **Naive Assumption**: The \"naive\" part comes from assuming that features are independent conditional on the class. This simplification reduces complexity but may not always hold true in real-world data.\n\n4. **Classification Process**:\n   - Collects data.\n   - Calculates probabilities for each class using Bayes' theorem.\n   - Selects the class with the highest posterior probability as the prediction.\n\n5. **Advantages**: Despite its simplicity, Naive Bayes performs well due to:\n   - Handling both labeled and unlabeled data.\n   - Efficient computation even with large datasets.\n   - Suitability for text classification (e.g., spam detection).\n\nIn summary, the Naive Bayes classifier uses Bayesian probability to classify data into multiple classes, assuming features are independent, making it efficient and widely applicable.",
+      "rating": ""
+    }
+  ]
+}

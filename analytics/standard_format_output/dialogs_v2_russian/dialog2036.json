@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2036",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.113940"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления шага в SGD для функции \\( L(w) = w^2 \\), приwеInteger \\( w=3 \\) и Learning Rate \\( \\eta = 0.1 \\):\n\n1. **Научиться градиентировать**: Градиент от функции \\( L(w) = w^2 \\) по \\( w \\) равен \\( 2w \\).\n   \n   \\[\n   \\nabla L(w) = 2w\n   \\]\n\n2. **Подставить значения**:  \n   \\( w = 3 \\),  \n   \\( \\nabla L(3) = 2 \\times 3 = 6 \\).\n\n3. **Использовать Learning Rate**:  \n   Step update в SGDequals Learning Rate multiplied by градиент.\n\n   \\[\n   \\text{Step} = \\eta \\times \\nabla L(w) = 0.1 \\times 6 = 0.6\n   \\]\n\n**Последовательность Updates**:  \n\\[\nw_{\\text{new}} = w_{\\text{old}} - \\text{Step} = 3 - 0.6 = 2.4\n\\]\n\n**Результат**: Стep в SGD для данной задачи равен **0.6**.",
+      "rating": ""
+    }
+  ]
+}

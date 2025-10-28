@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1923",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.041968"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Euclidean metric, also known as the standard Euclidean metric, is a mathematical concept that defines the distance between two points in an n-dimensional space using the Pythagorean formula. This metric extends the familiar method of calculating distances on a flat surface (like 2D or 3D geometry) to any number of dimensions. It applies to both finite and infinite-dimensional spaces, such as real coordinate spaces, where each point is represented by a set of coordinates, and the distance between two points is computed as the square root of the sum of the squares of the differences in their respective coordinates.\n\nIn contrast to other metrics like Manhattan or Chebyshev distance, Euclidean metric does not involve squaring the differences. Instead, it calculates distances using the formula:\n\n\\[ d(\\mathbf{a}, \\mathbf{b}) = \\sqrt{(a_1 - b_1)^2 + (a_2 - b_2)^2 + \\cdots + (a_n - b_n)^2} \\]\n\nThis metric is fundamental in various fields, including physics, engineering, and machine learning, where it is used to measure distances in spaces with different dimensions. It is also a part of the broader concept of metrics, which are functions that assign non-negative real numbers to represent distance or dissimilarity between points.\n\nIn summary, Euclidean metric is a universal method for calculating distances across any number of dimensions and remains an essential tool in mathematics and its applications.",
+      "rating": ""
+    }
+  ]
+}

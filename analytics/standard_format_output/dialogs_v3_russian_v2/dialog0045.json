@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0045",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 31.4,
+    "precision": 33.2,
+    "recall": 47.1,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.9,
+    "hallucination": 11.7,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.9,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.068475"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Посмотрев на все исходные события и их вероятности, вeredо и сproveχимся, что сумма вероятностей всех этих событий, связанных с проиганием спам при том, что пользователь проходит в спам-пример, равна 3. В таком случае общая вероятность спама будет равна 3.\n\nТеперь используем формулу для вычисления условной вероятности:\n$$\nP(\\text{win}|\\text{spam}) = \\frac{P(\\text{both win and spam})}{P(\\text{spam})}\n$$\n\nПодставим значения в формулу:\n$$\nP(\\text{win}|\\text{spam}) = \\frac{3}{3} = 1\n$$\n\nИтак, вероятность проиграть спам при том, что пользователь проходит в спам-пример равна 1.",
+      "rating": ""
+    }
+  ]
+}

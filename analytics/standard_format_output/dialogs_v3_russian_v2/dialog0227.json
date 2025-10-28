@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0227",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое TensorFlow?",
+    "f1": 34.4,
+    "precision": 37.5,
+    "recall": 41.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 25.4,
+    "hallucination": 10.2,
+    "faithfulness": 33.3,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 6.5,
+    "timestamp": "2025-10-28T13:24:20.008441"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое TensorFlow?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Теперь я могу кратко рассказать на основе лекции о том, как использованиеTensorFlow с Autograd allows automatic differentiation (autodifferentiation), which automatically computes gradients for loss functions during backpropagation. This significantly simplifies implementing neural networks without manual mathematical derivations.\n\n**План действий:**\n\n1. **Создание вектора данных:** Установите данные для нейронной сети, например, MNIST для задачи классификации чисел от 0 до 9.\n\n2. **Создание модели:** Создайте сеть нейронов с определенными слоами и функциями активации.\n\n3. **Определение оптимизатора:** Установите оптимизатор для последовательного обучения (например, Adam).\n\n4. **Компilation модели:** Устанавливайте функцию потерь и метрики для оценки-trainedной модели.\n\n5. **Тренировка:** Обновляйте параметры сети на основе вычисленных градиентов с помощью оптимизатора.\n\n6. **Проверка performance:** Высчитайте точность на тестовых данных для оценки качества trained модели.\n\n**Пример:**\n\nДопустим, я веду обучение нейронной сети с MNIST на TensorFlow:\n\n```python\nimport numpy as np\nfrom tensorflow import keras\nfrom tensorflow.keras import layers\nimport matplotlib.pyplot as plt\n\n# Создание датасета\n(x_train, y_train), (x_test, y_test) = tf.data.Dataset.load tfmnist\n\n# Обновление модели\nmodel = keras.Sequential([\n    layers.Dense(256, activation='relu'),  # Повторная нейронка с функцией активации ReLU\n    layers BatchNormalization(),  # Нормализация выходных данных для улучшения выборки\n    layers.Dense(10, activation='softmax')  # Описание выходных классов\n])\n\n# Обновление оптимизатора и функции потерь\noptimizer = keras.optimizers.Adam()\nmodel.compile(optimizer=optimizer, loss='sparse_categorical_crossentropy', metrics=['accuracy'])\n\n# Тренировка модели на training данных\nmodel.fit(x_train / 255.0, y_train, epochs=10, batch_size=64, verbose=2)\n\n# Проверка performance на test данных\ntest_acc = model.evaluate(x_test / 255.0, y_test, batch_size=64, verbose=2)\nprint(f'Точность в тестовых данных: {test_acc:.2f}%')\n```\n\n**Вывод:**\n\nЭтот пример показывает, как использование TensorFlow с Autograd позволяет автоматизированному вычислении градиентов и последовательном обучении нейронных сетей. Это делает TensorFlow незаменимым инструментом для разработчиков нейронной сети, особенно при small данных или на распределенных данных.",
+      "rating": ""
+    }
+  ]
+}

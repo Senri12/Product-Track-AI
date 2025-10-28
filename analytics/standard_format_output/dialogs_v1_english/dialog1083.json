@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1083",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 34.2,
+    "precision": 33.6,
+    "recall": 51.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.279662"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Евклидова метрика (Euklidian metric) - это расстояние между точками в пространстве, измеренное по правилу, при котором мы находим разницу между координатами этих точек по каждой координате, а затем квадратически суммируем эту разницу.\n\n**Практическая проблема:**\nОпределите Евклидово расстояние между двумя точками в трёхмерном пространстве: A(3, 4, 5) и B(7, 9, 1).\n\n**Варианты ответов:**\nA. √((3-7)^2 + (4-9)^2 + (5-1)^2) = sqrt(65)\nB. √((3-7)^2 + (4-9)^2 + (5-1)^2 + 2) = sqrt(66)\nC. √((3-7)^2 + (4-9)^2 + (5-1)^2 - 2) = sqrt(64)\nD. √((3-7)^2 + (4-9)^2 + (5-1)^2 + 10) = sqrt(89)\n\n**Ответ:** A. √((3-7)^2 + (4-9)^2 + (5-1)^2) = sqrt(65)",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0888",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое Keras?",
+    "f1": 34.1,
+    "precision": 42.0,
+    "recall": 56.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.784398"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Keras?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Keras - это высокоуровневый opensourceно-открытый программный продукт на Python для глубокого обучения в нейронных сетях (NN). Он был разработан как легкий и интуитивно понятный API, который позволяет быстро проектировать сложные модели NN. Keras построен на поверхностной библиотеке фреймворка Microsoft CNTK и с тех пор является частью проекта Microsoft в составе Scikit-leidbild Python.\n\nВот несколько ключевых функций Keras:\n\n1. **Удобство**: Вы можете легко создавать, тренировать и экспортировать сложные NN.\n2. **Поддержка гетерогенных графиков**: Позволяет интегрировать модели с другими библиотеками, такими как TensorFlow или Theano, для выполнения вычислений на графиках.\n3. **Сценарии загрузки данных**: Доступен набор предварительно обученных моделей и встроенные функции для обучения с примерами.\n\nВот простой пример создания NN в Keras:\n\n```python\nimport keras\nfrom keras.models import Sequential\nfrom keras.layers import Dense\n\n# Создание нового пустого модели Sequential\nmodel = Sequential()\n\n# Добавление первых слоев: входной слой, скрытый слой и выходной слой.\nmodel.add(Dense(32, activation='relu', input_shape=(784,)))  # Входной слой с твердостью ReLU в качестве активации\nmodel.add(Dense(32, activation='relu'))                        # Второй слой с твердостью ReLU в качестве активации\nmodel.add(Dense(10, activation='softmax'))                    # Выходной слой softmax для классификации 10 классов\n\n# Компиляция модели: использование кроссентрального потока логистики, AdamOptimizer и метрик точности.\nmodel.compile(\n    optimizer=keras.optimizers.Adam(),\n    loss=keras.losses.categorical_crossentropy,\n    metrics=['accuracy']\n)\n\nprint(model.summary())\n```\n\nЭтот пример демонстрирует создание простого feedforward NN с использованием Sequential API Keras. В этом примере входной слой имеет 784 тисков (например, flattenizada форма изображения размером 28x28 пикселей), два слоя hidden и выходной слой с Softmax-активацией для классификации в 10 классах.\n\nKeras позволяет не только проектирование NN, но и их обучение, а также загрузку предварительно обученных моделей. Кроме того, он легко интегрируется с другими библиотеками, такими как TensorFlow или Theano, чтобы использовать их мощные вычислительные возможности.\n\nНадеюсь, это поможет вам понять основные концепции Keras! Если у вас есть дополнительные вопросы по этой теме, не стесняйтесь задавать их.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0405",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 30.8,
+    "precision": 37.7,
+    "recall": 36.9,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 30.6,
+    "hallucination": 18.7,
+    "faithfulness": 29.5,
+    "noise_sensitivity": 9.6,
+    "self_knowledge": 1.9,
+    "timestamp": "2025-10-28T13:24:19.907958"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Поскольку word \"win\" встречается только один раз в письме, и его количество вхождений равно 1, то P(\"win\"|spam) = 0 + 1 / (8 + 7) = 0 + 1/15 = 1/15.",
+      "rating": ""
+    }
+  ]
+}

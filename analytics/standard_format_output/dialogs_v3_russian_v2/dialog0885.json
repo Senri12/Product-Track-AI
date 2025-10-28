@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0885",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 41.4,
+    "precision": 36.6,
+    "recall": 58.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.8,
+    "hallucination": 10.7,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 19.2,
+    "self_knowledge": 6.4,
+    "timestamp": "2025-10-28T13:24:20.277124"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Перейдите к отрезку описания спам-примера в тексте и найдите формулу для вероятности встретить слово win принадлежащего к категории <<спам>> с использованием сглаживания по Лапласу:\n\nP(X = win | Класс = спам) = (1 + количество слов X в классе спам) / (|V| + количество слов в классе спам),\n\nгде |V| - количество слов в словаре. В данном примере, вероятность встретить слово win принадлежащего к категории <<спам>> будет равна:\n\nP(X = win | Класс = спам) = (1 + 1) / (8 + 7) = 2 / 15.",
+      "rating": ""
+    }
+  ]
+}

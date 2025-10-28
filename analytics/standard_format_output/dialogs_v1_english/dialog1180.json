@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1180",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 42.7,
+    "precision": 44.4,
+    "recall": 53.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.265862"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Let's start with a simpler explanation to ensure we're both on the same page.\n\nk-Nearest Neighbors (k-NN) is a popular machine learning algorithm used for classification and regression problems. It works by finding the k closest data points (neighbors) to a new, unknown point in the dataset and assigning it a class or value based on those neighbors' labels or values. By default, Euclidean distance is used to measure the similarity between points.\n\nNow, let's introduce Weighted k-Nearest Neighbors (Wk-NN). This variation of the k-NN algorithm assigns weights to each data point in the training dataset. These weights can be based on factors such as their age, importance, or relevance to the problem at hand. The idea is that some points may be more important than others, and Wk-NN takes this into account when finding neighbors for a new point.\n\nIn summary, the main difference between k-NN and Weighted k-NN lies in the weighting of data points: while standard k-NN assigns equal weights to all points, weighted k-NN uses custom weights to account for different levels of importance among data points.",
+      "rating": ""
+    }
+  ]
+}

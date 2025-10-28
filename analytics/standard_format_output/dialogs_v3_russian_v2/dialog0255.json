@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0255",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 34.6,
+    "precision": 35.0,
+    "recall": 48.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.6,
+    "hallucination": 10.2,
+    "faithfulness": 30.2,
+    "noise_sensitivity": 15.5,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:20.001184"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В您的 примере с спам-примерами вычислите P(win|spam) с Laplace:\n\n**Решение:**\n\nДано:\n```\nInput | Target Label\n--- | ---\nSpam  | Win\n Spam  | Loss\n Non-spam | Loss\n```\n\nИтак, в spamе отображается один win и один loss. Используя формулу Laplace's:\n\nP(win|spam) = W / (W + L), где W – количество wins в spam, а L – количество losses в spam.\n\nПодставляем значения:\nW = 1, L = 1\n\nP(win|spam) = 1 / (1 + 1) = 0.5\n\n**Ответ:** P(win|spam) = 0.5",
+      "rating": ""
+    }
+  ]
+}

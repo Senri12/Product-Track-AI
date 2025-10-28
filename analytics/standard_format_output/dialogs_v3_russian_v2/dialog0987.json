@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0987",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 31.5,
+    "precision": 29.0,
+    "recall": 46.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.6,
+    "hallucination": 11.7,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 20.2,
+    "self_knowledge": 5.8,
+    "timestamp": "2025-10-28T13:24:20.124381"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для найденных значений параметров (γ = 0.9, v_{t-1} = 1, ∇L = 2, η = 0.1) вам необходимо вычислить v_t следующим образом:\n\nv_t = γ * v_(t - 1) - η * ∇L\n\nВведите значения:\n\nv_t = 0.9 * 1 - 0.1 * 2\nv_t = 0.9 - 0.2\nv_t = 0.7\n\nТаким образом, v_t = 0.7.",
+      "rating": ""
+    }
+  ]
+}

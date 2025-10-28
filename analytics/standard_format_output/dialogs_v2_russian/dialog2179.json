@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2179",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.015101"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Overfitting is a phenomenon where a machine learning model learns the training data to an extent that it captures all the noise and random variations present in the data. This excessive memorization of patterns leads to poor generalization performance on new, unseen data. \n\nKey points explaining overfitting:\n\n1. **Memorization vs. Generalization**: Models learn too much from the training data, including its noise features and random fluctuations. They fail to adapt to new patterns in the test set.\n\n2. **Bias-Variance Trade-off**: Overfitting arises when there is a high variance (too complex) and low bias (lacking generalizable patterns). It results in poor predictive performance on new data due to over- memorization of the training data.\n\n3. **Regularization Techniques**: Methods like L1 and L2 regularization add penalties for complexity, encouraging simpler models that generalize better by shrinking large weights or combinations thereof.\n\n4. **Consequences**: While models perform well on training data, they often fail when tested on new data due to overfitting. However, such models may still make good predictions for the specific training set.\n\n5. **Detection Methods**: Techniques like cross-validation help estimate generalization performance by evaluating on multiple splits of the data. High variance across splits suggests potential overfitting.\n\n6. **Parameter Overcomparability**: Models with more parameters than available data points are prone to overfitting due to their excessive flexibility, which can lead to capturing noise rather than true patterns.\n\nIn summary, overfitting is when a model learns too much from training data, including its noise features, leading to poor performance on new data. It is characterized by high variance and poor generalization, often detected through methods like cross-validation or regularization techniques.",
+      "rating": ""
+    }
+  ]
+}

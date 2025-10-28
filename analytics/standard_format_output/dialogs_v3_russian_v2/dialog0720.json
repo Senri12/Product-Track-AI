@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0720",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 39.5,
+    "precision": 40.8,
+    "recall": 48.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.1,
+    "hallucination": 9.4,
+    "faithfulness": 34.6,
+    "noise_sensitivity": 16.8,
+    "self_knowledge": 6.0,
+    "timestamp": "2025-10-28T13:24:20.292767"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " ∇ в ω - γ v_{t-1} = 2 - 0.9 \\* 1 = 1.8\n\nПримечание: Это просто умножение вектора на скаляр (0.9), так что результат будет массивом длины одинаковой, как и массив v_{t-1}. В случае численного вычисления в программе для конкретных значений будут использоваться арифметические операции соответствующие этим операциям.",
+      "rating": ""
+    }
+  ]
+}

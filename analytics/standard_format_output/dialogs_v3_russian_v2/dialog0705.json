@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0705",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 39.5,
+    "precision": 40.8,
+    "recall": 48.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.1,
+    "hallucination": 9.4,
+    "faithfulness": 34.6,
+    "noise_sensitivity": 16.8,
+    "self_knowledge": 6.0,
+    "timestamp": "2025-10-28T13:24:20.290210"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Предположим, что в тренировочных данных встретилось 7 слов (с учетом повторений), а всего слов в словаре |V| = 15. Тогда вероятность встретить слово win в категории <<спам>> будет:\n$$P(win|\\text{Класс} = \\text{спам}) = \\frac{1 + \\text{количество слов } X \\text{ в классе } y}{|V| + \\text{количество слов в классе } y} = \\frac{2}{15+7} = \\frac{2}{22}$$",
+      "rating": ""
+    }
+  ]
+}

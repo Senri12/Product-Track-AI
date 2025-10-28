@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1639",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 7.7,
+    "precision": 8.3,
+    "recall": 29.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.149444"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-fitting is like a student who studies so much that they memorize every single detail of their textbooks but can't apply this information to new scenarios or situations. In the context of machine learning, it refers to when a model learns the training data too well – not just the patterns and trends within it – but also the noise and outliers.\n\nImagine you're teaching a computer how to identify cats in pictures by showing it numerous examples of cats. If your model gets over-fitted, it will remember every tiny detail of these images—the color of whiskers, the shape of paws, even the exact position of each hair on the cat's fur.\n\nBut when presented with new, unseen pictures of cats (like those taken in different lighting conditions or angles), this overly detailed model would likely fail because it can't generalize its learning to these varied scenarios. It's like a student who can only recognize cats perfectly from their memorized images but fails miserably when confronted with actual, diverse cat pictures.\n\nTo prevent over-fitting:\n1. Use more training data. \n2. Apply techniques like cross-validation or regularization.\n3. Simplify the model by reducing complexity (like number of layers in a neural network). \n\nIn essence, over-fitting is when a model is too \"specific\" to its training data and fails to recognize broader patterns that would allow it to perform well on new, unseen data.",
+      "rating": ""
+    }
+  ]
+}

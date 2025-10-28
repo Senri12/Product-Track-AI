@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2207",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое TensorFlow?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.006459"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое TensorFlow?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "TensorFlow is an open-source library developed by Google to facilitate the creation of machine learning models. It enables developers to build applications that can automatically learn and make decisions with minimal manual programming.\n\n**Key Features:**\n\n1. **Automation:** TensorFlow allows you to define complex algorithms without writing code, making it easier to develop models.\n2. **Graph-Based Approach:** It uses a computational graph where nodes represent data processing operations and edges represent the data flow between these operations.\n3. **Training Models:** Once trained, models can be used to make predictions or provide insights into patterns.\n\n**Example: Predicting House Prices**\n\nIn this example, TensorFlow is used to predict house prices based on various features like size, number of rooms, etc.\n\n1. **Install Dependencies:** Python, numpy, and matplotlib are installed for data handling and visualization.\n2. **Create Dataset:** A dataset containing input features (e.g., size, bedrooms) and the target variable (price).\n3. **Build Model:** Placeholders for inputs and outputs are defined. TensorFlow operations are created to model the relationship between inputs and outputs.\n4. **Define Loss Function:** The difference between predicted values and actual prices is measured using a loss function (e.g., mean squared error).\n5. **Optimize Weights:** An optimizer minimizes the loss by adjusting weights, which are automatically handled by TensorFlow.\n\nTensorFlow simplifies model development by automating the creation of algorithms, reducing the risk of human error in coding and providing tools for evaluation.",
+      "rating": ""
+    }
+  ]
+}

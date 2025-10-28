@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1077",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 43.3,
+    "precision": 52.9,
+    "recall": 51.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.351601"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Чтобы вычислить $v_t$ в алгоритме Момента (Momentum) для обучения нейронной сети, используя данные параметры $\\gamma=0.9$, $v_{t-1}=1$, $∇L=2$, $\\eta=0.1$, можно использовать следующую формулу:\n\n$v_t = \\gamma v_{t-1} - \\eta ∇L$\n\nИспользуя данные значения, получим:\n\n$v_t = 0.9 * 1 - 0.1 * 2 = 0.8 - 0.2 = 0.6$\n\nПолучили $v_t=0.6$. Чтобы наиболее точно оценить изменения параметра веса во время обучения, необходимо учитывать эту скорость в процессе вычислений.",
+      "rating": ""
+    }
+  ]
+}

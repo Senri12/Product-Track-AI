@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1499",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 4.2,
+    "precision": 3.5,
+    "recall": 24.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.173094"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для определения коэффициента обучения (η) при условии линейной затрачиваемости с точкой t и временем до останова T можно использовать следующую формулу:\n\nη(t) = η0 * min(1, t / T)\n\nВ данном случае η0 = 0.1, t = 5 и T = 10. Подставляя эти значения в формулу:\n\nη(5) = 0.1 * min(1, 5 / 10)\n     = 0.1 * min(1, 0.5)\n     = 0.1 * 0.5\n     = 0.05\n\nТаким образом, значение коэффициента обучения при t=5 с использованием линейной затрачиваемости с временем до останова T равно 0.05.\n\nДля проверки знаний можно предложить следующую задачу:\n\n1. Вы вычислили коэффициент обучения при t=3 и использованию линейной затрачиваемости с временем до останова T = 20. Ответьте на следующее:\n\nη(3) = η0 * min(1, 3 / T)\n  - Замените η0 на 0.1 и T на 20.\n  - Вычислите значение η(3).",
+      "rating": ""
+    }
+  ]
+}

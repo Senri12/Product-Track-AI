@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1940",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.047358"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Answer:**\n\nThe term \"SGD\" likely stands for **Stochastic Gradient Descent (SGD)**. Here's a concise summary:\n\n1. **Definition**: SGD is an optimization algorithm used in machine learning for minimizing loss functions by updating model parameters based on gradient approximations computed from subsets of the training data, known as mini-batches.\n\n2. **Key Features**:\n   - **Stochastic Approximation**: Unlike traditional gradient descent that uses all data points to compute gradients, SGD uses a subset (mini-batch) or a single example.\n   - **Efficiency**: By using a smaller dataset each iteration, it reduces computational complexity, making it suitable for large datasets.\n   - **Local Minima**: Often finds good local minima rather than global minima due to incremental parameter updates.\n\n3. **Learning Rate**: The learning rate can be adjusted over time or kept constant, with some approaches plateauing after each batch to fine-tune parameters.\n\n4. **Types of Learning Rates**:\n   - Constant learning rate: Fixed step size for all iterations.\n   - Learning rate decay: Gradually reducing the step size.\n   - Periodic resets: Raising learning rate every few epochs to prevent overfitting.\n\n5. **Applications**: Commonly used in neural networks and deep learning, where its efficiency and scalability make it a preferred choice for large-scale models.\n\nIn summary, SGD is an efficient optimization algorithm that uses mini-batches of data to approximate gradients, making it effective for training models on large datasets.",
+      "rating": ""
+    }
+  ]
+}

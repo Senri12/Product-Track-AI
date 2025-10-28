@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0208",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 25.8,
+    "precision": 24.9,
+    "recall": 39.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.968519"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Понятие, которое вы упоминаете - это градусность прироста (Adagrad) или индивидуальная ошибка в задаче нахождения разницы между предыдущей и current learning rate (Gt) и текущей learning rate (Gt-1,ii).\n\nВ Adagrad уравнение:\n\nг_{t} = гт-1,ii + ε \\* g_t \\* (g_{t} - гт-1,ii)^2\n\nПодставив данные значения:\n\nг_{t} = 4 + 1e-8 \\* 2 \\* (2 - 4)^2\nг_{t} = 4 + 1e-8 \\* 2 \\* (-2)^2\nг_{т} = 4 + 1е-8 \\* 2 \\* 4\nг_{т} = 4 + 1e-10 \\* 8\nг_{т} = 4 + 0,00008\n\ng_{t}=4,009",
+      "rating": ""
+    }
+  ]
+}

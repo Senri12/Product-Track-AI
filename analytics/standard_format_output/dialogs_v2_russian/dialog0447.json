@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0447",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 29.0,
+    "precision": 32.0,
+    "recall": 42.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.943991"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В этой задаче нам нужно найти значение t, которое удовлетворяет уравнению:\n\nv_t = 0.9 * v_{t-1} + γ * ∇L * (η / (∇L))\n\nПоскольку мы не можем напрямую определить γ, мы будем использовать предыдущее значение γ_1 = 0.9, чтобы найти γ_2:\n\nγ_2 = 0.9 * γ_1 = 0.9 * 0.9 = 0.81\n\nТеперь подставим значения в уравнение:\n\nv_t = 0.9 * v_{t-1} + 0.81 * ∇L * (η / (∇L))\nv_t = 0.9 * v_{t-1} + 0.81 * 2 * η / 2\nv_t = 0.9 * v_{t-1} + 1.61 * η\n\nМы знаем, что ∇L = 2, поэтому подставим его в уравнение:\n\nv_t = 0.9 * v_{t-1} + 1.61 * η\nv_t = 0.9 * (1) + 1.61 * 0.1\nv_t = 0,91 + 0,161\nвт = 1,051\n\nИтак, значение t, которое удовлетворяет уравнению, равно t=5.\n\nОкончательный ответ — 5.",
+      "rating": ""
+    }
+  ]
+}

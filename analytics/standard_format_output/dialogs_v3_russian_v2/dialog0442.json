@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0442",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 28.2,
+    "precision": 32.8,
+    "recall": 40.3,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 17.0,
+    "faithfulness": 29.4,
+    "noise_sensitivity": 12.9,
+    "self_knowledge": 3.6,
+    "timestamp": "2025-10-28T13:24:19.952780"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Аdam – это метод оптимизации, который kết hợp с методами RMSProp (Роджесса Мюсай) и Momentum (Моутенанса). У него есть адаптивный learning rate, что означает, что он adjusts learning rate для каждого измерения на конкретном шаге обучения.Adam является одной из самых популярных оптимизаторов, которые используются в machine learning при обучении нейронных сетей.",
+      "rating": ""
+    }
+  ]
+}

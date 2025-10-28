@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2180",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.015275"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "SGD stands for Stochastic Gradient Descent, a popular optimization algorithm in machine learning. It works by approximating the true gradient using randomly selected subsets of data, making it efficient for large datasets. The main idea is to introduce noise into parameter updates, leading to faster convergence and better generalization compared to batch-based methods like Gradient Descent. Although it introduces variability, on average, it still performs well. Common implementations use Adam or RMSprop as internal optimizations.",
+      "rating": ""
+    }
+  ]
+}

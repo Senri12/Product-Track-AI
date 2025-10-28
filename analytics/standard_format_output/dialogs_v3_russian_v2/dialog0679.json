@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0679",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 40.7,
+    "precision": 39.1,
+    "recall": 51.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.5,
+    "hallucination": 10.7,
+    "faithfulness": 34.2,
+    "noise_sensitivity": 18.4,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.314891"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Over-fitting означает ситуацию, когда модель, построенная на данных, подходится слишком хорошо для тренировочных данных, но плохо обобщается на новые данные или данные из других источников. В результате модель уменьшает свою способность к генерализации и не даёт приемлемый результат на более широком сете данных. Обычно это происходит, когда модель слишком сложна по отношению к количеству доступным данным для обучения или если параметры оптимизации некорректны.",
+      "rating": ""
+    }
+  ]
+}

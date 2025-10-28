@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0597",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 40.2,
+    "precision": 46.7,
+    "recall": 58.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.769669"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления обновленного значения \\(v_t\\) в momentum методе мы используем формулу:\n\n\\[\nv_t = \\gamma \\cdot v_{t-1} + \\eta \\cdot (\\nabla L)\n\\]\n\nгде:\n- \\(\\gamma\\) — это коэффициент демпинга,\n- \\(v_{t-1}\\) — это значение скорости в предыдущем шаге,\n- \\(\\eta\\) — это обучающее число (learning rate),\n- \\(\\nabla L\\) — это градиент потерь.\n\nВам даны:\n- \\(\\gamma = 0.9\\)\n- \\(v_{t-1} = 1\\)\n- \\(\\nabla L = 2\\)\n- \\(\\eta = 0.1\\)\n\nТеперь подставим эти значения в формулу:\n\n\\[\nv_t = (0.9) \\cdot (1) + (0.1) \\cdot (2)\n\\]\n\nВыполним вычисления шаг за шагом:\n- \\(0.9 \\cdot 1 = 0.9\\)\n- \\(0.1 \\cdot 2 = 0.2\\)\n\nТеперь складываем результаты:\n\n\\[\nv_t = 0.9 + 0.2 = 1.1\n\\]\n\nТаким образом, обновленное значение скорости \\(v_t\\) составляет \\(1.1\\).",
+      "rating": ""
+    }
+  ]
+}

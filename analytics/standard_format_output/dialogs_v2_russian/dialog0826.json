@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0826",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 49.5,
+    "precision": 51.6,
+    "recall": 61.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.778298"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Autograd – это библиотека, которая используется в языках программирования для создания автоматического разностного деления, особенно применяемая в таких научных вычислениях как машинное обучение и глубокое обучение. Она позволяет вычислять производные функций по отношению к ее входным переменным непосредственно с помощью лямбда-функций.\n\nВ контексте Python библиотеки autograd совместима с библиотекой NumPy, что обеспечивает эффективность выполнения математических операций на массивах. Autograd упрощает сложное вычисление частных и позволяет разработчикам сосредоточиться больше на сути их моделей и алгоритмов, а не на технике расчета производительных.\n\nВот пример использования autograd в Python:\n\n```python\nimport autograd.numpy as np\n\ndef f(x):\n    return x**2 + 4*x - 8\n\nf_grad = autograd.gradients.finite_diff(f)(np.array(3))\nprint(f_grad)\n```\n\nВ приведенном выше примере функция `f` принимает один параметр, а autograd вычисляет производную функции по отношению к этому параметру при x=3. Результат будет представлять собой градиент функции в точке (3, f(3)).",
+      "rating": ""
+    }
+  ]
+}

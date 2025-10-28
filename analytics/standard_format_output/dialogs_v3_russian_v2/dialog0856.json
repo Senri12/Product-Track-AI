@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0856",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 38.5,
+    "precision": 36.2,
+    "recall": 49.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.9,
+    "hallucination": 10.8,
+    "faithfulness": 34.2,
+    "noise_sensitivity": 20.2,
+    "self_knowledge": 5.0,
+    "timestamp": "2025-10-28T13:24:20.234552"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Autograd - это библиотека Python для автоматического дифференцирования. Она позволяет вычислить производные функций относительно их аргументов, что необходимо при обучении глубоких нейронных сетей и решении задач оптимизации. Autograd автоматически расширяет входные данные и результаты операций на градиенты этих операций, поэтому можно получить производную любой функции относительно любого её аргумента. Эта библиотека лежит в основе многих других пакетов для машинного обучения, таких как TensorFlow и PyTorch.",
+      "rating": ""
+    }
+  ]
+}

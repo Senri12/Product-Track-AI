@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0371",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
+    "f1": 32.4,
+    "precision": 38.6,
+    "recall": 39.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.889006"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Всего в тексте 20 слов.\n\nСлово \"приз\" появляется дважды, а именно: \n\n1. \"призованный\"\n2. \"приз\"\n\nВероятность вычисления спама для слова «приз» составляет:\n\n(2/20) × (1/19) = 0,02\n\nСледовательно, вероятность того, что в тексте найдется дважды из двух occurrences wordа \"приз\", равна 0,02.",
+      "rating": ""
+    }
+  ]
+}

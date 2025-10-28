@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0833",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 39.7,
+    "precision": 36.6,
+    "recall": 54.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.3,
+    "hallucination": 11.4,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 19.3,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-10-28T13:24:20.242008"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Learning rate - это параметр, который определяет скорость, на которую изменяются веса нейронной сети во время обучения. Большой learning rate позволяет быстро проходить градиентом скачком через локальные максимумы и минимумы, но может приводить к столкновению с горизонтальными плоскостями (ошибка начинает расти). Малый learning rate позволяет более точно следовать градиенту в локальных минимумах и максимумах, но может привести к замедленному обучению.",
+      "rating": ""
+    }
+  ]
+}

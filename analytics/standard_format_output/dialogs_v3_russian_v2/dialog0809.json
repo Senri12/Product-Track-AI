@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0809",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 41.3,
+    "precision": 39.4,
+    "recall": 52.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.2,
+    "hallucination": 7.4,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 20.1,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-10-28T13:24:20.273593"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Для линейного спада learning rate используется следующая формула:\n\nη(t) = η\\_0 - (η\\_0 - η\\_f) \\* t / T\n\nгде:\n- η\\_0 - исходное значение learning rate, равное 0.1 в вашем случае;\n- η\\_f - минимальное значение learning rate;\n- t - текущая итерация (шаг);\n- T - общее число итераций или шагов.\n\nСуществует несколько способов указать количество шагов: вы можете задавать T как фиксированное значение, или использовать формулу для определения T, как например сделано в RMSProp и Adam.\n\nВ вашем случае t=5, η\\_0 = 0.1, T=10. Тогда:\n\nη(t) = 0.1 - (0.1 - η\\_f) \\* 5 / 10 = η\\_f + 0.05\n\nЭто означает, что learning rate будет равен min(η\\_f + 0.05, η\\_f), где min - функция минимального значения. Поскольку не было указано minima для learning rate, предполагается, что learning rate постоянно равен min(η\\_f + 0.05, η\\_f). В этом случае learning rate будет равным η\\_f.",
+      "rating": ""
+    }
+  ]
+}

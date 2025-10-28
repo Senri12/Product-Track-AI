@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0469",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 31.4,
+    "precision": 44.0,
+    "recall": 56.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.824167"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Overfitting refers to a situation in machine learning where a model learns not only from the underlying patterns within training data but also captures noise, outliers or incorrect trends specific to that particular dataset used for its development.\n\nWhen an algorithm becomes too complex relative to the amount of available information (underfitted) and tries capturing all nuances present even those which do not generalize well beyond this set. As a result it performs poorly on unseen data because it's been trained in such ways as to be overly specific.\n\n\nThere are various strategies for preventing overfitting, including:\n\n- Simplifying the model architecture.\n\n- Reducing training dataset size through techniques like cross-validation or using subsets of your original larger datasets (like k-folds).\n\n- Regularization: adding a penalty term that discourages learning models with large coefficients to control complexity and avoid fitting noise in data points. Methods such as L1/Lasso, L2/Ridge regularizations are employed for this purpose.\n\n- Dropout : randomly dropping units from the neural network during training can help prevent overfitting by forcing it not rely on specific neurons which might be learned incorrectly (used commonly with deep learning networks)\n\n- Early Stopping: Monitor performance of your model at each epoch and stop once its accuracy declines, indicating that it's starting to fit noise in data points rather than general trends.",
+      "rating": ""
+    }
+  ]
+}

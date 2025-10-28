@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0145",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 39.8,
+    "precision": 42.2,
+    "recall": 51.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.8,
+    "hallucination": 8.7,
+    "faithfulness": 35.0,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:20.058037"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (Root Mean Square Propagation) — это метод оптимизации в нейронных сетях. Он является генерацией SGD (Stochastic Gradient Descent), который позволяет faster converge и prevent overfitting. RMSProp генерируетbatch-sized batch gradient, вычисляет стандартное отклонение этого градиента, умножает градиент на 1/sqrt(epsilon + 1/len gradients), где epsilon — фиксированное small фиксированное значение (Typ 1e-8). Это позволяет уменьшить шаги при том, что градиенты变得更 мелки. Также RMSProp умножает градиент на learning rate.\n\nКроме того, RMSProp может учитывать неуточнённые gradientы. Это让它 easier настроить сложность оптимизации и предотвратить overfitting.\n\nТаким образом, RMSProp — это метод SGD с уменьшением шагов при обработках с мелкими градиентами, который помогает faster convergence и prevent overfitting. Его основные аспекты:batch-sized batch gradient, стандартное отклонение градиента, умножение градиента на 1/sqrt(epsilon + 1/len gradients), умножение на learning rate.\n\nКроме того, RMSProp может учитывать неуточнённые gradientы, что позволяет easier настроить сложность оптимизации и предотвратить overfitting.",
+      "rating": ""
+    }
+  ]
+}

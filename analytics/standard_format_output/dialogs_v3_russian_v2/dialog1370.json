@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1370",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 33.7,
+    "precision": 30.9,
+    "recall": 53.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.1,
+    "hallucination": 11.2,
+    "faithfulness": 34.9,
+    "noise_sensitivity": 21.2,
+    "self_knowledge": 3.9,
+    "timestamp": "2025-10-28T13:24:20.081639"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "SGD, отrecipeSGD stands for Stochastic Gradient Descent. Оно – это метод оптимизации, который используется дляminimизации функцииloss в нейронных сетях и других моделях машинного обучения.\n\nОсновной аспект SGD в том, что градиент обновляется на основе случайно выборенного批量а данных. Это contrastsive с batch GD, где градиент рассчитывается по всем ядрам данных. SGD использует learning rate для обновления градиента и learnign rate, который может увеличиваться или уменьшаться в зависимости от условия.\n\nВ SGD, learning rate часто фиксирован на каждом шаге или decreases/grows according to some rule. Если learning rate уменьшается, то метод Often called AdaptiveSGD (Adagrad, RMSprop, Adam), а если increases, then it is often called traditionalSGD.\n\nВSGD применяется в задачах с разреженными данными, так как градиенты обновляются по частям данных. В таком случае learning rate может быть фиксирован или уменьшаться с шагом.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0284",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 32.8,
+    "precision": 37.9,
+    "recall": 42.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.949635"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Давайте воспользуемся закономерностями логики для вычисления вероятности.\n\nПоскольку мы не знаем конкретных ситуаций (пасмурность,cold и wetness или PASMR cold and wet), мы можем рассмотреть каждый вариант отдельно.\n\n* Пасмурно: это в среднемclimate, в котором часто есть снег, дождь и морозы. В этом случае мы не можем точно определить, будет ли пасмурно, но у нас есть вероятность 1/6, что оно будетPasmuroso.\n* Холодно: в colder климате также может быть морзья, дождь и снег. Вероятность cold 1/8.\n* Влажно: в влажных климатах часто бывает более высокаяHumidity. Вероятность wetness 7/10.\n\nПоскольку PASMR cold and wet является прямым следствием cold и wet, мы можем составить вероятность:\n\nP(PASMR cold and wet | Cold and Wet) = P(Cold and Wet) / (P(Cold and Wet) + P(Humboldt))\n\n= 1/8 / (1/8 + 7/10)\n\n= 1/8 × 15/23\n\n= 5/28\n\nТаким образом, вероятность того, что PASMR cold и湿но, равна 5/28.",
+      "rating": ""
+    }
+  ]
+}

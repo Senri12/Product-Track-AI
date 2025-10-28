@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0217",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 34.4,
+    "precision": 37.5,
+    "recall": 41.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 25.4,
+    "hallucination": 10.2,
+    "faithfulness": 33.3,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 6.5,
+    "timestamp": "2025-10-28T13:24:20.006233"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления вероятности класса в Naive Bayes алгоритме для каждого класса (+1 и −1)你需要:\n\n1. Определить распределение предикторов для каждого класса на training data.\n2. Провести проверку новых данных (XY) на соответствующие распределения.\n3. Использовать формулу Bayes' theorem:\n   \\[\n   P(Y=k | X) = \\frac{P(X|Y=k) \\cdot P(Y=k)}{P(X)}\n   \\]\n4. Вычислить вероятность класса для каждого из них и выбрать наиболее вероятный.\n\nИтак, основная идея — использовать распределения предикторов для классов и их ассоциации для при等方面的 вычислений.",
+      "rating": ""
+    }
+  ]
+}

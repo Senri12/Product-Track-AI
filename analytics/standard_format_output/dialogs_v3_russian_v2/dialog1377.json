@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1377",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 33.7,
+    "precision": 30.9,
+    "recall": 53.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.1,
+    "hallucination": 11.2,
+    "faithfulness": 34.9,
+    "noise_sensitivity": 21.2,
+    "self_knowledge": 3.9,
+    "timestamp": "2025-10-28T13:24:20.082874"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод и姆пульсов (SGDM) добавляет в формулу градиентного спуска предыдущий градиент с учетомmomента.\n\nПусть current gradient ∇L_t = 2, mom γ = 0.9, learning rate η = 0.1\n\nИспользуя Momentum:\n\nv_{t} = γ * v_{t-1} - η ∇L_t\nω_{t+1} = ω_t + v_{t}\n\nПроверьте, что в примере я правильно интерпретирую Momentum и current gradient.",
+      "rating": ""
+    }
+  ]
+}

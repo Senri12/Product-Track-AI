@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1448",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 34.0,
+    "precision": 32.6,
+    "recall": 51.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.4,
+    "hallucination": 8.2,
+    "faithfulness": 36.3,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.013634"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Расстояние Чебышёва (Chebyshev distance) — это метрика в математике и computer science, которая используется для измерения расстояния между двумя точками в multidimensional space. definirovanо как maximize{|x_i - y_i|} для каждого维度 i, j и минимизируется.\n\nНачиная с более подробного понимания:\n\n1. **Сimbолы и определение**: Расстояние Чебышёва между двумя точками (x₁, x₂, ..., xₙ) и (y₁, y₂, ..., yₙ) в n-мimensional space definirovanо как:\n   $$ D_{\\text{Chebyshev}}(X, Y) = \\max_{i=1}^{n} |x_i - y_i| $$\n   Это maximize{|xi - yi|} для каждого维度 i.\n\n2. **Примеры**:\n   - В двумерном пространстве: D(X, Y) = max(|x₁ - y₁|, |x₂ - y₂|)\n   - В三维ном пространстве: D(X, Y) = max(|x₁ - y₁|, |x₂ - y₂|, |x₃ - y₃|)\n\n3. **Полезные applikации**:\n   - Рассчитывание расстояния между векторами для анализа поведения данных.\n   - В machine learning и computer vision, где он используется для разработки алгоритмов визуализации и синтеза изображений.\n\n4. **Комплексность**: Расстояние Чебышёва вычисляется за O(n), где n — размер вектора. Это может быть сложно в контекстах, где данные large.\n\n5. **Ассоциативные свойства**:\n   - Chebyshev distance commonly used in computer vision and pattern recognition.\n   - 因为 它 учитывает largest differences in any single dimension.\n\n6. **Вероятность**: Важное при анализировании поведения объектов или их сопротивлений к определению, особенно в условиях разного масштаба данных.\n\nТаким образом, расстояние Чебышёва — это не那么容易 digestible concept, но для понимания важно знать его геометрическую интерпретацию и аpliedikatics.",
+      "rating": ""
+    }
+  ]
+}

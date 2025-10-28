@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2320",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 21.0,
+    "precision": 23.5,
+    "recall": 39.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.877616"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Давайте разберем это шаг за шагом!\n\nК-ННО (косинусный наборNeighbor) — алгоритм кандициаций, используанный для классификации данных. Поскольку егоname можно transliterовать как «k-NN», я постар myself от explaining k-NN как в общем виде.\n\nВ к-ННО разница между различными versions заключается в том, как они располагают данные в косинусном пространстве для расчета расстояний между them. \n\nК-NN (Cosine Normalized Neighbors) — это version, которая вычитает из каждого данных point его kosinus normalized distance from nearest neighbors. Этот процесс делает k-NN более эффективным при больших наборах данных, поскольку он уменьшит затраты на вычисления расстояний между точками.\n\nВзвешенный k-NN (Weighted k-NN) — это version, которая вносит разницу между различными versions. Взвешанный k-NN рассматривает не толькоkosinusnormalized distance, но и other features или metrics, такие как entropy или Hamming distance. Это позволяет взвесить важность различных факторов при классификации данных.\n\nС точки зрения использования взвешенного к-NN:\n\n* Взявfeatures as weights и applying them to the k-nearest neighbors algorithm allows you to combine different types of features and assign more importance to those that are most relevant for your specific problem.\n* It also allows for a more robust handling of imbalanced datasets, where some classes have much larger numbers of instances than others.\n\nВзвешенный k-NN можно использовать для решения различных классификационных задач, таких как распознавание фразы (например, с помощью Google's Cloud Speech-to-Text), разъяснение иллюзий или распознавание визуальных данных.\n\nВот простой пример расположения данных для k-NN:\n\n* Nearest neighbors to point x = {y1, y2, ... yn}\n* Kosinus normalized distances between them: d(x,yi) = 1 / (x - yi)^2\n\nАналогично взвешенный k-NN смотрит на коэффициенты, соответствующие каждому neighborу:\n\n* weight(yi) = entropy of yi or Hamming distance of yi to x\n* weight(x) = entropy of x or Hamming distance of x to xi\n\nИтак, взвешанный k-NN позволяет рассматривать различные факторы при классификации данных и дает более точные результаты.",
+      "rating": ""
+    }
+  ]
+}

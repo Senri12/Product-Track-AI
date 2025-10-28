@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Momentum accelerates gradient descent by considering past gradients, helping converge faster and escape saddle points. The update formula is:\n\nv_t = γ * v_{t-1} - η * ∇L(θ_{t-1})\n\nWhere:\n- γ (0 < γ < 1) is the momentum coefficient.\n- θ_{t-1} is the parameter vector at step t-1.\n- ∇L(θ_{t-1}) is the gradient of the loss function.\n\nThis method helps stabilize training by smoothing out oscillations caused by shallow minima.",
+    "rating": ""
+  }
+]

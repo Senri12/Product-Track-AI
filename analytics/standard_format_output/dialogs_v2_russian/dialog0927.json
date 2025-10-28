@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0927",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 41.6,
+    "precision": 49.5,
+    "recall": 49.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.359941"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В Momentum методе для обновления скорости \\(v_t\\) используется следующая формула:\n\n\\[v_t = v_{t-1} + \\eta * (-\\nabla L - \\gamma*v_{t-1})\\]\n\nВы можете вставить значения для конкретной итерации:\n\n\\[v_t = 1 + 0.1 * (-2 - 0.9 * 1) = 1 + 0.1 * (-2.9) = 1 - 0.29 \\approx 0.71\\]\n\nПолучилось, что \\(v_t \\approx 0.71\\).",
+      "rating": ""
+    }
+  ]
+}

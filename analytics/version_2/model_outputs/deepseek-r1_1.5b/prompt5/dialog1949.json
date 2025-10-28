@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для вычисленияDecay Learning Rate с линейным способыом разtrieженияFormula:\n\nη = η₀ * (1 - t / T)\n\nгде:\n- η₀ — начальныйLearning rate,\n- t — текущаяstep,\n- T — total number of steps.\n\nВозьмём examples:\n\n1. η₀=0.1, t=3, T=10:\n   - Step 0: η = 0.1 * (1 - 0/10) = 0.1\n   - Step 1: η = 0.1 * (1 - 1/10) = 0.09\n   - Step 2: η = 0.1 * (1 - 2/10) = 0.08\n\nЭтот подход подходит для задач с линейным способыом разtrieженияLearning rate.",
+    "rating": ""
+  }
+]

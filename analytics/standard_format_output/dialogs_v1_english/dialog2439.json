@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2439",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 28.1,
+    "precision": 25.6,
+    "recall": 49.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.935229"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы classifiedьchio письмо как спам в Naive Bayes, мы можем использовать following approach:\n\n1. Найдем вектор вероятности для представления письма как спама. Мы будем использовать последовательность characters (электронов) и их вероятности для образowania письма.\n2. Найдем вектор вероятности для представления спама, который состоит из 70% характеристик, которые не являются chars-ом (например, знаков и_space).\n3. Пredsайзь Naive Bayes будет использовать эти векторы, чтобы прогнозировать, что письмо как спам или нет.\n\nДавайте рассмотрим example:\n\n### Letters of the sentence \"Hello World!\"\n\nВ этом例е letters: e-h-l-o-w-r-d\n\nВектор вероятности для письма:\n\n* e (5%): вероятность 1\n* h (2%): вероятность 1\n* l (4%): вероятность 0,8\n* o (3%): вероятность 0,7\n* r (3%): вероятность 0,9\n* d (1%): вероятность 0,5\n\nВектор вероятности для спама:\n\n* e (2%): вероятность 1\n* h (1%): вероятность 1\n* l (4%): вероятность 0,8\n* o (3%): вероятность 0,7\n* r (3%): вероятность 0,9\n\nПримечание: вероятности для chars равны 1/26 (по 26 Characters в английском алфавите), вероятности для характеристик (например знаков и space) равны 0,05.\n\n### Naive Bayes prediction:\n\nПредсказуем, что письмо как спам или нет?\n\n* probability(e|spam) = 1 / 26 ≈ 0,0385\n* probability(h|spam) = 1 / 26 ≈ 0,0385\n* ... и так далее.\n\nНа основании этих вероятностей мы можем сделать вывод: письмо как спам.",
+      "rating": ""
+    }
+  ]
+}

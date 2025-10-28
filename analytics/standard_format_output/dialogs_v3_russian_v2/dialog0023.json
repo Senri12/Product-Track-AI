@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0023",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 34.9,
+    "precision": 37.3,
+    "recall": 45.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.9,
+    "hallucination": 11.9,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.075814"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "_learning rate (η) — это параметр, который управляет шагом, который мы делаем при Updates в градиентном спуске. larger values of learning rate mean bigger steps, smaller ones mean smaller steps.\n\n learn rate determines how big each update is when we take a step in the direction of negative gradient. A large learning rate can cause instability or divergence if it's too big, while a small learning rate may result in slow convergence.\n\n In practice, choosing an appropriate learning rate is crucial and often involves monitoring the training process, possibly using techniques like adaptive methods that adjust the learning rate over time.",
+      "rating": ""
+    }
+  ]
+}

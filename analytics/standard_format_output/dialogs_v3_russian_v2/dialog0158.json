@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0158",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.091246"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Chebyshev Distance Explained**\n\nThe Chebyshev distance is a metric used in multi-dimensional space that measures the maximum difference across any one pair of dimensions between two points. Here's a clear breakdown:\n\n1. **Definition**: For two points \\( P_1 = (x_1, y_1) \\) and \\( P_2 = (x_2, y_2) \\), Chebyshev distance is:\n   \\[\n   d(P_1, P_2) = \\max(|x_1 - x_2|, |y_1 - y_2|)\n   \\]\n   This means it focuses on the largest difference in any dimension.\n\n2. **Intuition**: It considers the \"spread\" of points across dimensions, ignoring all others. For instance, if one point is far apart in one dimension but close elsewhere, this method captures that spread as its measure.\n\n3. **Comparison with Other Metrics**:\n   - **Euclidean Distance**: Sums squared differences.\n   - **Manhattan Distance**: Sums absolute differences.\n   - **Chebyshev vs. Euclidean**: Chebyshev is more sensitive to the maximum dimension variation, while Euclidean considers all dimensions.\n\n4. **Use Cases**: Ideal for high-dimensional data where feature ranges differ significantly or when extreme variations in any dimension are critical.\n\n5. **Applications**: Commonly used in k-NN algorithms, especially when spatial spread matters beyond just proximity.\n\nIn summary, Chebyshev distance offers a unique perspective by focusing on the maximum spread, useful in scenarios requiring attention to extremes across dimensions.\n</think>\n\n**Chebyshev Distance**\n\nThe Chebyshev distance is a metric that measures the greatest difference between any pair of corresponding coordinates along any axis. For two points \\( P_1 = (x_1, y_1) \\) and \\( P_2 = (x_2, y_2) \\), it is calculated as:\n\\[\nd(P_1, P_2) = \\max(|x_1 - x_2|, |y_1 - y_2|)\n\\]\nThis metric focuses on the largest difference across any dimension, making it particularly useful in high-dimensional spaces and scenarios where extreme variations are significant.",
+      "rating": ""
+    }
+  ]
+}

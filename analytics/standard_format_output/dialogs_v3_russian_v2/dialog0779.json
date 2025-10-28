@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0779",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 36.3,
+    "precision": 37.2,
+    "recall": 47.8,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.3,
+    "hallucination": 10.5,
+    "faithfulness": 35.3,
+    "noise_sensitivity": 18.8,
+    "self_knowledge": 4.2,
+    "timestamp": "2025-10-28T13:24:20.322909"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Для линейного распада learning rate в данном случае:\n\nη = η0 - (η0 - ηfinal) * t / T\n\nгде η0 - начальный learning rate, t - текущая итерация, T - общая длина траектории (в этом случае 10), ηfinal - конечный learning rate (будет равен нулю при t = T).\n\nВ данном случае:\n\nη = 0.1 - (0.1 - 0) * 5 / 10 = 0.1 - 0.25 = 0.05",
+      "rating": ""
+    }
+  ]
+}

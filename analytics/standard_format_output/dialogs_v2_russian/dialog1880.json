@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1880",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.030303"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**SGD**\n\n**Stochastic Gradient Descent (SGD)** stands for **Stochastic Gradient Descent**, an optimization algorithm used in machine learning and deep learning to minimize the loss function during model training. Unlike traditional gradient descent, which uses all data examples simultaneously, SGD processes each example or a subset of examples iteratively. This approach is computationally efficient, making it suitable for large datasets. The algorithm averages gradients over selected batches within each iteration, balancing computational efficiency with noise reduction. While variations include different batch sizes and selection strategies, the most common form is SGD with one example at a time.",
+      "rating": ""
+    }
+  ]
+}

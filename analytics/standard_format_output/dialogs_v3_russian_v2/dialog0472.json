@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0472",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 40.7,
+    "precision": 36.8,
+    "recall": 52.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.1,
+    "hallucination": 10.4,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 3.9,
+    "timestamp": "2025-10-28T13:24:20.309537"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Adam является оптимизатором, который часто используется при обучении глубоких нейронных сетей. Он представляет собой симбиоз методов RMSProp и Momentum, аппроксимируя вторую производную в точке. Этот алгоритм на данный момент является одним из самых популярных и оптимизирует процесс обучения в связи с более корректным определением дистанции спуска для каждого из измерений в многомерном пространстве, что обычно выражается в большей вычислительной сложности, но меньше числе итераций.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0646",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 30.4,
+    "precision": 39.8,
+    "recall": 54.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.807043"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Autograd — это библиотека Python, которая автоматизирует производные по отношению к данным в нейронных сетях и других функциях, которые можно дифференцировать. Это особенно полезно при реализации градиентного спуска, используемого для обучения моделей машинного обучения.\n\nС помощью autograd вы можете вычислить производную функции без необходимости вручную рассчитывать символические производные. Это делает код более понятным и уменьшает вероятность ошибок, связанных с ручной дифференциацией сложных функций.\n\nВот пример использования autograd в Python:\n\n```python\nimport numpy as np\n\nfrom autograd import grad\n\n\n# Функция для дифференцирования\ndef f(x):\n    return x * 2 + y ** 3 - z**4 / cos(π/5)\n\n\n# Создаем производную функции по отношению к 'y'\ngrad_f = grad(f)\n\nprint('Функция: {}'.format(f))\nprint('Производная в отношении к y: {:.1f}'.format(grad_f(y)))\n```\n\nПрактика:\nПопробуйте найти производную следующей функции `g(x, y) = x^2 + 3xy - 4y^2` по отношению как к `x`, так и к `y`. Используйте autograd для расчета частных производных.\n\nОтвет на практику: (i) Частная производная в отношении `x`: `2*x + 3*y`\n(ii) Частная производная в отношении `y`: `3*x - 8*y`",
+      "rating": ""
+    }
+  ]
+}

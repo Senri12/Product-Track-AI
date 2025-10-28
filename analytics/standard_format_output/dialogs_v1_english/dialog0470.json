@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0470",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 31.4,
+    "precision": 44.0,
+    "recall": 56.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.824325"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "SGD означает stochastički gradientni doprinijek (Stochastic Gradient Descent). Это algoritamsko rješenje za optimizaciju parametara modela, koje se široce koristi u učenju mašinskim metodama. Algoritam iterira na setu podataka i svakako nečišće upada na podatke, što mu daje stochastički karakter.\n\nU praksi, svaki iteracijski korak SGDA obično uključuje:\n\n1. Izabrati promjenljivu minibatch podataka.\n2. Uzmēti derivat polinoma koji želimo minimizirati (koji se u kontekstu učenja naziva funkcijom učinka) po odnosu na parametre modela, što daje gradientove.\n3. Promijeniti parametre u smjeru koga su gradienti, uz upotrebu presjece ili fluktuacijskog promjena.\n\nPostupak iteracija se nastavlja dok ne bude dosaženo neriješeni rjesenja za funkciju učinka (ili do dobijanja odredjene razine preciznosti). Složenjima u SGDA radi usklađivati se s velikim količinama podataka, što ga čini pouzdanim i praktičnoj opcijom.",
+      "rating": ""
+    }
+  ]
+}

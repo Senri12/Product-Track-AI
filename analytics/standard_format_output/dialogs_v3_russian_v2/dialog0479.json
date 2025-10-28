@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0479",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 40.7,
+    "precision": 36.8,
+    "recall": 52.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.1,
+    "hallucination": 10.4,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 3.9,
+    "timestamp": "2025-10-28T13:24:20.310645"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В данном случае для линейного снижения learning rate используется формула:\n\nη = η0 - (η0 - ηf) * t / T\n\nгде:\n- η0 - начальное значение learning rate, в данном случае это 0.1\n- ηf - окончательное значение learning rate (обычно приближается к 0)\n- t - текущая итерация, в данном случае это 5\n- T - общее количество итераций или эпох, в данном случае это 10\n\nПоэтомуlearning rate будет равен:\n\nη = 0.1 - (0.1 - 0) * 5 / 10 = 0.05",
+      "rating": ""
+    }
+  ]
+}

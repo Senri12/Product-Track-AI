@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0862",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 38.5,
+    "precision": 36.2,
+    "recall": 49.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.9,
+    "hallucination": 10.8,
+    "faithfulness": 34.2,
+    "noise_sensitivity": 20.2,
+    "self_knowledge": 5.0,
+    "timestamp": "2025-10-28T13:24:20.235674"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Adam (Adaptive Moment Estimation) - это метод оптимизации, который используется для решения задач машинного обучения. Он является комбинацией двух других методов оптимизации: RMSProp и Momentum. Adam также аппроксимирует вторую производную в точке, что приближает его к методам, вычисляющим вторую производную. Этот алгоритм позволяет автоматически обновлять learning rate и накладывает вес на градиенты, в зависимости от их изменения во времени. Популярность Adam получил благодаря более точному определению дистанции спуска для каждого из измерений в многомерном пространстве, что обычно выражается в большей вычислительной сложности, но меньше числе итераций.",
+      "rating": ""
+    }
+  ]
+}

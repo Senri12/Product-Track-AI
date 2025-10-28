@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2071",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое метод k-ближайших соседей?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.066660"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод k-ближайших соседей?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод \"k-ближайшие соседи\" (k-NN) — это важный алгоритм в областиmachine learning, используемый для классификации и регрессии. Основная идея метода — определить Close neighborhood around new data points and use them to make predictions. Технически:\n\n1. **Классификация**: Для каждого нового объекта examined, егоclose neighbors в training set на основе определенной меры расстояния. Средnya score (уровень classness) этих close neighbors и класс new pointgyraits mode vote (максимальный score).\n\n2. **Регрессия**: Аналогично методу classification — uses weighted distances to determine which neighbors are most relevant.\n\n3. **Бagsampling**: В отличие от bootstrap sampling, метод itself — архитектура схемы bagging, где close neighbors randomly sampled rather than entire training set.\n\n4. **Особенности**: Число close neighbors (k) и мера расстояния важны для оптимизации предсказания.\n\n5. **Примеры**: В касательном классификации мы используем close neighbors для предсказания class of test point на основе weighted distances to training set points closest to it. Это может быть важным шагом в machine learning структуре.\n\n6. **Важность**: Метод itself важно в современных machine learning тщательных расчётах weighted metrics, что позволяет улучшить точность и стабильность предсказаний.\n\nТаким образом, метод k-ближайших соседей — это сложный алгоритм, но важный инструмент для решения задач с высокой сложностью и стабильностью.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0949",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 44.6,
+    "precision": 49.1,
+    "recall": 50.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.237886"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Over-fitting is a common problem in machine learning where a model learns the training data too well, to the point that it performs poorly on new, unseen data (test data or validation data). This happens when the model captures the noise or outliers present in the training data instead of generalizing from it. As a result, the model's performance is excellent on the training data but fails to make accurate predictions on new data.\n\nTo avoid over-fitting, techniques like regularization, cross-validation, and early stopping can be used. Understanding over-fitting is essential in machine learning as it helps in building models that generalize well to unseen data.\n\nIs there anything more specific you'd like me to explain about over-fitting or related concepts?",
+      "rating": ""
+    }
+  ]
+}

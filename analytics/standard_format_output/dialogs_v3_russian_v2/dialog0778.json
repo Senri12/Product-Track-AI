@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0778",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 36.3,
+    "precision": 37.2,
+    "recall": 47.8,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.3,
+    "hallucination": 10.5,
+    "faithfulness": 35.3,
+    "noise_sensitivity": 18.8,
+    "self_knowledge": 4.2,
+    "timestamp": "2025-10-28T13:24:20.322723"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В Adagrad оптимизаторе, G\\_{t-1,ii} - это историческое значение квадрата градиента для i-й параметра в момент времени t-1, g\\_t - это текущий градиент для и-того параметра в момент времени t, η - шаг обучения или learning rate, а ε - пороговое значение, используемое для предотвращения деления на нуль. Для данных значений, G\\_{t-1,ii}=4, g\\_t=2, η=0.1 и ε=1e-8, мы можем рассчитать значение обновленного параметра в момент времени t следующим образом:\n\nw\\_t = w\\_{t-1} + -η \\* g\\_t / sqrt(G\\_{t-1,ii} + ε)\n\nгде w\\_t - обновленное значение i-того параметра в момент времени t.",
+      "rating": ""
+    }
+  ]
+}

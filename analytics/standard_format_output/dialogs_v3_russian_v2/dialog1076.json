@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1076",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 36.6,
+    "precision": 32.6,
+    "recall": 56.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 36.3,
+    "hallucination": 11.7,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 20.1,
+    "self_knowledge": 4.3,
+    "timestamp": "2025-10-28T13:24:20.179308"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления шага в методе градиентного спуска (SGD) с функцией потерь L(w) = w^2 и параметром скорости обучения η = 0.1, а вектора весов w = [3], мы выполним следующие шаги:\n\n1. Определим градиент функции потерь по вектору весов w с помощью точки численной вычисления (которая будет заменена на текущее значение веса при каждом шаге).\n\n   Градиент L(w) = ∇L(w) = 2 * w\n\n2. Определим шаг SGD, используя оптимальный η = 0.1:\n\n   Shag = -η * (2 * w) = -0.1 * (2 * 3) = -0.6\n\nТаким образом, шаг SGD для вектора весов w = [3] и функции потерь L(w) = w^2 при η = 0.1 равен -0.6.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0838",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 39.7,
+    "precision": 36.6,
+    "recall": 54.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.3,
+    "hallucination": 11.4,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 19.3,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-10-28T13:24:20.242835"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В Adagrad, где $G_{t-1, ii}$ - вектор исторических градиентов для каждого параметра i на шаге t-1, g_t - градиент в текущем шаге, η - коэффициент обучения, ε - число, приближающее к нулю малые значения, выражение для обновления весов i на шаге t будет выглядеть так:\n\n$w_t^i = w_{t-1}^i + \\frac{-g_t}{\\sqrt{G_{t-1,ii} + \\epsilon}} * \\eta$\n\nгде $w_t^i$ - вес i на шаге t.\n\nТаким образом, в текущем случае с указанными значениями для параметров, обновление веса i будет выглядеть так:\n\n$w_t^i = w_{t-1}^i + \\frac{-2}{\\sqrt{4 + \\epsilon}} * 0.1$",
+      "rating": ""
+    }
+  ]
+}

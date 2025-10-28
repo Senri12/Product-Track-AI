@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0623",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 41.9,
+    "precision": 37.6,
+    "recall": 55.8,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 9.7,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.303721"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Learning rate является параметром оптимизатора для обучения нейронных сетей, который определяет скорость спуска по градиенту функции потерь. Он регулирует величину шага, которым изменяются веса и биасы в процессе обучения. Обычно его значение устанавливается в диапазоне от 0.001 до 0.01. Большое значение может привести к быстрому спуску, однако возможно пропуск локального оптимального решения (овершиттинг), в то время как малое значение может замедлить процесс обучения.",
+      "rating": ""
+    }
+  ]
+}

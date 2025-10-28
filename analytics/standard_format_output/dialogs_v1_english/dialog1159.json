@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1159",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 39.5,
+    "precision": 44.1,
+    "recall": 49.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.275673"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " **Explanation:**\nOver-fitting is a common problem in machine learning where a model learns the training data too well, to the point that it performs poorly on new, unseen data. This happens when the model becomes excessively complex and starts capturing noise and outliers in the training data instead of general patterns. As a result, the model may have excellent performance on the training set but fails to generalize to new data.\n\n**Question for Student:** Can you provide an example of a scenario where over-fitting might occur?\n\n**Suggested Exercise:** Train a machine learning model (like a decision tree or neural network) on a dataset and then evaluate its performance on both the training set and a separate validation set. If the model performs significantly better on the training set compared to the validation set, it may be over-fitting.\n\n**Feedback Loop:** Discuss with your peers or instructor about the results of your exercise. Did you observe over-fitting in your model? If so, what steps could you take to address this issue? Possible solutions include using regularization techniques, collecting more data, or simplifying the model architecture.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0541",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое метод k-ближайших соседей?",
+    "f1": 31.4,
+    "precision": 43.8,
+    "recall": 51.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.740831"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод k-ближайших соседей?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The k-nearest neighbors (k-NN) method is like asking your friends for their opinions about something you are curious about before making a decision yourself.\n\nImagine you're trying to guess what color someone prefers, and there aren't many clues available – instead of guessing blindly or relying on stereotypes. You decide you'll ask the 10 people in front of you at an ice cream parlor what's their favorite flavor because they have directly expressed it themselves (they are your \"neighbors\" since they're close by).\n\nIn k-NN for machine learning, it's like asking those closest neighbors - instead of just one person or ten hundred – to help make a prediction. You pick 'k' friends who you think know the most about what you're trying to guess.\n\nFor example:\n\n- If we want to predict if someone likes jazz music based on their age and favorite decade (you get this information from 5 people close by, your k value), we'd look at those five people's ages with similar preferences.\n  \n- You might find that younger friends like the '70s tend toward liking rock while older ones favor classical. Then we use what our neighbors told us to guess if someone likes jazz.\n\nRemember, we're looking for a good mix of similarities – it's not just anyone's preference; these are your best guesses based on similar characteristics (or preferences). And with k-NN being so simple and intuitive-like asking friends around you- it makes an excellent tool in machine learning! Keep up the curiosity as we explore how this method helps computers learn patterns from data, much like you'd intuitively guess someone’s favorite ice cream flavor after listening to your neighbors.",
+      "rating": ""
+    }
+  ]
+}

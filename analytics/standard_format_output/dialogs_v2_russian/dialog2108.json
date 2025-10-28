@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2108",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.117899"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The Chebyshev distance is a metric used to measure the distance between two points in a space. It is defined as the maximum of the absolute differences of their coordinates along any axis. This means that, unlike Euclidean distance, which considers the straight-line distance, Chebyshev distance focuses on the \"worst-case\" scenario where movement can occur in multiple directions simultaneously.\n\n### Mathematical Definition:\nFor two points \\( P = (x_1, y_1) \\) and \\( Q = (x_2, y_2) \\) in a 2D space, the Chebyshev distance is calculated as:\n\\[ d(P, Q) = \\max(|x_1 - x_2|, |y_1 - y_2|) \\]\n\n### Example:\nConsider points \\( (3, 4) \\) and \\( (6, 8) \\). The differences are 3 in the x-direction and 4 in the y-direction. The maximum of these is 4. Thus, the Chebyshev distance between them is **4 units**.\n\n### Higher Dimensions:\nFor points in higher dimensions, such as three-dimensional space with coordinates \\( (a, b, c) \\) and \\( (d, e, f) \\), the differences are \\( |a-d| \\), \\( |b-e| \\), and \\( |c-f| \\). The Chebyshev distance is the maximum of these values:\n\\[ d(P, Q) = \\max(|a - d|, |b - e|, |c - f|) \\]\n\n### Application:\nThe Chebyshev distance is applicable in scenarios where movement can occur in multiple directions at once, such as city blocks or grids. It simplifies the calculation by focusing on the worst-case scenario.\n\nIn summary, the Chebyshev distance measures the maximum difference across any axis, making it a versatile metric for various applications beyond its primary use cases.",
+      "rating": ""
+    }
+  ]
+}

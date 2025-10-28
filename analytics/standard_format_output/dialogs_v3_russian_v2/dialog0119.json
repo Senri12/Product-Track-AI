@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0119",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 36.1,
+    "precision": 36.5,
+    "recall": 46.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.2,
+    "hallucination": 8.6,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 21.8,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.064614"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Используя формулу Learning Rate Decay с линейным спадом:\n\n\\[\n\\eta(t) = \\eta_0 \\times \\gamma^{\\frac{t}{T}}\n\\]\n\nгде:\n- \\(\\eta(t)\\) – Learning Rate на момент времени \\(t\\),\n- \\(\\eta_0\\) – начальный Learning Rate (\\(η_0 = 0.1\\)),\n- \\(\\gamma\\) – коэффициент сокращения (\\(\\gamma = 0.9\\)),\n- \\(T\\) – время конечного значения Learning Rate (\\(T = 10\\)).\n\nДля various values of \\(t\\) от 0 до \\(T=10\\) вычислим Learning Rate:\n\n- \\(t = 0\\):\n  \\[\n  \\eta(0) = 0.1 \\times (0.9)^{\\frac{0}{10}} = 0.1 \\times 1 = 0.1\n  \\]\n  \n- \\(t = 5\\):\n  \\[\n  \\eta(5) = 0.1 \\times (0.9)^{\\frac{5}{10}} = 0.1 \\times \\sqrt{0.9} \\approx 0.1 \\times 0.9487 \\approx 0.09487\n  \\]\n  \n- \\(t = 10\\):\n  \\[\n  \\eta(10) = 0.1 \\times (0.9)^{\\frac{10}{10}} = 0.1 \\times 0.9 = 0.09\n  \\]\n\n**Ответ:**\n\n- В момент времени \\(t = 5\\) Learning Rate \\(η(5)\\) составляет приблизительно 0,09487.\n- В момент времени \\(t = 10\\) Learning Rate \\(η(10)\\) составляет 0,09.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0067",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 29.7,
+    "precision": 32.3,
+    "recall": 39.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.903236"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В Naive Bayes часто используют для анализа данных распределение вероятностей для каждогоFeatures по отдельным классам.\n\nЧтобы узнать, какчислить вероятность класса, мы используем формулу:\n\nP(Class) = Σ(p(x_i))\n\nгде p(x_i) — вероятность того, что Features i принадлежат классу.\n\nДля простоты часто вычисляют вероятность вероятностей:\n\nP(Class) = ∑p(x_i)p(y_i)/∑p(x_i)\n\nгде y_i — отдельный класс, x_i — Feature i, и p(x_i) — вероятность того, что Feature i принадлежит классу.\n\nПример использования этого формулы на Beispiel:\n\nМы имеем данные на основе классов animal (существуют следующие триclassи: Animal, Dog, Cat), Features (кожanie, характеристика, обстановка) и соответствующие вероятности для каждого класса:\n\n animal|p(animal)\n-----------------------------------------\nAnimal|0.4\nDog|0.3\nCat|0.3\n\nFeatures: коэффициент для каждойFeatures i — вероятность того, что Feature i принадлежит классу (сравнивая их с вероятностями данных.\n\nСледовательно, P(Class) = 0.4*0.1/0.7\n= 0.04\n\nТаким образом, вероятность того, что класс animal — это Animal, равна 0,04.",
+      "rating": ""
+    }
+  ]
+}

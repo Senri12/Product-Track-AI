@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0802",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 41.3,
+    "precision": 39.4,
+    "recall": 52.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.2,
+    "hallucination": 7.4,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 20.1,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-10-28T13:24:20.272397"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Adam (Adaptive Moment Estimation) - это оптимизатор для глубоких нейронных сетей, основанный на идее слияния двух предыдущих методов: RMSProp и Momentum. Этот алгоритм использует адаптивную скорость, которая является комбинацией скорости постоянного шага (Momentum) и скорости, основанной на среднеквадратическом отклонении градиентов (RMSProp). Этот алгоритм аппроксимирует вторую производную в точке, что позволяет ему более точно определить дистанцию спуска для каждого из измерений в многомерном пространстве. Один из самых популярных оптимизаторов на данный момент.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1135",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 40.0,
+    "precision": 43.6,
+    "recall": 52.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.366890"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " РМСProp (Root Mean Square Propagation) - это оптимизационный алгоритм, используемый для обучения нейронных сетей и регулирования параметров в машинном обучении. Он предназначен для улучшения скорости и точности изменений параметров во время обучения. Алгоритм РМСProp рассчитывает коэффициент шага (learning rate) для каждого параметра на основе его собственного среднеквадратичного отклонения и позволяет изменять шаг в зависимости от активности нейрона, использующего этот параметр. Это может помочь избежать проблемы с конвергенцией при обучении глубоких нейронных сетей и ускорить обучение на больших объемах данных.",
+      "rating": ""
+    }
+  ]
+}

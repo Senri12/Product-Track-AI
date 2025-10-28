@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1399",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 8.0,
+    "precision": 7.5,
+    "recall": 29.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.118935"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-fitting, in the context of machine learning, refers to a model that is excessively complex for the data it's trying to represent. This happens when a model learns the detail and noise in the training data too well, so much that it negatively impacts its ability to generalize or perform on unseen data. In simpler terms, an over-fitted model is one that performs exceptionally well on the training data but poorly on new, previously unseen data of the same type.\n\nTo clarify: \n\n1. Do you understand what a \"model\" and \"training data\" are in this context? A model is a mathematical representation created to predict outcomes based on input data; training data are the information used by the model to learn patterns.\n2. Can you explain how \"performance\" is measured for models in machine learning? Typically, performance is evaluated using metrics such as accuracy, precision, recall, or loss functions.\n3. Are you familiar with the concept of a model's ability to generalize from the training data to new, unseen data? It's crucial that a well-performing model doesn't just predict the training data accurately but can also make accurate predictions for entirely new instances of the problem it was trained on.",
+      "rating": ""
+    }
+  ]
+}

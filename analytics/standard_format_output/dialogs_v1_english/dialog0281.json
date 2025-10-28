@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0281",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
+    "f1": 43.5,
+    "precision": 42.1,
+    "recall": 55.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.666209"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Okay, let's tackle this! This is a great introduction to probability and how we can apply it to spam detection. \n\nFirst, let’s define what we’re trying to calculate. We want to find the probability that the word \"приз\" (prize) appears in a sample of text, and that text is spam.\n\nTo do this, we need some data. We need to know:\n\n1.  **How many total texts in our sample are there?** (Let's call this *N*)\n2.  **How many of those texts are spam?** (Let's call this *S*)\n3.  **How many of the *spam* texts contain the word \"приз\"?** (Let's call this *X*)\n\n**I'm going to ask you a question to start. To help me gauge your understanding, can you tell me:**\n\n*   **What do you think the general formula would be to calculate this probability?**  Don't worry about getting it perfectly right. Just give me your initial thoughts!  Do you think we'd need to use a simple ratio, or might it be a little more complex?",
+      "rating": ""
+    }
+  ]
+}

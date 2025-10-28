@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1466",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 34.0,
+    "precision": 32.6,
+    "recall": 51.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.4,
+    "hallucination": 8.2,
+    "faithfulness": 36.3,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.017007"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления шага в SGD для функции потерь \\( L(w) = w^2 \\), когда \\( w = 3 \\) и learning rate \\( \\eta = 0.1 \\), мыperform следующие действия:\n\n1. **Найти градиент**:  \n   Функция потерь \\( L(w) = w^2 \\). Градиент по \\( w \\) определяется как:\n   \\[\n   \\nabla_w L(w) = 2w\n   \\]\n   Substituting \\( w = 3 \\):\n   \\[\n   \\nabla_w L(3) = 2 \\times 3 = 6\n   \\]\n\n2. **Повторить формулу SGD**:\n   \\[\n   w_{t+1} = w_t - \\eta \\cdot \\nabla_w L(w_t)\n   \\]\n   \n3. **Подставить значения**:\n   \\[\n   w_{next} = 3 - 0.1 \\times 6 = 3 - 0.6 = 2.4\n   \\]\n\n**Ответ**:  \nДля current \\( w = 3 \\), шаг SGD будет равняться \\( 0.6 \\). Нew value of \\( w \\) будет \\( 2.4 \\).",
+      "rating": ""
+    }
+  ]
+}

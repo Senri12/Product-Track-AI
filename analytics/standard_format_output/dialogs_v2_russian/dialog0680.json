@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0680",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 47.9,
+    "precision": 55.5,
+    "recall": 60.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.865359"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "SGD — это аббревиатура для \"Stochastic Gradient Descent\", которая является алгоритмом машинного обучения, используемым для оптимизации параметров модели в процессе обучения. Этот метод включает итеративное минимизирование.loss function (функции потерь) по одному или небольшому набору данных (градуент), что делает его более скоростным и эффективным на больших наборах данных по сравнению с классическим методом обратного распространения (Gradient Descent). \"Stochastic\" указывает на то, что выборка случайна при вычислении градуента.",
+      "rating": ""
+    }
+  ]
+}

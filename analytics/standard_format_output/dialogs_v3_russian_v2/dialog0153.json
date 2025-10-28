@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0153",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.090357"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Euclidean metric — это метрика, используемая для измерения расстояний между точками в Euclidовом пространстве. Для определения Euclidean metricеbetween two points in n-dimensional space, such as A(x1, y1) and B(x2, y2), can be calculated using the following formula:\n\ndistance = sqrt[(x2 - x1)^2 + (y2 - y1)^2]\n\nЭта метрика рассчитывает расстояние между точками по геометрической линии, а не по прямой пролinesе. Euclidean metrice commonly used in geometry and is essential for various applications including machine learning, data analysis, and computer vision.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1376",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 9.9,
+    "precision": 9.9,
+    "recall": 29.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.237418"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления шага Стохастической градиентной спуска (SGD) при заданном уравнении L(w) = w^2 и векторе w = [3], а скоростью обучения η = 0.1, нужно провести следующие шаги:\n\n1. Сначала вычислим градиент L'(w), когда L(w) = w^2. Для этого мы используем рекурсивное закон о градиенте.\n\nL'(w) = 2*w\n\n2. Подставим w = [3].\n\nL'(w) = 2 * 3 = 6\n\n3. Теперь, для каждого шага SGD, мы будем изменять w = w - η * L'(w).\n\n4. Получаем:\n\nw_n+1 = w_n - η * L'(w)\n= 3 - 0.1 * 6\n= 3 - 0.6\n= 2.4\n\nПоэтому шаг SGD для данного уравнения, введенной состояния w = 3 и η = 0.1, равен 2.4.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое SGD?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Согласно структуре предыдущего раздела, метод оптимизации SGD (Stochastic Gradient Descent) — это алгоритм minimизации функции потерь в нейронных сетях. Он обновляет веса по формуле:\n\n$$\n\\theta_{t+1} = \\theta_t - \\eta (\\nabla L(\\theta_t) + \\gamma \\nabla L(\\theta_{t-1}))\n$$\n\nгде:\n- $\\theta$ — вектор весов,\n- $\\eta$ — learning rate,\n- $L$ — функция потерь,\n- $\\nabla L$ — градиент по current weight $t$,\n- $\\gamma$ — mometum 参数.\n\nМетод SGD с mometuma ум pirиме Moment:\n- Используется batch size, чтобы обновлять веса на основе предыдущих gradienty.\n- Улучшает сходимость и stabильность обновления весов.\n- Обеспечивает гибкость для many-layer networks и complex задач.\n\nВажные моменты:\n- Несмотря на их уязвимости, SGD + Momentum — незаменимый метод оптимизации в practice для нейронных сетей.\n- Подходит для сложных задач с высокой сложностью и слабо стабильными градиентами.",
+    "rating": ""
+  }
+]

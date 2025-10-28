@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0127",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 49.3,
+    "precision": 51.8,
+    "recall": 56.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.638998"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Let's address the calculation of class probabilities in Naive Bayes. Your initial understanding likely involves simply counting occurrences. However, that’s insufficient. We need to calculate *conditional probabilities*, and crucially, *normalize* them to obtain probabilities.\n\n**The core formula is:**\n\nP(class | features) = [P(features | class) * P(class)] / P(features)\n\nWhere:\n\n*   **P(class | features)**:  The probability of the class given the observed features. This is what we want to calculate.\n*   **P(features | class)**:  The likelihood of observing the features given that the instance belongs to the class.  This is often referred to as the *conditional probability of features given class*.\n*   **P(class)**: The prior probability of the class. This is the probability of the class *before* observing any features.\n*   **P(features)**: The probability of observing the features. This is a normalizing constant.\n\n**Let's break down the calculation:**\n\n1.  **P(class):** This is calculated as the proportion of instances in the training data that belong to that class.  For example, if 30% of the training data belongs to class A, then P(class A) = 0.3.\n\n2.  **P(features | class):**  This is where the \"Naive\" part comes in.  We *assume* that the features are conditionally independent given the class. This means that observing one feature does not affect the probability of observing any other feature, given the class. We calculate this using frequency counts from the training data.  For each feature and each class, we calculate:\n\n    P(feature | class) = count(feature when class = class) / total count(feature)\n\n    For example, if we have a binary feature ‘red’ and class ‘A’ and the counts are:\n\n    *   count(red = true when class = A) = 10\n    *   total count(red) = 20\n\n    Then P(red = true | class = A) = 10/20 = 0.5\n\n3.  **P(features):** This is a normalizing constant. It ensures that the sum of all class probabilities equals 1. We calculate it as the sum of all conditional probabilities multiplied by their corresponding prior probabilities:\n\n    P(features) = Σ [P(features | class) * P(class)]  (summing over all classes)\n\n**Important Note:** The \"Naive\" assumption of feature independence is almost always violated in real-world datasets. This is a key limitation of the Naive Bayes algorithm.\n\n---\n\n**Now, let’s test your understanding.  Here’s a challenging task:**\n\nConsider a dataset with two features: 'Outlook' (Sunny, Overcast, Rainy) and 'Temperature' (Hot, Mild, Cool). You're trying to predict whether a customer will 'Play Tennis' (Yes, No).  The training data contains the following counts:\n\n| Outlook     | Temperature | Play Tennis |\n|-------------|-------------|--------------|\n| Sunny       | Hot         | 3            |\n| Sunny       | Mild        | 1            |\n| Sunny       | Cool        | 0            |\n| Overcast    | Hot         | 1            |\n| Overcast    | Mild        | 0            |\n| Overcast    | Cool        | 0            |\n| Rainy       | Hot         | 0            |\n| Rainy       | Mild        | 1            |\n| Rainy       | Cool        | 1            |\n\nCalculate P(Play Tennis = Yes | Outlook = Rainy, Temperature = Cool).  Show your steps and calculations.  Clearly state any assumptions you are making (specifically regarding the independence of the features, given the class). What are the limitations of this approach given your assumptions?",
+      "rating": ""
+    }
+  ]
+}

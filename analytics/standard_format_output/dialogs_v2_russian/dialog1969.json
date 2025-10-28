@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1969",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.096847"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Overfitting occurs when a machine learning model learns **too well** the patterns in your training data, capturing random noise or spurious correlations instead of the true underlying relationships. As a result, the model performs well on the training data but poorly on new, unseen data.\n\n### Why is overfitting a problem?\n- ** poor generalization**: The model becomes too specific to the training set and fails to make accurate predictions when encountering new data.\n- **increased variance**: Overfitted models have high variance (they can change their predictions significantly with small changes in the training data).\n- **cost of unnecessary complexity**: Adding more parameters or depth to a model increases its capacity, which can lead to overfitting.\n\n### Consequences\n- **reduced performance on unseen data**: The model may appear \"smart\" during training but fails when tested.\n- **explains poor validation loss**: If you're using cross-validation to evaluate the model's generalization, overfitting results in high values of validation loss or validation accuracy.\n\n### How to prevent overfitting\n1. **simple models are better (Occam's razor)**: Use simpler algorithms with fewer parameters.\n2. **use validation during training**: Monitor metrics like validation loss or cross-validation score and stop when it starts increasing.\n3. **regularization techniques**:\n   - L1 regularization (Lasso)\n   - L2 regularization (Ridge)\n4. **early stopping**: Stop training early if the validation loss doesn't improve for a certain number of epochs.\n5. **simple data engineering**: Add features that reduce noise, such as interactions or polynomial terms.\n6. **bagging and boosting**: Use ensemble methods to combine multiple models, reducing variance.\n\n### Common scenarios where overfitting is a problem\n- In image recognition tasks: A model might learn specific details in the training images that aren't present in real-world data.\n- In spam detection: A model with high variance might associate \"panda tails\" (noise) with spam emails even when there are no such examples.\n- In financial fraud detection: A model with overfitting might flag transactions it wasn't trained on as fraudulent.\n\nBy carefully monitoring model performance and using these strategies, you can reduce the risk of overfitting.",
+      "rating": ""
+    }
+  ]
+}

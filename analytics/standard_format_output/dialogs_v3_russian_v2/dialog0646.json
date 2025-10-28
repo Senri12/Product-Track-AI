@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0646",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 40.1,
+    "precision": 36.9,
+    "recall": 52.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.6,
+    "hallucination": 10.1,
+    "faithfulness": 35.4,
+    "noise_sensitivity": 19.9,
+    "self_knowledge": 4.5,
+    "timestamp": "2025-10-28T13:24:20.296388"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Autograd является библиотекой для автоматического вычисления градиентов в глубоких нейронных сетях. Она позволяет определить функцию, а затем автоматически рассчитать её первую и вторую производную с помощью обратного распространения ошибки (backpropagation). Autograd используется для оптимизации модели нейронной сети в процессе обучения, позволяя изменять параметры модели в направлении убывания функции потерь. Она широко используется в рамках библиотеки PyTorch и является одним из её основных компонентов.",
+      "rating": ""
+    }
+  ]
+}

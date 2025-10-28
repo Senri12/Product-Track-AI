@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0166",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.092881"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "```\nautograd — это модуль Python, который позволяет автоматически находить градиенты функций по переменным. Она используется в нейронных сетях для оптимизации и поддержки сложных вычислений.\n\nОсновные аспекты autograd:\n1. **Дифференцирование функций**:它可以 обрабатывать任何形式ую сложную функцию, которая требует градиентов.\n2. **Манually или自动化но** — может быть手动 определена дляeach function или автоматически при создании модели.\n\nПример использования:\n```\ndef loss_function(a, b):\n    return (a - b) ** 2\n\n# Используем autograd\n>>> import torch\n>>> a = torch.tensor([1.0])\n>>> b = torch.tensor([2.0])\n>>> l, grad_a, grad_b = torch.autograd gradients(l, (a, b))\n>>> print(\"L: \", l.item())\n0.03678...\n>>> print(\"grad_a: \", grad_a)\n-2.0\n>>> print(\"grad_b: \", grad_b)\n2.0\n```\n\nТаким образом, autograd позволяет без введения функций градиентов, что делает её особенно важной для нейронных сетей.",
+      "rating": ""
+    }
+  ]
+}

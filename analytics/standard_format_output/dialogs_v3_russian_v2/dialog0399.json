@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0399",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 30.8,
+    "precision": 37.7,
+    "recall": 36.9,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 30.6,
+    "hallucination": 18.7,
+    "faithfulness": 29.5,
+    "noise_sensitivity": 9.6,
+    "self_knowledge": 1.9,
+    "timestamp": "2025-10-28T13:24:19.906985"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Если письмо содержит слово <<приз>>, то его можно отнести к категории <<спам>>. Аналогично, если письмо не содержит слова <<приз>>, то его можно отнести к kategorии <<не спам>>. Это основное преимущество Байесовского классификатора: он позволяет распределить вероятности на основе известных данных, а не только на основе внешней информации.",
+      "rating": ""
+    }
+  ]
+}

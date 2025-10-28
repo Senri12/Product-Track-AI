@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0960",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 32.5,
+    "precision": 30.4,
+    "recall": 52.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.5,
+    "hallucination": 13.1,
+    "faithfulness": 31.0,
+    "noise_sensitivity": 20.7,
+    "self_knowledge": 5.8,
+    "timestamp": "2025-10-28T13:24:20.131973"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В данном примере, при постоянном параметре для момента (γ = 0.9), длиной катета от ω до вектора градиента ∇ при γ = 0.9 равно:\n\nv_t - 1 * γ = v_t - 0.9 = 1 - 0.9 = 0.1\n\nТогда, ∇ω = ω + v_t = ω + 0.1 (что дает в данном случае ω + 0.1)\n\nВ этом примере, с γ = 0.9 и ∇ = 2:\n\n∇ω ≈ 1 + 0.1 * 2 = 1 + 0.2 = 1.2\n\nТаким образом, в данном случае ∇ω при γ = 0.9 равно около 1.2.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0687",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 40.7,
+    "precision": 39.1,
+    "recall": 51.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.5,
+    "hallucination": 10.7,
+    "faithfulness": 34.2,
+    "noise_sensitivity": 18.4,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.316391"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Нейронная сеть будет вычислять v_t в моменте как:\nv_t = γ*v_{t-1} - η*\\nabla L(ω)\n\nЗначения параметров для вашего примера:\nγ=0.9, v_{t-1}=1, \\nabla L=2 (gradient of loss function), η=0.1.\n\nПодставляя эти значения в формулу вычисления v_t, получим:\nv_t = 0.9*1 - 0.1*2 = 0.8 - 0.2 = 0.6\n\nТаким образом, v_t для вашего примера равно 0.6.",
+      "rating": ""
+    }
+  ]
+}

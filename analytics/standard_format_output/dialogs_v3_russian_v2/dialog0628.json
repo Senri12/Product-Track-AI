@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0628",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 41.9,
+    "precision": 37.6,
+    "recall": 55.8,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 9.7,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.304569"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В данном случае мы имеем алгоритм Adagrad, в котором веса обновляются по формуле:\n\nw_new = w_old - \\eta * g_t / sqrt(G_{t-1,ii} + \\epsilon)\n\nгде:\n- w_old и w_new - старые и новообработанные веса соответственно,\n- \\eta - шаг обучения (learning rate),\n- g_t - градиент по временному шагу t,\n- G_{t-1,ii} - сумма квадратов предыдущих градиентов для ii-го веса по временному шагу t-1 (историческая сумма),\n- \\epsilon - малая константа, добавляемая к сумме квадратов предыдущих градиентов, чтобы избежать деления на нуль.\n\nВ данном случае даны конкретные значения для этих параметров:\n- G_{t-1,ii} = 4 (историческая сумма для ii-го веса по временному шагу t-1),\n- g_t = 2 (градиент по временному шагу t),\n- \\eta = 0.1 (шаг обучения),\n- \\epsilon = 1e-8 (малая константа).\n\nОтвет:\n\nw_new = w_old - 0.1 * 2 / sqrt(4 + 1e-8) = w_old - 0.1 * 2 / 2.0051 = w_old - 0.1000002 * 2\n\nТаким образом, веса обновляются на значение 0.1000002 * 2 (округляем до 2 десятичных знаков) в зависимости от старых весов w_old.",
+      "rating": ""
+    }
+  ]
+}

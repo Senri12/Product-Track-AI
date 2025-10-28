@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0739",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 37.0,
+    "precision": 44.8,
+    "recall": 58.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.792507"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Overfitting occurs when a machine learning model learns not only from actual patterns in data but also captures noise or random fluctuations as if they were meaningful information that can lead to poor performance on new (unseen) datasets.\n\nImagine you're trying to fit your clothes perfectly; you've adjusted them countless times until they're so snug you can't move. This perfect, personalized fitting is like overfitting – the model fits its training data too well by capturing even tiny details or noise in it instead of learning general patterns that can apply broadly.\n\n\nTo help prevent this from happening:\n- You could try to keep your dataset large and diverse.\n- Simplify models (e.g., choose a simpler algorithm).\n- Use techniques like cross-validation, where you test the model on different subsets for better results.\n\nRemember: The goal is not just good performance with training data but also strong generalization capabilities.",
+      "rating": ""
+    }
+  ]
+}

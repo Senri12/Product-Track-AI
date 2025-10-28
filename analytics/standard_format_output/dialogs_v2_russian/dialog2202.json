@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2202",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.005189"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Рассчитаем расстояние Euclid между точками (1,2) и (3,4):\n\n1. Подставляем в формулу Euclidean distance:\n   \\[\n   d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n   \\]\n   где \\(x_1 = 1\\), \\(y_1 = 2\\), \\(x_2 = 3\\), \\(y_2 = 4\\).\n\n2. Вычисляем раз differences:\n   \\[\n   x_2 - x_1 = 3 - 1 = 2\n   \\]\n   \\[\n   y_2 - y_1 = 4 - 2 = 2\n   \\]\n\n3. Потенцируем квадраты раз difference:\n   \\[\n   (x_2 - x_1)^2 = 2^2 = 4\n   \\]\n   \\[\n   (y_2 - y_1)^2 = 2^2 = 4\n   \\]\n\n4. Суммируем квадраты раз difference:\n   \\[\n   4 + 4 = 8\n   \\]\n\n5. Извлекаем корень из суммы:\n   \\[\n   d = \\sqrt{8} = 2\\sqrt{2}\n   \\]\n\n**Результат**: Расстояние Euclid между точками (1,2) и (3,4)equalto \\(2\\sqrt{2}\\).",
+      "rating": ""
+    }
+  ]
+}

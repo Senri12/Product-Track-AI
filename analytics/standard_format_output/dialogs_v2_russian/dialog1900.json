@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1900",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.020018"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Кфедеративный метод к-nосов (K-NN) и метод с加重енной к-nосами (Weighted K-NN) — это два основных алгоритма визуализации данных и классификации. Они отличаются по способам определения касающих weighedneighs.\n\n### 1. **КФEDИАВНЫЙ метод к-nосов**\n- Кфедеративный метод к-nосов (K-NN) — это базовый алгоритм machine learning, который works с тобой на основе навыков ближайших voiseb или касающих weightedneighs. В этом методе для каждого из классов мы сравниваем расстояния доNeighs, и выбор Neighs зависит от того, как эти расстояния связаны с классами.\n- Например, в методе к-nосов, мы выбираем k closer neighbors (касающих weightedneighs) по определению расстояния или по их weightage. Это делает метод нестабильным и способенной к выявлению噪音ей и изолации метаданных.\n\n### 2. **Метод с加重енной к-nосами**\n- Метод с加重енной к-nосами (Weighted K-NN) — это модификация метода к-nосов, где включаемых в выборе Neighs веци за счет их weightage. В этом методе closer neighbors receives greater weight than farther ones.\n- Это делает метод более стабильным и способенной к обработке метаданных. В отличие от K-nos, который может сбить резонансы nearby outliers, weighted K-nos give Neighs weightage, which helps to prevent overfitting and improve generalization.\n\n### **Вывод**\n- Метод weighted K-nos greater weightage to closer neighbors compared to K-nos improves accuracy and robustness.\n- В отличие от K-nos, weighted K-nos с легче управлять метаданными и включать их в алгоритм.\n- В practice weighted K-nos are often recommended over K-nos for their better performance.",
+      "rating": ""
+    }
+  ]
+}

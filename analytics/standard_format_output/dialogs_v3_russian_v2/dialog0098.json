@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0098",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 36.1,
+    "precision": 36.5,
+    "recall": 46.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.2,
+    "hallucination": 8.6,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 21.8,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.060821"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The Chebyshev distance is a metric used to measure the distance between two points in an n-dimensional space. It is defined as the maximum of the absolute differences of their coordinates. Formally, for two points \\( (x_1, y_1, z_1) \\) and \\( (x_2, y_2, z_3) \\), the Chebyshev distance is:\n\n\\[\nd = \\max(|x_1 - x_2|, |y_1 - y_2|, |z_1 - z_3|)\n\\]\n\nThis metric is particularly useful in scenarios where movement constraints or comparisons across multiple axes are important. It extends to higher dimensions by considering the maximum difference along any axis. For example, in 4D space, it would be:\n\n\\[\nd = \\max(|x_1 - x_2|, |y_1 - y_2|, |z_1 - z_2|, |w_1 - w_2|)\n\\]\n\nChebyshev distance is applicable in various fields such as chess for measuring moves, computer graphics, pattern recognition, and data analysis. It differs from other metrics like Euclidean and Manhattan, offering unique properties that make it valuable in specific contexts.",
+      "rating": ""
+    }
+  ]
+}

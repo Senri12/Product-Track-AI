@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0218",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 34.4,
+    "precision": 37.5,
+    "recall": 41.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 25.4,
+    "hallucination": 10.2,
+    "faithfulness": 33.3,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 6.5,
+    "timestamp": "2025-10-28T13:24:20.006498"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Расстояние Чебышёва — это мера distances между точками в multidimensional space, где расстояниеdepends на Maximum coordinate difference. Это отличается от других метрик, таких как Euclidean или Manhattan.\n\nДля классификации данных можно использовать Around Nearest Object — Near Neighbor с расстоянием Чебышёва. Для этого необходимо:\n\n1. Выбрать Radius: threshold distance.\n2. Настройте Around Nearest Object — Neighbor с this Radius.\n3. Для каждого test point (предыдущего объекта) вычислите Maximum coordinate difference с всеми training objects в промежутке Radius.\n4. Если Any of these neighbors belongs to a certain class, assign the new object to that class.\n\nЭтот метод использует расстояние Чебышёва для кластеризации и классификации объектов, предполагая, что closer points tend to belong to the same class.",
+      "rating": ""
+    }
+  ]
+}

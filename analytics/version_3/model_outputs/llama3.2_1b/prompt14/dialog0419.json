@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "eta_0 = 0,1\nt = 5\nT = 10\neta = eta_0 * (1 - t/T)\n= 0,1 * (1 - 5/10)\n= 0,1 * (1 - 0,5)\n= 0,05\n\nЭта функция learning rate decay представляет собой уменьшениеLearning Rate на 5% каждые 5 шагов.",
+    "rating": ""
+  }
+]

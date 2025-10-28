@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2217",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.009179"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вот шаг за шагом вычисление текущей градиенты \\( v_t \\) в Momentum сgivenными параметрами:\n\n1. **Подстановка данных в формулу Momentum:**\n   \\[ v_t = \\gamma v_{t-1} + (1 - \\gamma) g \\]\n\n2. **Замена значений из контекста:**\n   - \\( \\gamma = 0.9 \\)\n   - \\( v_{t-1} = 1 \\)\n   - \\( g = \\nabla L = 2 \\)\n\n3. **Повторная подстановка данных:**\n   \\[ v_t = 0.9 \\times 1 + (1 - 0.9) \\times 2 \\]\n\n4. **Кalculation each term:**\n   - \\( 0.9 \\times 1 = 0.9 \\)\n   - \\( (1 - 0.9) = 0.1 \\)\n   - \\( 0.1 \\times 2 = 0.2 \\)\n\n5. **Сумма результатов:**\n   \\[ v_t = 0.9 + 0.2 = 1.1 \\]\n\n**Ответ:**\n\n\\[ v_t = 1.1 \\]",
+      "rating": ""
+    }
+  ]
+}

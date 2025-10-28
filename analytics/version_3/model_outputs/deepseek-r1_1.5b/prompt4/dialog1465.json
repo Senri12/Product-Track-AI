@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое RMSProp?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "RMSProp (root mean square proposition) — это оптимизатор в TensorFlow, который используется дляminimization задач. Сравнительно с SGD и Momentum, RMSProp уменьшаетlearning rate по градиенту, что позволяет更快 сойти вMinimum. В отличие от SGD, который использует общую learning rate на всех тренировочных данных, RMSProp использует learn rate для каждого бата или epoch.\n\nФормально RMSProp можно определить как:\n\nω_{t} = ω + (-g_t) * sqrt(r_{t-1}) \n\nгде g_t — градиент по current weight, r_t — корень из среднего квадратов градиентов по current weight.\n\nНо в practiceе RMSProp обычно используется с параметром γ (γ=0.9), который показывает portion оstate current gradient, чтобы уменьшить step size. Это позволяет faster convergence и minimize local minima.",
+    "rating": ""
+  }
+]

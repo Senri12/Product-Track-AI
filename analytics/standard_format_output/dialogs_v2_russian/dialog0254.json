@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0254",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 32.6,
+    "precision": 34.7,
+    "recall": 39.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.957097"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Сначала давайте посчитаем общее количество возможных ответов для каждойcondition: \n\nDa | Pasmureno, Kolydno, Veshno\n- Da = 4 \n- Ne = 0 (отдавать только тот, который удовлетворяет condition)\n\nТеперь мы можем вычислить P(да | пасмурно, холодно, влажно) как:\n\nP(Da | Pasmureno, Kolydno, Veshno) = П( da ) / П(да и PASMURNO или KOLYDNO или VESHNIO)\n= 4/10\n= 0,4\n\nОкончательный ответ — 0,4.",
+      "rating": ""
+    }
+  ]
+}

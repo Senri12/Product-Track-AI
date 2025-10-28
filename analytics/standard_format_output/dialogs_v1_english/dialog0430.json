@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0430",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 43.6,
+    "precision": 44.4,
+    "recall": 55.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.657422"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Okay, let’s break down the differences between k-NN (k-Nearest Neighbors) and Weighted k-NN. This is a really important distinction in machine learning, so let’s go through it carefully.\n\n**1. Basic k-NN:**\n\n* **Concept:** k-NN is a simple, non-parametric supervised learning algorithm. It's primarily used for both classification and regression tasks.  The core idea is that new data points are classified or predicted based on the majority class (for classification) or average value (for regression) of their *k* nearest neighbors in the training data.\n* **How it works:**\n    * You choose a value for *k* (the number of neighbors).\n    * For a new data point, you calculate the distance to every point in your training set (often using Euclidean distance).\n    * You select the *k* data points closest to the new point.\n    * **For classification:** You assign the new point to the class that is most frequent among those *k* neighbors.\n    * **For regression:** You calculate the average of the values of the *k* nearest neighbors.\n* **Key Limitation:**  All neighbors contribute equally to the prediction.  This can be problematic. For example, if a particular class is more prevalent in your training data, a single point far away might still have a significant influence on the prediction for a new point.\n\n\n**2. Weighted k-NN:**\n\n* **Concept:** Weighted k-NN addresses the limitation of the basic k-NN algorithm by assigning different weights to the neighbors based on certain criteria.  This allows you to prioritize neighbors that are more relevant or influential.\n* **How it works:**\n    * You still choose *k*.\n    * **You define a weighting function:** This is the crucial part.  The weighting function determines how much influence each neighbor will have on the prediction.  Here are some common weighting functions:\n        * **Distance-based:** Neighbors closer to the new point have higher weights (e.g., weights decrease inversely proportional to the distance).  This is the most common approach.\n        * **Inverse Distance Weighting (IDW):** Weights are inversely proportional to the distance – closer neighbors have a much higher weight than farther ones.  A common formula is:  `weight = 1 / distance^2`.\n        * **Adaptive Weighting:**  The weights can depend on other features of the data.  For example, you could give more weight to neighbors with similar values in a particular feature.\n    * After calculating the weights, you use them to calculate the weighted average or the weighted majority for your prediction.\n* **Example:** Let's say you are predicting the price of a house.  A house very close to the new house will have a much greater influence on the prediction than a house far away, even if the distant house has a higher actual price.\n\n\n\n**Here’s a table summarizing the key differences:**\n\n| Feature           | k-NN (Basic) | Weighted k-NN |\n|--------------------|--------------|---------------|\n| **Weighting**      | All neighbors equal | Neighbors assigned different weights |\n| **Weighting Function**| None         | Required        |\n| **Complexity**      | Simpler       | More complex  |\n| **Sensitivity to Outliers** | More sensitive | Less sensitive (depending on the weighting function) |\n| **Flexibility**      | Less flexible| More flexible |\n\n\n\n**Now, let’s test your understanding.  To help me gauge where you're at, could you answer the following questions:**\n\n1.  Can you explain, in your own words, why the basic k-NN algorithm might not always be the best choice?  What potential problems might arise?\n2.  What are some reasons you might *want* to use a weighted k-NN approach instead of the basic k-NN?  Give a specific example scenario.",
+      "rating": ""
+    }
+  ]
+}

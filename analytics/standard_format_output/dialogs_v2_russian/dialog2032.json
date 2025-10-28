@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2032",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.112944"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Adam (Adaptive Learning Rate) is an optimization algorithm used for training neural networks. It stands for Adaptive Learning Rate and operates by maintaining two moment estimates: one for the mean of parameter values (first moment) and another related to their variance (second moment). This approach allows parameters to adjust their learning rate individually, based on their performance during training. Unlike traditional optimizers like SGD or Momentum.SGD, Adam eliminates a momentum term, enabling it to handle parameters with varying initial scales more effectively. It is known for its efficiency and robustness across different ML tasks due to its adaptive nature and lack of tuning requirements.",
+      "rating": ""
+    }
+  ]
+}

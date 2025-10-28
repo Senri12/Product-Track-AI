@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1449",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 34.0,
+    "precision": 32.6,
+    "recall": 51.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.4,
+    "hallucination": 8.2,
+    "faithfulness": 36.3,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.013803"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для классификации писем на 'spam' с использованием метода Naive Bayes можно следовать этим шагам:\n\n1. **Обучение модели**:\n    - Составить набор тренировочных данных, включив для каждого письма метки class (spam или not spam).\n    - Разделить данные на слова.\n    - Оценить частоту появления каждого слова в spamе и не в spamе.\n\n2. **Учет условных вероятностей**:\n    - Вычислить условные вероятности для каждого слова при каждой метке class (spam или not spam).\n    - Учитывать, что предикторы (в данном случае слова) независимы друг от друга при задании метки.\n\n3. **Использование bag-of-words**:\n    - Усреднить репрезентацию писма через bag-of-words – это означает, что мы используем набор слов в писине без их структуры и с их отражением частоты.\n\n4. **Классификация**:\n    - Важно учитывать важность слов в контексте Entire message.\n    - Предсказать class для нового писма в зависимости от maximize product of conditional probabilities multiplied by word frequencies weighted accordingly.\n\n5. **Рésultats и меры предотвращения ошибок**:\n    - Использовать rule-based classification, если нужно минимизировать ошибки.\n    - Использовать SVM с под拿出来 weights learned from data для улучшения точности классификации.\n\nВ итоге, Naive Bayes с bag of wordsweighted by frequency может быть простой и доступным методом для классификации писем на 'spam', но в реальности лучше использовать дополнительные меры или другие алгоритмы для более точной и стабильной классификации.",
+      "rating": ""
+    }
+  ]
+}

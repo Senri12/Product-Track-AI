@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Пусть X₁ = пасмурно, X₂ = холодно, X₃ = влажно и y₁ = да, y₂ = да, y₃ = да. Тогда P(X₁, X₂, …, X_(p)|Класс = да) = P(X₁|Класс = да) ⋅ P(X₂|Класс = да) ⋅ …⋅ $$\\mathsf{P}\\left(X_p | \\text{Класс} =ยăя\\right)$$ = (2/5) × (1/4) × … × (1/3) = 1/30.",
+    "rating": ""
+  }
+]

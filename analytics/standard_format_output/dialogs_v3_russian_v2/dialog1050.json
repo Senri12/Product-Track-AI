@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1050",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 32.9,
+    "precision": 31.3,
+    "recall": 50.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.9,
+    "hallucination": 13.4,
+    "faithfulness": 31.0,
+    "noise_sensitivity": 20.7,
+    "self_knowledge": 5.6,
+    "timestamp": "2025-10-28T13:24:20.138417"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В методе Nesterov (когда nesterov=True), перед тем как обновлять веса (ω), вычисляется градиент по новой точке, используя текущую короткую скорость (v).\n\nВ данном случае:\n- γ = 0.9 (параметр момента)\n- v = 1 (текущий вес)\n- ∇ = 2 (градиент функции потерь, известный на этот шаг)\n\nВычисляется следующим образом:\n\nv_t = γ * v_(t - 1) = 0.9 * 1 = 0.9\n∇_ω = ∇ - η * (ω + v_(t-1)) = 2 - 0.9 * (1 + 0.9) = 2 - 1.71 ≈ 0.29\n\nТаким образом, при γ = 0.9 и ∇ = 2, вычисляется ∇ в ω - γ v_(t-1) ≈ 0.29.",
+      "rating": ""
+    }
+  ]
+}

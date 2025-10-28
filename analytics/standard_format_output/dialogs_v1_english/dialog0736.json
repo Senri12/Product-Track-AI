@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0736",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 37.0,
+    "precision": 44.8,
+    "recall": 58.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.791748"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Autograd, or automatic differentiation, is a technique used in machine learning to compute gradients efficiently during training processes like backpropagation.\n\nIn simpler terms: It’s an algorithm that helps us find how much changing one thing affects another when we're trying something complex and interconnected (like building models for computers). This way we can adjust our model so it performs better!\n\nIf you’re comfortable with this explanation, or if you'd prefer a more detailed technical description involving calculus concepts like derivatives being computed symbolically through chain rules applied to tensors rather than matrices exclusively—feel free to let me know!",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое евклидова метрика?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Евклидова метрика – это класс метрики, которая определяется в euclidean coordinates (X₁, X₂, ..., X_(n)) space and measures the \"distance\" between two points according to the formula:\n\n\\[ d(X_i, Y_j) = \\sqrt{(x_{1i} - y_{1j})^2 + (x_{2i} - y_{2j})^2 + ... + (x_{ni} - y_{nj})^2 }  \\]\n\nwhere \\( X_i = (x_1, x_2, ..., x_n) \\) and \\( Y_j = (y_1, y_2, ..., y_n) \\). This metric satisfies the properties of non-negativity (\\( d(X, Y) ≥ 0\\), with equality if and only if X equals Y; symmetry: \\(d(X, Y)=d(Y,X)\\); triangle inequality: for any three points A, B, C in space, we have that\n\n\\[ (A \\rightarrow B + B \\rightarrow C) ≤ A - C ) = d(A,C).  \\)\n\nIn this way, the Euclidean metric defines a \"distance\" between two vectors which is not only non-negative but also satisfies all of them. This distance can be used to identify if points are close or far from each other in n-dimensional euclidean coordinates.\n\nThe term comes often when describing methods with k-NN as well as many classification tasks (2-class classifiers, for example). In this case, it is commonly considered that the class of a new vector X based on its closeness metric to some training data. As explained above, if there are several vectors in such close proximity to each other within your dataset when applying Euclidean metrics then you can assume they have similar classes (or even predict their labels with high confidence). \n\nThis \"closeness\" or euclidean distance is often used as one of the fundamental building blocks for machine learning methods including k-NN and many others. This metric also plays a critical role in optimizing classification tasks by allowing us to understand which data points are close together within our training dataset, thus helping create more refined models with high accuracy.\n\nI hope this explains what Euclidean metrics is if you have questions about it let me know. \n\n[image]  [ label=\"k-NN and Euclidian Metrics\" height = 100% ]",
+    "rating": ""
+  }
+]

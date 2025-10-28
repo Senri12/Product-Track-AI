@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1125",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 33.9,
+    "precision": 29.7,
+    "recall": 51.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.1,
+    "hallucination": 12.4,
+    "faithfulness": 32.2,
+    "noise_sensitivity": 20.1,
+    "self_knowledge": 5.3,
+    "timestamp": "2025-10-28T13:24:20.192201"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "При использовании метода сглаживания по Лапласу для оценки вероятности слова \"win\" в письме, если оно отнесено к классу <<спам>>, то:\n\n$$\\mathsf P(X = \\text{win}| \\text{Класс} = \\text{спам}) = \\frac{1 + 1}{8 + 7} = \\frac{2}{15}$$\n\nТаким образом, вероятность слова \"win\" в письме отнесенном к классу <<спам>> равна $0.133$.",
+      "rating": ""
+    }
+  ]
+}

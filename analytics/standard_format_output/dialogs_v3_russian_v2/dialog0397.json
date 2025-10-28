@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0397",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 30.8,
+    "precision": 37.7,
+    "recall": 36.9,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 30.6,
+    "hallucination": 18.7,
+    "faithfulness": 29.5,
+    "noise_sensitivity": 9.6,
+    "self_knowledge": 1.9,
+    "timestamp": "2025-10-28T13:24:19.906656"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вот формулу для наивного байесовского классификатора:\n\n$$y^\\ast = \\mathop{\\mathrm{Arg\\,max}}_{y \\in Y} \\left( \\frac{\\prod_{i=1}^{p} \\mathsf{P}(X_i | y)}{\\mathsf{P}(Y)} \\right)$$\n\nгде:\n\n* $$\\mathsf{P}(Y)$$ — вероятность того, что класса является правильным (0, если Class = не спам; 1, если Class = спам).\n* $$\\prod_{i=1}^{p} \\mathsf{P}(X_i | y)$$ — произведение вероятностей наликов в зависимости от класса.\n* $\\mathsf{P}(X_i | y)$ — вероятность occurrence of $X_i$ given class $y$.\n\nЧтобы вычислить эту формулу, você должен предоставить набор данных, где каждый объект X_i имеет p признаков (вот example):\n\nX1: (1, 2, 3)\nX2: (4, 5, 6)\n\nОбратите внимание, что классы не известны и наивный байесовский классификатор учитывает только вероятности налика в зависимости от класса. Это означает, что для каждого объектa у нас есть вероятность occurrence of object given class:\n\n* $\\mathsf{P}(X_1|Class = spam)$ = 0,5\n* $\\mathsf{P}(X_2|Class = spam)$ = 0,4\n* $\\mathsf{P}(X_3|Class = spam)$ = 0,7\n* $\\mathsf{P}(X_1|Class \\ne spam)$ = 0,5\n* $\\mathsf{P}(X_2|Class \\ne spam)$ = 0,4\n* $\\mathsf{P}(X_3|Class \\ne spam)$ = 0,7\n\nТеперь мы можем вычислить вероятности налика для каждого класса:\n\n$\\mathsf{P} (X_1 | Class \\ne sp\\text{am})$ = 0,5\n$\\mathsf{P}(X_2|Class \\ne sp\\text{am})$ = 0,4\n$\\mathsf{P}(X_3|Class \\ne sp\\text{am})$ = 0,7\n\nИспользуя эти значения, мы можем вычислить вероятность class y:\n\n$$y^\\ast = \\mathop{\\mathrm{Arg\\,max}}_{y \\in {spam,\\ ne spam}} (0.5 * 0.4 * 0.7 + 0.5 * 0.3 * 0.2)$$\n\n$$y^\\ast = \\mathop{\\mathrm{Arg\\,max}}_{y \\in {spam,\\ ne spam}} (1/14$$\n\n$$y^\\ast = spam$$",
+      "rating": ""
+    }
+  ]
+}

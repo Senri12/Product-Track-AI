@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0773",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 36.3,
+    "precision": 37.2,
+    "recall": 47.8,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.3,
+    "hallucination": 10.5,
+    "faithfulness": 35.3,
+    "noise_sensitivity": 18.8,
+    "self_knowledge": 4.2,
+    "timestamp": "2025-10-28T13:24:20.321745"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Learning rate - это параметр оптимизатора для обучения машинного обучения, который определяет величину шага, которую производится при изменении веса каждой нейронной связи во время обучения. Установка правильного значения learning rate является одним из ключевых задач, поскольку слишком малые или слишком большие значения могут привести к медленному или несовершенному обучению.\n\nLearning rate определяет скорость изменения весов во время итераций спуска и часто регулируется в ходе процесса обучения для достижения оптимальной скорости конвергенции к минимуму функции потерь.\n\nУстановка learning rate определяет какое-то начальное значение, которое может быть модифицировано в ходе обучения для обеспечения наилучшего согласования между весами и данными. На практике часто используют аддитивный градиентный спуск (SGD) с некоторым learning rate, а также методы по типу Momentum и Adam, которые автоматически регулируют значение learning rate для каждой итерации обучения.\n\nПодробнее об этом можно почитать в статьях:\n* \"Understanding the Learning Rate\" на сайте Deeplearning.ai: https://course.deeplearning.ai/notebooks/intro_to_neural_networks/3-1-understanding_the_learning_rate.html\n* \"Learning rate for neural networks\" на сайте Medium: https://medium.com/swlh/learning-rate-for-neural-networks-explained-49e6c55a8b10",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1990",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.049085"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The K-Nearest Neighbors (K-NN) algorithm is a classification technique that operates by examining the k nearest data points in the training set for each new data point. Each of these neighbors has an equal weight or influence on the final classification decision.\n\n**Weighted K-Nearest Neighbors (Weighted K-NN)** introduces a key modification where each of the k nearest neighbors is assigned different weights. These weights are typically based on proximity (closer neighbors receive higher weights) or class balance, which helps in addressing issues like overfitting and imbalanced datasets.\n\n**Key Differences:**\n\n1. **Neighbor Influence:** Unlike regular K-NN, weighted K-NN assigns varying weights to each neighbor. This means that closer neighbors have more influence than those from distant regions or different classes.\n   \n2. **Robustness:** Weighting can help balance the influence of neighboring points, especially when there are class imbalances. It reduces overfitting by ensuring less weight is given to distant points from the majority class.\n\n3. **Probabilistic Output:** Weighted K-NN often employs a soft approach where each neighbor contributes to a probability distribution across classes, offering more flexibility in modeling complex boundaries.\n\nIn summary, while both algorithms rely on nearest neighbors without extensive preprocessing, weighted K-NN enhances accuracy and robustness through varying neighbor weights, leading to more reliable classification results.",
+      "rating": ""
+    }
+  ]
+}

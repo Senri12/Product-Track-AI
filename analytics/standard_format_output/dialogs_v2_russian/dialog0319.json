@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0319",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 30.5,
+    "precision": 35.9,
+    "recall": 39.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.998348"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Оверфitting - это явление, при котором модель или прогрессионный линейный метод предсказывает значение, которое не имеет отношения к Independent Variable (ИВ) или Dependent Variable (ДВ). Это может произойти в результатеToo many iterations of the training process, когда количество итераций увеличивается до критического значения.\n\nКогда model trained on a limited dataset, он может учиться на распределении, которое является нелинейным. В результате он может desarrollить too complex predictions and fail to generalize well to new data outside the training set.",
+      "rating": ""
+    }
+  ]
+}

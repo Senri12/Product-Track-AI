@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1439",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 33.7,
+    "precision": 39.6,
+    "recall": 44.6,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.3,
+    "hallucination": 10.5,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 19.0,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.025195"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисленияlearning rate decay с оптимизаторомAdam и Momentum в utilisном методе linearnы шагов:\n\n**eta0 = 0.1 (initial learning rate)**\n- **T = 10 (total number of training steps)**\n- **t = 5 (current step)**\n\n**Learning rate formula for linear decay:**\n\nη_t = η0 * (1 - t/T)\n\n**Plugging in the values:**\n\nη_5 = 0.1 * (1 - 5/10)\nη_5 = 0.1 * (1 - 0.5)\nη_5 = 0.1 * 0.5\n**η_5 = 0.05**\n\n**Answer:**  \nThe learning rate at step 5 is 0.05.",
+      "rating": ""
+    }
+  ]
+}

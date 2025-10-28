@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0247",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 34.6,
+    "precision": 35.0,
+    "recall": 48.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.6,
+    "hallucination": 10.2,
+    "faithfulness": 30.2,
+    "noise_sensitivity": 15.5,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:19.999611"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы правильно вычислить вероятность класса в NBC (наивный байесовский классификатор), можно следовать этим шагам:\n\n1. **Определение распределений предikторов:**\n   - Для каждого класса определите распределение для каждого предiktorа.\n   - Например, для класса A и class B:\n     - \\( P(X_1 = x_1 | class\\;A) \\)\n     - \\( P(X_2 = x_2 | class\\;A) \\)\n     - Или, если у вас есть rule rules или rule induction для class A.\n   - Это позволяет определить, сколько объектов из этого класса имеют заданный вектор предikторов.\n\n2. **Использование распределений для расчета вероятности:**\n   - Для каждого класса \\( k \\):\n     - \\( P(class\\;A | X_1 = x_1, X_2 = x_2) = \\frac{P(X_1 = x_1, X_2 = x_2 | class\\;A)}{P(X_1 = x_1, X_2 = x_2)} \\)\n   - Здесь:\n     - \\( P(class\\;A | X_1 = x_1, X_2 = x_2) \\) — вероятность того, что объект имеет вектор предikторов \\( (x_1, x_2) \\) при классе A.\n     - \\( P(X_1 = x_1, X_2 = x_2 | class\\;A) \\) — количество объектов из class A с заданным вектором предikторов.\n\n3. **Прием rule rules или rule induction:**\n   - Если есть rule rules в обучающей выборке:\n     - Для класса A:\n       - \\( P(class\\;A | X_1 = x_1, X_2 = x_2) = \\sum_{rules} I(X_1 \\leq x_1 \\land X_2 \\leq x_2 \\in rule) \\times w \\)\n     - Здесь \\( I(\\cdot) \\) — инструмент для поиска rule rules, и \\( w \\) их вероятности.\n   - Если есть rule induction:\n     - Для каждого rule rules в классе A определите вероятность объекта с заданным вектором предikторов.\n     - Используйте эти rule rules для расчета вероятности.\n\n4. **Использование rule-based methods:**\n   - Поставьте rule rules в обучающей выборке и изучите их структуру.\n   - Используйте эти rule rules для более точных отчетов о вероятностях классов.\n\n5. **Сумmarization:**\n   - Нamedо: Naiv Bayes Classifier\n   - Основные идеи:\n     - Выявлять rule rules или rule induction.\n     - Использовать rule-based methods для определения вероятностей классов.\n   - Важно учитывать альтернативы к NBC, таких как decision trees с rule rules и bagging rule induction.\n\nЭти шаги помогут вам правильно вычислить вероятности классов в NBC и построить точные отчеты о классах для новых объектов.",
+      "rating": ""
+    }
+  ]
+}

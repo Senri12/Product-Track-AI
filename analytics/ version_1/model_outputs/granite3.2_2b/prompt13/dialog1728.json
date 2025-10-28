@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое Keras?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Keras is an open-source neural networking library written in Python. It's primarily used for building deep learning models, especially those based on convolutional neural networks (CNNs), recurrent neural networks (RNNs), and more. Its main feature is its user-friendliness and ease of use—it allows developers to design complex models without needing extensive knowledge about lower-level optimization techniques or specific details of TensorFlow or other deep learning frameworks that it runs on top of, such as Google's TensorFlow 2.\n\nFor instance, you might see code like this in Keras:\n\n```python\nfrom keras.models import Sequential\nfrom keras.layers import Dense\n\n# Initialize the constructor for your Sequential model\nmodel = Sequential()\n\n# Add a Dense layer with 64 units as the first layer\nmodel.add(Dense(64, activation='relu', input_shape=(100,)))\n\n# Add another Dense layer of 10 units (for binary classification) and 'sigmoid' activation\nmodel.add(Dense(10, activation='sigmoid'))\n```\n\nThis example demonstrates how simple it can be to create a basic neural network with Keras. Remember, as you progress in learning about deep learning, you'll dive deeper into the customization of layers, optimizers, loss functions, and more that Keras provides.\n\nWhat are your thoughts on using Keras for building models? Have you had any experiences working with it before?",
+    "rating": ""
+  }
+]

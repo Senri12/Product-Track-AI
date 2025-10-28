@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1828",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.106980"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для пониманияAdagrad метода и его использования необходимо учитывать следующие элементы:\n\n1. **Gamma (γ)**: Сопротивление Adagradа, обычно Small (γ<1), что масштабирует градиенты в Current epochе smaller.\n\n2. **g_{t-1,ii}**: Градиент на предыдущейepochе. Если ii представляет собой конкретный feature или global gradient, это определит масштабирование.\n\n3. **g_t**: Градиент на Current epochе, который будет уменьшаться по формуле:  \n   g_{t} = g_t + γ * (g_{t-1}/n) / sqrt(ε),  \n   где n — количество features или global gradient.\n\n**Пример с given parametрами:**\n\nПусть gamma=0.1, g_{t-1}=4, g_t=2, и number_of_features=10 (предположение).\n\nТогда:\ng_t = 2 + 0.1 * (4 / 10) / sqrt(1e-8)\n= 2 + 0.1 * 0.4 / 3.16e-5\n≈ 2 + 0.004 / 3.16e-5\n≈ 2 + 127 ≈ 129.\n\nЭто может быть не так, так как division by sqrt(epsilon)normalize small numbers.",
+      "rating": ""
+    }
+  ]
+}

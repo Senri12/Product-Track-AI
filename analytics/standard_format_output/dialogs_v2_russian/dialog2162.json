@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2162",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.011062"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Selecting the optimal number of neighbors (k) in a k-Nearest Neighbor (k-NN) algorithm involves a combination of practical techniques, domain knowledge, statistical analysis, and computational considerations. Here is an organized approach to determining the best k:\n\n1. **Understanding the Problem Context**:\n   - Consider the scale and nature of your data.\n   - Evaluate features like continuous or categorical types and relationships between variables.\n\n2. **Exploratory Data Analysis**:\n   - Calculate distances between samples and visualize their distributions to understand clustering or dispersion.\n\n3. **Cross-Validation**:\n   - Use techniques like leave-one-out or k-fold cross-validation to assess how well different k values generalize to unseen data, minimizing prediction error on validation sets.\n\n4. **Statistical Methods**:\n   - Compute the standard deviation of prediction errors for each k and select the minimum.\n   - Consider percentiles for minimum k, ensuring 90% coverage with time-based intervals to avoid overfitting.\n\n5. **Domain-Specific Knowledge**:\n   - Leverage prior knowledge or expert opinions to set realistic bounds on k based on specific problem domains.\n\n6. **Statistical Analysis**:\n   - Perform analysis like percentiles of sum of squared errors across k values.\n   - Use domain-specific insights for informed guesses or boundaries.\n\n7. **Model Stability Evaluation**:\n   - Test how sensitive predictions are to changes in k, ensuring stability without overfitting.\n\n8. **Computational Constraints**:\n   - Assess computational feasibility and trade-offs between accuracy and efficiency.\n\nIn summary, the selection of k is a blend of practical techniques, statistical analysis, domain knowledge, and computational considerations. Each approach offers unique insights, and using multiple methods can lead to more robust and reliable results tailored to specific datasets and problems.",
+      "rating": ""
+    }
+  ]
+}

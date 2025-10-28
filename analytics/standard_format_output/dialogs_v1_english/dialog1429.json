@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1429",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 8.8,
+    "precision": 11.0,
+    "recall": 31.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.111943"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-fitting is a common issue in machine learning where a model learns the training data too well—in other words, it memorizes it instead of understanding its underlying patterns. As a result, such models perform exceptionally on the training set but fail miserably when encountering new, unseen data – this is known as poor generalization.\n\nImagine you're teaching a model to recognize cats from pictures. If your model overfits, it might memorize every little detail of a specific set of cat images in your training dataset - perhaps the unique markings on one particular cat's ear or the position of its tail – but fail completely to identify cats when shown completely different images that only vary slightly from those in your original training set.\n\nTo illustrate, let's consider an exercise:\n\n1. **Create a simple model**: Design a basic model (for example, a linear regression for regression tasks or a simple decision tree for classification) and train it on a dataset you know is over-fitted. \n\n2. **Compare performance**: Compare how this model performs on the training data and new, unseen data. You should expect to see the model perform well on the training data but poorly on the test or validation set.\n\n3. **Implement regularization techniques**: Apply methods like L1 (Lasso) or L2 (Ridge) regularization to your model to reduce over-fitting. These techniques help by adding a penalty term to the loss function, discouraging the model from learning complex patterns that could lead to poor generalization.\n\n4. **Monitor performance**: After applying these methods, reassess how your model performs on both training and new data. You should expect to see an improvement in its ability to generalize from unseen data after using regularization techniques.\n\nBy doing this exercise, you'll gain a practical understanding of over-fitting and its solution – regularization – helping to improve the robustness of your machine learning models.",
+      "rating": ""
+    }
+  ]
+}

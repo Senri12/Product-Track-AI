@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2242",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.030574"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Adam is an adaptive optimization algorithm designed for machine learning training. It maintains moving averages of gradients and squared gradients with decay rates beta1 (0.9) and beta2 (0.999), respectively. The learning rate may be part of the initial setup or automatically adjusted based on these moving averages. Here's a breakdown of its process:\n\n1. **Parameter Initialization**: Parameters are initialized, each with their own value.\n2. **Gradient Calculation**: Gradients for each parameter are computed.\n3. **Moving Averages Update**:\n   - Compute mean gradient (first moment).\n   - Compute mean squared gradient (second moment), using decay rates beta1 and beta2 respectively.\n4. **Gradient Estimate**: Combine the moving averages with hyperparameters to estimate current gradients.\n5. **Parameter Update**: Adjust model parameters by subtracting the estimated gradient.\n\nAdam combines adaptive learning rates for each parameter, balancing momentum with adaptation over time. The betas control decays of these moving averages, helping avoid too much or too little memory. This algorithm is known for efficiency and ease of use compared to other optimizers like SGD.",
+      "rating": ""
+    }
+  ]
+}

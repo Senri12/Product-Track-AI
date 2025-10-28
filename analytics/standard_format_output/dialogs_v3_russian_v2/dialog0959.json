@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0959",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 32.5,
+    "precision": 30.4,
+    "recall": 52.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.5,
+    "hallucination": 13.1,
+    "faithfulness": 31.0,
+    "noise_sensitivity": 20.7,
+    "self_knowledge": 5.8,
+    "timestamp": "2025-10-28T13:24:20.131810"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для данного параметрого уравнения с линейной рентгеном (η(t) = η₀ - k * t), где:\n\n* η₀ – начальный learning rate, в данном случае 0.1\n* t – текущий шаг\n* k – коэффициент рентгеном\n* T – окончательная мера или точку, когда learning rate будет постепенно уменьшаться до нуля (в данном случае 10)\n\nДля вычисления learning rate за каждый шаг t (t = 1, 2, ..., T) используется следующая формула:\n\nη(t) = η₀ - k * t\n\nТеперь, чтобы понять, как learning rate уменьшается с t = 5 до t = 10 (т.е. от 0.1 на 9), можно использовать следующие значения:\n\nk = (η₀ - η₁) / T\n\nЗдесь η₁ – learning rate, когда t = T. Для нашего случая это означает, что уменьшается до нуля (0).\n\nk = (0.1 - 0) / 10 = 0.01\n\nТеперь можно вычислить learning rate для t = 5:\n\nη(5) = 0.1 - 0.01 * 5 = 0.05\n\nТаким образом, когда t = 5, learning rate составляет 0.05. В проти, когда t = 10 (когда learning rate уменьшается до нуля), то:\n\nη(10) = 0.1 - 0.01 * 10 = 0",
+      "rating": ""
+    }
+  ]
+}

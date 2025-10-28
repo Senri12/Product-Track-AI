@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2200",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.004836"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Weighted k-Nearest Neighbors (k-NN): Understanding the Difference**\n\n1. **Definition of k-Nearest Neighbors (k-NN):**\n   - k-NN is a non-parametric machine learning algorithm where data points are classified based on their proximity to other data points in the dataset.\n   - The classification or regression outcome is determined by the majority vote or average value among the nearest k neighbors, respectively.\n\n2. **Weighted k-Nearest Neighbors (weighted k-NN):**\n   - **Definition:** weighted k-NN extends the standard k-NN by assigning different weights to each of the k nearest neighbors based on their distance from the target point.\n   - **Weights Assignment:**\n     - Closer neighbors are given higher weights, typically decreasing with distance.\n     - This emphasizes the importance of nearby data points in making predictions.\n\n3. **Key Characteristics and Implications:**\n   - **Influence of Distance:** Each neighbor's influence is proportional to its weight, which varies based on how close it is to the target point.\n   - **Edge Cases:**\n     - If all neighbors are equally distant, weights remain equal, behaving like standard k-NN in this scenario.\n     - In datasets with specific structures or metrics where distance measures don't capture features effectively, weighted k-NN may offer advantages by focusing on representative data points.\n\n4. **Practical Considerations:**\n   - **Implementation:** Weighted k-NN can be applied by adjusting the weights of each neighbor based on their distance during the classification or regression process.\n   - **Efficiency and Heuristics:** For large datasets, heuristic methods might approximate weight calculations, potentially affecting accuracy.\n\n5. **When to Use Weighted k-NN:**\n   - Ideal for scenarios where neighborhood influences are significant, such as in spatial data or when dealing with noisy data.\n\n6. **Handling Ties:**\n   - In cases of equal distances, tied neighbors share the assigned weights equally, balancing out any discrepancies and preventing imbalance among affected predictions.\n\n**Conclusion:**\nWeighted k-NN is a powerful extension that enhances prediction accuracy by giving more weight to nearby data points. Its effectiveness depends on appropriate weight assignment strategies and the nature of the dataset, making it a valuable tool in specific machine learning applications.",
+      "rating": ""
+    }
+  ]
+}

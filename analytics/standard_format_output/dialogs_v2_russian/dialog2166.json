@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2166",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое манхэттенское расстояние?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.012407"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое манхэттенское расстояние?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Manhattan Distance: A Grid-Based Movement Measurement**\n\nIn the realm of geometry and spatial analysis, **manhattan distance** is a unique measure that contrasts with more familiar distances like Euclidean or Chebyshev. This concept is particularly useful in grid-based systems, such as city layouts or matrix data structures.\n\n**Definition and Calculation:**\nManhattan distance measures the shortest path between two points in a grid where movement is restricted to horizontal and vertical directions only. Given two points with coordinates (x1, y1) and (x2, y2), the Manhattan distance between them is calculated as:\n\n\\[ \\text{Distance} = |x2 - x1| + |y2 - y1| \\]\n\n**Context:**\nThis measure is advantageous in scenarios where movement along axes is more relevant than diagonal coverage. It reflects the actual path one might take, akin to moving on a grid where each intersection is a point.\n\n**Real-Life Applications:**\nManhattan distance is applicable in various fields, including computer science and operations research, where grid-based movement is common. For example, comparing distances in city layouts or planning routes on grids.\n\n**Comparison with Other Distance Metrics:**\n- **Euclidean Distance:** Measures straight-line distance, disregarding direction.\n- **Chebyshev Distance:** Max of the horizontal and vertical differences.\n- **Manhattan Distance:** Sum of the absolute differences along each axis.\n\nUnderstanding Manhattan distance provides insight into how movement is optimized in grid-based systems.",
+      "rating": ""
+    }
+  ]
+}

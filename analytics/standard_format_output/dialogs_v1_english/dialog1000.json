@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1000",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 39.0,
+    "precision": 36.5,
+    "recall": 52.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.220420"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Let's simplify the difference between k-Nearest Neighbors (k-NN) and Weighted k-Nearest Neighbors (Wk-NN).\n\n1. **k-Nearest Neighbors (k-NN):** This is a simple, instance-based learning algorithm used for classification and regression. When you apply k-NN to classify new instances, it finds the `k` closest training samples in the feature space and assigns the most common class among these `k` neighbors to the new sample.\n\n   **Example:** Imagine you have a dataset of different types of flowers (e.g., rose, daisy, tulip) each described by several features like petal length and width. k-NN would look at the k closest flower samples in terms of these features and classify the new sample as the most common type among those `k` neighbors.\n\n2. **Weighted k-Nearest Neighbors (Wk-NN):** This is an extension of the standard k-NN algorithm where each training sample has a weight associated with it. These weights influence the impact of individual samples in the decision-making process.\n\n   **Example:** Suppose we add a new feature to our flower dataset, such as the importance of the species in a certain region (e.g., roses are more common or important than daisies). In Wk-NN, we can assign higher weights to roses, making them have a stronger influence on the classification of new samples than daisies with lower weights.\n\nBy learning these concepts, you're gaining an understanding of how machine learning algorithms can be adjusted based on the specific needs and characteristics of your dataset, leading to more accurate predictions! Keep exploring and practicing, as mastering these techniques will help you make data-driven decisions in various domains.",
+      "rating": ""
+    }
+  ]
+}

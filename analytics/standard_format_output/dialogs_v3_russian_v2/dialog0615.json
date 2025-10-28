@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0615",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 41.9,
+    "precision": 37.6,
+    "recall": 55.8,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 9.7,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.302349"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " P(win|спом) по сглаживанию Лапласа вычисляется как:\n\nP(X = win|Класс = спам) = (1 + количество вхождений слова \"win\" в спам-письмах) / (|V| + количество слов в спам-письмах), где |V| – количество слов в словаре.\n\nВ примере, где тренировочные данные – три письма с текстом: \"Win a million rubles\", \"Ruble drops again\" и \"A million ways to get rich\", мы формируем упомянутый словарь V. После опускания частей речи и слияния слов \"rubles\" и \"ruble\" получаем следующую таблицу:\n\nСлово (X) | «спам» | «не спам»\n-----------|--------|---------\nwin       | 1      | 0\nmillion   | 2      | 0\nget       | 1      | 0\nrich      | 1      | 0\n\nВ этом случае, P(X = win|Класс = спам) равен (1 + 1) / (8 + 7) = 2 / 15.",
+      "rating": ""
+    }
+  ]
+}

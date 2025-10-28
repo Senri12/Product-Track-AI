@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое over-fitting?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": " Over-fitting refers to a situation in machine learning where a model is too complex for the amount of training data it has been given, causing it to perform well on the training data but poorly on new, unseen data (also known as generalization error). This happens when the model starts capturing noise in the training data instead of its underlying pattern.\n\nPractice problem: Given a simple linear regression model that is trained on a dataset with significant noise, create a quiz question to assess whether the student understands over-fitting and how it can be addressed.\n\nQuestion: You have built a simple linear regression model to predict house prices based on features such as area, number of bedrooms, and age of the house. However, you notice that your model performs very well on the training data but poorly on new, unseen data. What could be the reason for this issue? And suggest two methods to address it.\n\nA) The model is under-fitting as it's not complex enough to capture all the relationships in the data\nB) The model is over-fitting as it has learned the noise in the training data instead of its underlying pattern\nC) The model is under-sampling the data because there are too many outliers\nD) You should increase the complexity of the model by adding more features to improve performance on new data\n\nEvaluation:\nCorrect answer: B) The model is over-fitting as it has learned the noise in the training data instead of its underlying pattern\nIncorrect answers and their explanations:\nA) The model is under-fitting as it's not complex enough to capture all the relationships in the data (incorrect because the issue here is that the model is too complex for the available data, not too simple)\nC) The model is under-sampling the data because there are too many outliers (incorrect because over-fitting is not caused by under-sampling)\nD) You should increase the complexity of the model by adding more features to improve performance on new data (while adding more features can help address under-fitting, it may exacerbate the issue of over-fitting if there isn't enough relevant data for these additional features)",
+    "rating": ""
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0599",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 41.5,
+    "precision": 52.5,
+    "recall": 52.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.809951"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Decay learning rate с линейным коэффициентом можно рассчитать по формуле:\n\nη(t) = η₀ * (1 - t / T)\n\nГде:\nη(t) — это декуривающая learning rate в момент времени t,\nη₰ — начальная learning rate (0,1 в данном случае),\nt — текущий период обучения (5 в данном случае),\nT — всего количество периодов обучения (10 в данном случае).\n\nПодставляем значения:\n\nη(5) = 0.1 * (1 - 5 / 10)\nη(5) = 0.1 * (1 - 0.5)\nη(5) = 0.1 * 0.5\nη(5) = 0.05\n\nИтак, learning rate в момент времени t=5 будет равняться 0.05.\n\nТеперь сложное задание для проверки знаний: Вычисли learning rate с использованием формулы linear decay на следующих условиях:\n\nη₀ = 0.2, t = 3, T = 8. Убедитесь в том, что вы правильно подставили значения и вычислите точную learning rate в момент времени t=3.",
+      "rating": ""
+    }
+  ]
+}

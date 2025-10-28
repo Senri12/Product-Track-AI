@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0626",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 43.9,
+    "precision": 53.9,
+    "recall": 55.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.853280"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы рассчитать один шаг обновления Статистического Градиентного Прогресса (SGD) для функции L(w) = w^2 при начальном значении w = 3 и коэффициенте学习率 (η) равном 0.1, следуйте этим шагам:\n\n1. Запомните формулу SGD: Δw = -η * ∇(L(w)), где Δw — это изменение в параметре, η является коэффициентом обучения и ∇(L(w)) обозначает градиэнт функции потерь L при w.\n\n2. Вычислите начальную функцию потерь: L(w) = 3^2 = 9.\n\n3. Найдите градиэнт функций потерь с respecto к w: ∇(L(w)) = d(L)/d(w) = 2*w. Таким образом, для w=3, ∇(L(w)) = 2*3 = 6.\n\n4. Подставьте значения в формулу SGD: Δw = -0.1 * 6 = -0.6.\n\nТаким образом, после одного шага обновления SGD значение w будет изменено до w_new = w_old + Δw = 3 - 0.6 = 2.4.",
+      "rating": ""
+    }
+  ]
+}

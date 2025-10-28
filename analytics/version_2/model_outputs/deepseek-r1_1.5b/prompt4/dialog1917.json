@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "v_t в Momentum-эв opposite методе вычисляется по формуле:\nη_t = γ * η + (1 - γ) * v_{t-1}\n\nПодставляем значения:\nγ = 0.9\nv_{t-1} = 1\nη = 0.1\n\nИтак:\nη_t = 0.9 * 0.1 + (1 - 0.9) * 1 = 0.09 + 0.1 = 0.19\n\n**Ответ:**  \nv_t = 0.19",
+    "rating": ""
+  }
+]

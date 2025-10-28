@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2110",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.080337"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Difference Between k-Nearest Neighbor (k-NN) and Weighted k-Nearest Neighbor (weighted k-NN):**\n\n1. **Objective:**\n   - **k-NN:** Classifies a new point based on its proximity to 'k' nearest neighbors, using a simple majority vote.\n   - **Weighted k-NN:** Similar to k-NN but assigns weights to each neighbor's vote. Closer neighbors have more influence.\n\n2. **Weighting Mechanism:**\n   - In weighted k-NN, closer points are typically given higher weights. This can address ties by giving more weight to nearby data points.\n   - Weights may vary based on distance or other criteria, potentially complicating the algorithm.\n\n3. **Handling of Ties:**\n   - When multiple neighbors have equal proximity (e.g., tied distances), they might be assigned equal weights. Some approaches handle this differently, ensuring each neighbor's vote is appropriately weighted.\n\n4. **Performance Considerations:**\n   - Weighted k-NN can improve accuracy by reducing noise and correctly classifying overlapping clusters.\n   - However, it may be more computationally intensive due to varying weights affecting performance.\n\n5. **Algorithmic Complexity:**\n   - While more complex than regular k-NN due to weight assignments, the increase in computational complexity is offset by improved classification performance.\n\n6. **Data Handling:**\n   - Both methods handle categorical and numerical features similarly, though weighted versions might adjust for different data types' characteristics.\n\n7. **Use Cases:**\n   - Weighted k-NN may be preferred in scenarios with overlapping clusters or imbalanced datasets where proximity is crucial.\n   - It remains useful for reducing noise but could lead to misclassification if not carefully managed.\n\nIn summary, while both algorithms classify based on neighbors, weighted k-NN assigns varying weights to neighbors, potentially improving performance through closer data points' influence. However, it may require careful handling of weights and distance metrics.",
+      "rating": ""
+    }
+  ]
+}

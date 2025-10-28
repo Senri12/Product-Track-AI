@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0156",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое манхэттенское расстояние?",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.090835"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое манхэттенское расстояние?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Манхэттенское расстояние (Minkowski distance) — это метрика в математике и computer Science, которая используется для измерения-distances между точками в multidimensional space. Оно определяется как сумма отдельных дистанций по каждой измерительной尺度 independently, что означает, что для двух объектов X(x₁, x₂, ..., xₙ) и Y(y₁, y₂, ..., yₙ), манхacctское расстояние (distance) вычисляется как:\n\n$$\n\\text{distance} = \\sum_{i=1}^{n} |x_i - y_i|\n$$\n\nЭто метрика commonly used in unsupervised machine learning algorithms, such as k-nearest neighbors (k-NN), for tasks like classification and regression.",
+      "rating": ""
+    }
+  ]
+}

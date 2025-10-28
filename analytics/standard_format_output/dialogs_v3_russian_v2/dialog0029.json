@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0029",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 34.9,
+    "precision": 37.3,
+    "recall": 45.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.9,
+    "hallucination": 11.9,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.076766"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления Learning Rate Decay с начальной значением η₀ = 0.1 за 5 шагов на последующие 10 шагов с помощью линейногоdecay:\n\nη₅ = η₀ * (T - t) / T = 0.1 * (10 - 5) / 10 = 0.05\n\nη₁₀ = η₀ * (T - t) / T = 0.1 * (10 - 10) / 10 = 0.0\n\nОтвет:\nLearning Rate на шаге 5: 0.05  \nLearning Rate на шаге 10: 0.0",
+      "rating": ""
+    }
+  ]
+}

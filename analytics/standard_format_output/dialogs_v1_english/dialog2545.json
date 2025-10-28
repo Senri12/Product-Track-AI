@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2545",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 27.4,
+    "precision": 29.2,
+    "recall": 44.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.922783"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (Root Mean Square Propagation) — это алгоритм学习 в тренировочном процессе, используемый для уменьшения динамического изменения параметровmodelа при обучении с noise в данных.\n\nУпрощенный алгоритм:\n\n1. Счето current — текущий значение параметра.\n2. Scaler — коэффициент для сдвига рассчитого значения.\n3. RMSProp — квадратный корень из относительно среднего значения для past (например, 10 и 20) значений.\n\nМодифицирует рассчитанное значение, уменьшая его в соотношении к предыдущему значению, а затем сдвигая его. Это сделано с учетом noise в данных, чтобы улучшить точность.modelа.\n\nИспользует RMSProp для контроля динамики learn rate (средней скорости обучения),helping model converge faster и achieve better accuracy.",
+      "rating": ""
+    }
+  ]
+}

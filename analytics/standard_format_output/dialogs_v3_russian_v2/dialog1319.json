@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1319",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 33.7,
+    "precision": 31.3,
+    "recall": 51.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.0,
+    "hallucination": 11.0,
+    "faithfulness": 33.6,
+    "noise_sensitivity": 21.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.102724"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для нашего примера с помощью метода линейного сокращения (linear) с равными значениями `η0 = 0.1`, `t = 5` и `T = 10`, мы будем вычислить learning rate (η) на каждом шаге (`t`).\n\n1. Как только `t = 1`:\n   - η = η0 * (T - t) / T = 0.1 * (10 - 1) / 10 = 0.09\n\n2. Как только `t = 2`:\n   - η = η0 * (T - t) / T = 0.1 * (10 - 2) / 10 = 0.084\n\n3. Как только `t = 3`:\n   - η = η0 * (T - t) / T = 0.1 * (10 - 3) / 10 = 0.076\n\n4. Как только `t = 4`:\n   - η = η0 * (T - t) / T = 0.1 * (10 - 4) / 10 = 0.068\n\n5. Как только `t = 5` (недостигаемый точка, так как мы используем линейный модель):\n   - η = η0 * (T - t) / T = 0.1 * (10 - 5) / 10 = 0.06\n\nТаким образом, последовательность learning rate будет выглядеть так: 0.1, 0.09, 0.084, 0.076, 0.068 и 0.06 (если бы использовалось до `t = 5`).",
+      "rating": ""
+    }
+  ]
+}

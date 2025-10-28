@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2089",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.037117"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-fitting is a concept in machine learning and statistics where a model becomes too complex, fitting not only the underlying patterns of the training data but also the random noise within that data. This results in a model that performs well on the training data but poorly on unseen or test data.\n\n**Key Points:**\n\n1. **Excessive Complexity:** Over-fitting occurs when a model has more parameters (flexibility) than the amount of training data available. This allows the model to capture noise and random fluctuations inherent in the training data rather than the true underlying patterns.\n\n2. **Variance Increase:** The overfitted model exhibits high variance, meaning it is highly sensitive to small changes in the training data. This leads to large variations in predictions on new datasets compared to the training data.\n\n3. **Lack of Generalization:** Over-fitting reduces the model's ability to generalize from the training data to new, unseen data. Consequently, the model's performance on external or test data is degraded, making it unreliable for real-world applications.\n\nIn summary, over-fitting is characterized by a model capturing too much information from the training data, leading to poor generalization and unreliable predictions on new data.",
+      "rating": ""
+    }
+  ]
+}

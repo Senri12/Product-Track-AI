@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1048",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 41.1,
+    "precision": 44.1,
+    "recall": 56.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.306493"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В соответствии с алгоритмом Adagrad, актуальный шаг обучения для $i$-й элемента вектора $w$ нашагресивного градиента будет равен:\n\n$G_{t,ii} = G_{t-1,ii} + g_t^2$\n\nВ данном случае:\n\n$G_{0,ii} = 4$\n$g_1 = 2$\n\nПоэтому $G_{1,ii} = 4 + (2)^2 = 10$.\n\nТакже необходимо нахождение актуального шага обучения $\\Delta w_t$:\n\n$\\Delta w_t = \\frac{\\eta}{\\sqrt{G_{t,ii}} + \\epsilon} g_t$\n\nВ данном случае:\n\n$\\Delta w_1 = \\frac{0.1}{\\sqrt{10} + 1e-8} * 2$\n\nПолучим $\\Delta w_1 = 0.0196078431372549$, которое будет использовано для обновления соответствующего элемента вектора $w$.\n\nВ качестве сложного задания можно предложить рассчитать значения актуальных шагов обучения для последующих итераций ($t = 2, 3, ..., n$) с учтением того, что при каждой итерации новые значения $g_t$ добавляются к сумматору $G_{t,ii}$.",
+      "rating": ""
+    }
+  ]
+}

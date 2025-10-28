@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0626",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 41.9,
+    "precision": 37.6,
+    "recall": 55.8,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 9.7,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.304243"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Для вычисления шага в Stochastic Gradient Descent (SGD) необходимо изначально задать функцию потерь L и градиент в точке веса w. В данном случае функция потерь L(w)=w^2, а градиент $\\nabla L(w)$ равен 2w.\n\nДля SGD также необходимо задать шаг learning rate (η), который указывает величину каждого шага в направлении отрицательного градиента. В данном случае он равен 0.1.\n\nВычисляем шаг по формуле:\n\nw_new = w - η * $\\nabla L(w)$\n\nПодставляем значения и получаем:\n\nw_new = 3 - 0.1 * 2*3 = 3 - 0.6 = 2.4\n\nТаким образом, после одного шага по SGD веса будут равны 2.4",
+      "rating": ""
+    }
+  ]
+}

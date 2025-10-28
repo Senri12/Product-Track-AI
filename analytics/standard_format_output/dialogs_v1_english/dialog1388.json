@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1388",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 8.0,
+    "precision": 7.5,
+    "recall": 29.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.116906"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The term \"distance Chebyshev\" is related to geometry in the context of a specific distance metric, which is named after Russian mathematician Pafnuty Chebyshev. In Euclidean space (a flat, multi-dimensional space where distances are measured with a ruler), this type of distance is calculated using the maximum absolute difference between any pair of coordinates:\n\nd(x, y) = max(|x1 - y1|, |x2 - y2|, ..., |xn - yn|)\n\nWhere x and y represent points in n-dimensional space. The superscript \"max\" indicates that this distance is the greatest value when we compare corresponding coordinates of two points. This is unlike other common distances like Euclidean or Manhattan, where all pairwise differences are summed or maximized respectively over all dimensions.\n\nCan you clarify if you need more information about its applications in mathematics or if you're interested in how it's used in a specific field such as statistics or physics?",
+      "rating": ""
+    }
+  ]
+}

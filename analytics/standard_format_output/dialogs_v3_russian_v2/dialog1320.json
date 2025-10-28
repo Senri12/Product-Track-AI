@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1320",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 33.7,
+    "precision": 31.3,
+    "recall": 51.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.0,
+    "hallucination": 11.0,
+    "faithfulness": 33.6,
+    "noise_sensitivity": 21.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.102890"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В методе импульсов (Momentum), когда γ равно 0.9, где γ отвечает за то, какую часть прошлого градиента мы учитываем в комбинировании с текущим градиентом ∇L(ω), вычисляется следующее:\n\n∇ (ω - γ v_{t-1}) = ∇ω - γ * ∇v_{t-1}\n\nДля данных значений:\n\nγ = 0.9, в - 1 (поскольку ω изменяется по ω + v_(t)),\n∇ = 2\n\nТогда:\n\n∇ (1 - 0.9 * 1) = ∇(1 - 0.9) = ∇(0.1) = 2\n\nТаким образом, найденное значение ∇ в ω - γ v_{t-1} равно 2, что соответствует градиенту функции потерь по повороту с моментом крутого участка.",
+      "rating": ""
+    }
+  ]
+}

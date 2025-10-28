@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0246",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое манхэттенское расстояние?",
+    "f1": 34.6,
+    "precision": 35.0,
+    "recall": 48.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.6,
+    "hallucination": 10.2,
+    "faithfulness": 30.2,
+    "noise_sensitivity": 15.5,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:19.999456"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое манхэттенское расстояние?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Манхэттенское расстояние (Manhattan distance) — это measure, используемое в математике и в других scientific disciplines, например в machine learning и data science. Это нахождения суммы ненegative differences ( absolutных избытков) между координатами точек в каждой из этих координат.\n\nИспользуется для вычисления measuring distances between points in a grid-like space, таких как city grid, с учетом only movement along axes. 具体公式是:\n\n$$\n\\text{Manhattan distance} = \\sum_{i=1}^n |x_i - y_i|\n$$\n\nгде \\( x_i \\) и \\( y_i \\) — координаты точек в i-й из n измерений.\n\nМанхэттенское расстояние отличается от Euclidean distance (глобальной или сопротивительной) тем, что оно accountiert только ненegative differences. В отличие от Euclidean distance, который прорывает шедевры, Manhattan distance — сознано, как, например, taxi drivers по网格ах cities.\n\nС использованием Manhattan distance уcasesливаются diagonal movement, что делает в ним более гибким и надежным для задач, гдеonly axis-aligned movement.\n\nРазные применения Manhattan distance включают:\n\n- Математику и статистику.\n- Визуалную интеграцию данных.\n- Оптимизацию обработки линейных операторов.\n- Географию и топологии.",
+      "rating": ""
+    }
+  ]
+}

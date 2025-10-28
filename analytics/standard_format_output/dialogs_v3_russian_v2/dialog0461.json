@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0461",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
+    "f1": 40.7,
+    "precision": 36.8,
+    "recall": 52.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.1,
+    "hallucination": 10.4,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 3.9,
+    "timestamp": "2025-10-28T13:24:20.307843"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Вероятность спама для слова 'приз' по данным примера составляет 5/8, или 0,625. Это означает, что, учитывая тренировочные данные, письмо, содержащее слово 'приз', более вероятно относится к категории спам (32 из 80 писем), чем к категории не спам (48 из 80 писем).",
+      "rating": ""
+    }
+  ]
+}

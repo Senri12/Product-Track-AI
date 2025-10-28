@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0929",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 41.6,
+    "precision": 49.5,
+    "recall": 49.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.360388"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Учитывая, что используется линейная форма спада обучающего коэффициента (learning rate), то обучающий коэффициент после пяти итераций (t=5) будет равен:\n\nη = η0 - (η0 - ηf) * t / T\n\nгде ηf — это финальное значение обучающего коэффициента в конце выполнения алгоритма (T итераций). Значения по умолчанию не известны, поэтому результат будет неопределённым. Тем не менее, для линейного спада обучающего коэффициента обычно используется формула:\n\nη = η0 * (1 - t / T)\n\nгде t — текущая итерация. В данном случае это т=5, а T=10, следовательно, обучающий коэффициент после пяти итераций будет:\n\nη = 0.1 * (1 - 5 / 10) = η = 0.05 или 5% от начального значения.",
+      "rating": ""
+    }
+  ]
+}

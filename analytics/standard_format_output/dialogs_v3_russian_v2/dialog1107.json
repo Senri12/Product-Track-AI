@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1107",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 30.0,
+    "precision": 30.8,
+    "recall": 43.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.7,
+    "hallucination": 11.4,
+    "faithfulness": 34.1,
+    "noise_sensitivity": 20.6,
+    "self_knowledge": 4.5,
+    "timestamp": "2025-10-28T13:24:20.172164"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления v_t в методе моментов (IMPULSE с параметром гиперпараметра γ = 0.9) используется следующая эклузива:\n\nv_t = γ * v_{t-1} - η * ∇L(ω), где:\n- γ – параметр момента, в нашем случае равен 0.9.\n- v_{t-1} – значение предыдущего времени момента, в нашем случае равно 1.\n- ∇L(ω) – градиент функции потерь L с respect to ω (весовой параметр).\n- η – шаг скорости обучения или константа, в нашем случае равна 0.1.\n\nТаким образом, для входных данных v_{t-1} = 1, ∇L(ω) = 2 и η = 0.1 мы получаем:\n\nv_t = 0.9 * 1 - 0.1 * 2 = 0.7\n\nТаким образом, значение момента в этом случае будет равно 0.7.",
+      "rating": ""
+    }
+  ]
+}

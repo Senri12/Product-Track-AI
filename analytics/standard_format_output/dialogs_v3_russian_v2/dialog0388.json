@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0388",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 30.9,
+    "precision": 37.4,
+    "recall": 38.6,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 29.0,
+    "hallucination": 16.4,
+    "faithfulness": 31.1,
+    "noise_sensitivity": 10.0,
+    "self_knowledge": 2.6,
+    "timestamp": "2025-10-28T13:24:19.916761"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "ИнициализироватьTensorFlow\nИспользуя Autograd и autograd TensorFlow можно automatизировать процесс тренировки нейронной сети. autograd обеспечивает прямое выполнение вычислений градиентов и их использования для обучения моделей.\n\nСначала необходимы данные для тренировки нейронной сети, которые можно создать в Autograd-у:\n\n```python\nimport numpy as np\n\n# Данные для тренировки модели\nX_train = np.random.rand(1000, 10)\ny_train = np.random.randint(2, size=1000)\n\n# Входные данные (X_t) и соответствующие результаты (y_t) для каждого шага обучения\nX_t = X_train[:, :-1]\ny_t = y_train[:,-1]\n\n# Обратите внимание: в Autograd мы не создаем новые векторы X_t и y_t, а скорее определяем их как предыдущие значения исходных данных X_train и y_train.\n```\n\nТеперь можно начать процесс тренировки модели:\n\n```python\nfrom tensorflow import keras\n\n# Create the model\nmodel = keras.Sequential([\n    keras.layers.Dense(64, activation='relu', input_shape=(10,)),\n    keras.layers.Dense(32, activation='relu'),\n    keras.layers.Dense(1)\n])\n\n# Compile the model\nmodel.compile(optimizer=keras.optimizers.SGD(\n    learning_rate=0.01,\n    momentum=0.9,\n    nesterov=True),\n    loss='binary_crossentropy',\n    metrics=['accuracy']\n))\n\n# Train the model\nhistory = model.fit(X_train, y_train, epochs=50, \n                    validation_data=(X_test, y_test), \n                    verbose=2)\n```\n\n autograd automatically implements вычисления градиентов для всех слоя моделей и их использования для обучения модели.",
+      "rating": ""
+    }
+  ]
+}

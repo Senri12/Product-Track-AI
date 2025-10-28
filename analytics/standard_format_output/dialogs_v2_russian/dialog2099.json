@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2099",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.073129"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To calculate the learning rate decay using linear decay with the given parameters:\n\n- Initial Learning Rate (η₀) = 0.1\n- Total Number of Parameter Updates (T) = 10\n\nThe formula for linear decay is:\n\\[ \\eta = \\eta_0 - \\left( \\frac{\\eta_0}{T} \\right) \\times t \\]\nwhere:\n- \\( t \\) is the iteration number (from 0 to T-1)\n- \\( \\eta_0 / T \\) is the fixed rate of decay per step\n\nSince each parameter update occurs at a specific step, and assuming linear decay across all parameters, we can calculate the learning rate at each step.\n\n**Step-by-Step Calculation:**\n\n1. **Determine the Decay Rate:**\n   \\[ \\text{Decay Rate} = \\frac{\\eta_0}{T} = \\frac{0.1}{10} = 0.01 \\]\n\n2. **Apply the Decay Rate at Each Step (t from 0 to 9):**\n   - For t = 0: \\( \\eta = 0.1 - (0.01 \\times 0) = 0.1 \\)\n   - For t = 1: \\( \\eta = 0.1 - (0.01 \\times 1) = 0.09 \\)\n   - For t = 2: \\( \\eta = 0.1 - (0.01 \\times 2) = 0.08 \\)\n   - ...\n   - For t = 9: \\( \\eta = 0.1 - (0.01 \\times 9) = 0.01 \\)\n\n**Final Learning Rate at Each Step:**\n\n- Iteration 0 (t=0): η = 0.1\n- Iteration 1 (t=1): η = 0.09\n- Iteration 2 (t=2): η = 0.08\n- Iteration 3 (t=3): η = 0.07\n- Iteration 4 (t=4): η = 0.06\n- Iteration 5 (t=5): η = 0.05\n- Iteration 6 (t=6): η = 0.04\n- Iteration 7 (t=7): η = 0.03\n- Iteration 8 (t=8): η = 0.02\n- Iteration 9 (t=9): η = 0.01\n\nThis results in a learning rate that decreases by 0.01 at each parameter update step, leading to a final learning rate of 0.01 after all updates.\n\n**Answer:**\n\nAfter applying linear decay with the given parameters:\n\n- The initial learning rate is 0.1.\n- Each subsequent parameter update reduces the learning rate by 0.01.\n- After 10 total parameter updates, the learning rate is reduced to 0.01.\n\nThus, at each step (parameter update):\n\\[ \\eta = 0.1 - 0.01 \\times t \\]\nwhere \\( t \\) ranges from 0 to 9.\n\n**Final Learning Rates:**\n- After 1st update: 0.09\n- After 2nd update: 0.08\n- After 3rd update: 0.07\n- After 4th update: 0.06\n- After 5th update: 0.05\n- After 6th update: 0.04\n- After 7th update: 0.03\n- After 8th update: 0.02\n- After 9th update: 0.01",
+      "rating": ""
+    }
+  ]
+}

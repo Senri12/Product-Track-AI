@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1540",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 4.4,
+    "precision": 4.1,
+    "recall": 30.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.161412"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "As an exercise-focused coach in the realm of physical fitness, I'll adapt your query into a workout metaphor to make it more understandable. \n\nImagine you're running a race. The starting point is the basic K-Nearest Neighbors (k-NN) algorithm: all participants start at the same location - they consider only their immediate neighbors when making predictions based on a specific feature vector. In k-NN, the prediction is made simply by counting the majority class of these neighbors.\n\nNow let's say you're running another race where the terrain changes slightly—this is your weighted k-NN: participants now have to carry extra gear which represents their weights in the decision-making process. Each \"neighbor\" now carries more weight, influencing the prediction more based on their distance or importance.\n\nIn other words, k-NN simply counts equal votes from all close neighbors, while weighted k-NN assigns more importance to closer neighbors by giving them a 'weight'. This adjustment can help prevent over-influence of faraway points that might not represent typical data trends as closely.\n\nTo reinforce this concept and test your understanding:\n\n**Problem:** \n\nConsider you're using an exercise tracker app for a study on user activity patterns. The application records 'steps' per day, representing the feature vector. Your task is to predict whether a user is likely to be an 'active' (high steps) or 'inactive' (low steps) type based on their 7 nearest neighbors.\n\n1. First, provide a simple k-NN prediction without any weighting for your model.\n    - What would be the threshold for classifying someone as 'active'?\n    - How many 'active' predictions would you anticipate out of ten users sampled in this manner?\n\n2. Next, apply weighted k-NN to this problem. Assume that steps within 100 are given a weight of 3, those from 50 to 100 get a weight of 2, and anything further than 100 gets a weight of 1.\n    - How would these weights influence your prediction compared to the unweighted k-NN?\n    - What threshold do you set for predicting 'active' based on this weighted model?\n    - Estimate how many predictions you expect to be 'active' users in ten randomly selected users from this dataset.\n\nPlease share your responses, and I'll evaluate them against the principles of weighted k-NN.",
+      "rating": ""
+    }
+  ]
+}

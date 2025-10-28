@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1930",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.012724"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Difference Between k-NN and Weighted k-NN**\n\nk-NN (K-Nearest Neighbors) is a machine learning algorithm that classifies data points by majority vote among its nearest neighbors. It does not consider the distance or similarity of these neighbors; all are equally counted.\n\nWeighted k-NN, on the other hand, assigns weights to each neighbor based on their proximity or similarity. Closer neighbors have greater influence in determining the classification. This approach can improve performance by emphasizing nearby points.\n\n**Key Differences:**\n1. **Neighborhood Consideration:** \n   - k-NN counts all neighbors equally.\n   - Weighted k-NN assigns weights based on distance or similarity.\n\n2. **Weighting Mechanism:**\n   - Weighted k-NN gives more weight to closer neighbors.\n   - k-NN does not apply any weighting mechanism.\n\n3. **Simplicity vs. Effectiveness:**\n   - Weighted versions are sometimes used for simplicity, even when better performance is achievable.\n\nIn essence, while both methods classify based on neighboring data points, weighted k-NN enhances classification by giving closer neighbors more weight compared to the traditional k-NN approach.",
+      "rating": ""
+    }
+  ]
+}

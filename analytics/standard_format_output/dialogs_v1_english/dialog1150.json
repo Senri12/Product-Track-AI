@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1150",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 39.5,
+    "precision": 44.1,
+    "recall": 49.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.273034"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " **Explanation:**\n\nk-Nearest Neighbors (k-NN) is a simple machine learning algorithm used for both classification and regression problems. In k-NN, an instance is classified by a majority vote of its neighbors, where the k closest training examples are called \"neighbors.\" The instance with the highest number of votes becomes the predicted label.\n\nWeighted k-Nearest Neighbors (Wk-NN) is an extension of the k-NN algorithm, in which weights are assigned to each neighbor based on their distance from the query point. This means that closer neighbors have more influence on the final decision compared to farther ones. The idea behind Wk-NN is that points that are close together should be more similar and therefore have a greater impact on the outcome.\n\n**Question for Student:**\nCan you explain how weights in Weighted k-Nearest Neighbors (Wk-NN) influence the final decision compared to k-Nearest Neighbors (k-NN)?\n\n**Suggested Exercise:**\nImplement a simple example of both k-NN and Wk-NN using a dataset, compare the results, and discuss their differences.\n\n**Feedback Loop:**\nUpon completion of the exercise, students should be able to:\n1. Understand how k-NN and Wk-NN work in machine learning.\n2. Implement both algorithms for classification or regression tasks.\n3. Analyze the results and discuss the differences between the two methods.",
+      "rating": ""
+    }
+  ]
+}

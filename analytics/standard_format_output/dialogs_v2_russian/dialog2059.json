@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2059",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.079475"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "### Описание\n\n** overload of f itting:** This refers to a machine learning model that performs well on the training data but poorly on new, unseen data. It is characterized by an overly complex model that captures random noise in the training data.\n\n---\n\n### вопрос к студенту\n\nНазовите определения следующих терминов:\n1. Over-fitting  \n2. Bias  \n3. Variance  \n\n**Ответ:**\n\n1. Over-fitting — модель, которая выглядит более стабильной на test set, чем на train set, но обладает высоким over-biasing.\n2.Bias — сопротивление модели к подоблечию данных, что приводит к низкому performance на training set.\n3. Variance — отклонение модели от реального явлении, что приводит к высоком loss на test set.\n\n---\n\n### Упражнение\n\nДля каждого из следующих задач оставьте задание:\n\n1. Определите, есть ли over-fitting в модели.\n2. Рассмотрите train/test sets и определите over-biasing и variance.\n3. Найдите Ridge regularization для модели, который приводит к более стабильной performance на test set.\n\n---\n\n### Обратная связь\n\nКак combat over-fitting? Расскажите о методах изучения данных, улучшая泛izeость модели.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0243",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 34.6,
+    "precision": 35.0,
+    "recall": 48.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.6,
+    "hallucination": 10.2,
+    "faithfulness": 30.2,
+    "noise_sensitivity": 15.5,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:19.998956"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Euclidean Metrika**\n\nEuclidean metrika — это метрика, которая определяет расстояние между точками в Euclidean space. Она commonly used in geometry and higher dimensional spaces to measure the distance between points.\n\n### Определение\nEuclidean metrika может быть определена на any finite-dimensional vector space equipped with an inner product. For two vectors **x** and **y**, it's defined as:\n\n$$d(\\mathbf{x}, \\mathbf{y}) = ||\\mathbf{x} - \\mathbf{y}||,$$\n\nwhere $||\\cdot||$ denotes the Euclidean norm, which is the square root of the sum of squares of the components of the vector.\n\n### Геометрическое измерение\nEuclidean metrika commonly used to measure distances between points in a plane or in three-dimensional space. For example, two points (x₁, y₁) and (x₂, y₂) in the Euclidean plane have a distance given by:\n\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}.$$\n\n### Использование в машинном обучении\nEuclidean metrika часто используется в machine learning для измерения distances между объектами, которые обнаружены по их локализации на пространстве. Это может быть полезно при классификации или предсказании, когда важна информация о том, насколько close or far объекты или pointiy are.\n\n### Важность Euclidean metrika\nEuclidean metrika plays a crucial role in many areas of geometry and data analysis because it provides a straightforward way to measure distances between points. Its simplicity makes it widely applicable, even though it may not always account for the complexities of real-world scenarios involving multiple dimensions or non-linear relationships.\n\nИтак, Euclidean metrika — это основная метрика, которая определяет расстояние между точками на основе суммы квадратов отклонений их координат. Она используется в геометрии, machine learning и других областях для измерения distances between objects or points.",
+      "rating": ""
+    }
+  ]
+}

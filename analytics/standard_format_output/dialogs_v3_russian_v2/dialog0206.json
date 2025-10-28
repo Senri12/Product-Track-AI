@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0206",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 25.1,
+    "precision": 30.2,
+    "recall": 38.5,
+    "claim_recall": 34.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.5,
+    "hallucination": 13.2,
+    "faithfulness": 31.7,
+    "noise_sensitivity": 17.3,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.044924"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Step-by-step explanation:\n\n1. **Определение функции losses**:\n   Функция оптимизации для SGD (square loss) для точки w=3:\n   \\[\n   L(w) = w^2\n   \\]\n\n2. **Вычисление градиента**:\n   Градиент функции по переменной w:\n   \\[\n   \\nabla L(w) = 2w\n   \\]\n   \n3. **Подставление значений**:\n   w₀ = 3, learning rate η = 0.1\n\n4. **Определение шага обновления параметра (Δw)**:\n   \\[\n   \\Delta w = -η * \\nabla L(w_0) = -0.1 * 2*3 = -0.6\n   \\]\n\n5. **Новые значения параметра**:\n   \\[\n   w₁ = w₀ + Δw = 3 - 0.6 = 2.4\n   \\]\n\n**Ответ**: шаг в SGD для функции \\( L(w) = w^2 \\), w=3, η=0.1 равен **-0.6**, и новое значение параметра w₁ будет 2.4.",
+      "rating": ""
+    }
+  ]
+}

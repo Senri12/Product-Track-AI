@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0155",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как работает сглаживание по Лапласу?",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.090672"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как работает сглаживание по Лапласу?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Сглаживание по Лапласу (Laplace smoothing) – это метод классификации, который позволяет избежать нуля-вероятностей для слов или категорий, которые не都会有 в training set. Он добавляет Dummy-слова с положительной вероятностью при классификации.\n\n**Формула сглаживания:**\n\n\\[\nP(X|y) = \\frac{\\text{count}_X(y) + 1}{V + r}\n\\]\n\nгде:\n- \\( P(X|y) \\) – вероятность слова \\( X \\) в категории \\( y \\),\n- \\( \\text{count}_X(y) \\) – количество вхождений слова \\( X \\) в категории \\( y \\) в training set,\n- \\( V \\) – общее количество слов в словаре,\n- \\( r \\) – количество слов в training set, которые не имеют \\( X \\).\n\n**Пример классификации:**\n\nПусть our training data contains words \"win\" (class spам) and \"ruble\" (class not spam). We need to find the probability of a new word \"get\" from class spam.\n\n1. **Without smoothing:** Suppose in training set:\n   - P(\"win\"|spam) = 1/8,\n   - P(\"ruble\"|spam) = 1/8.\n   \n   Then, for \"get\":\n   \\[\n   P(\"get\"|spam) = \\frac{1}{8}\n   \\]\n   \n2. **With smoothing:** Add a dummy word \"get\" with P(\"get\") = 1/(V + r) where V=8 and r=1:\n   - P(\"get\"|spam) = (0+1)/(8+1) = 1/9.\n   \n3. Compare F(y):\n   - F(spam) = ln(2/3) + ln(1/9) + ...,\n   - F(not spam) = ln(1/3) + ln(1/9) + ...,\n   \n   Choosing the category with higher F(y).\n\n**Результат:** Письмо с текстом \"Get rich with ruble\" следует отнесу к категории <<спам>>.\n\nЭтот метод делает классификатор более предсказуем и устойчивым к пропущенным или нераспознаемым словам.",
+      "rating": ""
+    }
+  ]
+}

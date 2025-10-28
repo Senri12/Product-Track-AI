@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2559",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 28.4,
+    "precision": 32.6,
+    "recall": 36.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.968481"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы-classify-letter-as-spam-in-Naive-Bayes, мы можем использоватьfollowing steps:\n\n1. **Образование набора данных**: Начнем с создания набора данных, который содержит исходные letters (например, \"A\", \"B\", \"C\", etc.) и соответствующие спамины (например, \"h\", \"j\", \"w\", etc.). Важно, чтобы данные были распределены fairly и均имели равную вероятность.\n2. **Анализ лекций**: Из набора данных мы получаем набор лекций, которые содержат classifye-letters (например, \"A\", \"B\", \"C\", etc.) и соответствующие спамины (например, \"h\", \"j\", \"w\", etc.). Каждая classifyed-letter может иметь несколько spami (например, \"a\" может быть spamin \"e\", \"i\", и \"o\").\n3. **Вероятность spam**: Нам нужно рассчитать вероятность того, что классифицированный спам вхожет в лекцию, то есть вероятность spams(классифицированный спам). Это можно сделать, используя following формулу:\n\nP(spm) = ∑[p*(spm)^k*ln(p/spm)],\n\nгде p — частота occurrence spms в наборе данных (например, 0,4), k — количество спм, которое получилось в классифицированных letters (например, 2), и ln — логарифм.\n\n4. **Вероятность не-spam**: Нам нужно рассчитать вероятность того, что classifye-letters являются non-spm (не spams). Это можно сделать, используя following формулу:\n\nP(non-spm) = 1 - P(spm).\n\n5. **Набор train data**: Найдем набор train data, который содержит 70% исходных letters и соответствующие спамины (например, \"A\", \"B\", \"C\", etc.). Нам также нужно набор test data, который содержит 30% исходных letters и соответствующих spams (например, \"a\", \"b\", \"c\", etc.).\n\n6. **Сгруппирование数据**: Разделите данные на two groups:\n\n* **Train data**: Use the following code to create train and test datasets:\n```python\nimport numpy as np\n\n# Create training dataset\ntrain_data = {\n    'letters': ['A', 'B', 'C', 'D'],\n    'spams': ['h', 'j', 'w']\n}\n\ntest_data = {\n    'letters': ['a', 'b', 'c'],\n    'spams': ['e', 'i', 'o']\n}\n```\n* **Test data**: Use the following code to create test dataset:\n```python\nimport numpy as np\n\n# Create testing dataset\ntest_data = {\n    'letters': ['f', 'g', 'h'],\n    'spams': ['t', 'x', 'y']\n}\n```\n\n7. **Набор train data**: Разделите данные на two groups:\n\n* **Train data**: Use the following code to create train and test datasets:\n```python\nfrom sklearn.model_selection import train_test_split\n\ntrain_letters, test_letters = train_test_split(train_data['letters'], test_size=0.3)\ntrain_spams, test_spams = train_test_split(train_data['spams'], test_size=0.3)\n```\n8. **Сгруппирование данных**: Разделите данные на two groups:\n\n* **Train data**: Use the following code to create train and test datasets:\n```python\nfrom sklearn.feature_extraction.text import TfidfVectorizer\n\nvectorizer = TfidfVectorizer()\nX_train = vectorizer.fit_transform(train_letters)\ny_train = vectorizer.transform(train_spams)\n\nX_test = vectorizer.transform(test_letters)\ny_test = vectorizer.transform(test_spams)\n```\n9. **Набор train data**: Разделите данные на two groups:\n\n* **Train data**: Use the following code to create train and test datasets:\n```python\nfrom sklearn.naive_bayes import MultinomialNB\n\nclf = MultinomialNB()\nX_train, y_train = X_train.split(), y_train.split()\n```\n10. **Тестирование**: Разделите данные на два groups:\n\n* **Train data**: Use the following code to create train and test datasets:\n```python\nfrom sklearn.model_selection import cross_val_score\n\nscores = []\nfor i in range(10):\n    X_train, y_train = X_train[i], y_train[i]\n    clf.fit(X_train, y_train)\n    scores.append(cross_val_score(clf, X_train, y_train, cv=5).mean())\n\nprint(\"Скорость нахождения\": np.mean(scores))\n```\n11. **Вероятность spams**: Use following code to get estimated probability of spam for each classifye-letter:\n```python\nfrom sklearn.metrics import accuracy_score\n\ny_pred = clf.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Акцуритета spams\": accuracy)\n```\n12. **Вероятность не-spam**: Use following code to get estimated probability of non-spm for each classifye-letter:\n```python\nfrom sklearn.metrics import accuracy_score\n\ny_pred = clf.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(\"Акцуритета non-spm\": accuracy)\n\n# Get final predicted spam likelihood\nfinal_prob = np.mean([p*len([i for i in v if i==spam])/(len(v)+1) for p,spam, v in zip(clf.predict_proba(X_test), y_pred, X_test)], axis=0)\nprint(\"Вероятность spams в целом\": final_prob)\n```\n13. **Предсказание**: Use following code to get predicted spam likelihood:\n```python\n# Get predicted spam likelihood for each classifye-letter\nfinal_prob = np.mean([p*len([i for i in v if i==spam])/(len(v)+1) for p,spam, v in zip(clf.predict_proba(X_test), y_pred, X_test)], axis=0)\nprint(\"Вероятность spams в целом\": final_prob)\n\n# Predict spam likelihood for new classifye-letter\nnew_classifye_letter = \"k\"\nnew_spam_likelihood = np.mean([p*len([i for i in v if i==spam])/(len(v)+1) for p,spam, v in zip(clf.predict_proba(X_test), y_pred, X_test)], axis=0)\nprint(\"Вероятность spams для новой classifye-letters\": new_spam_likelihood)\n```",
+      "rating": ""
+    }
+  ]
+}

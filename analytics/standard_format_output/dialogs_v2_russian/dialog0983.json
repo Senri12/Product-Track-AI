@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0983",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 37.6,
+    "precision": 38.2,
+    "recall": 52.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.287611"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Learning rate - это параметр оптимизации обучения, который определяет темп изменения весов нейронной сети во время обучения. Он отвечает за скорость, с которой обновляются эти веса в процессе минимизации потери. В машинном обучении чаще всего используется параметр Adam (Adaptive Moment Estimation) для настройки learning rate, который принимает значение по умолчанию 0.001.\n\nЧтобы проверить понимание концепции learning rate, можно предложить следующий вопрос: \"Во время обучения нейронной сети назначенный learning rate определяет скорость изменения весов в процессе минимизации потери. Истинно или ложно?\"\n\nУпражнение для проверки понимания: \"Допустим, у вас есть нейронная сеть с learning rate равным 0,01 и вы хотите изменить его на 0,005. Что должно произойти с обновлением весов?\"",
+      "rating": ""
+    }
+  ]
+}

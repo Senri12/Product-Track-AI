@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0689",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 40.7,
+    "precision": 39.1,
+    "recall": 51.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.5,
+    "hallucination": 10.7,
+    "faithfulness": 34.2,
+    "noise_sensitivity": 18.4,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.316731"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Для вычисления learning rate decay в данном случае можно использовать формулу линейного изменения learning rate:\n\nη(t) = η0 - (t / T) * η0\n\nгде η0 - начальное значение learning rate, t - текущая итерация, T - общее количество итераций.\n\nПодставляя в формулу данные:\n\nη(5) = 0.1 - (5 / 10) * 0.1\n\nη(5) = 0.1 - 0.5 * 0.1\n\nη(5) = 0.1 - 0.05\n\nη(5) = 0.05 или 5% от начального значения learning rate.",
+      "rating": ""
+    }
+  ]
+}

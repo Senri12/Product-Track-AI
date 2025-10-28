@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1179",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 42.7,
+    "precision": 44.4,
+    "recall": 53.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.265683"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " To classify an email as spam using Naive Bayes in Python, you'll first need to gather a dataset of emails labeled as either \"spam\" or \"not spam.\" Once you have your data, follow these steps:\n\n1. Preprocessing: Clean and preprocess the text data by removing unnecessary elements like HTML tags, numbers, punctuation, and converting all text to lowercase for easier comparison. Here's an example:\n\n```python\nimport re\nfrom nltk.corpus import stopwords\nfrom nltk.stem import WordNetLemmatizer\n\ndef preprocess_text(text):\n    text = re.sub('<.*?>', ' ', str(text))  # Remove HTML tags\n    text = re.sub('[^a-zA-Z\\s]','',text)     # Remove punctuation, numbers and special characters\n    text = text.lower()                      # Convert to lowercase\n    lemmatizer = WordNetLemmatizer()\n    words = text.split()\n    words = [lemmatizer.lemmatize(word) for word in words if not word in set(stopwords.words('english'))]  # Lemmatize and remove stop words\n    return ' '.join(words)\n```\n\n2. Splitting the data into training and testing sets:\n\n```python\nfrom sklearn.model_selection import train_test_split\n\nX_train, X_test, y_train, y_test = train_test_split(preprocessed_texts, labels, test_size=0.3)\n```\n\n3. Vectorizing the data: Convert the text data into numerical vectors that can be used by machine learning algorithms. Here's an example using TF-IDF:\n\n```python\nfrom sklearn.feature_extraction.text import TfidfVectorizer\n\nvectorizer = TfidfVectorizer()\nX_train = vectorizer.fit_transform(X_train)\nX_test  = vectorizer.transform(X_test)\n```\n\n4. Building the Naive Bayes classifier: Train a Naive Bayes classifier on the training data and evaluate its performance using accuracy on the test set.\n\n```python\nfrom sklearn.naive_bayes import MultinomialNB\n\nclf = MultinomialNB()\nclf.fit(X_train, y_train)\naccuracy = clf.score(X_test, y_test)\nprint(\"Accuracy:\", accuracy)\n```\n\n5. Using the trained classifier to predict whether a new email is spam or not:\n\n```python\nnew_email = preprocess_text('Your bank account has been compromised!')\nprediction = clf.predict([vectorizer.transform([new_email])])\nprint(\"Prediction:\", prediction)\n```",
+      "rating": ""
+    }
+  ]
+}

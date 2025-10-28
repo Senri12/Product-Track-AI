@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0220",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 34.4,
+    "precision": 37.5,
+    "recall": 41.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 25.4,
+    "hallucination": 10.2,
+    "faithfulness": 33.3,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 6.5,
+    "timestamp": "2025-10-28T13:24:20.006915"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В отличие от метода на основе k-NN (классификации на основе ближайших элементов), метод взвешенного классификации (включает возвешение меток class). Это позволяет учесть общее уровень сходства объектов и предсказывать closer closer metrics.",
+      "rating": ""
+    }
+  ]
+}

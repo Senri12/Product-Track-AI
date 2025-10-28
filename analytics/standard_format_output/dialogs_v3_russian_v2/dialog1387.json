@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1387",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 31.4,
+    "precision": 37.6,
+    "recall": 43.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.3,
+    "hallucination": 11.3,
+    "faithfulness": 31.8,
+    "noise_sensitivity": 16.0,
+    "self_knowledge": 6.9,
+    "timestamp": "2025-10-28T13:24:20.027000"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В нейировом байесовском классификаторе мы определяем классы об exercising условные вероятности для каждого арибитата, предполагая их независимость при метке класса. Формула:\n\n$$y^\\ast = \\mathop{\\mathrm{Arg\\,max}}_{y \\in Y}\\left( P(y) \\prod_{i=1}^{p} P(x_i | y) \\right).$$\n\nЭто означает, что для каждого объекта обновляется класс, который наиболее вероятно появ emerged в его арибитатах, при условии метки.",
+      "rating": ""
+    }
+  ]
+}

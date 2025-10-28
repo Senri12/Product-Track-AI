@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1098",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое Keras?",
+    "f1": 38.0,
+    "precision": 40.8,
+    "recall": 53.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.342310"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Keras?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Керэс (Keras) — это открытая иlightweight высокоуровневый фреймворк для глубокого обучения нейронных сетей, основанный на Python и предназначенный для быстрого прототипирования. Он поддерживает конвейерные архитектуры (CNN и RNN), и может работать с TensorFlow, Theano или CNTK в качестве низкоуровневых бэкендов.\n\nУпражнение:\nСоздайте простую нейронную сеть на Керэсе для классификации МНИST данных по цифрам.\n\nКод:\n```python\nfrom keras.datasets import mnist\nfrom keras.models import Sequential\nfrom keras.layers import Dense, Flatten\nfrom keras.utils import to_categorical\n\n# Загрузить данные MNIST и преобразовать их в формат Keras\n(x_train, y_train), (x_test, y_test) = mnist.load_data()\nx_train = x_train.reshape((60000, 28 * 28))\nx_test = x_test.reshape((10000, 28 * 28))\nx_train = x_train.astype('float32') / 255\nx_test = x_test.astype('float32') / 255\ny_train = to_categorical(y_train)\ny_test = to_categorical(y_test)\n\n# Создание простой нейронной сети с двумя скрытыми слоями и полной связью\nmodel = Sequential()\nmodel.add(Flatten(input_shape=(28 * 28,))) # входные данные распаковываются в одномерный вектор\nmodel.add(Dense(128, activation='relu')) # первый скрытый слой\nmodel.add(Dense(64, activation='relu')) # второй скрытый слой\nmodel.add(Dense(10, activation='softmax')) # выходной слой с полносвязным решающим слоем (по 10 нейрону для каждого класса)\n\n# Обучение модели на тренировочных данных за 5 эпох\nmodel.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])\nhistory = model.fit(x_train, y_train, epochs=5, verbose=1)\n\n# Проверка модели на тестовых данных и печать точности\nscores = model.evaluate(x_test, y_test)\nprint(\"%s: %.2f%%\" % (model.metrics_names[1], scores[1]*100))\n```\nОтветы на вопросы о коде предлагаются в форме комментариев и должны быть объяснены простым языком. Например:\n\n\"Загрузка данных MNIST — это первый шаг, в котором мы загружаем изначальные данные по цифрам с сайта, преобразуем их в необходимый формат и сохраняем.\"",
+      "rating": ""
+    }
+  ]
+}

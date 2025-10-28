@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1861",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое метод k-ближайших соседей?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.025707"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод k-ближайших соседей?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод k-ближайших соседей — это один из основных алгоритмов machine learning, который используется для классификации и регрессионирования. В отличие от метода nearest neighbors (нужно оставить ещё один Neighbor на руке), метод k-ближайших соседей включает все ближайшие данные при выборе числа близких точек (k). \n\nОсновные аспекты метода:\n1. **Choosing k**: Выбор числа близких точек, которое определяет, сколько данных будет использоваться для классификации.\n2. **Finding nearest n points**: Identifying closest neighbours among all possible points in the dataset.\n3. **Classify based on majority votes**: 使用 вида minority vote для классификации.\n\nМетод k-ближайших соседей很简单 и понятен, но может быть неполезным в ситуациях с конкуренцией данных или сложностью обработки данных. В таких случаях методу closest neighbours не всегда приведёт к succeeds.\n\nОднако в других ситуациях, особенно при выдающем результатах на тесте, метод этого type может быть полезен, если данные имеют структуру, которая можно учитывать для обработки.\n\nВ итоге, метод k-ближайших соседей является основной алгоритм machine learning и используется в различных задачах, особенно при выдающем результатах на тесте.",
+      "rating": ""
+    }
+  ]
+}

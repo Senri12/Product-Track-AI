@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1749",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 6.1,
+    "precision": 8.5,
+    "recall": 23.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.125897"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В контексте классификации писем как спам с помощью техники классификатора Naive Bayes, необходимо представить данные в виде примеров и пройти несколько шагов. В этом случае будут использоваться перечнения слов (векторизация) и математические формулы, необходимые для Naive Bayes.\n\n1. **Импорт необходимых библиотек**: Используйте Python с библиотеками NLTK (Natural Language Toolkit) и scikit-learn.\n\n   ```python\n   import nltk\n   from sklearn.model_selection import train_test_split\n   from sklearn.naive_bayes import MultinomialNB\n   from sklearn.feature_extraction.text import CountVectorizer\n   ```\n\n2. **Собрать и предотвратить данные**: Сначала наберите текстовые примеры - письма, которые вы хотите классифицировать как спам или антиспам. Для этого можно использовать чековки от больших электронной почты или собирать вручную. Поделитесь данными на две категории: \"спам\" и \"антиспам\".\n\n   ```python\n   spam_emails = [\"Спам1\", \"Спам2\", ...]\n   legitimate_emails = [\"Объявление о промоции1\", \"Объявление о промоции2\", ...]\n  ```\n\n3. **Перевести текст в числа (векторизация)**: При помощи кэшированного словаря и функции `CountVectorizer`, переведите текст на матричные данные, где каждый элемент представляет собой частоту слов в письме.\n\n   ```python\n   vectorizer = CountVectorizer()\n   spam_vectorized = vectorizer.fit_transform(spam_emails)\n   legitimate_vectorized = vectorizer.transform(legitimate_emails)\n   ```\n\n4. **Отдельно категории**: Сделайте каждую категорию матрицей, где ячейки представляют собой частоты слов.\n\n   ```python\n   spam_category = {word: spam_vectorized[:, index].sum() for index, word in enumerate(vectorizer.get_feature_names())}\n   legitimate_category = {word: legitimate_vectorized[:, index].sum() for index, word in enumerate(vectorizer.get_feature_names())}\n   ```\n\n5. **Создание модели**: Начните с создания класса `MultinomialNB` и вызова его методов для обучения модели на обучающем матрице (спам) и тестингу на отложенной части (антиспам).\n\n   ```python\n   classifier = MultinomialNB()\n   classifier.fit(spam_vectorized, ['spam'] * len(spam_emails))  # 'spam' - категория для обучения модели\n   print(\"Точность на обучающей выборке: \", classifier.score(spam_vectorized, ['spam'] * len(spam_emails)))\n\n   # Тестирование на отложенной части\n   test_vectorized = vectorizer.transform(legitimate_emails)\n   print(\"Точность на тестовой выборке: \", classifier.score(test_vectorized, ['legitimate'] * len(legitimate_emails)))\n   ```\n\n6. **Предсказание**: Для классификации нового текста, преобразуйте его в матрицу и используйте метод `predict()` для предсказания категории.\n\n   ```python\n   new_email = [\"Текст из новой письмо\", \"Будет ли он классифицироваться как спам\"]\n   new_email_vectorized = vectorizer.transform(new_email)\n   prediction = classifier.predict(new_email_vectorized)\n\n   if prediction[0] == 'spam':\n     print(\"Предсказание: Этот текст может быть классифицирован как спам.\")\n   else:\n     print(\"Предсказание: Этот текст не будет классифицироваться как спам. Потенциально - антиспам.\")\n   ```\n\nЭто пример касается базовой реализации Naive Bayes для классификации писем в категориях \"спам\" и \"антиспам\". В действительности, для более эффективного решения этой задачи может потребоваться аналогичные шаги, но с использованием большего объёма обучающих данных, оптимизацией векторизации, тестированием различных параметров (например, выбор целевых функций и коэффициентов) и использованием более сложных методов, таких как TF-IDF или word2vec.",
+      "rating": ""
+    }
+  ]
+}

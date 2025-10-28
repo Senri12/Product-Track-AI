@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0462",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 51.2,
+    "precision": 59.8,
+    "recall": 61.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.856891"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Расстояние Евклида (также известное как евклидово расстояние или просто расстояние в прямоугольном пространстве) между двумя точками (x1,y1) и (x2,y2) определяется формулой: \n\nD = √((x2 - x1)^2 + (y2 - y1)^2).\n\nДля точек (1,2) и (3,4), мы имеем:\n\nx1 = 1, y1 = 2\nx2 = 3, y2 = 4\n\nПодставляя эти значения в формулу, получаем: \n\nD = √((3 - 1)^2 + (4 - 2)^2)\nD = √(2^2 + 2^2)\nD = √(4 + 4)\nD = √8\nD = 2√2.\n\nТаким образом, расстояние Евклида между точками (1,2) и (3,4) составляет 2√2.",
+      "rating": ""
+    }
+  ]
+}

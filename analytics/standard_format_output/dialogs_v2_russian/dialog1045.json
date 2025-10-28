@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1045",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 41.1,
+    "precision": 44.1,
+    "recall": 56.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.305890"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " RMSProp (Root Mean Square Propagation) - это оптимизатор, используемый для обучения нейронных сетей и других моделей машинного обучения, основанный на методе обратной связи. Он был предложен Георгом Херенбергером в 2010 году и представляет собой улучшенную версию оптимизатора Momentum (Метод импульса).\n\nRMSProp вычисляет адаптивный шаг обучения для каждого параметра на основе среднеквадратичного корня суммы квадратов прошлых градиентов (Root Mean Square of past gradients). Это позволяет ему более эффективно контролировать величину шага для каждого параметра, а также улучшить устойчивость к локальным минимумам и скорость обучения.\n\nRMSProp используется в различных видах машинного обучения, таких как глубокие нейронные сети (Deep Neural Networks), рекуррентные нейронные сети (Recurrent Neural Networks) и градиентный бустинг (Gradient Boosting).\n\nЗадание для проверки знаний: Приведите формулу RMSProp, используемую для вычисления обновления параметра во время обучения.",
+      "rating": ""
+    }
+  ]
+}

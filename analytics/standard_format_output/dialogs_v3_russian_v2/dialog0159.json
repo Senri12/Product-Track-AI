@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0159",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.091436"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В ходе изучения метода Naive Bayes классификации, новым пись-symbolом можно синтезировать следующую идею:\n\n1. **Определение термины и меток**:class1 ↔ spam, class2 ↔不下шить.\n2. **Построение таблицы вероятностей class probabilitiesconditional probabilities** на основе анализа character count (количество символов) в данных.\n\n3. **Применение формулы Bayes theorem для каждой новой предсказания**.\n\n4. **Рассмотреть распределения character count для каждого класса**.\n\n5. **Пrediction**:classifying the text as spam in Naive Bayes depends on comparing class probabilities based on character count distribution.",
+      "rating": ""
+    }
+  ]
+}

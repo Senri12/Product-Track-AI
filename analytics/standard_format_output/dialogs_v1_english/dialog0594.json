@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0594",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое метод Ньютона?",
+    "f1": 40.2,
+    "precision": 46.7,
+    "recall": 58.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.769140"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод Ньютона?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод Ньютона — это численный метод для нахождения приближений корня уравнения f(x) = 0 путем итерации через функцию g(x), которая сходится к искомому корню при подстановке в u, где u=g(x). Конструкция метода включает формулу x_{n+1} = x_n - f(x_n)/f'(x_n), известную как итерация Ньютона. Цель — уменьшить приближение progressively до уровня, удовлетворяющего желаемому точности.\n\nЗадача для вас: Напишите код на Python, который реализует метод Ньютона с функцией f(x) = x^2 - 612 и начальным предположением x_0=10. Сравните результат вашего метода с точным значением корня (которое является √612), используя tolerance в 1e-5 для итерации, чтобы остановиться на приближении к корню.",
+      "rating": ""
+    }
+  ]
+}

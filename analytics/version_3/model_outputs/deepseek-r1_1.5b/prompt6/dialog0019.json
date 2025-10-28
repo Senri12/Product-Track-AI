@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое over-fitting?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Overfitting — это слабая атака на модель, связанная с overfitting. Она означает, что модель выглядит хорошо на training data (train set), но её performance ухудчивается при использовании test data (测试 set). Это может произойти из-за overly complex model complexity, high variance in the predictions, or poor generalisation due to noise captured in train data.\n\nOverfitting часто возникает в задачах классификации, где модели часто теряют точность. Для предсказания overfitting можно использовать графики的朋友дества вычислений (training loss and test loss curves), а также проверять cross-validation score.\n\nРешения дляOverfitting:\n- Увеличить complexidade model.\n- Увеличить quantity of training data.\n- Использовать сокращённые hyperparameters.\n- Использовать Dropout или Batch normalization для ватардения.\n- Помочь model generalisation through techniques like L1/L2 regularization or weight decay.\n\nOverfitting — это слабая атака на модель, которая ухудляет её泛 generalisation ability.",
+    "rating": ""
+  }
+]

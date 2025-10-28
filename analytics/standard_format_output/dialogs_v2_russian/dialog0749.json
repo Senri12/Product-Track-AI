@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0749",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 41.2,
+    "precision": 45.7,
+    "recall": 62.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.832431"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Learning rate decay используется для постепенного уменьшения learning rate во время обучения модели, что может помочь достичь более стабильной и точной локализации mínimos функции потеря.\n\nДля линейного спуска learning rate decay мы можем вычислить новую learning rate η(t) с использованием следующей формулы:\n\nη(t) = η0 * (1 - t/T)\n\nгде:\n- η(t) — это learning rate в момент времени t,\n- η0 — начальная learning rate,\n- t — текущее количество итераций или время epoch,\n- T — полное количество итераций или временных интервал epoch.\n\nДано данные:\n- η0 = 0.1 (начальная learning rate),\n- t = 5 (текущее число эпок/времени),\n- T = 10 (полное количество эпок).\n\nПодставим эти значения в формулу:\n\nη(t) = 0.1 * (1 - 5/10)\nη(t) = 0.1 * (1 - 0.5)\nη(t) = 0.1 * 0.5\nη(t) = 0.05\n\nТаким образом, learning rate в момент времени t=5 будет равен 0.05.\n\nВажно отметить, что это упрощенная модель linear decay, и существуют другие формы спуска, например, exponential decay или step decay, которые будут иметь разные формулы вычисления.",
+      "rating": ""
+    }
+  ]
+}

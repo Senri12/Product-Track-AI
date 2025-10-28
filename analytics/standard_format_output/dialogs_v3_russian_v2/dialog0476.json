@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0476",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 40.7,
+    "precision": 36.8,
+    "recall": 52.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.1,
+    "hallucination": 10.4,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 3.9,
+    "timestamp": "2025-10-28T13:24:20.310181"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В алгоритме Стохастического градиентного спуска (SGD) мы изменяем веса модели в направлении противоположном к градиенту функции потерь L(w). Для начала, давайте посчитаем градиент функции w^2 для w = 3 и η=0.1:\n\n∇L(w) = 2*w = 2*3 = 6\n\nВычислим шаг в направлении противоположном к градиенту:\n\nstep = -η*gradient = -0.1*6 = -0.6\n\nТаким образом, значение веса w после одного шага обучения будет равно:\n\nw' = w + step = 3 + (-0.6) = 2.4\n\nПовторяя этот процесс много раз (эпох), мы можем добиться минимизации функции потерь L(w).",
+      "rating": ""
+    }
+  ]
+}

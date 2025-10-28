@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1167",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 31.0,
+    "precision": 26.4,
+    "recall": 52.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.4,
+    "hallucination": 11.5,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 23.7,
+    "self_knowledge": 4.5,
+    "timestamp": "2025-10-28T13:24:20.164769"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления текущего значения вектора вектора момента (v_t) в методе моментов с параметром градиентного спуска η=0.1 и прошлым значением v_(t-1)=1, если у нас функция потерь ∇L(ω) = 2 (пусть ω – это веса нейронной сети), можно выполнить следующую вычисление:\n\nv_t = γ * v_(t-1) - η * ∇L(ω)\n\nЗдесь γ определяется как 0.9 (как было сказано в задаче). Теперь учитывая значения других параметров:\n\nv_t = 0.9 * 1 - 0.1 * 2\nv_t = 0.9 - 0.2\nv_t = 0.7\n\nТаким образом, значение вектора момента (v_t) при этом γ=0.9 и ∇L(ω)=2 равно 0.7.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0037",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 36.5,
+    "precision": 38.7,
+    "recall": 43.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.911168"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вероятность класса в Classifical Bayes является произведением вероятностей классов, а также их взаимосвязанности.\n\nАлгоритм Classifical Bayes:\n\n1. Даны: X = { x1, x2, ..., xn }, y = { y1, y2, ..., yn }\n2. Кlassификация: f(x) = 1 ( если x belongs to class F ) и g(y) = 0 ( если x khôngbelongs к классу Y )\n\n3. Пriors: p(F) и p(Y), где P(X=1) и P(Y=1).\n\n4. Трансформация X в terms of classes f(x):\n\nf(x)=P(Y|X=x)\n\n5. Трансформация y в terms of class g:\n\ng(y)=P(X=y|y=1)\n\n6. Сложение отдельных вероятностей:\n\nP(f(x)) = P(F ∩ Y=f(x)|Y=1) * P(Y=1)\nP(g(y)) = P(X=y|Y=1) * P(Y=1)\n\n7. Умножьте каждый результат на предыдущий и сложите их:\n\nP(X=F) = Σ[P(f(x))*p(F)]\n\nP(X=Y) = Σ[P(g(y))*p(Y)]",
+      "rating": ""
+    }
+  ]
+}

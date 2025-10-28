@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0129",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 39.8,
+    "precision": 42.2,
+    "recall": 51.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.8,
+    "hallucination": 8.7,
+    "faithfulness": 35.0,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:20.055330"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Классификаторы: метод ближайших соседей (k-NN)**\n\n---\n\n### **Архитектура алгоритма k-NN**\n\n1. **Разделение данных**  \n   - Разделяется тренировочное набор (training set) и тестовый набор (test set).  \n   - Входные данные обрабатывается с предикторами \\( X_1, X_2, \\ldots, X_p \\).  \n   - Уltima метка (\\( Y \\)) classifies.\n\n2. **Использование методов измеренияSimilarity**  \n   - Используется measuring similarity (например, Euclidean или Manhattan) для определения близости объектов.\n\n3. **Определение выбора числа close neighbors (k)**  \n   - Выбирается \\( k \\), редко\\( 10 \\leq k \\leq 20 \\), но можно выбрать другое значение.\n\n4. **Построение окончательного классификатора**  \n   - Для каждого объекта в test data сравнивается с closet neighbors based on similarity.  \n   - Classifies new object based on majority class among close neighbors.\n\n---\n\n### **Пример с двумя предикторами и метками**\n\n#### **Тренировочные данные**\n- \\( (x_1, x_2, y) \\):  \n  1. \\( (0, 0, 'K') \\)  \n  2. \\( (1, 1, 'A') \\)  \n\n#### **Сетка данных**\n- \\( (x_1, x_2) \\):  \n  1. \\( (1, 1) \\rightarrow 'K' \\)  \n  2. \\( (0, 0) \\rightarrow 'K' \\)  \n\n#### **Проверка closeness neighbors**\n- В test data: \\( (x_1=2, x_2=2) \\).  \n   - Сходится с \\( (1,1) \\) на \\( \\sqrt{2} \\), classifies as \\( 'K' \\).\n\n---\n\n### **Конclusions**\n\n- Classify-я позволяет разбивать данные на классы при использовании close neighbors.  \n- ОпределениеSimilarity и выбор \\( k \\) важны для точности классификации.  \n- Визуализацияокола ближайших соседей помогает понимать процесс и отображать классификатор.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое манхэттенское расстояние?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "The **manhattan distance** refers to the total horizontal and vertical movement required between two points in a grid-like structure when computing shortest paths. It is particularly useful in algorithms dealing with grids, graphs, or mazes where movement is restricted to orthogonal directions.\n\n1. **Definition**: Manhatten distance is the sum of the absolute differences of the coordinates of two points. For example, the Manhattan distance between point (x1, y1) and point (x2, y2) is |x1 - x2| + |y1 - y2|.\n\n2. **Use in Algorithms**: It is often used as an approximation for other distances in algorithms like Dijkstra's, where diagonal movements are not considered or are computationally expensive.\n\n3. **Heuristic in Chess**: In chess, a piece's movement that can be described by orthogonal directions might use manhattan distance if restricted to an infinite board.\n\n4. **Performance Optimization**: While simpler than Euclidean distance, it may lead to suboptimal results as it ignores diagonal movements, which could offer shorter paths.\n\n5. **Alternative in Dijkstra's Algorithm**: Sometimes used instead of the actual Euclidean distance for heuristic purposes, providing quick estimates without exhaustive search.\n\nIn conclusion, manhattan distance is a useful concept in algorithms dealing with grid-like structures, offering computational efficiency while potentially missing optimal path lengths due to its lack of diagonal movement consideration.",
+    "rating": ""
+  }
+]

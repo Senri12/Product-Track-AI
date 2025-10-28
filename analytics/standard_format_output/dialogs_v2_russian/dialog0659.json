@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0659",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 37.0,
+    "precision": 42.3,
+    "recall": 50.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.847408"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Понятие:\nЗадача связана с обучением в машинном учении и особенно касается концепта \"learning rate decay\", который является техником, используемой для уменьшения коэффициента обучения (η) во время тренировки модели. Это делается для того, чтобы начать обучение быстро при низких значениях ошибки и затем более осторожно приближаться к оптимуму по мере продвижения в течение времени. Даны следующие параметры:\n\n- η0 = 0.1 - начальный learning rate\n- t = 5 - текущее время epoch или итерация\n- T = 10 - общее количество эпох, через которые будет происходить снижение learning rate\n- linear - это означает, что decrement learning rate будет выполняться линейно\n\nУпражнение:\nВычислите значение learning rate (η) на момент времени epoch t=5 с использованием параметров η0, t и T при использовании метода linear decay.\n\nОтвет:\n\nЧтобы вычислить linear learning rate decay, используйте формулу:\n\nη(t) = η0 * (1 - t / T)\n\nПодставьте данную информацию:\n\nη(5) = 0.1 * (1 - 5 / 10)\nη(5) = 0.1 * (1 - 0.5)\nη(5) = 0.1 * 0.5\nη(5) = 0.05\n\nТаким образом, learning rate на момент epoch t=5 будет равен 0.05.\n\nОтвет: η(5) = 0.05",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0245",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как работает сглаживание по Лапласу?",
+    "f1": 34.6,
+    "precision": 35.0,
+    "recall": 48.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.6,
+    "hallucination": 10.2,
+    "faithfulness": 30.2,
+    "noise_sensitivity": 15.5,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:19.999307"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как работает сглаживание по Лапласу?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод сглаживания по Лапласу используется для улучшения предсказуемых category (например, «спAM» или «не спAM») в задаче классификации текстовых писем на扮演ки. Метод предполагает, что если слово не встречено в Ourslоваре, оно может быть индикатором категории «не спAM», а константа распределения будет равной 1/(V + r), где V – количество слов в Ourslоваре, r – количеству слов в письме, которых нет в Ourslоваре.\n\nВ примерах мы видим, что classificаторы «спAM» лучше workают с textами, где не все слова включены в Ourslоваре. Однако в случае писем с недостаующими словами (например, письмо «Get rich with ruble without word WORLDCOMPANIES») classificатор от noseает к категории «спAM». Однако метод сглаживания по Лап拉斯у подходит для таких задач, так как он автоматически учитывает это.",
+      "rating": ""
+    }
+  ]
+}

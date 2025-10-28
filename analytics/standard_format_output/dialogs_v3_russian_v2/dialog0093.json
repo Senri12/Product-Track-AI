@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0093",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 36.1,
+    "precision": 36.5,
+    "recall": 46.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.2,
+    "hallucination": 8.6,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 21.8,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.059966"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Euclidean metric refers to a method of calculating the distance between two points in N-dimensional space based on their coordinates. It is computed using only spatial dimensions and does not consider other attributes or features. This concept is fundamental in geometry and often used as a basic building block in various machine learning algorithms that require measuring distances between data points, such as classification and regression tasks.\n\nFor example, in two-dimensional space, the Euclidean distance between two points (x1, y1) and (x2, y2) is calculated as:\n\n\\[ \\text{Distance} = \\sqrt{(x2 - x1)^2 + (y2 - y1)^2} \\]\n\nThis can be extended to higher dimensions or more features when calculating distances between multi-dimensional points in machine learning applications.",
+      "rating": ""
+    }
+  ]
+}

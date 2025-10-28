@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2102",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.078113"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "selection of the number of neighbors (k) in k-nearest neighbor algorithm depends on several factors including the dataset size, complexity of the problem, and the desired level of noise removal. A common approach is to use cross-validation to determine an appropriate value for k that optimizes the model's performance on unseen data. If a small k is chosen, the model can be more sensitive to outliers and may overfit; if a large k is used, it can lead to overly smooth decision boundaries, potentially underfitting.",
+      "rating": ""
+    }
+  ]
+}

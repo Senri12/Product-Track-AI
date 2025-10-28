@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2590",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 26.8,
+    "precision": 27.3,
+    "recall": 42.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.901899"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В к-НН (k-Nearest Neighbors) методе определяются к nearest neighbors nearest neighbors, то есть ближайшие neighbours neighbours closest. К-NN работает на основе proximity (к proximity), то есть расстояния между datapoints. Поскольку расстояние не учитывается, к-NN может давать неправильные результаты при неверном выборе k.\n\nВ взвешанном k-НН методе (k-Means Clustering) определяются k nearest neighbors neighbours closest и взвешивают их, используя индуктивную способность данных. Например, если data points имеют одинаковую среднюю距离 от datapoints в наборе k nearest neighbors neighboursclosest, они могут быть добавлены в same cluster clusterSame.\n\nВсего существует few способов взвесить к-НН, таких как:\n\n* Используя к-NN для вычисления расстояний междуdatapoints и на основе них выбирать k nearest neighbors neighbours closest.\n* Используя k-NN для выбора ближайших neighbour neighboursclosest и взвешивать их с помощью индуктивной способности данных.\n\nВзвешанный k-НН более точен, чем к-НН, потому что он учитывает не только proximity (кproximity), но и индуктивную способность данных.",
+      "rating": ""
+    }
+  ]
+}

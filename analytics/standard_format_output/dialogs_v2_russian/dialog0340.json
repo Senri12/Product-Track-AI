@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0340",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 33.7,
+    "precision": 34.3,
+    "recall": 42.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.931198"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "К-НН (классификатор кратного neighbors) и взвешенный K-НН - два способа вычисления расстояния и выбораclosest neighbors для классификации данных.\n\n**К-НН**\n\n* Использует расстояние между элементами в данных наборе.\n* Время Complexity: O(nk), где n — количество элементов, а k — число nearest neighbors.\n* Example. Примеры использования K-NN включают распознавание фейков, выявление новых идентичных предметов и определение последовательности.\n* Обычная implementation: Использует виртуальную функцию расстояния D (например, Euclidean) и находит максимально возможное количество neighbour closest за từng из наборов данных.\n\n**Взвешенный K-НН**\n\n* Сбалансированность по кратности neighbourhoods.\n* Использует сбалансированный коэффициент расстояния D (например, Euclidean).\n* Время Complexity: O(nk^2), где n — количество элементов, а k — число nearest neighbors.\n* Example. К-НН может быть полезен для распознавания предметов с различными кратностями по nearest neighbors.\n\n**Примечание**\n\nВзвешенный K-НН часто используется для решения задач, где точность наибольшей степени depends на расстоянии между neighbourclosests. Однако он puede быть более сложным и требует большого количества resources (например, memory).",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2069",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.082448"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "η(t) = η₀ * (1 - t/T), where η₀ = 0.1, t ranges from 0 to T=10.\n\nAt each time step:\n- After 5 steps: η(5) = 0.1 * (1 - 5/10) = 0.05\n- At 10 steps: η(10) = 0\n\nThus, the learning rate decays linearly from 0.1 to 0 over the course of 10 steps, halving each step up to that point.\n\nAnswer:\nη(t) = 0.1 * (1 - t/10) for t in [0, 10].\n\n- At t=5: η(5) = 0.1 * (1 - 5/10) = 0.05\n- At t=10: η(10) = 0.1 * (1 - 10/10) = 0\n\nSo, the learning rate is halved every step up to T=10.\n\nη(t) = \\boxed{0.1 \\times \\left(1 - \\frac{t}{10}\\right)}",
+      "rating": ""
+    }
+  ]
+}

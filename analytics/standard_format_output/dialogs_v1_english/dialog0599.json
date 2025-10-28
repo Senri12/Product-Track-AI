@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0599",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 40.2,
+    "precision": 46.7,
+    "recall": 58.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.770013"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для расчета линейного снижения поэтапной зависимости от времени (learning rate decay), используется следующая формула:\n\nη(t) = η₀ * (T - t) / (T - 0)\n\nЗдесь η(t) — это скорректированный learning rate в момент времени t, η₀ — начальный learning rate, T — общая продолжительность обучения, а t — текущий временной шаг.\n\nВведем данные значения:\nη₀ = 0.1\nt = 5 (текущий временной шаг)\nT = 10 (общая продолжительность)\n\nПодставим их в формулу:\n\nη(t) = 0.1 * (10 - 5) / (10 - 0)\nη(t) = 0.1 * 5 / 10\nη(t) = 0.05\n\nТаким образом, learning rate на временном шаге t=5 будет равен η(5)=0.05 при применении линейного снижения поэтапной зависимости от времени с начальным learning rate (η₀=0.1), текущим временным шагом (t=5) и общей продолжительностью обучения (T=10).",
+      "rating": ""
+    }
+  ]
+}

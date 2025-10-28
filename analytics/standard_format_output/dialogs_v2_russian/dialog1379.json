@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1379",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 9.9,
+    "precision": 9.9,
+    "recall": 29.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.237954"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления увеличения процентного инкремента (learning rate decay), используемое в пространстве времени с линейным кривым:\n\nη(t) = η0 * t / T, где:\n- η0 - исходный уровень процентного инкремента (в данном случае это 0.1),\n- t - текущее время шага (в данном случае это 5),\n- T - полувременность (в этом случае это 10).\n\nПодведем:\n\nη(t) = 0.1 * 5 / 10 = 0.05.\n\nТаким образом, процентное инкременто в течение первых 5 шагов будет равно 0.05.",
+      "rating": ""
+    }
+  ]
+}

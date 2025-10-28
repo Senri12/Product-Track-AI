@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0869",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 38.5,
+    "precision": 36.2,
+    "recall": 49.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.9,
+    "hallucination": 10.8,
+    "faithfulness": 34.2,
+    "noise_sensitivity": 20.2,
+    "self_knowledge": 5.0,
+    "timestamp": "2025-10-28T13:24:20.236949"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Используя формулу для линейного decay'a learning rate: $\\eta = \\eta_0 - \\frac{(\\eta_0 - \\eta_f) \\cdot t}{T}$, где $\\eta_0$ - начальное значение learning rate, $t$ - текущая итерация (шаг), $T$ - общее число итераций (шагов), $\\eta_f$ - конечное значение learning rate.\n\nВ данном случае: $\\eta_0 = 0.1$, $t = 5$, $T = 10$. Мы не знаем конкретного конечного значения learning rate, но для нахождения текущего значения $\\eta_f$ мы можем использовать формулу: $\\eta_f = \\eta_0 - (\\eta_0 - \\frac{\\eta_f}{T}) \\cdot t$, так как хотим найти конечное значение learning rate, которое будет давать нам текущее значение по формуле для линейного decay'a.\n\nДля упрощения решений, рассмотрим случай $\\eta_f = 0$. Тогда: $0 = \\eta_0 - (\\eta_0 - 0) \\cdot t$, откуда $\\eta_f = \\eta_0 - \\frac{\\eta_0 \\cdot t}{T} = \\eta_0 (1 - \\frac{t}{T})$.\n\nТеперь можно вычислить текущее значение learning rate: $\\eta = 0.1 - \\frac{(0.1 - 0) \\cdot 5}{10} = 0.1 - 0.05 = 0.05$.",
+      "rating": ""
+    }
+  ]
+}

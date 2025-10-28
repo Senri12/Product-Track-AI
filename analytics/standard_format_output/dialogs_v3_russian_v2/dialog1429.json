@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1429",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 33.7,
+    "precision": 39.6,
+    "recall": 44.6,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.3,
+    "hallucination": 10.5,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 19.0,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.022894"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Over-fitting — это ситуация с нейронными сетями или моделями, где модель выглядит хорошо на training set (trенировочную выборку) но не обобщается на новые данные. Это произошло, когда модель захочет минимизировать ошибку на training set,但她 не позволяет оценить ее performance на валидационном множестве. \n\n**Проверка performance:**\n- Сравнить оценку модели на training set и валидационном множестве.\n- Если они отличаются значимо, это уточняет over-fitting.\n\n**Критерии для выборки:**\n- Используйте критерий-Burns или AIC/AICc для выборки и оценки.\n- Сравните performance на training set и валидационном множестве.\n\n**Тонкости данных:**\n- Учитывайте тонкость данных, гиперполярность или мелкие outliers.\n- Выбирайте метод оптимизации, который обеспечивает более точные оценки на валидационном множестве.\n\n**Уменьшение градиентов:**\n- Учитывайте, что градиенты grown excessively может привести к over-fitting.\n- Используйте методы, уменьшая их, например, adaptive learning rates или faster learning rate.\n\n**Вывод:**\nДля предотвращения over-fitting:\n1. Проверяйте performance на training set и валидационном множестве.\n2. Выбирайте метод оптимизации сAdapтивностью к градиентам и тонкости данных.\n3. Используйте критерии-Burns или AIC/AICc для выборки.\n4. Учитывайте гиперполярность данных и градиенты.\n\nПри том, что performance на training set высокий и валидационное оценение ниже, это уточняет over-fitting. Выбрать метод оптимизации для предотвращения over-fitting важно учитывать их схему обновления Learning Rate и адаптивность к градиентам. Важно проверять performance на training set и валидационном множестве, используя критерии-Burns или AIC/AICc и учитывать тонкости данных.",
+      "rating": ""
+    }
+  ]
+}

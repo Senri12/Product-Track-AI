@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0262",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 34.6,
+    "precision": 35.0,
+    "recall": 48.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.6,
+    "hallucination": 10.2,
+    "faithfulness": 30.2,
+    "noise_sensitivity": 15.5,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:20.002376"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Adam ( Adapter moment estimation) – это оптимизатор для градиентного спуска, который использует адаптивный Learning rate. Он сочетает gradient descent с Momentum Momentum Momentum Momentum, что позволяет улучшить скорость обновления параметров и сократить необходимое шага на каждом Updates.\n\nAdam включает в себя:\n\n1. **Adaptive Learning Rate**: automatically adapts learning rate based on gradient history.\n2. **Momentum Momentum**: adds a fraction of the previous update to the current parameter, reducing oscillations and accelerating convergence.\n3. **Gradient Descent**: main optimization algorithm.\n4. **Weight Regularization**: includes Weight decay for preventing overfitting.\n\nКроме того, Adam можно уточнить adaptive gradients – градиенты обновляем automatically based on the current state of the network.",
+      "rating": ""
+    }
+  ]
+}

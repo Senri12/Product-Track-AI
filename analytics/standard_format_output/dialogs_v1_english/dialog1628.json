@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1628",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 7.7,
+    "precision": 8.3,
+    "recall": 29.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.146872"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "As an adaptive tutor, I sense you might have a basic understanding of mathematical concepts. Let's delve into this topic step by step to ensure we're on the same page.\n\nThe \"distance between Chebyshevs\" or \"Chebyshev distance,\" is a measure used in mathematics and data analysis that quantifies how far an element (or point) is from the median of a dataset. It's named after the Russian mathematician Pafnuty Chebyshev.\n\nHere's the formula for Chebyshev distance between two points, x = (x1, x2, ..., xn) and y = (y1, y2, ..., yn), in n-dimensional space:\n\nd(x, y) = max(|x1 - y1|, |x2 - y2|, ..., |xn - yn|)\n\nIn simpler terms, it's the greatest absolute difference between any two corresponding coordinates of two points. For example, if we're looking at 2D space with x and y coordinates:\n\nd((x1, y1), (x2, y2)) = max(|x1 - x2|, |y1 - y2|)\n\nThis means it's the maximum of the absolute differences in either x or y direction. It essentially measures the longest 'diagonal' across any coordinate axis from one point to another. This measure is particularly useful when you're interested in how far a point might deviate from being central, not just its Euclidean distance (which would be the straight-line distance).\n\nSo, if you were to compare two points based on this metric, it'd tell you more about their position relative to the median than simple Euclidean distance.",
+      "rating": ""
+    }
+  ]
+}

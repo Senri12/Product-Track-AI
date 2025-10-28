@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое расстояние Чебышёва?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "The Chebyshev distance is a metric used to measure the distance between two points in an n-dimensional space. It is defined as the maximum of the absolute differences of their coordinates. Formally, for two points \\( (x_1, y_1, z_1) \\) and \\( (x_2, y_2, z_3) \\), the Chebyshev distance is:\n\n\\[\nd = \\max(|x_1 - x_2|, |y_1 - y_2|, |z_1 - z_3|)\n\\]\n\nThis metric is particularly useful in scenarios where movement constraints or comparisons across multiple axes are important. It extends to higher dimensions by considering the maximum difference along any axis. For example, in 4D space, it would be:\n\n\\[\nd = \\max(|x_1 - x_2|, |y_1 - y_2|, |z_1 - z_2|, |w_1 - w_2|)\n\\]\n\nChebyshev distance is applicable in various fields such as chess for measuring moves, computer graphics, pattern recognition, and data analysis. It differs from other metrics like Euclidean and Manhattan, offering unique properties that make it valuable in specific contexts.",
+    "rating": ""
+  }
+]

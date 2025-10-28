@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0955",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 42.7,
+    "precision": 50.3,
+    "recall": 48.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.297535"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " RMSProp (Root Mean Square Propagation) – это оптимизатор для обучения моделей на основе глубоких нейронных сетей. Он является усовершенствованием оптимизатора Gradient Descent, предназначенным для снижения чувствительности к изменению масштаба градиентов, что позволяет более эффективно обучать модели. В RMSProp используется среднеквадратичное змеиное движение для обновления скорости обучения, при этом длина памяти об изменениях градиентов регулируется с помощью параметра аддитивного экспонента. Это позволяет увеличивать или уменьшать длину памяти в зависимости от темпа изменения масштаба градиентов, что обеспечивает более стабильную и быструю конвергенцию.",
+      "rating": ""
+    }
+  ]
+}

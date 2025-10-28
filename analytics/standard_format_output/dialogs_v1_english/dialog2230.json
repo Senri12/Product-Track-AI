@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2230",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.028161"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The difference between k-NN (k-nearest neighbors) and weighted k-NN lies in how the influence of each neighbor is determined during classification:\n\n1. **Similarity Measure**: In both methods, points are compared based on their features. However, weighted k-NN explicitly uses a distance metric that allows for varying weights based on proximity.\n\n2. **Weighting Mechanism**: The key distinction is how weights are assigned to neighbors:\n   - **Non-Weighted (Nearest Neighbors)**: All neighbors have equal weight.\n   - **Weighted K-NN**: Weights decrease with distance, giving more influence to closer points.\n\n**Considerations and Implications**:\n\n- **Performance**: Weighted k-NN can focus on nearby points, potentially improving accuracy, but it requires choosing an appropriate weighting scheme (inverse or increasing distances).\n- **Implementation Complexity**: Weighted versions may be computationally more intensive as they require additional parameters.\n- **Scalability**: The influence of distant points is diminished in weighted methods, making them suitable for certain datasets.\n\nIn summary, while k-NN offers simplicity and ease of use, weighted k-NN can enhance performance by emphasizing local data, but at the cost of increased computational complexity.",
+      "rating": ""
+    }
+  ]
+}

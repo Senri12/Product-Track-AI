@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Использование Adadelta для облегчения обучения нейронных сетей. В Adagrad при каждом шаге вычисляем G_{t-1,ii} и g_t, а затем вычитаем G_{t-1,ii} из g_t, чтобы получить new_g_t. Затем η = (new_g_t / G_{t-1,ii})^2 - η_old. Это дает нам обновленную задачу для learning rate.",
+    "rating": ""
+  }
+]

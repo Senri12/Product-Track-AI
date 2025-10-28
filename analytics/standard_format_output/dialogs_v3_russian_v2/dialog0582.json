@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0582",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 42.2,
+    "precision": 39.5,
+    "recall": 52.2,
+    "claim_recall": 35.2,
+    "context_precision": 50.0,
+    "context_utilization": 33.0,
+    "hallucination": 10.3,
+    "faithfulness": 33.8,
+    "noise_sensitivity": 18.5,
+    "self_knowledge": 5.9,
+    "timestamp": "2025-10-28T13:24:20.264524"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Расстояние Евклидово между точками (1, 2) и (3, 4) можно вычислить по формуле:\n\nd = sqrt[(a1-a2)^2 + (b1-b2)^2]\n\nДля данных точек это будет:\n\nd = sqrt[(1 - 3)^2 + (2 - 4)^2]\nd = sqrt[(-2)^2 + (-2)^2]\nd = sqrt[4 + 4]\nd = sqrt[8]\nd = 2.82843... (rounded to 5 decimal places)",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1193",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 45.5,
+    "precision": 52.4,
+    "recall": 53.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.329280"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Learning rate - это параметр обучения в алгоритмах машинного обучения, который определяет скорость с которой модель будет изменять свои веса во время процесса тренировки. Чем больше значение learning rate, тем быстрее модель находит локальный оптимум (но рискует переходить через него), а чем меньше - тем медленнее модель обучается, но вероятность достижения глобального оптимума увеличивается. Обычно learning rate выбирают на основании опыта и экспериментов с различными значениями, чтобы найти хорошую компромиссную точку между скоростью обучения и качеством модели.",
+      "rating": ""
+    }
+  ]
+}

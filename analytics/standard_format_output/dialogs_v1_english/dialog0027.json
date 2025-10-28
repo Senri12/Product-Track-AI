@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0027",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 41.9,
+    "precision": 41.7,
+    "recall": 52.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.703446"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Okay, let's calculate v_t using the provided parameters:\n\n*   **γ (gamma)** = 0.9 (Learning rate)\n*   **v_{t-1}** = 1 (Velocity at the previous time step)\n*   **∇L** = 2 (Gradient of the loss function)\n*   **η** = 0.1 (Learning rate scaling factor)\n\nThe update rule for velocity in Momentum is:\n\n**v_t = γ * v_{t-1} + η * ∇L**\n\nNow, let's plug in the values:\n\nv_t = 0.9 * 1 + 0.1 * 2\nv_t = 0.9 + 0.2\nv_t = 1.1\n\nTherefore, **v_t = 1.1**",
+      "rating": ""
+    }
+  ]
+}

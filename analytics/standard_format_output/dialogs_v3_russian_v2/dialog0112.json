@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0112",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 36.1,
+    "precision": 36.5,
+    "recall": 46.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.2,
+    "hallucination": 8.6,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 21.8,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.063319"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Adam (Adaptive moment estimation) — это метод оптимизации градиентных вычислений, который использует усиленный градиентный обновлениеParameter. Основная идея adam-метода — минимизировать функциюLoss с использованием градиентов по everyому параметру. \n\n### ключевые моменты Adam:\n\n1. **Сокращение избыточного вычисления**: Unlike standard stochastic gradient descent (SGD), which uses a fixed learning rate for all parameters, Adam adjusts the learning rate individually for each parameter based on their past gradients.\n\n2. **Усиление градиентных Updates**: Adam incorporates momentum — a technique that smoothens the optimization path by considering the direction in which the parameters have been updated over time. This helps to accelerate convergence and reduce oscillations during training.\n\n3. ** Гиперпараметры**:\n   - **Learning rate (η)**: controls the step size of parameter updates.\n   - **Weight decay**: Regularization term that prevents overfitting by encouraging small parameter values.\n   - **Momentum (β₁)**: Weight given to older gradients, which helps accelerate convergence.\n\n4. **Способ работы**: В Adam методе градиенты обновляются следующим образом:\n   - **SGD-like update**: Parameter = Parameter + Learning rate * Gradient\n   - **Momentum term**: Parameter = Parameter + Momentum * (Parameter Update)\n\n5. **Библиотека TensorFlow**: TensorFlow предоставляет библиотеку Adam, которая позволяет использовать метод оптимизации в своей нейронной сети. В TensorFlow 2.0 и более подробно описаны соп ports, таких как tf.train and tf.keras.\n\n6. **Примеры использования**: В Google Cloud Compute Engine упоминаются использование Adam для minimize regression and classification tasks.\n\n### Итог:\nAdam — это эффективное метод оптимизации, который усилит градиентные update и учитwо momentum. Его популярность comes from its ability to automatically adjust learning rates and accelerate convergence.",
+      "rating": ""
+    }
+  ]
+}

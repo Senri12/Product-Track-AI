@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2294",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 29.1,
+    "precision": 28.8,
+    "recall": 38.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.887370"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы рассчитать вероятность P(da|_pasмурно, холодно, влажно, да), мы можем использовать формулу Bayesова:\n\nP(da|pasmuru, cold, vlažno, da) = P(da и пасмурно,cold, vlažno, da) / P_pasмурно\n\nПоскольку нас интересует только то, как Often da, когда pasmurno, cold и vlažno, P(passmurno, cold, vlažno) — это процент situations, когда da.\n\nПасмурно: 40%\nКольво wet: 60%\nВлажное: 30%\n\nИтак, вероятность pasmuru, cold, vlažno, da = (0,4 * 0,6 * 0,3) = 0,072\n\nТаким образом, вероятность Often da, когда Pasmuro, Cold и Vlažno = 0,072 / 0,4 = 0,18.\n\nИтак, P(da|pasмурно, холодно, влажно, да) ≈ 0,18.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0868",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 38.5,
+    "precision": 36.2,
+    "recall": 49.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.9,
+    "hallucination": 10.8,
+    "faithfulness": 34.2,
+    "noise_sensitivity": 20.2,
+    "self_knowledge": 5.0,
+    "timestamp": "2025-10-28T13:24:20.236752"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В данном примере показаны значения для нескольких переменных используемых в алгоритме Adagrad.\n\n* G_{t-1,ii} - сумма квадратов значений входного вектора i на шаге t-1\n* g_t - градиент по отношению к весу ii на шаге t\n* η - шаг (эталонное значение обычно 0.01 или 0.1)\n* ε - число малая дроби (обычно используется значение 1e-8 для избежания деления на нуль)\n\nС этими данными можно найти обновление веса ii на шаге t следующим образом:\n\nη \\* g_t / sqrt(G_{t-1,ii} + ε)\n\nгде sqrt() означает квадратный корень.",
+      "rating": ""
+    }
+  ]
+}

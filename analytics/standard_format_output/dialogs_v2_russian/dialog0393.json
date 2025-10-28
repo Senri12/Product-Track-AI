@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0393",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 27.7,
+    "precision": 32.4,
+    "recall": 37.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.876876"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Евклидовая метрика – это расстояние, которое вычисляется между двумя точками в空间 пространстве. Он представляет собой длину отрезка между этими точками.\n\nТеорема Эйлера гласит, что для любых двух положительных целых чисел $n$ и $m$, имеем:\n\n\\[(n + m) \\cdot \\left( \\frac{n}{n} + \\frac{m}{m} \\right)^2 = n^2 + 2nm + m^2.\\]\n\nЕвклидовая метрика не является линейной. Следовательно, она не может бытьused для преобразования точек в пространстве с использованием линейных transformation.\n\nЕевклидова метрика имеет важное значение при проблемах решения задач и определения расстояния между разными точками.",
+      "rating": ""
+    }
+  ]
+}

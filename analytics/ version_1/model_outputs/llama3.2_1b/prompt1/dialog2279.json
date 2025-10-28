@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Чтобы вычислитьlearning rate decay (т.е. уменьшение скорости обучения с течением времени), мы можем использовать формулу:\n\nη(t) = η0 \\* e^(-t/T)\n\nВ этом случае уравнение принимает вид:\n\nη(5) = 0,1 \\* e^(-(5/10))\n= 0,1 \\* e^(-0,5)\n≈ 0,1 \\* 0,573\n≈ 0,0573\n\nИтак,learning rate decay составляет примерно 5,73%.",
+    "rating": ""
+  }
+]

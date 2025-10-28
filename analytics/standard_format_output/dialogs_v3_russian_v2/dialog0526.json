@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0526",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 38.0,
+    "precision": 34.7,
+    "recall": 52.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.0,
+    "hallucination": 12.3,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 20.2,
+    "self_knowledge": 4.7,
+    "timestamp": "2025-10-28T13:24:20.252992"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Autograd - это библиотека для автоматического вычисления градиентов функций по отношению к их аргументам. Она широко используется в машинном обучении и глубоких нейронных сетях для автоматизированного обучения моделей, например, при реализации оптимизаторов, как упомянутых в тексте. Autograd позволяет вычислять производные функций (градиенты) за один проход данных и без использования каких-либо дополнительных алгоритмов или библиотек. Это значительно упрощает процесс автоматического обучения, поскольку не требуется ручной вычисление градиентов. В Python, например, распространённый пакет для работы с autograd - Torch (PyTorch).",
+      "rating": ""
+    }
+  ]
+}

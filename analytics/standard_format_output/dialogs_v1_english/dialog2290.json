@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2290",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 29.1,
+    "precision": 28.8,
+    "recall": 38.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.886439"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "К-НН (k-Nearest Neighbors) — это метод классификации, который основан на принципеclosest neighbors. Взвешанный k-НН, также известный как к-непарение по среднему distanciaх, представляет собой подход, в котором кратное расстоянию между точкой иnearest neighbors расставляется при оценке ошибок分类.\n\n key differences:\n\nк-NN:\n\n* Каждая точка из набора training data подходит к nearest neighbors на основе расстояния от herself.\n* Количество nearest neighbors, с которыми может иметь дело точка, depends на заданном value k (например, k=3 для средней distances).\n* К-НН можно использовать при распределении данных в наборе на целые числа или дроби.\n\nвзвешенный k-NN:\n\n* Каждая точка из набора training data подходит к nearest neighbors по среднему расстоянию от herself.\n* Множество nearest neighbors, с которыми может иметь дело точка, depends на заданном value k (например, k=3 для средней distances).\n* Взвешанный k-НН не требует конкретного значения k, что делает его более灵freyми и воздействуемым на сложности данных.\n\nОбычно взвешанный к-НН используется, когда data делятся на целые числа или дроби, поскольку это позволяет использовать кратное расстоянию для оценки ошибок分类. Аналогично, к-НН часто используются, когда данные делятся на разные количества групп или category.\n\nЧитайте о том, как использовать взвешенный k-НН: https://tutorials.kaggle.com/visualize-using-k-nearest-neighbors-in-python\n\nЯ люблю вопросы! ¿Qué tipo de datos tienes? ¿Cómo их распределено?",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1199",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 45.5,
+    "precision": 52.4,
+    "recall": 53.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.330548"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Для вычисления показателя обучения с линейным убыванием в течение времени (learning rate decay), необходимо знать его начальное значение и максимальный индекс времени Т.\n\nВ данном контексте:\n\n- Поначалу η0 = 0.1\n- Максимальным индексом времени T = 10\n\nСтандартная формула для линейного убывания показателя обучения:\n\nη(t) = η0 * (1 - t / T)\n\nгде t — текущий индекс времени, в данном случае t=5.\n\nПодставляя значения в формулу, получаем:\n\nη(5) = 0.1 * (1 - 5 / 10) = η(5) = 0.1 * 0.5 = η(5) = 0.05",
+      "rating": ""
+    }
+  ]
+}

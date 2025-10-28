@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1957",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.093132"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To calculate the probability of a class using Naive Bayes, follow these structured steps:\n\n1. **Compute Prior Probabilities (P(C_i)):**\n   - For each class i, count the number of examples in your training data that belong to this class.\n   - Divide this count by the total number of examples in the dataset to get P(C_i).\n\n2. **Calculate Likelihoods (P(x|C_i)):**\n   - For a given feature vector x and class C_i:\n     - Collect all instances where x occurs and these instances are part of class C_i.\n     - Count the occurrences of this combination of features in the dataset.\n     - Divide this count by the total number of times x appears across all classes to get P(x|C_i).\n\n3. **Apply Bayes' Theorem:**\n   - For each possible feature vector x, compute:\n     \\[\n     P(C_i | x) = \\frac{P(x|C_i) \\times P(C_i)}{\\sum_{j=1}^{k} [P(x|C_j) \\times P(C_j)]}\n     \\]\n     where k is the total number of classes.\n\n4. **Handle Zero Probabilities:**\n   - If a class C_i has no examples in your training data with specific features, its likelihood (P(x|C_i)) will be zero.\n   - This results in \\( P(C_i | x) = 0 \\), meaning this class cannot contribute to the posterior probability.\n\n5. **Practical Considerations:**\n   - Missing feature values are treated as if they do not exist for that instance, leading to likelihoods of zero.\n   - If all features for a class C_i are unique or missing in your dataset, \\( P(C_i | x) \\) will remain zero, affecting the model's predictions.\n\nBy following these steps, you can compute the posterior probabilities for each class given an input feature vector, enabling accurate classification using Naive Bayes.",
+      "rating": ""
+    }
+  ]
+}

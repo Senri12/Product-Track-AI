@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0373",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
+    "f1": 30.9,
+    "precision": 37.4,
+    "recall": 38.6,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 29.0,
+    "hallucination": 16.4,
+    "faithfulness": 31.1,
+    "noise_sensitivity": 10.0,
+    "self_knowledge": 2.6,
+    "timestamp": "2025-10-28T13:24:19.913914"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Оценка F(да) = ln(P(Kласс = да|X₁, X₂, ..., Xₚ) + ∑ln(P(X_i|Класс = да))).\nПоскольку в данный момент у нас только один объект z, в đó все предиктора x_i = z_i. Поэтому мы можем упростить выражение:\nF(да) = ln(P(Kласс =(da)|X₁, X₂, ..., Xₚ) + ∑ln(P(X_i|Класс = да))).",
+      "rating": ""
+    }
+  ]
+}

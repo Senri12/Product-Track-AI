@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2359",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 26.3,
+    "precision": 31.6,
+    "recall": 44.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.870834"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "I'm glad you're interested in learning more about this concept.\n\nOver-fitting is when we try to fit too many different patterns or models into our data. In other words, we might be trying to explain one thing with two or three things instead of just one.\n\nImagine you're trying to predict the number of ice cream cones sold at a carnival based on factors like temperature, crowd size, and time of day. If we only look at one factor, like temperature, it's probably enough to make an educated guess about how many cones will be sold. But if we add another factor, like crowd size, it becomes too complicated and starts to fit into the first factor instead.\n\nThis can lead to over-fitting because our model is trying to explain more things than it actually needs to. It's like having multiple explanations for the same phenomenon – each one getting in the way of understanding the original concept.\n\nFor example, let's say we're trying to predict stock prices based on fundamental factors like earnings and dividends. If we only look at two or three of these factors, our model is probably doing a good job. But if we add four or five more factors, it starts to over-fit because each additional factor doesn't really contribute much to the prediction.\n\nDoes that make sense?",
+      "rating": ""
+    }
+  ]
+}

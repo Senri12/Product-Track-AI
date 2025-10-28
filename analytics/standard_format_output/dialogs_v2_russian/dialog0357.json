@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0357",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 33.7,
+    "precision": 34.3,
+    "recall": 42.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.934718"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы найти \\(v_t\\), мы можем использовать формулу для \\(\\gamma\\) по формуле:\n\n\\[γ = 1 + \\frac{∂L}{∂v} \\]\n\nИспользуя заданные значения: \n\n- γ = 0,9 (значение внешней корректировки)\n- v_{t-1} = 1 (начальное значение первого уровня)\n- ∇L = 2 (мусор в первом уровне)\n\nПереставив формулу для \\(\\gamma\\), получим:\n\n\\[γ = 0,9 = 1 + \\frac{∂L}{∂v}\\]\n\\[0,01 = \\frac{∂L}{∂v} \\]\n\nТеперь, чтобы найти дифференцируемую функцию \\(L\\) по модулю внешней коррекции, мы можем использовать формулу для определения производной:\n\n\\[\\frac{d}{dx}\\exp(\\gamma x) = γ\\exp(\\gamma x)\\]\n\\[\\frac{∂L}{∂v} = ∇L \\cdot v_t \\]\n\nУпомянутые значения: \n- ∇L = 2\n- v_{t} = γ \\* v_{t-1} = 0,9 * 1 = 0,9\n\nИтак, \n\n\\[\\frac{∂L}{∂v} = 2 \\cdot 0,9\\]\n\\[∂L = ∇L \\cdot v_t = 2 \\cdot 0,9 \\cdot 0,9\\]\n\nТеперь мы можем вычислить \\(v_t\\) по формуле:\n\n\\[v_t = e^{\\int_{t_1}^{t_2} γ d t}\\]\n\\[v_t = e^{\\int_{1}^{t} 2 d x}\\]\n\\[v_t = e^{2 \\cdot (x - 1)}\\]\n\nТеперь подставим т.е. v_{t-1} = 1 в формулу:\n\n\\[v_t = e^{2 \\cdot (1 - 1)}\\]\n\\[v_t = е^0\\]\n\\[v_t = 1\\]",
+      "rating": ""
+    }
+  ]
+}

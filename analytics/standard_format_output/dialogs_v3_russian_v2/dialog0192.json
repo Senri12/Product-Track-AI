@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0192",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 25.1,
+    "precision": 30.2,
+    "recall": 38.5,
+    "claim_recall": 34.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.5,
+    "hallucination": 13.2,
+    "faithfulness": 31.7,
+    "noise_sensitivity": 17.3,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.041884"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Евклидов расстояние между точками (1,2) и (3,4) вычисляется как:\n\n$$d = \\sqrt{(3 - 1)^2 + (4 - 2)^2} = \\sqrt{2^2 + 2^2} = \\sqrt{4 + 4} = \\sqrt{8} = 2\\sqrt{2}.$$\n\nОтвет: $2\\sqrt{2}$",
+      "rating": ""
+    }
+  ]
+}

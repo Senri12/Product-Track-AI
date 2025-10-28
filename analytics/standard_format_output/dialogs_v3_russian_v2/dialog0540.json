@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0540",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 38.0,
+    "precision": 34.7,
+    "recall": 52.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.0,
+    "hallucination": 12.3,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 20.2,
+    "self_knowledge": 4.7,
+    "timestamp": "2025-10-28T13:24:20.255370"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Для вычисления градиента в точке ω - γv_{t-1} при Nesterov моменте с γ=0.9, v=1 и ∇=2, используем правило производной композиции:\n\n∇(L(ω - γv_{t-1})) = ∇L(ω - γv_{t-1}) * (-γ)\n\nДалее, рассчитаем производную L по точке ω:\n\n∇L(ω) = 2 (обозначим его как dL/dω)\n\nТеперь вычислим производную L по точке ω - γv_{t-1}:\n\ndL/(d(ω - γv_{t-1})) = dL/dω * (-1) + дL/dv * (-γ)\n\nЗаметим, что в данном случае производная L по v равна 0, т.к. мы не зависим от v (все изменения происходят исключительно в ω). Следовательно:\n\ndL/(d(ω - γv_{t-1})) = dL/dω * (-1) = (-1) \\* 2 = -2\n\nВычислим производную L по точке ω - γv_{t-1}:\n\n∇(L(ω - γv_{t-1})) = (-2) \\* (-γ) = 2 \\* 0.9 = 1.8\n\nПоэтому, в случае Nesterov момента с γ=0.9, v=1 и ∇=2, вычисленный градиент равен 1.8.",
+      "rating": ""
+    }
+  ]
+}

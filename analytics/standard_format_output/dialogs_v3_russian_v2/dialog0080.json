@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0080",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 34.6,
+    "precision": 34.9,
+    "recall": 45.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.9,
+    "hallucination": 11.9,
+    "faithfulness": 32.7,
+    "noise_sensitivity": 18.6,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.087769"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Stochastic Gradient Descent (SGD) is an iterative optimization algorithm used to minimize an objective function, typically a loss function in machine learning models. Unlike batch gradient descent, which uses the entire dataset to compute the gradient at each step, SGD uses a single example or a small subset (mini-batch) of the data.\n\n### Key Features:\n1. **Stochasticity**: It randomly selects one example from the entire dataset (or a mini-batch) to compute the gradient in each iteration. This reduces the computational cost significantly compared to using the full dataset.\n   \n2. **Gradient Update**: The model parameters are updated based on the computed gradient of the loss function with respect to those parameters.\n\n3. **Learning Rate**: A key hyperparameter that determines the step size or the rate at which the weights are adjusted. The learning rate can be fixed (like in batch GD) or adaptive, where it is adjusted during training.\n\n4. **Variants**:\n   - **Batch GD**: Uses the entire dataset for computing the gradient.\n   - **Mini-Batch GD**: Uses a subset of the data (mini-batch size) for each update.\n   - **SGD with Momentum**: Incorporates momentum to accelerate convergence by adding a fraction of the previous weight update to the current one.\n\n### Summary:\nStochastic Gradient Descent is an efficient optimization method that works well for large datasets. By randomly sampling subsets of the data at each iteration, it reduces computational complexity while still providing useful gradient estimates, making it suitable for training complex models.",
+      "rating": ""
+    }
+  ]
+}

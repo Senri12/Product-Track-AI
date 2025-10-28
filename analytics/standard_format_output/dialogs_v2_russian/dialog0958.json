@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0958",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 42.7,
+    "precision": 50.3,
+    "recall": 48.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.298382"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В Adagrad алгоритме веса обновляются индивидуально для каждой из n параметров по следующему правилу:\n\nG_{t-1,ii} - сумма квадратов градиентов (накопилитель) для i-го параметра на t шаге обучения.\ng_t - текущий градиент по i-тому параметру.\nη - коэффициент обучающей скорости (learning rate).\nε - малая постоянная, предотвращающая деление на нуль.\n\nОбновление веса для i-того параметра выглядит следующим образом: w_t,i = w_{t-1,i} - η*g_t / sqrt(G_{t-1,ii} + ε).",
+      "rating": ""
+    }
+  ]
+}

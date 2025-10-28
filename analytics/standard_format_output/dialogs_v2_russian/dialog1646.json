@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1646",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 10.3,
+    "precision": 15.7,
+    "recall": 20.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.199732"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления шага Стохастической Дифференциальной Репрезентации (SGD) необходимо использовать формулу:\n\nη = Learning Rate\nw = текущее значение вектора w\nΔw = шаг\n\nВ данном случае, мы уже знаем значения:\nη = 0.1 (Learning Rate)\nw = 3 (Текущий вектор w)\n\nТеперь нужно найти Δw для увеличения L(w) с точностью 0.1, когда w = 3. Поскольку L(w) равен w^2 и мы хотим оценить шаг η, то в нашем случае это в значении латинского буквы \"n\" (например, если у нас наблюдается двойка изменения).\n\nΔw = 2 * w * η\n    = 2 * 3 * 0.1\n    = 0.6\n\nТаким образом, шаг SGD для L(w) равен 0.6 при условии, что Learning Rate (η) равен 0.1 и текущее значение вектора w также равно 3.",
+      "rating": ""
+    }
+  ]
+}

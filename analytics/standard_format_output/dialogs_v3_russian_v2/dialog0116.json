@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0116",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 36.1,
+    "precision": 36.5,
+    "recall": 46.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.2,
+    "hallucination": 8.6,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 21.8,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.064027"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "```python\ndef compute SGD_step(w, eta, loss_function):\n    \"\"\"\n    Computes the step in Stochastic Gradient Descent for a given function.\n    \n    Args:\n        w (float): Current value of the parameter being updated.\n        eta (float): Learning rate (step size) for the update.\n        loss_function (callable): Function to compute loss given parameters.\n        \n    Returns:\n        float: New value of the parameter after the step.\n    \"\"\"\n    # Compute gradient using automatic differentiation\n    grad = jnp.gradient(loss_function, [w])\n    \n    # Update weights with learning rate and negative gradient\n    new_w = w - eta * np.negative(grad[0])\n    \n    return new_w\n\n# Example usage:\ndef L(w):\n    return w ** 2\n\ninitial_w = 3.0\nlearning_rate = 0.1\n\n# Compute the step using autograd for differentiation\nstep = compute SGD_step(initial_w, learning_rate, L)\n\nprint(f\"New weight after step: {step:.4f}\")\n```",
+      "rating": ""
+    }
+  ]
+}

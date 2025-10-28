@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1389",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 31.4,
+    "precision": 37.6,
+    "recall": 43.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.3,
+    "hallucination": 11.3,
+    "faithfulness": 31.8,
+    "noise_sensitivity": 16.0,
+    "self_knowledge": 6.9,
+    "timestamp": "2025-10-28T13:24:20.027417"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Классификатор на основе Naive Bayes смотрит на условные вероятности предикторов при условии метки класса. Умножение этих вероятностей для каждой类别的 проверки нового данных позволяет определить, к какому из существующих классам относятся это новое данные.\n\nИтог:classiﬁer chooses the class with the highest product of conditional probabilities for each attribute. This allows it to predict which existing class (e.g., \"spam\" or \"not spam\") the new data belongs to, based on the likelihood of observing its attributes given that class.\n\nПоследовательность шагов для классификатора:\n\n1. **Предобработка данных**: Управление категориями и предсказанными атрибутами, а также обучение модели на training data.\n\n2. **Обнаружение условных вероятностей**: Для каждого атрибута и для каждой метки класса вычислить вероятность, что атрибут takeits value в этом class, предсказанные на training data.\n\n3. **Умножение вероятностей**: Для нового данных умножить вероятности всех арибутов для каждого класса.\n\n4. **Оценка классов**: Выбрать класс с самой высокой суммарной вероятностью арибутов, предсказанных на training data.\n\nТаким образом, classiﬁer будет отнес нового данных к классу, для которого вероятность появления его арибутов была maximизирована вtraining data.",
+      "rating": ""
+    }
+  ]
+}

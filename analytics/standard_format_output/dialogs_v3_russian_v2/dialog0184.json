@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0184",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В чем суть наивного байесовского классификатора?",
+    "f1": 25.1,
+    "precision": 30.2,
+    "recall": 38.5,
+    "claim_recall": 34.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.5,
+    "hallucination": 13.2,
+    "faithfulness": 31.7,
+    "noise_sensitivity": 17.3,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.040117"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем суть наивного байесовского классификатора?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The process involves tokenizing the input text into words and then applying word embeddings to each word, resulting in vector representations that can be used as features. \n\n**Step-by-Step Explanation:**\n\n1. **Tokenization**: Split the input text into individual tokens (words). For example, \"hello world\" becomes [\"hello\", \"world\"].\n\n2. **Embedding Application**: Convert each token into its corresponding word embedding vector using an embedding model like Word2Vec. Each token now has a dense vector representation.\n\n3. **Feature Extraction**: Use these embedded vectors as features for any machine learning task or model that expects text representations.\n\nThis approach allows the word2vec embeddings to be directly utilized without additional processing, making them suitable as input for various models.",
+      "rating": ""
+    }
+  ]
+}

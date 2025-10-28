@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1310",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 34.2,
+    "precision": 35.6,
+    "recall": 46.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.260685"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " SGD (Stochastic Gradient Descent) - это алгоритм оптимизации, используемый для решения задач машинного обучения. Его целью является найти такую точку в многомерном пространстве, которая является минимумом функции потерь.\n\nSGD работает так:\n1. Выбирается случайная запись из набора данных;\n2. Рассчитывается градиент функции потерь для этой записи;\n3. Исходные значения параметров модели корректируются в соответствии с градиентом, полученным ранее;\n4. Процедура повторяется несколько раз (обычно несколько тысяч или миллионов).\n\nАналогичный алгоритм оптимизации - Gradient Descent с фиксированной шагом потерь, в котором градиент для всех данных рассчитывается и используется для корректировки параметров. Следующая задача - реализовать SGD для решения логарифмической регрессии на данном примере с помощью NumPy.\n\nПример:\n```python\nimport numpy as np\n\ndef sgd(X, y, learning_rate=0.1, iterations=5000):\n    m = X.shape[0]\n    w = np.zeros(X.shape[1])  # инициализация вектора весов\n    for _ in range(iterations):\n        i = np.random.randint(m)  # выбор случайной записи\n        xi = X[i]\n        yi = y[i]\n        gradient = yi - (np.dot(xi, w))\n        w += learning_rate * gradient * xi\n    return w\n\nX = np.array([[1], [2], [3], [4], [5]])  # матрица входных данных\ny = np.array([2, 4, 5, 4, 5])  # вектор выходных данных\nw = sgd(X, y)  # решение задачи SGD\nprint(\"Решением SGD является вектор:\", w)\n```",
+      "rating": ""
+    }
+  ]
+}

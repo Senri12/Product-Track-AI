@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0960",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 42.7,
+    "precision": 50.3,
+    "recall": 48.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.299041"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Здесь приведены метод Нэштора для обновления весов в контексте одношагового градиентного спуска.\n\nВ данном случае требуется вычислить градиент ω по временному шагу `t-1` по формуле с учетом параметров `γ` и `v`, которые равны соответственно `0.9` и `1`. Также задана константа `∇`, которая равна `2`.\n\nФормула для градиента в ω по временному шагу `t-1` имеет вид:\n\n`dw_t = - γ * v_(t-1) * dw_t-1 + ∇ * (y_t - w^T_t-1 * x_t) * x_t`\n\nПри заданных параметрах формула будет выглядеть так:\n\n`dw_t = - 0.9 * 1 * dw_t-1 + 2 * (y_t - w^T_t-1 * x_t) * x_t`",
+      "rating": ""
+    }
+  ]
+}

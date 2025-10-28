@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0052",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 31.4,
+    "precision": 33.2,
+    "recall": 47.1,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.9,
+    "hallucination": 11.7,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.9,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.069736"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Адаптивный градиентный метод (Adam)**  \nАдаптивный градиентный метод, также известный как Adam, – это адаптационный алгоритм градиентного descent. Это метод, который позволяет обновлять параметры нейронных сетей более эффективно и усилить его на этапе обучения.  \n**Адаптивные шаги**means that the learning rate is automatically adjusted based on the history of gradients and parameters' values.  \n**Концепция**: adam combines two main approaches – fixed step size (similar to SGD) and momentum-based gradient updates (similar to AdaGrad). By combining these, it provides faster convergence and better performance compared to traditional optimization methods.  \n\n### Основные моменты:\n- **Adagrad**: Включает Adaptation of the learning rate based on the history of gradients. Каждый вектор градиента обновляется отдельно.\n- **Adam**: Средства: incorporates both AdaGrad and momentum-based approach, making it adaptive to the parameters' values over time.\n- **Библиотека TensorFlow**: Для реализации Adam-моделей. В библиотеке есть функция `tf.trainable_optimizer.Adam` для использования методаAdam.  \n\n**Определение**: Адаптивный градиентный метод (Adam) – это адаптационный алгоритм градиентного descent, который позволяет обновлять параметры нейронных сетей усилить на этапе обучения и корректно сопоставить градиенты.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0236",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 34.4,
+    "precision": 37.5,
+    "recall": 41.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 25.4,
+    "hallucination": 10.2,
+    "faithfulness": 33.3,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 6.5,
+    "timestamp": "2025-10-28T13:24:20.010376"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Опять же, для функции \\( L(w) = w^2 \\), current value\\( w = 3 \\), Learning Rate (\\( \\eta \\)) = 0.1:\n- Градиент (\\( \\nabla L \\)) = 2w = 6.\n- Step в SGD = градиент * Learning Rate = 6 * 0.1 = 0.6.\n\n**Ответ:** Стep в SGD равен 0.6.",
+      "rating": ""
+    }
+  ]
+}

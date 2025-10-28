@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0629",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 41.9,
+    "precision": 37.6,
+    "recall": 55.8,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 9.7,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.304734"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Если использовать линейный Learning Rate Decay с начальным значением η0 = 0.1, временем t = 5 и периодом T = 10, то learning rate на каждом шаге будет вычисляться по формуле:\n\nη(t) = η0 * (1 - t/T)\n\nНачальный learning rate равен η0 = 0.1, а в момент t = 5 пройдены половина периода T = 10, поэтомуlearning rate на этом шаге будет:\n\nη(5) = 0.1 * (1 - 5/10) = 0.1 * (1 - 0.5) = 0.05\n\nВ итоге, Learning Rate Decay с линейным падением будет иметь начальное значение η0=0.1 и вычисляться по формуле η(t) = 0.1 * (1 - t/T), где t - текущий шаг обучения, а T - общее количество шагов в периоде.",
+      "rating": ""
+    }
+  ]
+}

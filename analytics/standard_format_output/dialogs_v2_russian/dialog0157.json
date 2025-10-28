@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0157",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 34.7,
+    "precision": 37.0,
+    "recall": 43.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.971073"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вероятность класса в классе Naive Bayes рассчитывается путем применения формулы вероятности, которая равна:\n\nP(class) = P(Naive Bayes|x)\n\nгде x представляет собой набор данных.\n\nДля решения этой задачи мы можем использовать следующую формулу:\n\nP(class|x) = (P(x|class)) × P(class)\n\nгде P(x|class) — вероятность наблюдения набора данных, соответствующего классу.\n\nИспользуя данные и методы, мы получаем значения:\n\n* P(Naive Bayes|x): 0,2\n* P(class|x): 0,8\n\nПодставив эти значения в формулу, мы получим:\n\nP(class|x) = (P(x|Naive Bayes)) × P(class)\n= (0,2) × 0,8\n= 0,16\n\nСледовательно, вероятность класса «Наivity Бейс» равна 16%.",
+      "rating": ""
+    }
+  ]
+}

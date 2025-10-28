@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0286",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 31.7,
+    "precision": 32.3,
+    "recall": 53.0,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.7,
+    "hallucination": 10.8,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.4,
+    "self_knowledge": 6.4,
+    "timestamp": "2025-10-28T13:24:20.049660"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "AUTograd不住automatic differentiation — это техника, которая позволяет automaticly compute derivatives of a function with respect to its inputs. В practice, это включает градиентные шаги и автоматическое обновление параметров с учетом памяти о предыдущих градиентах. Это важно для улучшения обработки данных и стабильности нейронных сетей.\n\n В TensorFlow и Keras есть оптимизаторы с momentum, таких как MomentumSGDOptimizer, которые используют autograd不住automatic differentiation для градиентных шагов и оптимизации. Они обновляют параметры нейронной сети как:\n\n ω^(t) = ω^(t−1) − η (momentum * gradient + damping * previous weight)\n\nгде η — learning rate, momentum — weighing coefficient for the current gradient, damping — coefficient to dampen the velocity.\n\n Это позволяет автоматически обновлять параметры нейронной сети с учетом памяти о предыдущих градиентах и локальных state.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2472",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 35.5,
+    "precision": 37.9,
+    "recall": 46.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.961659"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы найти расстояние между точками (x1, y1) = (1, 2) и (x2, y2) = (3, 4), мы можем использовать формулу Евклида:\n\nРасстояние = √((х2 - х1)^2 + (й2 - я1)^2)\n\nВ этой case, x1 = 1, y1 = 2, x2 = 3, и y2 = 4.\n\nРасстояние = √((3 - 1)^2 + (4 – 2)^2)\n= √(2^2 + 2^2)\n= √(4 + 4)\n= √8\n\nУпрощая дальше:\n\n√8 = √(4*2)\n= √4 * √2\n= 2√2\n\nИтак, расстояние между точками (1, 2) и (3, 4) равное 2√2.",
+      "rating": ""
+    }
+  ]
+}

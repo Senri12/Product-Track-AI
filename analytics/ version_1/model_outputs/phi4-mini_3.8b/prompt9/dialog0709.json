@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое over-fitting?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Explanation**\nOverfitting occurs when an algorithm or statistical model is trained on data to such an extent that it learns not just from the underlying patterns but also captures noise in the dataset as if they were meaningful features of those datasets.\n \n **Question for Student:**\n Can you think about a situation where over-fitting might occur, and why it's problematic?\n\n**Suggested Exercise:**\nTry training both a simple linear regression model on small data points (e.g., predicting house prices using only one feature like square footage) versus including many irrelevant features. Compare the results to see how adding noise can lead to poor performance when new datasets are introduced.\n\n**Feedback Loop:** \nOverfitting is problematic because it leads to models that work well with training and test sets but poorly generalize on unseen data, thus reducing their practical utility in real-world applications where we encounter varying circumstances.",
+    "rating": ""
+  }
+]

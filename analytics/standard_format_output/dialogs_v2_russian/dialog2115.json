@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2115",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.119533"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "После разума и изучения метода Laplace's law of succession, можно предположить, что P(win|spam) — это вероятность у successes в определенном опыте при измерении spam.\n\nПусть N — количество успехов вypory, а M — общее количество возможностей успеха. Тогда P(win|spam) = (N + 1)/(M + 1).\n\nПри large number of trials, вероятность P(win|spam) близко к uniform distribution.\n\nТаким образом, если N и M задаются конкретными числами, можно вычислить точное значение P(win|spam).",
+      "rating": ""
+    }
+  ]
+}

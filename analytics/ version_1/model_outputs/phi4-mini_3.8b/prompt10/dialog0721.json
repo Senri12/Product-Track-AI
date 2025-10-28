@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое метод k-ближайших соседей?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Method k-Nearest Neighbors (k-NN) is a simple yet powerful machine learning algorithm used in classification and regression tasks. It works by finding 'k' closest data points from your training dataset to an input point, then predicting the output based on these neighbors.\n\nIn terms of explanation depth:\n\n1. Basic Explanation: Imagine you have several pieces of fruit arranged randomly around with labels like \"apple\", \"banana\" etc., without knowing how they were labelled initially (this is our unsupervised learning scenario). Now imagine you're asked to label a new piece of unknown fruit based on its similarity or dissimilarity towards these already labeled fruits. You would pick the 'k' closest pieces and then decide which category your mystery fruit falls into.\n\n2. Intermediate Explanation: In k-NN, you choose an input point (let's say it's coordinates in 2-D space), find all data points that are within a certain distance from this unknown coordinate ('k'), sort them based on their closeness to the input point and select 'k' closest ones as your neighbors.\n\n3. Advanced Explanation: k-NN belongs under supervised learning algorithms; it uses labeled examples (training set) for prediction tasks like classification or regression problems, where each instance in training data has an associated target variable we want our model's predictions to match with the most closely possible outcome. The 'k' value is a user-defined parameter that determines how many neighbors should be taken into account when making these decisions.\n\nThe k-NN algorithm itself works as follows:\n\n1. A new point (an unknown instance) needs prediction.\n2. Find all instances in your dataset, calculate their Euclidean distance from the input data's coordinates to find out which are 'k' closest ones: Distance = √((x₂-x₁)² + (y₂-y₁)²)\n3. The new point is assigned a class label based on majority voting of its k nearest neighbors.\n\nThis simple concept can be expanded and applied in numerous ways, but the core idea remains about finding similarities among observations to predict unknown values!",
+    "rating": ""
+  }
+]

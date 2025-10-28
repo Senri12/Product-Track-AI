@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1380",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 7.5,
+    "precision": 7.4,
+    "recall": 31.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.180939"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To calculate ∇ω - γv_{t-1} in the context of Nesterov's acceleration method with γ = 0.9 and v = 1 (velocity), and given that ∇ equals 2, we simply perform subtraction:\n\n∇ω - γv_{t-1} = 2 - (0.9 * 1)\n              = 2 - 0.9\n              = 1.1\n\nSo the result of this calculation is 1.1.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое autograd?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": " Autograd является библиотекой Python, которая помогает в автоматическом вычислении градиентов функций и пространств многообразий. Она позволяет обучающимся легко решать задачи обратной дифференциации во время обучения нейронных сетей и других алгоритмов машинного обучения.\n\nДля начала, доступна простая функция `autograd.grad` для вычисления градиента вещественной функции отвечающей на вход вектора-аргумента:\n\n```python\nimport autograd.numpy as np\nfrom autograd import grad\n\ndef func(x):\n    return x**2 + 10*np.sin(x)\n\nf = func(np.array([1.0]))\ngrad_f = grad(func)(np.array([1.0]))\nprint(\"Function value:\", f)\nprint(\"Gradient of function:\", grad_f)\n```\n\nВ этом примере мы определили функцию `func` и вычислили ее значение для вектора-аргумента `[1.0]`. Затем мы использовали `grad` для получения градиента этой функции по этому аргументу, что выведет значения функции и её градиента.\n\nВ более сложных задачах может быть необходимо сначала создать функцию, которая возвращает градиент функции в качестве дополнительного аргумента, а потом использовать `autograd` для автоматического вычисления градиентов при обработке данных и обучении нейронной сети:\n\n```python\nimport autograd.numpy as np\nfrom autograd import grad\n\ndef mse_loss(y_true, y_pred):\n    return 0.5 * np.mean((y_true - y_pred)**2)\n\ndef mse_gradient(y_true, y_pred):\n    def _mse_loss(w):\n        return mse_loss(y_true, y_pred + w)\n    return grad(_mse_loss)(np.zeros_like(y_pred))\n\n# Начальные веса для нейронной сети\nweights = np.random.rand(20, 10)\n# Обучение нейронной сети на данных тренировочных\nfor x_train in train_data:\n    with autograd.record():\n        y_pred = net(x_train)\n        loss = mse_loss(y_true, y_pred)\n    grads = autograd.backprop(loss, weights)\n    weights -= learning_rate * grads\n```\n\nВ этом примере мы определили функцию `mse_loss` для вычисления среднеквадратичной ошибки между истинными значениями `y_true` и предсказанными `y_pred`. Затем мы определили `mse_gradient`, которая возвращает градиент этой функции по весам нейронной сети. Мы также использовали `autograd.record()` для отслеживания операций с помощью которой можно вычислить результат в обратном порядке и извлечь градиент. После этого мы можем использовать `autograd.backprop` для получения градиентов весов и обновлять их, чтобы учить нейронную сеть на тренировочных данных.",
+    "rating": ""
+  }
+]

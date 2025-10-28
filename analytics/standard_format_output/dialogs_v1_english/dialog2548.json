@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2548",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 27.4,
+    "precision": 29.2,
+    "recall": 44.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.923684"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Я могу помочь вам с этой задачей.\n\nАдаград - это алгоритм обратного скорости, используемый для вычисления таргетных значений. В этом случае нам даны предыдущие значения G_t (активности) и г_t-1 (предыдущее значение), η (направление нароста) и ε (epsilion, или ε-ю мера ошибки).\n\nИтак, мы можем составить уравнение:\n\nг_t = η * g_t - ε\n\nПодставив данные значения:\n\ng_t = 2\ng_{t-1,ii} = 4\nη = 0,1\nε = 1e-8\n\ng_t = 0,1 (поскольку η = 0,1 и ε = 1e-8)\n\nТеперь мы можем вычислить таргетную aktivность:\n\ng_t = 0,1 - 1e-8\n= 0,1 - 0,0009765625\n= 0,0990234375\n\nСледовательно, г_{t-1,ii} = 4.",
+      "rating": ""
+    }
+  ]
+}

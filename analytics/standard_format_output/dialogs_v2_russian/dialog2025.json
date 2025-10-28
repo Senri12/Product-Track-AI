@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2025",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.111351"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "P(win | spam) is calculated using Laplace's rule of succession, which estimates probabilities by adding pseudocounts for each possible outcome. Given S wins out of T spages, the formula becomes:\n\n\\[ P(\\text{win} | \\text{spam}) = \\frac{S + 1}{T + 2} \\]\n\nThis approach ensures that no single outcome is favored without data, providing a neutral starting point for probability estimation.",
+      "rating": ""
+    }
+  ]
+}

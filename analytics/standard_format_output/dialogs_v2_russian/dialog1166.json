@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1166",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 34.1,
+    "precision": 39.2,
+    "recall": 48.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.336322"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Объяснение: Стохастический градиентный спуск (SGD) - это метод оптимизации функции, состоящий в выборе случайного элемента из набора данных для каждого шага и обновлении веса в направлении минус grad L(w), где grad L(w) - градиент функции L по отношению к весу w. В этом конкретном случае, мы имеем квадратичную функцию L(w)=w^2 и начальное значение веса w=3. Шаг SGD задается learning rate (эта) - η=0.1\n\nВопрос к студенту: Какое новое значение веса будет получено в первом шаге SGD с learning rate = 0.1?\n\nУпражнение: Вычислите новое значение веса w после одного шага SGD с learning rate = 0.1.\n\nОбратная связь: Правильный ответ: Новое значение веса w=3 - 0.1*2*3 = 2.7.",
+      "rating": ""
+    }
+  ]
+}

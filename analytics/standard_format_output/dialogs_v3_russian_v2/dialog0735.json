@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0735",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 40.0,
+    "precision": 38.2,
+    "recall": 50.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.9,
+    "hallucination": 10.8,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 17.7,
+    "self_knowledge": 7.8,
+    "timestamp": "2025-10-28T13:24:20.283228"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Предположим, что словарь V содержит 7 слов (без учета повторений): win, ruble, again, drops, ways, get, rich. Применим сглаживание по Лапласу:\n\n$$\\mathsf P(X = \\text{win}| \\text{Класс} = \\text{спам}) = \\frac{1 + 1}{|V| + 7} = \\frac{2}{8} = \\frac{1}{4},$$\nгде |V| – количество слов в словаре.",
+      "rating": ""
+    }
+  ]
+}

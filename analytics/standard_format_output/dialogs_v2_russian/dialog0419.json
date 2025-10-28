@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0419",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 27.7,
+    "precision": 32.4,
+    "recall": 37.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.885715"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Давайте разберем это шаг за шагом.\n\nУ нас есть уравнениеLearning Rate Decay:\n\nη(t) = η0 \\* e^(-λt)\n\nгде η(t) —学习率 в времени t, η0 — initial learning rate, λ — константа learning rate decay и t — время, а T — максимальное время.\n\nДанные для этого уравнения:\nη0 = 0.1 (начальный learning rate)\nt = 5 ( timing period )\nT = 10 (max time)\n\nМы хотим найти λ.\nНам дано это:\n\nη(t) = η0 \\* e^(-λt)\n0.1 = 0,1 \\* e^(-λ \\* 5)\n\nЧтобы решить для λ, мы можем начать с того, что умножаем обе части уравнения на 10:\n\n1 = e^(-5λ)\n\nПоскольку основание (e) равно примерно 2,63, мы можем записать это как:\n\n1/2,63 ≈ e^(-5λ)\n\nТеперь давайте принимаем обратную функцию natural logarithm (ln):\n\nln(1/2,63) ≈ -5λ\n\nТеперь мы можем найти λ:\n\n-5λ ≈ ln(1/2,63)\n-5λ ≈ -0,693\nlambda ≈ 0,138\n\nИтак, константа learning rate decay η(t) = η0 \\* e^(-λt) составляет примерно 0,138.",
+      "rating": ""
+    }
+  ]
+}

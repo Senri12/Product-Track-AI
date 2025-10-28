@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0059",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 47.6,
+    "precision": 46.7,
+    "recall": 60.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.636061"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Okay, let's break down learning rate decay with these parameters:\n\n*   **η₀ (eta_0):** Initial learning rate = 0.1\n*   **t:** Time step = 5\n*   **T:** Total number of steps = 10\n*   **Linear:** The decay schedule is linear.\n\n**What does this mean?**\n\nA linear learning rate decay means that the learning rate decreases by a constant amount over each step.  Specifically, it's a straight line decline.\n\n**How is it calculated?**\n\nThe formula for linear learning rate decay is:\n\nη<sub>t</sub> = η₀ * (1 - t/T)\n\nWhere:\n\n*   η<sub>t</sub> is the learning rate at time step *t*\n*   η₀ is the initial learning rate\n*   t is the current time step\n*   T is the total number of steps\n\n**Let’s calculate the learning rate at t = 5:**\n\nη<sub>5</sub> = 0.1 * (1 - 5/10)\nη<sub>5</sub> = 0.1 * (1 - 0.5)\nη<sub>5</sub> = 0.1 * 0.5\nη<sub>5</sub> = 0.05\n\nTherefore, the learning rate at time step 5 is 0.05.\n\n**Do you want me to:**\n\n*   Explain the purpose of learning rate decay in more detail?\n*   Provide an example of how this would look graphically?\n*   Or, do you have a specific question about this calculation?",
+      "rating": ""
+    }
+  ]
+}

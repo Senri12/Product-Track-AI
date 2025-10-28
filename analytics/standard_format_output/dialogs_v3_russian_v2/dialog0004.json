@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0004",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В чем суть наивного байесовского классификатора?",
+    "f1": 34.9,
+    "precision": 37.3,
+    "recall": 45.9,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.9,
+    "hallucination": 11.9,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.072199"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем суть наивного байесовского классификатора?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Наивный байесовский классификатор основывается на формуле Пулиiningгона:\n\n$$\nP(Y = y | X) \\propto P(X|y) \\cdot P(Y=y)\n$$\n\nгде \\( P(X|y) \\) — вероятность появления текста X в категории y, а \\( P(Y=y) \\) — основная вероятность категории y.\n\nНо для улучшения результатов классификации стоит использовать сглаживание по Лапласу:\n\n$$\nP(X|y) = \\frac{c_y + \\text{количество слов } X \\text{ в категории } y}{r + |V| + \\text{количество слов } X \\text{ в категории } y}\n$$\n\nгде \\( r \\) — количество слов, которых не было видимо в письме, а \\( |V| \\) — общее количество слов в словаре.",
+      "rating": ""
+    }
+  ]
+}

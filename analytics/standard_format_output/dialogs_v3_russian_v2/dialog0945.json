@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0945",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 32.5,
+    "precision": 30.4,
+    "recall": 52.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.5,
+    "hallucination": 13.1,
+    "faithfulness": 31.0,
+    "noise_sensitivity": 20.7,
+    "self_knowledge": 5.8,
+    "timestamp": "2025-10-28T13:24:20.129024"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для P(win|спам) с использованием метода корней Лапласа ниже:\n\nP(win|спам) = (количество слов win в спам-письмах + 1) / ( количество слов в всем спам-словаре + количество слов win в спам-письмах + 1)\n\nВ данном случае, последнее счислим так:\n\nP(win|спам) = (1 + 1) / (8 + 7 + 2) = 2 / 17 ≈ 0.117647\n\nЭто означает, что вероятность, что слово \"win\" встречается в письме, которое находится в категории <<спам>>, составляет примерно 0.117647.",
+      "rating": ""
+    }
+  ]
+}

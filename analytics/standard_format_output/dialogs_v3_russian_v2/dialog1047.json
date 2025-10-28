@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1047",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 32.9,
+    "precision": 31.3,
+    "recall": 50.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.9,
+    "hallucination": 13.4,
+    "faithfulness": 31.0,
+    "noise_sensitivity": 20.7,
+    "self_knowledge": 5.6,
+    "timestamp": "2025-10-28T13:24:20.137651"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления `v_t` в методе моментов (Momentum) с параметром градиента (γ) равным 0.9, прошлому значением `v_{t-1}` равным 1 и коэффициентами обучения (η) равным 0.1, используйте следующую формулу:\n\n`v_t = γ * v_(t − 1) − η * ∇L`\n\nПодставляя данные в эту формулу:\n\n`v_t = 0.9 * 1 - 0.1 * 2`\n\nВычислим:\n\n`v_t = 0.9 - 0.2`\n\n`v_t = 0.7`\n\nТаким образом, значение `v_t` равно 0.7.",
+      "rating": ""
+    }
+  ]
+}

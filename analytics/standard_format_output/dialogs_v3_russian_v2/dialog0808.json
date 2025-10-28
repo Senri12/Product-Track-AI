@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0808",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 41.3,
+    "precision": 39.4,
+    "recall": 52.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.2,
+    "hallucination": 7.4,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 20.1,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-10-28T13:24:20.273430"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " The question seems to be about the update rule for the parameters in the Adagrad algorithm for optimization. Here is the formula for updating the i-th parameter of the model using the Adagrad algorithm with the given initializations and learning rate:\n\nd_t = (g_t - E[g]) / sqrt(G_{t-1,ii} + \\epsilon)\nw_t = w_{t-1} - η * d_t\n\nwhere:\n- g_t is the gradient of the objective function with respect to the i-th parameter at time step t.\n- E[g] is the average gradient over all past time steps, calculated as a moving average.\n- G_{t-1,ii} is the running total of squared gradients for the i-th parameter up to time step t-1.\n- η is the learning rate.\n- \\epsilon is a small value added to avoid division by zero.\n\nIn your question, G_ {t-1, ii} = 4 and g_t = 2, so we can calculate d_t as:\n\nd_t = (2 - E[g]) / sqrt(4 + \\epsilon)\n\nAfter that, you can use this value of d_t to update the i-th parameter w_t using the learning rate η = 0.1:\n\nw_t = w_{t-1} - 0.1 * d_t",
+      "rating": ""
+    }
+  ]
+}

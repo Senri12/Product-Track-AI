@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0287",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое TensorFlow?",
+    "f1": 31.7,
+    "precision": 32.3,
+    "recall": 53.0,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.7,
+    "hallucination": 10.8,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.4,
+    "self_knowledge": 6.4,
+    "timestamp": "2025-10-28T13:24:20.049961"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое TensorFlow?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "TensorFlow — это opensource библиотека для машинного обучения, разработанная компанией Google. Она позволяет построить и тренировку нейронных сетей, используя графы вычислений, автоматизирующий процесс дифференцирования градиентов. automatically differentiating computation.\n\nОсновные моменты:\n\n1. **Граф вычислений**: TensorFlow предоставляет структуру графа вычислений, где каждое слой является слоем, а каждая операция на этом слое обновляется по ходу gradient descent.\n\n2. **Аutomatic Differentiation (AD)**: TensorFlow позволяет automatic differentiation compute градиентов efficiently, автоматизируя процесс manually computation of derivatives.\n\n3. **Библиотека**: Она включает в себя множество феноменов нейронных сетей, таких как convolutional neural networks, recurrent neural networks и feedforward nets.\n\n4. **Примеры usage**:\n   - Разработка нейронных сетей для классификации текста.\n   - Прогнозирования фьючерма.\n   - Обучение рекурентных структур в обработке последовательностей данных.\n\n5. **Уspeedенность**: TensorFlow позволяет work withGPU accelerate compute, и use TPUs for even greater performance.\n\n6. **Создание графа вычислений**:\n   - Используется autograd, который автоматическиcomputes градиенты для каждого слоя в графе.\n   - Результат графа вычислений позволяет optimize training speed.\n\n7. **Экстремальные возможности**: TensorFlow supporte high-level API for building networks, including dynamic computation of gradients.\n\n8. **Особенности**: automatically differentiate computation supports deep learning tasks like image recognition, NLP, and time series analysis.\n\nВ итоге, TensorFlow — это мощный инструмент для разработки нейронных сетей с удобной структурой графа вычислений и автоматизацией градиентного спуска.\n  \nПосле этого я смогу более глубже понять того, что TensorFlow是什么呢 и как он помогает в построении и обучении нейronных сетей.",
+      "rating": ""
+    }
+  ]
+}

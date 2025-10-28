@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1049",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 32.9,
+    "precision": 31.3,
+    "recall": 50.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.9,
+    "hallucination": 13.4,
+    "faithfulness": 31.0,
+    "noise_sensitivity": 20.7,
+    "self_knowledge": 5.6,
+    "timestamp": "2025-10-28T13:24:20.138186"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Здесь используется линейный регулярный уменьшение обучения (learning rate decay) с коэффициентом линейного роста 0.2 за каждый шаг, т.е.,\n\nη = η₀ + k * t, где:\n- η₀ – начальный обучение, в данном случае равно 0.1\n- t – текущий шаг\n- k – коэффициент линейного роста\n- T – полностью завершенный шаг (в наших условиях T = 10)\n\nПо данным данные:\nη = 0.1 + 0.2 * t, где t может принимать значения от 0 до 4 (поскольку T = 10).\n\nВыражение для каждого шага будет выглядеть следующим образом:\nη_t = 0.1 + 0.2 * t, где t — текущий шаг.\n\nНапример, при t = 0: η₀ = 0.1, при t = 1: η₁ = 0.3, при t = 2: η₂ = 0.5, и так далее.",
+      "rating": ""
+    }
+  ]
+}

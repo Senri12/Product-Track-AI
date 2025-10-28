@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "η0 = 0,01\nt = 5\nT = 10\n\nМодель Adagrad:\n\n$$\\theta_{t + 1, i} = \\theta_{t, i} - \\frac{\\eta}{\\sqrt{G_{t, ii} + \\varepsilon}}g_{t, i}$$\n\nВ этом случае G(t) = G(t-1) + g(t, i)^2.\n\nМодель Adadelta:\n\n$$\\theta_{t + 1, i} = \\theta_{t, i} - \\frac{\\eta}{\\sqrt{G_{t, ii} + \\varepsilon}}g_{t, i}$$\n\nИмplementação Gadaul:\n\n$$\\theta_{t + 1, i} = \\theta_{t, i} - \\frac{\\eta}{\\sqrt{G_{t, ii} + \\varepsilon}}g_{t, i}$$\n$$G_{t + 1, i} = G_{t, i} + g_{t, i}^2$$\n\nМодели RMSProp и Adam:\n\n$$\\theta_{t + 1, i} = \\theta_{t, i} - \\frac{\\eta}{\\sqrt{G_{t, ii} + \\varepsilon}}g_{t, i}$$\n$$\\eta_{t + 1} = \\eta_0e^{-\\gamma t}$$\n\nгде γ — фазовый коэффициент, вычитаемый при обновлении learning rate.",
+    "rating": ""
+  }
+]

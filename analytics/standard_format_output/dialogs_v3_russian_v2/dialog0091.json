@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0091",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое метод k-ближайших соседей?",
+    "f1": 36.1,
+    "precision": 36.5,
+    "recall": 46.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.2,
+    "hallucination": 8.6,
+    "faithfulness": 35.7,
+    "noise_sensitivity": 21.8,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.059515"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод k-ближайших соседей?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод k-ближайших соседей (метод k-near neighbors) – это алгоритм классификации, основанный на ближней к тестовым объектам данных из тренировочного набора. Классификация производится следующим образом:\n\n1. Для каждого тестового объекта вычисляется расстояние до каждого объекта из тренировочного набора.\n2. Отличные объекты (тестовых) перенумеруются по ним в порядке неубывания расстояний.\n3. Классы, соответствующие перенумерованным тестовым объектам, упорядочены согласно их ближнейшим к Testedу объектам.\n4. Основной класс (предоставленный в алгоритме) – это класс, который встречается Most Frequent среди первых k объектов из тренировочного набора.\n\nМетод k-near neighbors является метрическим алгоритмом расстояния, так как Larger distances imply Larger differences in numeracy.",
+      "rating": ""
+    }
+  ]
+}

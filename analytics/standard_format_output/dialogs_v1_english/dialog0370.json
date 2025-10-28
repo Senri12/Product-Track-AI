@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0370",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 47.3,
+    "precision": 44.3,
+    "recall": 61.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.603593"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Okay, let's break down the differences between k-NN (k-Nearest Neighbors) and Weighted k-NN.  I'll focus on the core concepts and how they differ, referencing key aspects of the algorithms as they're typically presented.\n\n**k-NN (k-Nearest Neighbors) - The Basics**\n\nAt its heart, k-NN is a supervised learning algorithm used for both classification and regression.  Here’s what's important to know:\n\n* **Distance Metric:** k-NN relies heavily on a distance metric to measure the similarity between data points. The most common is Euclidean distance (straight-line distance), but other metrics like Manhattan distance or cosine similarity can be used.  Specifically, the formula for Euclidean distance between two points (x, y) and (x', y') is:  √((x - x')² + (y - y')²) (as stated in most introductory materials).\n* **Finding Neighbors:** Given a new data point (the one we want to classify/predict), k-NN calculates the distance to *every* other point in the training dataset. It then selects the *k* points with the smallest distances – these are the “k-nearest neighbors.”\n* **Prediction:**\n    * **Classification:** The class label of the *majority* class among those *k* neighbors is assigned to the new point.  (This is a common, though not the only, method – as explained in many introductory materials).\n    * **Regression:** The average (mean) of the target values of those *k* neighbors is assigned to the new point.\n* **Parameter 'k':** This is a crucial parameter.  It determines how many neighbors are considered when making a prediction.  Choosing an appropriate 'k' is key to good performance.  (This is highlighted in most explanations of the algorithm).\n\n\n**Weighted k-NN - Adding Importance**\n\nWeighted k-NN builds upon the basic k-NN algorithm by introducing a weighting scheme.  Here's what changes:\n\n* **Weight Assignment:** Instead of all neighbors being equally important, each neighbor is assigned a weight. These weights can be determined in several ways:\n    * **Distance-based:** Neighbors closer to the new point receive higher weights, and the weighting function typically decreases as the distance increases (e.g., an exponential decay).  A common function is  e^(-(distance)/σ), where σ is a scaling factor (often related to the standard deviation of the distances – as explained in many algorithm descriptions).\n    * **Other criteria:** Weights could be based on feature values, domain knowledge, or other factors.\n* **Weighted Average/Majority:**  Instead of simply taking the majority class or calculating the average, the prediction is determined by a weighted average or weighted majority.  For example, the final prediction would be the class that has the highest weighted sum of votes from the neighbors.  (This is explicitly stated in more advanced explanations of the algorithm).\n\n\n**Key Differences Summarized**\n\n| Feature          | k-NN                 | Weighted k-NN         |\n|------------------|----------------------|-----------------------|\n| **Neighbor Importance** | All neighbors equal  | Neighbors have different weights |\n| **Weighting**      | No weighting          | Uses a weighting function |\n| **Prediction**     | Majority/Average      | Weighted average/majority |\n\n\n**Now, let’s check your understanding.**\n\n1.  Can you describe, in your own words, the primary difference between how k-NN and Weighted k-NN determine a prediction?\n2.  Why might a weighting scheme be beneficial in certain situations?  Think about the data you're working with – could certain features or types of data be more influential than others?",
+      "rating": ""
+    }
+  ]
+}

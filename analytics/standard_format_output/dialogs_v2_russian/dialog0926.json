@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0926",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 41.6,
+    "precision": 49.5,
+    "recall": 49.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.359779"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Шаг поградиентного спуска (SGD) для функции $L(w)=w^2$ со значением веса $w=3$ и шагом обучения $\\eta=0.1$ будет равен:\n\n$\\Delta w = - \\eta \\cdot \\nabla L(w) = -\\eta \\cdot 2w = -0.1 \\cdot 6 = -0.6$\n\nПоэтому после одного шага поградиентного спуска вес $w$ изменяется на $-0.6$.",
+      "rating": ""
+    }
+  ]
+}

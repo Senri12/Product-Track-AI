@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1838",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое расстояние Чебышёва?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.035350"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое расстояние Чебышёва?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Расстояние Чебышёва (Chebyshev) между двумя точками определяется какaxmax{|xi - xj|, |yi - yj|}, то естьMaximum из distances по оси X и по оси Y. Это означает, что расстояниеdepends на maximize из этих расстояний. Важно отметить, что this metric is often used in scenarios where the worst-case scenario is most important, such as in data analysis or when dealing with factors that need to be considered together. Unlike Euclidean distance, which takes into account all dimensions, Chebyshev distance can result in a non-linear and less sensitive measure.\n\n< reference >",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2210",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.007226"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Stochastic Gradient Descent (SGD): A Comprehensive Explanation**\n\n1. **Definition**: SGD stands for Stochastic Gradient Descent, a popular optimization algorithm used in machine learning to minimize an objective function by iteratively updating parameters.\n\n2. **Key Components**:\n    - **Initialization**: Parameters are initialized randomly.\n    - **Loss Calculation**: For each example (or mini-batch), the loss is computed based on the current parameter values.\n    - **Weight Update**: Gradients of the loss with respect to each parameter are calculated, and the parameters are updated in the direction opposite to the gradient. This is often done using an optimization method like Adam or RMSprop.\n\n3. **Applications**:\n    - Used in training deep neural networks for tasks like image recognition.\n    - Applied in natural language processing for text classification and recommendation systems where data may be large and not entirely available at once.\n\n4. **Practical Example Walkthrough**: Similar to the provided example, let's consider a simple dataset (e.g., MNIST) using SGD:\n    - **Initialization**: Weights are set randomly.\n    - **Loss Calculation**: For each digit in the dataset, compute loss.\n    - **Weight Update**: Update weights based on gradients of loss for each example.\n    - **Iteration**: Repeat until minimum is reached or convergence criteria met.\n\n5. **Practice Problems**:\n    - Select a dataset (e.g., MNIST) and manually perform multiple iterations using SGD to minimize the loss function, similar to the detailed steps provided.\n\nIn summary, SGD efficiently handles large datasets by processing one example at a time, making it suitable for complex models where batch processing is computationally expensive.",
+      "rating": ""
+    }
+  ]
+}

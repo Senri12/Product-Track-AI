@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0925",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 48.6,
+    "precision": 50.1,
+    "recall": 55.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.298991"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " RMSProp (Root Mean Square Propagation) is an optimization algorithm used during training in machine learning to update the weights of a neural network model. It's a variation of gradient descent, where the moving average of squared gradients is calculated for each parameter and then used to scale the step size (learning rate). This helps the model adapt to different learning rates for different parameters, which can improve its convergence and reduce sensitivity to the choice of initial learning rate. It was first proposed by Geoffrey Hinton in 2010.",
+      "rating": ""
+    }
+  ]
+}

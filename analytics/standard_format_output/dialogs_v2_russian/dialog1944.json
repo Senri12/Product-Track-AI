@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1944",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое метод Ньютона?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.048420"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод Ньютона?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Метод Ньютона — это один из методов итерационного вычисления корней уравнений. Он является стабильным и эффективным в很大程度е, но на практике требует определения непрерывности и дифференцируемости функции, а также обнаружения правильных начальных приближений к корню.\n\nРассмотрим уравнение \\( f(x) = 0 \\). Метод Ньютона starts with an initial approximation \\( x_0 \\) of the root. Then,迭代atively improves this estimate using the formula:\n\n\\[\nx_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}\n\\]\n\nгде \\( f'(x_n) \\) — это производная функции в точке \\( x_n \\). Метод relies heavily on the accuracy of the initial guess and the behavior of the function near the root.",
+      "rating": ""
+    }
+  ]
+}

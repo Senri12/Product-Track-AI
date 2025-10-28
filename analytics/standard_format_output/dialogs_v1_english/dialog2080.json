@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2080",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.034815"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The difference between k-Nearest Neighbors (k-NN) and Weighted k-Nearest Neighbors (Weighted k-NN) lies in how the influence of each neighbor is determined. Here's a structured explanation:\n\n1. **Classification Basics**:\n   - Both methods classify by examining nearby data points, known as neighbors.\n   - The most commonly used distance metric is Euclidean or Manhattan.\n\n2. **k-Nearest Neighbors (k-NN)**:\n   - **Approach**: Classifies based on the majority vote of its k nearest neighbors.\n   - Each neighbor has equal weight, contributing equally to the classification outcome.\n\n3. **Weighted k-Nearest Neighbors (Weighted k-NN)**:\n   - **Influence Assignment**: Each neighbor is assigned a weight that typically decreases with distance from the target point.\n   - Closer neighbors receive higher weights, significantly influencing their contributions during classification.\n\n4. **Mathematical Weighting**:\n   - Weights are often inversely proportional to distance (e.g., weight = 1/d).\n   - The sum of all weights equals one, ensuring proper normalization.\n\n5. **Impact on Classification**:\n   - Proximity influences class prediction more than distant neighbors.\n   - This can lead to better performance by reducing noise and focusing on local classes.\n\n6. **Practical Considerations**:\n   - Weighting is useful when k-NN lacks sufficient detail for accurate classification.\n   - It enhances generalization by considering local data points.\n\n7. **Example Scenario**:\n   - In a dataset with two very close neighbors, one moderately distant neighbor, and a far neighbor.\n   - Weighted voting would assign higher weights to the close ones, potentially influencing class predictions more strongly.\n\nIn conclusion, weighted k-NN enhances classification accuracy by assigning greater weight to closer neighbors, providing better performance in noisy environments.",
+      "rating": ""
+    }
+  ]
+}

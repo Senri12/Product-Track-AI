@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0235",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 34.4,
+    "precision": 37.5,
+    "recall": 41.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 25.4,
+    "hallucination": 10.2,
+    "faithfulness": 33.3,
+    "noise_sensitivity": 18.2,
+    "self_knowledge": 6.5,
+    "timestamp": "2025-10-28T13:24:20.010115"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (Root Mean Square Propagation) – это метод оптимизации нейронных сетей, который предполагает уменьшение градиентов при их изображении на основе предыдущих шагов. Он позволяет использовать большие learning rates при过大ших gradients и smaller steps при низших gradients, что улучшает сходимость и с任期ность.\n\nРасчет rmsprop:\n\\[\nW_{t} = W_{t-1} - \\eta \\cdot \\frac{g(t)}{\\sqrt{\\text{mean}(g^2)}}\n\\]\nгде:\n- \\( W_t \\) – currently updated weights\n- \\( g(t) \\) – current gradient\n- \\( \\eta \\) – learning rate\n- mean(g²) – среднееquares gradient\n\nЭтот метод подходит для улучшения сходимости и снижения ошибка в神经 сетях.",
+      "rating": ""
+    }
+  ]
+}

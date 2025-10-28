@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0899",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 41.4,
+    "precision": 36.6,
+    "recall": 58.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.8,
+    "hallucination": 10.7,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 19.2,
+    "self_knowledge": 6.4,
+    "timestamp": "2025-10-28T13:24:20.279345"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " По данному уравнению для линейного learning rate decay:\nη(t) = η0 - (t/T) * (η0 - ηf), где η0 - начальное значение learning rate, t - текущая итерация, T - общее количество итераций, ηf - конечное значение learning rate.\n\nВ данном случае:\nη0 = 0.1, t = 5, T = 10.\n\nЗначит,\nη(5) = 0.1 - (5/10) * (0.1 - ηf).\n\nТак как конечное значение learning rate не указано, невозможно полностью вычислить значение learning rate после 5 итераций. Однако можно найти начальное и конечное значения:\nη(0) = η0 = 0.1\nη(T) = ηf.\n\nПримечание: Если вы не знаете значение конечного learning rate, то в практике обычно используют следующие значения:\n- для Adam - 1e-8 или 0\n- для SGD - 0\n\nПоэтому в данном случае можно предположить, что после 10 итераций learning rate будет равен нулю.",
+      "rating": ""
+    }
+  ]
+}

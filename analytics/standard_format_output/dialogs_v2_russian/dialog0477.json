@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0477",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 51.2,
+    "precision": 59.8,
+    "recall": 61.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.859972"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления нового значения переменной Momentum (v_t) используем формулу momentum обновления:\n\n\\[ v_t = \\gamma \\cdot v_{t-1} + \\eta \\cdot \\nabla L \\]\n\nгде:\n- \\( \\gamma \\) — коэффициент momentum (0.9),\n- \\( v_{t-1} \\) — значение Momentum на предыдущем шаге (1),\n- \\( \\nabla L \\) — градиент лошадиный жира по потоку данных (2),\n- \\( \\eta \\) — учётчик обучения (0.1).\n\nПодставляем значения в формулу:\n\n\\[ v_t = 0.9 \\cdot 1 + 0.1 \\cdot 2 \\]\n\\[ v_t = 0.9 + 0.2 \\]\n\\[ v_t = 1.1 \\]\n\nТаким образом, новое значение Momentum (v_t) равно 1.1.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1359",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 33.7,
+    "precision": 30.9,
+    "recall": 53.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.1,
+    "hallucination": 11.2,
+    "faithfulness": 34.9,
+    "noise_sensitivity": 21.2,
+    "self_knowledge": 3.9,
+    "timestamp": "2025-10-28T13:24:20.079125"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Классифицирование писем в контексте спама с использованием байесового алгоритма можно описать следующим образом:\n\n1. **Определение а priori вероятностей**: Сначала определяются частоты встречаемости классов в тренировочном наборе данных. Это, например, количество писем спама и не спама на общей дате.\n\n2. **Оценка условных вероятностей**: Для каждого слова в писке оцениваются их распределения по классам. Например, для слова \"whitespaces\" вычисляется вероятность что-то в спаме и не в спаме.\n\n3. **Использование Bayes theorem**: Для каждого писка с updated а priori вероятностей и условных вероятностях обновляются, чтобы находить most probable class.\n\nТаким образом, our model может выглядеть-like Naive Bayes с предположением наивности предикторов.",
+      "rating": ""
+    }
+  ]
+}

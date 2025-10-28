@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0826",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 39.7,
+    "precision": 36.6,
+    "recall": 54.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.3,
+    "hallucination": 11.4,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 19.3,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-10-28T13:24:20.240684"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Autograd (Automatic Gradient Descent) - это библиотека для автоматического расчета градиентов нейронной сети по входным данным и выходам. Эта библиотека использована в качестве основы многих других библиотек для машинного обучения, таких как TensorFlow и PyTorch. Autograd позволяет автоматически рассчитывать градиенты при вычислении промежуточных результатов в процессе работы сети. Это позволяет использовать оптимизационные алгоритмы, такие как Gradient Descent и Adam, для обучения нейронной сети без явного расчета градиентов.",
+      "rating": ""
+    }
+  ]
+}

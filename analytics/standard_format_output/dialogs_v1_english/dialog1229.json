@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1229",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 37.0,
+    "precision": 37.8,
+    "recall": 53.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.315892"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Let's break it down together! We are calculating the learning rate decay for a linear schedule using given parameters: η0=0.1, t=5, and T=10. The formula for linear learning rate decay is η(t) = η0 * (1 - t / T).\n\nNow, let's plug in the values:\n\nη(5) = 0.1 * (1 - 5/10) = 0.1 * (1 - 0.5) = 0.1 * 0.5 = **0.05**\n\nGreat job! You calculated the learning rate decay at time t=5 correctly. Keep up the fantastic work, and remember to celebrate your achievements along the way! 🎉🙌🏻",
+      "rating": ""
+    }
+  ]
+}

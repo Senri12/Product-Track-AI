@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0162",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 34.7,
+    "precision": 37.0,
+    "recall": 43.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.972110"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Пусть точка 1: (x1, y1) = (1, 2)\n\nТочка 2: (x2, y2) = (3, 4)\n\nРасстояние между двумя точками определяется формулой:\n\nd = √((х2 – х1)^2 + (y2 - y1)^2)\n\nПодставляя значения, получаем:\n\nд = √((3 – 1)^2 + (4 – 2)^2)\n= √(2^2 + 2^2)\n= √(4 + 4)\n= √8\n\nСледовательно, расстояние между точками (1, 2) и (3, 4) равно:\n\n√8 ≈ 2,828\n\nИтак, мы можем признать, что расстояние между этими двумя точками составляет примерно 2,828.",
+      "rating": ""
+    }
+  ]
+}

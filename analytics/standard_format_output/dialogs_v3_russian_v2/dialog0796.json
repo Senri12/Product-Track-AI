@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0796",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 41.3,
+    "precision": 39.4,
+    "recall": 52.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.2,
+    "hallucination": 7.4,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 20.1,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-10-28T13:24:20.271380"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Autograd - это компьютерная библиотека, использующая автоматическую дифференциацию для вычисления градиентов функций с помощью обратимых операторов и обратных пропаганды (backpropagation) в обратном порядке. Эта библиотека часто используется для оптимизации параметров моделей машинного обучения, таких как нейронные сети. Autograd обеспечивает автоматическую дифференциацию любых вычислений в Python и Pytorch, которые совершаются с помощью обратимых операторов. Эта библиотека используется для реализации многих современных алгоритмов обучения нейронных сетей, таких как Adam, RMSProp и другие, которые были описаны в предыдущем ответе.",
+      "rating": ""
+    }
+  ]
+}

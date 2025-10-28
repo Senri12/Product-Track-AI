@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0836",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 39.7,
+    "precision": 36.6,
+    "recall": 54.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.3,
+    "hallucination": 11.4,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 19.3,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-10-28T13:24:20.242522"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Шаг в SGD для заданной функции потерь L(w) = w^2 и начальных значений w = 3 и η = 0.1 будет вычисляться как градиент этой функции, умноженный на learning rate (étа).\n\nГрадиент этой квадратичной функции имеет следующую форму:\n\n∇L(w) = 2w\n\nПоэтому шаг будет вычисляться как произведение градиента и learning rate:\n\nΔw = - η * ∇L(w) = - 0.1 * 2*3 = - 0.6\n\nТаким образом, после одного шага обучения вес w будет уменьшен на 0.6.",
+      "rating": ""
+    }
+  ]
+}

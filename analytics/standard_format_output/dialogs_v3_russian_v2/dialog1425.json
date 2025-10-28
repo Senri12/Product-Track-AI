@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1425",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 33.7,
+    "precision": 39.6,
+    "recall": 44.6,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.3,
+    "hallucination": 10.5,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 19.0,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.021968"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В our example, we need to calculate \\( P(\\text{win} | \\text{spAM}) \\) using Laplace smoothing. Here's the step-by-step explanation:\n\n1. **Determine the frequencies in spam and non-spam:**\n   - In spam pисьма:\n     - win: 2 (original count + 1)\n     - million: 3\n     - ruble: 2\n     - get: 2\n     - rich: 2\n   - Total words in spam: \\( 2 + 3 + 2 + 2 + 2 = 11 \\)\n   - Unique words in spam: 5\n\n2. **Apply Laplace smoothing (adding 1 to each word frequency):**\n   - P(win | spAM) = \\( \\frac{1 + 1}{11 + 4} = \\frac{2}{15} \\)\n\n**Answer:**  \n\\( P(\\text{win} | \\text{spAM}) = \\frac{2}{15} \\)",
+      "rating": ""
+    }
+  ]
+}

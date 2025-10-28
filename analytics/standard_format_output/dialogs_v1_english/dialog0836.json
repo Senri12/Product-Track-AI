@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0836",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 31.1,
+    "precision": 37.0,
+    "recall": 56.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.738960"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы выполнить один шаг стоячей стояночной迭代 (SGD) для функции L(w) = w² при начальном значении w = 3 и коэффициенте обучения η = 0.1, мы будем следовать формуле SGD:\n\nw_new = w_old - η * ∂L/∂w\n\nСначала нам нужно найти производную L по отношению к w:\n\n∂L/∂w = ∂(w²)/∂w = 2w\n\nТеперь введите начальные значения и коэффициент обучения:\n\nw_old = 3\nη = 0.1\n∂L/∂w (при w=3) = 2 * 3 = 6\n\nТеперь примените формулу SGD, чтобы найти новый значение w:\n\nw_new = w_old - η * ∂L/∂w\nw_new = 3 - 0.1 * 6\nw_new = 3 - 0.6\nw_new = 2.4\n\nТаким образом, после одного шага стоячей стояночной迭алки значения w изменится с начального значением в 3 на новое значение в 2.4.\n\nПожалуйста, подумайте о последствиях изменения коэффициента обучения η или начального значения w на результат SGD.",
+      "rating": ""
+    }
+  ]
+}

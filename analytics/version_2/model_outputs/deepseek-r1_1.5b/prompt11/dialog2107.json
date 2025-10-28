@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как вычислить вероятность класса в Naive Bayes?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "ВNaive Bayes алгоритме вычисляется вероятность класса через формулу:\n\n\\[ P(Class=k | Observation) = \\frac{P(Observation | Class=k) \\times P(Class=k)}{\\sum_{k'=1}^{K} P(Observation | Class=k') \\times P(Class=k')} \\]\n\nгде:\n- \\( P(Class=k | Observation) \\) — вероятность того, что объект classbelongs с определенным классом.\n- \\( P(Observation | Class=k) \\) — вероятность observing some data (features) given a particular class (likelihood).\n- \\( P(Class=k) \\) — общая вероятность сформированная на training set.\n- \\( K \\) — количество различных классов в train data.\n\nЭта формула показывает, как через multiplication likelihoods и priors для каждого класса делённое на общее количество объектов в train data, можно определить вероятность того, что объект classbelongs с определенным классом.",
+    "rating": ""
+  }
+]

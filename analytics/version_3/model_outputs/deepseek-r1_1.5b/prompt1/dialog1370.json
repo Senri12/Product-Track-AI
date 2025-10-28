@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое SGD?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "SGD, отrecipeSGD stands for Stochastic Gradient Descent. Оно – это метод оптимизации, который используется дляminimизации функцииloss в нейронных сетях и других моделях машинного обучения.\n\nОсновной аспект SGD в том, что градиент обновляется на основе случайно выборенного批量а данных. Это contrastsive с batch GD, где градиент рассчитывается по всем ядрам данных. SGD использует learning rate для обновления градиента и learnign rate, который может увеличиваться или уменьшаться в зависимости от условия.\n\nВ SGD, learning rate часто фиксирован на каждом шаге или decreases/grows according to some rule. Если learning rate уменьшается, то метод Often called AdaptiveSGD (Adagrad, RMSprop, Adam), а если increases, then it is often called traditionalSGD.\n\nВSGD применяется в задачах с разреженными данными, так как градиенты обновляются по частям данных. В таком случае learning rate может быть фиксирован или уменьшаться с шагом.",
+    "rating": ""
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0446",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 29.0,
+    "precision": 32.0,
+    "recall": 42.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.943542"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы рассчитать шаг в SGД (Stochastic Gradient Descent) для функции уравнения `L(w) = w^2`, где `w` — вес, `η` — коэффициент вычисления gradients и `t` — индивидуальный шаг, мы имеем следующее уравнение:\n\nШаг в SGД = (Х - Х0) / t\n\nгде X – исходное значение w, Х0 — начальное значение w.\n\nПодставив заданные значения в уравнение, получим:\n\nШаг в SGД = (X - 3) / 10\n\nЧтобы рассчитать этот шаг, нам необходимо вычислитьGradient(L(w), w=3).\n\nМы можем сделать это с помощью библиотеки NumPy в Python:\n\n```python\nimport numpy as np\n\n# Данные для функции линейной функции уравнения L(w) = w^2\nw0 = 3\nX = 10  # Вариант X0\nt = 100  # Вариант t\n\n# Функция линейной функции u(x)\ndef u(x):\n    return x**2\n\n# Функция инициализацииgradienta вSGD\ndef grad_l(w, h):\n    grad = (u(h + η) - u(h)) / η\n    return grad\n\n# Рассчитайте шаг SGD\nh = w0\n шагSGD = (X - h) / t\n\nprint(f\"Шаг в SGД для функции L(w)=w^2, {t} индивидуальный шаг, w={h}\")\n```\n\nОбратите внимание, что шаг в SGД рассчитывается отдельно для каждого iterations. Если вы хотите использовать этот шаг на более целочисленной basis (например, на базе 100), вы можете изменить переменные t и η.\n\nДля дальнейих вычислений, чтобы вычислить точное значение w0, которое используется в SGД, подставьте h = 3:\nШаг в SGД для функции L(w)=w^2, t=100, h=3\n \nИспользуя приведенные выше шаги, вы получите следующий ответ:\n\nШаг в SGД для функции L(w)=w^2, t=100, w=3",
+      "rating": ""
+    }
+  ]
+}

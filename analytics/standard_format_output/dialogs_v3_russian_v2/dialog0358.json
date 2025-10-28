@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0358",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 28.6,
+    "precision": 37.2,
+    "recall": 32.1,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 26.2,
+    "hallucination": 15.9,
+    "faithfulness": 30.4,
+    "noise_sensitivity": 11.7,
+    "self_knowledge": 3.7,
+    "timestamp": "2025-10-28T13:24:19.947538"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Начнем с расчета значения градиента на предыдущем шаге.\n\nг_{t} = г_т - η * г_т - г_{t-1,ii}\nг_{t} = 2 - 0,1 * 2 - 4\nг_{t} = 2 - 0,2 - 4\nг_{t} = -2,8\n\nТеперь мы можем вычислить значение g_{t+1}, используя рекурсивную формулу:\n\ng_{t+1} = г_т + η * г_t + г_{t-1,ii}\nг_{t+1} = -2,8 + 0,1 * (-2,8) + 4\nг_{t+1} = -2,8 - 2,88 + 4\nг_{t+1} = -5,68\n\nТеперь мы можем вычислить значение g_{t-1,ii}, используя рекурсивную формулу:\n\ng_{t-1,ii} = г_{t-1,ii} - η * г_{t-1}\nг_{t-1,ii} = 4 - 0,1 * 4\nг_{t-1,ii} = 4 - 0,4\nг_{t-1,ii} = 3,6\n\nТеперь мы можем вычислить значение g_{t+2}, используя рекурсивную формулу:\n\ng_{t+2} = г_т + η * г_t + г_{t-1,ii}\ng_{t+2} = -5,68 + 0,1 * (-5,68) + 3,6\nг_{t+2} = -5,68 - 0,5688 + 3,6\nг_{т+2} = -2,4\n\nИтак, значение g_{t+2} равно -2,4.",
+      "rating": ""
+    }
+  ]
+}

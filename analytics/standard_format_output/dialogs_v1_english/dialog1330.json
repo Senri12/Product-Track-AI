@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1330",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 42.0,
+    "precision": 40.1,
+    "recall": 60.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.258508"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " The K-Nearest Neighbors (k-NN) algorithm is a popular instance-based learning method used for classification and regression tasks in machine learning. It works by finding the k-closest training examples to a new point in the feature space, then assigns the label or value of the new point based on the majority vote of its neighbors if it's a classification task, or taking the average of the labels/values of its k-nearest neighbors if it's a regression task.\n\nWeighted K-Nearest Neighbors (WkNN) is an extension of the standard k-NN algorithm that assigns different weights to each neighbor based on their distance from the new point. In this way, closer neighbors have more influence in determining the output compared to distant neighbors. The weights can be assigned using various methods such as inverse distance weighting, Gaussian distance decay, or power-law distance decay.\n\nThe main difference between k-NN and WkNN is that while both algorithms use the k nearest neighbors of a new point to make predictions, WkNN assigns different weights to these neighbors based on their distances from the new point, which makes it potentially more accurate than k-NN in certain cases. In particular, WkNN can be advantageous when dealing with imbalanced datasets or when there are significant variations in density among classes in the feature space.\n\nTo improve upon a simple k-NN algorithm, consider implementing WkNN by experimenting with different weighting methods and optimizing hyperparameters such as the number of neighbors (k) and the type of distance metric used. Additionally, consider comparing the performance of WkNN to other ensemble learning techniques, such as bagging or boosting, to determine the best approach for your specific problem.\n\nFollow-up questions:\n1. Can you provide an example of how weighted k-NN can improve the accuracy of a classification task compared to standard k-NN?\n2. How do Gaussian distance decay and power-law distance decay differ from inverse distance weighting, and what are their advantages/disadvantages in different scenarios?\n3. In what types of datasets might weighted k-NN be particularly beneficial, and when would it not be suitable to use compared to other machine learning algorithms?",
+      "rating": ""
+    }
+  ]
+}

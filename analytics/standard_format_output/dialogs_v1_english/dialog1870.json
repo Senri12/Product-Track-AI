@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1870",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.998449"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The primary difference between **k-Nearest Neighbors (k-NN)** and **Weighted k-Nearest Neighbors (weighted k-NN)** lies in the weighting mechanism applied to each of the nearest neighbors when making predictions. Here's a structured summary:\n\n1. **Standard k-NN**:\n   - All nearest neighbors are given equal weight in determining the class of the new instance.\n   - Each neighbor contributes equally based solely on their distance from the new instance.\n\n2. **Weighted k-NN**:\n   - Each nearest neighbor is assigned a different weight, typically based on proximity to the new instance or other criteria (e.g., density, attribute values).\n   - This mechanism allows for more nuanced decision-making by emphasizing similarity among neighbors closer to the new instance.\n\n3. **Implications of Weights**:\n   - The primary change involves varying weights, which can improve classification accuracy by focusing on local structures in the data.\n   - Methods include distance-based weighting (closer neighbors have higher weight) and exemplar-based weighting (based on representative examples).\n\n4. **Other Variations**:\n   - Advanced techniques like kernel-based weighting (often used in support vector machines) or exemplar-based weighting might exist but are more complex.\n\nIn conclusion, while both methods use neighbors for prediction, weighted k-NN offers a more sophisticated approach by assigning varying weights based on proximity and other criteria, enhancing accuracy and capturing local data structures.",
+      "rating": ""
+    }
+  ]
+}

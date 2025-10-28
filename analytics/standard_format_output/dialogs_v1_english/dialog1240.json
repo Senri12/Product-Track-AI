@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1240",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 41.5,
+    "precision": 47.1,
+    "recall": 52.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.249694"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Lecture Summary:\n\nK-Nearest Neighbors (k-NN) is a simple machine learning algorithm used for both classification and regression tasks based on the idea that similar objects are more likely to have similar properties. The user specifies k, which represents the number of nearest neighbors to consider when making predictions. In the classification context, the majority vote of the k nearest training examples determines the predicted class of a new sample.\n\nWeighted K-Nearest Neighbors (Wk-NN) is an extension of the traditional k-NN algorithm that assigns different weights to each neighbor based on their relevance or distance. The main goal of this modification is to improve the performance of k-NN by giving more importance to closer neighbors. There are several methods for calculating weights, such as inverse distance weighting and Gaussian weighting.\n\nQuiz Questions:\n1. What is K-Nearest Neighbors (k-NN) used for?\n   - Classification and regression tasks based on similarity\n\n2. How does k-NN determine the predicted class of a new sample?\n   - By taking the majority vote of the k nearest training examples\n\n3. What is Weighted K-Nearest Neighbors (Wk-NN)?\n   - An extension of the traditional k-NN algorithm that assigns different weights to each neighbor based on their relevance or distance\n\n4. Mention two methods for calculating weights in Wk-NN.\n   - Inverse distance weighting and Gaussian weighting\n\nRevisiting Weak Areas:\n\nLet's focus on the difference between k-NN and Weighted K-Nearest Neighbors (Wk-NN). The main distinction lies in the assignment of weights to neighbors in Wk-NN, which aims to improve the performance of k-NN by giving more importance to closer neighbors. Traditional k-NN does not have this feature and considers all neighbors equally.\n\nNow let's consider a targeted question:\n1. Why might Weighted K-Nearest Neighbors (Wk-NN) outperform traditional k-NN?\n   - Wk-NN may perform better than k-NN due to the weighting of neighbors, which allows for more emphasis on relevant or close examples in making predictions. This can help reduce noise and improve overall accuracy.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0813",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 39.7,
+    "precision": 36.6,
+    "recall": 54.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.3,
+    "hallucination": 11.4,
+    "faithfulness": 32.5,
+    "noise_sensitivity": 19.3,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-10-28T13:24:20.238393"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Евклидова метрика - это числовое значение, которое измеряет расстояние между двумя точками в пространстве. Она используется для определения схожести или различия между объектами или векторами в математике, статистике и информатике. В трёхмерном евклидовом пространстве расстояние между точками (x1, y1, z1) и (x2, y2, z2) измеряется по формуле:\n\nd = sqrt[(x1-x2)^2 + (y1-y2)^2 + (z1-z2)^2]\n\nгде sqrt - корень квадратный. В двумерном случае (пространстве с двумя координатами) формула выглядит так:\n\nd = sqrt[(x1-x2)^2 + (y1-y2)^2]",
+      "rating": ""
+    }
+  ]
+}

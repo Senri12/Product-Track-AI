@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1405",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 31.4,
+    "precision": 37.6,
+    "recall": 43.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.3,
+    "hallucination": 11.3,
+    "faithfulness": 31.8,
+    "noise_sensitivity": 16.0,
+    "self_knowledge": 6.9,
+    "timestamp": "2025-10-28T13:24:20.030520"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (keras.optimizers.rmsprop) – это популярный метод оптимизации, используемый в Keras для построения нейронной сеть. Основная идея этого метода заключается в избежании сопротивления к гибким локациям, где градиенты меняются неоднозначно.\n\n### Схема алгоритма RMSProp:\n\n1. **Реализация:**\n   V_t = γ * sqrt(1/n + V_{t-1}) * (grad(L(ω) - μ) + γ*V_{t-1})\n\n2. **Особенности:**\n   - Не умножает Learning rate на каждом шаге, как в SGD и Momentum.\n   - Использует среднее квадратичное изgcdетие градиентов (RMS) для определенияLearning rate.\n\n3. **Применение:**\n   RMSProp предотвращает сопротивлению к гибким локациям, что делает его более resilient для задач с нелинейными тенденциями.\n\nТаким образом, RMSProp – это популярный метод оптимизации, который предотвращает сопротивлению к неподходам и позволяет построить нейронные сеть на сложных архитектурах.",
+      "rating": ""
+    }
+  ]
+}

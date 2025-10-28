@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как работает сглаживание по Лапласу?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Согласно лекциям из общей лаборатории, сглаживание по Лап拉斯у – это метод弥补ки отсутствующих词汇 в словаре при классификации. Формула сглаживания:\n\n$$\n\\mathsf P(X|\\text{Класс}=y) = \\frac{\\alpha_y + |V|}{N_{total} + |V|}\n$$\n\nгде:\n- \\( \\alpha_y \\) – количество отсеканных слов для класса \\( y \\),\n- \\( |V| \\) – количество слов в словаре,\n- \\( N_{total} \\) – общее количество词汇 в общей pool.\n\nЭтот метод делает our model более robust, особенно при охватке scarce categories. Пусть Recall(y) –召回нение для класса \\( y \\), тогда:\n\n$$\nRecall(y) = \\frac{\\alpha_y + |V|}{N_{total} + |V|}\n$$\n\nКроме того, Recall(y) + Precision(y) ≥ 1, что подходит для сильной classификации.\n\nВ примере с писемами Classify 'get rich with ruble' successfully despite missing words. Используя сглаживание по Лапасу, our model maintains higher recall than would be possible otherwise, thus improving accuracy and robustness.",
+    "rating": ""
+  }
+]

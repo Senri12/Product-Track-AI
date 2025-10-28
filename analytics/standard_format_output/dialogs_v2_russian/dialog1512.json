@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1512",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 6.0,
+    "precision": 7.5,
+    "recall": 29.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.223158"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Подумав, как можно использовать формула расстояния Евклида: \\( d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\), где \\( (x_1, y_1) \\) и \\( (x_2, y_2) \\) - точки в параллельной плоскости.\n\nВ данном случае:\n- \\( x_1 = 1 \\), \\( y_1 = 2 \\) для точки (1,2).\n- \\( x_2 = 3 \\), \\( y_2 = 4 \\) для точки (3,4).\n\nПередайте эти значения в формулу:\n\n\\[ d = \\sqrt{(3 - 1)^2 + (4 - 2)^2} \\]\n\nВычисли.\n\nЧто далеко будет расстояние между этими точками?",
+      "rating": ""
+    }
+  ]
+}

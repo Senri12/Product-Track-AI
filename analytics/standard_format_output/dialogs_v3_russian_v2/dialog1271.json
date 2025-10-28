@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1271",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
+    "f1": 33.2,
+    "precision": 32.1,
+    "recall": 46.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 12.0,
+    "faithfulness": 33.6,
+    "noise_sensitivity": 19.6,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.106149"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Извините, но в предыдущем примере мы уже рассмотрели точную вероятность того, что письмо содержит слово 'приз' и является спамом. В данном контексте мы вычислили вероятность, что письмо содержит слово 'приз' и является спамом:\n\n$$ \\mathsf{P}(\\text{<<спам>> }| \\text{ <<приз>>}) = 0.625 $$\n\nЭто означает, что если нашим письме было выделено слово 'приз', вероятность того, что это письмо является спамом, составляет 0.625 или 62.5%.",
+      "rating": ""
+    }
+  ]
+}

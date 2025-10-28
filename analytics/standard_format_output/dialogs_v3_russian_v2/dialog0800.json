@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0800",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 41.3,
+    "precision": 39.4,
+    "recall": 52.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 34.2,
+    "hallucination": 7.4,
+    "faithfulness": 35.2,
+    "noise_sensitivity": 20.1,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-10-28T13:24:20.272064"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " SGD (Stochastic Gradient Descent) - это метод оптимизации, используемый для обучения модели на больших объемах данных. Он базируется на алгоритме градиентного спуска, но отличается от него тем, что вместо полного градиента используется его аппроксимированная версия, полученная на одном из случайно выбранных образцов. Это позволяет ускорить обучение модели, но может приводить к меньшей точности, чем при использовании полного градиента. В Python этот метод реализован в библиотеке TensorFlow как keras.optimizers.SGD.",
+      "rating": ""
+    }
+  ]
+}

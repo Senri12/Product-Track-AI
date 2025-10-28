@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0386",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 30.9,
+    "precision": 37.4,
+    "recall": 38.6,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 29.0,
+    "hallucination": 16.4,
+    "faithfulness": 31.1,
+    "noise_sensitivity": 10.0,
+    "self_knowledge": 2.6,
+    "timestamp": "2025-10-28T13:24:19.916455"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Шаг 1. Чтобы найти шаг в SGD для заданной функции L(w) = w^2, где w = 3 и η = 0,1, нам нужно использовать формулу SGD. Шаг 2. Формула SGD: $$\\eta = \\eta_0\\left(1 - \\frac{t}{T} \\right),$$ где t – прошедшее с начала обучения время, а T – соотношение скорости обучения, которое можно рассчитать по формуле $$T = \\frac{\\Delta y}{w^2},$$ где Δy — изменение функции потерь. В этом случае Δy = 0 (т.е. функция потерь не меняется). Шаг 3: Подставив значения w и T, получим $T = \\frac{0}{9} = 0.$Шаг 4. Шаг 5: Следовательно, у нас есть $η = η_0\\left(1 - \\frac{t}{T} \\right) = 0.1\\left(1 - \\frac{t}{0} \\right).$Шаг 6: Чтобы найти t, нам нужно найти точку на графике y = x^2, где x = η/0.1 и y = η_0. Шаг 7. Это дает нам $$x = \\frac{\\eta}{0.1} = \\frac{0.1}{0.1} = 1.$$Шаг 8: Итак, t = 1.",
+      "rating": ""
+    }
+  ]
+}

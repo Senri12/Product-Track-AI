@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1306",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 34.2,
+    "precision": 35.6,
+    "recall": 46.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.259750"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Autograd - это библиотека в Python для автоматического вычисления градиентов функций, необходимых при обучении нейронных сетей и решении задач оптимизации.\n\nПример использования autograd:\n```python\nimport autograd as grad\nimport numpy as np\n\ndef square(x):\n    return x**2\n\nx = np.array([1.0])\nf = grad.grad(square)\ndfdx = f(x)\nprint(dfdx)\n```\nВ этом примере мы определили функцию `square`, которая возводит аргумент в квадрат, а затем использовали autograd для вычисления её первого производного по точке `x`.\n\nАналогичные задачи:\n1. Найти градиент функции y = sin(x) по точке x = 2.71828.\n2. Решить уравнение y' = 3y для начальной точки y(0) = 1, используя метод численного решения с помощью автоматического вычисления градиентов.\n3. Найти максимальную точку функции f(x) = -x^2 + 4x - 5 по точке старта x = 1, используя метод градиентного спуска.\n4. Реализовать нейронную сеть для классификации ирисов, используя autograd для вычисления весовых коэффициентов и ошибки потерь.",
+      "rating": ""
+    }
+  ]
+}

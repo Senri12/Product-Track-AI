@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2582",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 26.8,
+    "precision": 27.3,
+    "recall": 42.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.899407"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Нам нужно выбрать к наибольшее значение между 1 и k, чтобы минимизировать расстояние между nearest neighbors. Это потому, что если мы выберем большое k, это означает, что наши neighbourов будет больше, чем в среднем, поэтому их можно исключить из задачи при поиске ближайших neighborов.\n\nПримечание: мы также можем выбрать k=1 или k=k-1, но это не является optimalным выбором.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0439",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 29.0,
+    "precision": 32.0,
+    "recall": 42.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.941792"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Овер-выгода! Это еще раз, когда мы делим наше решение на 0, а правильный ответ — на 1.\n\nДавайте проанализируем ситуацию: вы пришли к выводу, что уyour data есть enough unique features for classification. Однако в качестве проверки подошли всего 5% примеров для оценки предсказанных классов. Это означает, что при проверке на правильность предсказаний количество правильных_class обострилось до таких высоких показателей как 95%.\n\nЭто означает, что наш.model может быть действительно sehr хорошиным, но мы не можем relaxать, что мы можем использовать его для будущих прогнозов, потому что он может быть overly fit. Нам нужно проверить его на других данных, чтобы убедиться, что он действительно работает.\n\nНам нужен следующий вопрос: \n\n* Какое количество раз больше, чем 5% примеров для оценки предсказанных классов?",
+      "rating": ""
+    }
+  ]
+}

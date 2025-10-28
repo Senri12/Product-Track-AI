@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1549",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 4.4,
+    "precision": 4.1,
+    "recall": 30.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.163416"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Overfitting is a common issue in machine learning models where a model learns the training data too well – so well that it essentially memorizes it instead of understanding underlying patterns. As a result, this type of model performs exceptionally on the training data but poorly when encountering new, unseen data (data not used during training).\n\nTo better understand overfitting, let's consider this problem:\n\nSuppose you have a dataset of 100 images that represent different types of dogs. Out of these, 80 are labeled as \"Labrador\" and 20 as \"Poodle.\" You build a model to distinguish between Labradors and Poodles using this data.\n\n1. If your model perfectly captures the characteristics (like fur length, coat color, etc.) of each labeled image in the training dataset, it might overfit. In other words, if your model fits the noise within the images, like patterns on Labradors' coats that don't truly distinguish them from Poodles, then it is overfitting.\n2. A good model would generalize better. It should learn features common to both classes (e.g., certain body shapes or sizes that help identify a dog as a Labrador), so when shown new images, it can still classify them accurately as either a Labrador or Poodle.\n\nHere's your quiz question: \n\n**Question:** You've trained a model on 80 labeled images of dogs (60 Labradors and 20 Poodles) to distinguish between the two breeds. Your model performs exceptionally well on this training data, but when it encounters new images not part of your training set, it gives misclassifications. What's likely happening?\n\nA) The model is underfitting – it doesn't have enough complexity or capacity to learn from the training data effectively.\nB) The model is overfitting – it has memorized the training data rather than learning generalizable patterns.\nC) The new images aren't properly prepared or formatted for the model's input.\n\nPlease provide your answer, and I'll evaluate it:\n\n*Note: Overfitting isn’t dependent on the format of the new data; it's about the model's ability to generalize.*",
+      "rating": ""
+    }
+  ]
+}

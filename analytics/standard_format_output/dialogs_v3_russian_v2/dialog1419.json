@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1419",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 33.7,
+    "precision": 39.6,
+    "recall": 44.6,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.3,
+    "hallucination": 10.5,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 19.0,
+    "self_knowledge": 5.5,
+    "timestamp": "2025-10-28T13:24:20.020255"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для решения задачи определения класса писма (например, спам или непайсты) на основе архивных данных с использованием низкокачественного алгоритма Байеса (Naive Bayes), следующие шаги приведены:\n\n1. **Определение метки класса:**\n   - Важно разделять данные на training set и test set.\n   - Определить метки класса, которые нужно оценить – например, \"spam\" и \"not spam\".\n\n2. **Оценка апостерiom probabilities (P(Class=y)):**\n   - Для каждого класса y в训练 данных вычислите предсказуемое распределение P(Y=y) на основе частоты classes в training set.\n   - Это может быть done с помощью simple counting или более сложных методов оценки.\n\n3. **Оценка апостерiom probabilities for features (P(word_i | Class=y)):**\n   - Для каждого слова word_i в письме вычислите P(word_i | Y=y) для каждого класса y.\n   - Это может быть Done с помощью simple counting или machine learning techniques, например, bag-of-words или other feature representations.\n\n4. **Повысение апостерiom probabilities (P(X₁,...,X_p | Class=y)):**\n   - Умножьте P(word_i | Y=y) для всех фрейтов word_i в письме, чтобы получить P(X₁,...,X_p | Y=y).\n   - Это предсказуемое распределение class y для новой писмы.\n\n5. **Компьютерized апостерiom probabilities:**\n   - Умножьте P(Y=y) на P(X₁,...,X_p | Y=y), чтобы получить posterior probability P(Y=y | X₁,...,X_p) для каждого class y.\n   - Это показывает вероятность class y на основе train data.\n\n6. **Прибор Selection:**\n   - Выбрать класс y*, который имеет наивысший posterior probability P(Y=y* | X₁,...,X_p).\n   - Это результат определения класса писма.\n\n**Пример применения:**\n\nДопустимо, у нас есть training data с следующими метками class:\n- spam: 32 шумов\n- not_spam: 8 шумов\n\nДалее, для каждого слова в шуме, вычисляем P(word | Y=y) для каждого y.\n\nПотом, для нового шума, вычисляем P(X₁,...,X_p | Y=y) для каждого y и умножаем на P(Y=y) из training data.\n\nСледовательно, class y* с наивысшим product – это класс определения этого шума.",
+      "rating": ""
+    }
+  ]
+}

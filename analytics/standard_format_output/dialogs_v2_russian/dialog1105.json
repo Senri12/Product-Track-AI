@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1105",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 38.0,
+    "precision": 40.8,
+    "recall": 53.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.343721"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " RMSProp (Root Mean Square Propagation) - это оптимизационный алгоритм, используемый для обучения нейронных сетей и других машинных обучающих моделей. Этот метод изменяет скорость обучения в процессе тренировки, придавая большее значение часто встречающимся весам.\n\nОсновной целью RMSProp является ускорение обучения и стабилизация значений весов при обучении сложным моделям. В отличие от Gradient Descent, который изменяет скорость обучения пропорционально сумме градиентов по всем шагам обучения, RMSProp изменяет скорость обучения пропорционально среднему квадратичному корню времени. Это делает обучение стабильнее и ускоряет сходимость к оптимальному решению.\n\nПример RMSProp:\n```python\nfor epoch in range(num_epochs):\n    for batch in batches:\n        # Определить входные данные, выходные данные и ошибку для текущего шага обучения\n        ...\n\n        # Обновить среднеквадратичное значение весов по времени\n        rms = 0.9\n        for j in range(num_layers * num_neurons):\n            rms[j] = rms[j] * rms + gradient[j] ** 2\n\n        # Обновить веса в соответствии с RMSProp\n        for j in range(num_layers * num_neurons):\n            weight_decay = 0.001\n            weight_update = -learning_rate * gradient[j] / (rms[j] ** 0.5) + weight_decay * weight[j]\n            weight[j] += weight_update\n```\nУпражнение:\nСоздайте свою нейронную сеть и реализуйте RMSProp алгоритм для обучения этой сети на данных MNIST. Выберите адекватные параметры по умолчанию для алгоритма (например, скорость обучения, число эпох и т. д.) и измените их в зависимости от результатов обучения.\n\nОценивание:\n* Адекватность выбора нейронной сети;\n* Разработка RMSProp алгоритма с правильным поведением при обучении;\n* Умелое использование параметров алгоритма и внимание к результатам обучения.",
+      "rating": ""
+    }
+  ]
+}

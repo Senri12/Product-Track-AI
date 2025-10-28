@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0177",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.095431"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Momentum accelerates gradient descent by considering past gradients, helping converge faster and escape saddle points. The update formula is:\n\nv_t = γ * v_{t-1} - η * ∇L(θ_{t-1})\n\nWhere:\n- γ (0 < γ < 1) is the momentum coefficient.\n- θ_{t-1} is the parameter vector at step t-1.\n- ∇L(θ_{t-1}) is the gradient of the loss function.\n\nThis method helps stabilize training by smoothing out oscillations caused by shallow minima.",
+      "rating": ""
+    }
+  ]
+}

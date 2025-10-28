@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое over-fitting?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Over-fitting is a phenomenon observed in machine learning models where they achieve excellent performance on the training data but exhibit poor generalization to unseen data. This occurs due to the model becoming overly complex, capturing noise rather than the underlying patterns of the data.\n\nKey components contributing to over-fitting include:\n\n1. **High Bias**: The model is too simple, missing important details and capturing noise. This leads to poor predictions on new data.\n2. **High Variance**: The model's sensitivity to training data fluctuations increases, causing unstable predictions.\n3. **Both High Bias and High Variance**: These together result in poor generalization.\n\nTo detect over-fitting:\n- Use metrics like mean squared error or classification accuracy on validation sets during cross-validation.\n- Consider techniques such as pruning neural networks for reduced complexity.\n\nPreventing over-fitting involves simplifying models, using regularization, and employing early stopping to limit model complexity.",
+    "rating": ""
+  }
+]

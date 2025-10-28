@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0275",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как работает сглаживание по Лапласу?",
+    "f1": 31.7,
+    "precision": 32.3,
+    "recall": 53.0,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.7,
+    "hallucination": 10.8,
+    "faithfulness": 32.8,
+    "noise_sensitivity": 18.4,
+    "self_knowledge": 6.4,
+    "timestamp": "2025-10-28T13:24:20.047111"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как работает сглаживание по Лапласу?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Итак, сглаживание по Лапласу помогает улучшить классификацию писем включая их с отсутствием определенных слов в slоваре. Рассмотрим более детальное описание метода сглаживания.\n\nСогласно методу сглаживания по Лапласу, частота слова в slоваре $X$ подставляется так:\n\n$$\n\\hat{cnt}_X = \\frac{\\text{original cnt}_X + 1}{|V| + r}\n$$\n\nгде:\n- $|V|$ – количество слов в slоваре.\n- $r$ – количество слов, которые Never appeared в our данных.\n\nВозьмем следующий пример из лекции:\n\nРассмотрим письмо с текстом: <<Win a ruble to get rich>>. Следуя методу сглаживания по Лапласу, обновим our slоваре V включив все слова из текста и предположив, что our r=1 (для каждого слова). Тогда:\n\n- Our cnt_X:\n  - win: $\\frac{1 + 1}{8} = \\frac{2}{8}$\n  - ruble: $\\frac{1 + 1}{8} = \\frac{2}{8}$\n  - get: $\\frac{2 + 1}{8} = \\frac{3}{8}$\n  - rich: $\\frac{3 + 1}{8} = \\frac{4}{8}$\n\nТеперь вычисляем F(spam):\n\n$$\nF(\\text{spam}) ≈ (-1.9459) + \\ln\\left( \\frac{2/8 \\times 8}{8} \\right) + \\ln\\left( \\frac{2/8 \\times 8}{8} \\right) + \\ln\\left( \\frac{3/8 \\times 8}{8} \\right) + \\ln\\left( \\frac{4/8 \\times 8}{8} \\right)\n$$\n\nПоскольку our r=1 для каждого слова, $|V|=8$ и our r=1. Тогда:\n\n$$\nF(\\text{spam}) ≈ (-1.9459) + \\ln\\left( \\frac{2}{8} \\times 8 \\right) + \\ln\\left( \\frac{2}{8} \\times 8 \\right) + \\ln\\left( \\frac{3}{8} \\times 8 \\right) + \\ln\\left( \\frac{4}{8} \\times 8 \\right)\n$$\n\nИли:\n\n$$\nF(\\text{spam}) ≈ (-1.9459) + \\ln(2) + \\ln(2) + \\ln(3) + \\ln(4)\n$$\n\nВсё это показывает, как сглаживание по Лапласу помогает улучшить классификацию писем включая их с отсутствием определенных слов в slоваре.",
+      "rating": ""
+    }
+  ]
+}

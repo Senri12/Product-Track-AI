@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1309",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 33.1,
+    "precision": 35.2,
+    "recall": 47.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.204259"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Overfitting is a common problem in machine learning where a model learns the training data too well, including its noise and outliers, and performs poorly on new, unseen data (also known as validation or test data). In other words, the model becomes too complex and starts to memorize the training data instead of generalizing from it.\n\nTo illustrate overfitting, let's consider a simple linear regression example using made-up data:\n\nData:\nx = [1, 2, 3, 4, 5]\ny = [2, 3, 6, 8, 10]\n\nIf we fit a linear model to this data with a high degree of polynomial (for example, a third-degree polynomial), the resulting equation will capture the noise in the data and have poor generalization capabilities. This is an example of overfitting:\n\ny = 3x³ - 12x² + 27x - 5\n\nTo avoid overfitting, we can:\n\n1. Simplify the model: Use a lower-degree polynomial or choose a simpler model, such as logistic regression instead of neural networks for classification problems.\n\n2. Increase the dataset size: More data allows the model to learn general patterns and reduce its reliance on noise in the training set.\n\n3. Regularization: Add a penalty term to the loss function to discourage complex models from fitting the noise in the training data. This can be done using L1 (Lasso) or L2 (Ridge) regularization for linear regression and dropout layers for neural networks.\n\n4. Cross-validation: Split the dataset into multiple subsets, train on one subset, validate on another, and repeat this process for each subset to get a more accurate estimate of the model's performance.\n\n5. Early stopping: Monitor the validation loss during training and stop when the loss starts to increase, even though the training loss continues to decrease. This helps prevent overfitting by stopping the learning process before the model becomes too complex.",
+      "rating": ""
+    }
+  ]
+}

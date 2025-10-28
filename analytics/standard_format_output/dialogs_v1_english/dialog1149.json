@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1149",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 39.5,
+    "precision": 44.1,
+    "recall": 49.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.272832"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Explanation:\nNaive Bayes is a machine learning algorithm used for text classification tasks such as spam detection in emails. In this case, it's used to classify an email as either \"spam\" or \"not spam.\" The algorithm works by calculating the probabilities of each word (features) being present in a spam email based on the training data.\n\nQuestion for Student:\nTo apply Naive Bayes for spam detection, what are some key features you should consider?\n\nSuggested Exercise:\nCollect a set of emails labeled as \"spam\" and \"not spam.\" Use this data to train a Naive Bayes classifier. Then, test the model on a new, unseen email to determine if it is spam or not.\n\nFeedback Loop:\nUpon completing the exercise, review your results. If the model isn't accurately classifying emails, consider adjusting the features, increasing the size of the training dataset, or trying other machine learning algorithms.",
+      "rating": ""
+    }
+  ]
+}

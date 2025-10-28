@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0269",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 34.6,
+    "precision": 35.0,
+    "recall": 48.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.6,
+    "hallucination": 10.2,
+    "faithfulness": 30.2,
+    "noise_sensitivity": 15.5,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:20.003799"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Learning Rate Decay Linear (η₀ = 0.1, t = 5, T = 10): \n\n**Step-by-Step Explanation:**\n\n1. **Initial Learning Rate (η₀):**\n   η₀ = 0.1\n\n2. **Total Training Steps (T):**\n   T = 10\n\n3. **Number of Steps Considered for Decay (t):**\n   t = 5\n\n4. **Decay Rate (α):**\n   Calculate the decay rate α as t / T:\n   α = t / T = 5 / 10 = 0.5\n\n5. **Learning Rate at Step t (ηₜ):**\n   ηₜ = η₀ * (1 - α)^t\n   Plugging in the values:\n   η₅ = 0.1 * (1 - 0.5)^5 = 0.1 * (0.5)^5 = 0.1 * 0.032768 ≈ 0.0032768\n\n**Conclusion:**\nThe learning rate decays by a factor of 0.5 after each step for the first 5 steps. This means that starting from an initial learning rate of 0.1, the rate reduces to approximately 0.0032768 at step 5.\n\nAnswer:\nη₅ = 0.0032768",
+      "rating": ""
+    }
+  ]
+}

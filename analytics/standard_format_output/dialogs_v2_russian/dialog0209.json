@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0209",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 25.8,
+    "precision": 24.9,
+    "recall": 39.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.968759"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Представляемся на практике!\n\nЧтобы вычислить learning rate decay (едущая скорость снижения), мы можем использовать формулу:\n\nη(х) = η0 \\* e^(-k\\*x)\n\nгде:\n- η(х) — learning ratedecay для данного набора данных x\n- η0 — начальноеlearning ratedecay\n- k — константа learning rate decay (едущая скорость снижения)\n- x — номер iteration (количество вычислений в последнемbatch)\n\nМы знаем значения:\nη0 = 0.1\nt = 5\nT = 10\n\nЧтобы найти к, мы можем использовать формулу для вычисления learning rate decay (едущая скорость снижения) после nth batch:\n\nk = ln(T / nT) \\* η0\n\nВ этом случае:\nnT = 10 (пробег с 10 данными)\nТ = 10 (пrobeл с 10 данными)\n\nИтак, \nк = ln(10/10) \\* 0.1\n= 0,1\n\nИтак, learning rate decay (едущая скорость снижения) равна 0,1.\n\nUp: \nТеперь давайте проверим, какое значение η(5) являетсяlearning rate decay (едущей скоростью снижения).",
+      "rating": ""
+    }
+  ]
+}

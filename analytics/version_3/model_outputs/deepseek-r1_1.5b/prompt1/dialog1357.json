@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как вычислить вероятность класса в Naive Bayes?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Чтобы вычислить вероятность класса в контексте навыка Bayes, необходимо следовать этим шагам:\n\n1. **Оцените=P(Class=y) – общую вероятность класса y на основе training data**:\n   - Для каждого класса y из множества Y, определите frequency(y), количество объектов в training set, которые содержат class=y.\n   - P(Class=y) = frequency(y).\n\n2. **Оцените=P(X=x | Class=y) – условная вероятность предиктора X=x на основе класса y**:\n   - Для каждого предиктора X_i и каждого класса y, определите frequency(X_i=y), количество объектов в training set, которые содержат feature X_i=y.\n   - P(X=x | Class=y) = frequency(X=x=y).\n\n3. **Внешний вероятность=P(Class=y)**:\n   - Это общая вероятность класса y на основе training data: frequency(y).\n\n4. **Предikторная вероятность=P(X₁,X₂,...,Xₚ | Class=y)**:\n   - Пусть предикторы X₁,X₂,...,Xₚ независимы на class=y.\n     - P(X=x | Class=y) для каждого предиктора X_i.\n   - Тогда P(X₁,X₂,...,Xₚ | Class=y) = Product(P(X=x | Class=y)).\n\n5. **Предikторная вероятность класса=y**:\n   - P(Class=y | X₁,X₂,...,Xₚ) = [Product(P(X=x | Class=y) * frequency(y))] / P(X₁,X₂,...,Xₚ).\n\n6. **Сelect the class with highest posterior probability**:\n   - Выберите класс с наивысшей вероятностью, используя формулу above.\n\nТаким образом, для каждого новой объекта с предикторами X₁,X₂,...,Xₚ можно вычислить вероятность отнесения к каждом из классов Y и выбрать класс с наибольшей вероятностью как prediction.",
+    "rating": ""
+  }
+]

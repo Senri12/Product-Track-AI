@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0496",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 37.7,
+    "precision": 36.0,
+    "recall": 51.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.5,
+    "hallucination": 10.0,
+    "faithfulness": 34.4,
+    "noise_sensitivity": 21.1,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.259458"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Autograd - это библиотека или система автоматического расчета градиентов для обучения нейронных сетей и других машинных интеллектуальных систем. Она позволяет автоматически вычислять производные функции относительно весов модели при каждом шаге спуска, что делает процесс обучения более эффективным и прозрачным. Autograd является одним из основных компонентов многих современных библиотек для машинного обучения, например TensorFlow или PyTorch. Этот подход позволяет снизить время и трудозатраты на ручную реализацию производных, а также позволяет использовать такие методы спуска как Momentum, Adam и другие автоматически.",
+      "rating": ""
+    }
+  ]
+}

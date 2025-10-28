@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2192",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.002154"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Количество соседей (k) в методе ближайших элементов (k-NN) – это важный параметр, который может влиять на точность и speed работы алгоритма. Вот шаги, которые можно использовать для определения appropriate k:\n\n### 1. Использование rule of thumb\n   - Если ваш данные small, выберите kAround 20–30.\n   - Для большего количества данных выберите larger neighborhood.\n\n### 2. Проверка performance\n   - Сравните точность алгоритма на training set и test set в independente.\n   - Если performance不太好 с увеличением k, можно попробовать smaller neighborhood.\n\n### 3. Проконсультирование\n   - Убедитесь в правильности выбора k на основе задачи и данных.\n   - Для уточнения optimal k используйте grid search или cross-validation.\n\n### 4. Убедительные ассоциации\n   - Попробуйте разные значения k для измеренияeficiency of your model and select the best one based on performance criteria.",
+      "rating": ""
+    }
+  ]
+}

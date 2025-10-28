@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1197",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 35.1,
+    "precision": 31.7,
+    "recall": 54.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 36.4,
+    "hallucination": 10.5,
+    "faithfulness": 34.8,
+    "noise_sensitivity": 21.2,
+    "self_knowledge": 4.7,
+    "timestamp": "2025-10-28T13:24:20.157512"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для `γ = 0.9`, `v_{t-1} = 1` и `∇L = 2`, а стохастический градиентный спуск `η = 0.1`, вычислить значением `v_t`:\n\nвторое предел: `v_t = γ * v_{t-1} - η * ∇L`\n\nвторая десятичная точка: `v_t ≈ 0.9 * 1 - 0.1 * 2 ≈ 0.7`\n\nТаким образом, второе значение вектора импульса составит близшего к множителю `γ` от предыдущего значения (1), и это считается за счет снижения значения последней точки.",
+      "rating": ""
+    }
+  ]
+}

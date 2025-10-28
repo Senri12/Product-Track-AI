@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0509",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 41.3,
+    "precision": 51.8,
+    "recall": 56.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.802359"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Learning rate decay вычисляется по формуле для линейной формы:\n\nη(t) = η₀ * (1 - (t / T))\n\nгде:\nη(t) — модифицированный learning rate в момент времени t,\nη₰ — начальный learning rate,\nt — текущее время (в шагах или эпизодах),\nT — целевая точка до окончания обучения.\n\nДаны значения η₀ = 0.1, t = 5, и T = 10, подставим эти числа в формулу:\n\nη(5) = 0.1 * (1 - (5 / 10))\nη(5) = 0.1 * (1 - 0.5)\nη(5) = 0.1 * 0.5\nη(5) = 0.05\n\nМодифицированный learning rate в момент времени t=5 составляет 0.05.",
+      "rating": ""
+    }
+  ]
+}

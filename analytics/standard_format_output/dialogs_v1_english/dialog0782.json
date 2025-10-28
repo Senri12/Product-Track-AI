@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0782",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 31.7,
+    "precision": 32.7,
+    "recall": 65.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.771109"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Key Points Summary:\n\n1. Purpose of Neighbors (k): The choice of 'k' in K-Nearest Neighbors affects how many neighbors will be considered when making predictions for a new data point.\n\n2. Distance Metric: A distance metric is used to measure the similarity or dissimilarity between points, often Euclidean distance but others like Manhattan can also apply depending on context and dimensional considerations (curse of dimensionality).\n\n3. Balance Between Bias & Variance:\n   - Small k (< N): More sensitive; prone to noise in data as it considers too many neighbors.\n   - Large k (> 10% of the dataset or until all points are included): Less variance but might also increase bias, leading potentially less accurate predictions due to a loss of detail.\n\n4. Cross-validation: A practical approach is using cross-validation (such as K-fold) where 'k' can be chosen based on performance metrics like accuracy for different values in validation sets.\n\n\nQuiz Questions:\n\n1. Why should the choice between small and large k-values impact your prediction results significantly?\n   \n2. How might choosing an arbitrary number of neighbors without proper consideration lead to poor model predictions?\n\n3. In what situation would you prefer a smaller 'k' value, despite its increased sensitivity? Can you think about any domain-specific scenarios?\n\n\nTargeted Questions for Weak Areas:\n\n1. If the dataset is very noisy with many outliers present, how might that influence your choice of k?\n   \n2. How does choosing an odd number vs even number impact distance calculations in K-NN?\n\n3. When applying K-fold cross-validation to select 'k', what happens if you set a fixed percentage threshold for large values? Does this approach always work well?\n\n\nThese questions are targeted towards reinforcing the conceptual understanding of how k influences model performance and encouraging deeper exploration into when specific choices about 'k' can lead better outcomes in real-world scenarios.",
+      "rating": ""
+    }
+  ]
+}

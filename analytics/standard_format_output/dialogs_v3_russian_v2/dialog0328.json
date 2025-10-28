@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0328",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 28.6,
+    "precision": 32.5,
+    "recall": 34.1,
+    "claim_recall": 37.3,
+    "context_precision": 50.0,
+    "context_utilization": 28.8,
+    "hallucination": 19.0,
+    "faithfulness": 29.2,
+    "noise_sensitivity": 12.2,
+    "self_knowledge": 1.8,
+    "timestamp": "2025-10-28T13:24:19.997151"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Использование Adadelta для облегчения обучения нейронных сетей. В Adagrad при каждом шаге вычисляем G_{t-1,ii} и g_t, а затем вычитаем G_{t-1,ii} из g_t, чтобы получить new_g_t. Затем η = (new_g_t / G_{t-1,ii})^2 - η_old. Это дает нам обновленную задачу для learning rate.",
+      "rating": ""
+    }
+  ]
+}

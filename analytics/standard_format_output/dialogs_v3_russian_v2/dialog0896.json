@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0896",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 41.4,
+    "precision": 36.6,
+    "recall": 58.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.8,
+    "hallucination": 10.7,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 19.2,
+    "self_knowledge": 6.4,
+    "timestamp": "2025-10-28T13:24:20.278869"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Шаг в Stochastic Gradient Descent (SGD) для функции потерь L(w) = w^2 и начальных параметров w = 3 и learning rate (эта) = 0.1, можно вычислить как:\n\ngradient = 2*w = 6 (temporary variable for gradient)\nstep_size = -eta * gradient = -0.1 * 6 = -0.6\nnew_value_for_w = old_value_for_w + step_size = 3 - 0.6 = 2.4\n\nТаким образом, после одного шага SGD, параметр w уменьшится до нового значения 2.4.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0645",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 40.1,
+    "precision": 36.9,
+    "recall": 52.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.6,
+    "hallucination": 10.1,
+    "faithfulness": 35.4,
+    "noise_sensitivity": 19.9,
+    "self_knowledge": 4.5,
+    "timestamp": "2025-10-28T13:24:20.296244"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Предполагая использование сглаживания по Лапласу для вычисления вероятностей встретить какое-то слово в зависимости от того, попало письмо в <<спам>> или нет, тогда\n\nP(win|Класс = спам) = (1 + 1)/(8 + 7) = 2/(15).",
+      "rating": ""
+    }
+  ]
+}

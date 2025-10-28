@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2443",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
+    "f1": 28.1,
+    "precision": 25.6,
+    "recall": 49.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.935865"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы рассчитать Ф(да), нам нужно найти среднее значение температуры в 5 дней, следующее заtestа. Для этого мы сначала посчитаем сумму temperature_veterans:\n\ntemperature_veterans = -4 + (-3) + (-2) + (-1) + 0\n= -10\n\nЗатем мы делим сумму на количество дней: \n\nF(да) = (сумма/количество дней) * среднее значение\n= (-10 / 5) * -4\n= -8\n\nИтак, Ф(да) равна -8.",
+      "rating": ""
+    }
+  ]
+}

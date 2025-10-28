@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0549",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 31.4,
+    "precision": 43.8,
+    "recall": 51.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.742929"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Hello! I'm glad you're interested in learning about classifying emails using machine learning techniques like Naive Bayes.\n\nNaïve Bayes is a popular algorithm used for classification tasks, such as determining whether an email is spam or not (spam filtering).\n\nTo classify a letter correctly with this method involves several steps:\n\n1. Preprocessing: First, we clean the data by removing unnecessary parts of sentences and converting words to their numerical representations.\n\n2. Training Phase: The Naïve Bayes algorithm learns from existing emails labeled as 'spam' and non-spam (also known as ham). It analyzes patterns in word occurrences related to spam labels for training purposes.\n\n3. Testing/Classification Phase: Once the model is trained, it can classify new incoming emails based on learned probabilities that a particular set of words corresponds with an email being marked as spam or not.\n\nThe Naïve Bayes classifier works under two fundamental concepts:\n\na) Each word in our dataset has its probability to appear regardless if it's associated directly with either category (spam/ham). We call this the 'naive' part.\nb) The probabilities of words appearing together within a particular context are multiplied. This helps us determine which group an email is more likely belonging to, based on learned patterns.\n\nFor instance: If you see \"free money\" and your algorithm previously associated such terms with spam emails in training data:\n\n- P(spam | free money): Probability that the word 'free money' appears given it’s a spam.\n- P(ham | free money): Probability it's not related to ham, etc. \n\nYour model will weigh these probabilities against known patterns from its learning phase and classify accordingly.\n\nRemember: Naive Bayes is based on simplifying assumptions (e.g., features being independent), which might limit accuracy in some scenarios but makes it effective for many spam detection tasks thanks to simplicity & speed of computation!\n\nFeel free to ask any further questions or request examples. I'm here 24/7!",
+      "rating": ""
+    }
+  ]
+}

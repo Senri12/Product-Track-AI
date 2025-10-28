@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0194",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 42.1,
+    "precision": 42.9,
+    "recall": 54.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.684760"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Okay, let's break down this probability question. This looks like a classic example of conditional probability. \n\n**Understanding Conditional Probability**\n\nConditional probability is the probability of an event happening *given* that another event has already happened.  In this case:\n\n*   **Event A:**  Someone says \"да\" (yes).\n*   **Event B:** It's simultaneously \"пасмурно\" (overcast), \"холодно\" (cold), and \"влажно\" (humid).\n\nWe want to find P(да | пасмурно, холодно, влажно, да) – the probability of saying \"да\" *given* that it’s simultaneously overcast, cold, and humid.  \n\nEssentially, we're asking:  Does the weather influence whether someone says \"yes\"? \n\n**Let's think about it:**  Could weather be a factor in whether someone answers \"yes\"? Perhaps feeling cold and damp makes someone more likely to agree.  Or maybe the weather has no impact. \n\n**Now, let’s tackle it. Here's your practice problem:**\n\n**Question:**  Suppose we've conducted a survey of 1000 people on whether they say \"да\" and the associated weather conditions.  The results show:\n\n*   500 people said \"да\".\n*   200 people said \"да\" when it was overcast, cold, and humid.\n*   300 people said \"да\" when it was cold.\n*   100 people said \"да\" when it was overcast.\n\n**Calculate P(да | пасмурно, холодно, влажно, да) using this data.**  Show your work or clearly state your reasoning. \n\nI'm waiting for your answer!  Don't worry about getting it perfect on the first try – this is about understanding the process.",
+      "rating": ""
+    }
+  ]
+}

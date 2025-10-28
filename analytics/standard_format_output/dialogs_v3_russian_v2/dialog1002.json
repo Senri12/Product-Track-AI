@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1002",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 32.5,
+    "precision": 30.1,
+    "recall": 51.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.2,
+    "hallucination": 10.7,
+    "faithfulness": 34.5,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 4.7,
+    "timestamp": "2025-10-28T13:24:20.113242"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Расстояние Евклида между точками (1, 2) и (3, 4) можно вычислить с помощью формулы:\n\nд = √[(x₂ - x₁)² + (y₂ - y₁)²]\n\nВ данном случае:\nx₁ = 1, y₁ = 2\nx₂ = 3, y₂ = 4\n\nПроходим эти значения в формулу:\n\nd = √[(3 - 1)² + (4 - 2)²]\n  = √[2² + 2²]\n  = √[4 + 4]\n  = √8\n  ≈ 2.83\n\nТаким образом, расстояние Евклида между точками (1, 2) и (3, 4) примерно равно 2.83.",
+      "rating": ""
+    }
+  ]
+}

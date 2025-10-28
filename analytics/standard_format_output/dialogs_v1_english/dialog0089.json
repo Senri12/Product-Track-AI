@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0089",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 46.9,
+    "precision": 49.2,
+    "recall": 55.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.627130"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Okay, let's tackle this learning rate decay problem! We're given:\n\n*   η₀ (initial learning rate) = 0.1\n*   t (time step) = 5\n*   T (total number of steps) = 10\n*   Linear decay\n\n**Step 1: Understand Linear Decay**\n\nLinear decay means the learning rate decreases by a constant amount over time.  We need to figure out how much it decreases at each step.\n\n**Question 1:**  Based on the information given, what kind of function do you think describes the learning rate over time in this scenario? (Hint: think about the word \"linear\") \n\nLet me know your answer, and we'll move on to calculating the learning rate at time 't'.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1989",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.085774"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "To classify emails as spam using Naive Bayes, follow these organized steps:\n\n### 1. **Feature Extraction**\n   - **Extract Features**: Identify word frequency or presence features such as:\n     - Number of words\n     - Frequency of common words (e.g., 'the', 'is')\n     - Frequency of less common words\n     - Presence of specific keywords like 'free,' 'offer'\n   - **Preprocess**: Convert all text to lowercase and remove punctuation.\n\n### 2. **Class Labeling**\n   - Clearly define whether an email is spam or not based on context.\n\n### 3. **Training the Model**\n   - Use Naive Bayes algorithm with extracted features.\n   - Calculate conditional probabilities P(feature | class) for each feature given the class (spam/not spam).\n\n### 4. **Evaluation**\n   - Split emails into training and test sets.\n   - Predict email classes using Naive Bayes based on features.\n   - Assess performance using metrics like accuracy, precision, recall, etc.\n\n### Conclusion\nWhile Naive Bayes is simple due to its independence assumption, it can serve as a foundational approach for more complex models. By carefully selecting relevant features and evaluating their impact, you can build an effective spam classification system.",
+      "rating": ""
+    }
+  ]
+}

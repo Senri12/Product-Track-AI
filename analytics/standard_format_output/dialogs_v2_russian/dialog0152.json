@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0152",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 34.7,
+    "precision": 37.0,
+    "recall": 43.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.969961"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Если у нас есть набор данных, где каждая запись представлена как (x1, y1), (x2, y2), ..., (xn, yn), то для определения k-NN мы можем использовать следующую формулу:\n\nk-NN = argmax{k=0,k≤N} ∑∑(d(x_i, x_j))^2\n\nгде d(x_i, x_j) — расстояние между записями i и j.\n\nПростое преобразование этого уравнения в математическом выражении для к-NN:\n\nк-NN = argmax{k=0,k≤N} ∑∑(||x_i - x_j||)^2\n\nгде ||.|| — манипулируемая функция расстояния.\n\nВзяв квадратный корень из этого уравнения, получим:\n\nk-NN = argmax{√(S), k=0,k≤N} ∑∑(d^2(x_i, x_j))\n\nгде S = ∑∑(d^2(x_i, x_j)).\n\nЭто означает, что наше решение для k-NN — это максимальное значение √S по k из 0 до N.",
+      "rating": ""
+    }
+  ]
+}

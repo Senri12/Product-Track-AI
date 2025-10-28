@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1169",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 31.0,
+    "precision": 26.4,
+    "recall": 52.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 31.4,
+    "hallucination": 11.5,
+    "faithfulness": 34.0,
+    "noise_sensitivity": 23.7,
+    "self_knowledge": 4.5,
+    "timestamp": "2025-10-28T13:24:20.165131"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Сначала нужно определить константу итерации (t) и временную плотность изменения (T). В данном случае:\n\n- η0 = 0.1 – это начальный угол learning rate.\n- t = 5 – это текущая итерация.\n- T = 10 – это максимальное значение изменения, когда происходит изменение в learning rate.\n\nТеперь мы можем использовать формулу для прогнозирования угла learning rate при следующей итерации:\n\nη = η0 + (T - t) * (η0 / T)\n\nВведя значения:\n\nη = 0.1 + (10 - 5) * (0.1 / 10)\n   = 0.1 + 0.4\n   = 0.5\n\nТаким образом, при следующей итерации t = 6, угол learning rate будет равен 0.5.\n\nИтак, последовательные значения угла learning rate с использованием линейного изменения могут выглядеть так:\n\nη_t: 0.1, 0.5, 1.25, 2.0625, 3.125, ...",
+      "rating": ""
+    }
+  ]
+}

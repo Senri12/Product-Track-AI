@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2170",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.984576"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The primary distinction between k-NN (k-nearest neighbors) and weighted k-NN lies in how the influence or weight of each neighboring instance is determined. Here's a structured explanation:\n\n1. **Standard k-NN**:\n   - Each of the k nearest neighbors has equal weight, meaning their contributions to the prediction are uniformly considered.\n   - This approach does not take into account the distance between instances, leading to a more uniform decision-making process.\n\n2. **Weighted k-NN**:\n   - In weighted k-NN, each neighbor is assigned a weight that is typically based on its distance from the query point.\n   - Closer neighbors are given higher weights, meaning their influence on the prediction is greater.\n   - This mechanism allows the model to leverage the proximity of data points more effectively.\n\n3. **Implementation**:\n   - The weights can be adjusted by setting different values for each neighbor through hyperparameters.\n   - These weights often depend on distance measures such as Euclidean or Manhattan distance, though some implementations may use other metrics.\n\n4. **Performance Considerations**:\n   - Weighted k-NN can enhance decision boundaries, particularly in imbalanced datasets or scenarios where nearby points are crucial.\n   - While it may offer better performance in certain cases, its effectiveness depends on the specific dataset and problem context.\n\nIn summary, while both algorithms use distance metrics to make predictions, weighted k-NN introduces variable weights based on proximity, leading to a more nuanced decision-making process.",
+      "rating": ""
+    }
+  ]
+}

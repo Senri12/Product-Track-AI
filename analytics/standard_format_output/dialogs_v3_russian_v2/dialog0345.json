@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0345",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 28.6,
+    "precision": 37.2,
+    "recall": 32.1,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 26.2,
+    "hallucination": 15.9,
+    "faithfulness": 30.4,
+    "noise_sensitivity": 11.7,
+    "self_knowledge": 3.7,
+    "timestamp": "2025-10-28T13:24:19.945378"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Поскольку в задаче не указано количество слов в письме, мы можем предположить, что количество слов в письме равно 5. Следовательно, можно рассчитать P(X = win|Класс = спам) как:\n\nP(win|спам) = (1 + количество слов в письме X в классе spam) / (количество слов в словаре V + количество слов в классе spam)\n= (2 + 5) / (7 + 5)\n= 7/12\n\nОкончательный ответ – 7/12.",
+      "rating": ""
+    }
+  ]
+}

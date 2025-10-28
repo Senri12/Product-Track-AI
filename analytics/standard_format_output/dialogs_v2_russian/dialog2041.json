@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2041",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "Что такое метод k-ближайших соседей?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.073966"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод k-ближайших соседей?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Что такое метод **К-ближайших соседей** (K-Nearest Neighbors, KNN)?\n\nКлассический метод классификации и регрессии в машинном анализе данных. Основной идея — изучить данные на основе их ближнейсосудственных объектов.  \nКаждый объект в наборе данных (назовем его *множество об司ер*), который используется для классификации или регрессии, учитывается как независимое измерение с отсчетом.  \n\nРазные методы выбора числа ближнейсосудственных объектов (K) и метрики близости определяют свойства метода:\n\n### 1. **Классификация**:\n   - Выбираем KNearest (набор из K nearest objects).\n   - Определение ближнейсосудственных объектов в зависимости от метрики близости:  \n     - Euclidean Distance — краткое расстояние между точками.  \n     - Manhattan Distance — сумма абсолютных differences between coordinates.  \n     - Cosine Similarity — аcosine угла между векторами.  \n\n### 2. **Регрессия**:\n   - Выбираем KNearest (набор из K nearest objects).  \n   - Определение ближнейсосудственных объектов в зависимости от метрики близости:  \n     - Euclidean Distance — краткое расстояние между точками.  \n     - Manhattan Distance — сумма абсолютных differences between coordinates.  \n\n### 3. **Метод выбора K**:\n   - Выбор K зависит от задачи и данных.  \n   - Если общий выбор из-за низкой коррективности метода, можно использовать rule-based схемы.  \n\n### 4. **Оценка точности**:\n   - Важно определить метрику для оценки качества классификации или регрессии:  \n     - Accuracy (acc) — точность.  \n     - Precision (prec) — точность.  \n     - Recall (rec) —覆盖率.  \n\n### 5. **Классификация на основе ближнейсосудственных объектов**:\n   - Основные шаги:  \n     1. Выбрать K.  \n     2. Использовать метод choose nearest neighbor.  \n     3. Сравнить сопоставленные метрики.  \n\nСм detailed [ explicitation](https://ru.wikipedia.org/wiki/K-Nearest_Neighbors).",
+      "rating": ""
+    }
+  ]
+}

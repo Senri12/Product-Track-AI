@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0072",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 34.6,
+    "precision": 34.9,
+    "recall": 45.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 27.9,
+    "hallucination": 11.9,
+    "faithfulness": 32.7,
+    "noise_sensitivity": 18.6,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.086369"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Возьмем точки A(1, 2) и B(3, 4). Нужно найти_Eвклидовы расстояния между ними.\n\nФормула_Eвклида выглядит так:\n\n$$\nd_E((x_1, y_1), (x_2, y_2)) = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n$$\n\nПодставим значения:\n\n$$\nd_E((1, 2), (3, 4)) = \\sqrt{(3 - 1)^2 + (4 - 2)^2} = \\sqrt{2^2 + 2^2} = \\sqrt{4 + 4} = \\sqrt{8}\n$$\n\nНаконец, вроде бы это и есть_Eвклидовы расстояния между данными точками.",
+      "rating": ""
+    }
+  ]
+}

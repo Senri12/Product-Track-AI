@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1036",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 41.1,
+    "precision": 44.1,
+    "recall": 56.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.303743"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Autograd - это библиотека Python, которая позволяет автоматически дифференцировать функции с помощью обратной агрегации (backpropagation). Она используется в машинном обучении для вычисления градиентов для оптимизации моделей.\n\nЗадание: Напишите функцию, которая может дифференцироваться с помощью autograd и реализует активационную функцию ReLU (Rectified Linear Unit):\n```python\nimport numpy as np\nimport autograd.numpy as npr\nfrom autograd import grad, jacobian\n\ndef relu(x):\n    return npr.maximum(0, x)\n\ndef relu_prime(x):\n    return npr.where(x > 0, 1, 0)\n\nx = npr.array([1.0])\ny = relu(x)\nd2x = grad(relu)(x)\ndy2x = jacobian(relu)(x)\n```\nВыполнив этот код, мы получим активационную функцию ReLU и ее производную. Функция `grad()` возвращает градиент вектора в точке x (одномерный случай), а функция `jacobian()` - матрицу Якоби функции в той же точке (многомерный случай).",
+      "rating": ""
+    }
+  ]
+}

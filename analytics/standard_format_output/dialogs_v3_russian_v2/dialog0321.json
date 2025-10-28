@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0321",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Momentum в оптимизации?",
+    "f1": 28.6,
+    "precision": 32.5,
+    "recall": 34.1,
+    "claim_recall": 37.3,
+    "context_precision": 50.0,
+    "context_utilization": 28.8,
+    "hallucination": 19.0,
+    "faithfulness": 29.2,
+    "noise_sensitivity": 12.2,
+    "self_knowledge": 1.8,
+    "timestamp": "2025-10-28T13:24:19.996018"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Momentum в оптимизации?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Momentum — это параметр, который представляет собой аналогичный градиентный спуск, но с более полным уравнением для вычисления скорости обучения. Параметр Momentum (унит) задается выражением:\n\nMomentum = η * (η_old - η_new)\n\nгде η_old — старший learning rate, η_new — mớiшний learning rate.\n\nВ данном случае η_old = η0, а η_new = η0 / γ\n\nгде γ — параметр, меньший единиц, используемый для вычисления скорости обучения. В общем случае η old будет увеличаться на 1/γ при каждом iterationе, а η new уменьшится на 1/γ.\n\nИтак, Momentum задается выражением:\n\nMomentum = η_old * (η_old - η_new)\n\nМomentum helps improve the convergence of optimization algorithms by providing a more gradual increase in learning rate. Это помогает повысить скорость обучения, но не дает прямого доступа к этому.",
+      "rating": ""
+    }
+  ]
+}

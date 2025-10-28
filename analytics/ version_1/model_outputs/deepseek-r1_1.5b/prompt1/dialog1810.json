@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем разница между k-NN и взвешенным k-NN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "The primary difference between k-Nearest Neighbor (k-NN) and Weighted k-Nearest Neighbor (weighted k-NN) lies in the treatment of neighboring data points during classification.\n\n**Key Differences:**\n1. **Weighting Mechanism:** In weighted k-NN, each neighbor's influence is not uniform; some neighbors are given higher weights based on their proximity or similarity to the target point.\n2. **Decision Making:** Weighted k-NN may assign different weights to nearby points, leading to a more nuanced decision process where closer neighbors have greater impact.\n\n**Summary:**\nBoth methods classify data based on proximity, but weighted k-NN assigns varying weights to neighboring points, enhancing performance by emphasizing relevant neighbors.",
+    "rating": ""
+  }
+]

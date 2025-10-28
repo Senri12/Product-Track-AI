@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2068",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.082224"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The Adagrad update rule involves adjusting each parameter based on the history of gradients. Given G_{t−1, ii}=4 and G_t=2, with η=0.1, we compute the average squared gradient:\n\nE[g_i^2] = (4² + 2²)/2 = 10\n\nThe scaling factor is then:\n\n0.1 / √10 ≈ 0.03162\n\nApplying the update rule to a parameter value θ_i^{(t)} would involve subtracting this scaled gradient, resulting in:\n\nθ_i^{(t+1)} = θ_i^{(t)} - (0.03162) * G_t ≈ θ_i^{(t)} - 0.06325\n\n**Answer:** Using the Adagrad update rule with G_{t−1}=4, G_t=2, and η=0.1, each parameter is updated by subtracting approximately (η / √(E[g_i^2])) * G_t from its current value.\n\n**Explanation:** The parameter values are adjusted based on their gradient history, scaled by the Adagrad learning rate and the square root of the average squared gradients encountered so far. This results in parameters being updated more significantly for frequently updated features.",
+      "rating": ""
+    }
+  ]
+}

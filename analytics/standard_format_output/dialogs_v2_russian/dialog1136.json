@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1136",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 40.0,
+    "precision": 43.6,
+    "recall": 52.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.367072"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Шаг в методе градиентного спуска (SGD) для функции цели L(w) = w² с весом w = 3 и шагом этапа η = 0.1 можно получить путем вычисления отрицательной градиента по весу (dw/dL) и применения этого значения к обновлению веса:\n\n1. Вычислите градиент функции цели по весу (dw/dL): dw/dL = 2w, так как L(w) = w²;\n2. Подставьте в это выражение значения w и η для получения следующего: dw/dL = 6, так как w=3;\n3. Обратите внимание, что мы хотим уменьшить (minimize) значение функции цели L(w), поэтому шаг SGD будет равен соотношению отрицательного градиента к градиенту (наборный коэффициент η):\n\nSGD step = -dw/dL * η = -6 * 0.1 = -0.6\n\nТаким образом, шаг в методе SGD для L(w)=w² с w=3 и η=0.1 будет равен -0.6. После этого обновленное значение веса w получится:\n\nw' = w - SGD step = 3 + (-0.6) = 2.4",
+      "rating": ""
+    }
+  ]
+}

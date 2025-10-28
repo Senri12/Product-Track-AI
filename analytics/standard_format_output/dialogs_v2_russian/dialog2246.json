@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2246",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.065238"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления шага в SGD для функции \\( L(w) = w^2 \\), при \\( w=3 \\) и \\( \\eta=0.1 \\):\n\n1. **Найти градиент**:\n   \\[\n   \\nabla L(w) = 2w\n   \\]\n   В текущем state, \\( w = 3 \\):\n   \\[\n   g_0 = 2 * 3 = 6\n   \\]\n\n2. **Указать шаг в SGD**:\n   \\[\n   \\eta * g_0 = 0.1 * 6 = 0.6\n   \\]\n   \nТеперь новое значение \\( w \\) после обновления будет:\n\\[\nw^{(1)} = w + \\text{step} = 3 + 0.6 = 3.6\n\\]\n\n**Ответ**: Stech в SGD для данной задачи равен 0.6.",
+      "rating": ""
+    }
+  ]
+}

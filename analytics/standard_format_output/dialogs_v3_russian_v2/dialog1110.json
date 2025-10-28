@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1110",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 30.0,
+    "precision": 30.8,
+    "recall": 43.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.7,
+    "hallucination": 11.4,
+    "faithfulness": 34.1,
+    "noise_sensitivity": 20.6,
+    "self_knowledge": 4.5,
+    "timestamp": "2025-10-28T13:24:20.172681"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В методе моментов (Импульсов), когда параметр γ равен 0.9 и v = 1, то для вычисления градиента в ω на шаг того, что сделает метод с помощью Nesterov's accelerated gradient:\n\n1. Предположим, что на предыдущем шаге мы получили градиент ∇L(ω - γv_{t-1}).\n2. Задаем v_t = γv_{t-1} (например, 0.9 * 1 = 0.9).\n3. Следовательно, вычисляем ∇L(ω - γv_{t-1}).\n4. Затем, используя Nesterov's accelerated gradient, мы сначала предполагаем, что на следующий шаг ω будет:\n\nω = ω + v_t * (γ - 1) = 1 + 0.9 * (0.9 - 1) = 0.81\n\n5. Теперь вычисляем градиент ∇L(ω).\n\nВ этом случае, если ∇L(ω - γv_{t-1}) равно 2 и нам известно γ = 0.9, то:\n\n∇L(ω) ≈ 2 * (γ - 1) = 2 * (0.9 - 1) = -0.8\n\nТаким образом, для Nesterov's accelerated gradient на шаг с γ = 0.9 и v = 1, градиент в ω будет примерно -0.8.",
+      "rating": ""
+    }
+  ]
+}

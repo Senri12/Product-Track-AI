@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1977",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.098838"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Используя формулу Momentum:\n\nv_t = γ * (v_{t-1} - η * gradient) / sqrt(1 + ε)\n\nПолагаем:\nγ = 0.9, v_{t-1} = 1, gradient = 2, η = 0.1, ε = 1e-7.\n\n1. 计算 (v_{t-1} - η * gradient):\n   1 - 0.1 * 2 = 0.8\n\n2. 乘以 γ：\n   0.9 * 0.8 = 0.72\n\n3. 计算 sqrt(1 + ε) ≈ 1.00000005\n\n4. 除以 sqrt(1 + ε):\n   0.72 / 1.00000005 ≈ 0.72\n\n**Ответ:** v_t = 0.72",
+      "rating": ""
+    }
+  ]
+}

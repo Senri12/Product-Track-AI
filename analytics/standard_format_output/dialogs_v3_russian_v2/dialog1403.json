@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1403",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 31.4,
+    "precision": 37.6,
+    "recall": 43.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 28.3,
+    "hallucination": 11.3,
+    "faithfulness": 31.8,
+    "noise_sensitivity": 16.0,
+    "self_knowledge": 6.9,
+    "timestamp": "2025-10-28T13:24:20.030180"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Learning rate (eta) — это коэффициент перед градиентом при update param (w_i = w_i - eta * g_i), где g_i — градиент по параметру w_i в момент training. Основное значение learning rate лежит в том, что оно controlирует мгновение descentDuring training. larger values may lead to faster convergence but could also cause oscillations or local minima. smaller values may lead to more stable updates but could result in slower progress towards the minimum. learning rate can be fixed or adaptive and has hyperparameters that need tuning. It affects both training stability and model generalization. without knowledge from validation set, it's difficult to choose the optimal learning rate, unless using techniques like learning rate scheduling. adaptive optimization methods include RMSprop, ADAM, etc., which automatically adjust learning rates during training based on gradients or other criteria. choosing the right learning rate is crucial for successful model training and preventing issues like divergence or local minima.",
+      "rating": ""
+    }
+  ]
+}

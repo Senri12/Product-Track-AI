@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0967",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 37.8,
+    "precision": 32.9,
+    "recall": 55.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.227381"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В начале мы будем изучать метод наивного байеса для расчета вероятности класса, используя пример с данными Ириса.\n\n1. Возьмем данные о цветах ирис из библиотеки scikit-learn:\n\n```python\nfrom sklearn.datasets import load_iris\niris = load_iris()\nX = iris.data\ny = iris.target\n```\n\nОзнакомимся с данными ириса:\n\n```python\nprint(iris.DESCR)\nprint(X.shape, y.shape)\n```\n\n2. Создадим класс NaiveBayes для работы с наивным байесом:\n\n```python\nimport numpy as np\nfrom collections import Counter\n\nclass NaiveBayesClassifier:\n    def __init__(self):\n        self.classes_, self.classes_counts_ = None, None\n        self.feature_probas_ = {}\n\n    def fit(self, X, y):\n        self.classes_ = np.unique(y)\n        self.classes_counts_ = Counter(y)\n        for i in range(X.shape[1]):\n            feature_values, counts = np.unique(X[:,i], return_counts=True)\n            total = sum(counts)\n            probas = [c/total for c in counts]\n            self.feature_probas_[i] = probas\n\n    def predict(self, X):\n        y_pred = []\n        for x in X:\n            class_probability = {}\n            for cl in self.classes_:\n                p_x_cl = 1.0\n                for i in range(X.shape[1]):\n                    p_xi_cl = self.feature_probas_[i][x[i]]\n                    p_x_cl *= p_xi_cl\n                class_probability[cl] = p_x_cl * self.classes_counts_[cl] / sum([self.classes_counts_[c] for c in self.classes_])\n            y_pred.append(max(class_probability, key=class_probability.get))\n        return np.array(y_pred)\n```\n\n3. Обучим классификатор на данных Ириса:\n\n```python\nclf = NaiveBayesClassifier()\nclf.fit(X, y)\n```\n\n4. Проверим работу классификатора:\n\n```python\nimport matplotlib.pyplot as plt\n\ny_pred = clf.predict(X)\nprint(\"Accuracy:\", np.mean(y == y_pred))\n\nfor i in range(3):\n    plt.scatter(X[y==i, 0], X[y==i, 1], label=iris.target_names[i])\nplt.scatter(X[y_pred==0, 0], X[y_pred==0, 1], color='red', marker='x', s=80, alpha=0.5)\nplt.xlabel('Petal length [standard units]')\nplt.ylabel('Petal width [standard units]')\nplt.legend(loc='best')\nplt.show()\n```\n\nТеперь оцениваем ваше понимание, отверитесь на вопросы:\n\n1. Как работает алгоритм наивного байеса? Опишите его процесс в собственных словах.\n2. Что делает функция fit() и какие параметры она принимает?\n3. Что делает функция predict() и какие данные ей передаются?\n4. Как вычисляется вероятность класса для даного вектора?",
+      "rating": ""
+    }
+  ]
+}

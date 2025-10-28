@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1451",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
+    "f1": 34.0,
+    "precision": 32.6,
+    "recall": 51.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.4,
+    "hallucination": 8.2,
+    "faithfulness": 36.3,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.014266"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для решения задачи необходимо:\n\n1. Определить апостериорную вероятность ($\\mathsf{P}(\\text{С|\\text{П}})$) с помощью частоты ($\\frac{\\text{hipотезы}, \\text{если объект относится к категории С, и содержит слово П}}}{\\text{hipотезы}, \\text{если объект содержит слово П}}}$).\n\n2. Использовать формулу Байеса для расчета условной вероятности ($\\mathsf{P}(\\text{С|\\text{П}})$) в зависимости от апостериорной и априорной вероятностей ($\\mathsf{P}(\\text{С})$ и $\\mathsf{P}(\\text{П})$).\n\n3. Пример выполнения расчетов по fornulas и подстановки чисел.\n\nВот пример了他的 расчета в случае, если 5 писем с словом П относятся к категории С:\n\n1. $$\\mathsf{P}(\\text{С|\\text{П}}) = \\frac{\\mathsf{P}(\\text{П|С}) \\cdot \\mathsf{P}(\\text{С})}{\\mathsf{P}(\\text{П})}$$\n\n2. Пусть $\\mathsf{P}(\\text{П|С})$ – частота писем с словом П в категории С.\n\n3. $\\mathsf{P}(\\text{С}) = \\frac{\\text{hipотезы}, \\text{если объект относится к категории С}}}{\\text{hipотезы}, \\text{если объект относится к категории С и范畴ам}}}$.  \n\n4. $\\\\mathsf{P}(\\text{П}) = \\frac{\\text{hipотезы}, \\text{если объект содержит слово П}}}{\\text{hipотезы}, \\text{если объект содержит слово П}}}.$\n\n5. Substituyete Numbers и performs the divisions.\n\n6. Сформулируйте итоговую формулу и используйте ее для расчета условной вероятности в примере.",
+      "rating": ""
+    }
+  ]
+}

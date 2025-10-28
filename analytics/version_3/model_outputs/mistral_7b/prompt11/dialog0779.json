@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": " Для линейного распада learning rate в данном случае:\n\nη = η0 - (η0 - ηfinal) * t / T\n\nгде η0 - начальный learning rate, t - текущая итерация, T - общая длина траектории (в этом случае 10), ηfinal - конечный learning rate (будет равен нулю при t = T).\n\nВ данном случае:\n\nη = 0.1 - (0.1 - 0) * 5 / 10 = 0.1 - 0.25 = 0.05",
+    "rating": ""
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0809",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 47.3,
+    "precision": 55.4,
+    "recall": 57.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.817917"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления learning rate decay с заданными параметрами Linear кросс-опосредованный метод (LR_decay) можно использовать формулу:\n\nη(t) = η₀ * (1 - (t / T)) для линейного фракционного decay\n\nгде:\nη(t) — значение learning rate в момент времени t,\nη₰ — начальное значение learning rate (η0=0.1),\nt — текущее время шагов обучения, начиная с 0 (в данном случае t=5),\nT — полное количество шагов обучения (в данном случае T=10).\n\nПодставляя значения:\n\nη(t) = 0.1 * (1 - (5 / 10))\nη(t) = 0.1 * (1 - 0.5)\nη(t) = 0.1 * 0.5\nη(t) = 0.05\n\nИтак, значение learning rate на шаге 5 при linear decay будет равным 0.05.\n\nТеперь давайте проведем мини-тест для проверки понимания:\n\n**Мини-Тест о Learning Rate Decay**\n\n1. Как рассчитывается learning rate decay в Linear кросс-опосредованный метод (LR_decay)?\n   - Сравнивая значения t и T с помощью линейного соотношения, чтобы найти фракцию от начального learning rate.\n\n2. У вас есть η0=0.1, т=5 и T=10, что будет значение learning rate на шаге 5?\n   - Да, оно составляет 0.05.\n\n3. Что произойдет с learning rate при продолжении обучения до полного количества шагов (T)?\n   - Learning rate упадет до 0 в конце всех шагов (в данном случае, когда t=T).\n\nОтветьте письменно на каждый вопрос, чтобы продемонстрировать ваше понимание концепции learning rate decay Linear кросс-опосредованный метод.",
+      "rating": ""
+    }
+  ]
+}

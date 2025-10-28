@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0503",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 41.3,
+    "precision": 51.8,
+    "recall": 56.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.800370"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Уровень обучения (learning rate) в машинном обучении – это параметр, определяющий размер шагов, которые алгоритм делает в процессе поиска минимальной функции Verlustа. Он указывает, насколько сильно модель должна изменяться в ответ на ошибки, с которыми она сталкивается во время обучения.\n\nЕсли уровень обучения слишком высок, моделю может быть сложно стабилизироваться и может дойти до местной минимумы вместо глобальной, а если он слишком низкий, обучение может занять много времени и может стать прервано, не найдя оптимальное решение.",
+      "rating": ""
+    }
+  ]
+}

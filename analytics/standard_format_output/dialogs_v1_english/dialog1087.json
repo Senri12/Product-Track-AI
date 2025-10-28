@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1087",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 34.2,
+    "precision": 33.6,
+    "recall": 51.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.280693"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " To calculate the probability of a class in the Naive Bayes algorithm, you multiply the probabilities of each feature given the class and normalize by the sum of probabilities for all classes. Here's a practice problem to test your understanding:\n\nConsider a binary classification problem with two features (F1 and F2) and two classes (Class 0 and Class 1). Given the following prior probabilities, conditional probabilities, and feature values, calculate the probability of each class for an instance with features F1 = 0.5 and F2 = 0.7.\n\nPrior probabilities: P(Class 0) = 0.6, P(Class 1) = 0.4\nConditional probabilities:\n- P(F1=x | Class 0) = e^(-2 * x), where x is the feature value for F1\n- P(F2=y | Class 0) = e^(3 * y), where y is the feature value for F2\n- P(F1=x | Class 1) = e^(-3 * x), where x is the feature value for F1\n- P(F2=y | Class 1) = e^(-y), where y is the feature value for F2\n\nNow let's evaluate a student's response:\n\nStudent's response:\nP(Class 0 | F1, F2) = (P(F1=0.5 | Class 0) * P(F2=0.7 | Class 0)) / (P(F1=0.5 | Class 0) * P(F2=0.7 | Class 0) + P(F1=0.5 | Class 1) * P(F2=0.7 | Class 1))\nP(Class 1 | F1, F2) = (P(F1=0.5 | Class 1) * P(F2=0.7 | Class 1)) / (P(F1=0.5 | Class 0) * P(F2=0.7 | Class 0) + P(F1=0.5 | Class 1) * P(F2=0.7 | Class 1))\n\nSince the student's response is correct, you can explain that they have understood how to calculate the class probabilities in a Naive Bayes algorithm using the given prior and conditional probabilities.",
+      "rating": ""
+    }
+  ]
+}

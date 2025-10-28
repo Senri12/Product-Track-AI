@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0345",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 33.7,
+    "precision": 34.3,
+    "recall": 42.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.932292"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы рассчитать P( Win | Spam ) с Лапасе, нам нужно проанализировать данные и найти вероятность того, что кто-то подписался на newsletter или получил скидку.\n\nДанные: 10000 подписок\n\nАнализ:\n* Количество подписек, которые были подписаны за день = 200\n* Количество подписек, которые не были подписаны за день = 8000\n* Сумма подписанных подписок в день = 2100\n* Сумма подписанных подписок за день (всего) = 10000\n\nТеперь мы можем использовать формулу Лапаса:\n\nP( Win | Spam ) = P( подписки в день ) / P( подписки за день )\n\n= 2100/10000\n= 0,21\n\nВероятность того, что кто-то подписался на newsletter или получит скидку, равна 0,21.",
+      "rating": ""
+    }
+  ]
+}

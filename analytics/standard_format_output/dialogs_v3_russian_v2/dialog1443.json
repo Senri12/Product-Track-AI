@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1443",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 34.0,
+    "precision": 32.6,
+    "recall": 51.3,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.4,
+    "hallucination": 8.2,
+    "faithfulness": 36.3,
+    "noise_sensitivity": 22.1,
+    "self_knowledge": 5.4,
+    "timestamp": "2025-10-28T13:24:20.012095"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Это определение Euclidean metric:\n\n**Euclidean metric** – это метрика, использующая гипотезу компактности (class labels occupy compact regions in space). Это означает, что при классификации данных мы searches ourselves nearby points в给我们train data и устанавливаем их к каким-то классам. То есть, для каждого нового point, который попросилиы классифицировать, мы просматриваем Nearby Points –Nearest neighbors.",
+      "rating": ""
+    }
+  ]
+}

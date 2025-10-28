@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0776",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 48.3,
+    "precision": 55.7,
+    "recall": 63.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.874500"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить градиентный сплайновый дифференциаль (SGD) для функции \\( L(w) = w^2 \\), при фиксированной точке \\( w = 3 \\) и шагаемости \\( \\eta = 0.1 \\), мы начнем с нахождения первичного градиента.\n\nФункция \\( L(w) = w^2 \\). Градиент функции относительно переменной \\( w \\) определяется как:\n\n\\[ \\frac{dL}{dw} = 2w \\]\n\nТеперь подставим фиксированную точку \\( w = 3 \\):\n\n\\[ \\left. \\frac{dL}{dw} \\right|_{w=3} = 2 \\cdot 3 = 6 \\]\n\nДалее мы применим шагомость (веса) для обновления значения \\( w \\). Новый параметр \\( w_{\\text{new}} \\), после одного итерации SGD, определяется как:\n\n\\[ w_{\\text{new}} = w - \\eta \\cdot \\frac{dL}{dw} \\]\n\nПодставим известные значения:\n\n\\[ w_{\\text{new}} = 3 - 0.1 \\cdot 6 \\]\n\\[ w_{\\text{new}} = 3 - 0.6 \\]\n\\[ w_{\\text{new}} = 2.4 \\]\n\nТаким образом, после одного итерации SGD с шагомостью \\( \\eta = 0.1 \\), значение параметра \\( w \\) обновляется до \\( w_{new} = 2.4 \\).",
+      "rating": ""
+    }
+  ]
+}

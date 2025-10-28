@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0915",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 31.8,
+    "precision": 30.4,
+    "recall": 47.1,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.3,
+    "hallucination": 13.4,
+    "faithfulness": 32.4,
+    "noise_sensitivity": 19.5,
+    "self_knowledge": 4.2,
+    "timestamp": "2025-10-28T13:24:20.184200"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для письма <<Win a ruble to get rich>> мы вычислим P(win|спам) следующим образом:\n\nПри этом, мы умножаем число слов \"win\" в спам-письмах на 1 (отношение к тому, что мы видели каждое слово на один раз больше), а количество слов в классе спам.\n\nТаким образом, P(win|спам) = (1 / (1 + 7)) ≈ 0.143, потому что в письмах класса спам \"win\" встретилось единица раза.",
+      "rating": ""
+    }
+  ]
+}

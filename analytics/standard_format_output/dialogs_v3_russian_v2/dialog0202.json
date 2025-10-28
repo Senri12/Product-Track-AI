@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0202",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое Adam?",
+    "f1": 25.1,
+    "precision": 30.2,
+    "recall": 38.5,
+    "claim_recall": 34.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.5,
+    "hallucination": 13.2,
+    "faithfulness": 31.7,
+    "noise_sensitivity": 17.3,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.044100"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое Adam?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Adam — это оптимизатор, который применяется к весам During training neural networks. Он использует gradient descent с Added Momentum, что позволяет улучшить Convergence и эффективно обрабатывает ведущие архитектуры нейронных сетей с использованием batch-size и градиентных обновлений. Основные особенности Adam включают support для AdamW и standard Adam variants, таких как Adagrad и RMSprop. В compare с SGD, Adam добавляет Momentum, что улучшает Convergence и сойти.",
+      "rating": ""
+    }
+  ]
+}

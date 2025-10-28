@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1185",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 35.1,
+    "precision": 31.7,
+    "recall": 54.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 36.4,
+    "hallucination": 10.5,
+    "faithfulness": 34.8,
+    "noise_sensitivity": 21.2,
+    "self_knowledge": 4.7,
+    "timestamp": "2025-10-28T13:24:20.155124"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "При использовании метода сглаживания по Лапласу для оценки вероятности случайного встречения слова \"win\" в письмах, категория <<спам>>, вычислялись следующие значения:\n\nП(X = win|Класс = спам) = (1 + количество слов \"win\" в классе <<спам>>)/(|V| + количество слов в классе <<спам>>)\n\nВ данном примере, если слово \"win\" встретилось один раз в классе <<спам>>, то:\n\nП(X = win|Класс = спам) = (1 + 1)/(8 + 7) = 2/15 ≈ 0.133\n\nТаким образом, вероятность случайного встречения слова \"win\" в письмах, отнесенных к классу <<спам>>, равна 2/15 или примерно 0.133.",
+      "rating": ""
+    }
+  ]
+}

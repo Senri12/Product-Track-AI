@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "```python\ndef compute SGD_step(w, eta, loss_function):\n    \"\"\"\n    Computes the step in Stochastic Gradient Descent for a given function.\n    \n    Args:\n        w (float): Current value of the parameter being updated.\n        eta (float): Learning rate (step size) for the update.\n        loss_function (callable): Function to compute loss given parameters.\n        \n    Returns:\n        float: New value of the parameter after the step.\n    \"\"\"\n    # Compute gradient using automatic differentiation\n    grad = jnp.gradient(loss_function, [w])\n    \n    # Update weights with learning rate and negative gradient\n    new_w = w - eta * np.negative(grad[0])\n    \n    return new_w\n\n# Example usage:\ndef L(w):\n    return w ** 2\n\ninitial_w = 3.0\nlearning_rate = 0.1\n\n# Compute the step using autograd for differentiation\nstep = compute SGD_step(initial_w, learning_rate, L)\n\nprint(f\"New weight after step: {step:.4f}\")\n```",
+    "rating": ""
+  }
+]

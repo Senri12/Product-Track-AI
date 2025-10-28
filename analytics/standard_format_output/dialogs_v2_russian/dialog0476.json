@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0476",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 51.2,
+    "precision": 59.8,
+    "recall": 61.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.859771"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления шага минимизирующего градиента (SGD) при L(w)=w^2 с w_initial = 3 и eta(η)=0.1 используем формулу обновления в SGD:\n\nΔw = -η * ∂L/∂w\n\nСначала нам нужно найти частную производную L по w:\n∂L/∂w = d(w^2)/dw = 2*w\n\nТеперь подставим w_initial и η в выражение для Δw:\nΔw = -0.1 * 2*3\nΔw = -0.6\n\nТаким образом, шаг обновления w при SGD составляет -0.6. Если вы хотите обновить значение w, вы должны вычесть этот шаг из текущего значения w_initial:\n\nw_new = w_initial + Δw\nw_new = 3 - 0.6\nw_new = 2.4\n\nТаким образом, после одного итерации SGD значение w будет равно 2.4.",
+      "rating": ""
+    }
+  ]
+}

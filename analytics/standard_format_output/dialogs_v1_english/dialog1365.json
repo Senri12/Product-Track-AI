@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1365",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "Unknown",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 7.5,
+    "precision": 7.4,
+    "recall": 31.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.177343"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для точного вычисления значения P(win|spam) с помощью методом Паппа (Laplace), необходимо иметь данные и предположить базовую вероятность обучения каждого класса (в этом случае, \"win\" и \"no spam\") на основе отсутствия информации о классах в данных.\n\nПредположим, вы имеете следующие данные:\n1. В вашей спам-корзине с 50 сообщений, из которых 37 были определившийся как \"no spam\" (чистый класс), а 13 - как \"win\".\n2. В вашем чистом электронном почте с 40 сообщений, из которых 35 были определены как \"no spam\", а 5 - как \"win\".\n\nСреди этих данных можно вычислять P(win) (вероятность обучения класса \"win\"):\n- P(win) = Σ(win) / Σ(total)\n      = (13 + 5) / (37 + 13 + 35 + 5)\n      ≈ 0.2679\n\nПоэтому, P(win|spam), вероятность события \"win\" при предположении \"спам\", можно найти следующим образом:\n\nP(win|spam) = P(win ∩ spam) / P(spam)\n            ≈ (13 + 5) / Total(spam)\n            = (18) / (50 + 40 - (37 + 13))\n            = 18 / 67\n\nТаким образом, используя метод Паппа, настоящее значение P(win|spam) ≈ 0.2701.",
+      "rating": ""
+    }
+  ]
+}

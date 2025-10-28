@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1914",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое метод Ньютона?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:19.023607"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое метод Ньютона?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Допустим, у нас есть функция $f(x)$ и sought root x=a. Метод Ньютона — это метод итераций для нахождения this root. Он использует градиент (моделирует changes in function) для minimize or maximize the function. \n\nОсновной update rule:\n\n$$x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$$\n\nЭто converge к корню при следующих условиях: финальный exist и f'(x) != 0 в окрестности корня. Для высокой точности, возможноMultiple iterations.\n\nПример:\n\nРыбака ветра: $f(x) = x^2 - 4$, sought root x=2. начальный guess x0=3.\n\n$$x_1 = 3 - (9-4)/(2*3) = 3 - 5/6 ≈ 2.833...$$\n\n$x_2 = 2.833... - (8.027...) / (5.666...) ≈ 1.408$\n\nЗамечу, что rapidly converge к корню. Но как я могу применить это в практике?",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0148",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 39.8,
+    "precision": 42.2,
+    "recall": 51.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 33.8,
+    "hallucination": 8.7,
+    "faithfulness": 35.0,
+    "noise_sensitivity": 16.4,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:20.058548"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В Adagrad с current G_{t-1,ii}=4 и learning rate 0.1, Update для итогового параметра будет:\n\nθ_{t + 1, i} = θ_t - (η / sqrt(G_{t-1, ii} + ε)) * g_t\n\nПодставляя значения в формулу:\n\nG_{t, ii} + ε = 4 + 1e-8 ≈ 4\nη = 0.1\n\nТогда learning rate для итогового параметра будет:\n\nη / sqrt(4) = 0.1 / 2 = 0.05\n\nЗначит, Update для итогового параметра будет:\n\nθ_{t + 1, i} = θ_t - 0.05 * g_t = θ_t - 0.05 * 2 = θ_t - 0.1\n\nТаким образом, learning rate для current parameter decreases by 0.05.\n\nОтвет: 0.1",
+      "rating": ""
+    }
+  ]
+}

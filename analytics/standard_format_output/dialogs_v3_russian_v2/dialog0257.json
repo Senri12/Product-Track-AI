@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0257",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое TensorFlow?",
+    "f1": 34.6,
+    "precision": 35.0,
+    "recall": 48.7,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 29.6,
+    "hallucination": 10.2,
+    "faithfulness": 30.2,
+    "noise_sensitivity": 15.5,
+    "self_knowledge": 6.3,
+    "timestamp": "2025-10-28T13:24:20.001588"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое TensorFlow?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "TensorFlow is an open-source Python framework developed by Google to facilitate machine learning, particularly deep learning. It provides a flexible ecosystem of tools, libraries, and community-friendly resources that make it easy to build and train artificial intelligence models. \n\nKey features of TensorFlow include:\n\n1. **Graph-Based Approach**: TensorFlow uses computational graphs to represent data flows between variables. Each node in the graph represents a variable or operation, and edges represent how these variables are related.\n\n2. **Automatic Differentiation**: TensorFlow includes autograd (now part of TensorFlow 2.x), which automatically computes derivatives of functions defined by computational graphs. This allows for efficient computation of gradients needed for training models.\n\n3. **Neural Network Construction**: TensorFlow enables the construction of complex neural networks with layers, units, and operations. For example:\n   - A simple network might consist of an input layer, one or more hidden layers, and an output layer.\n   - Each layer can be defined using `tf.layers` or other layers provided by TensorFlow.\n\n4. **Integration with Other Tools**: TensorFlow integrates well with other Python libraries such as NumPy, Pandas for data manipulation, and Matplotlib for visualization. This makes it easy to work with data while building and training models.\n\n5. **Optimization**: TensorFlow provides a variety of optimization algorithms, including Stochastic Gradient Descent (SGD), AdamOptimizer, RMSprop, and others. These optimizers adjust the weights of the model during training to minimize loss functions.\n\n6. **Model Serialization/Deserialization**: TensorFlow allows for easy saving and loading of models using `tf.saver` or other serialization methods.\n\n7. **Extensibility**: TensorFlow is extensible, allowing users to add custom layers and operations. It also supports distributed computing via TensorFlow Distributed Computing.\n\nIn summary, TensorFlow automates the often tedious task of manually calculating gradients and backpropagating errors through complex neural network architectures. This makes it an invaluable tool for developing machine learning models, especially deep learning applications.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog2457",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 28.1,
+    "precision": 25.6,
+    "recall": 49.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.939239"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы найти v_t, нам сначала нужно вычислить δv_t, которое представляет собой изменение velocity от t(t-1) до t.\n\nИспользуя формулу δv = ∇L × γ, где Л — лагrangian, γ — вычисаемая частная производная (как в этом случае), и η — коэффициент кратности для анализа, что означает, что изменение времени (t-1) составляет 10% от общей durations (t).\n\nδv = ∇L × γ\n= 2 \\* 0.9 = 1,8\n\nСледовательно, δv_t = δv_t(0,1) = δv × η\n= 1,8 \\* 0,1 = 0,18.\n\nИтак, v_t = v_{t-1} + δv_t = 1 + 0,18 = 1,18.\n\nСледовательно, наше вычисление показывает, что v_t ≈ 1,18.",
+      "rating": ""
+    }
+  ]
+}

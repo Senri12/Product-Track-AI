@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0178",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.095613"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вопрос: В Adagrad, G_{t-1,ii}=4, g_t=2, learning rate=0.1, eps=1e-8.\n\nОтвет:\n\nAdagrad позволяет уменьшить learning rate для каждого измерения по-разному на основе градиентов, что делает обновление параметров более эффективным. В заданном сценарii G_{t-1,ii}=4 и g_t=2 с learning rate=0.1 и eps=1e-8, Adagrad может применяться для улучшения обработки градиентов в нейронных сетях.",
+      "rating": ""
+    }
+  ]
+}

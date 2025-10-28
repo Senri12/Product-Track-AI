@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0152",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
+    "f1": 32.3,
+    "precision": 34.2,
+    "recall": 48.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.1,
+    "hallucination": 10.9,
+    "faithfulness": 31.4,
+    "noise_sensitivity": 19.4,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-10-28T13:24:20.090200"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как выбрать количество соседей k в k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "The key idea here is that when evaluating a machine learning model, it's crucial to use an independent test set to get an unbiased estimate of its performance. The cross-validation approach, while effective, only uses the train and validation sets but might still allow for some variability or leakage due to different splits. Using the separate test set helps ensure that the model is evaluated on truly unseen data, reducing overfitting and providing a more reliable performance measure.\n\nHere's how you can use this in practice:\n\n1. **Split your dataset**: Divide it into three parts:\n   - Training set: Data used to train your model.\n   - Validation set: Used during cross-validation but not for final evaluation.\n   - Test set: Completely unused for training or evaluating the model.\n\n2. **Run cross-validation on the training and validation sets** (like k-fold cross-validation) without using the test set in this step. The goal here is to estimate how your model would perform if you used all available data during training, not just splitting into train and validation.\n\n3. **Evaluate on the test set**: Once you're satisfied with your model's performance based on the training and validation sets, you can use the test set (which hasn't been seen by your model) to measure its final performance.\n\nThis approach ensures that you're testing your model's ability to generalize to unseen data, which is crucial for real-world applications.",
+      "rating": ""
+    }
+  ]
+}

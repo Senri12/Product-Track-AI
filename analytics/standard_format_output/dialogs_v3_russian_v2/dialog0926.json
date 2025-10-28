@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0926",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 31.8,
+    "precision": 30.4,
+    "recall": 47.1,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.3,
+    "hallucination": 13.4,
+    "faithfulness": 32.4,
+    "noise_sensitivity": 19.5,
+    "self_knowledge": 4.2,
+    "timestamp": "2025-10-28T13:24:20.186468"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления шага в методе градиентного спуска (SGD) при L(w) = w^2 и w = 3 с шагом η = 0.1, необходимо умножить значение градиента на берегающую функцию:\n\n1. Вычисляем значение функции L(w) для текущего вектора w (в данном случае w = 3):\n   L(3) = 3^2 = 9\n\n2. Умножаем летний градиент, который является соотношением изменения функции по вектору вектора w на себя (для упрощение когда w становится равным 1):\n   η = 0.1\n\n3. Вычисляем шаг в методах градиентного спуска:\n   шаг = η * L(w) = 0.1 * 9 = 0.9\n\nТаким образом, при этом уменьшается значение вектора w по шагу 0.9.",
+      "rating": ""
+    }
+  ]
+}

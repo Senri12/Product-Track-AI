@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1109",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 30.0,
+    "precision": 30.8,
+    "recall": 43.4,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.7,
+    "hallucination": 11.4,
+    "faithfulness": 34.1,
+    "noise_sensitivity": 20.6,
+    "self_knowledge": 4.5,
+    "timestamp": "2025-10-28T13:24:20.172510"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В данном случае используется линейный метод для адаптивного увеличения или уменьшения learning rate (η) с каждым шагом t.\n\nПараметры:\n- η0 = 0.1 – начальное значение learning rate.\n- t = 5 – текущее шаге.\n- T = 10 – концовое количество шагов последнего цикла (в этом случае, тоталенный количество шагов).\n\nСледующая функция определяет какой будет уменьшение learning rate на следующем шаге:\n\nηt = η0 * (T - t) / T\n\nЗамените значения параметров в эту формула:\n\nηt = 0.1 * ((10 - 5) / 10) = 0.05\n\nТаким образом, на следующем шаге (t + 1), learning rate будет равно 0.05.",
+      "rating": ""
+    }
+  ]
+}

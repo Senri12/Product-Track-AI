@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1319",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 33.1,
+    "precision": 35.2,
+    "recall": 47.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.206642"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " To calculate the learning rate at time `t` using linear decay, we'll use the formula for linearly decreasing learning rates:\n\nη(t) = η0 * (1 - (t / T))\n\nHere's how you can work through it:\n\n1. Identify the initial learning rate (η0): η0 = 0.1\n2. Determine the total number of iterations (T): T = 10\n3. Find the current iteration number (t): t = 5\n4. Use the formula to calculate the learning rate at the given time step:\n\nη(5) = η0 * (1 - (5 / 10))\nη(5) = 0.1 * (1 - 0.5)\nη(5) = 0.1 * 0.5\nη(5) = 0.05\n\nSo, the learning rate at time `t=5` using linear decay would be 0.05 or 5%.",
+      "rating": ""
+    }
+  ]
+}

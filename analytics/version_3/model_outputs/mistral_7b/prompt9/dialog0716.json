@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": " Шаг в SGD для заданных параметров можно вычислить следующим образом:\n\nL(w) = w^2\ngradient (для одномерной функции - это просто первая производная) = 2w\n\nИзменив вес w на новое значение w - gradient \\* learning rate:\n\nw' = w - gradient \\* learning rate\n\nИспользуя заданное значение learning rate (η=0.1), получаем:\n\nw' = 3 - 2\\*3 \\* 0.1 = 2.4\n\nТаким образом, новый вес после одного шага SGD будет равен 2.4.",
+    "rating": ""
+  }
+]

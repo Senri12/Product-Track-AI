@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0367",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
+    "f1": 30.9,
+    "precision": 37.4,
+    "recall": 38.6,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 29.0,
+    "hallucination": 16.4,
+    "faithfulness": 31.1,
+    "noise_sensitivity": 10.0,
+    "self_knowledge": 2.6,
+    "timestamp": "2025-10-28T13:24:19.912378"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить вероятность класса в Naive Bayes, мы можем использовать формулу:\n\nP(Kласс=y) = P(X₁|Класс=ы) ⋅ P(X₂|Класс=ы) ⋅ …⋅ P(Кп | Класс=ы)\n\nгде y ∈ Y — множество меток классов, а Klass – класс.\n\nДавайте рассмотрим example.\n\nМы хотим classify text into two classes: \"spam\" or \"not spam\".\n\nТестовый объект:\n\nX₁ = [ \"создание\", \"запись в Twitter\", \"спланировка\"] (3 words)\n\nX₂ = [ \"дети\", \"вакцинация\", \"стоимость\"] (3 words)\n\nМножество меток классов Y = {1, 2}\n\nПоскольку X₁ и X₂ содержат три слова, мы можем рассчитать вероятность каждого слова вeach class.\n\nP(X₁|Класс=1) = P([ \"создание\", \"запись в Twitter\", \"спланировка\"]) (3 words)\n\nP(X₁|Класс=2) = P([ \"дети\", \"вакцинация\", \"стоимость\"]) (3 words)\n\nПоскольку X₁ и X₂ содержат три слова, мы можем рассчитать вероятность каждого слова вeach class.\n\nP(X₁|Класс=1) = 1/32 (поскольку есть 32possible combinations of three words from a list of 10 words)\n\nP(X₁|Класс=2) = 5/64 (поскольку есть 5 possible combinations of three words from a list of 9 words that are not in the first class)\n\nТеперь мы можем вычислить вероятность класса.\n\nP(Класс=1) = P(X₁|Класс=1) ⋅ P(X₂|Класс=1)\n= (3/32) ⋅ (3/64)\n= 9/2048\n\nP(Класс=2) = P(X₁|Класс=2) ⋅ P(X₂|Класс=2)\n= (5/64) ⋅ (1/32)\n= 5/2048\n\nИтак, вероятность classify text into class \"spam\" равна:\n\nP(Класс=1) = 9/2048 ≈ 0.004375\n\nВероятность classify text into class \"not spam\" равна:\n\nP(Класс=2) = 5/2048 ≈ 0.002390\n\nТаким образом, Naive Bayes-classifier классифицирует text в два classes с вероятностями:\n\nP(Класс=1) ≈ 0.004375\nP(Класс=2) ≈ 0.002390\n\nОкончательный ответ — P(Класс=1) = 9/2048, P(Класс=2) = 5/2048.",
+      "rating": ""
+    }
+  ]
+}

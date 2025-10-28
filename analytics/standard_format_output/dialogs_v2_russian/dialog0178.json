@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0178",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 34.7,
+    "precision": 37.0,
+    "recall": 43.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.975524"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В Adagrad есть два переменных: г_{t-1,ii} и г_t.\n\nг_{t-1,ii} = 4\nг_т = 2\nη = 0,1\nε = 1e-8\n\nЧтобы найти значение g_t, мы используем формулу Adagrad:\n\ng_t = g_{t-1,ii} + ε \\* г_{t-1,ii}\n\nПодставив данные значения, получим:\n\nг_т = 4 + (1е-8) \\* 4\n\nОбратите внимание: в Adagrad использован только один случай (нaming scheme), когда g_t представляет собой среднее значение g_{t-1,ii} и ε представляет собой ошибку.\n\nг_т ≈ 4 + 0,016 = 4,016\n\nЧтобы получить точное значение g_t, нам нужно знать, сколько времени проходит до next iteration. \n\nКраткий вывод: \ng_t ≈ g_{t-1,ii} + ε \\* г_{t-1,ii}\nг_т = g_{t-1,ii} + (1е-8) \\* г_{t-1,ii}",
+      "rating": ""
+    }
+  ]
+}

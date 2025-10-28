@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0852",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+    "f1": 18.3,
+    "precision": 35.0,
+    "recall": 38.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.725835"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Расстояние Euclidean (также известное как расстояние норма или просто расстояние) между двумя точками в двумерном пространстве определяется формулой:\n\nDistance = √((x₂ - x₁)^2 + (y₂ - y₁)^2)\n\nГде (x₁, y₁) и (x₂, y₂) — это координаты двух точек.\n\nВаша проблема касается двух точек: A(1, 2) и B(3, 4). Сначала мы определим значения x₁, y₁, x₂ и y₂:\n\n- x₁ = 1\n- y₁ = 2\n- x₂ = 3\n- y₂ = 4\n\nТеперь подставьте эти значения в формулу расстояния:\n\nDistance = √((x₂ - x₁)^2 + (y₂ - y₁)^2)\n         = √((3 - 1)^2 + (4 - 2)^2)\n         = √(2^2 + 2^2)\n         = √(4 + 4)\n         = √8\n         ≈ 2.83\n\nТаким образом, расстояние Euclidean между точками A(1, 2) и B(3, 4) составляет примерно 2.83 единицы (коэффициент умножения зависит от системы измерений, используемой для координат).",
+      "rating": ""
+    }
+  ]
+}

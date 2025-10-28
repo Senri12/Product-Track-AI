@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0649",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "Unknown",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 30.4,
+    "precision": 39.8,
+    "recall": 54.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:17.807665"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Overfitting occurs when your machine learning model learns not only the underlying patterns in the training data but also noise specific to that dataset too well. As a result, while it performs exceptionally on this particular set of data (high accuracy), its performance significantly drops with new or unseen datasets because it's learned features and details irrelevant for generalization.\n\nTo help you understand better:\n\nImagine you're teaching someone how to recognize cats in pictures by showing them lots of images that are either all black-and-white photos taken from different angles, zoom levels etc. Over time they can learn what makes a cat look like it is not actually seeing the real features (shape, texture) because they're just memorizing specific details about each photo.\n\n**Practice Problem:**\n\n1. Consider you have trained two machine learning models for predicting house prices based on various attributes of houses and their neighborhoods.\n    - Model A has high accuracy but takes a very long time to learn even from the training data (takes days).\n    - Model B quickly converges, showing low error during initial runs.\n\n2. Now imagine you've found out that both these results have happened because:\n    - For model A: The neural network was too complex for this small dataset.\n    - For model B: It performed very well on the training data but did poorly when tested against a new set of unseen house prices, thus indicating overfitting.\n\n**Quiz Question:** \n\nExplain why would having an overly complicated feature extraction method contribute to your machine learning model's tendency toward Overfitting? How can you identify if you've created such an instance in practice?\n\nEvaluate the responses based on:\n\n1. Correct identification that high complexity may result from too many features, not all of which are relevant.\n2. Understanding overfitting is indicated by poor generalization or performance drop when applied to new data.\n\nFor further exercises:\n- Try simplifying your model and feature set incrementally while monitoring both training error (to avoid underfitting) as well as validation/test errors for signs that the complexity might still be too high causing a spike in test accuracy compared with significantly higher but lower spikes on train-test splits.",
+      "rating": ""
+    }
+  ]
+}

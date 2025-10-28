@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0683",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое learning rate?",
+    "f1": 40.7,
+    "precision": 39.1,
+    "recall": 51.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.5,
+    "hallucination": 10.7,
+    "faithfulness": 34.2,
+    "noise_sensitivity": 18.4,
+    "self_knowledge": 5.1,
+    "timestamp": "2025-10-28T13:24:20.315500"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое learning rate?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Learning rate в машинном обучении - параметр, определяющий скорость спуска по градиенту функции целевой функции (objective function) при использовании оптимизатора gradient descent. Он указывает на величину шага, который делается в направлении минимизации функции целевой функции во время обучения нейронной сети. Чем больше learning rate, тем быстрее модель спускается по градиенту, но также и вероятнее наткнуться на локальный максимум или минимум (застрять в локальном оптимуме). Чем меньше learning rate, тем медленнее модель спускается по градиенту, но также и вероятнее достичь глобального минимума. Идеальный выбор learning rate зависит от конкретной задачи и может быть получен путем экспериментов с различными значениями.",
+      "rating": ""
+    }
+  ]
+}

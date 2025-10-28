@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0085",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС (2)",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 29.7,
+    "precision": 32.3,
+    "recall": 39.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-10-28T13:24:18.907752"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (Root Mean Squared Propagation) — это метод предсказания прогрессии в моделих, что позволяет нам обновлять их и вычислять их значения на основе предыдущих значений. Это часто используется в когнитивных 모델ах.\n\nВ более конкретном контексте RMSProp можно представить как:\n\nRMSProp = (Current Value - Previous Value) / 2 + Previous Value\n\nЭтот метод оценивает текущее значение и вычисляет его разницу с предыдущим значением, а затем добавляет это к предыдущему значению. Это приводит к более точному прогрессивному значениям.\n\nАлгоритм RMSProp включает три этапа:\n\n1. Вычисление差ения между текущим иPreviousValue\n2. Возведение в квадрат разницу\n3. Вычитание Previous Value из суммы квадратных различий\n\nПреобразование в алгоритм:\n\nRMSProp = (Current - Previous) / 2 + Previous\n\nРасширенный алгоритм RMSProp: \n\nRMSProp = Current - Previous + 0.999 * Previous",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как вычислить вероятность класса в Naive Bayes?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вероятность класса для test objects в Naive Bayes алгоритме вычисляется по формуле:\n\n$$\n\\text{Prob}(Y=k|\\mathbf{X}) = \\frac{\\prod_{i=1}^{p}\\text{Prob}(X_i | Y=k) \\cdot \\text{Prob}(Y=k)}{\\sum_{y'\\in Y}\\left(\\prod_{i=1}^{p}\\text{Prob}(X_i | Y=y')\\right)\\cdot \\text{Prob}(Y=y')}\n$$\n\nгде:\n- \\( \\mathbf{X} = (X_1, X_2, \\ldots, X_p) \\) – атрибуты test object,\n- \\( Y \\) – классы объектов,\n- Prob(Y=k|X) – вероятность, что test object имеет класс k,\n- Prob(X_i | Y=k) – вероятность, что ith атрибут takes value X_i given the class k,\n- Prob(Y=k) – общая вероятность, что объект имеет класс k,\n- Prob(X) – общая вероятность, что test object.\n\nИтак, дляeach test object, нужно сокращать формулу к наиболее вероятному(cls k)类别 и выбрать его.",
+    "rating": ""
+  }
+]

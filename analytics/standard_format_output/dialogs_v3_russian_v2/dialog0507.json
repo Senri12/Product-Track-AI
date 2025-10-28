@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0507",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 37.7,
+    "precision": 36.0,
+    "recall": 51.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 32.5,
+    "hallucination": 10.0,
+    "faithfulness": 34.4,
+    "noise_sensitivity": 21.1,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-10-28T13:24:20.261226"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Необходимо выполнить следующие действия для расчета скорости v_t в алгоритме моментов:\n\n1. Использование формулы для получения текущей скорости:\n   `v_t = γ * v_(t-1) - η * ∇L`\n\n2. Подстановка значений в формулу:\n   - γ (momentum coefficient) = 0.9\n   - v_(t-1) (previous velocity) = 1\n   - ∇L (gradient of loss function) = 2\n   - η (learning rate) = 0.1\n\n3. Получим: `v_t = γ * v_(t-1) - η * ∇L => v_t = 0.9 * 1 - 0.1 * 2 = 0.8`\n\nСкорость `v_t` для данных значений составляет 0.8.",
+      "rating": ""
+    }
+  ]
+}
