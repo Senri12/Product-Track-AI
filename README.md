@@ -104,14 +104,14 @@ pip install -r requirements.txt
 ```
 
 Нужно локально:
-Python 3.10+
-Ollama (установленные модели)
-sentence-transformers
-sklearn
-torch
-ragchecker
-requests
-sqlite
+- Python 3.10+
+- Ollama (установленные модели)
+- sentence-transformers
+- sklearn
+- torch
+- ragchecker
+- requests
+- sqlite
 
 ## 🚀 Запуск
 1. Подготовка базы знаний
@@ -130,7 +130,7 @@ overall_report.csv — итоговая таблица оценок
 ---
 
 ## 🧠 Архитектура
-LLM + RAG + Embeddings + Report Pipeline
+![Pipeline](https://github.com/Senri12/Product-Track-AI/blob/main/pipeline.png)
 
 ## 📊 Данные экспериментов
 Поле	              Описание
@@ -156,24 +156,24 @@ answer = process_query("Что такое метод k-NN?", "1_Классифи
 print(answer)
 ```
 ## ✅ Используемые технологии
-Python
-Ollama
-Sentence Transformers
-RAGChecker
-Cosine Similarity
-SQLite
+- Python
+- Ollama
+- Sentence Transformers
+- RAGChecker
+- Cosine Similarity
+- SQLite
 
 ## 🏁 Команда и роли
-Шабуров Антон Андреевич — Инженер-разработчик (Architecture, RAG, LLM Integration, Evaluation Pipeline)
-Терешкин Дмитрий Александрович — Инженер-аналитик (Data Preparation, Prompt Engineering, Experiment Design, Analysis)
+- Шабуров Антон Андреевич — Инженер-разработчик (Architecture, RAG, LLM Integration, Evaluation Pipeline)
+- Терешкин Дмитрий Александрович — Инженер-аналитик (Data Preparation, Prompt Engineering, Experiment Design, Analysis)
 
 ## 📜 Лицензия
 Проект распространяется по лицензии MIT (см. файл LICENSE).
 
 ## 📬 Контакты
 Если у вас есть вопросы — обращайтесь через Issues в репозитории.
-@Senri1 — Инженер-разработчик (Architecture, RAG, LLM Integration, Evaluation Pipeline)
-@Otrix_ai — Инженер-аналитик (Data Preparation, Prompt Engineering, Experiment Design, Analysis)
+- @Senri1 — Инженер-разработчик (Architecture, RAG, LLM Integration, Evaluation Pipeline)
+- @Otrix_ai — Инженер-аналитик (Data Preparation, Prompt Engineering, Experiment Design, Analysis)
 
 ---
 
