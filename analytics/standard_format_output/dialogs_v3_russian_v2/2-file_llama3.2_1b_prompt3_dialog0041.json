@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0041",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt3_dialog0041",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 25.3,
+    "precision": 32.0,
+    "recall": 29.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 26.4,
+    "hallucination": 30.5,
+    "faithfulness": 51.5,
+    "noise_sensitivity": 37.5,
+    "self_knowledge": 17.9,
+    "timestamp": "2025-11-08T21:40:49.778277"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Трудность использования(batch normalize) в рекуррентных сетях заключается в том, что приbatch normalization каждого hidden layer hidden unit сначала умножается на Ux и b, а затем в сумме вычисляется нелинейная функция f(li). В результате для каждого hidden unit из hidden layers batch normalization фактически выполняется только один раз. Это означает, что hidden units, принадлежащие одномуhidden layerhidden layerhidden layerhidden layerhidden layer, будут иметь уникальные значения batch normalizeции при each iterationbatch normalizetionbatch normalizetion.",
+      "rating": ""
+    }
+  ]
+}

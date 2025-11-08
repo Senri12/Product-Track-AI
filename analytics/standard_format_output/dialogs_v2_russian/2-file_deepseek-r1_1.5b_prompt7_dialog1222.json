@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1222",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt7_dialog1222",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.875010"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "ЛSTM (Long Short-Term Memory) — это структура, которая используется в нейросетях для обработки последовательностей данных. Стандартная LSTM ячейка включает несколько основных компонентов:\n\n1. **cell_state**: Это суммарное состояние, который последовательно обновляется на каждом шаге для каждого элемента.\n\n2. **gate1** и **gate2**: Эти компоненты являются Scalar Values (посitive числа между 0 и 1), которые обновляют state с помощью sigmoid или tanh функций. Gate Variables allow the LSTM to selectively update the cell state based on the current context.\n\nЭти компоненты включают standards cells из библиотек, такие как TensorFlow и PyTorch, и используются для реализации LSTM ячейки в нейросетях.",
+      "rating": ""
+    }
+  ]
+}

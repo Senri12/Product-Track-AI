@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0949",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt4_dialog0949",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.457277"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В чем отличие Simple RNN от глубоких RNN?\n\n1. **Гиперсилка и последовательность字符а:**\n   - **Simple RNN:** Применяется для анализа последовательных данных, но не обновляет state между шагами. Это может привести к затухающим градиентам.\n   - **Gated RNN (GRU):** Обновляет state через Gates (целевую и 输入ную), что позволяет сохранятьstate между шагами и улучшить обработку данных.\n\n2. **Структура:**\n   - **Simple RNN:** Используется как Single-Sequence model, не обрабатывает контекст.\n   - **Gated RNN:** Обрабатывает контекст через state, что способствует повышению эффективности train и улучшению обработки сложных данных.\n\n3. **Градиенты:**\n   - **Simple RNN:** Градиенты могут затухать, так как гиперсилка не учитывает последовательность字符а.\n   - **Gated RNN:** Управляет градиентами более эффективно, как они обновляются через state.\n\n4. **Приложения:**\n   - **Simple RNN:** Оптимизирован для задач с низкой сложностью, где основной аспект — гиперсилка.\n   - **Gated RNN:** Обрабатывает более сложные задачи и последовательные данные, улучшая результаты.\n\nВ итоге, глубокие RNN обновляют state между шагами, что позволяет улучшить обработку данных и снизить градиенты, что приводит к повышению эффективности train.",
+      "rating": ""
+    }
+  ]
+}

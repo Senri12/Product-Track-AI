@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0069",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt5_dialog0069",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 30.7,
+    "precision": 26.1,
+    "recall": 44.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 41.9,
+    "hallucination": 35.1,
+    "faithfulness": 57.5,
+    "noise_sensitivity": 38.8,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-11-08T21:40:49.945986"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Замочные скважины (peepholes) в LSTM и GRU используются для управления state при обновлении. Это помогает в Prevent reset if the unit resets, усилить погрешности и предсказанию последовательности данных. \n\nИтак, замочные скважины используются для избежания косвенных ошибок при обновлении state и усиления погрешностей, что важно для настройки генераторов текста и предсказания последовательности данных.",
+      "rating": ""
+    }
+  ]
+}

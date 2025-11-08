@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0718",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt9_dialog0718",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 42.2,
+    "precision": 39.4,
+    "recall": 57.2,
+    "claim_recall": 40.0,
+    "context_precision": 50.0,
+    "context_utilization": 37.4,
+    "hallucination": 11.3,
+    "faithfulness": 35.5,
+    "noise_sensitivity": 14.3,
+    "self_knowledge": 3.3,
+    "timestamp": "2025-11-08T21:40:48.649611"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Итак, в Adagrad:\n\n*   G_{t-1,ii} = 4\n*   g_t = 2\n*   η = 0.1\n*   ε = 1e-8\n\nОбновляем диагональную матрицу G_t:\n\nG_{t,ii} = G_{t-1,ii} + g_t^2 = 4 + 2^2 = 4 + 4 = 8\n\nТаким образом,  G_{t,ii} = 8.\n",
+      "rating": ""
+    }
+  ]
+}

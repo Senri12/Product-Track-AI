@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0176",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt12_dialog0176",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 51.3,
+    "precision": 48.3,
+    "recall": 64.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.256608"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Основная трудность применения обычной batch normalization к RNN заключается в том, что RNN обрабатывают последовательности данных, и длина последовательностей может сильно варьироваться. Batch normalization использует среднее и дисперсию для нормализации данных в *пакете* (batch).  Если пакеты имеют разную длину, то для нормализации необходимо либо агрегировать данные из разных пакетов, что может привести к потере информации о последовательности, либо использовать среднее и дисперсию, вычисленные по всем данным, что также теряет информацию о последовательности.  В итоге, это может привести к нестабильности обучения и к затухающим или взрывающимся градиентам.\n",
+      "rating": ""
+    }
+  ]
+}

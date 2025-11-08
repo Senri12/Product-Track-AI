@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1034",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt9_dialog1034",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.496903"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?**\n\n1. **Обработка последовательности данных:**\n   - Usually RNNs processes a single sequence of data (например, text).\n   - Show Attend and Tell simultaneously processes all tokens in the input sequence.\n\n2. **Внешний трансформер для каждого элемента:**\n   - Usually RNNs uses hidden states for each time step to carry information forward.\n   - Show Attend and Tell applies external transformer layers after attention scores, enabling self-attention within each token position.\n\n3. **Концентрация контекста:**\n   - Normally RNNs processes tokens sequentially but lacks global context processing.\n   - Show Attend and Tell maintains a global context through the transformer blocks, which allows for more stable gradients.\n\n4. **Использование注意力机制и:**\n   - Normally RNNs may rely on local dependencies between tokens.\n   - Show Attend and Tell uses external attention mechanisms to capture relationships between all elements in the sequence.\n\n5. **Сimpler architecture:**\n   - Usually RNNs are simpler, with no complex skip connections or multiple layers (often one).\n   - Show Attend and Tell is more complex but efficient due to its use of transformer blocks.\n\n6. **Global processing:**\n   - Normal RNN processes tokens sequentially without considering the entire sequence context.\n   - Show Attend and Tell explicitly maintains global context through its architecture, enhancing processing efficiency.\n\n7. **Gradient stability:**\n   - Usually RNNs can suffer from vanishing or exploding gradients due to sequential dependencies.\n   - Show Attend and Tell mitigates this issue by using self-attention within each token position and global transformer processing.\n\n**В заключение:**\nShow, Attend and Tell differs from usual RNNs in its ability to process sequences simultaneously, use external attention mechanisms, maintain global context via transformer blocks, and leverage simplified architecture for better stability of gradients.",
+      "rating": ""
+    }
+  ]
+}

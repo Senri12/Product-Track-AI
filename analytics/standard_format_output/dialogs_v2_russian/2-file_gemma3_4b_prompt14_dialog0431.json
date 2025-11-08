@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0431",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt14_dialog0431",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 51.2,
+    "precision": 46.3,
+    "recall": 66.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.602635"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Основная трудность применения обычной batch normalization к RNN заключается в том, что batch normalization зависит от статистик (среднего и дисперсии) внутри *батча* данных. В RNNs, это становится проблемой, потому что каждый батч содержит последовательности, которые, как правило, имеют разную длину. Таким образом, статистические характеристики внутри батча становятся нерепрезентативными для каждой отдельной последовательности, что приводит к непредсказуемым и нестабильным градиентам.\n",
+      "rating": ""
+    }
+  ]
+}

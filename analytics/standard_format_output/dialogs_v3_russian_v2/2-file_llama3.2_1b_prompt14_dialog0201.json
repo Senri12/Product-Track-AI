@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0201",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt14_dialog0201",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как LSTM решает проблему затухающих градиентов?",
+    "f1": 31.3,
+    "precision": 43.0,
+    "recall": 36.0,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 37.1,
+    "hallucination": 29.4,
+    "faithfulness": 57.7,
+    "noise_sensitivity": 27.6,
+    "self_knowledge": 12.8,
+    "timestamp": "2025-11-08T21:40:49.761950"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как LSTM решает проблему затухающих градиентов?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "LSTM (Long Short-Term Memory) - это тип ячейки в нейронной сети, который позволяет нейронной системе корректировать данные, только когдаrecentно полученные данные могут помочь понять текущее ситуацию. В частности, LSTM позволяет корректировать градиенты, которые влиятывают на выходную ячейку, когдаRecentlyReceivedData не имеет значения для currentState. Это дает ей возможность \"запоминать\" и \"избегать\" отсрочки в вычислениях, что помогает устранить проблемы с затуханием градиентов при рекуррентных сетях.",
+      "rating": ""
+    }
+  ]
+}

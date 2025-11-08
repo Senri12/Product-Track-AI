@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0053",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt4_dialog0053",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 21.9,
+    "precision": 27.4,
+    "recall": 35.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.773189"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем GRU отличается от LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Следовательно, GRU (Gated Recurrent Unit) является типом руководящего элемента в рекурсивных моделиках. GRU и LSTM (Long Short-Term Memory) — это два самых popularных types recurrent neural networks (RNNs), которые используются для обработки последовательностей данных.\n\nGRU (Gated Recurrent Unit) отличается от LSTM следующими признаками:\n\n1. **Гатирование**: GRU и LSTM имеют в качестве ключего элемента гатирование, который позволяет им понимать контекст последовательности. Гатирование GRU не включает в себя запоминания исторических значений последовательности, что делает его отличным от LSTM.\n2. **Блоки**: GRU состоит из двух блоков: hidden и cell layer. Hidden layer представляет собой гатированный набор последовательных элементов, а cell layer является решением в том же блоке.\n3. **Побеги**: GRU не использует побега для обновления значений, что делает его более эффективным, чем LSTM.\n\nВсего количество обученных параметров в GRU меньше или равное 110 миллионов, а на задачах по обработке естественного языка BERT можно использовать только BERT Large, который имеет на 24 слоя.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1070",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt12_dialog1070",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.480033"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Двунаправленные RNNмодели обновляют градиенты из-за交错ного шага для каждой позиции в последовательности. Например, в model [t] → [t-1], [t+1] → [t], модель simultaneously processes the step at t-1 and t+1 for position t. Это помогает учитывать контекст из предыдущих и следующих позиций.\n\nГрадиенты в RNNмоделях могут растягиваться exponentialmente, что вызывает проблемы с избежанием Overfitting и сложной обработкой данных по времени. Для устранения этого problem, методы оптимизации, такие как квантизация градиентов, use of knowledge distillation, batch normalization, dropouts, weighted gradients и momentum, применяются.\n\nТеперь приступим к более детальному описанию RNNмоделей в practice:\n\n---\n\n### Введение\nРекуррентные神经-networks (RNN)модели обновляют градиенты из-за их交错ного шага для каждой позиции в последовательности. Например, model looks like this: [t] → [t-1], [t+1] → [t]. Это позволяет simultaneously process the step at t-1 and t+1 for position t.\n\n---\n\n### Схемы моделей (двунаправленные RNN)\nДвунаправленные RNNмодели обновляют градиенты для каждой позиции в последовательности. Например:\n\n```python\nx_t -> h_{t-1}\nh_{t+1}         -> x_t\n```\n\nЭти схемы позволяют simultaneously update the gradients for steps t-1 and t+1.\n\n---\n\n### Градиенты и их затухание\nВ RNNмоделях градиенты могут растягиваться exponentialmente, что делает обучение сложнее. Это вызывает проблемы с избежанием Overfitting и сложной обработкой данных по времени. Для устранения этого problem, методы оптимизации, такие как weighted gradients и momentum, применяются.\n\n---\n\n###_ASVspoиче_",
+      "rating": ""
+    }
+  ]
+}

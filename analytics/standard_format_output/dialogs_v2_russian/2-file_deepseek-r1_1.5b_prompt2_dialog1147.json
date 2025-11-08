@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1147",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt2_dialog1147",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.851607"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "LSTM (Long Short-Term Memory) ячейки — это основной компонент в LSTM-модели, которая позволяет обрабатывать последовательность данных с сохранением long-term memory. Основные элементы standard LSTM ячейки:\n\n1. **State**:\n   - *h_prev* — предыдущая гratingphaст.\n   - *c_prev* — предыдущий carry.\n\n2. **Input**:\n   - *x_t* — Current input vector.\n\n3. **Forget gate**: Управляет фильтрацией incoming information, чтобы у Blocksировать anything that's not relevant to current context.\n\n4. **Candidate activation**: КANDIdатная акция, которая формирует intermediate representation.\n\n5. **Update gate**: Управляет updateation, чтобы определить, что нужно сохранить в state.\n\n6. **Output gate**: Управляет outputting, чтобы выделить результата для current timestep.\n\nТаким образом, standard LSTM ячейка позволяет обрабатывать последовательность данных с сохранением long-term memory и фильтрацией incoming information.",
+      "rating": ""
+    }
+  ]
+}

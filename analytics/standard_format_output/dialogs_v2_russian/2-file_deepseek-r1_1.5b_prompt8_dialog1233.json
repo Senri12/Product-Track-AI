@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1233",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt8_dialog1233",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.886946"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Типы входов и выходов в gated feed-forward neural network:**\n\n1. **Sequence Inputs**: Пакеты данных с разными нумерациями, используемые для задач, где последовательность требуется обработать по порядку.\n\n2. **Single Input**: Одно вход, но это может быть возвращающим вектор размером 768, typically used for attention mechanisms, where the gate connects this vector with the output of previous time step.\n\n3. **Step-wise Inputs**: Нумерованные шаги по последовательности данных,typically used during training RNNs to update state at each step.\n\n**Типы выходов:**\n\n1. **Sequence Outputs**: Выбираются для задач, таких как предсказания последней ячейки или完整性 последовательности.\n\n2. **Single Output**: Используется для задач без последовательности данных,например, классификации Single Label Classifications.\n\n3. **Step-wise Outputs**: Гаты могут быть полными, позволяя обновлять state на каждом шаге и использовать их для следующих шагов.\n\n**Примечания:**\n\n- gated feed-forward neural network объединяет гаты с feed-forward структурой, что делает его более эффективным в процессах обработки данных.\n- GRUs у simpler структуры без гатов и используют gate для掩 propagation, что может быть более эффективно для некоторых задач.",
+      "rating": ""
+    }
+  ]
+}

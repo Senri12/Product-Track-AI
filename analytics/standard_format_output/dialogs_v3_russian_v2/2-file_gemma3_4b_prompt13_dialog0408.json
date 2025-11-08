@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0408",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt13_dialog0408",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 46.0,
+    "precision": 42.0,
+    "recall": 57.0,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 59.8,
+    "hallucination": 26.8,
+    "faithfulness": 64.9,
+    "noise_sensitivity": 31.2,
+    "self_knowledge": 8.3,
+    "timestamp": "2025-11-08T21:40:49.590070"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В задачах RNN встречаются следующие типы входов и выходов:\n\n*   **Входы:**\n    *   Вектор входных данных на шаге i (xi)\n    *   Скрытое состояние на шаге i-1 (si-1)\n*   **Выходы:**\n    *   Текущее скрытое состояние на шаге i (si)\n    *   Выход текущего блока (ai)\n",
+      "rating": ""
+    }
+  ]
+}

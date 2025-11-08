@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0194",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt13_dialog0194",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 17.7,
+    "precision": 24.2,
+    "recall": 33.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.770255"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Ответ: Model BERT (Bidirectional Encoder Representations from Transformers) differs от обычного РНН (Режимно-Наборно-Обучаемый Нейронормальные сети) в том, что она используется для языковых задач и имеет более сложный architectures.\n\n Show, Attend and Tell (SAT) — это метод обработки изображений, который sử dụng modèle BERT для упрощения работы с данными изображениями. Этот метод включает три шага: \n\n1. Codирование входного изображения в шаблон hidden-state (внутри слоя энкодера).\n2. Attention — умение модели учитывать конкретные части изображения, чтобы создать более точный представление о содержании.\n3. Decoding — последний шаг, где modelo generates output image based на предсказанном hidden-state.\n\n Unlike traditional RNNs for image processing, which use recurrent neural networks (RNN) architectures to process sequential data, models like SAT make use of transformer architecture, which is well-suited for tasks that involve sequential data and attention mechanisms. \n\nSat является более сложной и эффективной подход к обработке изображений, поскольку оно может упростить сложные задачи для обработки естественного языка, включая Masked Language Modeling (Масштабирование языковых данных), тегирование words в предложении и классификация спама.",
+      "rating": ""
+    }
+  ]
+}

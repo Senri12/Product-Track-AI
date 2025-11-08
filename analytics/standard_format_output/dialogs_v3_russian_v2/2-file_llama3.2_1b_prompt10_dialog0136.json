@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0136",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt10_dialog0136",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+    "f1": 21.4,
+    "precision": 27.7,
+    "recall": 22.9,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 24.5,
+    "hallucination": 33.9,
+    "faithfulness": 55.7,
+    "noise_sensitivity": 38.4,
+    "self_knowledge": 10.4,
+    "timestamp": "2025-11-08T21:40:49.797915"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Рекуррентные нейронные сети (RNNs) используются для моделирования последовательных данных, где каждая токенная строка depends на предыдущие токены. Однако в задаче machinesного перевода требуется признание языка-отметки или предpositions, который не может быть представлен помощью RNN. Для решения этого проблемы используются полносвязные нейронные сети (PNNs), которые могут учитывать предыдущие токены и их соответствующие языковые единицы.",
+      "rating": ""
+    }
+  ]
+}

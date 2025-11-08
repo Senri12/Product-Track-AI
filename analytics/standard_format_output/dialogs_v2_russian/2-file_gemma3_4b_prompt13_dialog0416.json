@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0416",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt13_dialog0416",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 47.5,
+    "precision": 40.6,
+    "recall": 63.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.606157"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Основная трудность применения обычной batch normalization к RNN (рекуррентным нейронным сетям) заключается в том, что RNN обрабатывают последовательности данных, а batch normalization требует, чтобы размеры батча были одинаковыми для всех и каждого батча.  В RNN, длина последовательности может сильно варьироваться от вход к входу, что делает невозможным применение стандартного batch normalization, поскольку размер батча должен быть одинаковым для всех входных последовательностей. Это приводит к нестабильности обучения и плохим результатам.\n",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0142",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt10_dialog0142",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 21.4,
+    "precision": 27.7,
+    "recall": 22.9,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 24.5,
+    "hallucination": 33.9,
+    "faithfulness": 55.7,
+    "noise_sensitivity": 38.4,
+    "self_knowledge": 10.4,
+    "timestamp": "2025-11-08T21:40:49.799320"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Количество компонентов в стандартной LSTM ячейке составляет 7. Это:\n\n1. Случайный признак (input gate) — 0\n2. Упрощенная форму активации сдвига переменных (gate output) — 2\n3. Градиентное обновление весов (cell state) и вектора значений (cell memory) — 5\n\nОкончательный ответ — 7.",
+      "rating": ""
+    }
+  ]
+}

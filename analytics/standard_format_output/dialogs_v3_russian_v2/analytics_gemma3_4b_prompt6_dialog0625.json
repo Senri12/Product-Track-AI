@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0625",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt6_dialog0625",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 48.8,
+    "precision": 48.0,
+    "recall": 61.6,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 36.8,
+    "hallucination": 9.3,
+    "faithfulness": 33.7,
+    "noise_sensitivity": 12.4,
+    "self_knowledge": 7.0,
+    "timestamp": "2025-11-08T21:40:48.664458"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (keras.optimizers.rmsprop) – это алгоритм оптимизации, похожий на Adagrad, но с улучшенной стабильностью. Он не накапливает сумму градиентов, как Adagrad, а вычисляет скользящее среднее этих градиентов. Это помогает избежать слишком быстрого уменьшения learning rate, которое часто наблюдается в Adagrad, и делает RMSProp более устойчивым к различным типам задач.\n",
+      "rating": ""
+    }
+  ]
+}

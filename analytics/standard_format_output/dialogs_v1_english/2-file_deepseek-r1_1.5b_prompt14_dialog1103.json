@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1103",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt14_dialog1103",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.448738"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем GRU отличается от LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Да, GRU (Gated Recurrent Unit) — это архитектура recurrent neural network (RNN), которая включает гаты перед трансформаторами. Основная отличие GRU от LSTM в том, что GRU использует state только для текущего края, тогда как LSTM использует state для entiretyки и позиции в序列. Это позволяет GRU избежать сложных комбинаций state и может быть более узкой архитектуры по времени.\n\nТакже GRU slower наtrain-test в сравнении с LSTM, так как гаты(gates) приводят к smaller update gates (для entireки) и larger reset/gate (для текущего края), что может быть неоптимально для задач с важностью последней позиции.",
+      "rating": ""
+    }
+  ]
+}

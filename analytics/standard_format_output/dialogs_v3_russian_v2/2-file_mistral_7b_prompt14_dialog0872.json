@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0872",
+    "unique_dialog_id": "2-file_mistral_7b_prompt14_dialog0872",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 34.8,
+    "precision": 31.8,
+    "recall": 51.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 53.6,
+    "hallucination": 29.3,
+    "faithfulness": 61.5,
+    "noise_sensitivity": 39.0,
+    "self_knowledge": 9.2,
+    "timestamp": "2025-11-08T21:40:50.078792"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Скрытое состояние (hidden state) в сетях рекуррентного обучения является вектором, который содержит информацию о всем предыдущем входе и актуализации скрытых ячеек (нейронных узлов) в сети. Это позволяет RNN обрабатывать последовательности данных и учиться запоминать информацию надолго, так как вектор состояния передается от одной ячейки к другой. Также скрытое состояние служит входной информацией для следующего шага сети, а также может использоваться как выходная информация при решении задач постановки на выходе.",
+      "rating": ""
+    }
+  ]
+}

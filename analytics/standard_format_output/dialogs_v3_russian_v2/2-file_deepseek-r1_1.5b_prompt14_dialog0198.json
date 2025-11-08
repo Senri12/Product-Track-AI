@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0198",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt14_dialog0198",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 39.7,
+    "precision": 40.8,
+    "recall": 53.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 54.8,
+    "hallucination": 21.4,
+    "faithfulness": 59.6,
+    "noise_sensitivity": 31.1,
+    "self_knowledge": 12.3,
+    "timestamp": "2025-11-08T21:40:49.900560"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Количество типов входов и выходов для задач RNN:\n\n1. **Один вход**: 输入 – последовательность current symbols (например, 'abc').\n2. **Уsingle output**: Выход – текущая символ (например, 'c').\n3. **Past states**: Объясняю, что past states хранят контекстные теги или фиксированные word pieces для предсказания下一步.\n4. **Multimedia input**: 输入 – последовательность pixels изображения (например, 'c').\n5. **Sequence to sequence output**: 输入 – complete text (symbol sequence), 输出 – class label.\n6. **Token classification**: 输入 – symbol sequence, 输出 – token index.\n7. **Recursive processing**: 输入 – full text, 输出 – current word, past states хранят контекстные теги для распознавания下一步.\n\nЭти типы input/output помогают Modelsey обучаться с последовательными данными и использовать память про предыдущие элементы.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0022",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt2_dialog0022",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 21.6,
+    "precision": 24.4,
+    "recall": 38.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.396102"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Ответ: LSTM (Long Short-Term Memory) ячейка состоит из двух компонентов:\n\n1. **Пространстваhidden**: это пространство, в котором содержится hidden-state (граничная область) последовательности. Это пространство позволяетHidden-State к存ать и передавать информацию до следующего шага.\n2. **Пространствоoutput**: это пространство, в котором содержится output (выходной)layer. Этот layer принимает hidden-state из previous layer и предсказывает результат.\n\nLSTM ячейки широко используются в распределionaleх-РЕЗУРВе (RNNs), поскольку они могут сохранять информацию приshort-term memory (STM) для большей эффективности.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0197",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt14_dialog0197",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 39.7,
+    "precision": 40.8,
+    "recall": 53.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 54.8,
+    "hallucination": 21.4,
+    "faithfulness": 59.6,
+    "noise_sensitivity": 31.1,
+    "self_knowledge": 12.3,
+    "timestamp": "2025-11-08T21:40:49.900305"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Skrytoe states, translated from Russian as \"hidden states,\" refer to the internal memory or state within a Recurrent Neural Network (RNN) that persists across time steps. Unlike traditional feedforward neural networks, where each layer processes information sequentially without maintaining context across steps, RNNs employ loops in their architecture to maintain these hidden states.\n\nIn an RNN, each unit processes its input and generates an output, which then feeds directly back into the same processing unit after being projected through a non-linear function and activation. This creates a feedback loop where the hidden state from one time step influences the next. This design allows RNNs to capture temporal dependencies in sequential data by effectively remembering information from previous inputs.\n\nThe impact of these hidden states on learning is significant due to potential issues like vanishing or exploding gradients, which can hinder the gradient flow during backpropagation. To address this, techniques such as weight initialization methods (e.g., Xavier normal initialization) and gradient clipping are employed. These strategies help stabilize the training process by controlling the magnitude of gradients, ensuring that the model remains learnable and effective in processing sequential data.",
+      "rating": ""
+    }
+  ]
+}

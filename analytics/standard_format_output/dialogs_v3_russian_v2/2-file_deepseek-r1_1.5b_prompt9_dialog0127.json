@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0127",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt9_dialog0127",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 35.9,
+    "precision": 33.0,
+    "recall": 51.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 52.2,
+    "hallucination": 27.1,
+    "faithfulness": 64.2,
+    "noise_sensitivity": 39.9,
+    "self_knowledge": 8.7,
+    "timestamp": "2025-11-08T21:40:49.965983"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Основные компоненты стандартной LSTM ячейки:**\n\n1. **Входные токены (input features):**\n   - Входные токены описывают данные, которые идут в ячейке и используются для обработки.\n\n2. **Уловки для каждого слоя (gates for each layer):**\n   - Уловка forget gate: Обеспечивает фильтрирование information из input features.\n   - Уловка input gate: Обеспечивает уловку для в stressing features.\n   - Уловка cell state: Обеспечивает отслеживание контекста для current layer.\n   - Уловка output gate: Обеспечивает фильтрирование information для.currentной state.\n\n3. ** Lokальный контекст (context window):**\n   - Описывает, сколько элементов предыдущих time steps need to be considered for each input feature in a single step.\n\n4. ** Стate (state vectors):**\n   - Zustand representiert касательный state, который используется для обработки.currentного input features.\n   - В LSTM ячейке есть Multiple state vectors (cell states) per layer.\n\n5. ** Оценка локального контекста (context vector):**\n   - Следует отслеживать информацию из Entire context window (time steps) into Single context vector using aggregation function, such as sum, max, or average.\n\n6. ** Уровень гибкости (flexibility level):**\n   - Определяет, насколько умным можно работать с state vectors in parallel.\n   - Can be set to \"sequential\" mode for sequential processing of input features, or \"parallel\" mode for simultaneous computation.\n\n**Вывод:**\n STANDARD LSTM ячейка включает несколько основных компонентов, которые together enable processing of sequences with both short-term and long-term dependencies. It combines gates (forgetting, inputting, keeping) and state vectors to maintain context over time steps while capturing local information for each feature.",
+      "rating": ""
+    }
+  ]
+}

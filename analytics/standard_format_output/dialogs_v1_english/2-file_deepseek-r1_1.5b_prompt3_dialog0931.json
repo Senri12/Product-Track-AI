@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0931",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt3_dialog0931",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.461032"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Рекуррентные нейronные сети используются в сложных задачах, таких как тексторинг и анализ поведения, где полносвязные и сверточные модули могут быть неoptimal. Они используют state для хранения контекста из предыдущих time steps и могут улучшать обработку градиентов. Например, трансформеры (например, BERT) заинтересованы в контексте и могут использоваться для задач, таких как тегирование слов в предложении.",
+      "rating": ""
+    }
+  ]
+}

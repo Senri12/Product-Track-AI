@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0109",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt8_dialog0109",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 18.8,
+    "precision": 27.8,
+    "recall": 27.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 23.9,
+    "hallucination": 39.9,
+    "faithfulness": 45.8,
+    "noise_sensitivity": 32.3,
+    "self_knowledge": 14.3,
+    "timestamp": "2025-11-08T21:40:49.891426"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "СSimple RNN (Реактивный Нюмс) и deep RNN (Деептful РНН) — это два вида рекурсивных神нотечеств, которые используются для обработки sequences (заголовков или последовательностей). Основной khácностью между ними является глубина их модели:\n\n* Simple RNN: имеет только один слой, что означает, что он не может xửить сложные последовательности в терминах количестваhidden-states. Это делает его менее эффективным для обработки длинных или сложных(sequence) данных.\n* Deep RNN (deep RNN): включает несколько слоя или hidden-state layer, что позволяет глубже изучать и анализировать данные sequence, при этом также может быть более эффективно в том случае, если данные contain сложные последовательности.\n\nВ общем simple RNN не хватает deep learning альтернативы, чтобы обрабатывать сложные sequence данных. However, deep RNN можно использовать для решения задач, которые требуют глубокого понимания сложных последовательностей, такие как machine translation или text summarization.",
+      "rating": ""
+    }
+  ]
+}

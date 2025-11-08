@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0295",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt10_dialog0295",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 27.1,
+    "precision": 35.1,
+    "recall": 37.4,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 30.6,
+    "hallucination": 16.1,
+    "faithfulness": 24.8,
+    "noise_sensitivity": 10.4,
+    "self_knowledge": 9.2,
+    "timestamp": "2025-11-08T21:40:48.927877"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (Root Mean Squared Propagation) - это метод, похожий на Adagrad и Adadelta. Он позволяет уменьшать скорость обучения, понижая градиентный спуск по линейной функции потерь. Аналогично к Adagrad и Adadelta RMSProp использует корень квадратного отклонения для вычисления градиента, но не накапливает его в одну и ту же тарифию, как у Adagrad, а также не использует моменту предыдущего шага, как у Adagrad.",
+      "rating": ""
+    }
+  ]
+}

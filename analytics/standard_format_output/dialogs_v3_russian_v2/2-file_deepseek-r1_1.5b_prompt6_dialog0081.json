@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0081",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt6_dialog0081",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как LSTM решает проблему затухающих градиентов?",
+    "f1": 34.4,
+    "precision": 32.0,
+    "recall": 47.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 48.5,
+    "hallucination": 27.0,
+    "faithfulness": 57.9,
+    "noise_sensitivity": 34.3,
+    "self_knowledge": 8.4,
+    "timestamp": "2025-11-08T21:40:49.974286"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как LSTM решает проблему затухающих градиентов?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "ЛSTM (Long Short-Term Memory) решает проблему затухающих градиентов следующими шагами:\n\n1. **Определениеforget gate**: forget gate (fi) фи отвечает за удаление incoming data из предыдущего времени в текущее время. Фи может быть фиксирован или обновлена на каждом шаге.\n\n2. **Использование threshold**: typically, forget gate threshold (fg) фиксируется, например, 0.5, что указывает на то, при Input < fg * previous hidden state, forget gate фи отвечает за удаление incoming data. В первом сессии упоминается, что smaller threshold (например, 0.1) позволяет遗忘ить больше информации.\n\n3. **Быстрая нормализация**: градиенты正规изуются по мини-батчам, чтобы избежать усиления Learning Rate на каждом шаге и в процессе обучения.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0167",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt12_dialog0167",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 23.7,
+    "precision": 34.0,
+    "recall": 34.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.404668"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Представьте что у bạn есть аналитический процесс, который включает в себя определение различных hidden states (состояний) для каждого слояHidden state является значением внутри hidden layer и определяется как значение hidden state hidden_layer = input hidden_state + w1 * hidden previous output + ... + w5 * hidden previous input\n\nгде w1, w2, ..., w5 — весы connect between hidden layers и hidden and previous states.hidden_state х — hidden state, hidden_previous_state — hidden_previous_state hidden_previous_input — hidden_previous_previous_input\n\nСкрытое состояние hidden_layer имеет следующую форму:\n\n hidden_layer = sigmoid( hidden_previous_state + w1 * hidden_previous_output + ... + w5 * hidden_previous_input )\n\nгде input hidden_state —input hidden_state hidden_previous_output — hidden_previous_output hidden_previous_input — hidden_previous_previous_input.\n\n hidden_previous_state, hidden_previous_output и hidden_previous_input являются hidden state, hidden previous output и hidden previous input соответственно для каждого слоя hidden layer.hidden_previous_states — hidden previous states hidden_previous_states hidden_previous_inputs — hidden previous inputs\n\nhidden_state hidden_previous_state hidden_previous_output hidden_previous_inputs hidden_previous_states hidden_previous_states hidden_previous_inputs hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden previous states\n\nhidden_state hidden_previous_state hidden_previous_output hidden_previous_inputs hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous states\n\nСкрытое состояние hidden layer имеет форму:\n\n hidden_layer = sigmoid( hidden_previous_state + w1 * hidden_previous_output + ... + w5 * hidden_previous_input )\n\nгде input hidden_state —input hidden_state hidden_previous_output — hidden_previous_output hidden_previous_inputs — hidden previous previous inputhidden_previous_states — hidden previous stateshidden_previous_outputs — hidden previous outputs и hidden_previous_inputs — hidden previous inputs.\n\nСкрытое состояние hidden layer имеет форму:\n\n hidden_layer = sigmoid( hidden_previous_state + w1 * hidden_previous_output + ... + w5 * hidden_previous_input )\n\nгде input hidden_state —input hidden_state hidden_previous_output — hidden_previous_output hidden_previous_inputs — hidden previous previous inputhidden_previous_states — hidden previous stateshidden_previous_outputs — hidden previous outputs и hidden_previous_inputs — hidden previous inputs.\n\nhidden_previous_states — hidden previous states hidden_previous_states — hidden previous stateshidden_previous_outputs — hidden previous outputs и hidden_previous_inputs — hidden previous inputs.\n\nhidden_previous_inputs — hidden previous inputshidden_previous_states — hidden previous stateshidden_previous_states — hidden previous stateshidden_previous_outputs — hidden previous outputs и hidden_previous_inputs — hidden previous inputs.\n\nВ практике часто используем hidden state hidden_previous_state hidden_previous_output hidden_previous_inputs hidden_previous_states hidden_previous_stateshidden_previous_inputshidden_previous_stateshidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_stateshidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_stateshidden_previous_states hidden_previous_stateshidden_previous_states hidden previous stateshidden_previous_stateshidden_previous_stateshidden_previous_stateshidden_previous_stateshidden_previous_stateshidden_previous_stateshidden_previous_stateshidden_previous_states hidden_previousstateshidden_previous_stateshidden_previous_stateshidden_previous_stateshidden_previous_stateshidden_previous_stateshidden_previous_states hidden_previous_stateshidden_previous_states hidden_previous states.\n\nhidden_previous_states — hidden previous states. \n\nНаконец, это hidden state hidden_previous_state hidden_previous_output hidden_previous_inputs hidden_previous_states hidden_previous_states hidden_previous_inputs hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_stateshidden_previous_states hidden_previous_states hidden_previous_states hidden_previous_states hidden_previousstateshidden_previous_stateshiddenpreviousstateshiddenpreviousstateshiddenpreviousstateshiddenpreviousstateshiddenpreviousstates hiddenpreviousstateshiddenpreviousstates hiddenpreviousstates.",
+      "rating": ""
+    }
+  ]
+}

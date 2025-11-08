@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0027",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt1_dialog0027",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 44.0,
+    "precision": 45.6,
+    "recall": 50.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:46.682084"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В Momentum:\n\n*   γ = 0.9 (коэффициент затухания)\n*   v<sub>t-1</sub> = 1 (скорость на предыдущем шаге)\n*   ∇L = 2 (градиент функции потерь)\n*   η = 0.1 (скорость обучения)\n\nФормула для вычисления v<sub>t</sub> в Momentum:\n\nv<sub>t</sub> = γ * v<sub>t-1</sub> + η * ∇L\n\nПодставляем значения:\n\nv<sub>t</sub> = 0.9 * 1 + 0.1 * 2\nv<sub>t</sub> = 0.9 + 0.2\nv<sub>t</sub> = 1.1\n\nТаким образом, v<sub>t</sub> = 1.1\n",
+      "rating": ""
+    }
+  ]
+}

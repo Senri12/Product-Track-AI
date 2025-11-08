@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0765",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt11_dialog0765",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 45.6,
+    "precision": 47.8,
+    "recall": 54.3,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 37.9,
+    "hallucination": 9.8,
+    "faithfulness": 37.9,
+    "noise_sensitivity": 13.5,
+    "self_knowledge": 2.4,
+    "timestamp": "2025-11-08T21:40:48.686257"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Поскольку в нашем словаре есть только такие слова, как \"win\", \"ruble\", \"rich\", \"get\" и другие,  словарь V содержит 15 слов.  Поскольку \"with\" отсутствует,  r = 1.  При классификации письма с текстом <<Win a ruble to get rich>>,  словарь V содержит 15 слов.\n\nP(win|спам) = (1 + количество вхождений слова \"win\" в классе \"спам\") / (15 + 1 + количество слов в классе \"спам\").\n\nВ письме \"Win a ruble to get rich\" слово \"win\" встречается один раз.\nКоличество слов в классе \"спам\" (в нашем примере) равно 5.\n\nТаким образом:\nP(win|спам) = (1 + 1) / (15 + 1 + 5) = 2 / 21 ≈ 0.0952\n\nИтак, P(win|спам) ≈ 0.0952\n",
+      "rating": ""
+    }
+  ]
+}

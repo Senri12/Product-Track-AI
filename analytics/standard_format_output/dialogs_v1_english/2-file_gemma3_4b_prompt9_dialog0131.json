@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0131",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt9_dialog0131",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 57.0,
+    "precision": 52.8,
+    "recall": 67.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.269178"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Трудность применения обычной batch normalization к RNN заключается в том, что RNN обрабатывают последовательности данных. Batch normalization, в свою очередь, предназначена для работы с независимыми, статическими батчами данных. Из-за этого, когда RNN обрабатывает последовательность, батч данных постоянно меняется, что делает статичные статистические вычисления (среднее и дисперсию) для каждого батча неадекватными.  Это приводит к взрыву или затуханию градиентов во время обучения, что существенно затрудняет процесс обучения RNN.\n",
+      "rating": ""
+    }
+  ]
+}

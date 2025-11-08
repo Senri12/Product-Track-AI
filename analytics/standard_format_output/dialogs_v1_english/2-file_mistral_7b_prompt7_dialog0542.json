@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0542",
+    "unique_dialog_id": "2-file_mistral_7b_prompt7_dialog0542",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 50.7,
+    "precision": 52.0,
+    "recall": 59.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.643387"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Скрытое состояние (Hidden state) в Recurrent Neural Networks (RNN) является вектором, который представляет текущее содержание модели по временной последовательности. Этот вектор накапливает информацию от всех предыдущих шагов обработки последовательности и передается на каждый следующий шаг, что позволяет RNN учитывать контекстную информацию для предикции выходного вектора на каждом шаге. Этот вектор является параметром обучения и находится посредством оптимизации градиента потеря функции, аналогично обычным нейросетям.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0737",
+    "unique_dialog_id": "2-file_mistral_7b_prompt5_dialog0737",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 36.1,
+    "precision": 32.0,
+    "recall": 53.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 54.9,
+    "hallucination": 24.0,
+    "faithfulness": 70.3,
+    "noise_sensitivity": 44.0,
+    "self_knowledge": 5.7,
+    "timestamp": "2025-11-08T21:40:50.104708"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Скрытое состояние в рекуррентной нейронной сети (RNN) - это вектор, который хранит информацию о прошлых входах и действиях в сети. Этот вектор обновляется на каждом шаге через несколько гейтов: входном, выходном и забывающем (forget gate). Скрытое состояние помогает RNN сохранять более долгосрочные связи в данных и решает проблему исчезающих градиентов. В стандартной архитектуре LSTM ячейки, этот вектор называется candidate cell state, а также ячейкой памяти (cell). Его вычисляют через трех гейтов: входном, выходном и забывающем, и обновляют на каждом шаге с помощью кандидата на новое значение состояния ячейки, полученного из танахо (hyperbolic tangent), а также с помощью нового скрытого состояния и вычисленных значений входного гейта и забывающего гейта.",
+      "rating": ""
+    }
+  ]
+}

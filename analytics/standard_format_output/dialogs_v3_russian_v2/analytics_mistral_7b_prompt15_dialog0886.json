@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0886",
+    "unique_dialog_id": "analytics_mistral_7b_prompt15_dialog0886",
+    "source": "analytics",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое autograd?",
+    "f1": 41.4,
+    "precision": 36.6,
+    "recall": 58.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 35.8,
+    "hallucination": 10.7,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 19.2,
+    "self_knowledge": 6.4,
+    "timestamp": "2025-11-08T21:40:49.494433"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое autograd?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Autograd – это библиотека из Python, которая помогает автоматически вычислять градиенты функций с помощью обратного анализа. Эта библиотека часто используется для оптимизации нейронных сетей и других машинных обучающих алгоритмов. Она реализована на основе градиентного подъема по стохастическим градиентам и использует метод автоматического дифференцирования для вычисления промежуточных значений функций и их производных. Autograd реализована в PyTorch, но существуют также другие библиотеки с аналогичной функциональностью, например TensorFlow или Theano. Эта библиотека упрощает работу со стохастическими градиентами, позволяя автоматизировать процесс вычисления производных и ускоряя работу с нейронными сетями.",
+      "rating": ""
+    }
+  ]
+}

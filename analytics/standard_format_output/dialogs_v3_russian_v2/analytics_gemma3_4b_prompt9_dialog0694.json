@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0694",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt9_dialog0694",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В чем суть наивного байесовского классификатора?",
+    "f1": 42.2,
+    "precision": 39.4,
+    "recall": 57.2,
+    "claim_recall": 40.0,
+    "context_precision": 50.0,
+    "context_utilization": 37.4,
+    "hallucination": 11.3,
+    "faithfulness": 35.5,
+    "noise_sensitivity": 14.3,
+    "self_knowledge": 3.3,
+    "timestamp": "2025-11-08T21:40:48.631246"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем суть наивного байесовского классификатора?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Наивный байесовский классификатор работает в предположении условной независимости предикторов при условии данной метки класса. То есть, он предполагает, что знание значения каждого предиктора не влияет на вероятность принадлежности объекта к тому или иному классу, если мы уже знаем метку этого класса. Это упрощающее предположение позволяет значительно упростить вычисления и сделать классификатор эффективным, особенно когда данных мало.\n",
+      "rating": ""
+    }
+  ]
+}

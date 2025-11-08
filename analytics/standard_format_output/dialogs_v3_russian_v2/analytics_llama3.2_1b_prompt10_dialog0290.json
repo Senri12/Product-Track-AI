@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0290",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt10_dialog0290",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 27.1,
+    "precision": 35.1,
+    "recall": 37.4,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 30.6,
+    "hallucination": 16.1,
+    "faithfulness": 24.8,
+    "noise_sensitivity": 10.4,
+    "self_knowledge": 9.2,
+    "timestamp": "2025-11-08T21:40:48.926258"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Stochastic Gradient Descent (SGD) – стохастический градиентный спуск. Это класс алгоритма оптимизации, который用于 минимизация функции ошибки при обучении модели. В простейшем контексте, когда данные не разлагаются на отдельные точки на плоскости, SGD можно рассматривать как «шаг по графу вычислений», где каждый шаг представляет собой вычисление градиента для одного из слоев и его применения к текущему значению_model. В частности, в алгоритме SGD:\n- сначала считывается количество батчей, которые будут проходить для обучения модели.\n- Затем определяется learning rate (скорость обучения), значение которого depends на size b of batch.\n- Для каждого из batch обрабатывается функция потерь и вычисляется градиент в заданном направлении.\n- Следующее batch выполняется по формуле SGD, где новая величина g_new вычитается из current_value для вычисления new_vnew.\n- Процесс повторяется до тех пор, пока обучение не окажется законченным.",
+      "rating": ""
+    }
+  ]
+}

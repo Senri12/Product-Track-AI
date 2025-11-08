@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1084",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt13_dialog1084",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.452168"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Простые RNN work exactly oppositely than глубокие RNN.\n\n**Разница между простыми RNN и глубокими RNN:**\n\n1. **Последовательное обработка данных:**  \n   Помимо рекуррентных прямых связей, глубокие RNN плюсают attentionalme для каждого элемента последовательности.\n\n2. **Градиенты обновление:**  \n   В простые RNN непосредственно обновляют градиенты для каждого шага. Глубокие RNN additionally normalize gradients by considering the attention weights, which helps in maintaining more stable gradient flow and can lead to better training.\n\n3. **Контекстное encodings:**  \n   Повышение внимательности в глубоких RNN позволяет лучше继承ать контекст для каждого элемента последовательности, что приводит к более точным предсказаниям и повышению сложности training.\n\n4. **Скорость обучения:**  \n   Глубокие RNN могут обрабатывать данные с большими ресурсами computation и slower convergence speed compared to простых RNN.\n\nВ общем, глубокие RNN плюсают attentionalme для каждого элемента последовательности, что позволяет их более точным предсказаниям и повышению производительности training.",
+      "rating": ""
+    }
+  ]
+}

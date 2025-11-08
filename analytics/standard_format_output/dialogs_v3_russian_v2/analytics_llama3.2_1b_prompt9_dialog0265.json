@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0265",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt9_dialog0265",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое RMSProp?",
+    "f1": 31.3,
+    "precision": 35.8,
+    "recall": 37.6,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 32.9,
+    "hallucination": 11.6,
+    "faithfulness": 33.1,
+    "noise_sensitivity": 13.2,
+    "self_knowledge": 5.3,
+    "timestamp": "2025-11-08T21:40:48.936230"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое RMSProp?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "RMSProp (Root Mean Squared Prop) - метод, который заменил Adagrad в некоторых библиотеках, таких как Keras. Этот метод вычисляет среднее квадратное отклонение градиентов и используется для минимизации функции ошибки. Это позволяет уменьшить коррозию, что важно для глубокого обучения нейронных сетей. RMSProp работает на основе концепции Root Mean Squared (РМС) - кратного квадратного среднего значения градиентов, что дает более точное отражение функции ошибки.",
+      "rating": ""
+    }
+  ]
+}

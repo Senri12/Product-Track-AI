@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0194",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt13_dialog0194",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 30.3,
+    "precision": 40.9,
+    "recall": 32.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 33.5,
+    "hallucination": 25.8,
+    "faithfulness": 63.1,
+    "noise_sensitivity": 33.3,
+    "self_knowledge": 11.1,
+    "timestamp": "2025-11-08T21:40:49.768620"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Абсолютно! Unlike regular RNNs for image processing, Show, Attend and Tell (SAT) differs from standard RNNs in several ways:\n\n1. **Architecture:** SAT is based on a different architecture than regular RNNs. It consists of three main components: the \"show\" layer, the \"attend\" layer, and the \"tell\" layer.\n2. **Show-Attention model:** In regular RNNs, the output at each time step depends only on the previous state. In SAT, however, the output is determined by both the current and past inputs (i.e., the show layer). The attend layer then selects which input to use for the next time step.\n3. **Tell-Attention model:** Unlike regular RNNs, SAT does not require a separate tell module. Instead, the attention mechanism allows the model to selectively draw on previous information while generating new output.\n4. **Fewer layers:** Because of the combination of show and attend mechanisms in SAT, there are fewer layers compared to standard RNNs.\n\nThese differences enable SAT to process images in a more efficient manner, with improved performance in various applications such as image captioning, object detection, and image segmentation.",
+      "rating": ""
+    }
+  ]
+}

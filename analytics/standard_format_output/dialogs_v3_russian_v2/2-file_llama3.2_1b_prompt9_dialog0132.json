@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0132",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt9_dialog0132",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 16.0,
+    "precision": 21.0,
+    "recall": 21.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 22.5,
+    "hallucination": 34.2,
+    "faithfulness": 57.4,
+    "noise_sensitivity": 44.8,
+    "self_knowledge": 8.3,
+    "timestamp": "2025-11-08T21:40:49.818922"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как работает механизм внимания (Attention)?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Механизм внимания (Attention) в модели Transformer works на основе процесса внимания, который предполагает признание вектора, обозначаемого как Attention Vector, которое представляет собой краткое представление текущего токена в последовательности. Этот процесс включает в себя следующие этапы:\n\n1. Присоединение полносвязного слоя с softenmax-активацией: этот(slota) принимает в качестве inputsすべて входных токенов последовательности и вычисляет softmax-активации для каждого из них.\n2. Преобразование softmax-активаций в Attention Vector: softmax-активации вычисляются по формуле softmax(AttentionVector), что дает Attention Vector.\n\nДалее, при разметке данных, все токены входной последовательности заменяются полносвязным слоям с softenmax-aktivацией. В результате каждой последовательности создается Attention Vector, содержащая краткое представление текущего тока в последовательности.\n\nВ этом процессе Attention Vector принимает во внимание все входные данные, чтобы выбрать наиболее вероятное значение для каждого токена. Это позволяет Model Transformer нахислять контекстность данных и принимать решения.\n\nОбщее время обучения модели Transformer при использовании Attention Vector можно определить по формуле:\n\nT_{training} = \\sum_{i=1}^{m} t_i T_j \\log\\left(\\frac{t_i}{t_j}\\right)\n\nгде t_i - индексы токенов, j - индексы полносвязных слоя, и m - количество подстановок.\n\nДальнейшим развитиемModel Transformer при использованииAttentionVector было созданоTransformer, в котором были implemented Attention Mechanism в более упрощенном виде, который можно выразить следующим образом:\n\nВ этом случае Attention Vector может быть представлен как один из трех слоя, каждый из которых представляет собой краткое представление текущего токена в последовательности.",
+      "rating": ""
+    }
+  ]
+}

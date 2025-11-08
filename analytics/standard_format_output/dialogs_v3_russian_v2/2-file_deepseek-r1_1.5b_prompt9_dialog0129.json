@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0129",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt9_dialog0129",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 35.9,
+    "precision": 33.0,
+    "recall": 51.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 52.2,
+    "hallucination": 27.1,
+    "faithfulness": 64.2,
+    "noise_sensitivity": 39.9,
+    "self_knowledge": 8.7,
+    "timestamp": "2025-11-08T21:40:49.966472"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Рекуррентные нейронные сети (RNNs) — это архитектуры, которая позволяет обрабатывать последовательные данные. Они отличаются от прочитанных архитектур, таких как simplesitive персональны сходящиеся слои, ключевым шагом — их хранение информации о последних данных в form memory (peepholes). Это позволяет рекуррентным сетям учитывать не только текущий шаг, но и все предыдущие, что делает их идеальным для задач с последовательными данными, таких как речь, изображения или временные последовательности.\n\nНо рекуррентные сети содержат challenges. Например, хранение информации в form memory может быть громоздким и сложным на практике реализовать, что также приводит к performance losses. Также рекуррентные сети требуют более высокой таринги для их сопоставления с прочитанными архитектурами.",
+      "rating": ""
+    }
+  ]
+}

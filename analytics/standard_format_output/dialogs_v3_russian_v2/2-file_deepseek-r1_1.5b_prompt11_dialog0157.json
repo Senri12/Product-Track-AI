@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0157",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt11_dialog0157",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 38.7,
+    "precision": 39.6,
+    "recall": 46.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 46.0,
+    "hallucination": 26.6,
+    "faithfulness": 60.1,
+    "noise_sensitivity": 33.8,
+    "self_knowledge": 13.3,
+    "timestamp": "2025-11-08T21:40:49.992815"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "** STANDARD LSTM ячейка — основные компоненты:**\n\n1. **state**: Combine of cell state and hidden state. Represents current location in sequence.\n\n2. **gate**: Three types:\n   - **forget gate (f_t)**: Removes parts of memory.\n   - **update gate (i_t)**: Adds new information to the memory.\n   - **output gate (o_t)**: Projects updated memory to the next step.\n\n3. **cell state**: Central component that accumulates and processes information across time steps, used by gates to modify it. Typically zeros out at each step, allowing new info based on input.",
+      "rating": ""
+    }
+  ]
+}

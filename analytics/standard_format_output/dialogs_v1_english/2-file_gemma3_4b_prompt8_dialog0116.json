@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0116",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt8_dialog0116",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 45.9,
+    "precision": 39.5,
+    "recall": 65.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.292103"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Трудность применения обычной batch normalization к RNN заключается в том, что RNN обрабатывают последовательности данных. В отличие от обычных нейронных сетей, где batch normalization использует информацию от *всех* элементов в мини-пакете для нормализации, RNN обрабатывают данные *последовательно*, и состояние RNN зависит от предыдущих шагов обработки.  Это приводит к тому, что статистика, используемая для нормализации, может сильно меняться от шага к шагу, что негативно влияет на процесс обучения.  По сути, нормализованные данные от одного шага не соответствуют данным другого шага, что делает нормализацию неэффективной и даже вредной для обучения RNN.\n",
+      "rating": ""
+    }
+  ]
+}

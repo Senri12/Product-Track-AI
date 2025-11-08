@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0770",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt11_dialog0770",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое SGD?",
+    "f1": 45.6,
+    "precision": 47.8,
+    "recall": 54.3,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 37.9,
+    "hallucination": 9.8,
+    "faithfulness": 37.9,
+    "noise_sensitivity": 13.5,
+    "self_knowledge": 2.4,
+    "timestamp": "2025-11-08T21:40:48.687707"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое SGD?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "SGD (stochastic gradient descent) – это стохастический градиентный спуск. Это алгоритм оптимизации, используемый для обучения нейронных сетей. В отличие от полного градиентного спуска, который использует весь набор данных для вычисления градиента на каждом шаге, SGD использует только небольшой батч (подмножество) данных. Это делает процесс обучения быстрее, так как не нужно вычислять градиент для всего набора данных на каждом шаге. Однако, из-за использования случайного батча, градиент, вычисленный SGD, будет шумным и не совсем точным. Несмотря на это, благодаря его быстрому времени вычислений, SGD часто оказывается эффективным в обучении нейронных сетей.\n",
+      "rating": ""
+    }
+  ]
+}

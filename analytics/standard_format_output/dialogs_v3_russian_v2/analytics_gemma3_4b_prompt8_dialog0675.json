@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0675",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt8_dialog0675",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 42.8,
+    "precision": 42.7,
+    "recall": 54.2,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 36.4,
+    "hallucination": 8.7,
+    "faithfulness": 38.2,
+    "noise_sensitivity": 17.0,
+    "self_knowledge": 3.2,
+    "timestamp": "2025-11-08T21:40:48.677845"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Основываясь на приведенных выше расчетах, мы знаем, что:\n\n*   P(спам) = 2/3\n*   P(win | спам) = 1/15\n*   P(win) = 1/7\n\nПоскольку P(win | спам) = P(win|спам) = 1/15.\n",
+      "rating": ""
+    }
+  ]
+}

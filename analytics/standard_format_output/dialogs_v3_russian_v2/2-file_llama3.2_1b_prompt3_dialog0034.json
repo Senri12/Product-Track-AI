@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0034",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt3_dialog0034",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 25.3,
+    "precision": 32.0,
+    "recall": 29.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 26.4,
+    "hallucination": 30.5,
+    "faithfulness": 51.5,
+    "noise_sensitivity": 37.5,
+    "self_knowledge": 17.9,
+    "timestamp": "2025-11-08T21:40:49.777003"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Эта câu является вопросом, и ответ на него — это информация о различных типах recurrent neural networks (RNNs), в частностиSimple RNN и Deep RNN.\n\n Simple RNN — это loại RNN, который можно разбить на два типа:\n\n1. **Nonlinear RNN**: это RNN, где функцияhidden state не является строго非отрицательной.\n2. **Linear RNN** (илиSimple RNN): это RNN, где функция hidden state — strictly increasing/decreasing linear function.\n\n Deep RNN — это более сложная versiónSimple RNNа, которая может быть глубже и иметь больше слоев. ДDeep RNNа также можно разделить на два типа:\n\n1. **Nonlinear RNN**: является тем же typeSimple RNNа.\n2. **Linear RNN** (или Deep RNN): имеет strictly increasing/decreasing linear function как hidden state.\n\nВ общем, Simple RNN и Deep RNN имеют разные подходы к представлению и обработкеhidden states, что делает их различными в terms of эффективности и вычислительных затратах.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1330",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt14_dialog1330",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.834406"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Градиенты в Recurrent Neural Networks (RNN) могут превышать норму по批量ам, что вызывает проблему — exploded gradients. Для усиления обновлений weights и предотвратить exploding gradients важно monitorировать градиенты по批量ам.\n\n**Просмотр г gradIENT norms по批量ам помогает:**\n1. **Усилить обновления weights:** мониторинг gradients norm allows weights to be updated more effectively based on magnitudes of gradients.\n2. **Противitiveп resolve exploding gradients:** if gradients decrease slower than linearly, gradients can explode.\n3. **Улучшает обработку памяти:** мешаны в RNN помогают обрабатывать последовательность данных, что усилит г gradIENTs.\n\n**Назначение мониторинга gradient norms:**\nМониторинг gradients norm allows us to adjust weights more effectively and prevent exploding gradients.",
+      "rating": ""
+    }
+  ]
+}

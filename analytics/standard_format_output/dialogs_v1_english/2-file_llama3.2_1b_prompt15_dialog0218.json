@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0218",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt15_dialog0218",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 25.1,
+    "precision": 27.1,
+    "recall": 34.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.409639"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем GRU отличается от LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "ГРУ (Grübaum-Recurrent Unit) — это тип recurrentного нейронного сета, который отличается от LSTM (Long Short-Term Memory) в том смысле, что GRU не имеетhidden states (состояний вhidden layer), а единственный способ их изменения является вливание новых inputов.\n\nРассматривая GRU и LSTM, мы можем заметить, что:\n\n* GRU сможет учесть толькоurrentную последовательность данных, а не весь history.\n* GRU с большей вероятностью будет использовать только один из inputов для изменения hidden states, тогда как LSTM может использовать все inputы в hidden layer.\n\nGRU часто используется в приложениях при обработке sequence data (постепенных данных, где последовательные элементы находятся в том же положении), а LSTM — для处理 более длинных и сложних последовательностей данных.",
+      "rating": ""
+    }
+  ]
+}

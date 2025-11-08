@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0835",
+    "unique_dialog_id": "2-file_mistral_7b_prompt11_dialog0835",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 56.3,
+    "precision": 55.7,
+    "recall": 70.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:48.029260"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Нормализация по мини-батчам важна для обучения рекуррентных нейронных сетей (RNN) из-за нескольких причин:\n\n1. Устойчивость к градиентам: Обычно в RNN используется бесшовное рекурсивное распространение градиентов, что делает их уязвимыми для взрывающихся и затухающих градиентов. При обучении на больших данных по мини-батчам мы можем использовать нормализацию L2 или L1 для смягчения этих эффектов.\n2. Стабильность обучения: Обновление весов в RNN зависит от состояния сети, которое меняется во времени. Если не нормализовывать по мини-батчам, можно получить большие колебания в обучении из-за разных последовательностей данных.\n3. Скорость обучения: Нормализация по мини-батчам помогает ускорить процесс обучения, так как она смешивает нормированные градиенты от различных последовательностей данных, что делает обучение более стабильным.\n\nВот пример кода для нормализации по мини-батчам в PyTorch:\n\n```python\ndef normalize_gradients(model, optimizer):\n    param_groups = optimizer.param_groups[0]\n    total_norm = 0.0\n    for param in model.parameters():\n        if param.requires_grad:\n            param_group = [param, param.data]\n            total_norm += param.numel()\n    total_norm = (total_norm ** 0.5)\n    for param_group in param_groups['params']:\n        param_group[0].data /= total_norm\n```\n\nВ этом коде мы проходимся по всем параметрам модели и находим те, которые требуют обучения. Затем мы нормализуем эти градиенты по мини-батчу деля их на ответственность каждого параметра.",
+      "rating": ""
+    }
+  ]
+}

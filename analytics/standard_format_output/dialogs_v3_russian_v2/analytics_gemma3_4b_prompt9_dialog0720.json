@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0720",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt9_dialog0720",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 42.2,
+    "precision": 39.4,
+    "recall": 57.2,
+    "claim_recall": 40.0,
+    "context_precision": 50.0,
+    "context_utilization": 37.4,
+    "hallucination": 11.3,
+    "faithfulness": 35.5,
+    "noise_sensitivity": 14.3,
+    "self_knowledge": 3.3,
+    "timestamp": "2025-11-08T21:40:48.650006"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.\n\n* **Вычисление:**\n   ∇ = 2\n\n* **Объяснение:**\n   Nesterov's momentum использует градиент из предыдущего шага, но \"догоняет\" текущий градиент, учитывая, что текущий градиент может уже немного изменился. Вычисление происходит следующим образом: ∇ = ∇ (ω - γv_{t-1}) = ∇ω - γ∇v_{t-1}. В данном случае, поскольку ∇ = 2, значит, ∇ω = 2.\n",
+      "rating": ""
+    }
+  ]
+}

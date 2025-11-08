@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0242",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt2_dialog0242",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 43.1,
+    "precision": 38.6,
+    "recall": 60.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 68.1,
+    "hallucination": 23.4,
+    "faithfulness": 67.4,
+    "noise_sensitivity": 38.0,
+    "self_knowledge": 9.1,
+    "timestamp": "2025-11-08T21:40:49.609691"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Скрытое состояние в RNN (рекуррентной нейронной сети) — это вектор, который представляет собой “память” сети, содержащую информацию о всех предыдущих входных данных в последовательности.  На каждом шаге времени скрытое состояние обновляется, учитывая текущий вход и предыдущее скрытое состояние, и передается на следующий шаг, позволяя сети учитывать контекст всей последовательности, а не только текущий элемент.\n",
+      "rating": ""
+    }
+  ]
+}

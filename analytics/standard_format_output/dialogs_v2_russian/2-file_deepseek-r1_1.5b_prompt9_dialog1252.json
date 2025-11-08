@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1252",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt9_dialog1252",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.871064"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Standard LSTM Ячейка: Основные компоненты**\n\n1. **Input Gate ( gates):**\n   - Контроль, сколько incoming information нужно внести в cell state.\n\n2. **Forget Gate ( gates):**\n   - Контролюется, сколько outgoing information останется из previous state.\n\n3. **Cell State ( ):**\n   - Синтезирующая脉сante-последовательность данных, учитывающая контекст.\n     - Вход: cell state и incoming data.\n     - Выход: new cell state.\n\n4. **Output Gate ( gates):**\n   - Контролюет, сколько outgoing information получится из current state.\n\n5. **During Phase:**\n   - Синтезирует cell state из.previousного состояния и incoming data.\n\n6. **After Phase:**\n   - Генерирует outputs (outs) из current cell state.\n\nЭти компоненты связаны с использованием gates в LSTM ячейках, которые control the flow and contribution of data from input to output.",
+      "rating": ""
+    }
+  ]
+}

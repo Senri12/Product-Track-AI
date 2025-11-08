@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0626",
+    "unique_dialog_id": "2-file_mistral_7b_prompt12_dialog0626",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 59.0,
+    "precision": 59.3,
+    "recall": 66.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.623357"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Применение обычной batch normalization к рекуррентным нейронным сетям (RNN) может вызвать ряд сложностей, поскольку RNN обрабатывают последовательности данных и не имеют фиксированного размера батча. В результате этого, при стандартном подходе к batch normalization в каждом шаге обучения используется разный набор элементов из последовательности, что приводит к различиям в нормализации и стандартизации.\n\nДля решения этой проблемы были предложены несколько подходов:\n1. Moving Average Batch Normalization (MABN) - при этом средние значения используются как неподвижные параметры, чтобы нормализовать входные данные для каждого шага обучения.\n2. Running Average Batch Normalization (RABN) - это более гибкий подход, при котором используется адаптивная модель ожидаемого значения и стандартного отклонения для нормализации входных данных.\n3. Layered Normalization - это подход, при котором используются разные виды normalization для каждого уровня сети.\n4. Inferenced Batch Normalization (IBN) – это подход, который определяет статистические характеристики на входе для каждого шага обучения путем проведения предсказаний для данных по всей последовательности.\n\nВсе эти подходы предназначены для нормализации и стандартизации входных данных в RNN, уменьшая колебания градиентов и облегчая обучение сетей.",
+      "rating": ""
+    }
+  ]
+}

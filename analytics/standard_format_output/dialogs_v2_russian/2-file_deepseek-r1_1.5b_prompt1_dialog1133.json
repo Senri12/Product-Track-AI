@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1133",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt1_dialog1133",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.883951"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем GRU отличается от LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для проверки градиентов в контексте GRUs ( gated Recurrent Units) и LSTM (Long Short-Term Memory) важно следить за их производительностью и устойчивостью. GRUs требуют градиентов из LSTM, что может привести к постепенным усилениям обновлении параметров, как указано в seminalной статье \"Neural Networks for Text Classification, Reasoning and Retrieval\" (2015).\n\nВ отличие от GRUs, GRU не подходит для рекуррентных сетей с ненапоминающим аутентикатором. Для such networks, LSTM более подходящим является GRU.\n\nНадо убедиться в том, что градиенты отмечаются на практике и могут быть проверены, чтобы понять их производительность и устойчивость.",
+      "rating": ""
+    }
+  ]
+}

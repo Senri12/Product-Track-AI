@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1025",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt9_dialog1025",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.494267"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Двунаправленные RNN (DoubleRNN) — это слои с twice the time complexity, которые позволяют обработке последовательности данных более эффективно. Они используют twice the time complexity, что означает, что для каждого шага_backward и Forward непосредственно processed data simultaneously and then combined.\n\n### Основные моменты:\n\n1. **Twice the Time Complexity**:\n   - В standardном RNNах twice the time complexity означает, что обработка последовательности данных требует simultaneously performing computations for each step in both forward and backward directions.\n   - Это позволяет избежать градиентных back propagation error и повысить точность обучения.\n\n2. **Working Mechanism**:\n   - В DoubleRNNх для twice the time complexity, During Forward pass: We compute h1, h2,... hn. During Backward pass: Also compute h1, h2,... hn but using gradients from the next step.\n   - Then we combine these two results to get a more accurate gradient estimate.\n\n3. **Improved Numerical Stability**:\n   - By computing twice the time complexity, DoubleRNNs reduce the risk of exploding or vanishing gradients during training.\n   - This leads to improved numerical stability and better convergence in tasks involving sequence data.\n\n4. **Applications**:\n   - DoubleRNNs are particularly useful for tasks that rely heavily on sequence dependencies, such as language modeling, time series prediction, and NLP.\n   - They can learn longer-range dependencies more effectively compared to standard RNNs due to their ability to propagate gradients backward through time without exploding.\n\n### 实践:\n\nВ practice DoubleRNN cells (дouble recurrent neural networks) are implemented by processing each step simultaneously in both forward and backward directions, then combining the results. This approach allows for better gradient computation and improved stability, making them effective in various sequence modeling tasks.\n\nИтак, DoubleRNNs leverage twice the time complexity to improve training stability and effectiveness, especially in complex sequence problems.",
+      "rating": ""
+    }
+  ]
+}

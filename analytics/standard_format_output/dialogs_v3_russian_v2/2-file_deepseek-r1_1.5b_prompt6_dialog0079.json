@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0079",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt6_dialog0079",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 34.4,
+    "precision": 32.0,
+    "recall": 47.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 48.5,
+    "hallucination": 27.0,
+    "faithfulness": 57.9,
+    "noise_sensitivity": 34.3,
+    "self_knowledge": 8.4,
+    "timestamp": "2025-11-08T21:40:49.973835"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Рекуррентные нейронные сети: различия между простойRNNA и глубокимRNN**\n\n1. **Последовательность применения слоев:**\n   - **ПростойRNNA:** Пresolved всего один слой, который преобразует вход в выход.\n   - **Globalkiy RNNA:** Сост orientирована на multiple slodes, где каждый слой использует outputs из предыдущего slоя.\n\n2. **Конечный результат:**\n   - **ПростойRNNA:** Начинается с одного входа и заканчивается одним outputом.\n   - **Globalkiy RNNA:** Важно multiple layers, что может привести к использованию пяти or fewer outputs.\n\n3. **Текущая зависимость:**\n   - **ПростойRNNA:** Видит последовательную зависимость от предыдущих шагов.\n   - **Globalkiy RNNA:** Использует multiple layers, что делает их dependencies更深озрительными и более фиксированными.\n\n**Итак, основная-Difference между Simple RNN и глубоким RNNA:**\nПростойRNNA является более простой архитектурой с fewer computations and simpler structure.",
+      "rating": ""
+    }
+  ]
+}

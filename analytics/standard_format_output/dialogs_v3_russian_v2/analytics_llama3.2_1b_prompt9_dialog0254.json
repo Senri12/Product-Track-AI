@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0254",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt9_dialog0254",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 31.3,
+    "precision": 35.8,
+    "recall": 37.6,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 32.9,
+    "hallucination": 11.6,
+    "faithfulness": 33.1,
+    "noise_sensitivity": 13.2,
+    "self_knowledge": 5.3,
+    "timestamp": "2025-11-08T21:40:48.933211"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Пусть p = 4. Поскольку в задаче нет ограничений на классы, мы можем выбрать все четыре класса для классификации. Для_passmное_classа, y_passmноe = 1; для_koldnoe_classa, y_koldnoe = 2; для_vodnoe_classa, y_vodnoe = 3; для_da_classa, y_da = 4.\n\nСначала вычисляем P(passmonee | passmonee) = 1/4. ПосколькуPassmoneehа — это только один класс среди четырех, его вероятность 100% (поскольку он уникален). \n\nКасандра. \n\nПусть p = 5. Поскольку в задаче нет ограничений на классы, мы можем выбрать все пять классов для классификации. Для_passmoneo_classa, y_passmoneoe = 1; для_koldnoe_classa, y_koldnooe = 2; для_vodnoe_classa, y_vodnoeo = 3; для_da_classa, y_da = 4; для_spam_classa, y_spammoe = 5.\n\nСначала вычисляем P(passmoneo | passmoneoe) = 1/5. ПосколькуPassmoneoe — это только один класс среди пяти, его вероятность 100% (поскольку он уникален).\n\nКасандра.",
+      "rating": ""
+    }
+  ]
+}

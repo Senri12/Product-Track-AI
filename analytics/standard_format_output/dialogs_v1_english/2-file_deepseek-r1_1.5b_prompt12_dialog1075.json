@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1075",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt12_dialog1075",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.481501"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для устранения проблем exploding gradients, связанных с large batch size, нормализация градиентов по мини-batchам полезна. Например:\n\n1. **Normalization by squared sum**: Градиенты são предотвратены, делая их пропорциональны к квадрату-sumе текущих генерирований.\n\n2. **Layer normalization**: Генерируемые генераторы normalized по сумме квадратов, что усилит влияние толькоones batch.\n\nЭти методы помогают сократить или предотвратить exploding gradients, улучшая trainability RNN и LSTM нейронных сетей.",
+      "rating": ""
+    }
+  ]
+}

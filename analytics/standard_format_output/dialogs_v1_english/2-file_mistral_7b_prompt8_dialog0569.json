@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0569",
+    "unique_dialog_id": "2-file_mistral_7b_prompt8_dialog0569",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 58.7,
+    "precision": 55.2,
+    "recall": 71.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.661639"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Show, Attend and Tell (SAT) отличается от обычного Recurrent Neural Network (RNN) для обработки изображения тем, что вместо последовательного прохождения пикселей через рекурентные слои, SAT использует механизм self-attention, который позволяет одновременно рассматривать все пиксели в изображении и уделять им разное внимание в зависимости от того, как они связаны с центральной точкой или с другими объектами. В результате SAT может быстрее и более эффективно находить и распознавать объекты в изображении, чем обычный RNN. Кроме того, SAT также использует серию полносвязных слоев, чтобы выделить и расшифровать выявленные регионы изображения, что позволяет получать более точную информацию об объектах.",
+      "rating": ""
+    }
+  ]
+}

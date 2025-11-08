@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0534",
+    "unique_dialog_id": "2-file_mistral_7b_prompt6_dialog0534",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 59.9,
+    "precision": 57.2,
+    "recall": 70.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.649317"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Peepholes, or inter-unit connections, in Long Short-Term Memory (LSTM) networks are used to allow information flow from one memory cell to another directly without passing through the forget gate. This enables LSTMs to better capture long-term dependencies and improve their performance on sequential data tasks such as language modeling, speech recognition, and time series prediction.\n\nPeepholes can be thought of as \"shortcuts\" that allow information to bypass the forget gate when necessary, allowing the network to maintain relevant information over long sequences. By adding peepholes, LSTMs are able to capture more contextual information and make more accurate predictions compared to traditional recurrent neural networks (RNNs) without them.\n\nIn summary, peepholes in LSTM networks improve their ability to handle long-term dependencies by allowing for direct communication between memory cells, resulting in better performance on sequential data tasks.",
+      "rating": ""
+    }
+  ]
+}

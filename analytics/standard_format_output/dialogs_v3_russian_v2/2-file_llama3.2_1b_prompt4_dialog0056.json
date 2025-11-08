@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0056",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt4_dialog0056",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 23.6,
+    "precision": 31.9,
+    "recall": 36.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 34.8,
+    "hallucination": 31.2,
+    "faithfulness": 50.2,
+    "noise_sensitivity": 30.3,
+    "self_knowledge": 11.9,
+    "timestamp": "2025-11-08T21:40:49.772815"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Трудность применения обычной batch normalization (BN) к RECURRYNTNEETECHURIES является тем, что BN works только с batch normalizeными данных, которые можно разделить на batch. Это связано с тем, что batch normalization для RNN требуется преобразовать входную последовательность вbatch-формат, который не может быть преобразован в batch-ной форме.\n\nРечь идет о том, чтобы использовать(batch normalization) для RNN или RECURRYNTNEETECHURIES, которые thường являются batch-normalизированными. Для этих случаев(batch normalization) требуется разделить данные на batch, что сделать не posible для RNN, поскольку входные данные могут быть разными для каждого блока.\n\nВ качестве альтернативы, можно использовать batch normalize с тремя функциями нормали:\n\n* Softmax (S)\n* ReLU (вместе с ReLU-РЕЗУ)\n* Tanh (вместе с tanh-РЕЗУ)\n\nЭти функции нормали могут применяться к RNN-blokам и обеспечивать batch normalize.",
+      "rating": ""
+    }
+  ]
+}

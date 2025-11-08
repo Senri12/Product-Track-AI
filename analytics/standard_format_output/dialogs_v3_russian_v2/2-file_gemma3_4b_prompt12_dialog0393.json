@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0393",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt12_dialog0393",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 48.8,
+    "precision": 45.9,
+    "recall": 59.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 65.1,
+    "hallucination": 24.5,
+    "faithfulness": 62.3,
+    "noise_sensitivity": 29.6,
+    "self_knowledge": 13.2,
+    "timestamp": "2025-11-08T21:40:49.619822"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В задачах RNN встречаются следующие типы входов и выходов:\n\n*   **Входы:** В каждый блок RNN на шаге *i* подается входной вектор *x<sub>i</sub>* и скрытое состояние *s<sub>i-1</sub>*.\n*   **Выходы:** На шаге *i* происходит преобразование состояния *s<sub>i-1</sub>* и входа *x<sub>i</sub>* для формирования выхода текущего блока *a<sub>i</sub>*. Этот выход также может использоваться в качестве вывода.\n\nВ целом, RNN обычно используются для задач, где входные данные представляют собой последовательности (например, текст, временные ряды) и выходными данными являются также последовательности (например, перевод текста, предсказание следующего слова).",
+      "rating": ""
+    }
+  ]
+}

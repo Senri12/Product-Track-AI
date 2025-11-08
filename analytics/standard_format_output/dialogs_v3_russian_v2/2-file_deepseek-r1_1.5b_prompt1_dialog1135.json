@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1135",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt1_dialog1135",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 26.5,
+    "precision": 28.7,
+    "recall": 43.8,
+    "claim_recall": 65.3,
+    "context_precision": 100.0,
+    "context_utilization": 43.1,
+    "hallucination": 33.3,
+    "faithfulness": 57.0,
+    "noise_sensitivity": 37.9,
+    "self_knowledge": 9.7,
+    "timestamp": "2025-11-08T21:40:49.985144"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "When training Recurrent Neural Networks (RNNs), proper normalization of gradients is essential to prevent issues like exploding or vanishing gradients. These problems occur because gradients can become too large or too small during backpropagation through time, leading to unstable learning dynamics.\n\n### Key Points:\n\n1. **Normalization of Gradients**:\n   - Normalization scales gradient values relative to the mini-batch size, reducing their variance and preventing extremes.\n   - This ensures that no single step in a sequence has an disproportionately large or small gradient, which can destabilize training.\n\n2. **Importance in RNN Training**:\n   - In RNNs, each time step processes its own input while using information from previous steps. Without normalization, gradients might explode or vanish across sequences.\n   - Proper normalization ensures stable learning across all parts of the network, allowing models to learn effectively from their inputs.\n\n3. **Types of Normalization**:\n   - **Layer-wise Normalization**: Normalizing gradients within each layer helps maintain stability and prevents information loss.\n   - **Sequence Context Normalization**: Ensuring consistent gradient scaling across the entire sequence context improves learning by balancing contributions from different parts.\n\n4. **Impact on Learning**:\n   - Stable gradients prevent issues like exploding gradients, leading to better convergence of the training process.\n   - Proper normalization allows models to learn features and patterns more effectively from all sequences in the dataset.\n\nIn conclusion, normalization by the mini-batch size is crucial for maintaining stable gradient flow during RNN training, ensuring effective learning across sequential data.",
+      "rating": ""
+    }
+  ]
+}

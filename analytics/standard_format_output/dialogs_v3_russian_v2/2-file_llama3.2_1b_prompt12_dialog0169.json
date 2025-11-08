@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0169",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt12_dialog0169",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 18.7,
+    "precision": 23.0,
+    "recall": 26.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 19.3,
+    "hallucination": 39.6,
+    "faithfulness": 52.0,
+    "noise_sensitivity": 37.4,
+    "self_knowledge": 8.4,
+    "timestamp": "2025-11-08T21:40:49.790464"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Simple RNN (Рециptive Neural Network) и Deep RNN (Глубокой Рецепشنной Нейроннои Системы) — два типы рекуррентных сетей, используемых для обработки sequential данных. Основной разница между двумя этими сетями заключается в глубинности их architectures.\n\nSimple RNN — это низкократный, простой тип Rekурсивного Нейроннои Системы (RNN), который предназначен для обработки последовательных данных. Это позволяет ему учитывать только предыдущие элементы в ленте данных и вырабатывать output по расположению элементов в ленте.\n\nД Deep RNN — это более сложный тип Rekурсивного Нейроннои Системы, который предназначен для обработки sequence2sequence (seq2seq) задач. Это позволяет ему учитывать всю последовательность данных и вырабатывать output по всей sequence.\n\nВ общемSimple RNN можно использовать для решения задач, связанных с последовательными данными, а Deep RNN используется для решения более сложных задач, связанных с sequence2sequence (seq2seq) проблемами.",
+      "rating": ""
+    }
+  ]
+}

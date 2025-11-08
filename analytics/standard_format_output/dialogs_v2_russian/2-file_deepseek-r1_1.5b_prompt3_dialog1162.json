@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1162",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt3_dialog1162",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.847314"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Компоненты стандартной LSTM ячейки:\n\n1. **state**: С – основное состояние ячейки.\n2. **cell_state**: С cell state – глобальный и локальный контекст.\n3. **gate (гating rule)**: Гating rule –rule, который decide what flows from previous steps into the current step.\n4. **forget gate**: Forget gate – rule that decides which parts of the state are retained for output.\n5. **input forget**: Input forget rule – selects parts of the state to carry forward.\n6. **output gate**: Output gate – selects parts of the hidden state as the final output.\n7. **global context (глобальный контекст)**: Сomputed from all time steps, capturing long-term dependencies.\n8. **local context (локally)**: Features from the same position in each time step.\n9. **memory cell (мemory cell)**: Updates its state based on input and forget gates.\n\nПримеры синтаксических вызовов:\n\n- **Forget gate**: decide which parts of the state are retained for output using the rule.\n- **Input gate**: determines which parts from the cell state are used for processing the current input.\n- **Output gate**: selects parts of the hidden state as the final output.\n\nЭти компоненты work together in LSTM ячейках to efficiently process sequential data.",
+      "rating": ""
+    }
+  ]
+}

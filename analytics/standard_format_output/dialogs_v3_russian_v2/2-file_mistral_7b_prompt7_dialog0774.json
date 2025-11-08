@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0774",
+    "unique_dialog_id": "2-file_mistral_7b_prompt7_dialog0774",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 42.8,
+    "precision": 40.2,
+    "recall": 51.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 51.8,
+    "hallucination": 31.5,
+    "faithfulness": 59.7,
+    "noise_sensitivity": 28.3,
+    "self_knowledge": 8.8,
+    "timestamp": "2025-11-08T21:40:50.133028"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Замочные скважины (peepholes) в LSTM (Long Short-Term Memory) используются для улучшения выполнения модели по обработке длинных последовательностей данных. Этот механизм позволяет ячейкам LSTM передавать информацию между собой напрямую, не проходя через встроенную рекуррентность модели. Эта возможность улучшает способность LSTM к обработке запоминания и восстановлению длинных термов, которые иначе могли бы потеряться или смешиваться в ходе многократного передавания через нейронные слои. В результате такие замочные скважины помогают модели сохранять более точную историю состояния и приводить к улучшению поведения LSTM в обработке длинных последовательностей.",
+      "rating": ""
+    }
+  ]
+}

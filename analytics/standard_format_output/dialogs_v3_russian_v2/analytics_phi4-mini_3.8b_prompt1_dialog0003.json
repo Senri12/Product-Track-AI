@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0003",
+    "unique_dialog_id": "analytics_phi4-mini_3.8b_prompt1_dialog0003",
+    "source": "analytics",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 21.5,
+    "precision": 49.7,
+    "recall": 27.2,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 14.0,
+    "hallucination": 7.4,
+    "faithfulness": 24.1,
+    "noise_sensitivity": 3.5,
+    "self_knowledge": 8.6,
+    "timestamp": "2025-11-08T21:40:48.811920"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Евклидова метрика – это один из типов метрических функций расстояния (или, точнее, функция метрики), которая измеряет дистанцию между двумя векторами или двумя точками на euclidean plane. Самое распространенное определение евклидовой метрики для двух точек \\( \\mathbf{p} = (x_1, y_1) \\) и \\( \\mathbf{q} = (x_2, y_2) \\), а также в декартовом координатном пространстве – euclidean metric: \n\n\\[ d(\\mathbf{p}, \\mathbf{q}) = \\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2} \\]\n\nЭто расстояние соответствует \"euclidovaya\" или \"eucledianom\" расстоянию, поскольку он возник в геометрии euclidean space. \n\nЕвклидова метрика является базовой для многих других метрических функций и используется во множестве приложений, от анализа данных (например, когда мы сравниваем точки с использованием Euclidean distance) до различных задач машинного обучения.",
+      "rating": ""
+    }
+  ]
+}

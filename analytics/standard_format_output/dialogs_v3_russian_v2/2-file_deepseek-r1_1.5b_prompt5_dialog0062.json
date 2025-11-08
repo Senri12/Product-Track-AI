@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0062",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt5_dialog0062",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 30.7,
+    "precision": 26.1,
+    "recall": 44.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 41.9,
+    "hallucination": 35.1,
+    "faithfulness": 57.5,
+    "noise_sensitivity": 38.8,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-11-08T21:40:49.943557"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Skрытое состояние в RNN — это state, которое обновляется не Immediately на каждом шаге, а толькоevery few steps или с少量 пропусков. Это помогает с устойчивостью градиентов и обеспечивает более стабильное обучение нейросетей для предсказаний.",
+      "rating": ""
+    }
+  ]
+}

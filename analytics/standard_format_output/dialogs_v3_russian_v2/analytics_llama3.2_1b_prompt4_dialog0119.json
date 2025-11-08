@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0119",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt4_dialog0119",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 30.3,
+    "precision": 38.8,
+    "recall": 34.7,
+    "claim_recall": 39.3,
+    "context_precision": 50.0,
+    "context_utilization": 30.7,
+    "hallucination": 17.1,
+    "faithfulness": 31.3,
+    "noise_sensitivity": 8.0,
+    "self_knowledge": 1.7,
+    "timestamp": "2025-11-08T21:40:48.875257"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Учитывая заданные значения η₀ = 0,01, t = 5 и T = 10, мы можем рассчитать learning rate decay как:\n\nη(т) = η0 \\* (1 - ε / γ)\n\nгде ε > 0, G = ∑[g(t, i)]² и γ – константа для скорости обучения.\n\nПодставив значения в уравнение, получим:\n\nη(5) = 0,01 \\* (1 - 10^(-5)) ≈ 0,01\n\nТеперь мы можем рассчитатьLearning rate decay как:\n\nе(5) = 0,01/0,1 = 1\n\nИтак, learning rate decay составляет примерно 1.",
+      "rating": ""
+    }
+  ]
+}

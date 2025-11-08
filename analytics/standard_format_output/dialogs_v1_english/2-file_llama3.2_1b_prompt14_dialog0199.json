@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0199",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt14_dialog0199",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 22.7,
+    "precision": 29.9,
+    "recall": 32.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.377967"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Окончательный ответ:\n\nВопрос: В чем отличие Simple RNN (Sequential Neural Networks) от Deep RNN (Deep Recurrent Neural Networks)?\n\nОтвет:\nSimple RNN — это базовая тип Решетка в Режиме sequential, который предназначен для решения задач, связанных с последовательными данными, таких как шарakterистика текста или модели обучения на языке. Simple RNN включает только один или два слоя, не имеющийDepth-structure (количество層). Это значит, что Simple RNN не может работать сlong-term dependencies и имеет более простое обучение.\n\nDeep RNN — это тип Решетки в Режиме sequential, который предназначен для решения задач, связанных с последовательными данными. Hebei имеет более высокую степеньDeep structure (количество層) и можетwork withlong-term dependencies. Это значит, что Deep RNN могут решать сложные задачи, такие как шарakterистика текста или модели обучения на языке.\n\nВ частности:\n\n* Simple RNN: 1-2 слоя с единственным слauseм.\n* Deep RNN: 3-5 слоя сDeep structure (количествоlayer).\n\nЗначение этого вопроса для использования в реальных задачах:\n\n* ИспользуяSimple RNN, вы получите шарakterистику texta с некоторыми ограничениями.\n* ИспользуяDeep RNN, вы получите более точную и полную оцениваемую шарakterистику texta.\n\nС другой стороны, если вы работаете с Long Short-Term Memory (LSTM) или Gated Recurrent Unit (GRU), то вы можетework with longer-term dependencies.",
+      "rating": ""
+    }
+  ]
+}

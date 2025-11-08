@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0029",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt2_dialog0029",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 30.7,
+    "precision": 33.0,
+    "recall": 45.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.5,
+    "hallucination": 30.3,
+    "faithfulness": 60.1,
+    "noise_sensitivity": 36.7,
+    "self_knowledge": 9.6,
+    "timestamp": "2025-11-08T21:40:49.942191"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Answer:**\n\nShow, Attend and Tell (SAT) is a type of recurrent neural network designed specifically for processing sequential data where each element in the sequence has an associated context window. It stands out from traditional RNNs due to its use of self-attention layers within its cells. These layers allow each time step to consider not only the current input but also parts of previous inputs, enabling better contextual understanding and decision-making.\n\nIn contrast, regular RNNs process sequences one after another without incorporating additional attention mechanisms. They lack explicit context windows or mechanisms to leverage previous information, which can lead to a loss of important contextual context when processing tasks like text or image sequences.\n\nThus, the key distinction is that **SAT explicitly uses self-attention within its cells**, allowing it to better utilize and integrate context across sequence elements, while regular RNNs do not have this feature.",
+      "rating": ""
+    }
+  ]
+}

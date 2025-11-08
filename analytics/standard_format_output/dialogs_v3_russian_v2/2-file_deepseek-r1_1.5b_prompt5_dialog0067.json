@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0067",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt5_dialog0067",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 30.7,
+    "precision": 26.1,
+    "recall": 44.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 41.9,
+    "hallucination": 35.1,
+    "faithfulness": 57.5,
+    "noise_sensitivity": 38.8,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-11-08T21:40:49.945225"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "STANDARD LSTM consists of several key components that work together to process sequential data:\n\n1. **Forget Gate**: Uses a sigmoid activation function to determine which information from the previous time step should be discarded. This gate effectively \"forgets\" irrelevant or outdated information.\n\n2. **Update Gate**: Also uses a sigmoid activation function, deciding what new information is needed to update the current state. It's often referred to as an \"attention gate\" because it allows the model to focus on relevant inputs.\n\n3. **Memory Cell**: Combines information from all previous time steps and maintains context through its tanh or other non-linear functions. This cell acts as both input and output, allowing for sequential processing.\n\n4. **Output Gate**: Another sigmoid layer that controls what part of the memory cell is used to form the final output. This gate can be thought of as an attention mechanism focusing on the most relevant information from the sequence.\n\nThese components work together in a cycle: the forget gate discards irrelevant information, the update gate decides which new information is added, and the output gate determines what to output based on context maintained by the memory cell. The combination of these gates enables LSTM networks to effectively process and learn from sequential data.",
+      "rating": ""
+    }
+  ]
+}

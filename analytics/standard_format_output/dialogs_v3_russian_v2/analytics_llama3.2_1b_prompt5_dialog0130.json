@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0130",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt5_dialog0130",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
+    "f1": 25.3,
+    "precision": 34.9,
+    "recall": 30.7,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 24.3,
+    "hallucination": 17.7,
+    "faithfulness": 25.7,
+    "noise_sensitivity": 9.9,
+    "self_knowledge": 6.7,
+    "timestamp": "2025-11-08T21:40:48.899350"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Классификатор k-NN (классификация по ближайшим соседям) основан на анализе сходства объектов, что делает его более точным для пришедшихly неопределенных или многофакторных данных. Взвешенный к-НН, на другой hand, принимает в качестве metrii коэффициенты распределения между соседями по расстоянию и взвешивает их значения как в среднем, так и на каждом отдельном объекте, что делает его более чувствительным к различиям в данных.",
+      "rating": ""
+    }
+  ]
+}

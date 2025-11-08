@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0626",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt6_dialog0626",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 48.8,
+    "precision": 48.0,
+    "recall": 61.6,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 36.8,
+    "hallucination": 9.3,
+    "faithfulness": 33.7,
+    "noise_sensitivity": 12.4,
+    "self_knowledge": 7.0,
+    "timestamp": "2025-11-08T21:40:48.664630"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления шага в SGD для функции L(w) = w^2, где w = 3 и η = 0.1, нужно вычислить градиент L(w) по w и умножить его на learning rate.\n\n1.  **Вычислим градиент L(w) по w:**\n\n    *   L(w) = w^2\n    *   d/dw L(w) = 2w\n\n2.  **Подставим w = 3:**\n\n    *   d/dw L(w) = 2 * 3 = 6\n\n3.  **Умножим градиент на learning rate (η = 0.1):**\n\n    *   Шаг = 6 * 0.1 = 0.6\n\nТаким образом, шаг в SGD будет равен 0.6.\n",
+      "rating": ""
+    }
+  ]
+}

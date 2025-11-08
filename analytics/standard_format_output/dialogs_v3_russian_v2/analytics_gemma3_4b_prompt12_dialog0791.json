@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0791",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt12_dialog0791",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
+    "f1": 49.9,
+    "precision": 45.5,
+    "recall": 64.0,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 39.7,
+    "hallucination": 11.1,
+    "faithfulness": 35.6,
+    "noise_sensitivity": 14.5,
+    "self_knowledge": 3.3,
+    "timestamp": "2025-11-08T21:40:48.608306"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вычисляем вероятность спама для слова 'приз' используя формулу Байеса.\n\nКак мы ранее определили:\n\n*   P(Спам | Приз) = 5/8 = 0.625 (вероятность спама, если слово \"приз\" есть)\n*   P(Приз | Спам) = 5/32 (вероятность, что в спаме есть слово \"приз\")\n*   P(Спам) = 32/80 = 0.4\n*   P(Приз) = 8/80 = 0.1\n\nИспользуя формулу Байеса:\n\nP(Спам | Приз) = [P(Приз | Спам) * P(Спам)] / P(Приз)\n\n=  [ (5/32) * (32/80) ] / (8/80)\n= 5/80\n= 0.0625\n\nСледовательно, вероятность спама для слова 'приз' – 0.0625 или 6.25%.\n",
+      "rating": ""
+    }
+  ]
+}

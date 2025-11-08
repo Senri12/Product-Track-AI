@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0267",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt9_dialog0267",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 31.3,
+    "precision": 35.8,
+    "recall": 37.6,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 32.9,
+    "hallucination": 11.6,
+    "faithfulness": 33.1,
+    "noise_sensitivity": 13.2,
+    "self_knowledge": 5.3,
+    "timestamp": "2025-11-08T21:40:48.936805"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "v_t = γ * v_(t - 1) - η * ∇L(ω) \n= 0,9 * 1 - 0,1 * 2\n= 0,9 - 0,2\n= 0,7.",
+      "rating": ""
+    }
+  ]
+}

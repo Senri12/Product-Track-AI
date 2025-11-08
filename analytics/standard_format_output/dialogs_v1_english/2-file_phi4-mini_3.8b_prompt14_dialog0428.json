@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0428",
+    "unique_dialog_id": "2-file_phi4-mini_3.8b_prompt14_dialog0428",
+    "source": "2-file",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.299634"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем GRU отличается от LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "ГRU (Gated Recurrent Unit) и LSTM (Long Short-Term Memory) – это архитектуры, используемые для обработки временных рядов в нейронных сетях. Оба являются типами модификаций рекуррентных единиц, но они имеют несколько ключевых отличий.\n\n1. **Количество ячеек**: \n   - У LSTM есть три типа ячеек –.input gate (input gates), forget gate (forget gates) и output gate (output gates).\n   - В GRU есть только два типа ячеек – gating unit (gating units).\n\n2. **Процессы управления данными**:\n   - При записи в LSTM требуется выполнение трех шагов: \n     1. Обновление forget gate\n     2. Вычисление cell state и обновление input gate.\n   - У GRU есть один процесс, объединяющий forget and reset gates.\n\n3. **Управление grant**:\n   - В LSTM у каждого типа grant (input gates) есть separate forget and update gates, что позволяет настраивать их независимо друг от друга.\n   - В GRU используется gating unit, который объединяет forget и reset gates, упрощая архитектуру.\n\n4. **Масштабируемость**:\n   - Латентные пространственные зависимости LSTM могут быть сложными из-за увеличения количества ячеек (input gate, forget gate and output gates).\n   - GRU имеет простую структуру с gating unit, делая его более компактной и часто обеспечивая лучшую масштабируемость.\n\nВ итоге, GRU упрощает модель по сравнению с LSTM, что может привести к меньшему количеству параметров в модели без значительного снижения производительности. Это делает GRU особенно подходящей для задач, где простота важна или когда требуется уменьшить время обучения и вычислительную сложность.",
+      "rating": ""
+    }
+  ]
+}

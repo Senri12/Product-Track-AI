@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1008",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt8_dialog1008",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.513871"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "### Входные данные в RNN-модели:\n\nВ RNN-моделях входные данные могут быть видах текста, изображений, чисел, AnyOrderable-type данных или других последовательных данных. Эти данные используются для обработки последовательности и генерации state (предыдущих состояний).\n\n### Суммируемые state:\n\n- **Past information ( Forgetting cell):** Используется для уменьшения state, используя遗忘 сенссы.\n- **Buttinger cell:** Используется для обработки последовательности и генерации state.\n- **Attention-based state:** Используется в Attentional layers для вектора weights, который используется для обработки последовательности.\n- **Weights:** Суммируемые state в chain-like RNNs (decoders).\n\n### Суммируемые output:\n\nСуммируемые output — это предсказанные значения или теги. В RNN-моделяхOutputы не используются state для генерации, но могут быть тегами (например, классификационные предсказания).\n\n### Другие типы state:\n\n- **Weights:** Учитывается в chain-like RNNs (decoders).\n- **Gradient pooling:** Используется в decoder parts для уменьшения state.\n- **Stateful networks:** Суммируемые state сохраняется между эпохами.\n\n### Вопрос: Какие типы входов и выходов встречаются в задачах RNN?\n\n**Входные данные (input):**\n1. Текст\n2. Числа/AnyOrderable-type данных\n3. Изображения/Imagery\n4. Гиперпараметры (batch size, dropout rate, etc.)\n5. Регуляторы (LSTM dropout, dropout)\n\n**Суммируемые state (state):**\n1. PAST information ( Forgetting cell)\n2. Buttinger cell\n3. Attention-based state\n4. Weights\n\n**Суммируемые output:**\n1. Текст/Imagery\n2. Числа/AnyOrderable-type данных\n3. Гиперпараметры",
+      "rating": ""
+    }
+  ]
+}

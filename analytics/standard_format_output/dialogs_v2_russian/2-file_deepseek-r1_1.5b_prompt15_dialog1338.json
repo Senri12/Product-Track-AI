@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1338",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt15_dialog1338",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.861476"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В задачах с-recуррентными слоев могут быть следующие типы входов:\n- Символические:埋шения или encodeption.\n- Векториelleе: One-hot-маскированный вектор, numerical features (например, temperature).\n- Binary: If binary features like cats or dogs are present.\n- Time-based: Predecessors and successors for temporal dependencies.\n- Categorical: To convert categorical variables to numeric.\n- Word embeddings: Representing tokens as vectors.\n\nДля выходов:\n- Символические: encodeption с подсказкой на предыдущий или следующий token, если это требуется для рекуррентной структуры.\n- Numerical: Output vector (temperatures, positions), categorical distributions (for prediction tasks).\n- Binary: Binary variables for yes/no answers.\n- Word embeddings: Represented as vectors in the model's output.",
+      "rating": ""
+    }
+  ]
+}

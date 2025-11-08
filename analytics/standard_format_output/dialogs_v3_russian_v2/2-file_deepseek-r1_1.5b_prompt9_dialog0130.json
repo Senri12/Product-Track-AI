@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0130",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt9_dialog0130",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 35.9,
+    "precision": 33.0,
+    "recall": 51.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 52.2,
+    "hallucination": 27.1,
+    "faithfulness": 64.2,
+    "noise_sensitivity": 39.9,
+    "self_knowledge": 8.7,
+    "timestamp": "2025-11-08T21:40:49.966715"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В our initial approach to training RNNs with tanh activation function, we used weight initialization to avoid extreme gradients and normalization per input feature across the batch to ensure consistent parameter updates. This combination helped stabilize learning and prevented issues like exploding gradients.\n\n**Step-by-Step Explanation:**\n\n1. **Weight Initialization**: We initialized weights in a way that avoids large or small gradients. For example, Xavier initialization helps by scaling weights based on their fan-in (number of connections), which stabilizes gradient flow across layers.\n\n2. **Normalization per Feature**: After calculating the gradients for each feature vector, we normalized them by dividing by the batch's standard deviation. This ensures that features with different scales are treated equally, preventing gradients from becoming too large or too small.\n\n3. **Gradient Descent Updates**: Using these normalized values, we updated our weights in a way that maintains consistent parameter updates across all features, leading to more stable learning and faster convergence.",
+      "rating": ""
+    }
+  ]
+}

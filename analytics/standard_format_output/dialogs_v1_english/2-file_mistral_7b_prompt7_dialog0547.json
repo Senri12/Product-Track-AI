@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0547",
+    "unique_dialog_id": "2-file_mistral_7b_prompt7_dialog0547",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 50.7,
+    "precision": 52.0,
+    "recall": 59.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.644669"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Стандартная LSTM (Long Short-Term Memory) ячейка включает четыре компонента:\n\n1. Целлюлярный автомат (Cell State, Ct): это состояние клетки хранит информацию о длительных зависимостях между элементами последовательности и не меняется во время одного шага обучения.\n\n2. Гейт входной (Input Gate, it): это гейт регулирует доступ к информации в каждую ячейку из входного вектора сети.\n\n3. Гейт забывания (Forget Gate, ft): это гейт регулирует записываемое состояние в клетку и определяет, сколько информации из предыдущей ячейки следует забыть.\n\n4. Гейт обновления (Output Gate, ot): это гейт регулирует доступ к выходному вектору сети из состояния клетки и определяет, сколько информации должно быть скрыто или показано.",
+      "rating": ""
+    }
+  ]
+}

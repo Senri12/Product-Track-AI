@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0065",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt5_dialog0065",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 30.7,
+    "precision": 26.1,
+    "recall": 44.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 41.9,
+    "hallucination": 35.1,
+    "faithfulness": 57.5,
+    "noise_sensitivity": 38.8,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-11-08T21:40:49.944370"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Двунаправленные RNN ( Bidirectional Recurrent Neural Networks ) – это модуль нейронных сетей, который simultaneously processes input data both forward and backward. Это значит, что сеть simultaneously updates its hidden states based on the entire sequence of inputs in two directions: one from left to right (forward direction) and another from right to left (backward direction). \n\n### Основные аспекты Bidirectional RNNs:\n\n1. **Сотрудничество векторов скрытого statey popр预备**: В Bidirectional RNNы сеть simultaneously updates its hidden states based on both past and future inputs. Это позволяет model capture dependencies not only from the immediate context but also from the broader context of the sequence.\n\n2. **Полезность в различных задачах**: Bidirectional RNNs особенно важно для задач, где требуется обработать последовательные данные с交互dependencesю. Например:\n   - **Text classification**:model processes text in both directions to understand relationships between words.\n   - **Time series prediction**:model uses past and future data points for accurate predictions.\n   - **Sentence generation**: Bidirectional RNNs help generate coherent sentences by capturing context from both sides.\n\n3. **Сimpler configuration**: Compared to standard RNNs, bidirectional RNNs often require simpler configurations since they do not need additional parameters for processing the sequence in reverse direction.\n\n4. **Applications in various models**: Bidirectional RNNs are used not only for text processing but also in other tasks like speech recognition and image captioning.\n\n### Заключение:\n\nДвунаправленные RNNы важны из-за их способности simultaneous process input data from both directions, enhancing model's ability to understand complex relationships in sequential data. Они играют ключевую роль в many modern deep learning architectures, таких как Transformer, и улучшают performance на генерации, классификации и т.д.\n\nБуду рад, если вы хотите детально изучить Bidirectional RNNы в контексте конкретных задач или по deeper dive о их теории и практике.",
+      "rating": ""
+    }
+  ]
+}

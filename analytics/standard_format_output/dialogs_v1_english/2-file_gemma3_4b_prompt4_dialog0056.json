@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0056",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt4_dialog0056",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 53.5,
+    "precision": 47.6,
+    "recall": 68.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.220057"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Трудность применения обычной batch normalization к RNN заключается в том, что RNN обрабатывают последовательности данных, а batch normalization полагается на статистику (среднее и дисперсию) внутри текущей мини-партии (batch). Поскольку RNN обрабатывают последовательности, мини-партии (batches) могут быть очень короткими и не представлять собой стабильную, репрезентативную выборку данных, что приводит к неточным оценкам среднего и дисперсии. Это, в свою очередь, ведет к нестабильности обучения и, в конечном итоге, к сходу обучения.\n",
+      "rating": ""
+    }
+  ]
+}

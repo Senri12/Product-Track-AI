@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0836",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt13_dialog0836",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 47.4,
+    "precision": 47.3,
+    "recall": 57.8,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 37.5,
+    "hallucination": 7.7,
+    "faithfulness": 40.0,
+    "noise_sensitivity": 14.4,
+    "self_knowledge": 2.3,
+    "timestamp": "2025-11-08T21:40:48.560073"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чтобы вычислить шаг в SGD для L(w) = w^2, w = 3, η = 0.1, мы должны рассчитать градиент функции потерь по w, а затем использовать это значение для определения шага.\n\n1. **Вычислить градиент:**\n   *  L(w) = w^2\n   *  dL/dw = 2w\n\n2. **Вычислить градиент при w = 3:**\n   *  dL/dw = 2 * 3 = 6\n\n3. **Вычислить шаг:**\n   *  Шаг = η * (dL/dw) = 0.1 * 6 = 0.6\n\nИтак, шаг в SGD равен 0.6.",
+      "rating": ""
+    }
+  ]
+}

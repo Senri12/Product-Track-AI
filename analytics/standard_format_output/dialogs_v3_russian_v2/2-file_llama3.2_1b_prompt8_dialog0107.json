@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0107",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt8_dialog0107",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 18.8,
+    "precision": 27.8,
+    "recall": 27.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 23.9,
+    "hallucination": 39.9,
+    "faithfulness": 45.8,
+    "noise_sensitivity": 32.3,
+    "self_knowledge": 14.3,
+    "timestamp": "2025-11-08T21:40:49.891039"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Скрытое состояние в RNN — это hidden state или候аемое значение ячейки. Это это второстепенноеhiddenное состояние, которое сохраняется на протяжении entire batch или epochи (шаги) и используется для вычисления выходных значений. Каждая ячейка имеет две части: input gate и output gate. Input gate позволяет передать вектор состояния из входного layer через forget gate и кандидат cell state. Forget gate отсрочивает кандидат cell state на один шаг, не включая его в вычислениями. Окончательный ответ: hidden state или候аемое значение ячейки.",
+      "rating": ""
+    }
+  ]
+}

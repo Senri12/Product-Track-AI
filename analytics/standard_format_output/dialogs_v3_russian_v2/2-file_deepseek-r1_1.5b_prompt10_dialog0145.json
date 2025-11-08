@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0145",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt10_dialog0145",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 26.4,
+    "precision": 23.7,
+    "recall": 38.9,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.5,
+    "hallucination": 40.2,
+    "faithfulness": 52.8,
+    "noise_sensitivity": 36.1,
+    "self_knowledge": 7.0,
+    "timestamp": "2025-11-08T21:40:49.962569"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Ответ:**\n\nИспользование нормализации по мини-батчам в контексте обучения рекуррентных сетей (RNN) важен для обеспечения устойчивости градиентного спуска, а также для обновления параметров и предсказания. Важно, что нормализация позволяет сохранить стабильность по изменениям данных в каждом слое и позволяет улучшить обновление градиентов. Это важно, если данные не имеют正规ized отображение или если функция активации (например, сигмоиды) выступает нулями при значении close to zero. Важно также, что Batch Normalization, который применяется в контексте RNN, помогает сsuchty internal shifting of variables и улучшает обновление параметров, снижая риск от нелинейных аномалий.",
+      "rating": ""
+    }
+  ]
+}

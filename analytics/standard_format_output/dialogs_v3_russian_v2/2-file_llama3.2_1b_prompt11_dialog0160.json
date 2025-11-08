@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0160",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt11_dialog0160",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 19.9,
+    "precision": 31.5,
+    "recall": 23.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 25.3,
+    "hallucination": 32.4,
+    "faithfulness": 62.5,
+    "noise_sensitivity": 36.2,
+    "self_knowledge": 5.2,
+    "timestamp": "2025-11-08T21:40:49.897475"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Низкая скорость обучения является проблемой при обучении РНН. При высокой скорости обучения градиенты вращаются много раз, что приводит к тому, что модели не могут освоить итеративное поведение, характерное для РНН. Нормализация по мини-батчам снизит взрывыных и затухающих градиентах, allowing models to learn long-term dependencies and inductive reasoning.",
+      "rating": ""
+    }
+  ]
+}

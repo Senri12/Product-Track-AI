@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0326",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt7_dialog0326",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 47.9,
+    "precision": 38.5,
+    "recall": 67.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.658220"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Трудность применения обычной batch normalization к RNN заключается в том, что RNN обрабатывают последовательности данных, а batch normalization требует, чтобы данные в батче имели одинаковое распределение. Поскольку RNN обрабатывают последовательности, распределение данных в батче постоянно меняется по мере поступления новых элементов последовательности, что делает применение batch normalization неэффективным и потенциально нестабильным. В частности, из-за разной длины последовательностей, батчи могут содержать данные с очень разными распределениями, что приводит к неэффективной нормализации и, как следствие, к проблемам с обучением.",
+      "rating": ""
+    }
+  ]
+}

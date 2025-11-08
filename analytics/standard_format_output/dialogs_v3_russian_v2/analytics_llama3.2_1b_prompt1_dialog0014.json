@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0014",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt1_dialog0014",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 22.4,
+    "precision": 30.3,
+    "recall": 32.5,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 18.6,
+    "faithfulness": 26.4,
+    "noise_sensitivity": 11.9,
+    "self_knowledge": 5.0,
+    "timestamp": "2025-11-08T21:40:48.958244"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Пусть metrikan = расстояние. Поскольку в задаче metrikan равен 1, то P(da | пасмурно, холодно, влажно, да) будет равно 0.",
+      "rating": ""
+    }
+  ]
+}

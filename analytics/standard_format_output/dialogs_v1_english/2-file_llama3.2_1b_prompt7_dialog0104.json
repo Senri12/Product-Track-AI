@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0104",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt7_dialog0104",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 27.6,
+    "precision": 32.1,
+    "recall": 41.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.424481"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Ответ: Show, Attend and Tell — это model, который представляет собой_bidirectionальный.encoder-Decoder (кодировщик-декодировщик), а не классический REcurrent Neural Network (RNN). Это означает, что у него есть двойная роль: он Codeрует входную последовательность и Decodeует output последовательности.\n\nВ задаче Show, Attend and Tell описывается как model, который использует токены с двумя предыдущими токенами для генерацииoutputной последовательности. Это означает, что он учитываетboth previous tokensgoing into the current token и previous tokens going out of the current token.\n\nComparируя Show, Attend and Tell с обычным REcurrent Neural Network (RNN), мы можем сказать:\n\n* REurrent Neural Network (RNN) — это model, который works only on a single input sequence.\n* Bidirectional Encoder-Decoder (code-Decoder) — это model, который works on both input and output sequences.\n\nТаким образом, Show, Attend and Tell — это model, который использует двойную роль: он Codeрует входную последовательность и Decodeует output последовательности.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0052",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt4_dialog0052",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 23.6,
+    "precision": 31.9,
+    "recall": 36.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 34.8,
+    "hallucination": 31.2,
+    "faithfulness": 50.2,
+    "noise_sensitivity": 30.3,
+    "self_knowledge": 11.9,
+    "timestamp": "2025-11-08T21:40:49.771791"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стандартная LSTM ячейка включает в себя следующие компоненты:\n\n1. **Аutoskip-gramм**: это последовательность нулевых значений размером 2x256 (по 64 значениям, каждый из которых имеет 256 амплитуды).\n2. **Распределение активаций** (Activation function): это функция, используемая для визуализации или смягчения градиента при обучении.\n3. **Сокращение hidden-state**: это последовательность нулевых значений размером 2x256, полученная после преобразования аutoskip-gramм в hidden-state.\n4. **Нормализация hidden-states** (Activation function): функция нормализацииHiddenState, используемая для смягчения градиента при обучении.\n5. **Сокращение output** (Activation function): это последовательность нулевых значений размером 2x256, полученная после преобразования hidden-state в output.\n6. **Нормализация output** (Activation function): функция нормализацииOutput, используемая для смягчения градиента при обучении.\n\nТаким образом, стандартная LSTM ячейка включает в себя 7 componentов.",
+      "rating": ""
+    }
+  ]
+}

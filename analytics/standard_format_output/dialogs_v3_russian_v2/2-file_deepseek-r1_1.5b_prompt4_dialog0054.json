@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0054",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt4_dialog0054",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 27.0,
+    "precision": 26.3,
+    "recall": 37.0,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 35.5,
+    "hallucination": 30.8,
+    "faithfulness": 61.8,
+    "noise_sensitivity": 42.8,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-11-08T21:40:49.912229"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В LSTM нейронной сети замочные скважины (peepholes) используются для избежания краткого роста контекста и снижения вычислительной сложности. Это позволяет сохранять только текущую информацию и предыдущие рекомендации или state, а не хранить все past data. В standardном LSTM нейронной сети есть прямые связи между предыдущим слойом и текущим слойем, что обеспечивает ability для рекуррентности. замочные скважины могут быть полезны в других методах рекуррентных сетей, таких как GRU ( gated Recurrent Units), которые также используют прямые связи и замочные скважины для separately manageingu gates.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0538",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt3_dialog0538",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 47.2,
+    "precision": 44.6,
+    "recall": 59.7,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 40.1,
+    "hallucination": 12.6,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 11.8,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-11-08T21:40:48.585019"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для вычисления обновленной диагональной матрицы G_{t} в Adagrad, нам нужно применить формулу:\n\nG_{t,ii} = G_{t-1,ii} + g_t^2\n\nГде:\n\n*   G_{t-1,ii} = 4 (диагональный элемент матрицы G в предыдущий момент времени)\n*   g_t = 2 (квадрат градиента в текущий момент времени)\n*   η = 0.1 (learning rate)\n*   ε = 1e-8 (маленькое значение для стабильности)\n\nТогда:\n\nG_{t,ii} = 4 + 2^2 = 4 + 4 = 8\n\nИтак, G_{t} = 8.\n",
+      "rating": ""
+    }
+  ]
+}

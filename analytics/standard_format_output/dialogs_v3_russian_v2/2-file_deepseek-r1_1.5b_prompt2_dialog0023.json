@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0023",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt2_dialog0023",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 30.7,
+    "precision": 33.0,
+    "recall": 45.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.5,
+    "hallucination": 30.3,
+    "faithfulness": 60.1,
+    "noise_sensitivity": 36.7,
+    "self_knowledge": 9.6,
+    "timestamp": "2025-11-08T21:40:49.939251"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем GRU отличается от LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Чем GRU (Gated Recurrent Unit) отличается от LSTM (Long Short-Term Memory)?\n\nГated Recurrent Unit (GRU) worksgate отличается от LSTM worksgate в several key aspects:\n\n1. **Number of Gates**: GRU worksgate consists of two gates: one for the update/carry and one for the reset. In contrast, LSTM worksgate has three gates: forget, memory, and cell.\n\n2. **Functionality**:\n   - GRU worksgate combines both the update and forget gates into a single function using a sigmoid activation function.\n   - LSTM worksgate uses three separate functions (forget, memory, and cell) combined via their respective sigmoid activations.\n\n3. **Simplicity and Efficiency**: Due to the simplicity of GRU's single gate structure, it is often considered more efficient and easier to implement compared to LSTM, which has additional complexity from multiple gates.\n\n4. **Parameter Count**: GRU typically requires fewer parameters than LSTM because it combines both update and forget gates into one operation.\n\n5. **Applications**: GRU is commonly used in scenarios where the input sequence length does not vary significantly across tasks, such as language modeling and recommendation systems.\n\n6. **Stability**: GRU's single gate mechanism can help prevent overfitting by reducing the number of parameters and simplifying gradient flow.\n\nВ общем, GRU worksgate гаты можно использовать в lieu LSTM worksgate, но с более простой и стабильной функцией обработки данных.",
+      "rating": ""
+    }
+  ]
+}

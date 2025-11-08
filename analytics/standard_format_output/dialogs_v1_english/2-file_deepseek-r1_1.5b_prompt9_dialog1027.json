@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1027",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt9_dialog1027",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.494651"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Ключевые компоненты стандартной LSTM (Long Short Term Memory) ячейки:\n\n1. **Forget Gate**: Фильтрует information для future states. Работает как способ фильтровать past information, чтобы усилить или скиля的记忆.\n\n2. **Input Gate**: Фильтрует вводные данные и state для current and future states.\n\n3. **Cell State**: Композиция forget gate и input gate, что позволяет стабильно усилить или скиля memory.\n\nЭти компоненты помогают LSTM предсказывать текущее state и future states, а также усилять previous information.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0297",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt10_dialog0297",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+    "f1": 47.8,
+    "precision": 44.3,
+    "recall": 62.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:46.634137"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Окей, давай решим эту задачу. У нас есть задача оптимизации с использованием метода Momentum. Вот что нам известно:\n\n*   **γ (гамма)** = 0.9 - это коэффициент затухания, который определяет, насколько быстро предыдущие градиенты угасают.\n*   **v<sub>t-1</sub>** = 1 - скорость в предыдущий момент времени.\n*   **∇L** = 2 - градиент функции потерь в текущий момент времени.\n*   **η** = 0.1 - скорость обучения (learning rate).\n\nНаша задача - вычислить **v<sub>t</sub>**, скорость в текущий момент времени (t).\n\n**Формула для обновления скорости в методе Momentum:**\n\nv<sub>t</sub> = (1 - γ) * v<sub>t-1</sub> + η * ∇L\n\n**Подставим известные значения:**\n\nv<sub>t</sub> = (1 - 0.9) * 1 + 0.1 * 2\nv<sub>t</sub> = 0.1 * 1 + 0.2\nv<sub>t</sub> = 0.1 + 0.2\nv<sub>t</sub> = 0.3\n\n**Ответ:** v<sub>t</sub> = 0.3\n\nУ тебя есть вопросы по этому решению? Хочешь, чтобы я объяснил какую-то часть подробнее, например, что такое коэффициент затухания или скорость обучения?\n",
+      "rating": ""
+    }
+  ]
+}

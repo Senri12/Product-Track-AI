@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0192",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt13_dialog0192",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 30.3,
+    "precision": 40.9,
+    "recall": 32.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 33.5,
+    "hallucination": 25.8,
+    "faithfulness": 63.1,
+    "noise_sensitivity": 33.3,
+    "self_knowledge": 11.1,
+    "timestamp": "2025-11-08T21:40:49.768159"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как работает механизм внимания (Attention)?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Механизм внимания (Attention) является ключевым componentом модели BERT. Он позволяет modèleю понимать контекст и связь между словами в тексте, что enables ей правильно трактовать язык. Механиzm внимания работает следующим образом: при incoming word из\tinput tokenizers word decoder принимает внимание к surrounding words и определяет наиболее подходящий ответ для каждого words — если это наименьшее значение Self-Attention or в случае, когда attention_mask = 1. Это позволяет моделимам вынести более точное решение по отношению к конкретному wordу в наборе words. В результате model может правильно трактовать сложные тексты и получить результаты, которые больше или меньше точны.",
+      "rating": ""
+    }
+  ]
+}

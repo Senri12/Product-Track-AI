@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0356",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt9_dialog0356",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 46.3,
+    "precision": 40.9,
+    "recall": 61.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.653298"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Основная трудность применения обычной batch normalization к рекуррентным нейронным сетям (RNN) заключается в том, что RNN обрабатывают последовательности данных, а batch normalization требует, чтобы входные данные имели одинаковую форму (размерность) для каждого мини-батча.  В RNN, последовательности данных имеют разную длину, и размерность (количество временных шагов) варьируется от последовательности к последовательности.  Batch normalization пытается нормализовать данные внутри мини-батча, но поскольку мини-батчи будут содержать последовательности разной длины, это приводит к непредсказуемым и нестабильным градиентам во время обучения, что, в свою очередь, затрудняет или останавливает процесс обучения.\n",
+      "rating": ""
+    }
+  ]
+}

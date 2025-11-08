@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0748",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt10_dialog0748",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 46.9,
+    "precision": 46.5,
+    "recall": 61.6,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 37.9,
+    "hallucination": 11.4,
+    "faithfulness": 33.7,
+    "noise_sensitivity": 14.2,
+    "self_knowledge": 4.8,
+    "timestamp": "2025-11-08T21:40:48.628932"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В Adagrad, обновление для каждого параметра θ_i в шаге t вычисляется следующим образом:\n\nθ_{t+1, i} = θ_{t, i} - η / sqrt(G_{t-1, ii} + ε) * g_t\n\nГде:\n* θ_{t+1, i} - значение параметра в следующем шаге.\n* θ_{t, i} - значение параметра в текущем шаге.\n* η - learning rate.\n* G_{t-1, ii} = 4 (сумма квадратов градиентов за предыдущие шаги).\n* g_t = 2 (градиент в текущем шаге).\n* ε = 1e-8 (маленькое число для предотвращения деления на ноль).\n\nПодставляем значения:\n\nθ_{t+1, i} = θ_{t, i} - 0.1 / sqrt(4 + 1e-8) * 2\n\nθ_{t+1, i} = θ_{t, i} - (0.1 * 2) / sqrt(4 + 1e-8)\n\nθ_{t+1, i} = θ_{t, i} - 0.2 / sqrt(4 + 1e-8)\n\nПриближенно, sqrt(4 + 1e-8) ≈ 2.000000199,  тогда:\n\nθ_{t+1, i} = θ_{t, i} - 0.2 / 2.000000199 ≈ θ_{t, i} - 0.09999995999...\n\nТаким образом, значение параметра в следующем шаге будет немного меньше, чем в текущем шаге.  Важно отметить, что эта корректировка зависит от суммы квадратов градиентов за предыдущие шаги, то есть каждый градиент влияет на скорость обучения.\n",
+      "rating": ""
+    }
+  ]
+}

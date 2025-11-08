@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1104",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt14_dialog1104",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.449035"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Замочных скважин (peepholes) в LSTM используются для сохранения partially connected weights (implicit skip connections), которые позволяют model retention information over time. Эти skips помогают улучшить обработку long-term dependencies и注意力, так как they maintain a partial copy of the state for later steps.",
+      "rating": ""
+    }
+  ]
+}

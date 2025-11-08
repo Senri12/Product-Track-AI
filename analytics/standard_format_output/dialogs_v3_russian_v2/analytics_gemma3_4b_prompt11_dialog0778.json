@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0778",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt11_dialog0778",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 45.6,
+    "precision": 47.8,
+    "recall": 54.3,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 37.9,
+    "hallucination": 9.8,
+    "faithfulness": 37.9,
+    "noise_sensitivity": 13.5,
+    "self_knowledge": 2.4,
+    "timestamp": "2025-11-08T21:40:48.689511"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.\n\nВычисление:\nG_{t} = G_{t-1} + g_t\nG_t = 4 + 2 = 6\n\nОбновление:\nθ_{t+1, i} = θ_{t, i} - η / sqrt(G_t + ε)\nθ_{t+1, i} = θ_{t, i} - 0.1 / sqrt(6 + 1e-8)\nθ_{t+1, i} ≈ θ_{t, i} - 0.1 / sqrt(6.000000000000001)\nθ_{t+1, i} ≈ θ_{t, i} - 0.1 / 2.449489742783178\nθ_{t+1, i} ≈ θ_{t, i} - 0.040824829046386\nТаким образом, обновление для каждого параметра θ_{t, i} будет таким: θ_{t+1, i} = θ_{t, i} - 0.040824829046386.\n",
+      "rating": ""
+    }
+  ]
+}

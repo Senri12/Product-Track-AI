@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0004",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt1_dialog0004",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 23.3,
+    "precision": 24.0,
+    "recall": 38.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.431485"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Окончательный ответ:\n\nSimple RNN (Решений с простой последовательной рекуррентной структурой) и Deep RNN (Решений с сложной последовательной рекуррентной структурой, включая вычисление hidden states) — две разные типы решений, используемых в аналитическом моделировании и machine learning.\n\nSimple RNN:\n\n* Простая architecture для решения sequential prediction problems.\n* Использует только последовательные индивидуальные элементы (например, word или char в тексте).\n* Неравенствоhidden states для каждого предсказательного步ства.\n* Градиентное распределение hidden state для каждой последовательности.\n\nДополнительная информация:\n- Классическая architecture для решения sequential prediction problems\n- Использует только последовательные индивидуальные элементы (например, word или char в тексте)\n- Неравенствоhidden states для каждого предсказательного步ства.\n- Градиентное распределение hidden state для каждой последовательности.\n\nDeep RNN:\n\n* Сложная architecture для решения sequential prediction problems.\n* Использует болееcomplexную структуру, включая вычисление hidden states.\n* Использует функции activation (например, токен [MASK] для замены элемента в строке).\n* Градиентное распределение hidden state для каждой последовательности.\n\nДополнительная информация:\n- Классическая architecture для решения sequential prediction problems\n- Использует более complexную структуру, включая вычисление hidden states.\n- Использует функции activation (например, токен [MASK] для замены элемента в строке).\n- Градиентное распределение hidden state для каждой последовательности.",
+      "rating": ""
+    }
+  ]
+}

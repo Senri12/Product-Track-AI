@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0658",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt7_dialog0658",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 45.7,
+    "precision": 44.0,
+    "recall": 60.0,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 39.2,
+    "hallucination": 9.9,
+    "faithfulness": 36.5,
+    "noise_sensitivity": 13.4,
+    "self_knowledge": 3.6,
+    "timestamp": "2025-11-08T21:40:48.657665"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.\n\nГрадиент обновления для элемента ii в момент t:\n\n`θ_{t+1, ii} = θ_{t, ii} - (η / sqrt(G_{t-1, ii} + ε)) * g_t`\n\nПодставляем значения:\n\n`θ_{t+1, ii} = θ_{t, ii} - (0.1 / sqrt(4 + 1e-8)) * 2`\n`θ_{t+1, ii} = θ_{t, ii} - (0.1 / sqrt(4.0000001)) * 2`\n`θ_{t+1, ii} = θ_{t, ii} - (0.1 / 2.00000001) * 2`\n`θ_{t+1, ii} = θ_{t, ii} - 0.099999998`\n`θ_{t+1, ii} = θ_{t, ii} - 0.099999998`\n\nТаким образом, обновление параметров будет следующим:\n\n`θ_{t+1, ii} = θ_{t, ii} - 0.099999998`\n",
+      "rating": ""
+    }
+  ]
+}

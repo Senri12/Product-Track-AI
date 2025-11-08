@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0809",
+    "unique_dialog_id": "2-file_mistral_7b_prompt9_dialog0809",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 56.0,
+    "precision": 51.0,
+    "recall": 70.9,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:48.007831"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Show, Attend and Tell (SAT) отличается от обычного Recurrent Neural Network (RNN) в области обработки изображений тем, что SAT использует механизм внимания для сосредоточения на важных областях в изображении и коммуникации между различными пиксельными значениями. В то время как RNN проходит по каскаду фильтров, SAT создает мапу взглядов (attention map) для выделения важных области изображения, а затем использует эти данные для сбора и комбинирования информации о всех пикселях. Это позволяет модели САТ быстрее и более точно обрабатывать большие изображения, без необходимости напрямую просматривать каждый пиксель, как это обычно делается в RNN. В то время как RNN обычно используется для секвенциальных данных, таких как текст или аудио, SAT расширяет его возможности на обработку изображений и позволяет ему работать с более сложными задачами в области компьютерного зрения.",
+      "rating": ""
+    }
+  ]
+}

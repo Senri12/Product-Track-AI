@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0046",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt4_dialog0046",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+    "f1": 27.0,
+    "precision": 26.3,
+    "recall": 37.0,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 35.5,
+    "hallucination": 30.8,
+    "faithfulness": 61.8,
+    "noise_sensitivity": 42.8,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-11-08T21:40:49.910177"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Рекуррентные нейronные сети важны в условиях, когда требуется обработка последовательных данных или при smaller models. Они требуют меньше training time, что полезно при уменьшении размеров сетей или приsmaller models. Также рекурренты обрабатывают последовательность данных в.chunk, что может быть важным для генерации и текстуры. Однако, трансформеры (например, модель BERT) являются более эффективными для сложных задач с large capacity и complex training process.\n\nВ заключение: рекуррентные нейronные сети полезны в условиях, когда требуется обработка последовательных данных или при smaller models, но их преимущества видны в larger models с large capacity и complex training process.",
+      "rating": ""
+    }
+  ]
+}

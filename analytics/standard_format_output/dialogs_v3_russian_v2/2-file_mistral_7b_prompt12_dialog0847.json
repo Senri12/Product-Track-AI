@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0847",
+    "unique_dialog_id": "2-file_mistral_7b_prompt12_dialog0847",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 42.0,
+    "precision": 41.3,
+    "recall": 50.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 55.1,
+    "hallucination": 24.8,
+    "faithfulness": 64.6,
+    "noise_sensitivity": 33.9,
+    "self_knowledge": 10.6,
+    "timestamp": "2025-11-08T21:40:50.111386"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Стандартная Long Short-Term Memory (LSTM) ячейка состоит из четырех основных компонентов: цепь входов (input gate), выходной слой (output gate), забывающий слой (forget gate), и ячейка состояния (cell state). Кроме того, LSTM включает активационную функцию, такую как sigmoid или tanh, для формирования выходов этих компонентов. Каждая LSTM ячейка содержит внутри себя несколько весов (например, w_i, w_f, w_o, w_c), которые обучаются во время обучения, чтобы формировать необходимые выходы для каждого компонента.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0367",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt10_dialog0367",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 41.2,
+    "precision": 37.9,
+    "recall": 56.8,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 62.5,
+    "hallucination": 29.2,
+    "faithfulness": 62.6,
+    "noise_sensitivity": 32.9,
+    "self_knowledge": 8.2,
+    "timestamp": "2025-11-08T21:40:49.633783"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стандартная LSTM (Long Short-Term Memory) ячейка состоит из следующих ключевых компонентов:\n\n1.  **Cell State (C<sub>t</sub>):**  Это \"дорога\" для информации, проходящая через ячейку.  Она хранит информацию на длительные периоды времени, позволяя ячейке \"помнить\" важные данные.\n\n2.  **Hidden State (h<sub>t</sub>):**  Это выходной вектор ячейки, который представляет текущее состояние ячейки и передается другим ячейкам в сети.\n\n3.  **Input Gate (i<sub>t</sub>):**  Определяет, какие новые данные будут добавлены к cell state.\n\n4.  **Output Gate (o<sub>t</sub>):**  Определяет, какие данные из cell state будут переданы на выход.\n\n5.  **Forget Gate (f<sub>t</sub>):**  Определяет, какие данные из cell state необходимо удалить (забыть).\n\nВ каждой из этих составляющих своя функция.  Все они работают вместе, позволяя LSTM эффективно обрабатывать последовательные данные и преодолевать проблему исчезающих/взрывающихся градиентов, присущую обычным рекуррентным нейронным сетям.\n",
+      "rating": ""
+    }
+  ]
+}

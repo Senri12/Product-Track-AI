@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0085",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt6_dialog0085",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 25.1,
+    "precision": 35.3,
+    "recall": 35.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.811746"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Решая вопрос, мы видим, чтоNormalizing по мини-батчам — это метод обучения REcurrent Neural Network (RNN) при работе сbatch-наборами.\n\nПоскольку RNN- modelo работает на batch-наборе данных, его градиантные вычисления могут быть неинтегрированы. Это significa, что в каждомIterationе вычисления градiente в среднем уменьшается вдвое, потому что общее количество вычислений равно batch-size. Если не снизить градiente, он может начать динамически увеличиваться или динамиactively decrease, а это может привести к нецелостному обучению модели.\n\nПоэтому нормализация по мини-батчам позволяет уменьшить градиантные вычисления при.batch-наборе данных, позволяя models-у быть более стабильными и точными. Это приводит к более эффективному обучению RNN на batch-наборах данных.",
+      "rating": ""
+    }
+  ]
+}

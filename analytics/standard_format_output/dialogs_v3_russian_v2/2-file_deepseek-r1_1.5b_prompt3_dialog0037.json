@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0037",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt3_dialog0037",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 29.1,
+    "precision": 27.0,
+    "recall": 42.2,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.7,
+    "hallucination": 29.3,
+    "faithfulness": 61.8,
+    "noise_sensitivity": 43.7,
+    "self_knowledge": 8.8,
+    "timestamp": "2025-11-08T21:40:49.930589"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стандартная LSTM ячейка включает следующие компоненты:\n\n1. **Forget Gate**: Управляет state forget, projects input into hidden space using threshold gate.\n\n2. **Remember Gate**: Управляется forget gate, project input to hidden space.\n\n3. **Cell State**: Геомеричное orthonormal state, обновляется в зависимости от的记忆 и incoming information.\n\n4. **Update and Reset Gates**: Определяют parts of memory (forgetting) and new information (adding).\n\n5. **Cell Input**: Геомеричное orthogonal input state, updated by forget gate.\n\n6. **Nonlinearity**: Активационные функции для изменения state.\n\n7. **Bias Term**: Добавлен в cell_state и forget gate, для расширения функционала.\n\n8. **Dropout Regularization**: Удалит нюансы по верхам (если есть).\n\n9. **Hybrid State**: Геомеричные states are updated by gates and combined with input.\n\nЭти компоненты помогают LSTM моделямоделим модели обрабатывать последовательности, усилить разреженные векторы и предотвращать遗忘 значительных важных памяти.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0214",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt15_dialog0214",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 16.7,
+    "precision": 28.0,
+    "recall": 24.8,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 28.8,
+    "hallucination": 34.4,
+    "faithfulness": 59.7,
+    "noise_sensitivity": 37.6,
+    "self_knowledge": 5.9,
+    "timestamp": "2025-11-08T21:40:49.794165"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "СSimple RNN (Речь на единичные записи) и Deep RNN (Речь на группированные записи) — это два типа rnn, которые используются для обработки(text) и speech (изслежения волн). Основное различие между этими двумя типами rnn заключается в их размере и функциональности.\n\nSimple RNN — это низкоквадратный rnn, который имеет только один слoyer на единичные записи. Это означает, чтоSimple RNN может не хранить больше информации, чем одна или более единиц. Это уменьшает потребность в многослойных rnnах и дает более быстрое обучение modelов.\n\nГлуки RNN — это высококвадратные rnn, которые могут хранить до 32 слоя для text. Это позволяет deep RNN признать сложную связь между токенами в последовательности и применять их к широкому спектру задач.\n\nТаким образом, Deep RNN обычно используется для более сложных задач, таких как Natural Language Processing (NLP), Speech Recognition и Text Summarization.",
+      "rating": ""
+    }
+  ]
+}

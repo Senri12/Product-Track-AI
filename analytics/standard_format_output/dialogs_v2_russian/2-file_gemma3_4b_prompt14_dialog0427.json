@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0427",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt14_dialog0427",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 51.2,
+    "precision": 46.3,
+    "recall": 66.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.601866"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стандартная LSTM (Long Short-Term Memory) ячейка включает в себя следующие ключевые компоненты:\n\n*   **Cell State (C<sub>t</sub>):**  Это \"шина\" памяти, которая проходит через всю последовательность. Она предназначена для хранения информации на протяжении длительного времени, позволяя LSTM запоминать и использовать информацию из прошлых шагов.\n*   **Hidden State (h<sub>t</sub>):**  Это текущее состояние LSTM ячейки, которое передается на следующий шаг и используется для вывода.\n*   **Input Gate (i<sub>t</sub>):**  Эта логическая функция определяет, какую новую информацию нужно добавить в cell state.\n*   **Output Gate (o<sub>t</sub>):**  Эта логическая функция определяет, какую информацию из cell state нужно вывести в следующий hidden state.\n*   **Forget Gate (f<sub>t</sub>):**  Эта логическая функция определяет, какую информацию нужно удалить из cell state.\n\n  \n  \n  Кратко, LSTM ячейка использует эти компоненты для эффективного управления потоком информации, запоминания важной информации на длительные промежутки времени и предотвращения проблемы затухающих градиентов.",
+      "rating": ""
+    }
+  ]
+}

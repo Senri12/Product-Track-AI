@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0592",
+    "unique_dialog_id": "2-file_mistral_7b_prompt10_dialog0592",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 63.2,
+    "precision": 64.8,
+    "recall": 71.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.634561"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Стандартная LSTM (Long Short-Term Memory) ячейка включает четыре основных компонента:\n\n1. Input Gate (Входной шлюз): Отвечает за контроль входа новой информации в LSTM ячейку, фильтруя нежелательные данные.\n2. Forget Gate (Забывающий шлюз): Контролирует, какие данные из предыдущего состояния будут запомнены и что будет забыто в текущий момент.\n3. Cell State (Состояние ячейки): Хранит длинносрочную информацию, которую LSTM удерживает в течение времени. Это состояние ячейки меняется в результате действия input gate и forget gate.\n4. Output Gate (Выходной шлюз): Управляет выбором того, какое из хранимого внутри LSTM информации будет передано на следующий слой.\n\nКаждый компонент изменяется при помощи нейронных сетей и внутренних весов, которые обучаются с помощью образцов данных.",
+      "rating": ""
+    }
+  ]
+}

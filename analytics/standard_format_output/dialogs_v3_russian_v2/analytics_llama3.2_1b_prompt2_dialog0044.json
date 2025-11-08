@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0044",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt2_dialog0044",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+    "f1": 27.6,
+    "precision": 37.7,
+    "recall": 35.1,
+    "claim_recall": 40.0,
+    "context_precision": 50.0,
+    "context_utilization": 31.4,
+    "hallucination": 14.3,
+    "faithfulness": 29.6,
+    "noise_sensitivity": 10.0,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-11-08T21:40:48.890674"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Пусть у нас есть набор данных, состоящий из трех классов:(passамурно, холодно, влажно), и для каждого класса у нас есть набор данных с двумя соответствующими признаками. Это можно представить как:\n\nУ нас есть:\n1) Данные на passamuro (классPassamurono): [(x1,y1),(x2,y2)...,(xn,yn)]\n2) Данные на choleron (классCholeron): [(x1,y1),(x2,y2)...,(xn,yn)]\n3) Данные на vallum (классVallum): [(x1,y1),(x2,y2)...,(xn,yn)]\n\nМы хотим найти вероятность того, что новый объект z является passamuro. Поскольку в наборе данных не содержится информации о классе chilleron и vallum, мы используем метрику Euclidean, чтобы оценить расстояние между двумя наборами данных. Для этого мы вычисляем сумму квадратов разницы координат двух точек:\n\nd(passamuro, choleron) = ∑ |x1 - x2|^2\n= ∑ [(x1,y1)-(x2,y2)]^2\n\nДалее мы вычисляем расстояние между данными наборами данных passamurono и chilleron:\n\nD(passamurono, choleron) = √[(x1-y1)^2 + (x2-y2)^2] (поскольку координаты двух точек в passamurono и chilleron одинаковы)\n\nИтак, вероятность того, что новый объект z является passamuro, равна:\n\nP(passamuro|passamurono) = D(passamurono, choleron)/D(passamurono)\n= √[(x1-y1)^2 + (x2-y2)^2]/[∑(x_i - x_j)^2] с i = 1, 2, ..., n\n\nПоскольку у нас есть набор данных chilleron и vallum, мы можем использовать то же самое расстояние и метрику для оценки расстояния между данными наборами данных chilleron и vallum:\n\nD(choleron, vallum) = √[(x1-y1)^2 + (x2-y2)^2] (поскольку координаты двух точек в chilleron и vallum одинаковы)\n\nИтак, вероятность того, что новый объект z является chilleron, равна:\n\nP(choleron|chilleron) = D(choleron, vallum)/D(choleron)\n= √[(x1-y1)^2 + (x2-y2)^2]/[∑(x_i - x_j)^2] с i = 1, 2, ..., n\n\nПоскольку у нас есть набор данных chilleron и passamurono, мы можем использовать то же самое расстояние и метрику для оценки расстояния между данными наборами данных chilleron и passamurono:\n\nD(choleron, passamurono) = √[(x1-y1)^2 + (x2-y2)^2] (поскольку координаты двух точек в chilleron и passamurono одинаковы)\n\nИтак, вероятность того, что новый объект z является passamuro или chilleron, равна:\n\nP(passamurono|passamurono) = P(choleron|choleron) * P(passamurono|choleron)\n= √[(x1-y1)^2 + (x2-y2)^2]/[D(choleron, passamurono)/D(passamurono)]\n\nПоскольку в наборе данных chilleron и passamurono все координаты равны, мы можем выразить P(passamuro|choleron) как:\n\nP(passamurono|passamurono) = D(passamurono, choleron)/D(passamurono)\n= 1\n\nИтак, вероятность того, что новый объект z является passamuro, равна 1.",
+      "rating": ""
+    }
+  ]
+}

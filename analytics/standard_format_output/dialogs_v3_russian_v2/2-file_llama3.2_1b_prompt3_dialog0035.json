@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0035",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt3_dialog0035",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 25.3,
+    "precision": 32.0,
+    "recall": 29.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 26.4,
+    "hallucination": 30.5,
+    "faithfulness": 51.5,
+    "noise_sensitivity": 37.5,
+    "self_knowledge": 17.9,
+    "timestamp": "2025-11-08T21:40:49.777178"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Совет: Вопрос: \"Двунаправенные RNN и для чего они нужны?\".\n\nОтвет: Двунаправные RNN (или двуязычный RNN) — это тип рекуррентных нейронных сетей, в которых каждый neuron не только реагирует на предыдущий input, но также может передавать вход из предыдущего layers. Это позволяет двумя целям: сначала поиска последовательности и вторично для преобразования последовательности в текст.\n\nДвунаправные RNN часто используются для анализа повторных данных, таких как исторический dữット, чтобы предсказать последующие значения или действия.",
+      "rating": ""
+    }
+  ]
+}

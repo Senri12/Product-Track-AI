@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0021",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt2_dialog0021",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как LSTM решает проблему затухающих градиентов?",
+    "f1": 30.7,
+    "precision": 33.0,
+    "recall": 45.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.5,
+    "hallucination": 30.3,
+    "faithfulness": 60.1,
+    "noise_sensitivity": 36.7,
+    "self_knowledge": 9.6,
+    "timestamp": "2025-11-08T21:40:49.938762"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как LSTM решает проблему затухающих градиентов?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "LSTM решает проблему затухающих градиентов с использованием фазированных гейтов: forget gate (gi) и update gate (gu). Эти гейты контролируют генерацию и обновление state. \n\n- **Forget gate (gi)** оценивает важность incoming information, фиктицируя или удаляя из state. Это способствует preventting gradients from exploding.\n  \n- **Update gate (gu)** генерирует новое state, что делает это фазу обновления. Усиление gradients может быть предотвращено с помощью weight matrices.\n\nГрадиенты не уменьшаются, если weight matrices are initialized appropriately and normalization techniques like Batch Normalization are applied.",
+      "rating": ""
+    }
+  ]
+}

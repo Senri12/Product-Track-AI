@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0078",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt6_dialog0078",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 34.4,
+    "precision": 32.0,
+    "recall": 47.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 48.5,
+    "hallucination": 27.0,
+    "faithfulness": 57.9,
+    "noise_sensitivity": 34.3,
+    "self_knowledge": 8.4,
+    "timestamp": "2025-11-08T21:40:49.973611"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Итоги лекции:**\n\n1. **Рекуррентные нейронные сети (RNNs):**\n   - Решают задачи с последовательными данными, где узлы нейronов связаны в链条ах с собой и с предыдущими шагами.\n   - Основные архитектуры:\n     - GRU (Gated Recurrent Unit): У conservatorной структуре, использует тензоры на каждом шаге.\n     - LSTM (Long Short-Term Memory): Добавляет прямую связь между тензорами, фильтруя узлы нейронов.\n\n2. **Аренда методов:**\n   - GRU – most efficient for high-dimensional sequential data.\n   - LSTM – excellent for tasks requiring the importance of past elements to be highlighted.\n   - Attention-based Networks – handle visual data by considering importance via attention mechanisms.\n   - Memory-based Networks – process information along lines with tензorum in ¾-D.\n\n3. **Типы входов и выходов:**\n   - GRU, LSTM, Attention-based Networks, Memory-based Networks.\n   - Входы: Матриц или тензоры.\n   - Выходы: Некоторые отсчетные нейроны в зависимости от архитектуры.\n\n4. **Пример задач:**\n   - Формирование текста с генерацией.\n   - Предсказание следующего слова.\n   - Разделение изображений на логотипы.\n   - Классификация с последовательными данными.\n\nТеперь можно уточнить细节 по конкретным архитектурам и примерам задач.",
+      "rating": ""
+    }
+  ]
+}

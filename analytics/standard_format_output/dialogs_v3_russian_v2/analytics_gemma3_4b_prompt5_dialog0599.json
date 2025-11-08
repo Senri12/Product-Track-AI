@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0599",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt5_dialog0599",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 47.2,
+    "precision": 45.1,
+    "recall": 63.5,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 39.8,
+    "hallucination": 8.4,
+    "faithfulness": 37.8,
+    "noise_sensitivity": 15.9,
+    "self_knowledge": 3.8,
+    "timestamp": "2025-11-08T21:40:48.603715"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Let's calculate the learning rate decay step by step. The formula for linear decay is:\n\nη = η₀ * (1 - t / T)\n\nGiven:\nη₀ = 0.1\nt = 5\nT = 10\n\nPlugging in the values:\n\nη = 0.1 * (1 - 5 / 10)\nη = 0.1 * (1 - 0.5)\nη = 0.1 * 0.5\nη = 0.05\n\nTherefore, the learning rate after 5 steps with linear decay is 0.05.\n",
+      "rating": ""
+    }
+  ]
+}

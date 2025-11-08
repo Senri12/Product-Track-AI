@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0634",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt7_dialog0634",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В чем суть наивного байесовского классификатора?",
+    "f1": 45.7,
+    "precision": 44.0,
+    "recall": 60.0,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 39.2,
+    "hallucination": 9.9,
+    "faithfulness": 36.5,
+    "noise_sensitivity": 13.4,
+    "self_knowledge": 3.6,
+    "timestamp": "2025-11-08T21:40:48.651711"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем суть наивного байесовского классификатора?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Наивный байесовский классификатор работает в предположении условной независимости предикторов при условии данной метки класса. Это означает, что он предполагает, что значения предикторов для каждого объекта классах независимы друг от друга. Математически это выражается как: P(Xᵢ | Класс = y) = P(Xᵢ | Класс = y) * P(Xᵢ) / P(y).  Вкратце – каждый предиктор рассматривается независимо от других при определении вероятности принадлежности объекта к конкретному классу.\n",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1237",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt8_dialog1237",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.887922"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стandart LSTM ячейка включает следующие компоненты:\n\n1. **state**: С, который содержит state_i- и state_i+h+ для каждого логистического пик-a (i=0, 1).  \n2. **state_c**: Контент, который используется для обработки последовательности.  \n\nТакже включает следующие компоненты:\n- state_i-\n- state_i+h+\n- gate_i-\n- gate_i+h+\n\nЭта схема позволяет modelам предсказывать и классировать последовательности с высокой точностью.",
+      "rating": ""
+    }
+  ]
+}

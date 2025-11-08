@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0039",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt3_dialog0039",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 29.1,
+    "precision": 27.0,
+    "recall": 42.2,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.7,
+    "hallucination": 29.3,
+    "faithfulness": 61.8,
+    "noise_sensitivity": 43.7,
+    "self_knowledge": 8.8,
+    "timestamp": "2025-11-08T21:40:49.932455"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Замоковые скважины (peepholes) в Long Short-Term Memory (LSTM) используются для ограничения agoents of information (input data from previous time steps) into the current cell state. Они фиксируют, как much past data debeftraíve impact the current processing step. Следовательно, замоковые скважины ограничивают влияние предыдущих данных на текущую state, что позволяет усилить обработку последовательностей и повысить точность предсказаний.",
+      "rating": ""
+    }
+  ]
+}

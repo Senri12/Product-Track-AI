@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0092",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt7_dialog0092",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 27.6,
+    "precision": 32.1,
+    "recall": 41.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.421244"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Поэтому правильный ответ — \"self-attention\". ВРNN (Реинентерный НюлРешатель) — это тип рекуррентных нейронных网络, который предназначен для обработки последовательностей данных. Một ключевое свойство RNN — hidden state, представляющий собой hidden состоянии в результате processing последовательности.\n\n self-attention — это механизм, используемый в RNN и других типах нейронных сетей для вычисленияhidden states. Это позволяет_modelу признать связь между различными частями последовательности и выносить решение на основе этих связей.\n\nАнализируя example из предоставленного текста, мы можем видеть, как hidden state используется для предсказания значения text._hidden_state — это hidden состояний RNN, который содержит все уникальные записи last several steps. hidden_state — это необходимый input для вычисления output hidden state по формуле:\n\nhidden state = hidden_state * [input] + W * [mask]\n\nгде input —_input_данных данных; W —модификатор hidden states. hidden state — hidden состояния RNN, которые использовались для предсказания значения text.\n\nСкрытое состояние hidden state представляет собой матрицу размером 768x768, которая содержит hidden состояния всех эн kodеров в RNN. hidden_state является необходимым inputом для вычисления output hidden states на every step during training.",
+      "rating": ""
+    }
+  ]
+}

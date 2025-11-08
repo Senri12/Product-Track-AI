@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0401",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt12_dialog0401",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 55.2,
+    "precision": 50.6,
+    "recall": 65.8,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.638641"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В обычной batch normalization трудность возникает из-за того, что RNN (рекуррентные нейронные сети) обрабатывают последовательности данных, а batch normalization требует, чтобы данные в батче (пакете) имели одинаковые статистические свойства (среднее и дисперсию). В RNNs, последовательности имеют переменную длину и, следовательно, переменные статистические свойства на каждом шаге времени.  Поэтому, простое применение batch normalization к RNNs может привести к взрыву или затуханию градиентов во время обучения, что существенно замедляет или даже делает обучение невозможным.\n",
+      "rating": ""
+    }
+  ]
+}

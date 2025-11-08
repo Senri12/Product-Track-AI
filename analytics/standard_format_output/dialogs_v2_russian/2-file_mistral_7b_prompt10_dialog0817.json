@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0817",
+    "unique_dialog_id": "2-file_mistral_7b_prompt10_dialog0817",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 61.1,
+    "precision": 60.2,
+    "recall": 71.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:48.001251"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Стандартная ЛSTM (Long Short-Term Memory) ячейка включает четыре компонента: Cell, Input Gate, Forget Gate и Output Gate.\n\n1. **Cell**: Цель этой переменной хранить информацию внутри ячейки на длителье время. Она имеет вес h_t-1 и c_t-1.\n2. **Input Gate**: Входная ворота определяют, какая часть новой информации должна записаться в ячейку. Имеет три веса: i\\_t, Wi и b\\_i.\n3. **Forget Gate**: Забывающие ворота определяют, какая часть старой информации должно быть удалено из ячейки. Имеет три веса: f\\_t, Wf и b\\_f.\n4. **Output Gate**: Выходные ворота определяют, как выглядит окончательный результат для каждой LSTM ячейки. Имеет три веса: o\\_t, Wo и b\\_o.",
+      "rating": ""
+    }
+  ]
+}

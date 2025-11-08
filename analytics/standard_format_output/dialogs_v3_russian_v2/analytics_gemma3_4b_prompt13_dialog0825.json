@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0825",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt13_dialog0825",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 47.4,
+    "precision": 47.3,
+    "recall": 57.8,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 37.5,
+    "hallucination": 7.7,
+    "faithfulness": 40.0,
+    "noise_sensitivity": 14.4,
+    "self_knowledge": 2.3,
+    "timestamp": "2025-11-08T21:40:48.557433"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Основываясь на предоставленном тексте и описании, вот вычисление P(win|спам) с применением сглаживания по Лапласу:\n\n*   **P(win|спам) = (1 + количество вхождений \"win\" в спам-письмах) / (общее количество слов в словаре + количество слов в спам-письмах + количество слов, которых нет в словаре)**\n\nИз текста мы знаем:\n\n*   В спам-письмах слово \"win\" встречается 1 раз.\n*   Общее количество слов в словаре (V) = 8.\n*   Количество слов в спам-письмах = 7 (поскольку текст письма <<Win a million rubles>> состоит из 7 слов).\n*   r = 1 (количество слов, которых нет в словаре).\n\nСледовательно:\n\nP(win|спам) = (1 + 1) / (8 + 7 + 1) = 2 / 16 = 1/8 = 0.125\n\nИтак, P(win|спам) = 0.125.\n",
+      "rating": ""
+    }
+  ]
+}

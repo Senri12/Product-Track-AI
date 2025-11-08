@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0107",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt8_dialog0107",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 23.9,
+    "precision": 25.8,
+    "recall": 37.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.436322"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "П्रशиваемое状態ное пространство в ریактивном нормalem (RNN) представляет собой последовательность значений, которые можно получить из входного данных и предыдущих значений. Этот вопрос означает, что нам нужно найти hide state в RNN.\n\nHide state — это hidden state в предыдущей строке, который используется для анализа последовательности, чтобы прогнозировать последующую позицию. Для RNN hidden state можно вычислить за каждый timestep, используя уравнение:\n\nh(t) = σ(W1 \\* x(t) + Wh(t))\nгде h(t) — hide state при t-th timestep,\nW1 и W2 — константы, представляющие связи между hidden stateами предыдущей строки и данными тока.\nσ — функция activation (активационная функция), которая анализирует hidden state и дает предсказание для последующего hidden state.\n\nДля hide states в RNN часто используется функция ReLU (граничный функция), которая принимает hidden state как input иReturns функцию 1, если hidden state больше 0, и 0, если hidden state меньше 0.",
+      "rating": ""
+    }
+  ]
+}

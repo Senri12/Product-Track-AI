@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0191",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt13_dialog0191",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 45.6,
+    "precision": 37.5,
+    "recall": 67.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.212050"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Трудность применения обычной batch normalization к RNN заключается в том, что RNN обрабатывают последовательности данных. В отличие от полносвязных сетей, где batch normalization может эффективно использовать информацию от всех элементов в пакете для нормализации, RNN обрабатывают данные последовательно, что приводит к тому, что нормализация зависит от текущего состояния RNN, а не от всей последовательности. Это может вызывать нестабильность обучения и даже взрывные или затухающие градиенты.\n",
+      "rating": ""
+    }
+  ]
+}

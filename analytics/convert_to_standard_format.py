@@ -258,6 +258,13 @@ def convert_version_to_standard_format(version_path, version_name, output_dir, s
                     noise_sensitivity = ragchecker_metrics.get('noise_sensitivity') if ragchecker_metrics else None
                     self_knowledge = ragchecker_metrics.get('self_knowledge') if ragchecker_metrics else None
 
+                    # Создаем уникальный ID диалога с учетом источника, модели и промпта
+                    # Это нужно, чтобы один dialog_id с разными моделями/промптами создавал разные файлы
+                    if source_name:
+                        unique_dialog_id = f"{source_name}_{model_folder_name}_{system_prompt_id}_{dialog_id}"
+                    else:
+                        unique_dialog_id = f"{model_folder_name}_{system_prompt_id}_{dialog_id}"
+                    
                     # Добавляем запись в overall_report с разбивкой по столбцам
                     overall_records.append({
                         'model_name': model_name,
@@ -265,7 +272,9 @@ def convert_version_to_standard_format(version_path, version_name, output_dir, s
                         'lecture_title': lecture_data['lecture_title'],
                         'lecture_topic': lecture_data['lecture_topic'],
                         'system_prompt_id': system_prompt_id,
-                        'dialog_id': dialog_id,
+                        'dialog_id': dialog_id,  # Оригинальный ID
+                        'unique_dialog_id': unique_dialog_id,  # Уникальный ID с префиксом
+                        'source': source_name,  # Источник данных
                         # Overall Metrics
                         'f1': f1,
                         'precision': precision,
@@ -281,10 +290,19 @@ def convert_version_to_standard_format(version_path, version_name, output_dir, s
                         'self_knowledge': self_knowledge
                     })
 
+                    # Создаем уникальный ID диалога с учетом источника, модели и промпта
+                    # Это нужно, чтобы один dialog_id с разными моделями/промптами создавал разные файлы
+                    if source_name:
+                        unique_dialog_id = f"{source_name}_{model_folder_name}_{system_prompt_id}_{dialog_id}"
+                    else:
+                        unique_dialog_id = f"{model_folder_name}_{system_prompt_id}_{dialog_id}"
+                    
                     # Конвертируем и сохраняем файл диалога
                     dialog_output = {
                         'metadata': {
-                            'dialog_id': dialog_id,
+                            'dialog_id': dialog_id,  # Оригинальный ID
+                            'unique_dialog_id': unique_dialog_id,  # Уникальный ID с префиксом источника
+                            'source': source_name,  # Источник данных
                             'model_name': model_name,
                             'model_parameters': model_parameters,
                             'system_prompt_id': system_prompt_id,
@@ -315,8 +333,8 @@ def convert_version_to_standard_format(version_path, version_name, output_dir, s
                         ]
                     }
 
-                    # Сохраняем диалог в JSON
-                    dialog_output_file = dialogs_output_dir / f'{dialog_id}.json'
+                    # Сохраняем диалог в JSON с уникальным именем
+                    dialog_output_file = dialogs_output_dir / f'{unique_dialog_id}.json'
                     with open(dialog_output_file, 'w', encoding='utf-8') as f:
                         json.dump(dialog_output, f, ensure_ascii=False, indent=2)
 
@@ -396,7 +414,7 @@ def main():
     # Формат: {'версия': [('путь1', 'источник1'), ('путь2', 'источник2'), ...]}
     unified_versions = {
         'v1_english': [
-            (' version_1', 'analytics'),
+            ('version_1', 'analytics'),  # Убрал пробел перед version_1
             ('2-file/v1', '2-file')
         ],
         'v2_russian': [
@@ -422,7 +440,11 @@ def main():
         dialogs_output_dir.mkdir(parents=True, exist_ok=True)
 
         for version_path, source_name in sources:
+            # Нормализуем путь относительно директории analytics
             version_path = Path(version_path)
+            if not version_path.is_absolute():
+                # Если путь относительный, делаем его относительно текущей директории (analytics/)
+                version_path = Path.cwd() / version_path
 
             if not version_path.exists():
                 print(f"⚠ Пропущено: {source_name} (путь не найден: {version_path})")

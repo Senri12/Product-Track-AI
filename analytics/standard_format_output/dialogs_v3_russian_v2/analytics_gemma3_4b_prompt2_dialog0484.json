@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0484",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt2_dialog0484",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В чем суть наивного байесовского классификатора?",
+    "f1": 43.7,
+    "precision": 40.8,
+    "recall": 59.9,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 40.7,
+    "hallucination": 9.9,
+    "faithfulness": 36.9,
+    "noise_sensitivity": 15.2,
+    "self_knowledge": 3.2,
+    "timestamp": "2025-11-08T21:40:48.588055"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем суть наивного байесовского классификатора?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Наивный байесовский классификатор основан на предположении о **условной независимости предикторов при условии заданной метки класса**.\n\nЭто означает, что алгоритм предполагает, что значения предиктора (например, слова в тексте, признаки объекта) не зависят друг от друга, учитывая, к какому классу принадлежит объект.  Формально это выражается математически как:\n\nP(X₁, X₂, …, X_(p)|Класс = y) = P(X₁|Класс = y) ⋅ P(X₂|Класс = y) ⋅ …⋅ $$\\mathsf{P}\\left(X_p | \\text{Класс} =y\\right) = \\prod_{i=1}^{p} \\mathsf{P}\\left(X_i | \\text{Класс} =y\\right)$$\n\nЭто упрощает вычисление вероятностей, делая алгоритм более эффективным.\n",
+      "rating": ""
+    }
+  ]
+}

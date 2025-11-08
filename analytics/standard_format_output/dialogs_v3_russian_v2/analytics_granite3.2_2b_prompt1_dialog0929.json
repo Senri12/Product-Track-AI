@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0929",
+    "unique_dialog_id": "analytics_granite3.2_2b_prompt1_dialog0929",
+    "source": "analytics",
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 31.8,
+    "precision": 30.4,
+    "recall": 47.1,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 30.3,
+    "hallucination": 13.4,
+    "faithfulness": 32.4,
+    "noise_sensitivity": 19.5,
+    "self_knowledge": 4.2,
+    "timestamp": "2025-11-08T21:40:49.387035"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Для определения learning rate decay с использованием методом линейного растения для адаптивного уменьшения learning rate в зависимости от шага t, используется следующая формула:\n\nη(t) = η0 * (T - t) / T\n\nЗдесь:\n- η0 - константный начальный уменьшающийся параметр, в данном случае 0.1.\n- t - текущий шаг.\n- T - общее число шагов. В данном случае T = 10.\n\nПолучаем:\nη(t) = 0.1 * (10 - t) / 10\n\nТаким образом, learning rate уменьшается на основе шага t и остаётся константным в противоположном числу T.",
+      "rating": ""
+    }
+  ]
+}

@@ -82,6 +82,12 @@
 │   ├── lecture_comparison_analysis.xlsx  # 🆕 Сводный отчет по всем лекциям
 │   └── all_data.csv   # 🆕 Данные для аналитики (CSV)
 │
+├── 🎨 frontend/                       # Фронтенд для использования модели
+│   └── (в разработке)
+│
+├── 📈 visualization/                  # Визуализация данных
+│   └── (скрипты для визуализации all_data.csv)
+│
 ├── pipeline.png                        # Схема архитектуры
 ├── requirements.txt                    # Зависимости Python
 ├── LICENSE

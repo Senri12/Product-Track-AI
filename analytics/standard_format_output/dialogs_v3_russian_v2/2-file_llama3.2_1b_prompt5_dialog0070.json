@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0070",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt5_dialog0070",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 19.1,
+    "precision": 28.9,
+    "recall": 22.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 19.9,
+    "hallucination": 29.5,
+    "faithfulness": 62.2,
+    "noise_sensitivity": 41.6,
+    "self_knowledge": 8.3,
+    "timestamp": "2025-11-08T21:40:49.787074"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Нормализация по мини-батчам необходима для обучения RNN, потому что она позволяет модели снизить влияние «взрывающихся градиентов», которые являются характеристиками таких网络. КаждоеTraining за раз может привести к значительному взрыву градиентов по原因у того, что на каждом шаге модели предлагается новая последовательность, и если это не делается, результат может бытьpretty «затуханием». Для решения этого проблемы normalize в training mode normalize data и apply gradient clipping to each mini-batch.",
+      "rating": ""
+    }
+  ]
+}

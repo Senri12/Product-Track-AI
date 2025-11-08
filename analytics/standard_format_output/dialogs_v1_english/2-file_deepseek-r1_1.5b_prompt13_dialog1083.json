@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1083",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt13_dialog1083",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.451950"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Реализация типов входов и выходов в задачах RNN:**\n\nВ задачах с использованием Recurrent Neural Network (RNN), типы входов и выходов различаются основываясь на методах обработки данных и type of output. Вот ключевые типы:\n\n### Типы Входа:\n1. **Последовательные данные**: Речи, текстовые аспекты, временные series.\n2. **Векторы**: Сize vectors (контекстных векторов).\n3. **Генерированные данные**: Вectors из генерированных из текста или речи.\n\n### Типы Выхода:\n1. **Пredictions**: Числа, категорий, предсказания.\n2. **Probabilities**: Классификация, вероятности для определения сильных типов.\n3. **Rounds (предсказанные подобиями)**: Векторы визуализации для визуализации последовательности.\n\n### Методы RNN:\n- **GRU**: Гated Recurrent Unit, использует гаты перед хранением информации.\n- **LSTM (Long Short-Term Memory)**: Используется без гатов и позволяет留住 памяти за несколько шагов.\n- **Highway RNN ( highway networks)**: Используют Highway Gates для растущей устойчивости.\n- **Weighted RNN**: Используются для обработки текста или речи с weighted embeddings.\n\n### Пример задач:\n- Рекуррентные нets Used для предсказания последовательных данных (предыдущих шагов), таких как генерация из-RNN.\n- Форматирование контекста, such as text generation.\n\nЭти методы помогают обрабатывать речи или текст и создавать последовательные предсказания.",
+      "rating": ""
+    }
+  ]
+}

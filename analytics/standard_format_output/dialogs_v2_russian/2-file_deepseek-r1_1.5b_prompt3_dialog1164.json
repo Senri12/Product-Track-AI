@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1164",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt3_dialog1164",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.847955"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Замочные скважины (peepholes) в LSTM используются для фильтрации ненужных state. Эти скважины оставляют нулевые пики, что позволяет уменьшить их влияние на обработку последовательности и сохранять контекст.\n\nВ контексте Attention Mechanisms в трансформерах замоканные скважины используются для фильтрации пиков. Например, если state в пике изменился, нулевые пики могут отсутствовать или погружаться за предыдущие states.\n\nТаким образом, замочные скважины не используются для注意力 в LSTM, но могут быть важными для фильтрации state и улучшения обработки градиентов.",
+      "rating": ""
+    }
+  ]
+}

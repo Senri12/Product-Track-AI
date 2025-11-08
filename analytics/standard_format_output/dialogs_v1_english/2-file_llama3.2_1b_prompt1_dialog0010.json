@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0010",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt1_dialog0010",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 23.3,
+    "precision": 24.0,
+    "recall": 38.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.433637"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "По\tminи-батчам нормализация normalize training batch size, что означает, чтоTrain_batch_size = n, где n — количествоbatch за раз. minibatches.\n\nЕсли train_batch_size too small, then the learning rate will be too large and it may lead to overshooting the minimum loss. If train_batch_size too big, then the loss over many batches may add up and it may take too long to converge on a good solution.\n\nminibatch_size = 32. This means that each training sample is split into 32 mini-batches before passing them through the network.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0174",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt12_dialog0174",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 25.5,
+    "precision": 24.7,
+    "recall": 37.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.7,
+    "hallucination": 29.8,
+    "faithfulness": 64.1,
+    "noise_sensitivity": 45.5,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-11-08T21:40:49.951668"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Замочные скважины (peepholes) в LSTM-архитектуры используются для минимизации погружения с непредыдущих шагов, обеспечения стабильности и распределения градиентов. Они фиксируют значения с непосредственным внесением из предыдущего шага с помощью sigmoid-функции. Это помогает минимизировать погружение и повысить баланс между градиентами, что ускоряет обучение и снижает риск нестабильности.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0967",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt5_dialog0967",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.473554"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стандартная cells LSTM (long short-term memory) — это основной элемент神经络да, который используется для обработки последовательных данных, таких как текст, изображения и音频. В LSTM cellхinternal state и gates (input, forget, output) используются для管理和 фильтрации информации из past time steps, чтобы сократить количества памяти в内存.\n\n### compоненты standard LSTM cell:\n1. **cell state**: Internal memory cell, которая фильтрирует и удаляет information, не включая past time steps.\n2. **gates**:\n   - Input gate: Управляет информацию, используемую для проеции на Current state (input).\n   - Forget gate: Управляется информацией, которые нужно оставить в internal state (outgoing information).\n   - Output gate: Управляет информацию, используемую для вывода на当前位置.\n3. **activation functions**: Используются для преобразования gates into cell state and new cells.\n\n### Gradient updates:\n- Standard LSTM uses standard backpropagation to update gradients on a per-time-step basis. Unlike traditional RNNs, which may use entire batch's gradients for parameter updates, LSTM processes each time step individually.\n- This can lead to higher gradient magnitudes because the gradients are not normalized and can explode during training.\n\n### Other aspects of standard LSTM:\n1. **Dropout**: Apply dropout to internal state before applying gates. Dropout acts as noise injection, preventing co-adaptation of features and reducing overfitting.\n2. **Batch normalization (batchnorm)**: Normalize the cell's output across a mini-batch before applying gates. This reduces internal covariate shift and improves training stability.\n\nOverall, LSTM cell combines the power of recurrent neural networks with memory management to handle sequential data efficiently.",
+      "rating": ""
+    }
+  ]
+}

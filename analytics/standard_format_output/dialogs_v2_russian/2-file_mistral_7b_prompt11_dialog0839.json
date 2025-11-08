@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0839",
+    "unique_dialog_id": "2-file_mistral_7b_prompt11_dialog0839",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 56.3,
+    "precision": 55.7,
+    "recall": 70.2,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:48.030344"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Show, Attend and Tell (SAT) отличается от обычного Recurrent Neural Network (RNN) для обработки изображения в том, что SAT использует механизм аттендующего слоя, который позволяет модели выделять и фокусироваться на разных регионах картинки. В то время как обычный RNN обрабатывает данные последовательно (то есть сверху вниз или слева направо), механизм аттендующего слоя позволяет модели одновременно рассматривать различные регионы изображения и сочетать их для получения более точного представления картинки. Это приводит к лучшим результатам, в частности, в задачах сегментации изображений и объяснению изображений с помощью естественного языка.",
+      "rating": ""
+    }
+  ]
+}

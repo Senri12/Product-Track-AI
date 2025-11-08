@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0139",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt10_dialog0139",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 21.4,
+    "precision": 27.7,
+    "recall": 22.9,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 24.5,
+    "hallucination": 33.9,
+    "faithfulness": 55.7,
+    "noise_sensitivity": 38.4,
+    "self_knowledge": 10.4,
+    "timestamp": "2025-11-08T21:40:49.798623"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "СSimple RNN — это базовый тип recurrent neural network (RNN), который использует последовательные входные данные для прогнозирования output, а Deep RNN — это более высокая степень RNN, которая может использовать более глубокие представления о данных._simple-_rnn в данном случае не имеетdeep layer или hidden state, что делает его более простым и менее эффективным, чемDeep RNN, который имеетhidden states, позволяющие ему анализировать последовательность данных и принимать обоснованные решения.",
+      "rating": ""
+    }
+  ]
+}

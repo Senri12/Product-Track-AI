@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1278",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt11_dialog1278",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.891086"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Реуррентные слоев (RNN) используются для обработки последовательных данных. В таких моделях typically используются:\n\n- **batch**: Группа данных (batch).\n- **embedding**: Уникальное представление каждого символа в позиции encode.\n- **sequential data**: Данные, связанные последовательно.\n- **multiple steps**: Текст или данные, представленные как последовательность шагов.\n- **recurrent layers**: Слой обратной связи для обработки каждого шага на основе всех предыдущих шагов.\n- **bidirectional**: Р逆转иризация данных вboth directions для представления контекста перед и после текущего шага.\n\nТакже градиенты могут возникнуть, например:\n- **exploding gradients**: Если данные содержат высокие значения (например, continuous activations).\n- **vanishing gradients**: Если данные contain very small values or noisy data.",
+      "rating": ""
+    }
+  ]
+}

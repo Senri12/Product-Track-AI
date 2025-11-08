@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0296",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt5_dialog0296",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 51.5,
+    "precision": 47.6,
+    "recall": 63.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.251666"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Основная трудность применения обычной batch normalization к RNN заключается в том, что RNN обрабатывают последовательности данных, которые имеют длину, зависящую от множества факторов. В отличие от сверточных нейронных сетей (CNN), где batch normalization может быть применено к фиксированным батчам данных, RNN работают с последовательностями переменной длины.  \n\nВ RNN, каждая временная шаг зависит от предыдущего.  Изменение батча данных (например, добавление или удаление элементов) может существенно повлиять на значениями активаций в RNN. Это приводит к неконсистентным и, как следствие, взрывающимся или затухающим градиентам во время обратного распространения ошибки.  Проще говоря, нормализация, которая хорошо работает с фиксированным батчем, становится ненадежной, когда применяется к переменной длине последовательности.\n",
+      "rating": ""
+    }
+  ]
+}

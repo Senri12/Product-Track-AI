@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0536",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt3_dialog0536",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+    "f1": 47.2,
+    "precision": 44.6,
+    "recall": 59.7,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 40.1,
+    "hallucination": 12.6,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 11.8,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-11-08T21:40:48.584622"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли шаг в SGD для L(w)=w^2, w=3, η=0.1.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вычислим шаг в SGD для L(w)=w^2, w=3, η=0.1.\n\nL(w) = w^2\n∇L(w) = 2w\nη = 0.1\n\nШаг в SGD вычисляется по формуле:\n\nшаг = -η * ∇L(w) / ||∇L(w)||\n\n1.  Вычисляем ∇L(w):\n    ∇L(w) = 2w = 2 * 3 = 6\n\n2.  Вычисляем ||∇L(w)||:\n    ||∇L(w)|| = |6| = 6\n\n3.  Вычисляем шаг:\n    шаг = -0.1 * 6 / 6 = -0.1 * 1 = -0.1\n\nИтак, шаг в SGD равен -0.1.\n",
+      "rating": ""
+    }
+  ]
+}

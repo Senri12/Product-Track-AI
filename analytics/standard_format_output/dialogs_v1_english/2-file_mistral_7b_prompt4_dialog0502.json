@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0502",
+    "unique_dialog_id": "2-file_mistral_7b_prompt4_dialog0502",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 65.3,
+    "precision": 64.8,
+    "recall": 73.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.604381"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Стандартная LSTM (Long Short-Term Memory) ячейка включает четыре компонента:\n\n1. Cells (клетки) - хранят информацию длительного срока и регулируют поток информации внутри сети.\n2. Input Gate (Входной ворота) - контролирует, какую часть новой информации добавлять в клетки.\n3. Forget Gate (Забывающее ворота) - регулирует, какая часть предыдущей информации удаляется из клеток.\n4. Output Gate (Исходящее ворота) - контролирует, какую часть информации из клетки выводить в скрытый слой.\n\nКаждый из этих компонентов состоит из весов и биаса для обучения модели.",
+      "rating": ""
+    }
+  ]
+}

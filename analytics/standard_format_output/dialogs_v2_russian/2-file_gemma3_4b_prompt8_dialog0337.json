@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0337",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt8_dialog0337",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 54.3,
+    "precision": 47.9,
+    "recall": 68.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.683877"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стандартная LSTM (Long Short-Term Memory) ячейка включает в себя следующие компоненты:\n\n1.  **Cell State (C<sub>t</sub>):**  Это “дорога” информации, проходящая через всю последовательность.  Он способен хранить информацию на протяжении длительного периода времени, избегая проблемы затухающих градиентов, которая возникает при обучении рекуррентных нейронных сетей.\n\n2.  **Input Gate (i<sub>t</sub>):**  Регулирует, какая новая информация должна быть добавлена в Cell State.  Она состоит из сигмоидальной функции, которая выдает значения от 0 до 1, определяя, какие значения из входного сигнала нужно сохранить.\n\n3.  **Output Gate (o<sub>t</sub>):**  Регулирует, какая информация из Cell State должна быть выведена на выход LSTM ячейки.  Как и Input Gate, она использует сигмоидальную функцию.\n\n4.  **Forget Gate (f<sub>t</sub>):**  Решает, какая информация должна быть удалена из Cell State.  Он также использует сигмоидальную функцию.  Он сравнивает входной сигнал с текущим Cell State и решает, какие части информации следует забыть.\n\n5.  **tanh:** Функция tanh (hyperbolic tangent) используется для создания новых кандидатов в Cell State.  Она не является частью ячейки, но является важным компонентом для процесса обновления Cell State.\n",
+      "rating": ""
+    }
+  ]
+}

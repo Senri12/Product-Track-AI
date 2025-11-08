@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0752",
+    "unique_dialog_id": "2-file_mistral_7b_prompt6_dialog0752",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 36.8,
+    "precision": 30.2,
+    "recall": 54.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 55.7,
+    "hallucination": 26.3,
+    "faithfulness": 66.1,
+    "noise_sensitivity": 43.4,
+    "self_knowledge": 7.6,
+    "timestamp": "2025-11-08T21:40:50.135915"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое скрытое состояние в RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Скрытое состояние в Recurrent Neural Networks (RNN) представляет собой вектор, который хранит информацию о том, что сеть узнала от предыдущих образцов данных. Это позволяет RNN запоминать и использовать информацию длительное время, несмотря на то, что входящие данные изменяются во времени. Скрытое состояние обновляется на каждом шаге обработки данных и служит для того, чтобы сеть могла сохранить некоторую информацию о предыдущих образцах, которая может быть использована для понимания следующих образцов.",
+      "rating": ""
+    }
+  ]
+}

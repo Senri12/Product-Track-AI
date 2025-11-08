@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0086",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt6_dialog0086",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 34.4,
+    "precision": 32.0,
+    "recall": 47.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 48.5,
+    "hallucination": 27.0,
+    "faithfulness": 57.9,
+    "noise_sensitivity": 34.3,
+    "self_knowledge": 8.4,
+    "timestamp": "2025-11-08T21:40:49.975623"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Answer:**\n\nApplying traditional batch normalization (BN) to RNNs requires modifications to ensure the method works effectively within the sequential nature of RNNs. Here's a structured approach:\n\n1. **Independence of Time Steps:** BN in standard neural networks normalizes each feature across the entire dataset, which disrupts independence between time steps in RNNs.\n\n2. **Global vs. Local Normalization:**\n   - **Global Normalization:** Compute mean and variance over all hidden states in a batch (across time steps). This approach groups together time dependencies.\n   - **Local Normalization:** Normalize each hidden state individually while keeping track of how each contributes to the next. This allows maintaining independence.\n\n3. **Gradient Handling:**\n   - Ensure that gradient updates respect this independence by applying normalization separately at each time step.\n   - Maintain gradient flows correctly so that changes in one time step do not affect others during optimization.\n\n4. **Implementation Strategy:**\n   - Normalize each hidden state individually using global mean and variance computed over all steps up to the current time step.\n   - Update gradients independently for each hidden state, reflecting its individual contribution without affecting others across time steps.\n\n5. **Considerations:**\n   - This approach preserves BN's benefits but adjusts for RNN's sequential dependencies.\n   - It requires careful handling of gradient updates to maintain stability and effectiveness during training.\n\nBy adopting these strategies, traditional batch normalization can be effectively applied to RNNs, enhancing their training dynamics while maintaining the necessary independence between time steps.",
+      "rating": ""
+    }
+  ]
+}

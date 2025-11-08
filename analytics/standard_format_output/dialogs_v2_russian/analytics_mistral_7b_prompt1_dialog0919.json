@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0919",
+    "unique_dialog_id": "analytics_mistral_7b_prompt1_dialog0919",
+    "source": "analytics",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Что такое over-fitting?",
+    "f1": 41.6,
+    "precision": 49.5,
+    "recall": 49.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.572347"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое over-fitting?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Over-fitting - это явление, когда модель машинного обучения (например, нейронная сеть или логистическая регрессия) слишком адаптирована к данным обучающей выборке и начинает показывать высокий уровень точности при их предсказаниях. При этом модель не способна правильно работать с новыми данными, внешними для обучающей выборки, потому что она запомнила слишком много деталей и ошибок в обучающей выборке. В результате модель начинает прогнозировать неточно и переобучена.",
+      "rating": ""
+    }
+  ]
+}

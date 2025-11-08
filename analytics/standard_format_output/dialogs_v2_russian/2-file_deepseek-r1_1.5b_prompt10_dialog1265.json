@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1265",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt10_dialog1265",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.866596"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Рекуррентные слоны сPast-attention: важность в обработке последовательных данных**\n\nРекуррентные слоны (например, LSTM и GRU) используют Past-attention для усиления state на当前位置. Это важно для обработки последовательных данных с long-term dependencies, так как state уже имеет been.\n\n**Полный рендер схематического рисунка:**\n\n```\ninput layer\n|\nv\nencoder (Gated) or decoder (GRU)\n|\nv\n attention gate\n|\nv\n sum or concatenation\n|\nv\n dropout\n\nrule gate or gate (in LSTM)\n|\nv\n state = rule(gate)(state, prev_state)\n|\nv\n state remains unchanged in GRU\n```\n\n**Пониманиеprocessа Past-attention:**\n\n1. **Past-attention**: Умножение weights на past features для усиления state на当前位置.\n2. **Rule gates**: In LSTM, weights фильтруют current state; in GRU, weights gate the current state through past information.\n\n**Использование Past-attention в imagequencesе:**\n\nPast-attention в imagequencesе вычисляет weighted features from previous positions, influencing current state. This helps model long-range dependencies and context-aware processing.\n\n**Контакт:**\n\nДля дополнительной информации уточните ваши вопросы!",
+      "rating": ""
+    }
+  ]
+}

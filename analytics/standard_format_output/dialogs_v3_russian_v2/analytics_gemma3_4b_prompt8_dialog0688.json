@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0688",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt8_dialog0688",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 42.8,
+    "precision": 42.7,
+    "recall": 54.2,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 36.4,
+    "hallucination": 8.7,
+    "faithfulness": 38.2,
+    "noise_sensitivity": 17.0,
+    "self_knowledge": 3.2,
+    "timestamp": "2025-11-08T21:40:48.680706"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Давайте вычислим обновление θ_(t, i) для Adagrad в данном случае.\n\nФормула обновления в Adagrad:\n\nθ_(t + 1, i) = θ_(t, i) - (η / √(G_{t, ii} + ε)) * g_t\n\nГде:\n\n*   θ_(t + 1, i) – параметр на следующем шаге.\n*   θ_(t, i) – параметр на текущем шаге.\n*   η – learning rate.\n*   G_{t, ii} = G_{t-1, ii} + g_t² – диагональная матрица, суммирующая квадраты градиентов.\n*   g_t – градиент на текущем шаге.\n*   ε – небольшое значение для предотвращения деления на ноль.\n\nПодставим значения:\n\n*   G_{t, ii} = 4 + 2² = 4 + 4 = 8\n*   η = 0.1\n*   g_t = 2\n\nТогда:\n\nθ_(t + 1, i) = θ_(t, i) - (0.1 / √(8 + 1e-8)) * 2\nθ_(t + 1, i) = θ_(t, i) - (0.1 / √(8 + 1e-8)) * 2\nθ_(t + 1, i) = θ_(t, i) - (0.2 / √(8 + 1e-8))\n\nТаким образом, параметр θ_(t + 1, i) уменьшится на величину, пропорциональную (0.2 / √(8 + 1e-8)).\n",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0080",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt6_dialog0080",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 34.4,
+    "precision": 32.0,
+    "recall": 47.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 48.5,
+    "hallucination": 27.0,
+    "faithfulness": 57.9,
+    "noise_sensitivity": 34.3,
+    "self_knowledge": 8.4,
+    "timestamp": "2025-11-08T21:40:49.974064"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Двунаправленные recurrent neural networks (RNN) — это распределенные структуры нейронов, которые работают с последовательными данными в simultaneously-модулях. Они разделяются на векторы предыдущего и текущего времени, что позволяет simultaneous-анализировать данные с точки зрения past and future simultaneously. \n\nВ контексте simultaneously-модуляловых задач, таких как simultaneously-сопоставление текста и изображения или simultaneously-анализ данных, двунаправленные RNN требуют много слоев, что может вызывать сложность в их обучении. Однако, благодаря их структуре, они могут предоставить дополнительный градиент для каждого components, улучшая performance и помогут избежать сложных задач с много层级ми.\n\nТаким образом, двунаправленные RNN подходы особенно полезны в simultaneously-модуляловых задачах, где рекуррентные сети могут быть более эффективными, чем однорадные.",
+      "rating": ""
+    }
+  ]
+}

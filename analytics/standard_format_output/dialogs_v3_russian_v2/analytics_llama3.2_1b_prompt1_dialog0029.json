@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0029",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt1_dialog0029",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 22.4,
+    "precision": 30.3,
+    "recall": 32.5,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 33.4,
+    "hallucination": 18.6,
+    "faithfulness": 26.4,
+    "noise_sensitivity": 11.9,
+    "self_knowledge": 5.0,
+    "timestamp": "2025-11-08T21:40:48.962173"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "η0 = 0,01\nt = 5\nT = 10\n\nМодель Adagrad:\n\n$$\\theta_{t + 1, i} = \\theta_{t, i} - \\frac{\\eta}{\\sqrt{G_{t, ii} + \\varepsilon}}g_{t, i}$$\n\nВ этом случае G(t) = G(t-1) + g(t, i)^2.\n\nМодель Adadelta:\n\n$$\\theta_{t + 1, i} = \\theta_{t, i} - \\frac{\\eta}{\\sqrt{G_{t, ii} + \\varepsilon}}g_{t, i}$$\n\nИмplementação Gadaul:\n\n$$\\theta_{t + 1, i} = \\theta_{t, i} - \\frac{\\eta}{\\sqrt{G_{t, ii} + \\varepsilon}}g_{t, i}$$\n$$G_{t + 1, i} = G_{t, i} + g_{t, i}^2$$\n\nМодели RMSProp и Adam:\n\n$$\\theta_{t + 1, i} = \\theta_{t, i} - \\frac{\\eta}{\\sqrt{G_{t, ii} + \\varepsilon}}g_{t, i}$$\n$$\\eta_{t + 1} = \\eta_0e^{-\\gamma t}$$\n\nгде γ — фазовый коэффициент, вычитаемый при обновлении learning rate.",
+      "rating": ""
+    }
+  ]
+}

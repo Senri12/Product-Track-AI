@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0059",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt2_dialog0059",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 49.4,
+    "precision": 50.7,
+    "recall": 55.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:46.593992"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Хорошо, давай вычислим learning rate decay.\n\nУ нас есть:\n\n*   η₀ (initial learning rate) = 0.1\n*   t (current time step) = 5\n*   T (total number of time steps) = 10\n*   Тип decay: linear\n\nЧто такое learning rate decay? Это процесс уменьшения learning rate во время обучения модели.  Мы хотим, чтобы learning rate уменьшался со временем, чтобы модель лучше сходилась к оптимальному решению.\n\nДля линейной decay, learning rate уменьшается на фиксированную величину на каждом шаге.  Как мы можем это вычислить?\n\n1.  **Рассчитаем количество оставшихся шагов:** 10 - 5 = 5 шагов.\n2.  **Рассчитаем величину уменьшения learning rate на один шаг:**  Поскольку мы делаем линейную девальвацию, мы можем предположить, что уменьшение пропорционально количеству оставшихся шагов.  То есть, уменьшение будет пропорционально 5.\n3.  **Рассчитаем конечный learning rate:** η = η₀ * (1 - уменьшение) = 0.1 * (1 - уменьшение)\n\nТеперь, чтобы точно рассчитать уменьшение, нам нужно знать, на сколько уменьшить learning rate на один шаг.\n\n**Уточняющий вопрос:** На сколько уменьшать learning rate на каждый шаг (например, на 0.1, 0.5, 0.9 и т.д.)?  Пожалуйста, укажите коэффициент уменьшения learning rate.\n",
+      "rating": ""
+    }
+  ]
+}

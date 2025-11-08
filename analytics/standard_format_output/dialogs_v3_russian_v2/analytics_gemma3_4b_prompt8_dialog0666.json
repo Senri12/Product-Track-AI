@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0666",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt8_dialog0666",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое манхэттенское расстояние?",
+    "f1": 42.8,
+    "precision": 42.7,
+    "recall": 54.2,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 36.4,
+    "hallucination": 8.7,
+    "faithfulness": 38.2,
+    "noise_sensitivity": 17.0,
+    "self_knowledge": 3.2,
+    "timestamp": "2025-11-08T21:40:48.675407"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое манхэттенское расстояние?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Манхэттенское расстояние (также известное как расстояние городских кварталов или L1-расстояние) - это евклидово расстояние, но с ограничением на то, что перемещения могут происходить только по осям координат (горизонтально и вертикально), а не по диагонали.\n \n**Формула:**\n \nДля двух точек (x₁, x₂) и (x₁, x₂) в двумерном пространстве, манхэттенское расстояние вычисляется как:\n \n||(x₁, x₂) - (x₁, x₂)|| = |x₁ - x₁| + |x₂ - x₂| = |x₁| + |x₂|\n \n**По сути:**\n\nВместо вычисления прямой расстояния между двумя точками, манхэттенское расстояние суммирует абсолютные значения разницы координат.\n",
+      "rating": ""
+    }
+  ]
+}

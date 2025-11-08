@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0935",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt3_dialog0935",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.462972"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Двунаправленные RNN (Binary Recurrent Neural Networks) — это тип рекуррентных нейронов (RNN), которые используются для обработки последовательных данных без центральных нейровых сетей. Они разные от Type 1 RNN, где не использuentся узлы (gates) и processes data through a central neuron.\n\n### Как they работают:\n1. **Секционное прохождение**: В Each timestep, Binary RNN processes the current input vector and updates its internal state.\n2. **Секционная аутентификация**: Каждый узл в Binary RNN processes the entire sequence up to that point before passing it on.\n3. **Секционное обновление узла**: After processing, the updated state is passed out as an output.\n\n### Почему They нужны:\n1. **Повышение эффективности**: Binary RNNs позволяют использовать все адаптивные параметры узлов на каждом шаге, что делает их более эффективными для задач с контектом (например, речь и изображения).\n2. **Сокращение времени обработки**: Unlike traditional RNNs, Binary RNNs process data in O(T) time instead of O(T²), making them faster for large sequences.\n3. **Оптимизация для задач с контектом**: They maintain the temporal structure of data better than traditional RNNs, which can be crucial for tasks like text generation and speech recognition.\n\n### practical benefits of Binary RNN:\n- Faster training and higher performance in tasks requiring sequential processing (e.g., image classification, language modeling).\n- Better handling of long-range dependencies due to their ability to preserve context across time steps.\n- Useful in applications where the order of data matters, such as text generation and speech recognition.\n\n### practical limitations of Binary RNN:\n- They may not be suitable for tasks requiring global context or parallel processing, though this can be addressed with modifications like using multiple Binary RNN layers in a sequence-to-sequence framework (e.g., Transformer).\n\nВ итоге, Binary RNNs являются важным типом рекуррентных нейронов,因为他们 обеспечивают эффективную обработку последовательных данных без центральных нейровых сетей, что делает их популярными в различных задачах.",
+      "rating": ""
+    }
+  ]
+}

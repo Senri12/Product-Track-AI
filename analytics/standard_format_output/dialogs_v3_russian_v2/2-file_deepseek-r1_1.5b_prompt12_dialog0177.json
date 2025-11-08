@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0177",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt12_dialog0177",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 25.5,
+    "precision": 24.7,
+    "recall": 37.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.7,
+    "hallucination": 29.8,
+    "faithfulness": 64.1,
+    "noise_sensitivity": 45.5,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-11-08T21:40:49.952426"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как работает механизм внимания (Attention)?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Рекуррентные нейронные сети используют Attention-механизм для обработки последовательности. В этом подходе, как указано на рисунке 2, при каждом шаге нейрон сfocus obа simultaneously considers itself and the previous states of other connections. Это означает, что each state represents a specific aspect of the input at that time step, allowing the network to capture relationships between elements in the sequence.\n\nИтак, внимание — это способ simultaneous focusing on current and past elements, which enables these networks to process sequences more effectively by capturing dependencies between consecutive steps.",
+      "rating": ""
+    }
+  ]
+}

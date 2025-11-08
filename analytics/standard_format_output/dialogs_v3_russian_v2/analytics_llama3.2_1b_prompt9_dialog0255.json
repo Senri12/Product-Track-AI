@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0255",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt9_dialog0255",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 31.3,
+    "precision": 35.8,
+    "recall": 37.6,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 32.9,
+    "hallucination": 11.6,
+    "faithfulness": 33.1,
+    "noise_sensitivity": 13.2,
+    "self_knowledge": 5.3,
+    "timestamp": "2025-11-08T21:40:48.933523"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "P(win|спам) = (1 + количество вхождений words win в спам-писиeum) / (всего word win + количество word win, которых нет в словаре). В этой задаче words win — это слова win. Таким образом, P(win|спам) = (1 + 0) / (8 + 7) = 1/15.",
+      "rating": ""
+    }
+  ]
+}

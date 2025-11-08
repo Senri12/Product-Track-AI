@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0855",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt14_dialog0855",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 45.0,
+    "precision": 47.0,
+    "recall": 56.0,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 39.2,
+    "hallucination": 8.6,
+    "faithfulness": 34.7,
+    "noise_sensitivity": 14.9,
+    "self_knowledge": 6.7,
+    "timestamp": "2025-11-08T21:40:48.548767"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Давайте вычислим P(win|спам) с использованием сглаживания по Лапласу.\n\nНаши тренировочные данные:\n\n*   **Спам:** \"Win a million rubles\"\n*   **Не спам:** \"Ruble drops again\"\n*   **Спам:** \"A million ways to get rich\"\n\nСловарь V:\n\n*   win: 1 (в спам-письмах)\n*   million: 2 (в спам-письмах) + 1 (в не спам-письме)\n*   rubles: 1 (в спам-письме) + 1 (в не спам-письме)\n*   drops: 0 (только в не спам-письме)\n*   ways: 1 (только в спам-письме)\n*   get: 1 (только в спам-письме)\n*   rich: 1 (только в спам-письме)\n*   with: 0 (только в не спам-письме)\n\n| Слово     | Спам | Не спам |\n|----------|------|--------|\n| win      | 1    | 0      |\n| million   | 2    | 1      |\n| rubles    | 1    | 1      |\n| drops     | 0    | 1      |\n| ways      | 1    | 0      |\n| get       | 1    | 0      |\n| rich      | 1    | 0      |\n| with      | 0    | 1      |\n\n|V| = |{win, million, rubles, drops, ways, get, rich, with}| = 8\n*  Количество слов в спам: 7\n*  Количество слов в не спам: 3\n*  С общего числа слов: 7+3 = 10\n*  Количество слов, которых нет в словаре (r):  в каждом из писем нет слов, которых нет в словаре.\n\nФормула сглаживания по Лапласу:\nP(X = слово | Класс = спам) = (1 + количество слов \"слово\" в классе \"спам\") / (|V| + r + количество слов в классе \"спам\")\n\nP(win | спам) = (1 + 1) / (8 + 1 + 7) = 2 / 16 = 1/8 = 0.125\n\nОтвет: P(win | спам) = 0.125.\n",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0159",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt11_dialog0159",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 19.9,
+    "precision": 31.5,
+    "recall": 23.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 25.3,
+    "hallucination": 32.4,
+    "faithfulness": 62.5,
+    "noise_sensitivity": 36.2,
+    "self_knowledge": 5.2,
+    "timestamp": "2025-11-08T21:40:49.897232"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Замочки в LSTM необходимы, потому что при обучении моделей таким образом, что входные данные всегда идут в одну только сторону. В таких случаях сети могут не получить enough информации о предназначении для последующего преобразования в другой язык. Для решения этой проблемы сети использовали замочки в виде hidden state, которая была передавана по мере анализа данных, но и откуда было доступно только к тому или другому языку.",
+      "rating": ""
+    }
+  ]
+}

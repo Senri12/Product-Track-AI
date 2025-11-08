@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0123",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt5_dialog0123",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 25.3,
+    "precision": 34.9,
+    "recall": 30.7,
+    "claim_recall": 38.8,
+    "context_precision": 50.0,
+    "context_utilization": 24.3,
+    "hallucination": 17.7,
+    "faithfulness": 25.7,
+    "noise_sensitivity": 9.9,
+    "self_knowledge": 6.7,
+    "timestamp": "2025-11-08T21:40:48.896615"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Евклидовый метрика — это вероятностная функция, которая определяется следующей формулой:\n\nd(X, X') = |X - X'| / (max(X) + max(X'))\n\nВ этом случае d(X, X') – расстояние между двумя объектами X и X'. max(X) – максимальный элемент в наборе X. \n\nЭто метрика, используемая для оценки сходства двух наборов данных.",
+      "rating": ""
+    }
+  ]
+}

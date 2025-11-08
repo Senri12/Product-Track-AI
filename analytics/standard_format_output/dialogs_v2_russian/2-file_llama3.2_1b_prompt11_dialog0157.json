@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0157",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt11_dialog0157",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 24.7,
+    "precision": 27.4,
+    "recall": 29.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.828383"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В стандартной LSTM ячейке включены следующие компоненты:\n\n1. **Соответствующая функция hidden state** (hs): представляет собой вектор, содержащий характеристические свойства входного вектора (текста или сегмента) на каждом этапе обратного прохода.\n2. **Вспомянутые функции** (states): включают токены previous hidden state (hs-1), current input (ci) и activation function (f).\n3. **Соответствующая функция output** (o): представляет собой вектор, который является результатом вычисления на основе входного вектора (текста или сегмента).\n\nТаким образом, standard LSTM ячейка может быть представлена как:\n\nH(x) = f(hs-1, ci)\nO(x) = o(hx)\n\nгде x — input (текст или сегмент), hs-1 и h are previous hidden states, ci is current input, and o is output.",
+      "rating": ""
+    }
+  ]
+}

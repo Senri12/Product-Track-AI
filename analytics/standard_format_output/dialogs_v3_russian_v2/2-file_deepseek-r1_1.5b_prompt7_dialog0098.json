@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0098",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt7_dialog0098",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 41.3,
+    "precision": 37.0,
+    "recall": 51.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 53.3,
+    "hallucination": 23.5,
+    "faithfulness": 65.3,
+    "noise_sensitivity": 39.5,
+    "self_knowledge": 11.1,
+    "timestamp": "2025-11-08T21:40:49.970734"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем GRU отличается от LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Вопрос: Чем GRU отличается от LSTM?\n\nОтвет:\n\n1. **Gated Mechanisms**:\n   - LSTM использует gates ( gated neurons ) для уснования фазы погружения state neurons, что делает их гибкими и способными обрабатывать нерегулярные шередовки.\n   - GRU не имеет гатов и просто использует state neurons, что может привести к сокращению параметров и улучшению производительности.\n\n2. **State Parameters**:\n   - LSTM содержит два state parameters (hidden and cell) для обработки фазы погружения.\n   - GRU включает только один state parameter, что делает его гибким для различных задач без добавления сложностей.\n\n3. **Memory Capacity**:\n   - LSTM учитывает все过往я данные из предыдущих timestampов, что делает его более гибким в процессе обработки данных.\n   - GRU также может использовать все данные из предыдущих timestampов, но без отслеживания фаз погружения.\n\n4. **Computation**:\n   - LSTM требует более сложных вычислений для управления forget gate, что может быть гибким для тех заданий, где фаза погружения важна.\n   - GRU без forget gate позволяет сократить количество вычислений и улучшает производительность вmany задачах.\n\n5. **Usability**:\n   - LSTM изучает все предыдущие timestampы и их структуру, что может быть полезно для задач, где фаза погружения важна.\n   - GRU позволяет использовать все данные из предыдущих timestampов, но без отслеживания фаз погружения.\n\nИтак, GRU и LSTM отличаются по гатам ( gated Mechanisms), state parameters, memory capacity, computational complexity и Usability.",
+      "rating": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0006",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt1_dialog0006",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как LSTM решает проблему затухающих градиентов?",
+    "f1": 25.0,
+    "precision": 32.5,
+    "recall": 34.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 38.6,
+    "hallucination": 36.5,
+    "faithfulness": 55.3,
+    "noise_sensitivity": 31.0,
+    "self_knowledge": 8.3,
+    "timestamp": "2025-11-08T21:40:49.887804"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как LSTM решает проблему затухающих градиентов?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "LSTM (Long Short-Term Memory) сети используют концепцию \"нестабильной памяти\" для решения проблемы затухания градienteов. В traditionalных RNN-ах градientes часто вычисляется во всех шагах слоя, что приводит к затуханию градiente-рассыму. LSTM изолированную ячейку, которая может корректировать только с помощью previous output, в результате чего градiente остается стабильным даже при значительном количестве шагов.\n\nLSTM также позволяет использовать сложные функции, такие как ReLU (Рельмианное функция) и softmax, что improves точность модели. В частности, LSTM может использовать ReLU для преобразования входного сигнала, а затем использовать softmax для вычисления выходной сети.\n\nВот example использования LSTM в определенной задаче:\n\n```python\nimport numpy as np\n\n# input данные\nx = np.array([[1, 2], [3, 4]])\n\n# hidden layer LSTM\nh0 = np.zeros((len(x), 50))\nc0 = np.zeros((50, 1))\n\nfor i in range(1, len(x)):\n    h0[i] = np.tanh(h0[i-1] + x[i-1])\n    c0[:, 0] = np.tanh(c0[:, 0] + x[i-1])\n\n# output layer LSTM\ny = []\n\nfor i in range(len(x)):\n    y.append(np.tanh(np.dot(h0[i], w1) + b1))\n\nprint(y)\n```\n\nВ этом примере мы используем hidden layer LSTM, который имеет размеры (n_steps * 50, n_tokens). Начальные состояния hidden layers обозначены как h0 и c0. В output layer hidden layer мы получаем выходную сеть через два шага в прошлом и один шаг во втором.",
+      "rating": ""
+    }
+  ]
+}

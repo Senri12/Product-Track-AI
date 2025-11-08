@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0238",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt8_dialog0238",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+    "f1": 31.2,
+    "precision": 45.8,
+    "recall": 30.9,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 25.9,
+    "hallucination": 10.7,
+    "faithfulness": 38.3,
+    "noise_sensitivity": 14.8,
+    "self_knowledge": 1.0,
+    "timestamp": "2025-11-08T21:40:48.970800"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Данным значениям соответствует следующий алгоритм optimizations:\n\nG_{t-1,i} = 4\ng_{t-i} = 2\nη = 0,01\nε = 1e-8.",
+      "rating": ""
+    }
+  ]
+}

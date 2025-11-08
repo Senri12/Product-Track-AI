@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0363",
+    "unique_dialog_id": "analytics_phi4-mini_3.8b_prompt13_dialog0363",
+    "source": "analytics",
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "Что такое евклидова метрика?",
+    "f1": 25.7,
+    "precision": 54.3,
+    "recall": 26.5,
+    "claim_recall": 35.5,
+    "context_precision": 50.0,
+    "context_utilization": 16.2,
+    "hallucination": 4.0,
+    "faithfulness": 29.4,
+    "noise_sensitivity": 2.2,
+    "self_knowledge": 6.6,
+    "timestamp": "2025-11-08T21:40:48.702072"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Что такое евклидова метрика?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Евклидова метрика – это форма измерения расстояния в euclidean space (пространства Евклида), при которой дистанция между двумя точками определяется через квадратный корень из суммы квадратов различных координат, отсюда и название \"euclidov\". В двумерном пространстве euclidean coordinates x1, x2; расстояние D можно вычислить следующим образом: \n\n\\[ D = \\sqrt{(x_{2} - x_1)^2 + (y_{2} - y_1)^2}. \\]\n\nВ трехмерном пространстве euclidean coordinates x, y, z: \n\n\\[ D = \\sqrt{(z_2 - z_1)^2 + (y_2 - y_1)^2 + (x_2 - x_1)^2.} \\]\n\nЭто расстояние совпадает с дистанцией, измеряемой в физическом пространстве, так как euclidean coordinates определяются по принципу постулатов Евклида: (Постулат о параллельных линиях, Постулат о пересечении двух прямых и постулат о биссектрисе угла). \n\nЕвклидова метрика применима в различных сценариях, включая вычисление расстояния между точками на плоскости. Приведем пример: \nImagine two points A and B with coordinates (1,2) and (4,6), respectively:\n\n\\[ D = \\sqrt{(4 - 1)^2 + (6 - 2)^2} \\]\n\\[ D = \\sqrt{3^2 + 4^2} \\]\n\\[ D = \\sqrt{9 + 16} \\]\n\\[ D = \\sqrt{25} \\]\n\\[ D = 5. \\]\n\nТаким образом, euclidean metric measures the straight-line distance between A and B as √(x² + y²). Euclidian metrics are commonly used in various scenarios like machine learning algorithms for calculating similarities or distances to understand data patterns using squared values of attributes (e.g., Mahalanobis distance) that effectively work within a space mapped by this metric.",
+      "rating": ""
+    }
+  ]
+}

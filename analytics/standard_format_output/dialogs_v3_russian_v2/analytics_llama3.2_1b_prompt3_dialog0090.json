@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0090",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt3_dialog0090",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 29.0,
+    "precision": 38.5,
+    "recall": 31.4,
+    "claim_recall": 39.3,
+    "context_precision": 50.0,
+    "context_utilization": 28.6,
+    "hallucination": 14.9,
+    "faithfulness": 30.6,
+    "noise_sensitivity": 12.2,
+    "self_knowledge": 4.5,
+    "timestamp": "2025-11-08T21:40:48.883367"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "∇ = 2v - γv_{t-1} = 2(1) - 0,9(1) = 2 - 0,9 = 1,1.",
+      "rating": ""
+    }
+  ]
+}

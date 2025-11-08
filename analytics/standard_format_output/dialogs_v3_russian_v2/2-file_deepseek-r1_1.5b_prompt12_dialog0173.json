@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0173",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt12_dialog0173",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 25.5,
+    "precision": 24.7,
+    "recall": 37.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.7,
+    "hallucination": 29.8,
+    "faithfulness": 64.1,
+    "noise_sensitivity": 45.5,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-11-08T21:40:49.951435"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем GRU отличается от LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "GRU (Gated Recurrent Unit) и LSTM (Long Short-Term Memory) — это два主流ых архитектуры для обработки последовательных данных. Однако они отличаются по их структуре, гатам и процессам обработки遗忘nableых элементов.\n\n1. **Гаты**:\n   - GRU включает двойную архитектуру: рекурентный слой для сжатия информации (recurrence) и гаты фильтра (gates), которые управляют forgetable elements.\n   - LSTM подходит за самим понятным,因为它 имеет три Гаты фильтра: forget gate, remember gate, и update gate.\n\n2. **История**:\n   - GRU был разработан для сокращения complexness, но он может быть стабильнее в условиях прямолинейных изменений данных.\n   - LSTM подходит за GRU для задач с нестабильными данными или непосредственно выделяет遗忘able элементы.\n\n3. **Различия**:\n   - GRU позволяет уменьшить количество гатов в архитектуре, что делает его более стабильным для сложных задач.\n   - LSTM обновляет state на основе forget gate, что делает их более универсальными для различных задач.\n\nВ итоге, GRU является более стабильной и уieldной, но может быть подходит за GRU для некоторых задач.",
+      "rating": ""
+    }
+  ]
+}

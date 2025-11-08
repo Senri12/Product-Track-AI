@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0179",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt12_dialog0179",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 18.7,
+    "precision": 23.0,
+    "recall": 26.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 19.3,
+    "hallucination": 39.6,
+    "faithfulness": 52.0,
+    "noise_sensitivity": 37.4,
+    "self_knowledge": 8.4,
+    "timestamp": "2025-11-08T21:40:49.792526"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Chем Show, Attend and Tell (САТ) отличается от обычного RNN для обработки изображений следующим образом:\n\n* В САТ вместо обычных входных данных есть и входной вектор «с show», обозначающий собой нахождение наиболее актуальных элементов изображения для предосторожности.\n* В САТ вместо обычных входных данных также есть входной вектор «atten», обозначающий собой вероятность того, что конкретный элемент изображения является актуальным.\n* В САТ также есть входной вектор «tell», обозначающий собой предсказание на основе изображения.",
+      "rating": ""
+    }
+  ]
+}

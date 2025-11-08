@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0266",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt3_dialog0266",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 45.2,
+    "precision": 38.0,
+    "recall": 63.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.233672"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Трудность применения обычной batch normalization к RNN заключается в том, что RNN обрабатывают последовательности данных. В отличие от fully connected layers, где batch normalization работает с фиксированным размером батча, RNN обрабатывают данные последовательно, и длина батча (batch length) может меняться от шага к шагу. Это приводит к тому, что статистические характеристики (среднее и дисперсию) данных внутри батча меняются на каждом шаге, что делает неэффективной стандартную batch normalization.  Стандартная batch normalization предполагает, что данные в батче имеют одинаковые статистические свойства, что в RNN не всегда верно из-за переменной длины последовательностей.\n",
+      "rating": ""
+    }
+  ]
+}

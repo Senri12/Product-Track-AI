@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0086",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt6_dialog0086",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 48.6,
+    "precision": 41.9,
+    "recall": 64.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.278316"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Основная трудность применения обычной batch normalization к RNN заключается в том, что RNN обрабатывают последовательности данных, и распределение активаций в каждой последовательности может существенно отличаться между разными последовательностями. Batch normalization пытается нормализовать значения внутри батча (группы обучающих примеров). Но в RNN это не всегда применимо, так как батч не является статичным, а состоит из последовательностей разной длины, и распределения активаций в этих последовательностях не совпадают. Это приводит к взрыву градиентов, поскольку нормализация происходит с учетом разных распределений, что искажает градиенты и затрудняет обучение.",
+      "rating": ""
+    }
+  ]
+}

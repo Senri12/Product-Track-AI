@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0299",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt10_dialog0299",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 27.1,
+    "precision": 35.1,
+    "recall": 37.4,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 30.6,
+    "hallucination": 16.1,
+    "faithfulness": 24.8,
+    "noise_sensitivity": 10.4,
+    "self_knowledge": 9.2,
+    "timestamp": "2025-11-08T21:40:48.928790"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Их learning rate decay — η0*exp(-t/T), где t — прошедшее с начала обучения время, а T — responds за скорость уменьшения η параметр. В этом случае η0 = 0,1 и t = 5, Т = 10, поэтому learning rate decay = 0,1 * exp(-5/10) ≈ 0,0459.",
+      "rating": ""
+    }
+  ]
+}

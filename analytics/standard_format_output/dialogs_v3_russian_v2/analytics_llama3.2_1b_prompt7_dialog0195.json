@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0195",
+    "unique_dialog_id": "analytics_llama3.2_1b_prompt7_dialog0195",
+    "source": "analytics",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 30.2,
+    "precision": 38.0,
+    "recall": 38.0,
+    "claim_recall": 37.3,
+    "context_precision": 50.0,
+    "context_utilization": 30.9,
+    "hallucination": 18.7,
+    "faithfulness": 27.3,
+    "noise_sensitivity": 9.4,
+    "self_knowledge": 3.9,
+    "timestamp": "2025-11-08T21:40:48.941833"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Поскольку в письме встретилось только одно число win, мы можем напрямую вычислить:\n\nP(win|спам) = 1 + number of words X in the text that contain 'win' / |V|.\n\nДля примера:\n- Слово win появляется два раза во втором и третий записях.\n- В первом запись, содержащий слово win, оно также появляется в третьем записе.\n- Следовательно, общее количество слов X = 2 + 1 + 0 = 3.\n\nНаконец,\n\nP(win|спам) = 1 + 2 / |V| = 3/7 ≈ 0,4286.",
+      "rating": ""
+    }
+  ]
+}

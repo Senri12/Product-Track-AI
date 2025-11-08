@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0532",
+    "unique_dialog_id": "2-file_mistral_7b_prompt6_dialog0532",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 59.9,
+    "precision": 57.2,
+    "recall": 70.5,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.648684"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " Стандартная LSTM (Long Short-Term Memory) ячейка включает четыре основных компонента:\n\n1. Cells (Ячейки): Это состояние, которое хранится в клетке и изменяется во время прохождения последовательности инпутов.\n\n2. Input Gate (Входной шлюз): Он контролирует, сколько новой информации следует добавить или удалить из состояния клетки.\n\n3. Forget Gate (Забывающий шлюз): Он контролирует, сколько информации из предыдущего состояния клетки нужно забыть.\n\n4. Output Gate (Выходной шлюз): Он контролирует, сколько информации из текущего состояния клетки должно быть использованно для вычисления выхода из ячейки.\n\nЭти компоненты работают вместе, чтобы определять, какая часть предыдущих состояний и информации должна быть учтена для создания текущего состояния клетки.",
+      "rating": ""
+    }
+  ]
+}

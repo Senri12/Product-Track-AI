@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0007",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt1_dialog0007",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 26.5,
+    "precision": 28.7,
+    "recall": 43.8,
+    "claim_recall": 65.3,
+    "context_precision": 100.0,
+    "context_utilization": 43.1,
+    "hallucination": 33.3,
+    "faithfulness": 57.0,
+    "noise_sensitivity": 37.9,
+    "self_knowledge": 9.7,
+    "timestamp": "2025-11-08T21:40:49.979968"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "**Стандартныйcell в LSTM神经-network:**\n\nStandard LSTM cell — этоcell в LSTM-направлении. It processes sequences of data and uses gates to manage information flow between time steps. The forget gate decides what information is carried forward, while the remember gate retains context from previous steps.\n\nBut when multiple cells are connected by high way networks, they form a highway network that directly connects these cells between layers, making the model more robust against overfitting.\n\n**Answer:**  \nStandard LSTM cell is a fundamental component in LSTM networks. It uses gates to manage information flow and retain context. When connected via high way networks ( Highway networks), multiple LSTM cells are directly linked, enhancing the model's robustness.",
+      "rating": ""
+    }
+  ]
+}

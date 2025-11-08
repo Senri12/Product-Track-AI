@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog1119",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt15_dialog1119",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.485514"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Замоковые скважины (peepholes) в LSTM называются так, потому что они создают проблемы с обработкой very small gradients (градиентов, которые very often appear rarely or infrequently). \n\nВ LSTM модулях используются замоковые скважины для памяти retention: when a neuron forgets a gradient signal, it doesn't vanish but instead continues to change the weight updates in a way that depends on other neurons. This causes gradients to be very small and unstable during training. \n\nПри этом, если weight update learnable features very often appear rarely, градиенты могут быть очень мелкими и отображатьvery strong saturation of the learning process. Это приводит к very unstable training dynamics, что может привести к糟糕ому обучению или сопротивлению избежания of overfitting. \n\nДля решения этой проблемы, используются различные методы: Batch normalization, weight decay (L2 regularization), discounting gradients during training, или adaptive learning rate methods like Adam optimizer or AdaGrad.",
+      "rating": ""
+    }
+  ]
+}

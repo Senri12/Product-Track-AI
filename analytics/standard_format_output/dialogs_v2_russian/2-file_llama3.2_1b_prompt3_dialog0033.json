@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0033",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt3_dialog0033",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 17.9,
+    "precision": 23.3,
+    "recall": 27.7,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.776501"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "С точки зрения RNN, входами могут быть:\n\n* Токены, представляющие элементы последовательности (например, символы в тексте)\n* Набор данных, использованный для обучения модели (например, corpus анлоязычной Википедии)\n\nОтвет: Входами могут быть токены и набор данных.\n\nВ вопросе о LR schedule мы обсуждали скорость обучения на основе типа входа:\n\n* Скорость обучения определяется type of input.\n* Type of input может определить уравнение, используемое для предсказания выходного значения.\n\nТеперь обратимся к практике:\n\n* В задаче BERT обсуждается использование masked language modeling, который требует input - предложение естественного языка с замаскированными элементами.\n* Вопрос: Какие типы входов и выходов встречаются в задачах RNN?\nОтвет: Входами могут быть токены и набор данных.",
+      "rating": ""
+    }
+  ]
+}

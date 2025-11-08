@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0389",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt13_dialog0389",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+    "f1": 47.9,
+    "precision": 44.2,
+    "recall": 61.0,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:46.564367"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Прекрасно! Давайте вычислим learning rate decay, придерживаясь заданных параметров.\n\nИтак, у нас есть следующие данные:\n\n*   η₀ (начальная learning rate) = 0.1\n*   t (текущий момент времени) = 5\n*   T (общее количество эпох) = 10\n*   Тип decay: линейный\n\nЛинейный decay подразумевает, что learning rate уменьшается на константу за каждую эпоху.  В нашей задаче, согласно п. 3.2.2 вашей работы,  формула для линейного decay выглядит так:\n\nη(t) = η₀ * (1 - t/T)\n\nГде:\n\n*   η(t) - learning rate на момент времени t\n*   η₀ - начальная learning rate\n*   t - текущий момент времени\n*   T - общее количество эпох\n\nТеперь подставим наши значения:\n\nη(5) = 0.1 * (1 - 5/10) = 0.1 * (1 - 0.5) = 0.1 * 0.5 = 0.05\n\nТаким образом, learning rate на момент времени t=5 составляет 0.05.\n\n**Вопрос к вам:**  По вашему мнению, почему выбирают именно линейный decay?  Какие другие типы decay вы знаете, и какие особенности у каждого из них?  Это поможет лучше понять, почему этот вариант был выбран в данной задаче.  Также, согласны ли вы с полученным результатом?  Может быть, у вас есть какие-то замечания или вопросы по поводу этого вычисления?\n",
+      "rating": ""
+    }
+  ]
+}

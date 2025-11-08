@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0589",
+    "unique_dialog_id": "2-file_mistral_7b_prompt10_dialog0589",
+    "source": "2-file",
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 63.2,
+    "precision": 64.8,
+    "recall": 71.1,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.632802"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": " В отличие от Simple Recurrent Neural Network (Simple RNN), глубокие Recurrent Neural Networks (Deep RNN) состоят из нескольких слоев RNN, которые работают на разных уровнях абстракции входной данные. Это позволяет им выявлять более сложные структуры в данных и добиваться лучших результатов по сравнению с Simple RNN.\n\nТаким образом, глубокие RNN состоят из нескольких слоёв рекуррентных нейронных сетей, каждый из которых выполняет набор операций на входных данных и передаёт их следующему слою для дальнейшей обработки. Эта архитектура позволяет глубоким RNN выявлять более сложные структуры в данных, что приводит к лучшим результатам по сравнению с Simple RNN.\n\nТакже стоит отметить, что для обучения глубоких RNN необходимо использовать специальные методы оптимизации градиентов, чтобы избежать взрывающихся и затухающих градиентов на практике.",
+      "rating": ""
+    }
+  ]
+}

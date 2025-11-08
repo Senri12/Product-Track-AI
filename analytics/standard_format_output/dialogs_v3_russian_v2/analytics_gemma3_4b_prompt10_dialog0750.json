@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0750",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt10_dialog0750",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "3. Инструменты обучения НС",
+    "lecture_topic": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+    "f1": 46.9,
+    "precision": 46.5,
+    "recall": 61.6,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 37.9,
+    "hallucination": 11.4,
+    "faithfulness": 33.7,
+    "noise_sensitivity": 14.2,
+    "self_knowledge": 4.8,
+    "timestamp": "2025-11-08T21:40:48.629390"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В Nesterov, вычисли ∇ в ω - γ v_{t-1}: γ=0.9, v=1, ∇=2.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "В методе Нестерова градиент вычисляется в точке, которая находится на расстоянии γ от предыдущей точки, т.е. в точке ω - γv_{t-1}.  Таким образом, градиент в текущей точке равен:\n\n∇ = 2\n",
+      "rating": ""
+    }
+  ]
+}

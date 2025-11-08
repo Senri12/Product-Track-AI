@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0196",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt14_dialog0196",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+    "f1": 39.7,
+    "precision": 40.8,
+    "recall": 53.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 54.8,
+    "hallucination": 21.4,
+    "faithfulness": 59.6,
+    "noise_sensitivity": 31.1,
+    "self_knowledge": 12.3,
+    "timestamp": "2025-11-08T21:40:49.899942"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Recurrent Neural Networks (RNNs) are essential for processing sequential data due to their ability to maintain and consider contextual information across time steps. Unlike Convolutional Neural Networks (CNNs), which focus on local features in images, RNNs can handle more complex tasks like language modeling and text analysis by maintaining state across time steps. This makes them particularly suitable for problems involving sequences, such as text or audio processing, where the context from earlier elements significantly impacts current predictions.",
+      "rating": ""
+    }
+  ]
+}

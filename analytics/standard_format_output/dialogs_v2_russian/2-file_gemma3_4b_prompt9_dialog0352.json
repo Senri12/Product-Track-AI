@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0352",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt9_dialog0352",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 46.3,
+    "precision": 40.9,
+    "recall": 61.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.652176"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стандартная LSTM ячейка включает в себя следующие компоненты:\n\n*   **Cell State (C<sub>t</sub>):** Это ядро LSTM ячейки, которое хранит информацию на протяжении всей последовательности.  Он служит для сохранения информации на длительных промежутках времени, преодолевая проблему затухающих градиентов.\n*   **Hidden State (h<sub>t</sub>):**  Этот вектор, как и в стандартной RNN, отражает текущее состояние сети.  Он обновляется на каждом шаге.\n*   **Input Gate (i<sub>t</sub>):**  Этот компонент определяет, какая новая информация должна быть добавлена в Cell State.\n*   **Forget Gate (f<sub>t</sub>):** Этот компонент определяет, какая информация из Cell State должна быть забыта.\n*   **Output Gate (o<sub>t</sub>):**  Этот компонент определяет, какая информация из Cell State должна быть передана в выходной слой.\n*   **Input Linear Transformation:**  Это линейный слой, который преобразует входные данные и текущий hidden state.\n*   **Output Linear Transformation:**  Это линейный слой, который преобразует выход линейного преобразования.\n*   **Sigmoid Functions:**  Используются в gate-х (forget, input, output) для вычисления значений от 0 до 1, которые определяют степень, в которой информация сохраняется или забывается.\n*   **tanh function:** используется в Cell State чтобы он находился в диапазоне [-1, 1].\n\nВкратце, LSTM ячейка работает, используя эти компоненты для эффективного сохранения и обновления информации, что позволяет ей лучше справляться с длинными последовательностями данных.",
+      "rating": ""
+    }
+  ]
+}

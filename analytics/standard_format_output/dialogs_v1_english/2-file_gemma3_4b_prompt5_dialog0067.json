@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0067",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt5_dialog0067",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 51.5,
+    "precision": 47.6,
+    "recall": 63.6,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.246814"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стандартная LSTM (Long Short-Term Memory) ячейка включает в себя следующие ключевые компоненты:\n\n*   **Cell State (C<sub>t</sub>):**  Это \"дорога\" или \"труба\", которая проходит через всю последовательность. Она сохраняет информацию на протяжении длительного времени, позволяя информации циркулировать и обновляться.\n*   **Hidden State (h<sub>t</sub>):**  Этот вектор представляет собой краткое извлечение всей информации из последовательности до текущего момента.\n*   **Input Gate (i<sub>t</sub>):**  Определяет, какая новая информация из текущего входного значения (x<sub>t</sub>) должна быть добавлена в cell state.\n*   **Output Gate (o<sub>t</sub>):** Определяет, какая информация из cell state должна быть выведена в качестве выходного значения LSTM ячейки.\n*   **Forget Gate (f<sub>t</sub>):** Определяет, какая информация из предыдущего cell state должна быть забыта.\n*   **Activation Functions:** Каждый из этих компонентов использует активационные функции (например, sigmoid или tanh) для введения нелинейности.\n\nВкратце, LSTM ячейка функционирует, регулируя поток информации через cell state, используя forget, input и output gates для сохранения и извлечения информации из последовательности.",
+      "rating": ""
+    }
+  ]
+}

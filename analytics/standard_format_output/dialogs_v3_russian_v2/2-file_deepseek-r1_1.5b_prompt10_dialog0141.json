@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0141",
+    "unique_dialog_id": "2-file_deepseek-r1_1.5b_prompt10_dialog0141",
+    "source": "2-file",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как LSTM решает проблему затухающих градиентов?",
+    "f1": 26.4,
+    "precision": 23.7,
+    "recall": 38.9,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.5,
+    "hallucination": 40.2,
+    "faithfulness": 52.8,
+    "noise_sensitivity": 36.1,
+    "self_knowledge": 7.0,
+    "timestamp": "2025-11-08T21:40:49.961468"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Как LSTM решает проблему затухающих градиентов?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Координатируя память нейронной сети, LSTM решает проблему затухающих градиентов, чтобы не создавать слишком большие gradient. GRU и gated ReLU ячейки имеют общую структуру, где memory gate фиксирует часть памяти, forget gate резервирует, а update gate изменяет state. Это позволяет сократить градиенты и повысить обработанность данных.\n\nДля решения затухающих градиентов применяются методы规范化ации по мини-батцам (batch normalization) и batch regularization (dropouts). Важно также использовать dropouts для усиления обработки нейрон network и Batch normalization для снижения overfitting. Эти методы помогают повысить обработанность данных,降低成本 градиентов и включать больше батчов в обучение.",
+      "rating": ""
+    }
+  ]
+}

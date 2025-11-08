@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0187",
+    "unique_dialog_id": "2-file_gemma3_4b_prompt13_dialog0187",
+    "source": "2-file",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 45.6,
+    "precision": 37.5,
+    "recall": 67.4,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:45.208859"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Стандартная LSTM (Long Short-Term Memory) ячейка включает следующие компоненты:\n\n1.  **Cell State (C<sub>t</sub>):**  Это \"дорога\" для информации, проходящая через всю последовательность.  Она сохраняет информацию на протяжении длительного времени, позволяя ячейке \"запоминать\" и \"забывать\" информацию.\n\n2.  **Hidden State (h<sub>t</sub>):**  Это выходной вектор ячейки, который передается следующему слою LSTM.  Он представляет собой краткое резюме информации, прошедшей через ячейку.\n\n3.  **Input Gate (i<sub>t</sub>):**  Определяет, какая новая информация будет добавлена в Cell State.\n\n4.  **Output Gate (o<sub>t</sub>):** Определяет, какая информация из Cell State будет передана на выход (hidden state).\n\n5.  **Forget Gate (f<sub>t</sub>):** Определяет, какая информация должна быть удалена из Cell State.\n   \n\nЭти компоненты взаимодействуют через сигмоидные функции и другие элементы, чтобы контролировать поток информации в ячейке.\n",
+      "rating": ""
+    }
+  ]
+}

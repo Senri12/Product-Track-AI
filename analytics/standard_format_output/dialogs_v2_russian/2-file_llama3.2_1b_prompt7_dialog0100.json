@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0100",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt7_dialog0100",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 19.2,
+    "precision": 21.4,
+    "recall": 34.3,
+    "claim_recall": 0.0,
+    "context_precision": 0.0,
+    "context_utilization": 0.0,
+    "hallucination": 0.0,
+    "faithfulness": 0.0,
+    "noise_sensitivity": 0.0,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T21:40:47.806940"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Поскольку модели RNN имеют многослойную структуру, где каждый слой предназначен для обработки последовательных данных, градиенты при вычислении каждого отдельного слоя могут иметь разные размеры и значения. Например, в первом слоеModelLSTM вычисляем градиант для всех элементов входной последовательности, что приводит к большой численности данных на каждом шаге. Это может привести к увеличению времени обучения модели.\n\nНормализация по мини-батчам (mini-batch) помогает снизить размеры данных на từng батчей, а также снижает время обучения. Когда мыnormalize данные по мини-батчам, каждая batch имеет меньший размер данных и меньше градиентов при вычислении каждого слояModelLSTM.\n\nНапример, если использовать batch size 32 для trainingModelLSTM с input data-sized 128x64x1024, то каждый батчь будет иметь 16x32x32x32=6144 элементов входной последовательности. Это reduces количество данных на каждом шаге и снижает время обучения.\n\nНормализация по мини-батчам также помогает снизить затуху градиентов, когда некоторые элементы входной последовательности имеют très-low-values или very-high-values, которые могут вызывать проблемы с точностью вычислений. Например, если input data имеетvery-high-values для few elementов input_data, тоModelLSTM может приравнять их коэффициентам нулям, что приводит к значительным проблемам с точностью вычислений.\n\nЧтобы увидеть в действии это, можно посмотреть на example trainingModelLSTM, где мы normalize данные по мини-батчам, используя following code:\n```python\nimport torch\nimport torch.nn as nn\n\n# Define ModelLSTM\nclass LSTM(nn.Module):\n    def __init__(self, input_dim, hidden_dim, output_dim):\n        super(LSTM, self).__init__()\n        self.lstm = nn.LSTM(input_dim, hidden_dim, num_layers=1, batch_first=True)\n\n    # Normalize data using mini-batch\n    def forward(self, x, y):\n        # Normalize x using mini-batch\n        x_norm = torch.nn.functional.pad(x, [0, 2 ** (input_dim - 1) - 4])\n        x_norm = x_norm.view(-1, 128, 16)\n        \n        # Initialize hidden state and cell state\n        h0 = torch.zeros(1, x.shape[0], self.hidden_dim).to(x.device)\n        c0 = torch.zeros(1, x.shape[0], self.hidden_dim).to(x.device)\n\n        # Run LSTM on mini-batch data\n        out, _ = self.lstm(x_norm, (h0, c0))\n\n        return out[:, -1, :]  # Get output of last hidden state\n\n# Normalize input and target data using mini-batch\nbatch_size = 32\ninput_data = torch.randn(batch_size, 128, 16)\ntarget_data = torch.randint(2, size=(batch_size, 128))  # Binary labels (0 or 1)\n\n# Training loop\ncriterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.lstm.parameters(), lr=0.001)\nfor epoch in range(10):\n    optimizer.zero_grad()\n    outputs = model(input_data, target_data)\n    loss = criterion(outputs, target_data)\n    loss.backward()\n    optimizer.step()\n\n# Print results\nprint(\"Training with mini-batch:\")\ninput_data = torch.randn(batch_size, 128, 16)\ntarget_data = torch.randint(2, size=(batch_size, 128))  # Binary labels (0 or 1)\n\noutputs = model(input_data, target_data)\nloss = criterion(outputs, target_data)\nprint(f\"Loss: {loss.item():.4f}\")\n```\nЗатуха градиентов при trainingModelLSTM с использованием batch normalize significantly сокращается, что приводит к улучшению точности вычислений и скорости обучения.",
+      "rating": ""
+    }
+  ]
+}

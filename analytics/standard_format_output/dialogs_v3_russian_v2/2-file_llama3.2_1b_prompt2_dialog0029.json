@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0029",
+    "unique_dialog_id": "2-file_llama3.2_1b_prompt2_dialog0029",
+    "source": "2-file",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 32.9,
+    "precision": 39.7,
+    "recall": 35.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 30.3,
+    "hallucination": 37.1,
+    "faithfulness": 50.8,
+    "noise_sensitivity": 23.2,
+    "self_knowledge": 12.1,
+    "timestamp": "2025-11-08T21:40:49.783228"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "Ответ: Show, Attend and Tell — это рекуррентная сеть, где:\n- Имеет трехфокусную структуру.\n- Принимает в качестве входа изображение (иображаемое представление) и частоту появления этой информации.\n- Использует три части:\n  1. «Show» — это процесс предоставления информации, которую хотят увидеть users или ngườiों, чтобы понять контекст данного изображения.\n  2. «Attend» — это процесс отслеживания того, как информация поображается на этой задаче в предыдущий слой, что позволяет предсказывать следующую часть.\n  3. «Tell» — это процесс ответа, который можно получить от users или người, о том, что они хотят увидеть в виде output.",
+      "rating": ""
+    }
+  ]
+}

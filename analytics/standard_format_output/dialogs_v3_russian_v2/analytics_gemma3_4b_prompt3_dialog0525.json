@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "dialog_id": "dialog0525",
+    "unique_dialog_id": "analytics_gemma3_4b_prompt3_dialog0525",
+    "source": "analytics",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
+    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
+    "f1": 47.2,
+    "precision": 44.6,
+    "recall": 59.7,
+    "claim_recall": 39.2,
+    "context_precision": 50.0,
+    "context_utilization": 40.1,
+    "hallucination": 12.6,
+    "faithfulness": 33.0,
+    "noise_sensitivity": 11.8,
+    "self_knowledge": 4.4,
+    "timestamp": "2025-11-08T21:40:48.581920"
+  },
+  "turns": [
+    {
+      "turn_number": 1,
+      "role": "user",
+      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "model_response": "",
+      "rating": ""
+    },
+    {
+      "turn_number": 2,
+      "role": "assistant",
+      "content": "",
+      "model_response": "С учетом того, что в классе «спам» встретилось одно слово «win», а всего в классе «спам» 7 слов, а также с учетом сглаживания по Лапласу, r=1, мы имеем:\n\nP(win | спам) = (1 + 1) / (8 + 7) = 2 / 15 ≈ 0.1333\n\nТаким образом,  P(win | спам) ≈ 0.1333.\n",
+      "rating": ""
+    }
+  ]
+}
