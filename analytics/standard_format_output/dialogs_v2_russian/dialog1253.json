@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1253",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое learning rate?",
-    "f1": 42.3,
-    "precision": 47.9,
-    "recall": 49.7,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.312654"
+    "timestamp": "2025-11-08T20:42:37.356416"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое learning rate?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Learning rate является одним из ключевых параметров в алгоритмах обучения машинным нейронным сетям. Оно определяет скорость, с которой модель обновляет свои веса во время тренировки. Чем больше значение learning rate, тем быстрее модель изменяет свои веса при каждом шаге, но также и с большей вероятностью может задеваться локальными минимумами или переходящими через глобальный оптимум. Чем меньше значение learning rate, тем медленнее модель изменяет свои веса, но с меньшей вероятностью попадается в локальные минимумы или не достигает глобального оптимума. Идеальное значение learning rate зависит от конкретной проблемы и модели, однако существуют многие методы по оптимизации этого параметра для поиска эффективного значения.",
+      "model_response": "Деятельность GRU (Gated Recurrent Unit) отличается сюда:\n- **Контурированный гating**: GRU использует гаты для учитывения важности каждого элемента, что позволяет ускорить обработку последовательностей.\n- **Больше простоты**: GRU содержит только один гат ( gated ), а LSTM содержит multiple gates ( input, forget, output ).\n- **Использование only gate**: В контексте трансформеровGRU используется как only gate для обработки последовательности, что позволяет учитывать все элементы как контекст.\n\n**Результаты**:\n- GRU делает easier training: fewer parameters (lighter network) и lighter computations.\n- GRU улучшает trainability в一定程度е LSTM, особенно при ограниченной ресурсах или данных.\n\nЕсли в задачах требуются высокая точность и эффективное обработка сложных задач с низким объемом данных, GRU может быть более подходящей моделью, чем LSTM.",
       "rating": ""
     }
   ]

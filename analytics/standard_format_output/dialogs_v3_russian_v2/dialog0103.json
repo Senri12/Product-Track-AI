@@ -3,26 +3,26 @@
     "dialog_id": "dialog0103",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
-    "f1": 36.1,
-    "precision": 36.5,
-    "recall": 46.3,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 27.2,
-    "hallucination": 8.6,
-    "faithfulness": 35.7,
-    "noise_sensitivity": 21.8,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.061652"
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 41.3,
+    "precision": 37.0,
+    "recall": 51.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 53.3,
+    "hallucination": 23.5,
+    "faithfulness": 65.3,
+    "noise_sensitivity": 39.5,
+    "self_knowledge": 11.1,
+    "timestamp": "2025-11-08T20:42:39.086653"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "В ходе выполнения задания мы разработали алгоритм кластеризации с использованием метода k-NN для классификации данных. Используем欧式 метрику distances для расстояния между объектами на плоскости по атрибутам сладости и хруста. our close neighbors с различным k приводят к разным classifications: при small k close neighbors перец остается отнесенным к classу фруктов, а larger k grows closer classes until we reach class of oвощам.\n\nour ответ:\nOur алгоритм k-NN для классификации данных на основе расстояний между объектами на плоскости по атрибутам сладости и хруста. our close neighbors при различных k приводят к разным classifications:\n\n- при small k close neighbors перец остается отнесенным к classу фруктов.\n- при larger k grows closer classes until we reach class of oвощам.\n\nour ответы на вопросы",
+      "model_response": "Поскольку я новичок в области трансформеров и машинного.translationения, я постараюсь разобраться о том, почему注意力 важно для этой задачи.\n\n1. **Ключево значение Attention**: Attention – это способ модели определить, какие части данных важны для их распознавания и использования. В machine translation(машинном переводе)注意力 позволяет modelу усиленно определить, какие слова или токены в тексте нужно использовать для более точного понимания контекста.\n\n2. **Снижение времени обучения**: Использование attention allows models to focus on specific parts of the input data, which can improve performance, especially in tasks where certain tokens or phrases are more contextually relevant than others. Например, when translating a sentence, some words may be more contextually important than others, and focusing on them can lead to better translations.\n\n3. **Ключевые архитектуры**: В machine translation часто используются архитектуры Transformer с attention, такие как show, attend and tell, которые включают attention в各个环节е. Это делает Transformer(машинное обработка текста) более мощным и эффективным дляcomplex tasks, таких как translation.\n\n4. **Рекуррентные слоны**: Даже если не использовать рекуррентных сеть(кубиков),注意力 может быть важной частью, так как Transformer(машинное обработка текста) включает attention в его структуре.\n\nВ итоге,注意力 позволяет modelу усиленно определить важность различных частей данных(в тексте или изображении), что делает machine translation более точным иefслably.",
       "rating": ""
     }
   ]

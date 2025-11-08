@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0168",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 44.1,
-    "precision": 57.5,
-    "recall": 45.6,
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 23.7,
+    "precision": 34.0,
+    "recall": 34.4,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.693643"
+    "timestamp": "2025-11-08T20:42:35.570849"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Хорошо, давай разберемся, что такое Keras.  \n\nНачнем с простого: когда ты слышишь слово \"Keras\", что тебе приходит в голову?  Просто подумай, что ты знаешь об этом.  Не нужно сразу давать ответ, просто расскажи, какие ассоциации у тебя возникают.\n",
+      "model_response": "На странице 4 было написано, что для RNN используется einsteinsink в качестве входного параметра.",
       "rating": ""
     }
   ]

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Standardная LSTM ячейка включает в себя следующее:\n\n1. Вектор входных данных (x)\n2. Поскольку_lstm включает по два input — v0 и c, а lstm не имеет изолированного inputа, мы обычно считаем вектор входных данных как x = [v0; c]\n3. Поскольку lstm включает один измеряющий input — h, аstmл не имеет изолированного outputа, мы обычно считаем выходной input как h\n4. Вектор activation functions (ауторактекст) — это функции активации, которые определяют level of activity в input и hidden state. Typical ауторактексты для lstm — Sigmoids.\n5. Вектор weights (весовые данные) — это матрицы, которые представляют вектрисы inputов и hidden state для каждого слоя lstm.\n6. Вектор biases (безопасные данные) — это значения, которые заданы как начальные значения hidden state и output.\n\nОднако, важно отметить, что в некоторых variants lstm, таких как RNN, вector activation functions и weights differently.",
+    "rating": ""
+  }
+]

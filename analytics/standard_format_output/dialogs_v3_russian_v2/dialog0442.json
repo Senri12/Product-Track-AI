@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0442",
-    "model_name": "llama3.2",
-    "model_parameters": "1.0B",
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
     "system_prompt_id": "prompt15",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 28.2,
-    "precision": 32.8,
-    "recall": 40.3,
-    "claim_recall": 38.8,
-    "context_precision": 50.0,
-    "context_utilization": 33.4,
-    "hallucination": 17.0,
-    "faithfulness": 29.4,
-    "noise_sensitivity": 12.9,
-    "self_knowledge": 3.6,
-    "timestamp": "2025-10-28T13:24:19.952780"
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 45.5,
+    "precision": 42.2,
+    "recall": 55.8,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 59.3,
+    "hallucination": 24.1,
+    "faithfulness": 65.8,
+    "noise_sensitivity": 33.7,
+    "self_knowledge": 10.1,
+    "timestamp": "2025-11-08T20:42:38.844124"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Аdam – это метод оптимизации, который kết hợp с методами RMSProp (Роджесса Мюсай) и Momentum (Моутенанса). У него есть адаптивный learning rate, что означает, что он adjusts learning rate для каждого измерения на конкретном шаге обучения.Adam является одной из самых популярных оптимизаторов, которые используются в machine learning при обучении нейронных сетей.",
+      "model_response": "Стандартная LSTM (Long Short-Term Memory) ячейка включает в себя следующие основные компоненты:\n\n1.  **Входной порт (Input Gate):** Принимает входной вектор *x<sub>t</sub>* и предыдущее состояние ячейки *c<sub>t-1</sub>* и состояние скрытого слоя *h<sub>t-1</sub>*.\n2.  **Выходной порт (Output Gate):** Принимает входной вектор *x<sub>t</sub>* и предыдущее состояние скрытого слоя *h<sub>t-1</sub>*.\n3.  **Ячейка состояния (Cell State):** Ядро LSTM, который хранит информацию на протяжении всего времени. Он использует вентили (gates) для добавления и удаления информации.\n4.  **Вентиль забывания (Forget Gate):** Определяет, какая информация должна быть забыта из ячейки состояния.\n5.  **Вентиль добавления (Input Gate):** Определяет, какая новая информация должна быть добавлена в ячейку состояния.\n\nВкратце:  LSTM ячейка работает, используя эти порты и вентили для управления потоком информации и сохранения ее на длительные периоды времени.\n",
       "rating": ""
     }
   ]

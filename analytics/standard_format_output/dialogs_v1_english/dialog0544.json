@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0544",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt4",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В чем суть наивного байесовского классификатора?",
-    "f1": 31.4,
-    "precision": 43.8,
-    "recall": 51.9,
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 50.7,
+    "precision": 52.0,
+    "recall": 59.4,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.741871"
+    "timestamp": "2025-11-08T20:42:35.812440"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем суть наивного байесовского классификатора?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Great question! A naive Bayes classifier is like having an educated guess about something based on your prior knowledge or assumptions.\n\n\nFor instance: Imagine you're trying to figure out if someone has a pet dog just by looking at them.\n\n- You might think, \"If their clothes are dirty and they have muddy shoes with mud stains...\" you would probably assume that person likely owns dogs (since that's common for kids who play outside).\n\nNow let's apply this idea using the naive Bayes classifier. This tool also makes educated guesses or predictions about data based on certain attributes.\n\n\nHere's a simplified example:\n\n- Suppose we want to predict if an email is spam ('yes' or 'no'). Our naive Bayes model looks at words from emails (like \"discount\", which appears frequently in spam).\n\nIf it sees the word \"free\" often with other suspicious phrases, it's likely going to guess that this particular message might be a scam.\n\n\nIn summary:\n\n- Naive Bayes Classifier = Making educated guesses based on certain attributes.\n- It simplifies complex data into understandable patterns or trends.\n\nIt's like being an intelligent detective who uses clues (attributes) cleverly and quickly!",
+      "model_response": " Отличие между Simple Recurrent Neural Network (Simple RNN) и глубокими RNN заключается в структуре архитектуры этих моделей.\n\nSimple RNN состоит из одного или нескольких скрытых слоев, каждое из которых имеет рекуррентные связи между своим состоянием и состояниями предыдущих слоёв. В результате Simple RNN обрабатывает последовательность данных по очереди и использует еёhistory для производства вывода.\n\nГлубокие RNN (Deep RNN), в свою очередь, состоят из нескольких слоёв Simple RNN, каждое из которых обрабатывает данные по очереди и передаёт результаты следующему слою. Таким образом, глубокие RNN имеют большую способность к анализу сложных последовательностей данных, но при этом они более сложно тренировать, из-за взрывающихся градиентов и затухания.\n\nВажно отметить, что обучение глубоких RNN обычно реализуется с помощью усовершенствованных методов, таких как Long Short-Term Memory (LSTM) или Грубый градиентный бустинг через временные слои (Backpropagation Through Time - BPTT). Эти методы помогают решить проблему взрывающихся и затухающих градиентов, что позволяет глубоким RNN эффективно обрабатывать большие последовательности данных.\n\nВ целом, Simple RNN и глубокие RNN являются двумя важными типами моделей для обработки последовательностей данных, и их выбор зависит от конкретной задачи и свойств исходных данных.",
       "rating": ""
     }
   ]

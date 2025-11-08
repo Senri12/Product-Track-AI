@@ -3,12 +3,12 @@
     "dialog_id": "dialog0034",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "В чем суть наивного байесовского классификатора?",
-    "f1": 36.5,
-    "precision": 38.7,
-    "recall": 43.4,
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 17.9,
+    "precision": 23.3,
+    "recall": 27.7,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.910228"
+    "timestamp": "2025-11-08T20:42:37.280612"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем суть наивного байесовского классификатора?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Наивный байесовский классификатор – это тип алгоритма принятия решений, основанный на предположении о том, что существует как минимум один аутентичный запись.",
+      "model_response": "Ответ:simple RNN — это базовая architecturesная структура, тогда как глубокие RNN (Рабочий с нумерацией в левую часть input и правой часть output) имеют более сложную структуру. Simple RNN обычно не содержит hidden state, который является ключевым компонентомDeep learning model, а это значит, чтоSimple RNN не имеетHidden State.",
       "rating": ""
     }
   ]

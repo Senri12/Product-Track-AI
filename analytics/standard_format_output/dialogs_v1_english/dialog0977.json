@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0977",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt3",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое TensorFlow?",
-    "f1": 37.8,
-    "precision": 32.9,
-    "recall": 55.1,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.230014"
+    "timestamp": "2025-11-08T20:42:35.645758"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое TensorFlow?",
+      "content": "Что такое скрытое состояние в RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Давайте разобраться с термином «TensorFlow». Это открытая исходная система машинного обучения и распределенных вычислений, разработанная Google Brain Team в 2015 году. Её основная цель - упростить процесс разработки, построения и использования программ для машинного обучения.\n\nВозникли вопросы? Напишем несколько вопросов для проверки понимания:\n\n1. Какой компании принадлежит TensorFlow? (Google)\n2. Какая цель TensorFlow? (Упростить процесс разработки, построения и использования программ для машинного обучения)\n3. Это система машинного обучения или распределенных вычислений? (Оба)\n4. Когда был разработан TensorFlow? (2015 год)\n\nНайдете ответы на эти вопросы? Идеально! Для углубления познаний и практики может быть полезно выполнить несколько задач:\n\n1. Написать простую программу TensorFlow, которая будет решать задачу линейного регрессиона.\n2. Разработать нейронную сеть для классификации MNIST-данных.\n3. Изучить функцию «gradient descent» в рамках TensorFlow и построить график её работы.",
+      "model_response": "Скрытое состояние в recurrent nets (RNN) является внутренним состоянием модели, который используется для передачи данных междуtime steps. Начиная сtime step t, RNN обновляет state (state of the model) после каждогоtime step. Это state часто используется как input для следующих time steps.\n\n### Как state используется:\n1. **State Update**:during each time step, RNN обновляет internal state based on current input and previous state.\n2. **State Utilization**:previous state and current input are used to produce output for the next time step.\n\n### Градиенты по state:\nГрадиенты по state могут быть затухающими или нейтрally, depending on the model's structure. For large RNNs, this may lead to overfitting. To mitigate this, techniques like extended backpropagation through time (BPTT) are used.\n\n### practically Implemented:\nFor many practical applications, including large RNN models like LSTMs and GRUs, state is learned end-to-end using standard BPTT. State often refers to internal variables such as cell states in LSTM networks. Gradients can be computed for these states during training.",
       "rating": ""
     }
   ]

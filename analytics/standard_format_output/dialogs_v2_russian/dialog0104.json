@@ -3,12 +3,12 @@
     "dialog_id": "dialog0104",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt4",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
-    "f1": 33.4,
-    "precision": 40.2,
-    "recall": 43.3,
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 19.2,
+    "precision": 21.4,
+    "recall": 34.3,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.897155"
+    "timestamp": "2025-11-08T20:42:37.310176"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "В этой задаче не предоставлена информация о процентах, которые мы считаем \"_da\". Однако нам нужно понять концепцию П(da| Pasmo, Chelo, Vyz) - это вероятность того, что дача обитает в доме, если она pasa за линиюCold и Cold ( Pasmo, Chelo), и в доме, если она pasa за линию Wet (Vyz).\n\nИмея этого понимания, мы можем вычислить вероятность:\n\nП(da|Pasmo,Cold) = 0,5\nП(da|Cold,Wet) = 0,4\n\nТеперь нам нужно сложить эти вероятности, чтобы получить общую вероятность того, что дача обитает в доме. \n\nВероятность того, что дача обитает в доме, если она pasa за линию Cold и Wet (Pasmo,Wet) = 0,5 + 0,4 = 0,9\n\nИтак, P(da|Pasmo,Cold) = 0,5, П(da|Cold,Wet) = 0,4.\n\nВероятность того, что дача обитает в доме, если она pasa за линию Cold и Cold (Pasmo,Chelo), равна:\n\nП(da|Pasmo,Chelo) = 1 - 0,9 = 0,1\n\nСледовательно, P(da|Pasmo,Cold) = 0,5, П(da|Cold,Wet) = 0,4, и P(da|Pasmo,Chelo) = 0,1.",
+      "model_response": "Ответ: БERT (Bidirectional Encoder Representations from Transformers) имеет несколько ключевых различий по сравнению с другими традиционными РНН (Режимно-Sequentialные Нейronны), которые основаны на rekуррентных слоях, а не на токенах последовательности.",
       "rating": ""
     }
   ]

@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0621",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Momentum в оптимизации?",
-    "f1": 41.9,
-    "precision": 37.6,
-    "recall": 55.8,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.4,
-    "hallucination": 9.7,
-    "faithfulness": 35.2,
-    "noise_sensitivity": 18.2,
-    "self_knowledge": 5.1,
-    "timestamp": "2025-10-28T13:24:20.303385"
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как LSTM решает проблему затухающих градиентов?",
+    "f1": 19.0,
+    "precision": 53.6,
+    "recall": 27.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 27.6,
+    "hallucination": 20.0,
+    "faithfulness": 55.7,
+    "noise_sensitivity": 13.1,
+    "self_knowledge": 11.0,
+    "timestamp": "2025-11-08T20:42:38.922314"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Momentum в оптимизации?",
+      "content": "Как LSTM решает проблему затухающих градиентов?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Momentum в оптимизации является методом градиентного спуска, который использует скорость из предыдущего шага для ускорения направления следующего. Это помогает градиентному спуску эффективнее находить минимум функции потерь, уменьшая колебания и увеличивая скорость обучения в нужном направлении. Метод моментов адаптирует градиентный спуск к сложным многомерным пространствам, используя подобие законов ньютоновской механики для катящегося шарика, которое движется вниз по крутому участку и имеет инерцию. В формальном выражении:\n\nv_t = γv_(t − 1) − η∇L(ω),\nω = ω + v_(t)\n\nгде γ – параметр, меньший единицы (часто больший, чем 0.9), отвечающий за то, какую часть прошлого градиента мы готовы взять, чтобы скомбинировать его с текущим; η – параметр обучения или learning rate; L – функция потерь.\n\nМетод моментов помогает предотвратить неограниченный рост суммы градиентов, что приводит к неограниченному падению learning rate в алгоритмах типа RMSProp.\n\nАльтернативным методом, который также использует инерцию для ускорения спуска, является метод импульсов (momentum). Однако в отличие от метода моментов, метод импульсов накладывает ограничение на обновление learning rate с помощью скорости градиента в предыдущем шаге.",
+      "model_response": "и 2 (1 and let is good name translates into English is a deep translation of translating as a unique block contains theait first version. reply does what happens when we are starting with matter is an input ends up is a sample context, the most recent version\n\nis translated asiff \\ sequential isiting",
       "rating": ""
     }
   ]

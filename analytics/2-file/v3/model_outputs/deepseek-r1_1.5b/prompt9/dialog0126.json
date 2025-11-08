@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как LSTM решает проблему затухающих градиентов?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "LSTM solves the problem of vanishing gradients by employing three gates to manage the flow of information over time:\n\n1. **Forget Gate**: This gate determines how much of the previous hidden state is retained for the current output. It applies a non-linear function (typically tanh) to the input, ensuring that only relevant information remains.\n\n2. **Input Gate**: This gate controls which parts of the current input are included in updating the hidden state. Another non-linear function is applied here as well.\n\n3. **Cell State**: The cell state accumulates new information while disallowing forgetting and resetting based on the gates, thus maintaining memory over time without exploding or vanishing gradients.\n\nBy applying these gates, LSTM maintains stable gradients during training, allowing the network to learn long-term dependencies effectively.",
+    "rating": ""
+  }
+]

@@ -3,26 +3,26 @@
     "dialog_id": "dialog0218",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 34.4,
-    "precision": 37.5,
-    "recall": 41.7,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 25.4,
-    "hallucination": 10.2,
-    "faithfulness": 33.3,
-    "noise_sensitivity": 18.2,
-    "self_knowledge": 6.5,
-    "timestamp": "2025-10-28T13:24:20.006498"
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 27.0,
+    "precision": 25.6,
+    "recall": 37.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 32.0,
+    "hallucination": 34.4,
+    "faithfulness": 57.4,
+    "noise_sensitivity": 40.0,
+    "self_knowledge": 8.2,
+    "timestamp": "2025-11-08T20:42:39.071810"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Расстояние Чебышёва — это мера distances между точками в multidimensional space, где расстояниеdepends на Maximum coordinate difference. Это отличается от других метрик, таких как Euclidean или Manhattan.\n\nДля классификации данных можно использовать Around Nearest Object — Near Neighbor с расстоянием Чебышёва. Для этого необходимо:\n\n1. Выбрать Radius: threshold distance.\n2. Настройте Around Nearest Object — Neighbor с this Radius.\n3. Для каждого test point (предыдущего объекта) вычислите Maximum coordinate difference с всеми training objects в промежутке Radius.\n4. Если Any of these neighbors belongs to a certain class, assign the new object to that class.\n\nЭтот метод использует расстояние Чебышёва для кластеризации и классификации объектов, предполагая, что closer points tend to belong to the same class.",
+      "model_response": "Чем GRU отличается от LSTM?\n\n- ** state updates**: GRU использует only forget gate, omitting the need for input and reset gates, which are present in LSTM. This makes GRU simpler in implementation.\n\n- ** memory cell**: GRU does not use a separate cell to store information about the cell's state from previous steps, whereas LSTM has its own state cell that performs such storage.\n\n- ** computational complexity**: GRU typically requires less computation and is considered simpler than LSTM in terms of operations performed per time step. This simplicity can make it more efficient for certain tasks.\n\n- ** flexibility**: Despite being simpler, GRU maintains the same level of flexibility as LSTM in processing information. However, its simplicity may lead to faster convergence during training compared to LSTM, which handles more complex gate configurations.\n\n- ** stability**: In some cases, GRU's fixed memory cell can sometimes result in oscillations or instability if not properly managed. This is a common issue with other more complex RNN structures like LSTM.\n\nВ итоге, GRU может быть более стабильным в некоторых условиях и требует меньше вычислительных ресурсов, что делает его предпочтительнее в задangedных сценариях.",
       "rating": ""
     }
   ]

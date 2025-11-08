@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для понимания компонентов стандартной LSTM ячейки выделим следующие схемы и функции:\n\n1. **Input Cell**:\n   - Используется фиксированный токен как фиксированный вектор (w_i).\n   - Включает usually attention gate для фиксированного вектора.\n\n2. **Forget Cell**:\n   - Использует фиксированный токен как фиксированный вектор (u_f).\n   - Включает usual attention gate, который фильтрует state из контекста.\n\n3. **Cell State**:\n   - Используется usually identity matrix, не изменяющий state после пропуска.\n   - Includes usual tanh activation function для state transformation.\n\n4. **Output Cell**:\n   - Использует cell state для преобразования в выходный вектор (output).\n   - Включает usual attention gate для фиксированных токенов.\n\nКроме того, each LSTM cell feature typically gates like input, forget, and output, which apply sigmoid or tanh functions to the respective vectors. The usually identity matrix in cell state ensures that the state is not altered after being passed through.",
+    "rating": ""
+  }
+]

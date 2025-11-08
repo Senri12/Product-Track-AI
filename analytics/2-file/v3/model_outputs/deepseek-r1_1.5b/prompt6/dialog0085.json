@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Важно normalize данные для каждого слоя по батчу, чтобы избежать problem of exploding gradients and prevent gradients from escaping near-zero region. Normalization помогает сократить gradients, предотвращив explosion и улучшая обучение RNN network.\n\n**Ответ:** Важно использовать normalize technique для каждого слоя по батчу (minibatch normalization) вtraininingе RNN network, чтобы избежать problem of exploding gradients.",
+    "rating": ""
+  }
+]

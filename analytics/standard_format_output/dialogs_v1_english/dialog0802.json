@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0802",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 31.7,
-    "precision": 32.7,
-    "recall": 65.8,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 2.2,
+    "precision": 14.9,
+    "recall": 13.9,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.776739"
+    "timestamp": "2025-11-08T20:42:35.728741"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Adam is typically referred to in biblical contexts within Christianity; he was created according to Christian doctrine by God out of nothing (ex nihilo) as mentioned in Genesis 1:27 (\"So God created man ('adam) in His own image, in the image of God He created him; male and female ('ishshah va'ish), He created them.\") In this context, Adam is seen not only literally but also figuratively—as a representation or archetype. If you're referring to 'Adam Smith,' he was an influential 18th-century Scottish economist known for his work in moral philosophy as well.\n\nIf your reference pertains specifically to another \"Adam,\" such as software (e.g., Microsoft Excel's Adam function), please provide further details so I can assist you accurately with the correct context.",
+      "model_response": "Стандартная LSTM (Лонг Сокет, Не Гибрид) ячейка состоит из нескольких частей:\n\n1. **Хэш-функция**: Применяется к входным данным и помогает LSTM выдерживать информацию по длительное время, хранящее связи между элементами последовательности.\n2. **Выходной сигнал**: Это преобразуется из предыдущего времени и вводится в текущую ячейку. Этот аргумент помогает LSTM \"память\" о предыдущем состоянии.\n3. **Внутренняя структура (механизм замкнутие)**: Содержит внутренний состояние — кэширующий элемент, который хранит входные данные или выходные данные, в зависимости от направления обработки. Этот компонент снижает потерю информации по времени и позволяет LSTM \"память\" о предыдущем состоянии.\n4. **Гиперпараметры**: Наиболее важными гиперпараметрами ячейки являются скорость замкнутия (θ) и атрофическая степень (α). Они регулируют скорость изменения кэшированных значений, влияя на среду LSTM сохранить информацию по длительное время.\n5. **Входные и выходные гиперпараметры**: Входные гиперпараметры включают в себя общий шаг (step) или частоту обновления, а выходные параметры — α-коэффициент, который определяет скорость изменения кэшированных значений.\n\nВ целом, LSTM ячейка гибкая и мощная, позволяющая регулировать потерю информации по времени внутренними состояниями, что делает ее эффективной для обработки последовательных данных.",
       "rating": ""
     }
   ]

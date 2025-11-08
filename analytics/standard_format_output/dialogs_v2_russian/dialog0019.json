@@ -3,12 +3,12 @@
     "dialog_id": "dialog0019",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt1",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое over-fitting?",
-    "f1": 33.3,
-    "precision": 35.9,
-    "recall": 40.7,
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 22.0,
+    "precision": 29.9,
+    "recall": 27.2,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.980440"
+    "timestamp": "2025-11-08T20:42:37.284855"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое over-fitting?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Оverspecification или overfitting — это tình trạng, при котором môdelю не хватает достаточного количества данных для точно предсказывать результаты. Это может привести к неверным выводам и неправильной прогнозности.",
+      "model_response": "Правильный ответ: \n\n simple RNN — это тип recurrent neural network (RNN), который может не иметь полного представления в конце последовательности, поэтому требует больше времени для обучения и может быть менее эффективен, чем глубокие RNN. \n\n deep RNN — это тип RNN, который имеет более высокую точность, поскольку может распознавать Pattern в данных, что позволяет краткосрочным обоснованиям.\n\n Deep RNN также может быть более эффективный при работе с long-term dependencies или сложными последовательностями, поскольку его можно использовать для запоминания и предсказания значений в данных, которые являются значимыми для решения задачи. \n\nОднако, глубокие RNNs обычно не используются для решения tasks, требующих больших amountов точек, что делает simple RNN более подходящей для task, требующей большого количества точек или данных, которые должны быть запомниными.",
       "rating": ""
     }
   ]

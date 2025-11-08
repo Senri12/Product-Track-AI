@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0653",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое learning rate?",
-    "f1": 40.1,
-    "precision": 36.9,
-    "recall": 52.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 31.6,
-    "hallucination": 10.1,
-    "faithfulness": 35.4,
-    "noise_sensitivity": 19.9,
-    "self_knowledge": 4.5,
-    "timestamp": "2025-10-28T13:24:20.297596"
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 26.6,
+    "precision": 54.2,
+    "recall": 34.6,
+    "claim_recall": 66.9,
+    "context_precision": 100.0,
+    "context_utilization": 37.1,
+    "hallucination": 9.5,
+    "faithfulness": 52.9,
+    "noise_sensitivity": 9.6,
+    "self_knowledge": 11.0,
+    "timestamp": "2025-11-08T20:42:38.887202"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое learning rate?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Learning rate - это параметр оптимизатора, который определяет величину шага, совершаемую алгоритмом при спуске по градиенту функции целевой задачи. Если learning rate большой, то обучение происходит быстрее, но риск перехода в локальный минимум может возрастать. Если же learning rate мал, то обучение будет медленнее, но уменьшается риск перехода в локальный минимум. Строго говоря, learning rate не является фиксированным значением и может изменяться в процессе обучения по правилам определённого оптимизатора.",
+      "model_response": "",
       "rating": ""
     }
   ]

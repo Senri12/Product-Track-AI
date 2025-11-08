@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем отличие Simple RNN от глубоких RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вот разобрание отличий между Simple RNN и глубокими RNN:\n\n- **Global and Local Weights**:  \n  Global weights — обновляются во всех шагах.  \n  Local weights — только в текущем шаге.\n\n- **Simple RNN**:  \n  - Неделишно узлы.  \n  - Не имеет глобальных weightов, что может быть проще для обучения.  \n\n- **Gloabl RNN**:  \n  - Global Hidden State — global state.  \n  - Global Weights — global parameters.\n\nЭто основное отличие: Global RNN имеет глобальные параметры, а Simple RNN не имеет их.",
+    "rating": ""
+  }
+]

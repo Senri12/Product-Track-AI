@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1130",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое SGD?",
-    "f1": 40.0,
-    "precision": 43.6,
-    "recall": 52.8,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.365951"
+    "timestamp": "2025-11-08T20:42:37.365253"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое SGD?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " СGD (Gradient Descent) - это метод оптимизации функций, которые используются для поиска локальных минимумов многомерной функции, определяя направление, в котором изменяется параметр, чтобы уменьшить значение функции. Этот метод использует градиент (наблюдаемый спуск по направлению крутого спада), а не точку локального минимума, для определения направления. СGD является одним из самых часто использованых алгоритмов обучения машин для оптимизации многих классов моделей в области машинного обучения.",
+      "model_response": "Двунаправленные recurrentne networks (RNN) являются моделями RNN, обрабатываемых в направлении времени в双向sense, что позволяет simultaneously process data from both past and future time steps. Это может быть полезно для задач, где данные есть в предыдущих и upcoming Time steps.\n\n### Понятие:\nДвунаправленные RNN обрабатывают данные по времени в双向 схеме, что позволяет обрабатывать past and future Time steps simultaneously. В отличие от usual RNN, которые process data one-way in time or space, двунаправленные RNN могут捕捉ать long-term dependencies для данных из-за их ability to sequence data from both directions.\n\n### Как они отличаются от usual RNN:\n1. **Современное Processing**: Двунаправленные RNN обрабатывают данные вBoth past and future Time steps simultaneously, unlike usual RNN that process only one direction.\n2. **Long-term Dependencies**: Они могут leverage GRUs or LSTM-like architectures (GRU with gated connections or LSTM) for both directions to capture long-range dependencies in data.\n\n### Примеры:\nДвунаправленные RNN часто используются в задачах, связанных с последовательными данными, такими как из-orderная обработка текста или физические процессы. Например, в контексте из-за их能力和 to handle long-range dependencies, GRUs или LSTM-like моделей, так как они позволяют simultaneously capture patterns from past and future.\n\n### Вопрос: Какие методы используются для обработки данных双向 по Time steps?\nВ practiceductive mode, двунаправленные RNN часто используют GRUs или LSTM-like моделей с гибридными гидрациональными параметрамами для обработки данных из-за их能力强ции to handle long-term dependencies in both directions.",
       "rating": ""
     }
   ]

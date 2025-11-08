@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0179",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 44.1,
-    "precision": 57.5,
-    "recall": 45.6,
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 23.7,
+    "precision": 34.0,
+    "recall": 34.4,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.696211"
+    "timestamp": "2025-11-08T20:42:35.573289"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Okay, let's tackle this learning rate decay problem. It looks like we have a linear decay schedule.  To help you understand the process, let's break it down.\n\nFirst, can you tell me what you *already* know about learning rate decay in general?  Specifically, what is a learning rate, and why might we want to decay it during training? Don't worry about getting everything perfect - just tell me what comes to mind.",
+      "model_response": "Правильный ответ:\nТе, кто интересовался этой темой, знают о том, что Show, Attend and Tell - это модель, используемая для обработки текста и предназначенная для перевода texts в другие языки.\n\nОна состоит из трех слоя:\n\n1. Encoder:_codewriter, который обрабатывает входный текст (экзаменацию) и generates векторы, представляющие его последовательность слагаемых.\n2. Decoder: декодер, который rebuilds text на основе предыдущих векторов и gửiет их токенами.\n3. Attention:attention mechanism, который позволяет encoderу учитывать различные токоны входной последовательности и generate правильное тokoни для следующего шага.\n\nЭто отличает Show, Attend and Tell от обычного Recurrent Neural Network (RNN), которыйprocessing изображений, поскольку оно учитывает последовательность точек, а не векторы.",
       "rating": ""
     }
   ]

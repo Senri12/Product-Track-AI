@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0499",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое over-fitting?",
-    "f1": 40.4,
-    "precision": 43.6,
-    "recall": 57.8,
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 65.3,
+    "precision": 64.8,
+    "recall": 73.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.759221"
+    "timestamp": "2025-11-08T20:42:35.776580"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое over-fitting?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Overfitting occurs when a machine learning model learns the training data too well, including its noise or random fluctuations rather than capturing general patterns that will apply to new unseen data.\n\nWould you like more details on how it can be identified/avoided and why it's important in predictive modeling?",
+      "model_response": " Отличия между Simple RNN (простой рекуррентной сетью) и глубокими RNN (глубоко рекуррентными сетями) заключаются в сложности структуры и количестве слоев в сети.\n\nSimple RNN имеет одну или несколько рекуррентных слоев, которые обычно состоит из одного скрытого слоя. В Simple RNN используется одно направление времени (однонаправленная) - либо вперёд от начала последовательности к концу или наоборот. Они чаще всего используются для простых задач, таких как генерация последовательностей или поиск смысла при обработке естественного языка.\n\nГлубокие RNN (для некоторых видов глубины) могут иметь несколько рекуррентных слоев, каждое из которых может состоять из нескольких скрытых слоёв. Они используются для более сложных задач, таких как классификация и обработка естественного языка, где требуется анализ больших количеств данных и более тонкое извлечение информации. Глубина сетей помогает улучшить результаты в задачах, которые требуют выборки контекста и обучения для более сложных предложений.\n\nВ глубоких RNN могут также присутствовать некоторые техники, такие как добавление рекуррентного аттеншения (ATT) или трансформеров, которые помогают обрабатывать большие массивы данных и извлекать более тонкую информацию.\n\nТакже стоит отметить, что глубокие RNN могут быть очень сложными в обучении из-за проблем с обратной связью и взрывающихся или затухающих градиентов. Это зачастую требует использования техник для решения этих проблем, таких как clipping градиентов, уменьшения эпохи или изменение параметров обучения (learning rate).",
       "rating": ""
     }
   ]

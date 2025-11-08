@@ -4,25 +4,25 @@
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
     "system_prompt_id": "prompt10",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое learning rate?",
-    "f1": 39.8,
-    "precision": 42.2,
-    "recall": 51.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.8,
-    "hallucination": 8.7,
-    "faithfulness": 35.0,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 6.3,
-    "timestamp": "2025-10-28T13:24:20.057673"
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 26.4,
+    "precision": 23.7,
+    "recall": 38.9,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.5,
+    "hallucination": 40.2,
+    "faithfulness": 52.8,
+    "noise_sensitivity": 36.1,
+    "self_knowledge": 7.0,
+    "timestamp": "2025-11-08T20:42:39.076318"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое learning rate?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "**Что такое learning rate?**\n\nLearning rate — это параметр в нейронных сетях, который controlирует скорость обучения. Он определяетhow quickly model parameters are updated during the optimization process and typically controls the step size in gradient descent.\n\nИспользуемые параметры:\n- **size momentum ( impuls)**:this parameter determines how much we weigh previous gradients before current gradient. It's often set to a value like 0.9 or 0.5.\n- **learning rate (lr)**: this is the actual parameter that scales the gradient and adds it to model parameters, controlling their step size.\n\n**Пример метода mometums:**\nomega = omega + momentum * gradient\ngradient = grad(L(omega))\n\n**Popularны методы:**\n- SGD (stochastic gradient descent) — learning rate can be large or small.\n- Momentum — helps accelerate convergence and reduce oscillations in optimization.\n- Adam — combines momentum with averaged gradients across batches.\n\n**Дополнительные аспекты:**\n- Learning rate can vary per parameter, but often combined with size momentum.\n- Regularization techniques (weight decay) help prevent overfitting by penalizing large weights.\n- Batch normalization helps with learning rate optimization and stabilizes training.",
+      "model_response": "**Различия между GRU и LSTM**\n\n1. **Гаты фильтрации памяти:**\n   - GRU не имеет гатов фильтрации памяти, что делает его более гибким для разработки моделей.\n   - LSTM имеет несколько гатов, которые фильтrierают память за пределами определенного времени.\n\n2. **Сжатаes памяти:**\n   - GRU позволяет сжатае памяти по порядку, что может ускорить обработку данных.\n   - LSTM позволяет фильтровать память за пределами определенного времени, что может быть стабильнее для некоторых задач.\n\n3. **Сокращение слоев:**\n   - GRU не требует гатов фильтрации памяти, что позволяет сократить количество слоев в архитектуре.\n   - LSTM имеет Multiple gatów для фильтрования памяти.\n\n4. **Порядок сжатаes памяти:**\n   - GRU позволяет сжатае памяти по порядку, что делает его более уieldvableным для последовательных задач.\n   - LSTM фильтрует память за пределами определенного времени.\n\n5. **Глубина архитектуры:**\n   - GRU может быть гибким в том, как она использует гаты фильтрации памяти.\n   - LSTM имеет Multiple gatów, что может быть полезно для обработки данных с более сложным структурой.\n\n**Вывод:**\nGRU и LSTM различаются в их гатах фильтрации памяти, сжатаes памяти и их глубине. GRU позволяет сократить количество слоев в архитектуре, что может быть полезно для улучшения производительности, тогда как LSTM фильтрует память за пределами определенного времени.",
       "rating": ""
     }
   ]

@@ -4,25 +4,25 @@
     "model_name": "mistral",
     "model_parameters": "7.0B",
     "system_prompt_id": "prompt15",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
-    "f1": 41.4,
-    "precision": 36.6,
-    "recall": 58.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 35.8,
-    "hallucination": 10.7,
-    "faithfulness": 33.0,
-    "noise_sensitivity": 19.2,
-    "self_knowledge": 6.4,
-    "timestamp": "2025-10-28T13:24:20.279181"
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 32.8,
+    "precision": 32.3,
+    "recall": 44.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 48.1,
+    "hallucination": 28.2,
+    "faithfulness": 61.0,
+    "noise_sensitivity": 39.5,
+    "self_knowledge": 10.8,
+    "timestamp": "2025-11-08T20:42:39.205763"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Welcome to the conversation! Let's break down your question about Adagrad, a gradient descent optimization algorithm used in machine learning.\n\nGiven that G_t-1,ii = 4 and g_t = 2, we can see that you have provided the first and second moments of the gradient (the square of the gradient) for one dimension i at time t.\n\nAdagrad adjusts the learning rate for each parameter individually based on the history of its gradients. The update rule in Adagrad is as follows:\n\nw_t = w_{t-1} - η \\* G_t / sqrt(G_t-1 + ε)\n\nwhere:\n- w_t is the weight at time t\n- w_{t-1} is the previous weight\n- η is the learning rate (you provided η = 0.1)\n- G_t is the current gradient (since you gave g_t, we can find G_t = g_t^2)\n- G_t-1 is the running total of past squared gradients for this weight (you provided G_t-1, ii = 4)\n- ε is a small constant to prevent division by zero (you provided ε=1e-8)\n\nWith the given values, you can now compute w_t using the update rule.",
+      "model_response": " В задачах машинного перевода внимание важно для того, чтобы повысить качество перевода. Механизм внимания (Attention) помогает нейронной сети сосредоточиться на ключевых словах или фразах в тексте исходного и выбранных для перевода, а также учитывать контекст. Это особенно важно в сложных языковых задачах, таких как перевод стихов, научной литературы или рекламной копи. Механизм внимания позволяет нейронной сети уделять больше времени ключевым словам и меньше - менее важным для перевода, тем самым повышая качество результата. Кроме того, механизм внимания также применяется в задачах синтеза текста, где необходимо учитывать контекст и содержание предыдущих слов для правильного построения последующего.",
       "rating": ""
     }
   ]

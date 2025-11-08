@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0684",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое метод Ньютона?",
-    "f1": 41.1,
-    "precision": 52.4,
-    "recall": 61.4,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 6.7,
+    "precision": 17.5,
+    "recall": 18.6,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.832892"
+    "timestamp": "2025-11-08T20:42:35.748170"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое метод Ньютона?",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "The Newton method is an iterative technique used to find successively better approximations to the roots (or zeroes) of a real-valued function. It begins with an initial guess at which it iterates by applying certain mathematical rules derived from calculus, specifically using derivatives.\n\nHowever, before we proceed further into explaining its applications and how it's implemented in detail — would you like me just to reiterate this basic definition for clarity or is there something more specific about the Newton method that you're interested in learning?",
+      "model_response": "Замочные скважины, или \"пеёли\", в Long Short-Term Memory (LSTM) архитектуре используются для предотвращения проблемы, называемой \"диссоции\" и \"заключением информации\".\n\nДиссоция возникает, когда часть оставшихся состояния после активации элемента увеличивается до нуля. Это может привести к тому, что важная информация потеряется и не может быть использована для расчета следующего состояния. Предотвращая это, LSTM с помощью пеёлей сохраняет часть входных значений для каждого элемента, что обеспечивает более точный и стабильный распространение информации по времени.\n\nЗаключение информации происходит при работе с отсутствующими элементами в последней скважине. В LSTM, когда элемент передается через несколько транзисторов (уровня слоя), оставшаяся информация может утрачиваться, что приводит к потере важной сети действий. Пеёли LSTM предотвращают эту исключительность, сохраняя информацию из передней скважины, чтобы она могла быть использована для расчета следующего состояния.\n\nТаким образом, пеёли в LSTM дополняют функционирование нормальных транзисторов, улучшая способность модели сохранить и передавать важную информацию в пространстве времени.",
       "rating": ""
     }
   ]

@@ -4,25 +4,25 @@
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
     "system_prompt_id": "prompt10",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 39.8,
-    "precision": 42.2,
-    "recall": 51.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.8,
-    "hallucination": 8.7,
-    "faithfulness": 35.0,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 6.3,
-    "timestamp": "2025-10-28T13:24:20.057496"
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 26.4,
+    "precision": 23.7,
+    "recall": 38.9,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.5,
+    "hallucination": 40.2,
+    "faithfulness": 52.8,
+    "noise_sensitivity": 36.1,
+    "self_knowledge": 7.0,
+    "timestamp": "2025-11-08T20:42:39.075948"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Adam (Adaptive Moment Estimation) is an optimization algorithm designed to improve the training efficiency of machine learning models, especially those with large neural networks and complex datasets. It combines the benefits of two approaches: AdaGrad, which adapts the learning rate per parameter based on the sum of squares of gradients, and the momentum term, which helps smooth out gradient updates over time.\n\nKey points about Adam include:\n\n1. **Adaptive Learning Rate**: Unlike traditional optimizers that use a fixed learning rate, Adam adjusts its own learning rate dynamically based on the history of gradients for each parameter.\n\n2. **Momentum Estimation**: The algorithm maintains two moving averages: one for the average gradient (first moment) and another for the squared gradient (second moment). These help reduce the impact of noise in gradient estimates.\n\n3. **Smoothed Updates**: By using exponentially decaying moving averages, Adam effectively smooths out gradient updates, reducing the effect of delayed gradients and providing more stable training dynamics.\n\n4. **Efficient Training**: Adam is particularly efficient for large models due to its memory-efficient approach and ability to handle the noise inherent in deep learning optimization.\n\n5. **Flexibility**: The choice of hyperparameters, such as the initial learning rate, momentum decay rates, and adjustment frequency (like the number of steps after which the moving average decays), can significantly impact performance. They often require tuning based on specific datasets and tasks.\n\nIn summary, Adam is a powerful optimizer that adapts to the characteristics of the loss function, making it highly effective for training complex models, especially those with non-stationary objectives like deep neural networks.",
+      "model_response": "**Компоненты стандартной LSTM ячейки:**\n\n1. **Память (Cell Memory)**:\n   -cell_fw (forward) и cell_recurrent (backward): Два состояния памяти, которые могут быть присутствовать или отсутствовать.\n\n2. **Сумма памяти**:\n   - sum_cell: Сумма state_fw и state_recurrent, используемая для обработки текущего input.\n\n3. **Сумма градиентов (sum_g)**:\n   - sum_gradients: Сумма значений градиентов по параметрам, используемые для обновления параметров в следующем шаге.\n\n4. **Градиенты на памяти (g)**:\n   - g: Градиенты на память, используемые для обновления state_fw и state_recurrent.\n\n5. **Контекст (context)**:\n   - context_fw и context_recurrent: Память, которая используется для обработки Current Input.\n\n6. **Потенциальные контексты на предыдущих шагах**:\n   - context_prev_fw и context_prev_recurrent: Потенциальные контексты, используемые для обновления state.\n\n7. **Сумма градиентов и контекста (sum_g + context)**:\n   - sum_gradients + context: Сумма градиентов и контекста, используемая для обновления параметров в следующем шаге.\n\n8. **Контекст на предыдущих шагах**:\n   - This may refer back to the above components or indicate a different context for updating parameters.\n\n9. **Сумма градиентов и контекста (sum_g + context)**:\n   - Again, refers back to prior points.\n\n10. **Контакты на предыдущих шагах**:\n    - This might be redundant or refer back to specific connections used in the context of previous steps.\n\n**Проверка:**\n- Total unique components are 10.\n- Each component is defined clearly and concisely, avoiding redundancy.\n\nThis breakdown ensures that all essential parts of the LSTM cell architecture are covered comprehensively.",
       "rating": ""
     }
   ]

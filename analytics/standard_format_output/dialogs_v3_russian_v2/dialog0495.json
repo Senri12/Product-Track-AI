@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0495",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
-    "f1": 37.7,
-    "precision": 36.0,
-    "recall": 51.5,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 32.5,
-    "hallucination": 10.0,
-    "faithfulness": 34.4,
-    "noise_sensitivity": 21.1,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.259304"
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Можно ли автоматически подбирать архитектуру рекуррентной ячейки?",
+    "f1": 34.7,
+    "precision": 42.8,
+    "recall": 43.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 45.4,
+    "hallucination": 13.3,
+    "faithfulness": 41.5,
+    "noise_sensitivity": 10.6,
+    "self_knowledge": 11.8,
+    "timestamp": "2025-11-08T20:42:38.907301"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "content": "Можно ли автоматически подбирать архитектуру рекуррентной ячейки?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Перейдем к решению вопроса: в примере спама, для слова \"win\", вероятность может быть найдена как:\n\n$$\\mathsf P(X = \\text{win}| \\text{Класс} = \\text{спам}) = \\frac{1 + \\text{количество слов } X \\text{ в классе } \\text{спам}}{|V| + \\text{количество слов в классе } \\text{спам}} = \\frac{1+1}{8+7} = \\frac{2}{15}.$$\n\nЗдесь мы использовали факт, что слово \"win\" встречается один раз в тренировочных данных с классом \"спам\", а количество слов вообще в тренировочных данных равно 8+7 = 15.",
+      "model_response": "",
       "rating": ""
     }
   ]

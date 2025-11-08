@@ -3,26 +3,26 @@
     "dialog_id": "dialog0128",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt10",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 39.8,
-    "precision": 42.2,
-    "recall": 51.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.8,
-    "hallucination": 8.7,
-    "faithfulness": 35.0,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 6.3,
-    "timestamp": "2025-10-28T13:24:20.055167"
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 35.9,
+    "precision": 33.0,
+    "recall": 51.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 52.2,
+    "hallucination": 27.1,
+    "faithfulness": 64.2,
+    "noise_sensitivity": 39.9,
+    "self_knowledge": 8.7,
+    "timestamp": "2025-11-08T20:42:39.080454"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Расстояние Чебышёва — это определение ближайших целей в来找луды, которое используется для оптимизации алгоритмов классификации. В двумерном пространстве расстояние Чебышёva между точками (x1, y1) и (x2, y2) выглядит как сумма их длины в-x и длины в-y:\n\n\\[ d((x_1, y_1), (x_2, y_2)) = |x_1 - x_2| + |y_1 - y_2| \\]\n\nЭто расстояние commonly known as Chebyshev distance.",
+      "model_response": "**Difference Between GRUs and LSTMs:**\n\nBoth GRUs (Gated Recurrent Units) and LSTMs (Long Short-Term Memory) are types of recurrent neural networks (RNNs) designed to handle sequential data, but they differ in their gate structures and implementation. Here's a structured breakdown:\n\n1. **Gated Mechanism:**\n   - **LSTM:** Uses two gates:\n     - **Input Gate:** Determines what information to keep from the current input.\n     - **Forget Gate:** Reduces the cell state by forgetting some of that kept information, often using non-linear operations like tanh.\n   - **GRU:** Combines both gates into a single operation:\n     - One gate (input) controls how much context is retained.\n     - The other (output) determines what part of the hidden state becomes the new hidden state.\n\n2. **Simplicity and Efficiency:**\n   - GRUs are simpler in structure compared to LSTMs, requiring fewer gates and a memory cell.\n   - This simplicity can lead to more efficient training as it reduces parameter optimization complexity, making them faster during training.\n\n3. **Handling Long-Termed Dependencies:**\n   - Both GRUs and LSTMs are effective for capturing long-range dependencies but perform similarly in this aspect.\n   - However, GRUs may offer computational efficiency gains due to their simpler gate operations.\n\n4. **Implementation Differences:**\n   - While both use a memory cell (a hidden state), GRUs integrate inputs and gates into a single operation, whereas LSTMs process each gate separately and combine results.\n\n5. **Performance:**\n   - Studies indicate that GRUs often perform similarly to or even better than LSTMs on certain tasks due to their efficiency.\n   - However, the choice between GRUs and LSTMs depends on specific requirements like computational resources and task complexity.\n\nIn summary, GRUs are simpler, more efficient, and sufficient for many sequential prediction tasks compared to standard LSTM implementations. Their design choices make them particularly effective in scenarios where computational efficiency is a priority.",
       "rating": ""
     }
   ]

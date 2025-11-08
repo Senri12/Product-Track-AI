@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1189",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt10",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое over-fitting?",
-    "f1": 45.5,
-    "precision": 52.4,
-    "recall": 53.2,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.328411"
+    "timestamp": "2025-11-08T20:42:37.342737"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое over-fitting?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Over-fitting означает ситуацию в машинном обучении, когда модель слишком хорошо адаптируется к данным тренировки и неправильно классифицирует или предсказывает новые данные. В результате, модель может давать точность на выборке тренировочных данных, которые превышает её способность классифицировать или предсказывать неизвестные данные. Это происходит, когда модель изощряется слишком много по поводу мелких деталях в тренировочных данных и усваивает их шумы или аномалии, которые не являются представительными для большей части данных. Чтобы избежать over-fitting, можно использовать техники повышения общих способностей модели к генерализации, такие как регуляризация и cross-validation.",
+      "model_response": "В чем отличие Simple RNN от глубоких RNN:\n\n1. **Определение архитектур**:\n   - **Simple RNN**: Основной архитектура, где участвуют только One Cell (single cell).\n   - **LSTM (Gated Recurrent Unit)**: Глубокая архитектура с Two Cells: One gated (recurrent) и One forgetful (forgetful).\n\n2. **Функциональность**:\n   - Simple RNN обрабатывает последовательности, используя state только из предыдущего шага.\n   - LSTM позволяет обрабатывать.long-term dependencies, делая state для каждого cell dependents on input and previous state.\n\n3. **Градиенты и обновления**:\n   - Simple RNN может быть более простой и понятной, но градиенты могут быть затухающие при processing Longer sequences.\n   - LSTM с Two Cells позволяет обрабатывать Longer sequences и лучше для задач с long-term dependencies.\n\n4. **Применение**:\n   - Simple RNNsuit应用于 задачи анализа независимых отдельных последовательностей, где долгосрочные детали важны.\n   - LSTM более подходящий для задач с long-term dependencies и Longer sequences.\n\nТаким образом, глубокие RNN отличаются из-за их обработки Longer sequences и большего времени взаимодействия с state. Simple RNN является базовым архитектурами, но может быть упрощен для некоторых задач.",
       "rating": ""
     }
   ]

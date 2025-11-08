@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0933",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое евклидова метрика?",
-    "f1": 44.6,
-    "precision": 49.1,
-    "recall": 50.5,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.234131"
+    "timestamp": "2025-11-08T20:42:35.616080"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое евклидова метрика?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Евклидова метрика (Euclidean distance) — это меряющая расстояние между двумя точками в многомерном пространстве, определяемая формулой:\n\nd(A, B) = √((x1-x2)^2 + (y1-y2)^2 + ... + (n1-n2)^2),\n\nгде A=(x1, y1,..., n1) и B=(x2, y2,..., n2) — два вектора длины n в n-мерном пространстве.\n\nЭта метрика широко применяется в математике и информатике для определения расстояния между точками на плоскости или в пространстве. Она названа в честь древнегреческого геометра Евклида, который первым систематически изложил понятие плоскости и пространства в своих трудах.",
+      "model_response": "В задачах с последовательными данными, такие как RNN, input может быть continuoum (_scalar или vector) или discrete. Входные stateы обновляются последовательно на каждом шаге или одновременно для каждого token в batch. \n\n### Вывод:\n- **Input Types**: Continuous (scalar or vector) or discrete.\n- **Inputs**:\n  - Sequence: Длительная последовательность данных, обновляемая на каждом шаге RNNа.\n  - Batch: Набор из multiple sequential inputs, обработанных одновременно или последовательно.\n- **Outputs**:\n  - Sequence: Оput sequence — последовательность stateov RNNа, соответствующая inputsequence.\n  - Batch: Набор из multiple sequential outputs, соответствующий batchinput.\n\nANSWER: Input can be continuous (scalar or vector) or discrete. Inputs are either a sequence or batch. Outputs are also sequences or batches depending on task. RNNs process inputs step-wise or simultaneously for each token in batch.",
       "rating": ""
     }
   ]

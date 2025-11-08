@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Количество типов входов и выходов для задач RNN:\n\n1. **Один вход**: 输入 – последовательность current symbols (например, 'abc').\n2. **Уsingle output**: Выход – текущая символ (например, 'c').\n3. **Past states**: Объясняю, что past states хранят контекстные теги или фиксированные word pieces для предсказания下一步.\n4. **Multimedia input**: 输入 – последовательность pixels изображения (например, 'c').\n5. **Sequence to sequence output**: 输入 – complete text (symbol sequence), 输出 – class label.\n6. **Token classification**: 输入 – symbol sequence, 输出 – token index.\n7. **Recursive processing**: 输入 – full text, 输出 – current word, past states хранят контекстные теги для распознавания下一步.\n\nЭти типы input/output помогают Modelsey обучаться с последовательными данными и использовать память про предыдущие элементы.",
+    "rating": ""
+  }
+]

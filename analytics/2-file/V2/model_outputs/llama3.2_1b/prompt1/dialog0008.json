@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Чем GRU отличается от LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Окончательный ответ: GRU (Gated Recurrent Unit) — это аналогичный слей, но с более простой структурой и Fewer hidden units. LSTM (Long Short-Term Memory) имеет больше hidden unit, чем GRU, что делает его более эффективным для обработки последовательных dữтий.\n\nГРУ:\n\n* Взимает только на основе current state hidden state\n* Без использования hidden state предыдущего hidden state\n* Без замены hidden state при изменении input\n* Сотрудничает с attention module, чтобы определить наиболее вероятные words в предложении\n\nLSTM:\n\n* Вычисляет hidden state и output на основе hidden state и current state\n* Позволяет сохранять hidden state дляlong-term memory\n* Объединяет hidden state из разныхhidden layer для более сложных вычислений\n\nGRU — это правильный ответ, потому что GRU отличается от LSTM с использованием сложной структурой иFewer hidden unit.",
+    "rating": ""
+  }
+]

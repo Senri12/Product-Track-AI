@@ -3,12 +3,12 @@
     "dialog_id": "dialog0078",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt3",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 29.7,
-    "precision": 32.3,
-    "recall": 39.0,
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 25.1,
+    "precision": 35.3,
+    "recall": 35.2,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.905859"
+    "timestamp": "2025-11-08T20:42:37.311669"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Keras — это высокoprocesорное разрядное обеспечение для TensorFlow, OpenCV и other deep learning frameworks. Это позволяет создавать модели deep learning с помощью Python, а не только с помощью других programming language.\n\nКерсэ также является popularной API (Application Programming Interface) для создания моделей когнитивных нейронных_network для разнообразных типов задач, таких как расследирование, предсказание, распознаваниеface и другие.",
+      "model_response": "Окончательный ответ: В задаче RNN (Регрессивное моделирование) встречаются входные данные, выходные данные и токены, которые могут быть представлены следующими типами:\n\n* Input:\n\t+ Энコードеры (Е), которые получают в качестве inputов токены входной последовательности.\n\t+ Полноценный блок (PB) или полносвязнаяblock (PNB), который получает в качестве inputов токены входной последовательности.\n* Output:\n\t+ Энコードеры (Е), которые выдаются как outputы RNN.\n\nAdditionally, в некоторых задачах RNN может быть использовано дополнительноеinput, что может быть представлено следующими типами:\n\n* Additional Input (AI):\n + Сокращенный набор данных, который можно использовать для обучения модели.\n + Внешние данные или данные из других источников, которые могут быть полезны для решения конкретной проблемы.\n\nВ задаче RNN не подчеркивается использование этих типов input в качестве ответа.",
       "rating": ""
     }
   ]

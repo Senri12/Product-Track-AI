@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как работает механизм внимания (Attention)?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Механизм внимания, также известный как внимание или приоритет, — это важнейший аспект модели BERT, developed в 2018 году. Он представляет собой способ обработки текста, allowing model to focus on certain parts of the input sequence while ignoring others.\n\nЧтобы понять механизм внимания:\n\n* Модель БERT состоит из трех слоя: encoder, decoder и attention mechanism.\n* Encoder преобразует входный текст в hidden state (созданную за счетSelf-Attention).\n* Decoding stage сначала вычисляет output поэтапно, используя hidden state и токены input sequence.\n* Attention mechanism обрабатывает hidden state, чтобы определить приоритет каждого тока input sequence для输出а.\n\nAttention mechanism состоит из двух частей:\n\n1. **Self-Attention**: оценивает важность каждого тока вhidden state relative к другим токам в последовательности. Токаны input sequence подвергаются attentional transformation, что включает в себя сдвиг и поворот.\n2. **Self-Output**: вычисляет output поэтапно, используя hidden state и токены input sequence.\n\nГрадиенты при обучении model БERT включают в себя два типа градиентов:\n\n* **Расширенный градiente (LR)**: увеличивается общая скорость обучения model в 1/4 каждой неделе. Этот тип градиента позволяет модели обрабатывать более широкие проблемы, но также может привести к отстаревшей работе.\n* **Взрывающий градiente (SGD)**: сдвигает гradient по времени. Этот тип градиента используется для скорректировки весов model.\n\nОбратите внимание, что механизм внимания не просто оценивает важность каждого тока и вычисляет его значение. Он также учитывает коэффициент приоритета (Attention Weight) для EACH тока input sequence. Это позволяет modelу приоритетно распределять ресурсы в соответствии с интересами input sequence.\n\nВ данном контексте, когда модели БERT обучаются наMasked Language Modelin (), Attention Mechanism используется для вычисления наиболее вероятного значения тока для каждого тока input sequence. Это позволяет modelу понимать контекст и распределять ресурсы в соответствии с интересами input sequence.\n\nЧтобы вычислить Attention Weight, мы можем использовать формулу:\n\nAttention Weight = exp(Attention Value) / (Attention Value + epsilon)\n\nгде Attention Value — значениеAttention Mechanism для каждого тока input sequence. В данном случае epsilon равен 1e-8.\n\nОбратите внимание, что Attention Weight не является точным представлением количества обратной степени attentional transformation. Это представляет собой фактическое значение, которое model использует при вычислении output.\n\nВ практике, когда модели BERT обучаются на Masked Language Modelin (), Attention Mechanism используется для вычисления наиболее вероятного значения тока для каждого тока input sequence. Это позволяет modelу понимать контекст и распределять ресурсы в соответствии с интересами input sequence.",
+    "rating": ""
+  }
+]

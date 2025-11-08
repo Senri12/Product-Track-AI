@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1127",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое TensorFlow?",
-    "f1": 40.0,
-    "precision": 43.6,
-    "recall": 52.8,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.365421"
+    "timestamp": "2025-11-08T20:42:37.364247"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое TensorFlow?",
+      "content": "Что такое скрытое состояние в RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Тензорный поток (TensorFlow) - это открытый источник кода, расширяемый набор инструментов для машинного обучения, предназначенный для построения и обучения различных типов моделей машинного обучения. Поток тензоров (TensorFlow) позволяет создавать комплексные архитектуры нейронных сетей на больших вычислительных ресурсах, а также оптимизировать их для работы на мобильных устройствах. Данная система распространяется под лицензией Apache 2.0 и является одной из самых популярных платформ для создания машинного обучения и глубоких нейронных сетей.",
+      "model_response": "skory:\n\nSkрытое состояние в RNN — это state networkh_i, которое описывает state на основе предыдущих нейронов network. ВRNNh_i+1depends on h_i and x_t, аh_i depends on h_{i-1} undx_{t-1}. В таком случаеh_i+1 в knowledge graph дляh_i undx_t. Это полезно для обработки последовательных данных в RNN.\n\n**Ответ:**\n\nSkрытое состояние в RNN — это state networkh_i, описывающее state на основе предыдущих нейронов network. ВRNNh_i+1depends on h_i undx_t, аh_i depends on h_{i-1} undx_{t-1}. В таком случаеh_i+1 в knowledge graph дляh_i undx_t. Это позволяет обработать последовательные данные и предсказывать Next step.",
       "rating": ""
     }
   ]

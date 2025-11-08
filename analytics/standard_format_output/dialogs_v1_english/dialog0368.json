@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0368",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 47.3,
-    "precision": 44.3,
-    "recall": 61.7,
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 0.0,
+    "precision": 50.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.603204"
+    "timestamp": "2025-11-08T20:42:35.517280"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Понятно, давайте разберемся, что такое расстояние Чебышёва.\n\n**Определение:**\n\nВ контексте, который мы рассматриваем (а именно, раздел математической статистики и машинного обучения, посвященный оценке сходства), расстояние Чебышёва между двумя векторами *x* и *y*, обозначаемое как d<sub>ψ</sub>(*x*, *y*), определяется следующим образом:\n\n```\nd_ψ(x, y) = max_{i} |x_i - y_i|\n```\n\nГде:\n\n*  *x* и *y* - векторы в *n*-мерном пространстве.\n*  *x_i* и *y_i* - *i*-тые компоненты этих векторов.\n*  *max* обозначает максимальное значение по всем компонентам.\n\n**Что это значит?**\n\nПроще говоря, расстояние Чебышёва между двумя векторами - это **максимальная абсолютная разность между их соответствующими компонентами**.  То есть, оно равно наибольшей разнице между двумя значениями, которые сравниваются.\n\n**Пример:**\n\nПусть у нас есть два вектора:\n*  x = [1, 2, 3]\n*  y = [4, 5, 6]\n\nТогда расстояние Чебышёва будет:\n\nd<sub>ψ</sub>(*x*, *y*) = max(|1 - 4|, |2 - 5|, |3 - 6|) = max(3, 3, 3) = 3\n\n**Почему это называется \"Чебышёва\"?**\n\nЭто расстояние названо в честь русского математика Николая Чебышева, который в начале 20-го века занимался проблемами оценки больших случайных величин.  Он разработал методы для оценки погрешностей измерений, и расстояние Чебышёва является одним из результатов его исследований.\n\n**Когда используется расстояние Чебышёва?**\n\nОбычно расстояние Чебышёва используется, когда нужно оценить \"расстояние\" между векторами, где важна не общая величина разности, а *максимальная* разность между компонентами.  Это особенно полезно, когда нужно учитывать, что даже одна значительная разность может быть существенной.\n\n**До этого момента мы рассматривали, в основном, евклидово расстояние.  Как вы думаете, чем расстояние Чебышёва отличается от евклидова расстояния?  Какие преимущества и недостатки у каждого из этих способов измерения расстояния?**\n",
+      "model_response": "\n\n\nassistant:hentrez isabella Killed in Spanish wordschienentiestive hadiershends andiers,IRTempenseideininsistingierenituriteractendediffiertiemiaboritingoicescriptoyllib\n               ippingappingensure iiscientiersleepiaraboritrioidsiersarentouarduringiven urchieren denaborenceiertimesis_palencesimplicationations ofiveintensityiersessioniersortsaborinselaborenseiertiertiertierscripituriert andierscientificitasiziableteatresistingaffend sharpens slightlyins\nEti works with Reverse chronological order fromainsureserhe integer iinquiry_question_answer_questions_examinesortien icesupporticiendoateirohierenytipsychicalaboriteractsimplifiedaborupierenirtaining isabellaidingoniersenseismicenseences ofiertainsenseleverageating theiteration byins yourvoice williersuperioraboritricebenefitorischeimpulseiterierspsychischeinsuchaboriterentiensubient denitingaigeni ändert, maisiert maps\n-   =both_left -theatreastheaboriterasingiarienaffiliationiertainsortsorturingaborainingiertensecretierenytilemisleepersoniersituraborentschoutrends Kineticité andins newaborencescaniscaseinaboriter isabellaidsiting upieren a été Multipleorum\nartsideiquoenceintensidadentantōiniores ändert wurde ein Abosessionendiringiffortimerates animesiemoreaffineiert,there have_question:\nWrite thefunction toierstrendsuring this_reportenseiinsiteroringhichatheymselvesiscienthatierenivingentiestscriptingencensingierscripture abstract\n\nSchieds andit            ReverseNeuilliaboriarienentleentyendidePlayereringediffenshashtaginsurentsubmoralienuntainingentrezinasiert Patientierenileinische Gleichnamn airescientiatescribtoends weichen urchrestlyng\n",
       "rating": ""
     }
   ]

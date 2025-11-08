@@ -3,26 +3,26 @@
     "dialog_id": "dialog0193",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
-    "f1": 25.1,
-    "precision": 30.2,
-    "recall": 38.5,
-    "claim_recall": 34.5,
-    "context_precision": 50.0,
-    "context_utilization": 29.5,
-    "hallucination": 13.2,
-    "faithfulness": 31.7,
-    "noise_sensitivity": 17.3,
-    "self_knowledge": 5.1,
-    "timestamp": "2025-10-28T13:24:20.042114"
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 27.9,
+    "precision": 28.9,
+    "recall": 45.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 46.6,
+    "hallucination": 30.6,
+    "faithfulness": 52.1,
+    "noise_sensitivity": 33.9,
+    "self_knowledge": 10.6,
+    "timestamp": "2025-11-08T20:42:39.051439"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "To classify the test object using the k-nearest neighbors (k-NN) algorithm:\n\n1. **Calculate Distances**: Compute the Euclidean distance from the test object to each training object.\n\n2. **Sort Distances**: Arrange the objects in order of increasing distance from the test object.\n\n3. **Select Neighbors**: Choose the nearest 'k' objects based on the sorted distances.\n\n4. **Classify**: Assign the class label based on the majority vote among the selected neighbors.\n\nGiven the data:\n\n- Test Object: Sladder = 6, Xruht = 9  \n- Nearest Neighbors (using k=...)  \n  - Carrot (~5.00) – Fruit  \n  - Kale (~5.00) – Fruit  \n  - Goat (~4.47) – Protein  \n  - Olive (~4.12) – Fruit  \n  - Rabbit (~3.61) – Protein  \n\n**Majority Votes**: Fruit (Carrot, Kale, Olive), Protein (Goat, Rabbit)\n\nSince there are more Fruit votes than Protein votes, the test object is classified as **Fruit**.\n\nAnswer: The test object is classified as Fruit.",
+      "model_response": "Анализ:\n\nВ примере с Transformer-архитектурами мы видим, что注意力 используется для гибкого обновления репrezентации текущего токена на основе остальных токенов. Это важно для обеспечения лаконичного и глубокого понимания текста в контексте全局ной информации.\n\nНо как именно注意力 важна в machine translation tasks?\n\nИтак, я думаю, что注意力 играет ключевую роль в machine translationBecause Attention allows machines to understand how different parts of the text relate to each other and to the overall context. This creates a more flexible and human-like understanding of language, leading to more robust and accurate translations.\n\nНо как конкретно определяется attention в контексте machine translation tasks?\n\nИтак,注意力 может быть разной структурой: soft attention или hard attention. Soft attention кажется более practiceable из-за градиентногоBackpropagation, что позволяет эффективно обновлять модели.\n\nВ заключение:\n\nАнализ показывает, что注意力 играет ключевую роль в machine translation Because Attention enables machines to understand relationships between different parts of the text and the overall context. This results in a more flexible and human-like comprehension of language, which is crucial for producing accurate translations.",
       "rating": ""
     }
   ]

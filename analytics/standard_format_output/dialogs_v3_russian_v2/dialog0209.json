@@ -3,26 +3,26 @@
     "dialog_id": "dialog0209",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 25.1,
-    "precision": 30.2,
-    "recall": 38.5,
-    "claim_recall": 34.5,
-    "context_precision": 50.0,
-    "context_utilization": 29.5,
-    "hallucination": 13.2,
-    "faithfulness": 31.7,
-    "noise_sensitivity": 17.3,
-    "self_knowledge": 5.1,
-    "timestamp": "2025-10-28T13:24:20.045420"
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 39.7,
+    "precision": 40.8,
+    "recall": 53.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 54.8,
+    "hallucination": 21.4,
+    "faithfulness": 59.6,
+    "noise_sensitivity": 31.1,
+    "self_knowledge": 12.3,
+    "timestamp": "2025-11-08T20:42:39.047134"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "The learning rate at each step t is calculated using the formula η(t) = η₀ / (t + 1), where η₀ is the initial learning rate.\n\nGiven:\n- Initial learning rate, η₀ = 0.1\n- Step size, t ranges from 0 to 9\n\nThe learning rates for each step are:\n\n- t=0: η(0) = 0.1 / (0 + 1) = 0.1\n- t=1: η(1) = 0.1 / (1 + 1) = 0.05\n- t=2: η(2) = 0.1 / (2 + 1) ≈ 0.0333\n- t=3: η(3) = 0.1 / (3 + 1) = 0.025\n- t=4: η(4) = 0.1 / (4 + 1) = 0.02\n- t=5: η(5) = 0.1 / (5 + 1) ≈ 0.0167\n- t=6: η(6) = 0.1 / (6 + 1) ≈ 0.0143\n- t=7: η(7) = 0.1 / (7 + 1) = 0.0125\n- t=8: η(8) = 0.1 / (8 + 1) ≈ 0.0111\n- t=9: η(9) = 0.1 / (9 + 1) = 0.01\n\n**Learning Rates Over Time:**\n\n| Step | Learning Rate |\n|------|----------------|\n| 0    | 0.1            |\n| 1    | 0.05           |\n| 2    | ≈ 0.0333       |\n| 3    | 0.025          |\n| 4    | 0.02           |\n| 5    | ≈ 0.0167      |\n| 6    | ≈ 0.0143      |\n| 7    | 0.0125         |\n| 8    | ≈ 0.0111       |\n| 9    | 0.01           |\n\nThis decay model shows that the learning rate decreases over time, approaching zero as steps progress from 0 to 9.",
+      "model_response": "**Дifference между Show, Attend and Tell (S-A-T) и обычным RNN для обработки изображений**\n\n1. **Совместимость с Attention Mechanisms:**\n   - S-A-T синтезирует различные attention mechanisms (например, self-attention для отдельных элементов и show attention для контекста в текущем state).\n   - RNN Traditional ( обычный RNN) использует последовательные states и не имеет прямого connections между time steps.\n\n2. **Использование Highway Paths:**\n   - S-A-T снабжает RNN Traditional с highway paths, что делает его более robust к погружам и способным обрабатывать сложные последовательности данных.\n\n3. **Тщательное Обработка Контекста:**\n   - S-A-T использует show attention для конкретного контекста в текущем state, основывая это на подобной注意力 на предыдущих time steps.\n   - RNN Traditional не ведет так deep Looking at context.\n\n4. **Повышение точности:**\n   - S-A-T обрабатывает изображения с высокой точностью благодаря их использованию Attention Mechanisms, что делает их идеальным для геоэнерий и разработки решений, связанных с изображениями.\n\n5. **Совместимость с Глобальными Восстановлением:**\n   - S-A-T может быть в嵌ceeded в глобальном решении (например, Word2Vec) для генерации предложений, что делает их популярными в контексте реляционного анализа данных.\n\nВ итоге, Show, Attend and Tell отличаются от RNN Traditional для обработки изображений через более сложные и robustные архитектуры с Attention Mechanisms и Highway Paths.",
       "rating": ""
     }
   ]

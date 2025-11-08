@@ -3,26 +3,26 @@
     "dialog_id": "dialog0095",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Как работает сглаживание по Лапласу?",
-    "f1": 36.1,
-    "precision": 36.5,
-    "recall": 46.3,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 27.2,
-    "hallucination": 8.6,
-    "faithfulness": 35.7,
-    "noise_sensitivity": 21.8,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.060322"
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 41.3,
+    "precision": 37.0,
+    "recall": 51.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 53.3,
+    "hallucination": 23.5,
+    "faithfulness": 65.3,
+    "noise_sensitivity": 39.5,
+    "self_knowledge": 11.1,
+    "timestamp": "2025-11-08T20:42:39.085019"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Как работает сглаживание по Лапласу?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Согласно лабораторной работе \"Классификация писем: Metрические классификаторы\" на русском языке, сглаживание по Лап拉斯у – это метод, который усилит вероятности класса для каждого слова, если это слово в slоваре. Формула для вычисления вероятности включает Dummy-признаки для каждого из классов:\n\n$$\\mathsf P(X|\\text{Класс} = y) = \\frac{1 + \\text{количество слов } X \\text{ вslоваре } y}{|V| + r}, \\quad y \\in\\{\\text{спам}, \\text{не спам}\\},$$\n\nгде:\n- |V| – количество слов в slоваре,\n- r – количество слов в письме, которых нет в slоваре.\n\nЭтот метод предполагает, что каждый class имеет Dummy-признак с значением 1 для всех объектов из этого класса и 0 в остальных случаях. Это позволяет усилить вероятности и избежать overfitting, при котором Dummy-признаки могут привести к ошибкам. В процессе классификации применяются again сглаживание по Лап拉斯у для каждой категории:\n\n$$F(y) = \\ln P(y) + \\sum_{word} \\ln P(word|y).$$\n\nЗатем выбирается класс с самолегths highest F(y).",
+      "model_response": "Дoubleslaced RNN — это субсидия, связывающая собой рекуррентные нейронные сети, которые позволяют simultaneously analyze both directions of a sequence. Эти сети используют геометрические последовательности и помогают лучше обучать данные, которые имеют трансляционное или Timeseries-типовое представление.\n\nВ рамках данного курса мы рассмотрим Binarylaced RNN — это субсurrиния, включая Transformer с Attention mechanism. Binarylaced RNN simultaneously process both directions of a sequence by analyzing previous and next steps in the data. Это особенно важно для задач like text generation или translation, где каждый отдельный фраза требует отдельной Processing.\n\nДoubleslaced RNN помогают учитывать глубокую структуру данных, выделять ключевые токены и предсказывать следующие. В реальных задачах их использование позволяет сократить измерения монетки (soft attention) или использовать дискретные значения (hard attention), что улучшает обработку генеративных моделей текста и решений translation.\n\nВ заключении, Binarylaced RNN — это мощный инструмент для simultaneously analyzing two directions of a sequence. Это помогает учитывать память о последних обновлениях и предыдущих токенов, что позволяет модели лучше понимать структуру данных и выделить ключевые токены для предсказания следующых.",
       "rating": ""
     }
   ]

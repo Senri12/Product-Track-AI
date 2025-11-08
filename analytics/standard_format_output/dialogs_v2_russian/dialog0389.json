@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0389",
-    "model_name": "llama3.2",
-    "model_parameters": "1.0B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 32.4,
-    "precision": 38.6,
-    "recall": 39.3,
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 50.9,
+    "precision": 46.1,
+    "recall": 63.1,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.893147"
+    "timestamp": "2025-11-08T20:42:37.193406"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Чтобы рассчитать learning rate decay, мы можем использовать формулу:\n\nη(к, т) = η0 \\* exp(-β\\*т)\n\nгде η0 — начальный learning rate, β — общая константа расчета learning rate decay.\n\nМы знаем, что β = 1/10, t = 5 и η0 = 0,1. Подставив эти значения в формулу, получим:\n\nη(к, 5) = 0,1 \\* exp(-1/10 \\* 5)\n= 0,1 \\* exp(-0,5)\n≈ 0,2\n\nСледовательно, learning rate decay составляет approximately 20%.\n\nИтак, если мы применяем это.model дляLearningRateDecay(), мы получим:\n\nlearning_rate_decay = 0.2\n```python\nimport numpy as np\n\ndef learning_rate_decay(eta_0, t, T):\n    beta = 1 / T\n    return eta_0 * np.exp(-beta * t)\n\neta_0 = 0.1\nt = 5\nT = 10\nprint(learning_rate_decay(eta_0, t, T))",
+      "model_response": "Архитектура Show, Attend and Tell отличается от обычного RNN для обработки изображений несколькими ключевыми способами:\n\n*   **Параллельная обработка:** В отличие от RNN, где информация обрабатывается последовательно, Show, Attend and Tell обрабатывает все элементы входной последовательности (части изображения) параллельно. Это значительно ускоряет процесс.\n*   **Механизм внимания:**  В RNN для каждого элемента изображения используется только состояние рекуррентной сети. В Show, Attend and Tell используется механизм внимания, который позволяет каждому элементу изображения обращать внимание на все остальные элементы изображения, а также на предыдущие элементы выходной последовательности, учитывая контекст.\n*   **Интерактивность:** Механизм внимания позволяет модели “взаимодействовать” с изображением,  используя его историю. Это как бы “напоминает” модели о прошлых частях изображения, что важно для понимания его смысла.\n*   **Отсутствие рекуррентных слоев:**  В отличие от RNN, Show, Attend and Tell полностью отказывается от рекуррентных слоев, делая модель более эффективной и менее подверженной проблемам с затухающими или взрывающимися градиентами.\n\nВ сущности, Show, Attend and Tell использует механизм внимания для создания более контекстно-зависимой и эффективной модели обработки изображений, чем обычные RNN.",
       "rating": ""
     }
   ]

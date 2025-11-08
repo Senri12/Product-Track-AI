@@ -3,26 +3,26 @@
     "dialog_id": "dialog0093",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Что такое евклидова метрика?",
-    "f1": 36.1,
-    "precision": 36.5,
-    "recall": 46.3,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 27.2,
-    "hallucination": 8.6,
-    "faithfulness": 35.7,
-    "noise_sensitivity": 21.8,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.059966"
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 41.3,
+    "precision": 37.0,
+    "recall": 51.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 53.3,
+    "hallucination": 23.5,
+    "faithfulness": 65.3,
+    "noise_sensitivity": 39.5,
+    "self_knowledge": 11.1,
+    "timestamp": "2025-11-08T20:42:39.084566"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое евклидова метрика?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Euclidean metric refers to a method of calculating the distance between two points in N-dimensional space based on their coordinates. It is computed using only spatial dimensions and does not consider other attributes or features. This concept is fundamental in geometry and often used as a basic building block in various machine learning algorithms that require measuring distances between data points, such as classification and regression tasks.\n\nFor example, in two-dimensional space, the Euclidean distance between two points (x1, y1) and (x2, y2) is calculated as:\n\n\\[ \\text{Distance} = \\sqrt{(x2 - x1)^2 + (y2 - y1)^2} \\]\n\nThis can be extended to higher dimensions or more features when calculating distances between multi-dimensional points in machine learning applications.",
+      "model_response": "Рекуррентные нейронные сети (RNN) — это методы обработки последовательных данных, используемые для решения задач с последовательными inputами и выходами. Они отличаются от Feed-Forward Neural Networks (FFNN) тем, что они хранят исторические данные в state через weighings network.\n\nОсновные типы задач, на которые применяются RNN:\n\n1. **Генерация текста**: GRU помогает сократить weighings и более эффективно моделировать последовательности.\n2. **Предсказание погуд**: LSTM может использоваться для обработки цепочек и вспомогатывать их, что важно для предсказаний т来找аний.\n3. **Классификация текста**: GRU или LSTM могут быть использованы для классификации текстовых последовательностей.\n\nГрубокие архитектуры RNN (GRU) используют узкие state и fewer weighings, что делает их более эффективными для задач с геометрической сложностью. Илпоточные архитектуры RNN (LSTM) более обоснованы для обработки цепочек с различными методами преобразования данных.\n\nВ practice, GRU и LSTM показывают значительное значение в решении задач, требующих обработки последовательных данных с узким хранением информации.",
       "rating": ""
     }
   ]

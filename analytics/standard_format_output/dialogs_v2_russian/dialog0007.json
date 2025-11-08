@@ -4,11 +4,11 @@
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
     "system_prompt_id": "prompt1",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
-    "f1": 33.3,
-    "precision": 35.9,
-    "recall": 40.7,
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 27.8,
+    "precision": 36.0,
+    "recall": 30.1,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.977789"
+    "timestamp": "2025-11-08T20:42:37.316083"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Вероятность класса (Naive Bayes) рассчитывается следующим образом:\n\nП(класс) = ∑P(klasse|экзаменатель) \\* P(экзаменуемый)\n\nгде:\n\n- П(класс) - вероятность того, что заданный класс будет классом (классы: 0, 1, 2)\n- P(classe|экзаменуемый) - частота появления этого класса в наборе данных, при đó экзаменант — это конкретный объект.\n- P(экзаменуемый) - вероятность того, что дано обозначенное объективно, что является предсказанным результатом.\n\nЧтобы рассчитать вероятности классов и частот классов в наборе данных, вы должны сначала найти частоты классов, а затем использовать их для расчета вероятностей классов. Для этого используется распределение П(класс) = N / (N + K), где:\n\n- P(klasse) — частота появления класса.\n- N — общее количество экзаменов.\n- K — количество классов.\n\nОбратите внимание, что вероятность вычисляем на основе этого представления: если результат экзамена равен 0 и класс — 1, вероятность того, что это произойдет, равна P(класс|экзаменуемый) = P(клasse|набор данных) \\* P(nбора данных | экзаменуемый) = P(клasse) \\* P(nбора данных | klasse).\n\nЧтобы рассчитать вероятность-class, вы должны найти частот классов в наборе данных.",
+      "model_response": "Сначала давайте разберемся с составом-standardной LSTM ячейки. Standardное LSTM-учейку можно описать как состоит из двух части:\n\n1. **Предположаемый токен** (Input Token): представляющий данныйInput token, который входит во входную последовательность.\n2. **Сообщение о поле** (Encoder Output): представляющий выработанный LSTM-uchейкой output, который представляет значение или описание данного Input tokenа.\n\nОбычно стандартная LSTM ячейка включает 3 компонента:\n\n* *Input Gate*: responsible for computing the cell state based on the current input and previous cell states.\n* *Output Gate*: responsible for computing the cell state based on the output of the Output Gate and the sum of weighted inputs from all cells in the previous time steps, as well as the gate's internal state.\n* *Forget Gate*: responsible for deciding whether to retain or discard the information from the previous time steps.\n\nВ standardной LSTM-uchейке также используются 3 hidden states (H0, C0 и H1) для представления последовательности.",
       "rating": ""
     }
   ]

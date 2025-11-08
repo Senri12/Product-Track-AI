@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Замоченные скважины (peep holes) в LSTM сonesки тесно связаны с проблемой затухания градиентов. Построение neural networks требует обновления их параметров на основе backpropagation, и замокованные скважины cause smaller gradients because they depend on fewer states in the state memory. Это может привести к Worse learning, а search для обновления параметров может быть сложнее.",
+    "rating": ""
+  }
+]

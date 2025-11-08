@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Standard LSTM Ячейка: Основные компоненты**\n\n1. **Input Gate ( gates):**\n   - Контроль, сколько incoming information нужно внести в cell state.\n\n2. **Forget Gate ( gates):**\n   - Контролюется, сколько outgoing information останется из previous state.\n\n3. **Cell State ( ):**\n   - Синтезирующая脉сante-последовательность данных, учитывающая контекст.\n     - Вход: cell state и incoming data.\n     - Выход: new cell state.\n\n4. **Output Gate ( gates):**\n   - Контролюет, сколько outgoing information получится из current state.\n\n5. **During Phase:**\n   - Синтезирует cell state из.previousного состояния и incoming data.\n\n6. **After Phase:**\n   - Генерирует outputs (outs) из current cell state.\n\nЭти компоненты связаны с использованием gates в LSTM ячейках, которые control the flow and contribution of data from input to output.",
+    "rating": ""
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое двунаправленные RNN и зачем они нужны?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Двунаправленные recurrent neural networks (BiRNN)** — это метод в применении recurrent neural networks (RNN), который simultaneously processes a sequence of data and its reversed counterpart. Основное преимущество BiRNN в том, что оно позволяет обрабатывать текст с разными структурами и уменьшает их загрузку на GPU, так как он работает с двумя репезентациями для каждого токена — own и reverse.\n\nВо-первых, BiRNN обрабатывает данные как normal RNN и反转ного (включая反转ирование Output). Это позволяет учесть не только структуру текста, но и структуру отдельных предложений. Это особенно важно для задач с разными структурами.\n\nВо-вторых, BiRNN снижает время обучения because обрабатывает twice (forward and backward direction) the same data with different weights. То есть для каждого токена обновляется два репrezентата: own и reverse. Это позволяет уменьшить смещение градиентов в процессе обучения, что ускоряет обучение.\n\nВо-третьих, BiRNN особенно полезен для задач с последовательными данными, таких как классификация текста, предсказание текста на основе предыдущего контекста и т.д. Также BiRNN используется в герах изображений для текстуры изображения или анализ текстовых данных.\n\nВ общем, BiRNN помогает сократить number training time because processes twice the data with different weights and improves accuracy because it captures both forward and backward processing.",
+    "rating": ""
+  }
+]

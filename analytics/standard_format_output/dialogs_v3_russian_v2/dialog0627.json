@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0627",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
-    "f1": 41.9,
-    "precision": 37.6,
-    "recall": 55.8,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.4,
-    "hallucination": 9.7,
-    "faithfulness": 35.2,
-    "noise_sensitivity": 18.2,
-    "self_knowledge": 5.1,
-    "timestamp": "2025-10-28T13:24:20.304395"
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 19.0,
+    "precision": 53.6,
+    "recall": 27.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 27.6,
+    "hallucination": 20.0,
+    "faithfulness": 55.7,
+    "noise_sensitivity": 13.1,
+    "self_knowledge": 11.0,
+    "timestamp": "2025-11-08T20:42:38.923485"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "content": "Как работает механизм внимания (Attention)?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " В методе моментов для вычисления скорости v_t на каждом шаге используется следующая формула:\n\nv_t = γ * v_{t-1} - η * ∇L(ω)\n\nгде:\n- γ (gamma) - коэффициент моментов, обычно больший 0.9;\n- v_{t-1} - скорость на предыдущем шаге;\n- ∇L(ω) - градиент функции потерь L по весам ω;\n- η (eta) - коэффициент обучения, или шаг.\n\nПодставим данные в формулу:\n\nv_t = γ * v_{t-1} - η * ∇L(ω)\nv_t = 0.9 * 1 - 0.1 * 2 = 1.8 - 0.2 = 1.6\n\nТаким образом, скорость v_t равна 1.6.",
+      "model_response": "001 tracing reports is asking the mission of process A forward err are you’reait name and now should start BERT x000004 Q\n\n",
       "rating": ""
     }
   ]

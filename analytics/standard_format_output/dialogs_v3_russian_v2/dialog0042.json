@@ -3,26 +3,26 @@
     "dialog_id": "dialog0042",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
-    "f1": 31.4,
-    "precision": 33.2,
-    "recall": 47.1,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.9,
-    "hallucination": 11.7,
-    "faithfulness": 32.8,
-    "noise_sensitivity": 18.9,
-    "self_knowledge": 5.5,
-    "timestamp": "2025-10-28T13:24:20.068002"
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 29.1,
+    "precision": 27.0,
+    "recall": 42.2,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.7,
+    "hallucination": 29.3,
+    "faithfulness": 61.8,
+    "noise_sensitivity": 43.7,
+    "self_knowledge": 8.8,
+    "timestamp": "2025-11-08T20:42:39.058768"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "content": "Как работает механизм внимания (Attention)?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "",
+      "model_response": "Механизм внимания (Attention) — это метод нейронных сетей, который позволяет учитывать не только конкретные параметры в векторе представления для каждого элемента, но и их позицию в последовательности или области. В нейронной сети мы делаем this using normalised softmax, which scales the attention weights so that they sum up to 1 or another constant value. This allows the network to focus on relevant parts of the input while ignoring irrelevant ones.\n\nФункция внимания ведёт к сокращению релевантности изображений или сегментов в тексте или речи, что делает сеть более robust и эффективной для задач с релевантными данными.",
       "rating": ""
     }
   ]

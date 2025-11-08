@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0699",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Как классифицировать письмо как спам в Naive Bayes?",
-    "f1": 40.4,
-    "precision": 45.6,
-    "recall": 64.3,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 3.9,
+    "precision": 6.7,
+    "recall": 18.9,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.798280"
+    "timestamp": "2025-11-08T20:42:35.677116"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Как классифицировать письмо как спам в Naive Bayes?",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "**Explanation**\n\nNaive Bayes classifier is an algorithm based on applying Bayes theorem with strong (naive) independence assumptions between features. It's a simple yet effective method for categorizing text into predefined classes, such as spam or ham (not spam). To classify emails using the Naive Bayes technique:\n\n1. Preprocess the data: Clean and prepare your dataset by removing stopwords, punctuation, etc.\n2. Feature extraction: Convert email texts to numerical features suitable for machine learning algorithms - TF-IDF is a common method used here that reflects how important a word is within an email corpus concerning its occurrence in all emails (term frequency-inverse document frequency).\n3. Split the dataset into training and testing sets so you can train your model with one portion of data, then test it against unseen examples.\n4. Apply Naive Bayes classifier: With preprocessed features as input vectors for each example, apply a multinomial NB algorithm since we're dealing in probabilities (the output will be spam or ham).\n5. Evaluate the results to see how well our classification model performs.\n\n**Question for Student**\n\nHow would you prepare your dataset of emails if you're tasked with building an email classifier using Naive Bayes?\n\n**Suggested Exercise**\n\n1. Obtain a labeled set of emails categorized as 'spam' and 'ham'.\n2. Preprocess this data by removing any stopwords, punctuation marks or irrelevant symbols.\n3. Convert the cleaned text into TF-IDF vectors for each sample in your dataset.\n\nOnce you have preprocessed both spam and ham categories separately:\n\n1. Split them equally to form a training set (70%) and test subset (30%).\n2. Train Naive Bayes classifier using scikit-learn or any other machine learning library of choice.\n3. Evaluate the model's performance by checking its accuracy on your testing dataset.\n\n**Feedback Loop**\n\nAfter completing this exercise, reflect upon how different preprocessing steps may affect classification results:\n\n- Did removing stopwords improve spam detection?\n- How did term frequency versus inverse document frequency impact feature selection?\n\nReview these reflections to understand why Naive Bayes might classify an email correctly or incorrectly. Also consider the limitations of using a high-dimensional sparse matrix for large datasets and think about possible improvements like implementing TF-IDF with logarithmic scaling (TfidfVectorizer) in scikit-learn, which could provide better performance outcomes on your classification task.\n\n",
+      "model_response": "Замочные скважины (punched holes) в узлах LSTM (Long Short-Term Memory) используются для предотвращения \"затухания\" градиента и улучшения обучаемости модели. В нормальных LSTM, когда последовательность входных данных пересекает узел, информация о прошлом может поразтиснуться за текущим, что может привести к потере импульса и тому же обучения.\n\nЗамочные скважины добавляют дополнительные узлы во время передачи информации через LSTM-узел. Каждая замкнутая паутину представляет собой несколько меньших узлов, которые отображают короткие фракции времени в прошлом. Это позволяет LSTM хранить более длительные память о прошлом и предоставляет ему информацию о прошлом, которая могла бы затухать среди текущей нагрузки.\n\nТаким образом, замочные скважины в LSTM помогают сохранить импульс и улучшают обучаемость модели, предотвращая потерю целевой функции во время обучения.",
       "rating": ""
     }
   ]

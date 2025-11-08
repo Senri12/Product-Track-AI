@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Сначала давайте разберемся с составом-standardной LSTM ячейки. Standardное LSTM-учейку можно описать как состоит из двух части:\n\n1. **Предположаемый токен** (Input Token): представляющий данныйInput token, который входит во входную последовательность.\n2. **Сообщение о поле** (Encoder Output): представляющий выработанный LSTM-uchейкой output, который представляет значение или описание данного Input tokenа.\n\nОбычно стандартная LSTM ячейка включает 3 компонента:\n\n* *Input Gate*: responsible for computing the cell state based on the current input and previous cell states.\n* *Output Gate*: responsible for computing the cell state based on the output of the Output Gate and the sum of weighted inputs from all cells in the previous time steps, as well as the gate's internal state.\n* *Forget Gate*: responsible for deciding whether to retain or discard the information from the previous time steps.\n\nВ standardной LSTM-uchейке также используются 3 hidden states (H0, C0 и H1) для представления последовательности.",
+    "rating": ""
+  }
+]

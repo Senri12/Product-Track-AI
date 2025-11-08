@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Чем GRU отличается от LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Да, GRU (Gated Recurrent Unit) — это архитектура recurrent neural network (RNN), которая включает гаты перед трансформаторами. Основная отличие GRU от LSTM в том, что GRU использует state только для текущего края, тогда как LSTM использует state для entiretyки и позиции в序列. Это позволяет GRU избежать сложных комбинаций state и может быть более узкой архитектуры по времени.\n\nТакже GRU slower наtrain-test в сравнении с LSTM, так как гаты(gates) приводят к smaller update gates (для entireки) и larger reset/gate (для текущего края), что может быть неоптимально для задач с важностью последней позиции.",
+    "rating": ""
+  }
+]

@@ -3,12 +3,12 @@
     "dialog_id": "dialog0172",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 34.7,
-    "precision": 37.0,
-    "recall": 43.2,
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 21.2,
+    "precision": 25.2,
+    "recall": 28.3,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.974390"
+    "timestamp": "2025-11-08T20:42:37.293497"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Adam — это слуге Эдена из Библии, который был основным гroomsmanом и руководителем Эдинбурга во время его свадьбы с Эйдой (которая в то время была крестицессоркой).",
+      "model_response": "Здесь вопрос можно разбить на несколько частей:\n\n1. Standard LSTM ячейка включает три компонента:\n * Сторонный вход (input gate): вduce input_data, который представляет собой входную последовательность.\n * Middle门да (middle gate): вduce hidden_state, который представляет собой внутреннюю последовательность в ячейке.\n * Сторонный выход (output gate): вduce output, который представляет собой выходную последовательность.\n\n2.standard LSTM ячейка также включает два дополнительных компонента:\n* Непрерывный член (forgetgate): вduce hidden_state и фиксирует его для предсказания следующего шага.\n* Непрерывный член (cell state): представляет собой внутреннюю последовательность в ячейке, которую можно вычислить из previous_hidden_state и current_input.\n\n3.Standard LSTM ячейка также включает еще один компонент:\n* Нормированный поток градиента: используется для normalizeeing градиентов на всех шагах обучения, атакивая их к нулю, что helps reduce exploding gradient problem.\n\n4.Непрерывные члены и нормированная поток градиента включены в Standard LSTM ячейки для улучшения предсказания и уменьшения вычислительных затрат.",
       "rating": ""
     }
   ]

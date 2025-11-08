@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0169",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое over-fitting?",
-    "f1": 44.1,
-    "precision": 57.5,
-    "recall": 45.6,
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 23.7,
+    "precision": 34.0,
+    "recall": 34.4,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.693820"
+    "timestamp": "2025-11-08T20:42:35.571070"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое over-fitting?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Отлично! Давайте разберемся, что такое \"over-fitting\" (переобучение). Это довольно важное понятие в машинном обучении.\n\nПрежде чем я начну объяснять, давайте сначала попробуем понять, что такое \"обучение\" в машинном обучении. Что для вас значит \"обучить\" модель?  О чем, по-вашему, модель должна научиться, когда мы ее \"обучаем\"?\n",
+      "model_response": "Ответ:simple RNN — это более простое аutoencoder, в то время как deep RNN — это-morecomplex аutoencoder.",
       "rating": ""
     }
   ]

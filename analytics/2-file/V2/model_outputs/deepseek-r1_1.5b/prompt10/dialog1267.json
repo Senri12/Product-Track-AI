@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "The standard components of an LSTM cell include:\n\n1. **Input Gate**: Controls whether the current input is passed through to the next state. It uses sigmoid or tanh activations for gate control.\n\n2. **Forget Gate**: Determines which part of the hidden state is irrelevant and needs resetting. Similarly, it uses sigmoid or tanh activations.\n\n3. **Output Gate**: Controls whether the information in the hidden state is used to produce the next output. Again, uses sigmoid or tanh for gate operations.\n\n4. **Cell State**: The result of all gates combined, containing both the cell output and a hidden layer output, allowing the cell to maintain context across timesteps.\n\n5. **Parameters**: Weights and biases within each gate that learn how to control information flow.\n\nThis architecture enables LSTM cells to handle long-term dependencies more effectively by integrating these components during computation.",
+    "rating": ""
+  }
+]

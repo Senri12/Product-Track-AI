@@ -3,12 +3,12 @@
     "dialog_id": "dialog0112",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt4",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 33.4,
-    "precision": 40.2,
-    "recall": 43.3,
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 22.0,
+    "precision": 26.2,
+    "recall": 37.7,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.899329"
+    "timestamp": "2025-11-08T20:42:37.319111"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Давайте разберем это шаг за шагом. \n\nAdam - это первый человек из бibles, который появляется в Писании и считается основным образаторомCreatorов. На самом деле, его роль больше не только в написании бibles, а и в истории человеческого народа.",
+      "model_response": "Пять-componentов standard LSTM ячейки:\n\n1. **Input gate**: преобразует входные данные в выходные данные, добавляя к предыдущему output в соотношении 1:1 для каждого элемента.\n2. **Output gate**: добавляет к предыдущему output на основе входных данных и количестваlearned weights, которые влияют на размерность output.\n3. **Gated Recurrent Unit (GRU) cells**: позволяет включать или выключить повторяющиеся элементы в input и output данных.\n4. **Bi-LSTM cell**: использование двух GRUCell для распознавания повторяющихся Element в input и выходных данных.\n5. **Softmax activation function**: applies the softmax function to each element in the output, which assigns probabilities to different classes.\n\nЭти five components вместе构дают standard LSTM ячейку, которая можно использовать для обработки последовательностей данных с последовательными элементами.",
       "rating": ""
     }
   ]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0668",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 41.1,
-    "precision": 52.4,
-    "recall": 61.4,
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 68.3,
+    "precision": 66.5,
+    "recall": 75.5,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.829082"
+    "timestamp": "2025-11-08T20:42:35.800839"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "It seems like you are referring to a concept named after Pafnuty Chebyshev—a mathematician known primarily for his work on probability theory but also notable in other fields such as statistics.\n\n\nThe distance you're asking about is not directly called the \"distance Chebyshev\" itself; instead, it's likely that you've come across two different concepts: Chebyshev's inequality from statistical mathematics and a metric named after him (Chebyshev distance).\n\n\n1. The **Chebyshev Inequality** provides an upper bound for how far away probabilities can be in terms of the standard deviation.\n\n2. On another hand is what you probably meant as \"the Chebyshev Distance\" or simply, **Chebyshev's Metric**, which measures distances between points by considering their differences along each dimension separately.\n\n\nPlease confirm if you're asking about one particular concept related to Pafnuty Chebyshev and let me know so I can clarify it for you.",
+      "model_response": " GRU (Gated Recurrent Units) и LSTM (Long Short-Term Memory) - это разновидности рекуррентных нейронных сетей (RNN), используемых для обработки последовательностей данных, таких как естественный язык.\n\nОба алгоритма имеют сходную структуру, состоящую из слоев, каждый из которых содержит несколько нейронов. В каждом слое вводные последовательности данных обрабатываются через временную операцию, которая учитывает позицию входных данных и контекст предыдущих слоев для получения выходного вектора.\n\nОсновная разница между GRU и LSTM заключается в использовании механизмов поддержания состояния, которые используются для управления потоком информации через время. В GRU есть два гейтея (входной и выходной), а также \"сокрытый ядер\" или скрытая переменная состояния (Hidden state).\n\nЛSTM добавляет в структуру дополнительный слой, называемый \"Сells State\", который включает три компонента: информацию о том, какие данные должны пропускаться через время (\"forget gate\"), какие данные должны быть добавлены в состояние (\"input gate\") и какие данные должны быть использованы для предсказания (\"output gate\").\n\nGRU считается более легковесным по сравнению с LSTM, потому что имеет меньшее количество параметров. В то время как LSTM лучше работает с длинными последовательностями данных и может запоминать информацию на более долгий срок, GRU более эффективен в случаях, когда требуется обработать короткие последовательности или когда требуется ускорить процесс обучения.",
       "rating": ""
     }
   ]

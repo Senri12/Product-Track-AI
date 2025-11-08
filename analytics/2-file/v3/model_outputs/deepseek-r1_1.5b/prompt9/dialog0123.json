@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вопрос: Какие типы входов и выходов встречаются в задачах с RNN?\n\nОтвет:\n\n1. **Один вход, один выход**: Здесь model обрабатывает single sequence input (например, one text sentence) и produce a single output (называется sequence classification).\n\n2. **Multivariate input and multivariate output**: В таких задачах multiple features/words/characters входного и outgoing-заголовке, например, predicting next word in a sentence.\n\n3. **Sequence-to-vector or vector-to-vector**: Input-заголовок может быть вектор (multivariate) для sequence prediction, а output-заголовок — scalar prediction (например, next word).\n\n4. **Classification and regression tasks**: В задачах с классификацией или регрессией input-заголовок может быть вектор, а output-заголовок — scalar class label or real value (например, image classification).\n\n5. **Sequence-to-sequence models**: model processes a sequence (input) into another sequence (output), where each token in input is mapped to corresponding token in output.\n\n6. **Attention mechanisms and attention-based models**: model learns attention weights that align important parts of input and output vectors.\n\n7. **Dynamic state learning**: model uses its own hidden states to capture sequential dependencies, allowing for context-aware processing.\n\n8. **Generating text/fragments with RNNs**: model maintains a memory state based on recurrent connections between layers, enabling generation of text over time.\n\n9. **Graph-based models and temporal convolutions**: model processes sequences in multiple directions or uses graph structures to manage interactions between elements.\n\n10. **Hybrid approaches combining RNNs with other architectures**: model can be combined with CNNs, LSTMs, or Transformers, leading to hybrid approaches for complex tasks.\n\nВозможные типы входов-заголовок:\n- One vector (single feature/word)\n- Multiple vectors\n- A single scalar value\n\nВозможные типы выходов-заголовок:\n- One vector (multivariate)\n- One scalar\n- Multiple scalars or multiple vectors\n\nТаким образом, type of inputs and outputs in RNN tasks largely depends on the specific problem at hand, with the model learning to capture sequential patterns through its hidden state.",
+    "rating": ""
+  }
+]

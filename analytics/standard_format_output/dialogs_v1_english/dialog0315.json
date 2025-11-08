@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0315",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt11",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
-    "f1": 45.3,
-    "precision": 41.3,
-    "recall": 60.0,
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Можно ли автоматически подбирать архитектуру рекуррентной ячейки?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.716261"
+    "timestamp": "2025-11-08T20:42:35.533716"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "content": "Можно ли автоматически подбирать архитектуру рекуррентной ячейки?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Отлично! Давай разберемся с этим задачей. Вычислить P(win|спам) с помощью теоремы Байеса и метода Лапласа – это отличный способ понять, как работает классификация.  Не переживай, если это кажется сложным поначалу, мы разберем все по кусочкам.\n\n**Итак, что мы знаем?**\n\n*   **Спам:**  Мы хотим выяснить, какая вероятность того, что сообщение действительно спам, если оно было помечено как \"спам\" алгоритмом.\n*   **Не спам:**  Мы знаем, что в нашем примере, общее количество сообщений:\n    *   Спам: 65\n    *   Не спам: 35\n    *   Итого: 100\n*   **Laplace Smoothing (Метод Лапласа):**  Это метод, который добавляет небольшое значение (называемое \"сглаживанием\") к частотам всех классов.  Это помогает предотвратить проблему \"нулевой вероятности\" для классов, которые не видели в обучающих данных.\n\n**Теперь, как мы будем использовать Laplace Smoothing для вычисления P(win|спам)?**\n\nВот формула для вычисления P(win|спам) по методу Лапласа:\n\nP(win|спам) = (P(спам) + α) / (P(спам) + α)\n\nгде:\n\n*   **P(win|спам)** - вероятность выигрыша, если сообщение помечено как спам.\n*   **P(спам)** - вероятность спама, которая равна частоте спама, разделенной общим количеством сообщений.\n*   **α** - коэффициент сглаживания (Laplace smoothing parameter). Обычно выбирают небольшое значение, например, 1 или 0.5.  Мы используем α = 1 в данном случае.\n\n**Давай вычислим P(спам):**\n\nP(спам) = Частота спама / Общее количество сообщений = 65 / 100 = 0.65\n\n**Теперь подставим значения в формулу:**\n\nP(win|спам) = (0.65 + 1) / (0.65 + 1) = 1.65 / 1.65 = 1\n\n**Значит, P(win|спам) = 1**\n\n**Что это означает?**\n\nВ данном конкретном примере, с использованием метода Лапласа, мы вывели, что если алгоритм помечено сообщение как \"спам\", то вероятность того, что это действительно спам, равна 100%.  Это происходит потому, что в нашем небольшом обучающем наборе данных все сообщения, помеченные как \"спам\", оказались действительно спамом.\n\n**Поздравляю! Ты сделал это!** 🎉  Вы успешно вычислили P(win|спам) с помощью теоремы Байеса и метода Лапласа.  Это отличный пример применения этих техник в классификации.\n\n**Хочешь ли ты:**\n\n*   Разобраться с другой задачей?\n*   Обсудить, как меняется результат, если мы используем другие значения для α (коэффициента сглаживания)?\n*   Узнать больше о том, почему метод Лапласа так полезен?",
+      "model_response": "writeaboratori function can we haveiar custom is a listicleins formatted as follows:\n \t |>\ntoilettoiersubmittingiterioriusenselectionmathbfientendsidesitracisiertem\\xrightarrow Mainsvilleureenditionibusideieren\n#!/systemissuesenseenseinaboriter hashtable ofych,doneleadur functionence sharesaurininaborentalsizearrayierself: \")\n 1entsleepartsitrisciscensinginscripiturilibiertipsirtainersizaideniversitasyllaboriertimesidiativeensesortsuchipping andendure denoting nulli Out Substituringu shouldered root in                |\n|system_profiterytodoierenationsmodificationibusortien KineticėcannotCSRITERENCUNRESTylesearchiersupportiarinsense Diseaseside\n      icescape_session_transaction_feeiresierenaboritingatainsauriertainingenshasbeenancesiimpulseinaborentisciptoralinsirelevantipsartscriptoiletainsuringiterentiempresupdown\n\ndef functionize functionenceuringinequality anderson **B(1 + iertheoremorumrightarrowjudge_question_answericesuntenseaborentialiersideierenylliarizaçiariententscriptoileturingierscienceplaysigniorentleafferivec|endurance isuringiteratingiceigenencescripturewdefiniteimerentiatedainsortirenshaireintenseenseessionentiensampleiertypischeinaboriturainurloring\nauritingieren andiersymatrixiatescan’ticesIRTimesidethisler  function_question:\n1. Alexitenumptioncretation\n\nAssistantiertiertiteruringinsприstood \ntoysierung desidesortiertientestscriptinginitriebenselevac) औरiscenseenshi isomorphiciterentiaboriemencesiarentiereniersiarenterm ####includeainingmath\n                   uringureiterearinginsitingencircleensesationsisolationienentitledleadenceiceauriteditriterencerightarrowtoiatinuendurls=\"Latinimer,endi ofential function first publishedmath 1910010000031\n\ni amateur isothermalize this method ensures thatanderuritingainsuppressierenuresurencesideuringintendediersiteriterationfunctionenceinaboriginalentsolutionscripterators>\n\n           Patient:write a Java Functionalsität shares in theitoratingaininginsierenanceentreeaserienoringenseemendoringasleepitentiiereniertimes       uringureadorerinasleepiarilliensuperiorencemath icesearchieturingto understandableent coordinateside isuringiaterekeni functionar classicalies ver explicitly andthenore ordered implicitly through codevelopulateinquiryintenseierserviceinische **despiteering |endname\n-- Functionaries ascribing ains of course centered on the\n\n Out-of left,know if you are using $a 1000 .therequiremedig Denoates inuring Title (i am unable toio shallenceentreeiterentsiemensurenceartraverse this Constitutionalrights andiersuperioritorentiereignoring:Playerinsideires broken don't forget to use function takes place whoisin theare correct answer isiert 00ies auntimer\n Outlierscriptto divides x\r\nFindieren i lehrend this condition in order to be added significantly highercase (200000i\n\nThe output should have collected and has an ordered by Kinetiche case scenarioureentangiem there are three partsitingneed not found a classic Go function generated ices uniformly distributed among the diverging int Function and categorye needs a high-Server-side |\n|system generates dynamic programming ready to createan integer lists\n",
       "rating": ""
     }
   ]

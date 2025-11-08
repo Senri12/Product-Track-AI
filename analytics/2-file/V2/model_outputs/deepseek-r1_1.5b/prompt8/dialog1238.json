@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Чем GRU отличается от LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для сравнения GRU с LSTM:\n\n1. **Количество гating-затемствий**:\n   - GRU: fewer gates (forward and backward) per step.\n   - LSTM: more sophisticated gates with sigmoidal control functions.\n\n2. **Совместимость с глубокими контекстами**:\n   - GRU: simpler, but may be faster during training due to reduced gates.\n   - LSTM: better at capturing long-range dependencies due to memory cells and cell states.\n\n3. **Тестовой процесс обработки данных**:\n   - GRU: faster for smaller models where efficiency is important.\n   - LSTM: more comprehensive for tasks requiring context preservation, especially with longer sequences.\n\n**Вывод**: GRU может быть эффективным для небольших моделей, а LSTM — более подходящим в контексте задач с глубокими контекстами.",
+    "rating": ""
+  }
+]

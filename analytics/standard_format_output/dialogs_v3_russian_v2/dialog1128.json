@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog1128",
-    "model_name": "granite3.2",
-    "model_parameters": "2.0B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 33.9,
-    "precision": 29.7,
-    "recall": 51.7,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 34.1,
-    "hallucination": 12.4,
-    "faithfulness": 32.2,
-    "noise_sensitivity": 20.1,
-    "self_knowledge": 5.3,
-    "timestamp": "2025-10-28T13:24:20.192864"
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 26.5,
+    "precision": 28.7,
+    "recall": 43.8,
+    "claim_recall": 65.3,
+    "context_precision": 100.0,
+    "context_utilization": 43.1,
+    "hallucination": 33.3,
+    "faithfulness": 57.0,
+    "noise_sensitivity": 37.9,
+    "self_knowledge": 9.7,
+    "timestamp": "2025-11-08T20:42:39.095581"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Keras — это высокоуровневый и открытое кода нейронная сетевое платформа, созданную в 2015 году Империальным исследовательским конъюнтом по машинному обучению в Калифорнии. Она предоставляет простой и понятный интерфейс для создания и компилирования деревьев нейронных сетей, а также поддерживает эксплуатацию на различных базах данных, таких как TensorFlow, Theano или PyTorch.\n\nKeras основана на Python-коде и используется для быстрого тестирования и демонстрации нейронных сетевых моделей. Она предлагает:\n\n1. **Интерфейс удобен для чьих-то неиспытанных разработчиков**: Keras имеет простой и понятный API, что позволяет создавать модели намного более быстрой и проще, чем с использованием более медленных фреймворков, таких как MXNet или CNTK.\n2. **Поддержка глубоких нейронных сетей**: Keras полностью поддерживает создание сложных нейронных сетей с многими слоями. Это делает его часто выбранным для задач, требующих высокой спарсинг-расстояния или более сложной архитектуры.\n3. **Открытость**: Как Python, Keras является открытым исходным кодом. Это означает, что люди могут просматривать, изменять и распространять его без ограничений.\n4. **Интеграция с другими библиотеками**: Keras можно легко интегрировать с другими популярными библиотеками, такими как TensorFlow или Theano, которые предоставляют низкокачественную вычислительная платформа для обучения и использования в продакшне.\n5. **Эмбеддинг**: Keras позволяет напрямую известному Python-коду создавать и обучать модели, что сделает многим более удобным использовать это инструмент.\n\nВ целом, Keras — это потенциальный вариант для тех, кто ищет простой способ создания, обучения и принятия моделей нейронных сетей без необходимости известного сложного фреймворка.",
+      "model_response": "В recurrent neural network (RNN) модулях, которые изучались в本文е, можно определить типы входов и выходов:\n\n1. **Input Types:**\n   - **Sequential Input Processing:** Определяется как Processing sequences one after another (RNN).\n   - **Parallel Input Processing:** Определяется как Processing simultaneous elements of the sequence at the same time (GRU, LSTM).\n\n2. **Output Types:**\n   - **Sequential Output Processing:** Определяется как Outputting only one token at each step (e.g., in language modeling tasks).\n   - **Parallel Output Processing:** Определяется как Outputting an entire sequence after processing all input tokens simultaneously.\n\nТаким образом, RNN-архитектуры могут использоватьeither sequential or parallel Input and Output types depending на исходных данных и цели задачи.",
       "rating": ""
     }
   ]

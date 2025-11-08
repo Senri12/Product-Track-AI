@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0919",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt1",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое over-fitting?",
-    "f1": 48.6,
-    "precision": 50.1,
-    "recall": 55.4,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.296735"
+    "timestamp": "2025-11-08T20:42:35.619150"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое over-fitting?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Over-fitting is a common problem in machine learning where a model learns the training data too well, to the point that it performs poorly on new, unseen data. This happens when the model becomes excessively complex and starts fitting not just the underlying pattern but also the noise or random fluctuations present in the training data. As a result, the model struggles to generalize well to new examples and overfits to the training dataset. To avoid over-fitting, techniques such as regularization, cross-validation, and early stopping are often employed.",
+      "model_response": "В чем отличие Simple RNN от глубоких RNN?\n\n**1. Составление state:**\n   - **Simple RNN:** Нет памяти (state) – обрабатывается последовательно без maintainage of hidden state.\n   - **Gated Recurrent Neural Network (GRU):** Добавляет gates, которые manage the flow of information through the gates. Обновляется state только для current time step.\n   - **Long Short-term Memory (LSTM):** Составляет state из state_prev и state_current, обновляется для каждого time step.\n\n**2. Поведение градиента:**\n   - **Simple RNN:** Градиенты могут быть затухающие или amplified ( exploding or vanishing gradients problem), что может ограничивать обучение на длинных序列х.\n   - **GRU и LSTM:** Обновляют state с использованием gates, что предотвращает exploding gradient, но градиенты продолжают обрабатывать sequence data.\n\n**3. speed of processing:**\n   - **Simple RNN:** Скорее всего slower для longest sequences без геометрического представления данных.\n   - **GRU и LSTM:** Обновляют state, что делает их более ясными для управления памятью.\n\n**4. capacity to handle long sequences:**\n   - **Simple RNN:** Ограничен в том, насколько长远 able to process sequences without using memory (batch size may be larger).\n   - **GRU и LSTM:** Обновляют state, что делает их более ясными для обработки длинных последовательностей.\n\n**5. applications:**\n   - **Simple RNN:** Популярно для задач с низкой requirement на сложность и быстрое обработка.\n   - **GRU и LSTM:** Бытаво в более complex or long sequences tasks.\n\n**В целом:**  \n**Gated RNNs (Simple RNN vs. GRUs and LSTMs)**  \n- **Gated RNNs:**  \n  - Составляют state, обновляет state для каждого time step.  \n  - Обычно используют gates для管理和 фильтрации информации.  \n  - Пример: LSTM.  \n\n- **Simple RNN:**  \n  - Нет памяти (state), обрабатывается последовательно.  \n  - Градиенты могут быть затухающие или amplified.  \n  - Пример: Simple RNN.",
       "rating": ""
     }
   ]

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Замоковые скважины (peepholes) в LSTM модулях необходимы для сохранения градиентов на позиционные скважины, а также для усиления изменений. Эти скважины генерируют низкие градиенты, что приводит к мaldems и линькам.…\n\nДля решения这些问题 замоковые скважины используются в optimizerах, таких как Adam, как мониторер градиентов.…\n\nТаким образом, замоковые скважины неonly у silently small gradients (peepholes) but are essential for preserving and amplifying gradients on the positions in LSTM units.",
+    "rating": ""
+  }
+]

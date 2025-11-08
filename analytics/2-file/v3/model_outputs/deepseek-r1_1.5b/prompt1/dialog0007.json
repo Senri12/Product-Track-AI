@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Стандартныйcell в LSTM神经-network:**\n\nStandard LSTM cell — этоcell в LSTM-направлении. It processes sequences of data and uses gates to manage information flow between time steps. The forget gate decides what information is carried forward, while the remember gate retains context from previous steps.\n\nBut when multiple cells are connected by high way networks, they form a highway network that directly connects these cells between layers, making the model more robust against overfitting.\n\n**Answer:**  \nStandard LSTM cell is a fundamental component in LSTM networks. It uses gates to manage information flow and retain context. When connected via high way networks ( Highway networks), multiple LSTM cells are directly linked, enhancing the model's robustness.",
+    "rating": ""
+  }
+]

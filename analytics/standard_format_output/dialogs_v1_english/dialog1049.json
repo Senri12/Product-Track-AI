@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1049",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt5",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 43.4,
-    "precision": 47.8,
-    "recall": 47.9,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.246362"
+    "timestamp": "2025-11-08T20:42:35.637917"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " The learning rate decay for a linear decay with an initial learning rate of η_0 = 0.1, at time step t = 5, and a total number of time steps T = 10 can be calculated using the formula:\n\nη(t) = η_0 * (1 - t/T)\n\nSubstituting the given values:\n\nη(5) = 0.1 * (1 - 5/10) = 0.1 * 0.5 = 0.05\n\nSo, at time step 5, the learning rate is 0.05.\n\nAs for a challenging task to test comprehension:\n\nGiven a different set of values (η_0 = 0.05, T = 20), calculate and plot the decayed learning rates from t=1 to t=20. Analyze how the learning rate changes over time according to the linear decay rule.",
+      "model_response": "Сначала разберемся с понятием RNN (Recurrent Neural Network). RNN используется для последовательной обработки данных, так как у них implicit connection between time steps. Например, в задачах классификации image sequences или текст sequence.\n\nТеперь,смотря на show, attend and tell: это модель, которая simultaneously processes multiple sequences and attends to each position in the output. Она используется для задач с изображениями и тегированием в предложениях. В отличие от RNN, Which processes time-like data sequentially step by step, this model can handle two or more parallel sequence processing concurrently while attending to each element's context.\n\nВ summary: show, attend and tell simultaneously process multiple sequences (like images) while attending to each position in the output, capturing contextual information that allows for better understanding and performance.",
       "rating": ""
     }
   ]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1254",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое метод Ньютона?",
-    "f1": 42.3,
-    "precision": 47.9,
-    "recall": 49.7,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.312820"
+    "timestamp": "2025-11-08T20:42:37.356585"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое метод Ньютона?",
+      "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Метод Ньютона - это алгоритм численного решения уравнений, основанный на идее поиска корней функции в окрестности точки, при которой первая производная равна нулю. Он использует логарифмическое приближение для поиска близких корней, затем улучшается до более точного решения через итеративное вычисление последующих значений с помощью расширенного формула метода Ньютона. Основная идея в том, что если имеется точка `x0` и приблизительный корень `x1`, то более точное решение можно найти по следующей формуле:\n```\nx_{n+1} = x_n - f(x_n) / f'(x_n)\n```\nгде `f(x)` - функция, которую необходимо решить, а `f'(x)` - ее первая производная. Итерации продолжаются пока точность решения не достигает желаемого уровня или не выйдет за границы поиска.",
+      "model_response": "Зачем нужны замочные скважины (peepholes) в LSTM?\n\n---\n\n### 1. **Понятие LSTM**\n\nLSTM, или cells of long short-term memory, — это структура recurrent neural networks (RNN) используемая для обработки последовательностей данных. Структура позволяет гибридно отслеживать последовательность, что делает LSTM более способной к моделированию сложных последовательностей.\n\n**ЛSTM состоит из forget gate (цветок), input gate (внешний цепочка) и output gate (внутренняя цепочка):**\n\n- **Forget gate:** Управляет удачностью в当前位置.\n- **Input gate:** Управляет введением информации.\n- **Output gate:** Управляет выводом информации.\n\n**Скважины в LSTM — это神经ционные линии, которые используются для управления注意力.**\n\n---\n\n### 2. **Замокнутые скважины (peepholes)**\n\nВ LSTM, замокнутые скважины означают, что такая attention не используется для текущей позиции.\n\n**Why are peepholes in LSTM important?**\n\n1. **Снижение обработки текста:**\n   - Normally, attention uses all tokens for every position. This can lead to redundant computations and slower convergence during training.\n   - By using only part of the sequence (peepholes), LSTM reduces computation and speeds up processing.\n\n2. **Использование независимости注意力:**\n   - During training, each token's attention is zeroed out for its position. This creates a form of independence among tokens, which helps in learning more robust features.\n   \n3. **Снижение сложности об upgrading градиентов:**\n   - Using fewer attention operations reduces the variance and sensitivity to hyperparameters like dropout, making training more stable.\n\n4. **Порядок обработки данных:**\n   - LSTM processes data in a sequential manner without any waiting between layers, allowing it to maintain state across all steps simultaneously.\n\n---\n\n### 3. **Рекуррентные сети (RNN) и трансформеры (transformers)**\n\n- **Recurrent Neural Networks (RNNs):** These use gates like forget and input gates for context management but do not typically use peepholes, leading to slower convergence.\n  \n- **Transformers (e.g., BERT):** Use self-attention mechanisms without explicit gates (peepholes), which allows parallel processing of all tokens simultaneously. This is why transformers are faster and more efficient.\n\n---\n\n### 4. **Замокнутые скважины в LSTM и градиенты**\n\n1. **Gating Functions:**\n   - LSTM uses sigmoid gates to control the flow of information:\n     - Forget gate determines if a unit forgets its previous state.\n     - Input gate controls whether new information is stored.\n   \n2. **Peepholes and Attention:**\n   - Peepholes in LSTM effectively zero out attention for the current position, reducing computation and slowing training.\n\n3. **Impact on Training:**\n   - Smaller attention windows lead to more stable gradients during backpropagation, helping the model converge faster and avoiding overfitting.\n   \n4. **Efficiency Considerations:**\n   - Faster processing times are crucial in training deep models, especially with large datasets like Wikipedia texts used by BERT.\n\n---\n\n### 5. **Итоги**\n\n- **Zamокнутые скважины (peepholes) в LSTM:** Reduzируют обработку текста, снижаяcompute负担 и повышая обусловленность gradient descent during training.\n- Используются для гибридной архитектуры и ускоряют процесс обучения large-scale models like Transformers.\n\n**Чтобы понять более детальное объяснение замокнутых скважин, изучайте в sufatory paper о LSTM.**",
       "rating": ""
     }
   ]

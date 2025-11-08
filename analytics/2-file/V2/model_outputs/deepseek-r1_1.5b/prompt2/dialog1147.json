@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "LSTM (Long Short-Term Memory) ячейки — это основной компонент в LSTM-модели, которая позволяет обрабатывать последовательность данных с сохранением long-term memory. Основные элементы standard LSTM ячейки:\n\n1. **State**:\n   - *h_prev* — предыдущая гratingphaст.\n   - *c_prev* — предыдущий carry.\n\n2. **Input**:\n   - *x_t* — Current input vector.\n\n3. **Forget gate**: Управляет фильтрацией incoming information, чтобы у Blocksировать anything that's not relevant to current context.\n\n4. **Candidate activation**: КANDIdатная акция, которая формирует intermediate representation.\n\n5. **Update gate**: Управляет updateation, чтобы определить, что нужно сохранить в state.\n\n6. **Output gate**: Управляет outputting, чтобы выделить результата для current timestep.\n\nТаким образом, standard LSTM ячейка позволяет обрабатывать последовательность данных с сохранением long-term memory и фильтрацией incoming information.",
+    "rating": ""
+  }
+]

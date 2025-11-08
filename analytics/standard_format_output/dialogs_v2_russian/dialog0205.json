@@ -3,12 +3,12 @@
     "dialog_id": "dialog0205",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое RMSProp?",
-    "f1": 25.8,
-    "precision": 24.9,
-    "recall": 39.3,
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 20.3,
+    "precision": 24.0,
+    "recall": 37.9,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.967480"
+    "timestamp": "2025-11-08T20:42:37.267193"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое RMSProp?",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "RMSProp — это частный вариант алгоритма Backpropagation (АБП) для обучения импульсно-вычислительных-networkов, основанных на математической и физической моделеции. Это предназначено для использования в приложениях, где требуется прямое подача данных и потенциальных значений output.\n\nРMSProp — это вариант алгоритма Backpropagation, который предназначен для упрощения определения gradientов. В отличие от Algo-BP, который требует учета значений hidden layer и activation functions, RMSProp позволяет использовать только значения hidden layer.\n\nRMSProp работает по принципу арифметического среднего аналога, где каждый шаг рассчитывается как ( Previous - Current ) / Current + 1/2. Это позволяет получить более быстрое и эффективное обучение_networkа, что может привести к улучшению accuracy и performances.",
+      "model_response": "Этот вопрос требует от тестируемого понимания концепцииNormalize Chain и ее важности в обучении последовательных нейронных network (RNN).\n\nНормализация Chain – это процесс, который включает в себя normalize Chain по мини-батчам. Это означает, что нормализацияChain является процессом с учетом градиентов RNN в каждой итерации chain.\n\nПри нормализации chain по мини-батчам градiente chain изначально получается из градиента chain по отдельному батчу. В each iteration chain мы получаем новое значение градientechain, которое можно использовать для смягчения кратных градiente Chain в предыдущей итерации.\n\nПоскольку нормализацияChain по мини-батчам позволяет выйти из кратных градiente Chain в предыдущие итерации chain, это позволяет RNN уменьшить количество итераций training. Это приводит к значительному сокращению времени обучения и улучшению качества model.\n\nВ частности, по мере того, как мы normalize chain по мини-батчам, градiente chain становится более кратным, что приводит к снижению необходимой дляTraining time. Это дает нам преимущество при использовании normalize Chain по minibatchs, поскольку она позволяет нам снизить количество итераций training и повысить производительность model.",
       "rating": ""
     }
   ]

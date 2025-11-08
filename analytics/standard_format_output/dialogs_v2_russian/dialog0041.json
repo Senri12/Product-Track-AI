@@ -3,12 +3,12 @@
     "dialog_id": "dialog0041",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
-    "f1": 36.5,
-    "precision": 38.7,
-    "recall": 43.4,
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 17.9,
+    "precision": 23.3,
+    "recall": 27.7,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.911959"
+    "timestamp": "2025-11-08T20:42:37.282376"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Вероятность спAMA для слова \"приз\" в данном примере khá низка, потому что wordnet — это базовый словарь WordNet на русском языке, и в нем нет таких_termов, как «принц» или «приз».",
+      "model_response": "Трудность применения обычной batch normalization к РНН (Решению Нейронных_networkов) заключается в том, чтоbatch normalization не может решить проблему распределения градиентов, которые нарушаются при использовании batch normalization.\n\nПри.batch-normalизации каждый токен входного данных находится в единстве с другими токенами, образуя batch. Когда мы ищем градиентное уравнение для каждого тока, мы используем batch normalization, которая упрощает получение градиента при изменении входных данных. Однако, когда мы находим gрадиент для одного и того же тока, мы не можем использовать batch normalization, чтобы найти градиент для другого тока из-за того, что они находятся в разных batch.\n\nТаким образом, при batch-normalизации градиенты, полученные для каждого отдельного тока, не могут быть точны. Это приводит к тому, что градиенты могут быть неправильно отображены и поэтомуModel может неlearn efficiently.\n\nВ наше случае, когда мы обучаем model на наборе данных, сначала мы обучаем modelBatch Normalization 1-batch, чтобы обучать modelbatch normalизированным batch. Затем мы можем обучить modelBatch Normalization n-1-batch для каждого из n batch, где n — количество batch.",
       "rating": ""
     }
   ]

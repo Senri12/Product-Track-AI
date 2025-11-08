@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0292",
-    "model_name": "deepseek-r1",
-    "model_parameters": "1.5B",
-    "system_prompt_id": "prompt15",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 31.7,
-    "precision": 32.3,
-    "recall": 53.0,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 35.7,
-    "hallucination": 10.8,
-    "faithfulness": 32.8,
-    "noise_sensitivity": 18.4,
-    "self_knowledge": 6.4,
-    "timestamp": "2025-10-28T13:24:20.051079"
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 51.7,
+    "precision": 49.5,
+    "recall": 60.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 66.0,
+    "hallucination": 21.9,
+    "faithfulness": 69.2,
+    "noise_sensitivity": 28.6,
+    "self_knowledge": 8.9,
+    "timestamp": "2025-11-08T20:42:38.836059"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Adam (Adam – optimizer) — это оптимизатор, который используется для повышения эффективности обучения神经 networks. Основанный на SGD (SGD – gradient descent), Adam делает параметры модели обновлять с помощью градиентов, но с распределенной LearningRate. Это означает, что каждый параметр обновляется в зависимости от нормы градиента для этого parameter.\n\n- **Базовая идея**:adam обновляет параметры с использованием градиентов, но с распределенным LearningRate. Если gradient small (нужно больший LearningRate),Parameter remains static.\n  \n- **Распределение LearningRate**: Each parameter is updated by multiplying LearningRate by β1 raised to the power of its step number.\n\n- **Моментomentum**: В Adam есть Momentum – коэффициент для усреднеющего градиенты. Также optional normalizing gradients (γ).\n\n**Ссылки и документация**:  \n- TensorFlow official documentation: [https://www.tensorflow.org/](https://www.tensorflow.org/)\n- PyTorch official documentation: [https://pytorch.org/stable/index.html#optimization-algorithms](https://pytorch.org/stable/index.html#optimization-algorithms)",
+      "model_response": "Стандартная LSTM (Long Short-Term Memory) ячейка включает в себя следующие компоненты:\n\n*   **Входной порт (Input Port):** Принимает текущий входной сигнал.\n*   **Выходной порт (Output Port):** Выдает результат работы ячейки.\n*   **Ядро ячейки (Cell State):** Это \"долгосрочная память\" ячейки, которая содержит информацию, которая должна быть сохранена в течение длительного периода времени.\n*   **Вентиль (Gate):** Это набор элементов, которые контролируют поток информации в ячейке.  Он состоит из трех основных вентилей:\n    *   **Вентиль забывания (Forget Gate):** Определяет, какая информация должна быть удалена из ядро ячейки.\n    *   **Вентиль ввода (Input Gate):** Определяет, какая новая информация должна быть добавлена в ядро ячейки.\n    *   **Вентиль вывода (Output Gate):** Определяет, какая информация из ядра ячейки должна быть выдана на выход.\n\nВ целом, LSTM ячейка использует эти компоненты для эффективного запоминания и извлечения информации из последовательных данных, что позволяет ей справляться с проблемой исчезающих или взрывающихся градиентов, которые часто возникают в рекуррентных нейронных сетях.",
       "rating": ""
     }
   ]

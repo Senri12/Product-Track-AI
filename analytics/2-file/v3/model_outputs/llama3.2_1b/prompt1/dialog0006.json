@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как LSTM решает проблему затухающих градиентов?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "LSTM (Long Short-Term Memory) сети используют концепцию \"нестабильной памяти\" для решения проблемы затухания градienteов. В traditionalных RNN-ах градientes часто вычисляется во всех шагах слоя, что приводит к затуханию градiente-рассыму. LSTM изолированную ячейку, которая может корректировать только с помощью previous output, в результате чего градiente остается стабильным даже при значительном количестве шагов.\n\nLSTM также позволяет использовать сложные функции, такие как ReLU (Рельмианное функция) и softmax, что improves точность модели. В частности, LSTM может использовать ReLU для преобразования входного сигнала, а затем использовать softmax для вычисления выходной сети.\n\nВот example использования LSTM в определенной задаче:\n\n```python\nimport numpy as np\n\n# input данные\nx = np.array([[1, 2], [3, 4]])\n\n# hidden layer LSTM\nh0 = np.zeros((len(x), 50))\nc0 = np.zeros((50, 1))\n\nfor i in range(1, len(x)):\n    h0[i] = np.tanh(h0[i-1] + x[i-1])\n    c0[:, 0] = np.tanh(c0[:, 0] + x[i-1])\n\n# output layer LSTM\ny = []\n\nfor i in range(len(x)):\n    y.append(np.tanh(np.dot(h0[i], w1) + b1))\n\nprint(y)\n```\n\nВ этом примере мы используем hidden layer LSTM, который имеет размеры (n_steps * 50, n_tokens). Начальные состояния hidden layers обозначены как h0 и c0. В output layer hidden layer мы получаем выходную сеть через два шага в прошлом и один шаг во втором.",
+    "rating": ""
+  }
+]

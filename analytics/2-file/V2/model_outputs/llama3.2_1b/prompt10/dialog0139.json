@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем отличие Simple RNN от глубоких RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "По вопросу в чем отличиеSimple RNN от глубоких RNN:\n\nSimple RNN (Recurrent Neural Network, Ресентный neural network) — это тип Ресентного нейронного сети, предназначенный для обработки последовательных данных. У Simple RNN нет отдельной функции по processing previous input, поэтому при обучении вы получаете только выход на current step.\n\nGlybacks (Deep RNNs), наоборот, имеют отдельную функцию по processing previous input. They do not have separate recurrent layers for each previous time step. Instead, they use recurrent connections between all time steps in the sequence.\n\nГлядя на это, мы видим, что Simple RNN имеет более простой architecture и обучаемый процесс, чем Deep RNN, и это связано с тем, что в Simple RNN нет отдельной функции по processing previous input.",
+    "rating": ""
+  }
+]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0925",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt1",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое RMSProp?",
-    "f1": 48.6,
-    "precision": 50.1,
-    "recall": 55.4,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.298991"
+    "timestamp": "2025-11-08T20:42:35.620312"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое RMSProp?",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " RMSProp (Root Mean Square Propagation) is an optimization algorithm used during training in machine learning to update the weights of a neural network model. It's a variation of gradient descent, where the moving average of squared gradients is calculated for each parameter and then used to scale the step size (learning rate). This helps the model adapt to different learning rates for different parameters, which can improve its convergence and reduce sensitivity to the choice of initial learning rate. It was first proposed by Geoffrey Hinton in 2010.",
+      "model_response": "Нормализация по мини-батчам важна для обучения RNN, так как она:\n\n1. **Уменьшает монету градиентов**: Градиенты в RNN work dependently on inputs can grow exponentially. Normalizing gradients helps keep them bounded during training.\n\n2. **Решит проблемы с exploding/vanished gradients**: Without normalization, gradients might vanish or explode, causing weights to diverge and ineffective learning.\n\n3. **Проводит обработку последовательности**: Normalized gradients allow the model to learn more effectively from sequences, preventing divergence issues.\n\n4. **Использует гибкость для初始化 и монетизации**: Гибридные методы, такие как gated normalization, охватывают различные аспекты, что улучшает обработку.",
       "rating": ""
     }
   ]

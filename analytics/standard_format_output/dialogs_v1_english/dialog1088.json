@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1088",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 34.2,
-    "precision": 33.6,
-    "recall": 51.6,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.280990"
+    "timestamp": "2025-11-08T20:42:35.609554"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Отлично! Разъясню понятие расстояния Чебышёва. Расстояние Чебышёва между двумя точками в многомерном пространстве является метрикой, которая помогает измерить разницу между этими точками. В трёхмерном пространстве расстояние Чебышёва между точками A и B с координатами (x1, y1, z1) и (x2, y2, z2), соответственно, может быть найдено формулой:\n\nd(A,B) = max { |x1 - x2|, |y1 - y2|, |z1 - z2| }.\n\nЭто означает, что расстояние Чебышёва между точками A и B будет равно максимальной разнице в координатах по каждой из трёх осей.\n\nПрактическая задача: Рассчитайте расстояние Чебышёва между двумя точками A(3, 5, 7) и B(1, -2, 4).\n\nОтвет: Для решения этой задачи необходимо найти максимальную разницу в координатах по каждой из трёх осей между точками A и B. Исходные координаты имеют следующий вид:\n- A: (3, 5, 7)\n- B: (1, -2, 4)\n\nРазницы между координатами по осям X, Y, Z соответственно: |3 - 1| = 2; |5 + 2| = 7; |7 - 4| = 3.\nМаксимальная разница в координатах приходится на ось Z, поэтому расстояние Чебышёва между точками A и B равно 3.",
+      "model_response": "**Чем gated recurrent unit (GRU) отличается от LSTM (long short-term memory)?**\n\n1. **Классификация модулей**: GRU и LSTM – это два модуля в рекуррентных сетях, но их схемы differently-ized.\n\n2. **Гаты**: GRU использует fewer gates (usually one gate) than LSTM, что может привести к более узким градиентам, так как он фильтрирует градиенты при их использовании для устранения long-term dependency.\n\n3. **Реализация**: GRU ведёт последовательных шагов slower, чем LSTM, так как оно использует fewer gates. Это может сократить обработку данных, особенно для больших сетей.\n\n4. **Полнота и производительность**: GRU может быть полной, что делает его более ясным в practice, а также может быть более эффективным по скорости обучения, так как гаты могут сократить общее изменение.\n\n5. **Применения**: GRU popularity включает в себя трансформер-модули и некоторые задачи обработки естественного языка, таких как классификация, распознавание фраз, анализ поведения речи и т.д.\n\n**Ответ:**  \nGated Recurrent Unit (GRU) отличается от LSTM из-за их схемы, используемых для обработки последовательных данных. GRU использует fewer gates than LSTM, which allows it to preserve more information and reduce the risk of exploding gradients. This makes GRU more efficient and effective in practice, often achieving similar or better results with less computational overhead.",
       "rating": ""
     }
   ]

@@ -3,26 +3,26 @@
     "dialog_id": "dialog0119",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 36.1,
-    "precision": 36.5,
-    "recall": 46.3,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 27.2,
-    "hallucination": 8.6,
-    "faithfulness": 35.7,
-    "noise_sensitivity": 21.8,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.064614"
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 31.9,
+    "precision": 28.7,
+    "recall": 43.3,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 45.8,
+    "hallucination": 29.4,
+    "faithfulness": 64.6,
+    "noise_sensitivity": 41.9,
+    "self_knowledge": 6.0,
+    "timestamp": "2025-11-08T20:42:39.100273"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Используя формулу Learning Rate Decay с линейным спадом:\n\n\\[\n\\eta(t) = \\eta_0 \\times \\gamma^{\\frac{t}{T}}\n\\]\n\nгде:\n- \\(\\eta(t)\\) – Learning Rate на момент времени \\(t\\),\n- \\(\\eta_0\\) – начальный Learning Rate (\\(η_0 = 0.1\\)),\n- \\(\\gamma\\) – коэффициент сокращения (\\(\\gamma = 0.9\\)),\n- \\(T\\) – время конечного значения Learning Rate (\\(T = 10\\)).\n\nДля various values of \\(t\\) от 0 до \\(T=10\\) вычислим Learning Rate:\n\n- \\(t = 0\\):\n  \\[\n  \\eta(0) = 0.1 \\times (0.9)^{\\frac{0}{10}} = 0.1 \\times 1 = 0.1\n  \\]\n  \n- \\(t = 5\\):\n  \\[\n  \\eta(5) = 0.1 \\times (0.9)^{\\frac{5}{10}} = 0.1 \\times \\sqrt{0.9} \\approx 0.1 \\times 0.9487 \\approx 0.09487\n  \\]\n  \n- \\(t = 10\\):\n  \\[\n  \\eta(10) = 0.1 \\times (0.9)^{\\frac{10}{10}} = 0.1 \\times 0.9 = 0.09\n  \\]\n\n**Ответ:**\n\n- В момент времени \\(t = 5\\) Learning Rate \\(η(5)\\) составляет приблизительно 0,09487.\n- В момент времени \\(t = 10\\) Learning Rate \\(η(10)\\) составляет 0,09.",
+      "model_response": "The main difference between Show, Attend and Tell (SOT) and a regular Recurrent Neural Network (RNN) when processing images lies in their ability to integrate multiple dimensions of information.\n\n**Show:**\n- Processes visual data step by step, capturing spatial relationships as they move forward.\n- Can handle multiple images or video sequences by observing how the visual context evolves over time.\n\n**Attend:**\n- Combines both visual and textual elements, focusing on relevant parts of an image or scene dynamically.\n- Captures interactions between visual and text content in real-time, enhancing understanding through dynamic focus.\n\n**SOT:**\n- Involves a visual decoder that processes each image frame, with an attention mechanism updating its focus based on the text being read.\n- Integrates both visual context and text content simultaneously, leading to more fluid and effective interactions between the viewer and the presented information.",
       "rating": ""
     }
   ]

@@ -3,26 +3,26 @@
     "dialog_id": "dialog0027",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
-    "f1": 34.9,
-    "precision": 37.3,
-    "recall": 45.9,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 28.9,
-    "hallucination": 11.9,
-    "faithfulness": 32.5,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.076477"
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 30.7,
+    "precision": 33.0,
+    "recall": 45.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.5,
+    "hallucination": 30.3,
+    "faithfulness": 60.1,
+    "noise_sensitivity": 36.7,
+    "self_knowledge": 9.6,
+    "timestamp": "2025-11-08T20:42:39.062257"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "content": "Как работает механизм внимания (Attention)?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Итак, вычисли v_t в Momentum сgamma=0,9, v_{t-1}=1, ∇L=2, η=0,1:\n\nv_t = gamma * v_{t−1} − eta * ∇L = 0,9 * 1 − 0,1 * 2 = 0,7.\n\nОтвет: 0,7",
+      "model_response": "Метод внимания (attention) в рекуррентных нейронных сетях используется для обработки последовательностей данных, таких как предложения из текста или графы. Он позволяет уточнить важность каждого предыдущего элемента в каждом шаге.\n\nВ таком случае, сеть вычисляет вектор внимания для каждого шага, который представляет собой сумме по всех предыдущих узлов и значений нейронов с определенным коэффициентом. Это позволяет учитывать важность каждого предыдущего элемента при обработкеcurrent step.\n\nМетод_attention playает ключевую роль в градиентной обработке, как он способствует пониманию структуры данных и обеспечивает гладкую изменение функциональности с every step. В рекуррентных сетях attention-механизм позволяет упрощать задачу обработки последовательностей и улучшает их обработку, особенно в условиях высоких измерений изображений или последовательностей.",
       "rating": ""
     }
   ]

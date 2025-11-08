@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0558",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt4",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 31.4,
-    "precision": 43.8,
-    "recall": 51.9,
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 58.7,
+    "precision": 55.2,
+    "recall": 71.9,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.744707"
+    "timestamp": "2025-11-08T20:42:35.824682"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Keras is like an advanced toolkit that helps people create intelligent machines—those are computers or programs we call artificial intelligence (AI). Imagine you want a robot friend; using something called Artificial Intelligence can help design its brain so it learns and understands things, just as humans do.\n\nNow think of building with LEGO bricks. Keras provides us with special instructions for different types of blocks that fit together to build the AI's 'brain'. These aren't actual LEGOs but more like digital components or patterns which we call neural networks—these are complex structures used by computers in learning tasks, such as recognizing pictures (like faces) from videos.\n\nKeras makes it easier because it's user-friendly and works well with other tools. It's similar to having a LEGO set that comes ready-made for creating certain models; you don't have to make everything yourself—you can just follow the instructions provided or even start building your own designs if you're feeling adventurous!\n\nHere's some positive feedback: Great job wanting to learn about Keras! Building AI is like crafting intricate digital sculptures—it's challenging, but also really rewarding. Keep going with that curiosity and enthusiasm; it's what helps us push forward in understanding how we can teach machines complex tasks through learning from examples just as humans do.",
+      "model_response": " В задачах RNN (рекуррентных нейронных сетей) обычно входят последовательности символов или числовых значений. Классическими примерами входов являются:\n\n1. Естественный язык (англ., рус., исп., яп., и т.д.), представленные как последовательности изобуквенных символов или усредненные вектора, полученные с помощью техники word2vec.\n2. Числовые значения (такие как температура, давление, скорость) представленные как последовательности.\n3. Изображения, разбитые на небольшие участки и представленные как векторы.\n4. Аудио-сигналы, преобразованные в спектральные граммы (автокореляционные коэффициенты) или другие виды представления для последующего использования RNN.\n\nВыход RNN также может принимать различные формы, в зависимости от конкретной задачи:\n\n1. Классификация (кластерный анализ или классификация), когда выход представляет вектор с предсказанным классом (например, категория спама или не спама для текста).\n2. Регрессия, где выход представляет числовое значение (такое как цена дома, погодные прогнозы и т.д.).\n3. Полносвязный слой, который можно использовать для получения выхода различных размеров, в зависимости от требований конкретной задачи.\n4. Другие нейронные сети (например, CNN или другая RNN), которые могут быть использованы для получения более сложного представления данных.\n5. Возврат последовательности, когда выход содержит значения, используемые для создания следующей входной последовательности (например, генерация текста или музыки).",
       "rating": ""
     }
   ]

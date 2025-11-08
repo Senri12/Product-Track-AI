@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое скрытое состояние в RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Поэтому правильный ответ — \"self-attention\". ВРNN (Реинентерный НюлРешатель) — это тип рекуррентных нейронных网络, который предназначен для обработки последовательностей данных. Một ключевое свойство RNN — hidden state, представляющий собой hidden состоянии в результате processing последовательности.\n\n self-attention — это механизм, используемый в RNN и других типах нейронных сетей для вычисленияhidden states. Это позволяет_modelу признать связь между различными частями последовательности и выносить решение на основе этих связей.\n\nАнализируя example из предоставленного текста, мы можем видеть, как hidden state используется для предсказания значения text._hidden_state — это hidden состояний RNN, который содержит все уникальные записи last several steps. hidden_state — это необходимый input для вычисления output hidden state по формуле:\n\nhidden state = hidden_state * [input] + W * [mask]\n\nгде input —_input_данных данных; W —модификатор hidden states. hidden state — hidden состояния RNN, которые использовались для предсказания значения text.\n\nСкрытое состояние hidden state представляет собой матрицу размером 768x768, которая содержит hidden состояния всех эн kodеров в RNN. hidden_state является необходимым inputом для вычисления output hidden states на every step during training.",
+    "rating": ""
+  }
+]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0943",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
-    "f1": 44.6,
-    "precision": 49.1,
-    "recall": 50.5,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.236760"
+    "timestamp": "2025-11-08T20:42:35.617752"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " In this weather example, to calculate the value of F(yes), we need to understand that F(yes) is a function used in Bayesian networks and it represents the probability of a certain event given some other conditions are true.\n\nIn a weather forecasting problem, let's assume we have two conditions: \"Is it raining?\" (R) and \"Will I take an umbrella?\" (U). The function F(yes), in this case, would be the probability of taking an umbrella given that it is indeed raining.\n\nIf the conditional probability table for the variables R and U looks like this:\n\n|      R   | U     | P(U|R) = F(yes)  |\n|---|---|------------------|\n| true    | yes  | 1 (if I know it's raining, I take an umbrella) |\n| true    | no   | 0.05 (if I mistakenly think it's not raining, there is still a small chance I might take an umbrella for other reasons) |\n| false   | yes  | 0 (I don't take an umbrella when it's not raining) |\n| false   | no   | 1 (If I know it's not raining, I won't take an umbrella) |\n\nTo calculate F(yes) when it is raining (R=true), we look at the row where R=true and find P(U|R)=F(yes)=1.0. However, without specific input values for R, I can't provide a more concrete calculation in this example.",
+      "model_response": "**Вопрос: Why is attention important in tasks of machine translation?**\n\n**Ответ:**\n\n1. **Новыю объектive Attention в тексте- encoders трансформера:**\n   Attention, также известный как \"многопоточность\" (multi-head attention), выделяет важные части исходного текста для генерации результата. Это позволяет machine translation лучше Focus на ключевых сENTS imaxах и фокусировать генерацию токена на эти important parts.\n\n2. **При use T5-Base или T5-Large:**\n   В моделях T5-Base и T5-Large из Google (Google DeepMind) Attention используется для обработки текста. Векторы с Encoders трансформера используют global attention, что позволяет model Accountant全局 Globally consider all tokens in sequence. Это помогает учесть все контексты как отдельных токенов и together, что приводит к более стабильной и точным результатах.\n\n3. **При use BERT Large:**\n   В моделие BERT Large (Google) Attention является global attention, также учитывая все токены в последовательности для генерации на каждом шаге и добавляя классификатор поверх выхода. Это позволяет machine translation better focus on the most relevant parts of the input text.\n\n4. **Why Attention is important for machine translation:**\n   Without attention, machine translation could be more flexible and capable of handling various tasks, but it becomes more challenging to improve the quality of translated text. Attention enables model Focus on the key elements of the input text, leading to more stable and accurate results.\n\n**Итог:** Attention в machine translation является уникальной объективой, которая позволяет model global Globally consider all tokens in sequence, фокусировать генерацию на ключевых сENTS imaxах и produce результата с высокой точностью.",
       "rating": ""
     }
   ]

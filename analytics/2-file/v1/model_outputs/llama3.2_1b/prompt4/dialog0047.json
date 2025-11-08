@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое скрытое состояние в RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Ответ: Скрытое состояние в RNN — hidden state, которое представляет собой последовательность значений, которые можно получить из предыдущегоhidden states при входном данных. Входные данные можно считать как входноеstate, а hidden-states можно вычислить по формуле:\n г(т+1) = f(g(t))\nгде g(t) — hidden-state для входного потока t.\n\nВ RNN hidden-states можно вычислять путем функции self-attention и двух полноценных слоями hidden state, которые обозначают как hidden layer 1 и hidden layer 2.\n\nПримечание: hidden state является ключевым понятием в RNN и имеет важное значение для анализа и xửления входной информации.",
+    "rating": ""
+  }
+]

@@ -3,12 +3,12 @@
     "dialog_id": "dialog0066",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt3",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Что такое манхэттенское расстояние?",
-    "f1": 29.7,
-    "precision": 32.3,
-    "recall": 39.0,
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как LSTM решает проблему затухающих градиентов?",
+    "f1": 23.9,
+    "precision": 31.7,
+    "recall": 36.6,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.902993"
+    "timestamp": "2025-11-08T20:42:37.289857"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое манхэттенское расстояние?",
+      "content": "Как LSTM решает проблему затухающих градиентов?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "В曼Хеттене (Манхэттен) есть трёхкилометровое улица, которая разделена на 20 равных частей. Каждая часть длина составляет по 1,5 километра.",
+      "model_response": "Эта задача не требует от тестируемого написать конкретное решение, а скорее проанализировать и понимать концепцию затухающих градиентов в контексте обучения модели BERT.\n\nОднако я можу предоставить обоснованное объяснение:\n\nГрадиенты в обучении models — это выражение разности между предсказанным и реальным значениями output layer. Если градиент равен нулю, significa, что нахождение правильного значения для input data не является возможным.\n\nВ контексте LSTM, аналогичные градиенты сжимается приTraining, как и любому других типу models training. Однако в отличие от traditional optimization methods, LSTMs не всегда могут точным образом уменьшить градиент, если он не является константой (например, если он стремится к нулю).\n\nВ частности, в LSTMs разрушение градиента часто приводит к тому, что градиант становится более кратким или краткосрочным. Это может lead to issues, когда model loses convergence or stability during training.\n\nОднако в 2019 году researchers из Google представили метод called \"LR schedule\" (Low Rate Schedule), который позволяет models BERT, а также другие модели с LTSM, сохранятьgoodconvergencerate evenwith increasedtrainingspeed. Это достигается through аналогичный подход к training.\n\nПредположим, что input data для model BERT имеет shape `(sequence_length, embedding_dim)`. Затем output layer имеет shape `(sequence_length, num_classes)`.\n\nИспользуя self-attention mechanism в LSTM, мы получаем:\n\n`output = LSTM(input_data, hidden_state)`\n`hidden_state = LSTM(hidden_state, new_hidden_state)`\n\nЧтобы сохранить good convergence rate even with increased training speed, we need to adjust the learning rate for each layer. We can use a LR schedule to decrease the learning rate linearly from 1 to 0.\n\nПредположим, мы хотим использовать LR schedule с Learning Rate Schedule (LR-Sched) для линейного уменьшенияlearning rate от 1 до 0. Поскольку input data имеет shape `(sequence_length, embedding_dim)` и output layer имеет shape `(sequence_length, num_classes)`, мы можем вычислить learning rate для каждого слоя как:\n\n`l_rate_sequence = l_rate_initial / (10^(num_layers - 3))`\n`l_rate_embedding = l_rate_sequence / (10^(num_layers - 4))`\n\n`l_rate_hidden = l_rate_embedding * (1 - (0.9 ** num_layers))`\n\nТеперь мы можем использовать LR-Sched для training models BERT с линейным уменьшением learning rates:\n\n`lr_schedule = [0, 0.01, 0.001, ...]`\n\nМодель BERT будет обучаться на input data, а затем выделять output поэтапно, используя LR-Sched. Поскольку input data имеет shape `(sequence_length, embedding_dim)`, мы можем вычислить output layer shape как:\n\n`output = LSTM(input_data, hidden_state)`\n`hidden_state = LSTM(hidden_state, new_hidden_state)`\n\n`num_classes = number of classes in the model`\n\nТеперь мы можем использовать LR-Sched для training models BERT с линейным уменьшением learning rates.",
       "rating": ""
     }
   ]

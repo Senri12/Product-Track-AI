@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0874",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt15",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В чем суть наивного байесовского классификатора?",
-    "f1": 34.1,
-    "precision": 42.0,
-    "recall": 56.7,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 1.2,
+    "precision": 8.7,
+    "recall": 16.1,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.780581"
+    "timestamp": "2025-11-08T20:42:35.661324"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем суть наивного байесовского классификатора?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Наивный байесовский классификатор (Naive Bayes classifier) - это тип алгоритма машинного обучения, который использует частотное распределение для постановки гипотез или категоризации входных данных. Основная идея заключается в том, что каждый параметр является независимым от других, хотя на самом деле они могут зависеть друг от друга (что и делает его 'наивным').\n\nНаивный байесовский классификатор работает следующим образом:\n\n1. Предполагает, что признаки (факторы) распределены нормально.\n2. Использует эти предположения для расчет вероятностей классов на основе наблюдаемых данных.\n3. Определяет класс с наибольшей вероятностью.\n\nНаивный байесовский классификатор прост и быстрый, но его основная слабость заключается в использовании предположений о независимости признаков, что не всегда является действительным в реальных задачах. Он все же остается популярным инструментом благодаря своей эффективности при работе с большими наборами данных.\n\nПример на C# для наивного байесовского классификатора:\n\n```csharp\nusing System;\nusing MathNet.Numerics.Distributions;\n\npublic class NaiveBayesClassifier\n{\n    private double[][] classesProbabilities; // вероятности классов\n    private int numClasses;\n    \n    public void Train(double[][] data, int[] labels)\n    {\n        this.numClasses = Array.FindAll(labels, x => x == 1).Length - 1;\n\n        for (int i = 0; i < this.numClasses; ++i)\n        {\n            double sumLikelihoods = CalculateSumOfConditionalDistributions(data, labels);\n\n            if (!Math.Abs(sumLikelihoods) > Math.Epsilon())\n                throw new Exception(\"Invalid training data. Some features are constant.\");\n\n            classesProbabilities[i] = (1 / ((data.Length - 1) * this.numClasses)) + (i + 1) / numClasses;\n        }\n    }\n\n    public int Classify(double[] instance)\n    {\n        double maxProbability = Double.NegativeInfinity;\n\n        for(int i=0; i < classesProbabilities.GetLength(0); ++i){\n            double probabilityOfClass = CalculateSumOfConditionalDistributions(instance, labels);\n\n            if(probabilityOfClass > maxProbability) \n                maxProbability = probabilityOfClass;\n            \n            int classId = FindLabelForInstance(i);\n        }\n\n        return classId; // Returns the index of most probable label\n    }\n    \n    private double[] SumOfConditionalDistributions(double[][] data, int[] labels)\n    {\n        var probabilities = new double[classesProbabilities.GetLength(0)];\n        \n        for (int i= 0; i < classesProbabilities.GetLength(0); ++i){\n            // Calculate probability of each feature given the class\n            double totalLikelihoods = 1;\n            \n            int labelForClassI = FindLabelForInstance(i);\n            \n            foreach(int sampleIndex in labels)\n                if (sampleIndex == labelForClassI) {\n                    var probabilitiesOfFeatureGivenClasses = new double[classesProbabilities.GetLength(0)];\n                    \n                    for (int j= 0; j < classesProbabilities.GetLength(0); ++j){\n                        int classLabelId;\n                        \n                        // Calculate the probability of each feature given this particular class\n                        if(j==i)\n                            probabilitiesOfFeatureGivenClasses[j] = Math.Log(classesProbabilities[i]); \n                        else\n                            probabilitiesOfFeatureGivenClasses[j]=MathLog((classesProbabilities[i]/(double)(numClasses-1)));\n                    }\n                    \n                    totalLikelihoods *= GaussianProbability(data[sampleIndex][featureId], mean, variance);\n                }\n\n            double sumOfAllClassConditionalDistributions = 0;\n            \n            for(int j= classesProbabilities.GetLength(0)-1; j >= 0; --j){\n                probabilities[j] += Math.Log(probabilitiesOfFeatureGivenClasses[j]);\n                \n                if(j>classesProbabilities.GetLength(0) -1)\n                    sumOfAllClassConditionalDistributions+=probabilities[j];\n            }\n\n            \n            double normalizedSum = totalLikelihoods + sumOfAllClassConditionalDistributions;\n        \n            for(int j= classesProbabilities.GetLength(0);--j>= 0){\n                probabilities[j] -= Math.Log(normalizedSum);\n                \n                if(j>classesProbabilities.GetLength(0) -1)\n                    sumOfAllClassConditionalDistributions+=probabilities[j];\n            }\n            \n        }\n\n        return probabilities;\n    }\n\n    \n    private double GaussianProbability(double x, double mean, double variance){\n        \n        var probability = Math.Log(Gaussian(x,mean,variance));\n        \n        \n        return probability;\n\n    } \n\nprivate int FindLabelForInstance(int i)\n{\n    int labelId= 0; \n            \n    for (int j = labels.Length -1 ;j >= 0;j--){ // Iterate through training set in reverse\n                    if(labels[j] == classesProbabilities[i]){\n                        labelId=j;\n                    }\n                }\n\n            return labelId;\n\n        } \n\n```",
+      "model_response": "Сimple RNN (Short-Term Memory Networks) и глубокие RNN (Глубокие нейронные сети с операторами временного изменения) отличаются основными внутренними принципами и способом обработки последовательностей данных.\n\n1. Капacity и длительность: Сimple RNN имеет ограниченную капасность, потому что сама определяет только лишь предыдущее значение входной последовательности для вычисления текущего. Это означает, что Simple RNN не может хранить вспомнения за длительное время и плохо принимает в качестве аргументов последовательности большие числа элементов.\n\n2. Операторы временного изменения: Глубокие RNN используют операторы временного изменения, такие как градиентное скрытое слой или униты с передачей активации. Это позволяет им хранить вспомнения и обучаться на больших размеров последовательностей. Операторы временного изменения также гарантируют, что информация, полученная из предыдущих элементов, может быть передаваться по всему длительному контексту последовательности.\n\n3. Переходные взвешенности: В глубоких RNN вкладываются переходные взвешенности, которые могут содержать информацию о времени. Это позволяет их лучше обрабатывать изменения в последовательности за время. Однако Simple RNN не имеет таких взвешенностей, которые могут сохранить информацию по времени.\n\n4. Дефолтное выходное значение: В глубоких RNN наблюдается паттерн, когда последовательность не принимает значения для конкретных задач, но все точки последовательности имеют очень близкие выходные значения. Это связано с использованием операторов временного изменения и может быть преодолено улучшением дизайна глубокой RNN или добавлением специфических активационных функций.\n\nВ целом, Simple RNN представляет собой более простую модель, которая может поддерживать только лишь некоторую информацию по времени в последовательности. Глубокие RNN, другим образом, являются многочисленными узлами, которые могут хранить и передавать информацию по времени, что делает их более эффективными в решении задач, требующих понимания длительного контекста.",
       "rating": ""
     }
   ]

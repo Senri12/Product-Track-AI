@@ -3,26 +3,26 @@
     "dialog_id": "dialog0094",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "В чем суть наивного байесовского классификатора?",
-    "f1": 36.1,
-    "precision": 36.5,
-    "recall": 46.3,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 27.2,
-    "hallucination": 8.6,
-    "faithfulness": 35.7,
-    "noise_sensitivity": 21.8,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.060133"
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 41.3,
+    "precision": 37.0,
+    "recall": 51.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 53.3,
+    "hallucination": 23.5,
+    "faithfulness": 65.3,
+    "noise_sensitivity": 39.5,
+    "self_knowledge": 11.1,
+    "timestamp": "2025-11-08T20:42:39.084822"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем суть наивного байесовского классификатора?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "",
+      "model_response": "Сimplifying RNN ( простой RNN) отличается简约шей структурой: для каждого слоя присваивается один вход-выход пакет, что делает его доступным для задач с небольшим объемом данных и很简单ыми градиентными обновлениями. \n\nGlobally Deep RNN ( глубокие RNN) в свою очередь включают несколькослойные слои с рекуррентными связями, которые хранят время ню dependence между токены последовательности. Это делает их более эффективными для задач, где dependencia многоearlier tokenов является важной частью решения.\n\nТаким образом, Simple RNN подходящий для задач с простой зависимостью или сложных данных с высоким объемом, а глубокие RNN们都 лучше для задач с высоким объемом и сложными dependenciaами.",
       "rating": ""
     }
   ]

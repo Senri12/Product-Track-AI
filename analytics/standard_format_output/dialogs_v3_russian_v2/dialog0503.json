@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0503",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое learning rate?",
-    "f1": 37.7,
-    "precision": 36.0,
-    "recall": 51.5,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 32.5,
-    "hallucination": 10.0,
-    "faithfulness": 34.4,
-    "noise_sensitivity": 21.1,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.260584"
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 33.1,
+    "precision": 62.8,
+    "recall": 38.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 38.6,
+    "hallucination": 8.7,
+    "faithfulness": 58.9,
+    "noise_sensitivity": 8.4,
+    "self_knowledge": 12.4,
+    "timestamp": "2025-11-08T20:42:38.899324"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое learning rate?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Learning rate является параметром оптимизатора, который определяет величину шага при обновлении весов нейронной сети во время обучения. Это значение влияет на скорость и точность конвергенции алгоритма к решению задачи. Чтобы найти оптимальное значение learning rate, необходимо проводить процесс поиска (например, grid search или random search) с разными значениями параметра и выбирать такое значение, которое обеспечивает хорошую точность обучения и минимизацию ошибки.\n\nВ большинстве оптимизаторов используются значения learning rate, которые автоматически изменяются в ходе обучения в зависимости от особенностей данных и алгоритма. Это позволяет избежать трудностей, связанных с выбором начального значения learning rate и его дальнейшей регулировкой.\n\nНекоторые оптимизаторы, такие как Adam и RMSProp, автоматически адаптируют значение learning rate в ходе обучения с целью оптимального контроля скорости и точности конвергенции.",
+      "model_response": "",
       "rating": ""
     }
   ]

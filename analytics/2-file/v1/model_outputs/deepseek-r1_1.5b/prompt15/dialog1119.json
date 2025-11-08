@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Замоковые скважины (peepholes) в LSTM называются так, потому что они создают проблемы с обработкой very small gradients (градиентов, которые very often appear rarely or infrequently). \n\nВ LSTM модулях используются замоковые скважины для памяти retention: when a neuron forgets a gradient signal, it doesn't vanish but instead continues to change the weight updates in a way that depends on other neurons. This causes gradients to be very small and unstable during training. \n\nПри этом, если weight update learnable features very often appear rarely, градиенты могут быть очень мелкими и отображатьvery strong saturation of the learning process. Это приводит к very unstable training dynamics, что может привести к糟糕ому обучению или сопротивлению избежания of overfitting. \n\nДля решения этой проблемы, используются различные методы: Batch normalization, weight decay (L2 regularization), discounting gradients during training, или adaptive learning rate methods like Adam optimizer or AdaGrad.",
+    "rating": ""
+  }
+]

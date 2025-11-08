@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Чем GRU отличается от LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вопрос: Чем GRU (Gated Recurrent Unit) отличается от LSTM (Long Short-Term Memory)?\n\nГRU — это тип уймаcondensingного mạngа, который используется для обработки последовательных данных. Он отличается от LSTM в том смысле, что GRU можно использовать только на определенных последовательностях, а LSTM может работать на любом типе данных, включаяSequence-to-Sequence (seq2seq) задачи.\n\nЛSTM (Long Short-Term Memory) — это уймаcondensingный блок, который используется для обработки данных, которые не содержат повторяющихся частей. Он имеет два типа: temporal и contextual. Temporal(temp) blocks предназначены для уймания повторяющихся частей, а contextual(blocks) – для сохранения контекста последовательности.\n\nGRU и LSTM являются типами кондуктивных network, но они имеют разную структуру и подход к обработке данных. GRU можно использовать только на определенных типах данных, включаяSequence-to-Sequence задачи, в то время как LSTM может работать на любом типе данных, включая Sequence-to-Sequence задачи.\n\nПримечание: GRU также известен как Recurrent Neural Network (RNN), но это не тот же, что RNN.",
+    "rating": ""
+  }
+]

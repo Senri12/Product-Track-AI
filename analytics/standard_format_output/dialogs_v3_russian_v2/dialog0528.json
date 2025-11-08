@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0528",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt3",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 38.0,
-    "precision": 34.7,
-    "recall": 52.3,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 34.0,
-    "hallucination": 12.3,
-    "faithfulness": 33.0,
-    "noise_sensitivity": 20.2,
-    "self_knowledge": 4.7,
-    "timestamp": "2025-10-28T13:24:20.253325"
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 16.6,
+    "claim_recall": 65.6,
+    "context_precision": 100.0,
+    "context_utilization": 14.4,
+    "hallucination": 21.1,
+    "faithfulness": 52.3,
+    "noise_sensitivity": 52.3,
+    "self_knowledge": 0.0,
+    "timestamp": "2025-11-08T20:42:38.951211"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Keras является открытым набором библиотек для машинного обучения с глубоким обучением искусственных нейронных сетей, написанный в Python. Он был разработан Брайаном Макгоуэном в 2015 году в качестве экспериментальной платформы для исследования глубоких обучающих алгоритмов и нейронных сетей. В 2017 году Keras был ассимилирован Google DeepMind и с тех пор поддерживается как часть TensorFlow.\n\nКерс имеет простую и гибкую архитектуру, которая позволяет быстро создавать и тренировать модели. Он легко интегрирован с другими библиотеками и фреймворками, такими как TensorFlow, Theano и CNTK.\n\nКерс поддерживает не только обучение на одном выходе, но и многовыходные модели, а также сериализацию моделей. Он популярен из-за простоты в использовании, гибкости и быстрой продуктивности.",
+      "model_response": "Типы входов:\n1. Sequential data, such as time series or text.\n2. Images represented by sequential patches (in convolutional neural networks).\n3. Sequences of vectors in sequence-to-sequence tasks.\n\nВыходы:\n1. Target output vector for regression analysis like character predictions based on context input sequences.\n2. Softmax layer outputs representing probabilities over different classes after the RNN has processed a given time series data as its sequential inputs (e.g., language models, machine translation).",
       "rating": ""
     }
   ]

@@ -4,25 +4,25 @@
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
     "system_prompt_id": "prompt11",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
-    "f1": 32.3,
-    "precision": 34.2,
-    "recall": 48.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 32.1,
-    "hallucination": 10.9,
-    "faithfulness": 31.4,
-    "noise_sensitivity": 19.4,
-    "self_knowledge": 4.4,
-    "timestamp": "2025-10-28T13:24:20.091814"
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 38.7,
+    "precision": 39.6,
+    "recall": 46.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 46.0,
+    "hallucination": 26.6,
+    "faithfulness": 60.1,
+    "noise_sensitivity": 33.8,
+    "self_knowledge": 13.3,
+    "timestamp": "2025-11-08T20:42:39.102692"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "В отличие от standартного k-NN (Классификация на основе ближнейших recordов), взвешенный k-NN учитывает важность recordов и фиксирует weighting rule, что позволяет учитывать специфические схемы сходства объектов.",
+      "model_response": "Normalization of input data by batches is an essential technique for training deep learning models, including Recurrent Neural Networks (RNNs). This process involves scaling each feature of the input data relative to its own mean and standard deviation. There are several reasons why normalization is important when using a batch:\n\n1. **Stabilizing Gradients**: Normalization helps stabilize gradients during backpropagation by preventing large or unstable gradients, which can slow down learning or even cause divergence.\n\n2. **Improving Convergence**: By normalizing data across batches, the scale of the inputs remains consistent, making it easier for the model to converge and learn patterns effectively.\n\n3. **Handling Different Scale Magnitudes**: Each feature may have different scales depending on the dataset, which can affect gradient flow if not normalized. Normalization ensures that all features contribute equally to the learning process.\n\n4. **Reducing the Impact of Initialization**: Proper normalization helps in initializing weights in a way that allows the model to converge without getting stuck in poor local minima or diverging during training.\n\n5. **Regularizing Neural Networks**: Techniques like Layer Normalization are used in RNNs, where each layer's outputs are normalized across the entire batch before processing. This regularization helps prevent overfitting and encourages the network to learn robust representations of the input data.\n\nIn summary, normalizing by batches is crucial for maintaining stable gradients, improving convergence, and ensuring that the learning process is efficient and effective across all features of the input data, whether they are part of a standard dataset or within an RNN context.",
       "rating": ""
     }
   ]

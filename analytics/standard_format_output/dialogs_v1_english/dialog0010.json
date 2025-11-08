@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0010",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
     "system_prompt_id": "prompt1",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
-    "f1": 41.9,
-    "precision": 41.7,
-    "recall": 52.8,
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 23.3,
+    "precision": 24.0,
+    "recall": 38.6,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.699429"
+    "timestamp": "2025-11-08T20:42:35.592948"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Пожалуйста, предоставьте мне контекст или вопрос, на который вы хотите, чтобы я ответил. Я не знаю, о чем речь, пока вы мне не расскажете! \n\nКак только вы предоставите мне вопрос или текст, я с радостью объясню разницу между k-NN и взвешенным k-NN.\n",
+      "model_response": "По\tminи-батчам нормализация normalize training batch size, что означает, чтоTrain_batch_size = n, где n — количествоbatch за раз. minibatches.\n\nЕсли train_batch_size too small, then the learning rate will be too large and it may lead to overshooting the minimum loss. If train_batch_size too big, then the loss over many batches may add up and it may take too long to converge on a good solution.\n\nminibatch_size = 32. This means that each training sample is split into 32 mini-batches before passing them through the network.",
       "rating": ""
     }
   ]

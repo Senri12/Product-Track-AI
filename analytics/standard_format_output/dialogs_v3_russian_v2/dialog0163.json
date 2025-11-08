@@ -4,25 +4,25 @@
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
     "system_prompt_id": "prompt11",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
-    "f1": 32.3,
-    "precision": 34.2,
-    "recall": 48.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 32.1,
-    "hallucination": 10.9,
-    "faithfulness": 31.4,
-    "noise_sensitivity": 19.4,
-    "self_knowledge": 4.4,
-    "timestamp": "2025-10-28T13:24:20.092450"
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 38.7,
+    "precision": 39.6,
+    "recall": 46.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 46.0,
+    "hallucination": 26.6,
+    "faithfulness": 60.1,
+    "noise_sensitivity": 33.8,
+    "self_knowledge": 13.3,
+    "timestamp": "2025-11-08T20:42:39.103425"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "В примере с погодой мы видим, что/test object Classified as 'DA'.",
+      "model_response": "**Answer:**\n\nAttention is essential in machine translation tasks like these because it helps maintain proper context across different elements in the input or output. Without attention, models might struggle to properly understand or retain the relationships between words, leading to less accurate translations. For instance, ensuring that a translation retains the nuance of certain phrases even when translating could be lost if the attention wasn't correctly capturing the context. Transformers are particularly effective for this purpose due to their ability to attend to all parts of the input simultaneously, making them highly efficient in sequence data tasks.\n\n**Final Answer:**\nAttention is crucial because it helps maintain proper context by focusing on specific elements within sequences. Without attention, models might lose nuance and relationships between words, leading to less accurate translations. Transformers use attention effectively for this purpose, ensuring better handling of sequence data like text translation.",
       "rating": ""
     }
   ]

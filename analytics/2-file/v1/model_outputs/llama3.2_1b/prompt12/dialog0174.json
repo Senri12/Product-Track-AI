@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Замочные скважины - это tiny или малые скважины, которые появляются в линейной частиhidden state layer в recurrent neural network (RNN), как во времени и空间. Ониhelpут в уменьшении воздействия последовательных обновлений hidden state на hidden state.\n\nЗамочные скважины необходимы для решения few-shot learning problems, где мы можем обучить model к few-shot наборами данных. В few-shot learning problems нам нужно решать задачи на основе fewshot набора данных, и для этого model должен уметь выдаивать ответ послеFewshot набора данных.\n\nЗамочные скважины необходимы для решения few-shot learning проблем по Several reasons:\n\n1. Снижение воздействия последовательных обновлений hidden state.\n2. Работа на fewShot наборе данных, а не наbatch data.\n3. Возможность обучения model к fewShot наборам данных.\n\nНапример, если мы хотим учесть последовательные обновления hidden state в few-shot learning задаче тегирования слов в предложении, нам нужно создать замочные скважины в hidden state layer. Это позволяет modelу снизить воздействие последовательных обновлений hidden state на hidden state.\n\nОднако замочные скважины в LSTM могут повыsherверить model и привести к затухе или взрыву градиентов. Чтобы избежать этого, мы можем использовать few-shot learning architecture, где model обучается на fewShot наборе данных и работает на batch data.\n\nВ few-shot learning architecture нам нужно creation of fewShot masking mechanism, which allows us to create fewShot masked embeddings and then use them in few-shot learning architecture.",
+    "rating": ""
+  }
+]

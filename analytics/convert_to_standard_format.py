@@ -62,7 +62,11 @@ def load_ragchecker_metrics(version_path, model_folder_name, prompt_id):
         prompt_id: str - ID промпта (например, 'prompt1')
     """
     # Ищем файл с результатами
+    # Проверяем оба варианта: RAGChecker_outputs и RAGChecker_OUTPUTS
     results_dir = version_path / 'RAGChecker_outputs'
+    if not results_dir.exists():
+        results_dir = version_path / 'RAGChecker_OUTPUTS'
+
     if not results_dir.exists():
         return {}
 
@@ -123,12 +127,15 @@ def format_ragchecker_notes(metrics):
 
     return '; '.join(notes_parts) if notes_parts else 'All RAGChecker metrics are zero'
 
-def convert_version_to_standard_format(version_path, version_name, output_dir):
-    """Конвертировать одну версию в стандартный формат"""
+def convert_version_to_standard_format(version_path, version_name, output_dir, source_name=''):
+    """Конвертировать одну версию в стандартный формат
 
-    print(f"\n{'='*70}")
-    print(f"Конвертация {version_name}")
-    print(f"{'='*70}")
+    Args:
+        version_path: путь к версии данных
+        version_name: имя версии (v1_english, v2_russian, v3_russian_v2)
+        output_dir: директория для сохранения результатов
+        source_name: имя источника данных (analytics, 2-file) для логирования
+    """
 
     version_path = Path(version_path)
     output_dir = Path(output_dir)
@@ -137,31 +144,37 @@ def convert_version_to_standard_format(version_path, version_name, output_dir):
     # Загружаем информацию о лекциях
     checking_inputs_file = version_path / 'checking_inputs.json'
     lecture_info = load_lecture_info(checking_inputs_file)
-    print(f"Загружено {len(lecture_info)} записей о лекциях")
+    print(f"  Загружено {len(lecture_info)} записей о лекциях")
 
     # Загружаем системные промпты
     system_prompts_file = version_path / 'system_prompts.json'
+
+    if not system_prompts_file.exists():
+        print(f"  ⚠ Файл не найден: {system_prompts_file}")
+        return pd.DataFrame()
+
     with open(system_prompts_file, 'r', encoding='utf-8') as f:
         system_prompts_data = json.load(f)
 
-    # Конвертируем system_prompts в требуемый формат
-    system_prompts_df = pd.DataFrame([
-        {
-            'system_prompt_id': p['system_prompt_id'],
-            'system_prompt': p['system_prompt'],
-            'description': p.get('description', ''),
-            'version': p.get('version', '')
-        }
-        for p in system_prompts_data
-    ])
-
-    # Сохраняем system_prompts
+    # Сохраняем system_prompts только один раз для версии (при первом вызове)
     system_prompts_output = output_dir / f'system_prompts_{version_name}.xlsx'
-    system_prompts_df.to_excel(system_prompts_output, index=False)
-    system_prompts_df.to_csv(output_dir / f'system_prompts_{version_name}.csv', index=False)
-    system_prompts_df.to_json(output_dir / f'system_prompts_{version_name}.json',
-                              orient='records', indent=2, force_ascii=False)
-    print(f"✓ Сохранено: system_prompts (xlsx, csv, json)")
+    if not system_prompts_output.exists():
+        # Конвертируем system_prompts в требуемый формат
+        system_prompts_df = pd.DataFrame([
+            {
+                'system_prompt_id': p['system_prompt_id'],
+                'system_prompt': p['system_prompt'],
+                'description': p.get('description', ''),
+                'version': p.get('version', '')
+            }
+            for p in system_prompts_data
+        ])
+
+        system_prompts_df.to_excel(system_prompts_output, index=False)
+        system_prompts_df.to_csv(output_dir / f'system_prompts_{version_name}.csv', index=False)
+        system_prompts_df.to_json(output_dir / f'system_prompts_{version_name}.json',
+                                  orient='records', indent=2, force_ascii=False)
+        print(f"  ✓ Сохранено: system_prompts (xlsx, csv, json)")
 
     # Собираем overall_report
     overall_records = []
@@ -170,10 +183,10 @@ def convert_version_to_standard_format(version_path, version_name, output_dir):
     model_outputs_path = version_path / 'model_outputs'
 
     if not model_outputs_path.exists():
-        print(f"⚠ Папка не найдена: {model_outputs_path}")
-        return
+        print(f"  ⚠ Папка не найдена: {model_outputs_path}")
+        return pd.DataFrame()
 
-    # Создаем папку для диалогов
+    # Используем общую папку для диалогов (создается в main)
     dialogs_output_dir = output_dir / f'dialogs_{version_name}'
     dialogs_output_dir.mkdir(exist_ok=True)
 
@@ -315,23 +328,16 @@ def convert_version_to_standard_format(version_path, version_name, output_dir):
                 except Exception as e:
                     print(f"    ✗ Ошибка при обработке {dialog_file}: {e}")
 
-    print(f"\n  Всего диалогов обработано: {dialogs_converted}")
+    print(f"  Всего диалогов обработано: {dialogs_converted}")
 
     # Создаем overall_report DataFrame
     overall_df = pd.DataFrame(overall_records)
 
-    # Сохраняем overall_report в разных форматах
-    overall_xlsx = output_dir / f'overall_report_{version_name}.xlsx'
-    overall_csv = output_dir / f'overall_report_{version_name}.csv'
-
-    overall_df.to_excel(overall_xlsx, index=False)
-    overall_df.to_csv(overall_csv, index=False)
-
-    print(f"\n✓ Сохранено: overall_report (xlsx, csv)")
     print(f"  Записей: {len(overall_df)}")
-    print(f"  Моделей: {overall_df['model_name'].nunique()}")
-    print(f"  Промптов: {overall_df['system_prompt_id'].nunique()}")
-    print(f"  Диалогов: {overall_df['dialog_id'].nunique()}")
+    if len(overall_df) > 0:
+        print(f"  Моделей: {overall_df['model_name'].nunique()}")
+        print(f"  Промптов: {overall_df['system_prompt_id'].nunique()}")
+        print(f"  Диалогов: {overall_df['dialog_id'].nunique()}")
 
     return overall_df
 
@@ -386,25 +392,72 @@ def main():
     print("КОНВЕРТАЦИЯ В СТАНДАРТНЫЙ ФОРМАТ")
     print("="*70)
 
-    # Определяем версии
-    versions = {
-        'v1_english': ' version_1',
-        'v2_russian': 'version_2',
-        'v3_russian_v2': 'version_3'
+    # Определяем версии - объединяем version_* и 2-file/ в единые версии
+    # Формат: {'версия': [('путь1', 'источник1'), ('путь2', 'источник2'), ...]}
+    unified_versions = {
+        'v1_english': [
+            (' version_1', 'analytics'),
+            ('2-file/v1', '2-file')
+        ],
+        'v2_russian': [
+            ('version_2', 'analytics'),
+            ('2-file/V2', '2-file')
+        ],
+        'v3_russian_v2': [
+            ('version_3', 'analytics'),
+            ('2-file/v3', '2-file')
+        ]
     }
 
     output_base_dir = 'standard_format_output'
 
-    # Конвертируем каждую версию
-    for version_name, version_path in versions.items():
-        if os.path.exists(version_path):
-            convert_version_to_standard_format(
+    # Конвертируем каждую версию, объединяя данные из разных источников
+    for version_name, sources in unified_versions.items():
+        print(f"\n{'='*70}")
+        print(f"Конвертация {version_name} (объединение всех источников)")
+        print(f"{'='*70}")
+
+        all_records = []
+        dialogs_output_dir = Path(output_base_dir) / f'dialogs_{version_name}'
+        dialogs_output_dir.mkdir(parents=True, exist_ok=True)
+
+        for version_path, source_name in sources:
+            version_path = Path(version_path)
+
+            if not version_path.exists():
+                print(f"⚠ Пропущено: {source_name} (путь не найден: {version_path})")
+                continue
+
+            print(f"\n📂 Обработка источника: {source_name}")
+            print(f"   Путь: {version_path}")
+
+            # Конвертируем данные из этого источника
+            records = convert_version_to_standard_format(
                 version_path,
                 version_name,
-                output_base_dir
+                output_base_dir,
+                source_name
             )
-        else:
-            print(f"\n⚠ Пропущено: {version_name} (путь не найден: {version_path})")
+
+            if records is not None and len(records) > 0:
+                all_records.append(records)
+
+        # Объединяем все записи для этой версии
+        if all_records:
+            combined_df = pd.concat(all_records, ignore_index=True)
+
+            # Сохраняем объединенный overall_report
+            overall_xlsx = Path(output_base_dir) / f'overall_report_{version_name}.xlsx'
+            overall_csv = Path(output_base_dir) / f'overall_report_{version_name}.csv'
+
+            combined_df.to_excel(overall_xlsx, index=False)
+            combined_df.to_csv(overall_csv, index=False)
+
+            print(f"\n✓ Сохранено объединенное: overall_report_{version_name} (xlsx, csv)")
+            print(f"  Всего записей: {len(combined_df)}")
+            print(f"  Моделей: {combined_df['model_name'].nunique()}")
+            print(f"  Промптов: {combined_df['system_prompt_id'].nunique()}")
+            print(f"  Диалогов: {combined_df['dialog_id'].nunique()}")
 
     # Создаем объединенный отчет
     create_combined_report(output_base_dir)
@@ -418,6 +471,10 @@ def main():
     print("  • overall_report_combined.xlsx/csv - объединенный отчет")
     print("  • system_prompts_<version>.xlsx/csv/json - системные промпты")
     print("  • dialogs_<version>/<dialog_id>.json - файлы диалогов")
+    print("\nВерсии (объединенные analytics + 2-file):")
+    print("  • v1_english (version_1 + 2-file/v1)")
+    print("  • v2_russian (version_2 + 2-file/V2)")
+    print("  • v3_russian_v2 (version_3 + 2-file/v3)")
 
 if __name__ == '__main__':
     main()

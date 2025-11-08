@@ -4,11 +4,11 @@
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
     "system_prompt_id": "prompt1",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
-    "f1": 33.3,
-    "precision": 35.9,
-    "recall": 40.7,
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 27.8,
+    "precision": 36.0,
+    "recall": 30.1,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.978923"
+    "timestamp": "2025-11-08T20:42:37.316840"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Вопрос seems не соответствовать теме, которую задал. Однако, если бы вопрос касался_words или фразы \"приз\", то вероятность его спAMA можно рассчитать, взяв количество occurrences этого слова в тексте и разделив их на общее количество words.\n\nЕсли мы предположим, что example — text с примерами, то количество words можно вычислить по формуле:\n\nКоличество words = 1000 (например)\nКоличество occurrence words: \"приз\" = ??\n\nЧтобы определить количество occurrences words, нам нужно посчитать количество раз \"приз\" встречается на каждом word. \n\nДля example мы можем перечислить few примера и подсчитать количество \"приза\":\n\n* 1. Приз\n* 2. Приз\n* 3. Приз\n* ... и так далее\n\nКоличество occurrence words: \"приз\" = 5.\n\nИтак, вероятность спAMA для слова 'приз' составит:\n\nВероятность спама (поскольку occurrences word равна 1): 1/1000\n\nВероятность не спAMA: 999/1000.",
+      "model_response": "Трудность применения обычной batch normalization к RNN заключается в том, чтоbatch normalization works better when training RNNs with small batches (e.g., 32 or 64) because it helps to stabilize the gradient flow. However, when training larger batches (e.g., 128 or more), the gradients can become \"stuck\" in a cycle of underflow and overflow, leading to unstable training and poor model performance.\n\nЭтот проблемы можно устранить за счет использования batch normalization с наличанием тактических сдвигов в batch size или в количестве training steps. Таким образом, при small batches:\n\n1. Gradients из batch normalizations для RNN остаются более стабильными.\n2. В Grain и Gradient flow не \"мостят\" один за другим, что приводит к более ổnательномуtraining.\n\nЗа разныеbatch size, gradients из batch normalizetion для RNN могут остаться более \"замедленными\".",
       "rating": ""
     }
   ]

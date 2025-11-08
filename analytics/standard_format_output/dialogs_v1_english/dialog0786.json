@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0786",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое манхэттенское расстояние?",
-    "f1": 31.7,
-    "precision": 32.7,
-    "recall": 65.8,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как LSTM решает проблему затухающих градиентов?",
+    "f1": 4.1,
+    "precision": 5.8,
+    "recall": 20.6,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.772376"
+    "timestamp": "2025-11-08T20:42:35.752220"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое манхэттенское расстояние?",
+      "content": "Как LSTM решает проблему затухающих градиентов?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "The Manhattan distance (also known simply as \"city block\" or \"taxicab metric\") is not an actual physical measurement but rather a way of quantifying distances in grid-like structures such as urban layouts, chess boards for moves like rook's diagonal movement possibilities. It measures the absolute difference between two points along orthogonal axes — akin to counting steps on city blocks.\n\nIn Manhattan distance calculations:\n\n- You only move horizontally and vertically; no diagonals are allowed.\n- Each block moved (either up/down or left/right) counts as one unit of distance, regardless if it's moving north/south/east/west. \n\nMathematically for a two-dimensional grid with points A(x1,y1) and B(x2,y2), the Manhattan Distance D is calculated by:\n\nD = |x1 - x2| + |y1 - y2|\n\nSo in an urban context, if you were to travel from one block at coordinates (3rd Street & 7th Ave.) to another located on Main St. & Washington Place using only horizontal and vertical movements along the streets like a taxi navigating through Manhattan without diagonal shortcuts; that distance would be measured as follows:\n\nD = |Street number difference| + |Avenue/Street name difference|\n\nFor instance, moving from (3rd Street) to Broadway directly eastward is 1 block away since it's just one street up.\n\nQuiz Question: Imagine you are standing at the intersection of Fifth Avenue and Madison Ave. You need to reach West End Park on Columbus Ave., which lies in a different quadrant than your current location. How many blocks would it take for Manhattan distance traveling?\n\nTargeted Review Questions:\n\n1. If point A is located 3 units away from an origin horizontally (East), what will the horizontal part of its Manhattan Distance be if we move to any other East-West oriented points, regardless of their vertical position?\n2. Does moving diagonally count as a block in city-block distance calculations? Why or why not?\n\nTargeted Revision and Explanation:\n\n- The first question tests your understanding that only straight-line movements along grid lines are counted for Manhattan Distance.\n- In response to the second query: No diagonal moves would be considered because this measure is analogous with moving through an urban environment where you can go vertically up/down, horizontally left/right but not diagonally across blocks. Diagonal movement implies a direct line which does not exist in city grids – hence it isn't counted under Manhattan distance calculations.\n\nIf there are any further questions or concepts that you'd like to review about the topic of \"manhattan distance,\" please let me know and I'll provide additional clarification!",
+      "model_response": "LSTM (Long Short-Term Memory) является типом рекуррентной нейронной сети, которая устанавливает внимание на не только текущее входное значение, но и предыдущие значения в последовательности, что позволяет ее лучше памятать длительные зависимости. Для решения проблемы затухающих градиентов, LSTM использует два специального типа сигнальных функций: контрольная функция и внутренний состояние частоты.\n\n1. Контрольная функция (σ): Эта функция принимает входное значение и предыдущие значения, и прибавляет к ним инъекцию (б), которая используется для управления интенсивностью входа. Затем она преобразует результат в градиент от 0 до 1. Эта функция помогает LSTM кернелу сосредоточиться на тех элементах, которые являются более важными для предсказания следующего числа в последовательности.\n\n2. Внутренняя частота (t): Этот элемент кернеля неявно содержит информацию о скорости изменения, которая, как правило, учитывается при этом. При этом внутренняя частота рассматривается как бинарный преобразователь, где 1 означает, что значение пытается сохранить, а 0 - уменьшение.\n\nВсего это позволяет LSTM использовать информацию не только с текущего входа, но и с предыдущими картинами и других параметрам, что приводит к более стабильным и длительным зависимостям. Поэтому, градиенты, выводимые из LSTM при обучении, не теряют силу, что способствует более надежной оптимизации и прогнозированию.",
       "rating": ""
     }
   ]

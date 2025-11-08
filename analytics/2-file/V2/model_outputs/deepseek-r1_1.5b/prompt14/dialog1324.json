@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем отличие Simple RNN от глубоких RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Дifference между Simple RNN и глубокими RNN заключается в подходе к управлению state:\n\n1. **Simple RNN**: Простая модель, которая processes data последовательно с использованием слойа рекуррентного обработки без устранения回头一看а. Она работает за O(T) времени.\n\n2. **Gated RNN (GRU)**:\n   - Использует forget gate и update gate, которые разделяют state между контекстом и текущим state.\n   - GRUs имеют fewer parameters, что делает их более предсказуемыми и эффективными дляmany- tasks.\n\n3. **Deep RNN (GRU)**:\n   - Составляется из multiple layers of RNN units, каждый из которых гибкая GRU.\n   - GRU с multiple layers为您提供 глубокую expressiveness, что делает их более robust и предсказуемыми для сложных задач.\n\nВ целом, Simple RNN很简单 и понятен, но может быть не эффективным для сложных задач. Глубокие RNN, таких как GRUs, разделяют state между контекстом и текущим state, что делает их более robust и предсказуемыми.",
+    "rating": ""
+  }
+]

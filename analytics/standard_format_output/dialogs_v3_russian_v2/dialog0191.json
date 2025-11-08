@@ -3,26 +3,26 @@
     "dialog_id": "dialog0191",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
-    "f1": 25.1,
-    "precision": 30.2,
-    "recall": 38.5,
-    "claim_recall": 34.5,
-    "context_precision": 50.0,
-    "context_utilization": 29.5,
-    "hallucination": 13.2,
-    "faithfulness": 31.7,
-    "noise_sensitivity": 17.3,
-    "self_knowledge": 5.1,
-    "timestamp": "2025-10-28T13:24:20.041593"
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 27.9,
+    "precision": 28.9,
+    "recall": 45.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 46.6,
+    "hallucination": 30.6,
+    "faithfulness": 52.1,
+    "noise_sensitivity": 33.9,
+    "self_knowledge": 10.6,
+    "timestamp": "2025-11-08T20:42:39.051066"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Вот walkthrough изменил:\n\n**Step-by-Step Explanation:**\n\n1. **Выбор метрики:**\n   Используем Euclidean метрику,因为她 соответствует расстоянию между двумя векторами и часто используется в ближайших каскадах.\n\n2. **Вычисление расстояний до «приз»:**\n   Для каждого слова из тренировочного набора (например, слово «покров», «книга», «вопрос», «смартшета», «репутация») вычисляем Euclidean расстояние до слова «приз» по формуле:\n   $$\n   d(\\text{покров}, \\text{приз}) = \\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}\n   $$\n   Используем similarly для других слов.\n\n3. **Определение ближайших каскадов:**\n   После вычислений расстояний, в зависимости от использованияEuclidean метрики определяем ближайшие каскады для каждого слова из тренировочного набора:\n   - В случае Euclidean метрики: ближайшие кассады – это те слова из тренировочного набора с самим низким расстоянием до «приз».\n   \n4. **Классификация слова «приз»:**\n   Сравниваем предсказанияclass (ближайших каскадов) для каждого слова из тренировочного набора с реальным классом «приз»:\n   - Если, например, покров – «книга», и «книга» соответствует «нужной категории» в рамках метода ближайших каскадов, то предсказаниеclass будет отрицательно классом «покров».\n   - Если предсказаниеclass отрицательно относится к «покров», то слово «приз» является спамом.\n\n5. **Рассчитывание вероятности спама:**\n   Используя распределение предсказанийclass по классам в тренировочном наборе, вычисляем вероятность спама для слова «приз».\n   - Вероятность спама – это доля объектов из тренировочного набора, сходящихся с «приз».\n   - Примерно:\n     $$\n     P(\\text{спам}) = \\frac{\\text{Количество слов в тренировочном наборе, сходящихся с « приз »}}{\\text{Объем тренировочного набора}}\n     $$\n\n6. **Пример расчета:**\n   Допустим, в Our experiment из тренировочного набора:\n   - 25% объектов соответствуют «покров» (нужной категории).\n   - 10% объектов соответствуют «книге» и т.д.\n   \n   Сравниваем предсказанияclass для слово «приз» и видим, что его ближайшие каскады – это «покров», то есть 30% объектов из тренировочного набора соответствуют «покров».\n\n   Значит:\n   $$\n   P(\\text{спам}) = 1 - 0.3 = 0.7 = 70\\%\n   $$\n\n**Таким образом, вероятность спама для слова «приз» составляет 70%.**",
+      "model_response": "The application of traditional batch normalization to Recurrent Neural Networks (RNNs) faces several key challenges due to their sequential nature and the complexity introduced by temporal dependencies. Here's a structured summary of these challenges:\n\n1. **Sequential Normalization Issues**:\n   - **Temporal Context**: Each example in a batch is processed sequentially, making it difficult to normalize across all time steps simultaneously. This can lead to inconsistent statistics (mean and variance) that do not accurately reflect the current step.\n   - **Gradient Propagation**: The backpropagation through time complicates gradient stability as gradients might not propagate correctly through each step without unrolling the network.\n\n2. **Normalization Across Time Steps**:\n   - **Inconsistent Initialization**: Applying normalization across all steps within a batch may result in inconsistent initializations that do not align with the varying dynamics of different sequences.\n   - **Temporal Structure**: The hidden state dependencies make it challenging to maintain stable normalization parameters throughout the sequence processing.\n\n3. **Gradient Challenges**:\n   - ** exploding or Vanishing Gradients**: The sequential nature can lead to gradients either exploding (in deep networks) or vanishing, which is particularly problematic in long sequences where gradient reversals are more likely.\n\n4. **Temporal Structure Sensitivity**:\n   - **Inconsistent Representation**: The normalized values might not properly capture the temporal structure of each sequence, leading to suboptimal representations and affected learning.\n\n5. **Batch Statistics Across Time Steps**:\n   - **Inconsistent Mean and Variance**: Normalizing across all time steps within a batch may not accurately represent the statistics at each step, leading to potential data imbalance or drift.\n\n6. **Stability in Different Sequences**:\n   - **Varying Dynamics**: Each sequence has different temporal patterns that might be improperly normalized relative to others, affecting model generalization and learning.\n\n7. **Propriety of Normalization Parameters**:\n   - **Lack of Temporal Consistency**: The normalization parameters derived from a batch may not adequately represent the specific dynamics of each individual sequence within the batch.\n\nIn conclusion, while traditional batch normalization can be adapted for RNNs, the sequential nature and temporal dependencies present challenges in ensuring stable and effective training. Addressing these issues requires careful handling of temporal context during normalization and potential adaptations to maintain gradient stability through time steps.",
       "rating": ""
     }
   ]

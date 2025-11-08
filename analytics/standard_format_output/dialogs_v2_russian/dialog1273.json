@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1273",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
-    "f1": 41.1,
-    "precision": 41.1,
-    "recall": 52.8,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.267053"
+    "timestamp": "2025-11-08T20:42:37.354647"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " В приведенном ниже примере для расчета функции F(да) используется данные о погоде в городе Киев (Украина). Мы будем использовать дату 12 января 2022 года как дату \"да\" и проанализируем погодные условия на этот день с помощью функции F(да), которая вычисляет сумму положительных значений температур, осадков и ветра для заданной даты.\n\nВ данном случае мы можем получить следующие погодные данные для Киева 12 января 2022 года:\n- Температура: -5 градусов Цельсия\n- Осадки: 3 миллиметра (относится к положительному значению, т.к. осадки > 0)\n- Ветра: 6 метров в секунду (относится к положительному значению, т.к. скорость ветра не нулевая)\n\nТаким образом, сумма положительных значений температуры, осадков и ветра для даты \"да\" (12 января 2022 года) будет равна:\n- Температура: -5 градусов Цельсия -> +(-5) = 5\n- Осадки: 3 миллиметра -> +(3) = 3\n- Ветра: 6 метров в секунду -> +(6) = 6\n\nПолучаем, что сумма положительных значений температуры, осадков и ветра для даты \"да\" равна 14. Вычисление функции F(да) для данного случая завершено: F(да) = 14.",
+      "model_response": "В примере для модели BERT указано 7 слогов:\n\n1. Obtaining\n2. Recurrent neural networks\n3. Attention is all you need\n4. Bidirectional Encoder Representations from Transformers\n5. Masked Language Modeling\n6. Large BERT\n7. State of the art in machine learning\n\nОднако actual wording для модели BERT говорит о более большом количестве слов, включая подробное описание и трансформеров.\n\n**Ответ:**\n\nВ примере указано 7 слогов для модели BERT:\n\n1. Obtaining\n2. Recurrent neural networks\n3. Attention is all you need\n4. Bidirectional Encoder Representations from Transformers\n5. Masked Language Modeling\n6. Large BERT\n7. State of the art in machine learning",
       "rating": ""
     }
   ]

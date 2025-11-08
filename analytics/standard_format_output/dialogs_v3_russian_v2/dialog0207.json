@@ -3,26 +3,26 @@
     "dialog_id": "dialog0207",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
-    "f1": 25.1,
-    "precision": 30.2,
-    "recall": 38.5,
-    "claim_recall": 34.5,
-    "context_precision": 50.0,
-    "context_utilization": 29.5,
-    "hallucination": 13.2,
-    "faithfulness": 31.7,
-    "noise_sensitivity": 17.3,
-    "self_knowledge": 5.1,
-    "timestamp": "2025-10-28T13:24:20.045082"
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 39.7,
+    "precision": 40.8,
+    "recall": 53.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 54.8,
+    "hallucination": 21.4,
+    "faithfulness": 59.6,
+    "noise_sensitivity": 31.1,
+    "self_knowledge": 12.3,
+    "timestamp": "2025-11-08T20:42:39.046605"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "content": "Как работает механизм внимания (Attention)?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Итак, по формуле Momentum обновления градиента (\\( v_t \\)) в момент t получится следующее:\n\n$$\nv_t = \\gamma \\cdot v_{t-1} - \\eta \\cdot \\nabla L(\\theta)\n$$\n\nПодставим данные:\n\n- \\( \\gamma = 0.9 \\),\n- \\( v_{t-1} = 1 \\),\n- \\( \\eta = 0.1 \\),\n- \\( \\nabla L(\\theta) = 2 \\).\n\nПuting все в формулу:\n\n$$\nv_t = 0.9 \\times 1 - 0.1 \\times 2 \\\\\nv_t = 0.9 - 0.2 \\\\\nv_t = 0.7\n$$\n\nОтвет: \\( v_t = 0.7 \\).",
+      "model_response": "Мechanism attention (Attention) в рекуррентных нейронных сетях является методом, который allows network to focus on specific parts of previous inputs when processing the current input. Видимо, в Mechanism attention神经系统 выделяет注意力 на определенных предыдущих сенсиях и захватывает их при обработке текущего сенсия, что позволяет улучшить понимание структуры данных и 提ивить точность обработки последовательных данных.",
       "rating": ""
     }
   ]

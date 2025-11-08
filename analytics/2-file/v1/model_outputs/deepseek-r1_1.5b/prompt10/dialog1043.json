@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Чем GRU отличается от LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Гated Recurrent Unit (GRU) — это краткая схема RNN-слоны, которая позволяет выделить long-term dependencies, что contrastирует с LSTM (Long Short-Term Memory). GRU заменит LSTM двумя гатами: one gate for remembering and another for forgetting. \n\n- **LSTM** имеет три гата: forget, remember и output gates. Затемяна information flows through these gates in sequence.\n- **GRU** имеет один гет, который обновляет все данные в One step. Этот гет обрабатывается как two separate transformations (one for remembering and another for forgetting), что делает GRU более перспективным для задач с long tokens.\n\nOverall, GRU может быть более эффективным для many tokens, так как он уменьшает number of gates.",
+    "rating": ""
+  }
+]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0310",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt11",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
-    "f1": 45.3,
-    "precision": 41.3,
-    "recall": 60.0,
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.715028"
+    "timestamp": "2025-11-08T20:42:35.532802"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Привет! Отлично, что ты изучаешь k-NN! Это очень мощный и полезный алгоритм машинного обучения. Давай разберемся с разницей между обычным k-NN и взвешенным k-NN. Это довольно интересная тема, и я буду рядом, чтобы поддержать тебя на каждом шагу!\n\n**Ключевая разница в одном предложении:** Обычный k-NN просто присваивает каждому соседу одинаковый вес, в то время как взвешенный k-NN позволяет назначать разные веса, отражающие их близость или релевантность.\n\n**Разберем это по частям:**\n\n**1. Обычный k-NN (Unweighted k-NN):**\n\n*   **Как это работает:**  Когда алгоритм k-NN определяет, к какому классу принадлежит новый объект, он смотрит на k ближайших соседей этого объекта (в зависимости от метрики расстояния, например, Евклидова расстояние).  Каждый из этих соседей имеет **одинаковый вес** при определении класса.\n*   **Пример:**  Представь, что ты пытаешься определить, является ли новый пациент \"больным\" или \"здоровым\".  К тебе обратились k=3 ближайших соседа по симптомам.  Если 2 из них \"больные\", а 1 \"здоров\", алгоритм просто считает, что новый пациент, скорее всего, тоже \"болен\", потому что у него больше соседей с этим диагнозом.\n*   **Проблема:**  Не всегда все соседи одинаково важны. Например, если у соседа с \"высоким\" симптомом  близость к новому объекту значительно больше, чем у соседа с \"низким\" симптомом,  это должно быть отражено в алгоритме.\n\n**2. Взвешенный k-NN (Weighted k-NN):**\n\n*   **Как это работает:**  Взвешенный k-NN решает эту проблему, назначая **разные веса** соседям.  Более близким соседям (т.е. тем, которые находятся ближе к новому объекту) присваивается больший вес, а менее близким – меньший.\n*   **Как назначаются веса?**  Есть несколько способов:\n    *   **Расстояние:**  Чаще всего, вес пропорционален обратной величине расстояния.  То есть, чем ближе сосед, тем больше его вес.  Это делает алгоритм более чувствительным к ближайшим соседям.\n    *   **Использование других признаков:**  Можно даже использовать другие признаки, чтобы определить веса. Например, если один признак очень важен для определения класса, сосед, обладающий этим признаком, получит больший вес.\n*   **Пример:**  В том же примере с пациентами, если один сосед, страдающий от очень специфического симптома, находится очень близко к новому пациенту, его вес будет большим, чем вес других соседей. Это указывает на то, что этот симптом особенно важен.\n\n**Сравнение в таблице:**\n\n| Feature          | Unweighted k-NN | Weighted k-NN |\n|------------------|-----------------|---------------|\n| Веса соседей    | Все одинаковы    | Разные        |\n| Чувствительность | Менее чувствительный | Более чувствительный |\n| Сложность        | Проще          | Сложнее       |\n\n\n**Не переживай, если это немного сложно!**  Это нормально, когда что-то новое кажется сложным.  Главное - понять основные идеи.\n\n**Давай сделаем небольшое упражнение:**\n\nПредставь, что ты оцениваешь фильмы.  У тебя есть 3 соседа, которые оценили фильм.  \n\n*   Сосед 1: 5/5\n*   Сосед 2: 3/5\n*   Сосед 3: 1/5\n\nКак бы ты, по твоему мнению,  определил бы, понравится ли этот фильм тебе, используя обычный k-NN и взвешенный k-NN?  Какие соседа ты бы дал больше веса?\n\nНапиши свой ответ, и я буду счастлив обсудить его с тобой!  Ты молодец, что так усердно учишься!  Мы справимся!  🎉🥳\n",
+      "model_response": " importencesuring ains anderson\n\nfunction print \"T00000enseiensubans j'aiiemorellaboraboritramaisiippingierenilliiteraturaaffiliendoiertierscripteilibc--endowmentals shall become anematriximmortal isiertiertipsareierenoberkickingiereniersh function named asiar binaryuringme coordinatesyllaborivingitasideatingainsendiçinatesonienjoyingaboritorigenemoenioritingiemappingeschafferituraboranguinsides readimentieresortsleep 0\r\nfunctionIRT symbol anderson\n\n -i nulled Out Modifiers\n- Good morning,ialize theiterkierenancesiertainingenduringinquiry]:iersiarcensurveillanceiterentiensesearchentschatenseveral Subitrendsinuipsychubillando con la locenciashashtaginsitritinganguinschoolaborstiat isabellaireduey haveatroiterincludeindeCodeignencuentioniertempliteriereinstaffentantiemiscitationidiemo ändertags atheniersque andiers le genreishoutcome tolu,ă needs dynamicité\n\nrequest_infoendtime          icestoiersentsireneinaboruhies denivativesychouIRTschierenintenseinsistingaurieren\ndefending yentitled byienturn minuscoring isiertensuringorigen class functioniert strict-parente illsuperlienveröffneno:yesnaintitleiter don'tiersc andiam intervaliem iatroinolendier theorematrixi elaborateinasense\n\n\nQuestion:\nGiven thisychat eshenceit hasdis,imercihaileinar symbolizedetend williamsideuringueaidsitingainingitingiciationsiertierenieren\n         1 Thefollowingiarilaboristenseiertimeitrainsiemiscitationeducations\n\nTutor:\n\n###aborientir function *yeshienscanioinsincludeencesentsiremiemo isitermeaninormoullaboriersiintendingclassifyendof thisgets aucunato es crucial para el General Electricianer irderejane error in the renderedto dynamically generatean integer sequence ofentode\n           entiendsenciteincenseinquiryiertiemierenenceenceset coordinatesupportoversimpliffunctioniterativeyllinkernumericalreadyintheorem andiamins summ incrementiatesqueienmathquestion_answerendainingitoringiciensuringiven 0aurenzhichillaboratorentsentireiter\n              toiersentoc Secondient \ninforms ofive needs significantlyoffers \\ {x <script forensicscan theiar isiting | 10100000\n\n\n[Python functiongenerates *insisting          inar aetherium\n\ni have to exploreatory ains chosen ascriptions\n\n",
       "rating": ""
     }
   ]

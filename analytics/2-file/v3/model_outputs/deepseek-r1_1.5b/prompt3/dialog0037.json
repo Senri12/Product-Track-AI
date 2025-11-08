@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Стандартная LSTM ячейка включает следующие компоненты:\n\n1. **Forget Gate**: Управляет state forget, projects input into hidden space using threshold gate.\n\n2. **Remember Gate**: Управляется forget gate, project input to hidden space.\n\n3. **Cell State**: Геомеричное orthonormal state, обновляется в зависимости от的记忆 и incoming information.\n\n4. **Update and Reset Gates**: Определяют parts of memory (forgetting) and new information (adding).\n\n5. **Cell Input**: Геомеричное orthogonal input state, updated by forget gate.\n\n6. **Nonlinearity**: Активационные функции для изменения state.\n\n7. **Bias Term**: Добавлен в cell_state и forget gate, для расширения функционала.\n\n8. **Dropout Regularization**: Удалит нюансы по верхам (если есть).\n\n9. **Hybrid State**: Геомеричные states are updated by gates and combined with input.\n\nЭти компоненты помогают LSTM моделямоделим модели обрабатывать последовательности, усилить разреженные векторы и предотвращать遗忘 значительных важных памяти.",
+    "rating": ""
+  }
+]

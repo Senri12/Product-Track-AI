@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое скрытое состояние в RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Скрытое состояние в RNN — это hidden state или候аемое значение ячейки. Это это второстепенноеhiddenное состояние, которое сохраняется на протяжении entire batch или epochи (шаги) и используется для вычисления выходных значений. Каждая ячейка имеет две части: input gate и output gate. Input gate позволяет передать вектор состояния из входного layer через forget gate и кандидат cell state. Forget gate отсрочивает кандидат cell state на один шаг, не включая его в вычислениями. Окончательный ответ: hidden state или候аемое значение ячейки.",
+    "rating": ""
+  }
+]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1099",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое over-fitting?",
-    "f1": 34.2,
-    "precision": 33.6,
-    "recall": 51.6,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.283073"
+    "timestamp": "2025-11-08T20:42:35.604741"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое over-fitting?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Over-fitting refers to a situation in machine learning where a model is too complex for the amount of training data it has been given, causing it to perform well on the training data but poorly on new, unseen data (also known as generalization error). This happens when the model starts capturing noise in the training data instead of its underlying pattern.\n\nPractice problem: Given a simple linear regression model that is trained on a dataset with significant noise, create a quiz question to assess whether the student understands over-fitting and how it can be addressed.\n\nQuestion: You have built a simple linear regression model to predict house prices based on features such as area, number of bedrooms, and age of the house. However, you notice that your model performs very well on the training data but poorly on new, unseen data. What could be the reason for this issue? And suggest two methods to address it.\n\nA) The model is under-fitting as it's not complex enough to capture all the relationships in the data\nB) The model is over-fitting as it has learned the noise in the training data instead of its underlying pattern\nC) The model is under-sampling the data because there are too many outliers\nD) You should increase the complexity of the model by adding more features to improve performance on new data\n\nEvaluation:\nCorrect answer: B) The model is over-fitting as it has learned the noise in the training data instead of its underlying pattern\nIncorrect answers and their explanations:\nA) The model is under-fitting as it's not complex enough to capture all the relationships in the data (incorrect because the issue here is that the model is too complex for the available data, not too simple)\nC) The model is under-sampling the data because there are too many outliers (incorrect because over-fitting is not caused by under-sampling)\nD) You should increase the complexity of the model by adding more features to improve performance on new data (while adding more features can help address under-fitting, it may exacerbate the issue of over-fitting if there isn't enough relevant data for these additional features)",
+      "model_response": "Градиенты — это монета, которая показывает насколько функциональная сеть обновляется в процессе тренировки. Это важный момент, так как без них модель не будет упоминать о том, как она взмисlyaет данные.\n\nДifference между Simple RNN и глубокими RNN:\n\n1. **Simple RNN**:\n   - Состоит из последовательных слоев с活性-активацией в каждом шаге.\n   - Обновляет тенденции по шагам последовательности.\n\n2. **Glu Deep RNN**:\n   - Добавляет дополнительные слоны, таких как узкие слоны (например, LSTM или CNN), которые добавляют ассоциативные данные.\n   - Обновляет тенденции и анализирует контекст, что делает глубокие RNN более эффективными для сложных задач.",
       "rating": ""
     }
   ]

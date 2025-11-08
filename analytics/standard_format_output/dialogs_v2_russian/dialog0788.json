@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0788",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 47.3,
-    "precision": 55.4,
-    "recall": 57.8,
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 58.8,
+    "precision": 62.9,
+    "recall": 67.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.813081"
+    "timestamp": "2025-11-08T20:42:37.484715"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Расстояние Чебышёва (или просто расстояние Чебышёва) - это матрица, которая измеряет возмущение или отклонение между двумя векторами в пространстве подвижности. Оно названо в честь русского математика Пафнутия Чебышева.\n\nКлючевые моменты:\n\n1. **Определение**: Расстояние Чебышёва определено как максимальное абсолютное значение скалярного произведения двух векторов, нормированных на единицу, деленного на степень свободы (подвижность).\n\n2. **Обозначение**: Обычно обозначается символом Θ и записывается так θ.\n\n3. **Условия равенства**: Расстояние Чебышёва равно нулю тогда и только тогда, когда два вектора параллельны или ортогональны, а значение +1 приоритизирует величину первой единичной матрицы.\n\n4. **Использование**: Векторы используются в многопараметрических пространствах для количественной оценки относительных направлений и является частью методов случайных поля, таких как алгоритмы Монте-Карло.\n\n5. **Свойства**: Расстояние Чебышёва не сохраняет при умножении на скаляр; а именно, если масштабировать вектор, расстояние по-прежнему будет таким же, но возможно нормализовать его.\n\n6. **Различие от других расстояний**: В отличие от евклидова расстояния или модуля римановой геометрии, расстояние Чебышёва может принимать значения-negative и особенно полезно для анализа неевклидовых пространств.",
+      "model_response": " GRU (Gated Recurrent Units) and LSTM (Long Short-Term Memory) are both types of recurrent neural networks, which are designed to handle sequence data by maintaining an internal state that captures information about the entire sequence so far. However, they differ in their architecture and how they manage the flow of information through time.\n\nHere is a summary of the main differences between GRU and LSTM:\n\n1. Number of gates: LSTM has three gates (input gate, forget gate, and output gate), while GRU has only two gates (update gate and reset gate).\n2. Hidden state: In LSTM, the hidden state is maintained by a memory cell that stores long-term dependencies, whereas in GRU, the hidden state is updated using a gated linear transformation of the input and previous hidden state.\n3. Computational efficiency: GRU is generally computationally more efficient than LSTM because it has fewer parameters and gates to compute.\n4. Forgetting mechanism: In LSTM, the forget gate determines which parts of the previous hidden state to keep or discard, while in GRU, the update gate controls the flow of information from the previous hidden state to the current hidden state.\n5. Vanishing gradient problem: Both GRU and LSTM are designed to address the vanishing gradient problem that can occur in traditional recurrent neural networks during backpropagation. However, LSTM is better at handling long-term dependencies than GRU, which may lead to more stable learning and better performance on certain tasks.\n6. Applications: Both GRU and LSTM have been used in a variety of applications such as language modeling, machine translation, speech recognition, and time series forecasting. GRU is often used when computational efficiency is important, while LSTM is preferred for tasks that require handling long-term dependencies or memorizing specific information over extended periods.\n\nIn summary, both GRU and LSTM are powerful tools for processing sequence data, but they differ in their architecture and the way they manage the flow of information through time. LSTM is better at handling long-term dependencies, while GRU is more computationally efficient and may be preferred in certain applications where speed is important.",
       "rating": ""
     }
   ]

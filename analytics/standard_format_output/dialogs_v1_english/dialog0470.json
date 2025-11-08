@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0470",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt1",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое SGD?",
-    "f1": 31.4,
-    "precision": 44.0,
-    "recall": 56.4,
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 58.3,
+    "precision": 55.0,
+    "recall": 69.2,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.824325"
+    "timestamp": "2025-11-08T20:42:35.786003"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое SGD?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "SGD означает stochastički gradientni doprinijek (Stochastic Gradient Descent). Это algoritamsko rješenje za optimizaciju parametara modela, koje se široce koristi u učenju mašinskim metodama. Algoritam iterira na setu podataka i svakako nečišće upada na podatke, što mu daje stochastički karakter.\n\nU praksi, svaki iteracijski korak SGDA obično uključuje:\n\n1. Izabrati promjenljivu minibatch podataka.\n2. Uzmēti derivat polinoma koji želimo minimizirati (koji se u kontekstu učenja naziva funkcijom učinka) po odnosu na parametre modela, što daje gradientove.\n3. Promijeniti parametre u smjeru koga su gradienti, uz upotrebu presjece ili fluktuacijskog promjena.\n\nPostupak iteracija se nastavlja dok ne bude dosaženo neriješeni rjesenja za funkciju učinka (ili do dobijanja odredjene razine preciznosti). Složenjima u SGDA radi usklađivati se s velikim količinama podataka, što ga čini pouzdanim i praktičnoj opcijom.",
+      "model_response": " Двунаправленные рекуррентные нейронные сети (Bi-directional Recurrent Neural Networks, Bi-RNN) - это тип RNN, который учитывает как прошлое, так и будущее для каждого элемента входной последовательности.\n\nВ обычных RNN только информация, поступающая от предыдущих шагов, обрабатывается для получения результата на данном шаге, тогда как в Bi-RNN информация, которая идет вперед, а также информация, которая идет назад, учитывается при вычислении результата на текущем шаге. Это позволяет сети лучше понимать контекст всей последовательности и получать более точные результаты в сравнении с обычными RNN.\n\nЗадачи, для которых часто используются Bi-RNN включают:\n\n* Задачи на предсказание (например, временной ряд или текст), где важно понимать как контекст вперед, так и контекст назад для более точных предсказаний.\n* Задачи классификации, где лучше понимание контекста может помочь получить более точные результаты.\n* Задачи авторефератинг (автоматическое сокращение текстов), где Bi-RNN могут помочь понять, что в тексте важно и что можно удалить.",
       "rating": ""
     }
   ]

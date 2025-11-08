@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем трудность применения обычной batch normalization к RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Трудность примененияbatchnormalization в RNN — это то, что(batch-normalизация может быть сложной для работы с RNN, поскольку она предполагает поочередноеnormalize входные данные и hidden states. Это связано с тем, что hidden states в RNN thường имеют размеры 1x...xn, где n — количествоhidden state cells, а batch normalization требуетсяnormalize все hidden states одновременно. \n\nВ задаче наше «типичные задачи» включают произведение преобразования над состоянием si1 и входом xi: li = Ui x + Ws 1 + b, где б — свободный член, а нелинейность для формирования текущего скрытого состояния si — f(li). Таким образом, hidden states имеют вид si = f (li), но при batch normalization они должны быть normalized вместе как единый поток input и hidden state. Это может быть сложно, особенно если hidden state имеет размер 1x...xn, что вызывает проблемы с уравнением для Batch Normalization.",
+    "rating": ""
+  }
+]

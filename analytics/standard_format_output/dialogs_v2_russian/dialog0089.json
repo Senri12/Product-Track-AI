@@ -3,12 +3,12 @@
     "dialog_id": "dialog0089",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt3",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 29.7,
-    "precision": 32.3,
-    "recall": 39.0,
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 25.1,
+    "precision": 35.3,
+    "recall": 35.2,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.908602"
+    "timestamp": "2025-11-08T20:42:37.314004"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Чтобы вычислить learning rate decay (еr), используя формулу:\n\ner = e-(-η0 * т/М)\n\nгде er —learning rate decay, η0 —начальное значение learning rate, t — thời gian, в течение которого обучение происходит.\n\nУчитывая значения:\n\nη0 = 0,1\nt = 5\nM = T = 10\n\nПодставив эти значения в формулу:\n\ner = e-(-0,1 * 5/10)\n= e-(-0,05)\n\nУпрощая:\n\ner = e^(0,05)\n\nе(0,05) ≈ 1,05127458\n\nИтак, learning rate decay составляет примерно 1,05.\n\nВ этом случае learning rate decay представляет собой общее выражение для вычисленияlearning rate decay.",
+      "model_response": "Поэтому Show, Attend and Tell отличается от обычного RNN при обработке изображений следующим образом:\n\nА) Обычный RNN — это тип аналитическогоhidden-state RNN (Распределённого градусомhidden-state и распределённым градусомoutput), который обучался на наборе данных, включая входные данные и output.\nА) Show, Attend and Tell — это тип аналитических hidden state-based deep learning model для обработки изображений, который предназначен для преобразования одного целого числа в другое.\n\nДалее Show, Attend and Tell использует градиенты в два раза больше, чем обычный RNN. Это потому, что у модели Show, Attend and Tell требуется решать не только оценивать hidden state, а также оценивать hidden state и вычитать hidden state из hidden state для вычисления output.\n\nТаким образом, градиенты Show, Attend and Tell в два раза больше, чем у обычного RNN для анализа hidden states. Это позволяет модели решать более сложные задачи, такие как распознавание предметов или их распознавание в изображении, и оцениватьhidden state и output более точным образом.",
       "rating": ""
     }
   ]

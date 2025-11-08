@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем трудность применения обычной batch normalization к RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "В чем трудность применения批量-нормализации к рекуррентным сетям?\n\nРекуррентные сети (RNN) обрабатывают данные в цепях с последовательными слоями, что вызывает геометрические проблемы. В отличие от глобальных структур, таких как convolutional net, в RNNы используются recurrent connections, которые могут cause exploding or vanishing gradients.\n\nЭти проблемы с градиентами могут привести к не sleeps in training, особенно в сложных задачах, например, тегирования слов в предложении или обработке的情感.批量-нормализация требует安定ного behavior gradient для successful application. В RNNах не так стабильны градиенты, что делает их неправильно применять Batch Normalization.\n\nДругим проблемой может быть необходимость низкого就开始ка learning для работы с сложными ресурсами и time-local features, которые Batch Normalization обычно лучше адаптировать.",
+    "rating": ""
+  }
+]

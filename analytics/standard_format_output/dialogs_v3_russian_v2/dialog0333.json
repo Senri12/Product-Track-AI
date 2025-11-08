@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0333",
-    "model_name": "llama3.2",
-    "model_parameters": "1.0B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Что такое евклидова метрика?",
-    "f1": 28.6,
-    "precision": 37.2,
-    "recall": 32.1,
-    "claim_recall": 39.2,
-    "context_precision": 50.0,
-    "context_utilization": 26.2,
-    "hallucination": 15.9,
-    "faithfulness": 30.4,
-    "noise_sensitivity": 11.7,
-    "self_knowledge": 3.7,
-    "timestamp": "2025-10-28T13:24:19.943306"
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 41.4,
+    "precision": 37.6,
+    "recall": 52.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 57.1,
+    "hallucination": 28.2,
+    "faithfulness": 65.0,
+    "noise_sensitivity": 34.3,
+    "self_knowledge": 6.9,
+    "timestamp": "2025-11-08T20:42:38.875592"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое евклидова метрика?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Евклидовая метрика – это линейная функция, которая measure quantity из двух наборов данных, где каждое элемент отображается в линейное число. Это означает, что Euclidean distance (дистанцияEuclid) между двумя наборами данных можно вычислить как линейную функцию, а именно: $d(EUCLID, A,B)=\\sqrt{\\sum_{i=1}^{n}(\\mathsf I(A_i^T B_i)-\\mathsf I(A_i^T A_i))^2}$",
+      "model_response": "В задачах RNN встречаются следующие типы входов и выходов:\n\n*   **Входы:** В каждый блок RNN на шаге i подается входной вектор xi и скрытое состояние si 1 (тоже вектор).\n*   **Выходы:** Производится преобразование над состоянием si 1 и входом xi: li = Uxi +Wsi 1+b  , затем вычисляется нелинейность для формирования текущего скрытого состояния si: si = f(li), потом производится преобразование над состоянием si для формирования выхода текущего блока: oi = Vsi +c, а после этого формируется выход ai: ai = h(oi).",
       "rating": ""
     }
   ]

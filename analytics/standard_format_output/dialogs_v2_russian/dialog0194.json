@@ -3,12 +3,12 @@
     "dialog_id": "dialog0194",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
-    "f1": 25.8,
-    "precision": 24.9,
-    "recall": 39.3,
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 17.7,
+    "precision": 24.2,
+    "recall": 33.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.964059"
+    "timestamp": "2025-11-08T20:42:37.274390"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Давайте сначала перечислим вероятности всех вариантов:\n\n* Pasmo: 10%\n* Холодно: 20%\n* Влажно: 30%\n* Да: 50%\n\nТеперь давайте посчитаем P(да |Pasmo, холодно, влажно).\n\nМы знаем, что П(да) равно 50%, а нам нужно найти вероятность, когда у нас есть Pasmo.\n\nИтак, мы можем составить формулу:\n\nP(da | Pasmo) = (ПPasmo \\* P(da)) / ПPasmo\n\nМы можем подставить данные значения:\n\nP(da | Pasmo, холодно, влажно) = (10% \\* 50%) / 10%\n\n= 5%\n\nИтак, вероятность того, что у нас есть Pasmo и да, равна 5%.",
+      "model_response": "Ответ: Model BERT (Bidirectional Encoder Representations from Transformers) differs от обычного РНН (Режимно-Наборно-Обучаемый Нейронормальные сети) в том, что она используется для языковых задач и имеет более сложный architectures.\n\n Show, Attend and Tell (SAT) — это метод обработки изображений, который sử dụng modèle BERT для упрощения работы с данными изображениями. Этот метод включает три шага: \n\n1. Codирование входного изображения в шаблон hidden-state (внутри слоя энкодера).\n2. Attention — умение модели учитывать конкретные части изображения, чтобы создать более точный представление о содержании.\n3. Decoding — последний шаг, где modelo generates output image based на предсказанном hidden-state.\n\n Unlike traditional RNNs for image processing, which use recurrent neural networks (RNN) architectures to process sequential data, models like SAT make use of transformer architecture, which is well-suited for tasks that involve sequential data and attention mechanisms. \n\nSat является более сложной и эффективной подход к обработке изображений, поскольку оно может упростить сложные задачи для обработки естественного языка, включая Masked Language Modeling (Масштабирование языковых данных), тегирование words в предложении и классификация спама.",
       "rating": ""
     }
   ]

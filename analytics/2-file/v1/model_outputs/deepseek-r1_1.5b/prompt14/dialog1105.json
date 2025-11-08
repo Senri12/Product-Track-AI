@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Полная ответа на вопрос:\n\n norms like Layer Normalization (LN) are crucial during the training of RNNs because they help stabilize gradients. In RNNs, each step depends on all previous steps due to the recurrent connections, which can lead to gradients exploding or collapsing. When using a batch over multiple time steps, the gradients computed for each time step may vary unevenly, causing unstable learning. Normalizing these gradients by batches ensures that they are scaled appropriately based on the batch mean and variance, preventing these issues. This normalization also contributes to reducing computational complexity, making training more efficient. By normalizing gradients, RNNs can better maintain stability during learning, which is particularly important for tasks involving long sequences or when dealing with varying lengths of input data.",
+    "rating": ""
+  }
+]

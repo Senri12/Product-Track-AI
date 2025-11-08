@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Структура стандартной LSTM ячейки включает следующие компоненты:\n\n1. **Forgetting Gate** — фильтрование контекста на каждом шаге перед current input пропуска.\n2. **Forgetting Clock** — фильтрование контекста на каждом шаге, которое указывает на время его прошло.\n3. **Cell State** — снабжение контекста (forget gate itself) и текущего输入а.\n4. **Current Input** — текущий Input в current state.\n5. **Forgetting Operation** или **Forget Operation** — гиперконтейнинг контекста на каждом шаге.\n6. **Output** — выводы для каждого timestepа.\n\nЭта структура позволяет сохранять контекст из предыдущих input и current state, что обеспечивает stabильность обработки последовательных данных.",
+    "rating": ""
+  }
+]

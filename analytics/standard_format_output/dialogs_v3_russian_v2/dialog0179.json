@@ -3,26 +3,26 @@
     "dialog_id": "dialog0179",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt11",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 32.3,
-    "precision": 34.2,
-    "recall": 48.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 32.1,
-    "hallucination": 10.9,
-    "faithfulness": 31.4,
-    "noise_sensitivity": 19.4,
-    "self_knowledge": 4.4,
-    "timestamp": "2025-10-28T13:24:20.095785"
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 25.5,
+    "precision": 24.7,
+    "recall": 37.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.7,
+    "hallucination": 29.8,
+    "faithfulness": 64.1,
+    "noise_sensitivity": 45.5,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-11-08T20:42:39.069420"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Learning rate decay function:\n\nη_t = η₀ - (η / T) * t  \nгде:\n- η₀ = 0.1 — начальное learning rate  \n- η = 0.01 — шаг уменьшения learning rate на каждуюepoch  \n- T = 10 — total number of epochs  \n\nПолный процесс:",
+      "model_response": "The **Show, Attend and Tell** architecture differs from standard RNNs for image analysis by addressing the limitations of traditional approaches. Here's a step-by-step explanation:\n\n1. **Multiple Temporal Layers**: The model processes multiple aspects or \"shows\" of the image—such as color, depth, and other visual features—using temporal layers. Each layer handles a distinct aspect of the image.\n\n2. **Attention Mechanisms**: For each pixel in an image (or for each show), an attention mechanism is applied to focus on specific local regions or key points within that show. This allows the model to capture spatial hierarchies effectively, as it can attend to different parts of the image simultaneously.\n\n3. **Spatial Aggregation**: After processing all temporal layers, the aggregated representations from these layers are combined spatially using attention across different scales (e.g., local and global). This step aggregates information while preserving both fine details and broader structural patterns.\n\n4. **Temporal Processing**: The aggregated spatial representations are then passed through a temporal layer where they are sequentially processed over time or steps. This allows the model to build up coherent context and meaning as it progresses, capturing how visual features evolve or change over time.\n\n5. **Integration of Contexts**: By processing multiple shows separately but then integrating them together across time, Show, Attend and Tell handles both local (within each show) and global (across different shows or time steps) contextual information effectively. This is particularly useful for tasks that require understanding the image's structure over time.\n\nIn summary, **Show, Attend and Tell** excels in capturing complex spatial hierarchies and temporal relationships within images by processing multiple aspects separately and integrating them together.",
       "rating": ""
     }
   ]

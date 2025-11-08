@@ -3,26 +3,26 @@
     "dialog_id": "dialog0072",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
-    "f1": 34.6,
-    "precision": 34.9,
-    "recall": 45.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 27.9,
-    "hallucination": 11.9,
-    "faithfulness": 32.7,
-    "noise_sensitivity": 18.6,
-    "self_knowledge": 5.4,
-    "timestamp": "2025-10-28T13:24:20.086369"
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 30.7,
+    "precision": 26.1,
+    "recall": 44.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 41.9,
+    "hallucination": 35.1,
+    "faithfulness": 57.5,
+    "noise_sensitivity": 38.8,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-11-08T20:42:39.065608"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "content": "Как работает механизм внимания (Attention)?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Возьмем точки A(1, 2) и B(3, 4). Нужно найти_Eвклидовы расстояния между ними.\n\nФормула_Eвклида выглядит так:\n\n$$\nd_E((x_1, y_1), (x_2, y_2)) = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n$$\n\nПодставим значения:\n\n$$\nd_E((1, 2), (3, 4)) = \\sqrt{(3 - 1)^2 + (4 - 2)^2} = \\sqrt{2^2 + 2^2} = \\sqrt{4 + 4} = \\sqrt{8}\n$$\n\nНаконец, вроде бы это и есть_Eвклидовы расстояния между данными точками.",
+      "model_response": "The attention mechanism in recurrent neural networks (RNNs) allows each time step to dynamically focus on relevant parts of its history by computing attention weights for past inputs. Here's a structured explanation:\n\n1. **Attention Scores Calculation**: For each time step, the model calculates scores indicating how important each previous input is to the current task.\n\n2. **Normalization of Attention Scores**: These scores are normalized (e.g., using softmax) to form probability distributions, determining which parts of the sequence are most relevant.\n\n3. **Output Computation**: Using these weights, the model computes an output by combining only the relevant parts of the input, emphasizing the most important information from past steps.\n\n4. **Forward Propagation**: The processed information flows through the RNN structure as usual, with attention outputs contributing dynamically to the sequence processing.\n\nThis mechanism enables RNNs to handle sequential data more effectively by focusing on context and relevance, enhancing performance in tasks requiring deep contextual understanding.",
       "rating": ""
     }
   ]

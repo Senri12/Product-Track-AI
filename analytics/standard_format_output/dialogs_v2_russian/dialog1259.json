@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1259",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 42.3,
-    "precision": 47.9,
-    "recall": 49.7,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.313906"
+    "timestamp": "2025-11-08T20:42:37.357433"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Для вычисления Learning Rate Decay с использованием линейной функции и заданными значениями η\\_0 = 0.1, t = 5 и T = 10, необходимо применять формулу:\n\nηt = η0 - (η0 - ηf) * t / T\n\nЗдесь η\\_f - это финальное значение learning rate, которое мы не знаем. По условию задачи ничего не говорится о нём, поэтому для продолжения нам необходимо предположить какое-либо начальное значение или использовать обучаемый модель для вычисления оптимального η\\_f.\n\nДля начала будем предполагать, что финальный learning rate равен 0, то есть он сходит к нулю во время обучения. В этом случае формула примет вид:\n\nηt = η0 - (η0) * t / T\n\nВставляя уже известные значения т и T в формулу, получаем:\n\nη5 = η0 - (η0) * 5 / 10\nη5 = 0.1 - (0.1) * 0.5\nη5 = 0.05\n\nТаким образом, если финальный learning rate равен 0, то после 5 эпох он снизится до η5=0.05.",
+      "model_response": "На основе логики мыслить, что show, attend and tell (SAT) — это модель, которая simultaneously processes both visual and text information for each token in the sequence. В отличие от regular RNN, которая только работала с изображениями, model SAT обновляет токены на каждом шаге, учитывая их контекст и контекст из предыдущих шагов. Это может привести к большему количеству параметров и более сложной обработке данных. В отличие от RNN, которая专注于 последовательности изображений, SAT simultaneously processes visual and text information for each token.",
       "rating": ""
     }
   ]

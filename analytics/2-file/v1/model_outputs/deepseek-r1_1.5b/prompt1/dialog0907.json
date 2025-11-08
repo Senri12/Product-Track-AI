@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Состав standard LSTM ячейки**\n\n1. **Инициализация state:**\n   - **C (целевая state):** Центральная компонента, которая обрабатывает позиции данных и представляет собой гипотет Gated cell 1.\n   - **H ( метки ):** Метки, которые будут использоваться для предсказания.\n\n2. ** gates:**\n   - **g0:** Центральный гипотет, который будет использоваться для обработки позиций.\n   - **g1, g2, g3:** Целевые гипотезы, отмеченные как нулями.\n\n3. **Computation:**\n   - ** cell-state (C):** Calculated как гипотет Gated cell 1 (g1 * H + g2 * C + g3 * S), Where S represents the input data.\n   - ** cell memory (H):** Calculated as H = g0 * H + (g1 * H + g2 * C + g3 * S).\n\n4. **Output:**\n   - **h:**=h\n   - **c:**=C\n\n5. **Reset gate:**\n   - Determines the importance of previous state in current state.\n   - If reset gate outputs a 1, it means little or no need to carry forward information from the past.\n\n6. **Remember gate:**\n   - Determines if new input should be added.\n   - If remember gate outputs a 0, cell-state is zeroed; only previous state is carried over.\n\n7. **Current value:**\n   - Current value depends on whether the remember gate was active (g1=1) or not.\n   - If g1=0, cell-state is set to zero; output h uses previous state and c remains zero.\n   - If g1=1, cell-state is used fully for outputting h.\n\n**Важные моменты:**\n- LSTM с резервными гипотетами (g0) позволяет обрабатывать текстовые данные.\n- Для изображений и语音ов используются Modified LSTM с градиентами волатильными (Gluons), обеспечивающие гладкую переход между states.\n- Гипотезы g1-g3 используются для передачы information across time steps, ensuring smooth transitions.\n-during training, gates are regularized to maintain numerical stability and prevent vanishing gradients.",
+    "rating": ""
+  }
+]

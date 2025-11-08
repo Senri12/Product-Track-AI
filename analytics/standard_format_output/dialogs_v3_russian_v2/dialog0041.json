@@ -3,26 +3,26 @@
     "dialog_id": "dialog0041",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
-    "f1": 31.4,
-    "precision": 33.2,
-    "recall": 47.1,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.9,
-    "hallucination": 11.7,
-    "faithfulness": 32.8,
-    "noise_sensitivity": 18.9,
-    "self_knowledge": 5.5,
-    "timestamp": "2025-10-28T13:24:20.067845"
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 29.1,
+    "precision": 27.0,
+    "recall": 42.2,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.7,
+    "hallucination": 29.3,
+    "faithfulness": 61.8,
+    "noise_sensitivity": 43.7,
+    "self_knowledge": 8.8,
+    "timestamp": "2025-11-08T20:42:39.058556"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Вопрос: Вычисли вероятность спама для слова 'приз' из примера.\n\nДля вычисления вероятности спама для слова 'приз', используем метрикуEuclidean-масштабирование. Потом перенумеруем объекты на основе квадратного расстояния и перечислить их метки в соответствии с ближнейми к слову. После этого определяем класс, который встречается чаще в первых k элементах.\n\nВозможно, результатов для слова 'приз'",
+      "model_response": "**Ответ:**\n\nВопрос: В чем трудность применения BatchNormalization к RNN?\n\nОтвет:\n\n1. **Проблема BatchNormalization в RNN**:  \n   - BatchNormalization (BN) является инструментом, который正规изирует нюмеры в батке и позволяет избежать Problem с out-of-distribution data. Однако, при применении BN к RNN показывает, что она может привести к сильным сокращениям эффективности илиeven улучшению only marginally.  \n   - Это связано с увеличением числа обновляемых матриц в LSTM-архитектурах и сложностью градиентного.trainig.\n\n2. **Последовательные архитектуры**:  \n   - Использование GRU ( gated Recurrent Unit) кажется более простым и эффективным, так как они используют fewer обновляемых матриц и simpler structure. Однако, это не все, так как GRU тоже включает гейты, но их по magnitude уже уменьшены.\n\n3. **Ключевые компоненты**:  \n   - Гейт фильтра (forget gate) – сохраняет память из-за его нулевой значения при ужively.  \n   - Гейт перезагрузки (reset gate) – показывает, какая часть памience должна быть перенесена.  \n   - Сюжетный память (memories state) – это сходится в LSTM.\n\n4. **Исторical архитектуры**:  \n   - В существующих реляционных архитектурах, таких как gated GRU или attention-based RNNs, добавление Batch Normalization показывает нелинейность, которая может привести к сокращению эффективности.\n\n5. **Проблема с BatchNormalization в RNN**:  \n   - Некоторые исследования показывают, что BatchNormalisation может привести к уменьшению общей функциональности модели or even улучшить only marginally.  \n   - Это связано с увеличением числа обновляемых матриц и сложностью градиентного.trainig.\n\n6. **Решение**:  \n   - Возможно, стоит исключить BatchNormalization в favor of using GRU архитектуры or Other normalization-based approaches.  \n   - Среди других options, таких как dilated convolutions или attention-based structures, GRU似乎 будет наиболее простой и эффективным.",
       "rating": ""
     }
   ]

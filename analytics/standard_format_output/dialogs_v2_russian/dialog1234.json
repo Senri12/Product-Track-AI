@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1234",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "В чем суть наивного байесовского классификатора?",
-    "f1": 42.3,
-    "precision": 47.9,
-    "recall": 49.7,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.308579"
+    "timestamp": "2025-11-08T20:42:37.368459"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем суть наивного байесовского классификатора?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Наивный Байесовский классификатор (Наивный Байес) представляет собой статистический метод классификации, который использует теорию вероятностей для оценки каждого класса на обучающем и тестовом наборе данных.\n\nПринцип работы Наивного Байеса заключается в следующем:\n1. Предполагает независимость признаков между собой. Это значит, что для оценки вероятности принадлежности точки к одному из классов используются только данные по отдельным признакам и не учитывается зависимость между ними.\n2. Предполагает одинаковою распределенность признаков внутри каждого класса. Это значит, что для оценки вероятности принадлежности точки к одному из классов используется только смещение по данным этого признака между классами.\n3. Каждая новая точка классифицируется как принадлежащая тому классу, в который вероятность принадлежности максимальна.\n\nОбучение Наивного Байеса происходит за счет оценки параметров распределения признаков по классам на обучающем наборе данных, а тестирование - по тестовому набору данных.\n\nМини-тест:\n1. Наивный Байес — это метод классификации? Да, да.\n2. Он учитывает зависимость между признаками? Нет, нет.\n3. Он предполагает одинаково распределение признаков внутри каждого класса? Да, да.\n4. Каждая новая точка классифицируется по принципу максимальной вероятности? Да, да.",
+      "model_response": "Дiferенциация между simple RNN и глубокими RNN основывается на их структуре и способности обрабатывать последовательные данные:\n\n1. **simple RNN**:\n   - Наличие слоев только в скобках (включая нейронnye линии) — это основная отличие от глубоких RNN.\n   - simple RNN processes sequences in a sequential manner, maintaining state across time steps through the hidden layer.\n   - It is well-suited for tasks involving short sequences and straightforward patterns.\n\n2. **Globally Recurrent Neural Networks (GRU) или глубокие RNN**:\n   - GRUs incorporate mechanisms like gates to manage information flow between layers, making them more efficient in processing long sequences.\n   - They can handle longer-term dependencies compared to simple RNNs due to their ability to maintain context across time steps without additional parameters.\n\n3. **Deep RNN**:\n   - A global variant of RNN that processes sequences through multiple layers, each applying transformations to the hidden state.\n   - It maintains state across all layers during processing, which helps in learning long-range dependencies and handling complex tasks more effectively.\n\n4. **Key Differences**:\n   - simple RNNs are designed for short sequences and straightforward patterns.\n   - GRUs (Globally Recurrent Neural Networks) and deep RNNs are optimized for longer sequences and can handle more complex dependencies, especially in language modeling and time series prediction.",
       "rating": ""
     }
   ]

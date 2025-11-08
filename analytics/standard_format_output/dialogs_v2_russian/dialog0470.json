@@ -3,12 +3,12 @@
     "dialog_id": "dialog0470",
     "model_name": "phi4-mini",
     "model_parameters": "3.8B",
-    "system_prompt_id": "prompt1",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое SGD?",
-    "f1": 51.2,
-    "precision": 59.8,
-    "recall": 61.3,
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.858532"
+    "timestamp": "2025-11-08T20:42:37.216881"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое SGD?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "SGD означает Столбчатый Градиентный Дескриптор (Stochastic Gradient Descent). Это алгоритм оптимизации, который используется для нахождения минимальных значений функций поэтапно, обновляя параметры в обратном направлении направления градиента функции потерь. Он эффективен для обработки больших наборов данных и широко применяется во многих областях машинного обучения, включая обучение глубоких нейронных сетей (Deep Learning).",
+      "model_response": "",
       "rating": ""
     }
   ]

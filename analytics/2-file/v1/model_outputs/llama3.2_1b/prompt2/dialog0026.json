@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем трудность применения обычной batch normalization к RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Тrudность использования(batch normalization) для RNN (Реципибельный Нейрономер) заключается в том, что batch normalization имеет две проблемы:\n\n1. **Равное распределение градиентов:** В RNN Batch Normalization не дает равного распределения градиентов, что затрудняет управление разноязычными значениями.\n2. **Нарушение градиентных свойств:** ВBatch Normalization градиенты не отражают уравновешенность градиентов по всем токенам.\n\nЧтобы решить эти проблемы, используется специальный тип Batch Normalization called Residual Normalization или ResNet Normalization.",
+    "rating": ""
+  }
+]

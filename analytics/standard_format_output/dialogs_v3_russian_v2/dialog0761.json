@@ -3,26 +3,26 @@
     "dialog_id": "dialog0761",
     "model_name": "mistral",
     "model_parameters": "7.0B",
-    "system_prompt_id": "prompt11",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
-    "f1": 36.3,
-    "precision": 37.2,
-    "recall": 47.8,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 29.3,
-    "hallucination": 10.5,
-    "faithfulness": 35.3,
-    "noise_sensitivity": 18.8,
-    "self_knowledge": 4.2,
-    "timestamp": "2025-10-28T13:24:20.319502"
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 36.8,
+    "precision": 30.2,
+    "recall": 54.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 55.7,
+    "hallucination": 26.3,
+    "faithfulness": 66.1,
+    "noise_sensitivity": 43.4,
+    "self_knowledge": 7.6,
+    "timestamp": "2025-11-08T20:42:39.226145"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Вероятность спама для слова \"приз\" равна 5/32 или 0,15625 или 15,625% (закругленно до двух знаков после запятой).",
+      "model_response": " Применение обычной batch normalization (BN) к рекуррентным нейронным сетям (RNN) может представлять трудности из-за того, что RNN обрабатывают последовательность входных данных, поэтому применение BN в RNN необходимо адаптировать.\n\nВ обычной batch normalization для каждого слоя вычисляется статистика (среднее и стандартное отклонение) на основе всех данных, которые обрабатывает слой во время одного шага градиентного спуска. В RNN такой подход не работает, так как для каждого входного вектора может быть вычисленное отдельное скрытое состояние, которое будет использоваться для последующих шагов.\n\nДля решения этой проблемы можно применить адаптивную формулу batch normalization, в которой статистика вычисляется на основе всех данных, которые обрабатываются RNN в целом, а не для каждого шага.\n\nТакже существует специальная версия BN, известная как layer-wise adaptive normalization of activations (LAF), которая была разработана именно для рекуррентных сетей и может обеспечивать более стабильное обучение.\n\nВ целом, применение batch normalization к RNN полезно для ускорения обучения и улучшения аккураacies, но требует специальных адаптаций.",
       "rating": ""
     }
   ]

@@ -3,26 +3,26 @@
     "dialog_id": "dialog0134",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt10",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
-    "f1": 39.8,
-    "precision": 42.2,
-    "recall": 51.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.8,
-    "hallucination": 8.7,
-    "faithfulness": 35.0,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 6.3,
-    "timestamp": "2025-10-28T13:24:20.056156"
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 35.9,
+    "precision": 33.0,
+    "recall": 51.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 52.2,
+    "hallucination": 27.1,
+    "faithfulness": 64.2,
+    "noise_sensitivity": 39.9,
+    "self_knowledge": 8.7,
+    "timestamp": "2025-11-08T20:42:39.082927"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "После проверки, что у меня есть данные о пасмурно, холодно и влажно, я могу пронизовать методы классификации для определения ответа на вопрос «да». Если предположу, что эти физические условия могут быть связаны с грибами или релизом, я могу попробовать придумать какую-то монетологию или визуализацию для проверки этого.",
+      "model_response": "**Ответ:**\n\nСтандартный RNN обрабатывает последовательность данных (в этом случае изображения) независимо по像素ти, что позволяет линейно обработать данные. Однако RNN не способствует более точной ассоциации контекста для каждого шага. В отличие от этого, SAT позволяет simultaneously process image and text features by creating multiple attention distributions for each pixel and word. This allows model to maintain more precise context over time and generate coherent output by flowing information simultaneously through the image and text.\n\n**Вопросы и ответы:**\n\n1. **Сколько слоев в modelSAT?**\n   - Следует, что SAT имеет больше слоев, чем RNN, так как она обрабатывает simultaneously image and text features.\n\n2. **Какая цель modelSAT?**\n   -modelSAT позволяет solve complex tasks that require deep understanding of context, such as translation, question answering, etc., by leveraging its ability to focus on relevant parts of both image and text at each step.",
       "rating": ""
     }
   ]

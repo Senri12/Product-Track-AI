@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем трудность применения обычной batch normalization к RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Трудность применения обычной batch normalization (BN) к RECURRYNTNEETECHURIES является тем, что BN works только с batch normalizeными данных, которые можно разделить на batch. Это связано с тем, что batch normalization для RNN требуется преобразовать входную последовательность вbatch-формат, который не может быть преобразован в batch-ной форме.\n\nРечь идет о том, чтобы использовать(batch normalization) для RNN или RECURRYNTNEETECHURIES, которые thường являются batch-normalизированными. Для этих случаев(batch normalization) требуется разделить данные на batch, что сделать не posible для RNN, поскольку входные данные могут быть разными для каждого блока.\n\nВ качестве альтернативы, можно использовать batch normalize с тремя функциями нормали:\n\n* Softmax (S)\n* ReLU (вместе с ReLU-РЕЗУ)\n* Tanh (вместе с tanh-РЕЗУ)\n\nЭти функции нормали могут применяться к RNN-blokам и обеспечивать batch normalize.",
+    "rating": ""
+  }
+]

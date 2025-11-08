@@ -3,26 +3,26 @@
     "dialog_id": "dialog0052",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 31.4,
-    "precision": 33.2,
-    "recall": 47.1,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.9,
-    "hallucination": 11.7,
-    "faithfulness": 32.8,
-    "noise_sensitivity": 18.9,
-    "self_knowledge": 5.5,
-    "timestamp": "2025-10-28T13:24:20.069736"
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 27.0,
+    "precision": 26.3,
+    "recall": 37.0,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 35.5,
+    "hallucination": 30.8,
+    "faithfulness": 61.8,
+    "noise_sensitivity": 42.8,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-11-08T20:42:39.054157"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "**Адаптивный градиентный метод (Adam)**  \nАдаптивный градиентный метод, также известный как Adam, – это адаптационный алгоритм градиентного descent. Это метод, который позволяет обновлять параметры нейронных сетей более эффективно и усилить его на этапе обучения.  \n**Адаптивные шаги**means that the learning rate is automatically adjusted based on the history of gradients and parameters' values.  \n**Концепция**: adam combines two main approaches – fixed step size (similar to SGD) and momentum-based gradient updates (similar to AdaGrad). By combining these, it provides faster convergence and better performance compared to traditional optimization methods.  \n\n### Основные моменты:\n- **Adagrad**: Включает Adaptation of the learning rate based on the history of gradients. Каждый вектор градиента обновляется отдельно.\n- **Adam**: Средства: incorporates both AdaGrad and momentum-based approach, making it adaptive to the parameters' values over time.\n- **Библиотека TensorFlow**: Для реализации Adam-моделей. В библиотеке есть функция `tf.trainable_optimizer.Adam` для использования методаAdam.  \n\n**Определение**: Адаптивный градиентный метод (Adam) – это адаптационный алгоритм градиентного descent, который позволяет обновлять параметры нейронных сетей усилить на этапе обучения и корректно сопоставить градиенты.",
+      "model_response": "Standard LSTM (Long Short-Term Memory) ячейка включает следующие основные компоненты:\n\n1. **Forget Gate**: Управляет пропусканием информации из ячейки, определяя, насколько information от этого ячейки не有必要 пытаться использовать. Если forget gate markiert нулевым value, информация не пропущается.\n\n2. **Recall Gate**: Управляет погружением информации из ячейки в общий вывод, определяя направление погружения. If recall gate markiert нулевым value, информация от этого ячейки не пересекается с forget gate.\n\n3. **Update Gate**: Управляет пропусканием информации из ячейки и гибким ожиданием общей позиции в последовательности, определяя, где пересекаются forget gate и recall gate. If update gate markiert нулевым value, информация от этого ячейки не пересекается с общей позицией.\n\n4. **State (Which cell are you in)**: Контекстнаяcell — это контекст information, представленный токенами на предыдущих шагах, который используется для более точного моделирования последовательностей.\n\n5. **Input Gate**: Управляет пропусканием информации из исходных токенов на входной ячейке. If input gate markiert нулевым value, информация от этого ячейки не пропущается.\n\nЭти компоненты позволяют LSTM-модели лучше описывать и прогнозировать последовательные данные с высокой точностью.",
       "rating": ""
     }
   ]

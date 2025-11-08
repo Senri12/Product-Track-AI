@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1278",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 41.1,
-    "precision": 41.1,
-    "recall": 52.8,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.267944"
+    "timestamp": "2025-11-08T20:42:37.371348"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Керс (Keras) - это открытый, небольшой и легко используемый фреймворк для глубоких обучения в Python. Этот фреймворк был разработан в рамках Google DeepMind для упрощения и ускорения процесса создания слоистых нейронных сетей.\n\nЧасть материала, где это описано: \"Keras is an open-source neural-network library written in Python and capable of running on top of TensorFlow, CNTK, or Theano\" - находящаяся в первом абзаце описания Keras на официальном сайте проекта.\n\nЗадача для студента: исследовать больше информации об этом фреймворке и понять его преимущества перед другими решениями, используя для этого доступные материалы и документацию.",
+      "model_response": "Реуррентные слоев (RNN) используются для обработки последовательных данных. В таких моделях typically используются:\n\n- **batch**: Группа данных (batch).\n- **embedding**: Уникальное представление каждого символа в позиции encode.\n- **sequential data**: Данные, связанные последовательно.\n- **multiple steps**: Текст или данные, представленные как последовательность шагов.\n- **recurrent layers**: Слой обратной связи для обработки каждого шага на основе всех предыдущих шагов.\n- **bidirectional**: Р逆转иризация данных вboth directions для представления контекста перед и после текущего шага.\n\nТакже градиенты могут возникнуть, например:\n- **exploding gradients**: Если данные содержат высокие значения (например, continuous activations).\n- **vanishing gradients**: Если данные contain very small values or noisy data.",
       "rating": ""
     }
   ]

@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0382",
-    "model_name": "llama3.2",
-    "model_parameters": "1.0B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 30.9,
-    "precision": 37.4,
-    "recall": 38.6,
-    "claim_recall": 39.2,
-    "context_precision": 50.0,
-    "context_utilization": 29.0,
-    "hallucination": 16.4,
-    "faithfulness": 31.1,
-    "noise_sensitivity": 10.0,
-    "self_knowledge": 2.6,
-    "timestamp": "2025-10-28T13:24:19.915650"
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 45.4,
+    "precision": 43.8,
+    "recall": 53.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 59.6,
+    "hallucination": 22.6,
+    "faithfulness": 66.3,
+    "noise_sensitivity": 33.7,
+    "self_knowledge": 11.1,
+    "timestamp": "2025-11-08T20:42:38.880960"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Adam – это метод оптимизации, который combineрует признаки методов RMSProp и Momentum.",
+      "model_response": "Стандартная LSTM (Long Short-Term Memory) ячейка включает в себя следующие компоненты:\n\n*   **Cell State (C<sub>t</sub>):**  Это \"коридор\" информации, который проходит через ячейку. Он предназначен для долгосрочного хранения информации.  Он может \"запомнить\" информацию на протяжении всей последовательности.\n*   **Hidden State (h<sub>t</sub>):**  Это выходная информация ячейки, которая передается следующему слою RNN.  Она представляет собой краткое суммирование информации, обработанной ячейкой.\n*   **Input Gate (i<sub>t</sub>):**  Эта \"дверь\" определяет, какая новая информация должна быть добавлена в cell state.\n*   **Output Gate (o<sub>t</sub>):**  Эта \"дверь\" определяет, какая информация из cell state будет передана на выход.\n*   **Forget Gate (f<sub>t</sub>):**  Эта \"дверь\" определяет, какая информация должна быть удалена из cell state.\n\nЭти компоненты, вместе с использованием специальных функций активации и весов, позволяют LSTM эффективно обрабатывать долгосрочные зависимости в последовательностях.\n",
       "rating": ""
     }
   ]

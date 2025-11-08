@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0683",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое learning rate?",
-    "f1": 41.1,
-    "precision": 52.4,
-    "recall": 61.4,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 6.7,
+    "precision": 17.5,
+    "recall": 18.6,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.832737"
+    "timestamp": "2025-11-08T20:42:35.747926"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое learning rate?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "A 'learning rate' refers to how quickly or slowly an AI model adjusts its parameters—essentially determining weight adjustments after each iteration during training.\n\nIn simpler terms: Imagine you're trying to hit a target; your success depends on both the skill (your current knowledge) and consistency of practice. The \"learning rate\" can be thought as measuring one's step size towards hitting that goal, controlling how much you adjust with every attempt or 'practice' session.\n\n\nDo we need any clarifications here? Do you have questions about what learning rates mean in specific contexts like neural networks training processes?",
+      "model_response": "Градиентовая Регуляризированная Унит (GRU) и Логистическая Унит (LSTM) - это два типа рекуррентных нейронных сетей, разработанных для обработки последовательностей данных, таких как текст или временные красительные данные. Они отличаются своими архитектурными вкусами и способом хранения и передачи информации через последовательность.\n\n1. Архитектура:\n   - LSTM имеет два состояния (тензоры) для представления текущего порядка и предыдущего порядка в инструментальном, измерительном (hidden state) и гиперпараметрическом (cell state). Это позволяет LSTM хранить длительные зависимости.\n   - GRU, обратно к LSTM, имеет единую внутреннюю тензорную представление для представления текущего и предыдущего порядка, что простает архитектуру и уменьшает число параметров.\n\n2. Гиперпараметры:\n   - LSTM использует входной заголовок (input gate), выходный гиперпараметрический сигнал (forget gate) и новый ввод (candidate) для управления частью предыдущего порядка, которая изменяется.\n   - GRU использует только один гиперпараметрический сигнал (update gate), который решает, какой информация из предыдущего порядка должна быть собрана в новую часть и удалена.\n\n3. Взаимодействие:\n   - LSTM использует субъективный (input) и деактивационный (forget) переменные для регуляции потоки информации. Это позволяет LSTM контролировать, как часть предыдущего порядка будет изменена или удалена.\n   - GRU использует только один деактивационный переменный (update gate), который управляет потоком информации между предыдущим и текущим порядком.\n\nВ целом, LSTM обладают большойerю гибкостью, потому что они могут лучше архитектуризировать длительные зависимости в последовательности. Однако GRU приводятся к меньшей сложности и понемногу процессу обучения, что может сделать их более эффективными в некоторых контекстах.",
       "rating": ""
     }
   ]

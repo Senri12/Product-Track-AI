@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1218",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt11",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 44.6,
-    "precision": 47.0,
-    "recall": 51.7,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.372131"
+    "timestamp": "2025-11-08T20:42:37.358506"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Керэс (Keras) - это открытый редактируемый инструментарий для глубокого обучения, созданный с использованием Python. Этот инструмент упрощает процесс разработки моделей машинного обучения и в частности нейросетей. С помощью Keras можно легко проводить эксперименты с различными архитектурами, оптимизаторами и потерь, а также тренировать модели для решения задач машинного обучения, таких как классификация, предсказание, генерация и рекомендательные системы. Керэс поддерживает работу с разными типами сетей нейрональных (в том числе конвольные, рекуррентные и багаженные) и предлагает доступ к многим готовым предобученным моделям. Его легкое использование делает его популярным среди новичков и профессионалов в области машинного обучения.",
+      "model_response": "Да, в recurrent neural networks (RNN) и в конкретном случае трансформеров (модели Transformer) есть типы входов и выходов:\n\n### Входные данные (Input):\n1. **Previsious states**: Эта подкатегория означает, что model используетstate из предыдущего шага для обработки текущего вектора.\n2. **Previous tokens**: В RNN и Masked Language Modeling typically input consists of previous tokens from the sentence or text being processed.\n3. **Input features (features)**: Данные описания объектов или实体ов, которые нужно преобразовать в векторы при обработке.\n\n### Выходные данные (Output):\n1. ** predictions**: Итоги модели для классификации, регрессии или другого задачи.\n2. ** sequences**: Объекты or序列 (например, предложidences или последовательности данных).\n3. ** representations (representations)**: Уltервостные представления из model, которые могут быть subsequent state или output.\n\n### Градиенты в RNN:\nДля обучения RNN используются градиенты по Input, Output и sometimes Intermediate states (например, gates or neurons). В LSTM и vanilla GRUmodelе recurrent layers work with gates to control the flow of information between input and hidden states.",
       "rating": ""
     }
   ]

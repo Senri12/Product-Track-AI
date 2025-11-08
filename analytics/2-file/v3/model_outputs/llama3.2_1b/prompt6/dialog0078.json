@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "1. Entrance nodes (входные节点ы) — это первоначальные данные, которые输入ную систему предлагают.\n2. Nodes or tokens (ноды или токены) — это последовательности данных, которые изначально input-ными данными.\n3. Cells (CELLS) — это блоки RNN, каждый из которых содержит в себя входные данные, вычисления и выходные данные.\n\nВ задачах RNN типами входных данных могут быть:\n\n* Файер输入 (input file)\n* Граф input (graphical input)\n* Классификатор input (classification input)\n\nTypы выходных данных в задачах RNN могут быть:\n\n* Токены output (tokens output)\n* Модель output (model output)\n* Рейзинг output (ranking output)\n\nВ задаче RNN, представленной в результате работы Show, Attend and Tell, входными данными являются изображение и его text. Это классический пример использования entrance nodes и cells в задаче RNN.\n\nВ задаче BERTentradaные данные — текстные данные, которые можно input-ть до вычисления output. В этом случае input file является типом entrance node, а text — type of token or node.",
+    "rating": ""
+  }
+]

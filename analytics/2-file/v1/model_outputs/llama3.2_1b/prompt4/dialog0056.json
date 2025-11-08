@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем трудность применения обычной batch normalization к RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Труба в примененииBatch normalization к RNN.\n\nАнализ:\n\nБatch normalization - это метод арифметического среднения, используемый для normalizeцииbatch данных. Однако при использовании batch normalization у нас есть проблема с распределением градиантов при обучении RNN.\n\nПри обучении RNN часто наблюдается распределение градиантов на từng группу данных (например, на предыдущие, средние и последние данные). Это приводит к тому, что Some groupings of data have gradients being multiplied and added together while others have just one gradient.\n\nЧтобы решить эту проблему, метод batch normalization требует того, чтобы all elements in a given batch were normalized with the same value. Однако при training RNN, нам нужно часто иметь разные значения дляBatch-gradients в разные группы данных.\n\nРешение проблемы batch normalization:\n\n* Мы можем использовать каст-вычисленияBatchNormalization для каждой группы данных отдельно.\n* Мы можем использовать методs \"weight clipping\" или \"layer normalization\" для управления размером batch-gradient, чтобы они были кратны 1.\n\nПримечание: метод weight clipping требует от токена вBatch-gradients положить значение 0.00, а метод layer normalization можно использовать только при RNN и токенах без batch- gradient.",
+    "rating": ""
+  }
+]

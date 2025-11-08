@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0712",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 40.4,
-    "precision": 45.6,
-    "recall": 64.3,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 4.1,
+    "precision": 20.1,
+    "recall": 13.2,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.800945"
+    "timestamp": "2025-11-08T20:42:35.673801"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "### Explanation\n\nAdam is typically recognized as one of the first humans according to religious texts such as those found in Judeo-Christian traditions (the Bible). He represents a foundational character who plays an essential role within these stories.\n\n### Question for Student\n- What do you know about Adam from your studies or cultural references?\n\n### Suggested Exercise\n1. Research and write down different interpretations of the story of Adam across various religious texts.\n2. Compare how this figure is portrayed in two distinct traditions (e.g., Judaism, Christianity).\n\n### Feedback Loop\nAfter completing these exercises:\n\n- Discuss any differences you found between portrayals with a classmate or teacher to deepen your understanding.\n\n---\n\nI hope that helps! If there's more you'd like me to clarify about Adam's story and its cultural significance across different narratives.",
+      "model_response": "Стандартная LSTM (Long Short-Term Memory) ячейка, также известная как её составной части, включает следующие компоненты:\n\n1. Гат (Gate): Это входные и выходные гаты отличаются друг от друга, и каждый имеет свою функцию в обмене с информацией.\n   - Интернаргент Gate: Основанный на тензоре, который хранит историческую информацию, этот гат решает, какая информация следует сохранить или удалить в текущем случае.\n   - Секундарная Gate: Определяет, как можно использовать оставшуюся информацию для выхода из ячейки.\n\n2. Полносвязные связки (полиньи) с отсутствием взаимодействия между их компонентами:\n   - Интернаргент Gate-тензорное или хэширующе-конвертирующее слоя (often called \"forget gate\"): Регулирует, как ли информация должна быть удалена.\n   - Секундарная Gate: Использует оставшуюся информацию для выхода из ячейки.\n\n3. Тензорное или коэффициентное дисплей: Представляет собой текущую информацию, которая передается в следующую точку в итерации.\n\nЭти компоненты работают вместе для контроля, как информация проходит через ячейку, чтобы предотвратить слишком быстрой обнаружении или утечки информации в период времени.",
       "rating": ""
     }
   ]

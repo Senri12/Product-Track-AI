@@ -3,12 +3,12 @@
     "dialog_id": "dialog0134",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt5",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
-    "f1": 31.5,
-    "precision": 36.0,
-    "recall": 41.5,
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 31.2,
+    "precision": 28.6,
+    "recall": 41.2,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.923184"
+    "timestamp": "2025-11-08T20:42:37.306755"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Чтобы вычислить вероятность P(да | PASМУРНО, ХЛЕДНО, ВИШИМО), нам нужно понимать то, что это такое:\n\n* PASМУРНО - этоClimate (климат) в котором у нас дуетPasmo (маямочная gió).\n* ХЛЕДНО - это Climate в котором у нас дует Ледо (ледяной ветр).\n* ВИШИМО - это Climate, но его мы не знаем.\n\nВероятность выяснения climate с помощью погода (пасмурно, холодно, влажно) равна 1. Это потому что, когда погода PASМУРНО или Ледо, мы знаемClimate PASМУРНО или Climate Ледо.\n\nИтак, P(да | PASМУРНО, ХЛЕДНО, ВИШИМО) = P(climatePasmo в PASМУРНО или climateLedo в ХЛЕДНО или climate in VISHEMO)\n\nПоскольку мы не знаем climate в VISHEMO, мы можем игнорировать это условие. Итак, мы получаем:\n\nP(да | PASМУРНО, ХЛЕДНО, ВИШИМО) = 1/3",
+      "model_response": "Ответ: Show, Attend and Tell (SAAT) отличается от обычного Recurrent Neural Network (RNN) для обработки изображений, поскольку оно позволяет обрабатывать последовательность данных в векторном пространстве, а не только на основе последовательности токенов.\n\nАнализ:\n\n* SAAT предназначено для решения задач sequence-to-sequence (seq2seq), таких как перевод или синтез изображений.\n* В SAAT внешний слой состоит изSelf-Attention mechanisms, которые позволяет модели учитывать контекстные связи между токенами последовательности, а не только токены один за другим.\n* В внешней части slota SAAT также используется полный Swish-activation и DropOut, что improves скорость обучения и улучшает результаты.\n\nОбратите внимание, что SAAT является расширением Recurrent Neural Network (RNN) для обработки изображений, но не обычного RNN. Обращение на SAAT для обработки изображений отличается от обработки текста, где RNN часто используется.\n\nНавык рассуждения: Анализ данных и понимание новых концепций в области machine learning.",
       "rating": ""
     }
   ]

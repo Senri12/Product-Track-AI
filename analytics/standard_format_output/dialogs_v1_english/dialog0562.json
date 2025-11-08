@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0562",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt4",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 31.4,
-    "precision": 43.8,
-    "recall": 51.9,
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 58.7,
+    "precision": 55.2,
+    "recall": 71.9,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.745475"
+    "timestamp": "2025-11-08T20:42:35.825528"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Adam is not something you would find within biology or medicine; it's actually related to theology—or more specifically to Abrahamic religions such as Judaism, Christianity, and Islam.\n\nIn these religious contexts, Adam refers to:\n\n1. The first human created by God according to Judeo-Christian beliefs.\n2. A figure representing mankind in many spiritual narratives (e.g., \"Adam's fall\" is a common phrase referring to the Biblical story of humanity’s original sin).\n\nThink about it like this: In stories where we talk metaphorically or symbolically, Adam might be seen as an archetype—a kind of template for all humans. It's not something you would encounter in biology textbooks but rather through religious texts and teachings.\n\nSo if you're studying a subject that intertwines with theology (like world religions), it's important to differentiate between scientific concepts like 'human anatomy' or 'genetics', which Adam isn't directly related to, versus cultural stories about the origins of humanity. Remembering this distinction can help you understand why certain topics appear in discussions on spirituality and religion as opposed to science classes!",
+      "model_response": " Стандартная Long Short-Term Memory (LSTM) ячейка включает в себя четыре основных компонента:\n\n1. Входной слой (Input Gate): Регулирует, сколько информации из текущего входа должно быть записываться в память ячейки.\n2. Ячеистое состояние (Cell State): Содержит долговременную информацию о секвенции данных.\n3. Скрытый слой (Hidden State): Представляет собой вектор, который передается на выходную функцию и используется для последующего предсказания.\n4. Выходной слой (Output Gate): Регулирует, сколько информации из ячеистого состояния должна быть показана скрытому слою для дальнейшего обработки.\n\nЭти компоненты работают совместно, чтобы фильтровать и контролировать, как долговременная информация из памяти ячейки передается в скрытый слой для последующего использования на выходе модели.",
       "rating": ""
     }
   ]

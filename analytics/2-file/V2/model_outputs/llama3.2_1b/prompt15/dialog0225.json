@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Можно ли автоматически подбирать архитектуру рекуррентной ячейки?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Так! Вопрос можно решить, используя библиотеку PyTorch, которая предоставляет функцию automatic differentiation (аддитивный différentiative) для моделирования рекуррентных ячеек.\n\nДавайте разберем это шаг за шагом:\n\n1. creamroller.py:\n```python\nimport torch\nimport torch.nn as nn\n\nclass RecurrentLSTM(nn.Module):\n    def __init__(self, input_dim, hidden_dim, output_dim):\n        super(RecurrentLSTM, self).__init__()\n        self.lstm = nn.LSTM(input_size=input_dim, hidden_size=hidden_dim, batch_first=True)\n        self.fc = nn.Linear(hidden_dim, output_dim)\n\n    def forward(self, x):\n        h0 = torch.zeros(x.size(0), self.hidden_dim).to(x.device)\n        c0 = torch.zeros(x.size(0), self.hidden_dim).to(x.device)\n\n        out, _ = self.lstm(x, (h0, c0))\n        out = self.fc(out[:, -1, :])\n\n        return out\n```\nИспользуя этот класс, мы можем создать рекуррентную ячейку с architecture'ю LSTM и finally использовать ее для обучения на входных данных.\n\n2. training.py:\n```python\nfrom creamroller import RecurrentLSTM\n\n# Create a recurrent LSTM model with 10 input units, 50 hidden units and 1 output unit\nmodel = RecurrentLSTM(input_dim=10, hidden_dim=50, output_dim=1)\n\n# Compile the model for training\ncriterion = nn.MSELoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.01)\n```\n3. training_loop.py:\n```python\nfrom training import model\n\ndef train(model, loader):\n    # Train the model for 10 epochs\n    for epoch in range(10):\n        running_loss = 0.0\n        running_acc = 0.0\n        for i, (x, y) in enumerate(loader):\n            # Forward pass\n            x = torch.tensor(x).to(device)\n            out = model(x)\n            loss = criterion(out, y)\n\n            # Backward pass and optimization\n            optimizer.zero_grad()\n            loss.backward()\n            optimizer.step()\n\n            # Track accuracy\n            acc = (out.argmax(-1) == y).sum() / len(y)\n            running_acc += acc\n\n        print(f'Epoch {epoch+1}, Loss: {loss.item():.4f}, Acc: {running_acc:.4f}')\n```\nЭтот класс позволяет создать и тренировать рекуррентную ячейку на входных данных. Для обучения можно использовать заданные функции loss-цель, optimizer и такую же лайнекеризацию данных.\n\nТеперь, когда мы разберемся с architectures'ями, let's смотрим, можно ли automatically подбирать архитектуру рекуррентной ячейки.",
+    "rating": ""
+  }
+]

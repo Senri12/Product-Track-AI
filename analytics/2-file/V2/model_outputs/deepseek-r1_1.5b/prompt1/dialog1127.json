@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое скрытое состояние в RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "skory:\n\nSkрытое состояние в RNN — это state networkh_i, которое описывает state на основе предыдущих нейронов network. ВRNNh_i+1depends on h_i and x_t, аh_i depends on h_{i-1} undx_{t-1}. В таком случаеh_i+1 в knowledge graph дляh_i undx_t. Это полезно для обработки последовательных данных в RNN.\n\n**Ответ:**\n\nSkрытое состояние в RNN — это state networkh_i, описывающее state на основе предыдущих нейронов network. ВRNNh_i+1depends on h_i undx_t, аh_i depends on h_{i-1} undx_{t-1}. В таком случаеh_i+1 в knowledge graph дляh_i undx_t. Это позволяет обработать последовательные данные и предсказывать Next step.",
+    "rating": ""
+  }
+]

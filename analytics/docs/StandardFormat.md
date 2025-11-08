@@ -4,14 +4,19 @@
 
 Все данные сконвертированы в стандартный формат согласно спецификации модели данных для упрощения обмена и анализа.
 
+**🆕 ОБНОВЛЕНИЕ:** Скрипт объединяет данные из ОБЕИХ папок в единые версии:
+- `analytics/` - основные эксперименты (Классификаторы)
+- `2-file/` - эксперименты с RNN
+- **Результат:** Все диалоги объединяются в папки `dialogs_v1_english`, `dialogs_v2_russian`, `dialogs_v3_russian_v2` (без дублирующих суффиксов)
+
 ## Созданные файлы
 
 ### 📊 Overall Reports (Общие отчеты)
 
-#### 1. overall_report_combined.xlsx / .csv (329 KB / 1.3 MB)
-**Объединенный отчет по всем версиям**
+#### 1. overall_report_combined.xlsx / .csv (761 KB / 2.4 MB)
+**Объединенный отчет по всем версиям (analytics + 2-file)**
 
-Содержит: 8100 записей (2700 × 3 версии)
+Содержит: 12,240 записей (4,125 + 4,050 + 4,065 по версиям)
 
 **Поля:**
 - `model_name` - название модели (gemma3, llama3.2, mistral, phi4-mini, deepseek-r1, granite3.2)
@@ -55,14 +60,17 @@ v3_data = df[df['version'] == 'v3_russian_v2']
 model_stats = df.groupby('model_name')['overall_rating'].mean()
 ```
 
-#### 2. overall_report_v1_english.xlsx / .csv (102 KB / 310 KB)
-Отчет только по Version 1 (английские промпты)
+#### 2. overall_report_v1_english.xlsx / .csv (238 KB / 788 KB)
+Объединенный отчет Version 1 (английские промпты из analytics + 2-file)
+- **Записей:** 4,125 (2,700 + 1,425)
 
-#### 3. overall_report_v2_russian.xlsx / .csv (106 KB / 453 KB)
-Отчет только по Version 2 (русские промпты v1)
+#### 3. overall_report_v2_russian.xlsx / .csv (233 KB / 773 KB)
+Объединенный отчет Version 2 (русские промпты v1 из analytics + 2-file)
+- **Записей:** 4,050 (2,700 + 1,350)
 
-#### 4. overall_report_v3_russian_v2.xlsx / .csv (106 KB / 442 KB)
-Отчет только по Version 3 (русские промпты v2) - **ЛУЧШАЯ ВЕРСИЯ**
+#### 4. overall_report_v3_russian_v2.xlsx / .csv (261 KB / 803 KB)
+Объединенный отчет Version 3 (русские промпты v2 из analytics + 2-file) - **ЛУЧШАЯ ВЕРСИЯ**
+- **Записей:** 4,065 (2,700 + 1,365)
 
 ---
 
@@ -97,14 +105,16 @@ model_stats = df.groupby('model_name')['overall_rating'].mean()
 
 ### 💬 Dialog Files (Файлы диалогов)
 
-#### dialogs_v1_english/ (2700 файлов)
-Диалоги Version 1
+**Все диалоги из analytics/ и 2-file/ объединены в единые папки по версиям:**
 
-#### dialogs_v2_russian/ (2700 файлов)
-Диалоги Version 2
+#### dialogs_v1_english/ (2,700 файлов)
+Диалоги Version 1 (analytics + 2-file)
 
-#### dialogs_v3_russian_v2/ (2700 файлов)
-Диалоги Version 3
+#### dialogs_v2_russian/ (2,252 файла)
+Диалоги Version 2 (analytics + 2-file)
+
+#### dialogs_v3_russian_v2/ (1,502 файла)
+Диалоги Version 3 (analytics + 2-file)
 
 **Формат файла диалога:**
 ```json

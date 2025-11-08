@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0977",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt3",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое TensorFlow?",
-    "f1": 37.6,
-    "precision": 38.2,
-    "recall": 52.5,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 3.7,
+    "precision": 9.6,
+    "recall": 19.8,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.285848"
+    "timestamp": "2025-11-08T20:42:37.419787"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое TensorFlow?",
+      "content": "Что такое скрытое состояние в RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Станьте обучеными в области машинного обучения с помощью интерактивного гида по TensorFlow!\n\nВопрос: Что означает слово \"TensorFlow\"?\nОтвет: TensorFlow - это открытый источный код для машинного обучения, разработанный Google Brain Team в 2015 году. Это платформа для создания и тренировки моделей машинного обучения с использованием графиков вычислений (computation graphs).\n\nУпражнение: Прочитайте следующий текст и ответьте на вопрос: Какую роль в TensorFlow играет график вычислений?\nТекст: Gráfico de cálculo, también conocido como computational graph, es una representación abstracta de un proceso de computación que define las operaciones matemáticas (óperaciones) y sus relaciones en la red neuronal. El gráfico de cálculo permite TensorFlow realizar cálculos eficientes mediante el optimizado para hardware compartido entre el GPU y CPU, lo que hace posible entrenar redes neuronales con millones de parámetros.\n\nВопрос: Какую роль в TensorFlow играет график вычислений?\nОтвет: График вычислений в TensorFlow играет важную роль, позволяя эффективно производить расчёты с использованием оптимизированного для совместного работы GPU и CPU компьютерного оборудования.",
+      "model_response": "Скрытое состояние в реекренсальном нейронном узле (RNN) - это передача информации от предыдущего шага, позволяющая нейронной сети хранить и использовать свои предыдущие ожидания. Это особенность RNN помогает им выдерживать последовательности данных и понимать контекст во времени, что делает их полезными для задач, требующих анализа последовательностей, таких как грамматическая предсказание или генерация текста.\n\nВ контексте RNN скрытое состояние - это часть, которая хранит внутреннее состояние, необходимое для вычисления текущего адаптивного входа (a(t)) и предположительных данных (z(t-1)). Адаптивный вход — это матрица, которая учитывает последние интерпретации и ввод для адекватно оценить входящее значения. Задачи, такие как градиентное басирование или обучение на задачах, часто используют скрытое состояние внутренней модели RNN, чтобы передавать информацию между шагами и предсказывать последовательность.",
       "rating": ""
     }
   ]

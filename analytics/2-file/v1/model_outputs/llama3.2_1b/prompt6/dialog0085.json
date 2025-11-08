@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Представляемся в мир компьютерного обслуживания естественного языка. Начнем с того, что мы обсуждаем трех разных моделей, которые используют机anismы внимания (Attention Mechanism) для обработки последовательности текста.\n\n1. **BERT**: Это modèleBidirectional Encoder Representations from Transformers. Он представляет собой несколько последовательно соединенных энコードеров Transformed Text Model. Внутри каждого слоя используется механизм self-attention, который обрабатывает входные данные без информации от декодера.\n2. **Transformer**: Это модуль трансформера, который позволяет обрабатывать все элементы последовательности одновременно. Он включает полноцвольный сеанс Attention и hidden state для каждого слоя.\n3. **LR schedule**: Это шаблон обучения на основе мини-батчей, по которымModel BERT обучается на từng batchе данных.\n\nТеперь давайте разберемся в важности normalize by mini-batch на практике:\n\nЧтобы improve Model BERT, researchers (авторы статьи) использовали normalize by mini-batch technique. Это означает, что они выполняли training on smaller batches of data each time they updated the model.\n\nЗдесь нормализация по мини-батчам имеет важное значение:\n\n*   Важно минимизировать издержки обучения на từng batchе данных.\n*   Позволяет model train faster, что приводит к быстрому улучшению качества модели.\n*   Упрощает процесс training, поскольку в каждомbatcheModel BERT может использовать все его компоненты для обучения.\n\nНештемное использование normalize by mini-batch в практике привело к значительному увеличению времени обучения model на từng batchе данных. Это означает, что training Model BERT заняло намного больше времени, чем раньше.",
+    "rating": ""
+  }
+]

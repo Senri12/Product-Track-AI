@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1111",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое метод k-ближайших соседей?",
-    "f1": 39.3,
-    "precision": 42.7,
-    "recall": 55.9,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.300738"
+    "timestamp": "2025-11-08T20:42:35.630792"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое метод k-ближайших соседей?",
+      "content": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " To clarify, the k-Nearest Neighbors (k-NN) is a machine learning algorithm that belongs to the instance-based learning category. This method is used for both classification and regression problems. The basic idea behind this technique is to classify an unknown data point based on the majority class of its 'k' nearest neighbors in the training dataset, where 'k' is user-defined.\n\nNow, I'd like to confirm my understanding: Is the method you are asking about, a machine learning algorithm that classifies or regresses an unknown data point using the majority class of its closest 'k' similar samples from a training set? Please let me know if my explanation needs further clarification.\n\nIf so, I can also explain the working principle and steps involved in implementing k-NN for classification and regression problems.",
+      "model_response": "Рекуррентные нейронные сети, такие как LSTM (Long Short-Term Memory),优越es для задачи обработки последовательности данных и контекста. Они используют state-маскирование, чтобы учитывать全局ный контекст при обработке каждого токена. Эти modelы помогают сократить времени иtime complexity, что особенно важно в нLP задачах, таких как трансформация текста или грамматике.\n\nБERT, основанный на трансформерной架构е, позволяет обучать model на основе разного контекста, ускоряя процесс обучения. Использование transfer learning помогает автоматизировать обучение modelов и повысить ихeficiency.\n\nГрадиенты могут быть затухающими или пропускающимся, что требует изменения скорости обучения (like learning rate schedule). В контексте рекуррентныхmodelов это особенно важно для ускорения процесса обучения.",
       "rating": ""
     }
   ]

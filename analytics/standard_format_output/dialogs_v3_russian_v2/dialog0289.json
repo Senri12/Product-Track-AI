@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0289",
-    "model_name": "deepseek-r1",
-    "model_parameters": "1.5B",
-    "system_prompt_id": "prompt15",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое over-fitting?",
-    "f1": 31.7,
-    "precision": 32.3,
-    "recall": 53.0,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 35.7,
-    "hallucination": 10.8,
-    "faithfulness": 32.8,
-    "noise_sensitivity": 18.4,
-    "self_knowledge": 6.4,
-    "timestamp": "2025-10-28T13:24:20.050523"
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 51.7,
+    "precision": 49.5,
+    "recall": 60.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 66.0,
+    "hallucination": 21.9,
+    "faithfulness": 69.2,
+    "noise_sensitivity": 28.6,
+    "self_knowledge": 8.9,
+    "timestamp": "2025-11-08T20:42:38.835417"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое over-fitting?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "overload of fitting — это умение модели вtrainable model learn patterns from training data too tightly, often capturing noise or outliers in the data rather than underlying patterns. This leads to overfitting, where the model performs well on the training data but poorly on new, unseen data.\n\nOverfitting occurs when a model achieves a minimal training loss but does not improve further with additional training iterations or regularization techniques. It is common when a neural network has too many hidden units or overly complex architecture, leading to overspecific learning that doesn't generalize from new data.\n\nTo combat overfitting, various strategies can be employed:\n1. **Validation Set**: Monitor performance on a separate validation set during training and stop training early if validation loss stops improving.\n2. **Regularization**: Techniques like weight decay, dropout, or L2 regularization can prevent the model from becoming too specific.\n3. **Early Stopping**: Stop training when validation loss starts to increase, as further training might lead to overfitting.\n4. **Simpler Models**: Using fewer layers or neurons in deeper networks can reduce overfitting potentiality.\n\nBy implementing these strategies, one can mitigate overfitting and achieve better generalization from new data.",
+      "model_response": "Основное отличие Simple RNN (простой рекуррентной сети) от глубоких RNN (например, LSTM или GRU) заключается в их способности справляться с проблемой затухания/взрыва градиентов.\n\n*   **Simple RNN:**  У простой RNN есть только одна скрытая единица, которая последовательно обрабатывает каждый элемент входной последовательности. Это делает ее очень простой, но в то же время очень чувствительной к затуханию градиентов.  Когда градиент обнуляется (затухает) во время обратного распространения, сеть перестает учиться, особенно для длинных последовательностей.  Проблема усугубляется тем, что градиент \"забывается\" или \"взрывается\" в процессе обучения.\n\n*   **Глубокие RNN (LSTM, GRU):**  Используют более сложные архитектуры (например, LSTM и GRU) для решения проблемы затухания градиентов.  Они включают в себя “память” в виде внутренних состояний (селл или вентилей), которые помогают сохранять информацию на протяжении длительных последовательностей.  Эти структуры позволяют градиентам лучше сохраняться и распространяться, что позволяет LSTM и GRU учиться на более длинных последовательностях, чем Simple RNN.\n\n**Ключевые различия в краткой форме:**\n\n| Характеристика | Simple RNN | LSTM/GRU |\n|---|---|---|\n| **Архитектура** | Простая, одна скрытая единица | Сложная, ячейки памяти (LSTM) или вентили (GRU) |\n| **Управление градиентами** | Плохо - подвержены затуханию/взрыву | Хорошо - обеспечивают стабильное обучение |\n| **Узлы**|Одна скрытая единица|Много скрытых ячеек|\n\nВ итоге,  LSTM и GRU - это более продвинутые варианты RNN, которые лучше справляются с проблемами, возникающими при работе с длинными последовательностями, что делает их более эффективными для большинства задач обработки последовательностей.\n",
       "rating": ""
     }
   ]

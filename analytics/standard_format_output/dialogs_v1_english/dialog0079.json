@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0079",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt3",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое over-fitting?",
-    "f1": 46.9,
-    "precision": 49.2,
-    "recall": 55.6,
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 19.1,
+    "precision": 27.3,
+    "recall": 34.7,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.622513"
+    "timestamp": "2025-11-08T20:42:35.588372"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое over-fitting?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Okay, let's tackle the concept of \"overfitting.\" It's a really important one in machine learning and statistics.\n\nSimply put, **overfitting happens when a model learns the training data *too* well.** \n\nThink of it like this: you’re studying for an exam, and you memorize every single detail from the textbook. You ace the practice questions based on that specific material, but when you see a slightly different question on the real exam, you fail because you didn't actually *understand* the underlying concepts.\n\nIn machine learning, a model learns patterns from the training data.  Overfitting occurs when it learns those patterns so specifically that it picks up on noise and random fluctuations within that particular dataset.  \n\n**Here’s a key distinction:** A good model generalizes well to *new*, unseen data. An overfit model doesn't. It performs incredibly well on the training data but poorly on new data.\n\n**Let’s check your understanding.  Before we move on, can you tell me in your own words what you think is the core problem with an overfit model?** Don’t worry about being perfectly correct; I just want to gauge where you're at.",
+      "model_response": "Итак, давайте проанализируем тему. Мы Recently упоминали несколько моделей, которые используют机anismы attention и transformationer для обработки текста. \n\nКроме того, мы были посвящены обсуждению градиентов в модели Transformer. Модель Transformer, которая мы recently обсуждали, представляет собой многослойную структуру, которая состоит из encoder и decoder. \n\nТаким образом, вопрос: \"В чем отличие Simple RNN от Deep RNN?\" — это вопрос о разнице между двух типами recurrent neural networks (RNNs).\n\nSimple RNN — это базовый тип RNN, который используется для обработки последовательных данных. Однако, как мы recently упоминали, Simple RNN не может вывести представление на основе контекста, поскольку оно только вырабатывает предсказания на основе последних few элементов input.\n\nВ отличие от Simple RNN Deep RNN — это более сложный тип RNN, который имеет по крайней мере двусмысленный название. \"Deep\" в названии на самом деле относится к более высокому nivelам deep learning. \n\nЭтот тип RNN содержит по крайней мере 3-4 слоя encoder и decoder, а также некоторые сложные вычисления для обработки последовательных данных.\n\nСледовательно, Simple RNN — это базовый тип RNN, который не может вывести представление на основе контекста, в то время как Deep RNN — это более сложный тип RNN, который может выдавать представление на основе контекста.",
       "rating": ""
     }
   ]

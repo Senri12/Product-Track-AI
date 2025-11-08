@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Normalization by mini-batch is crucial for training RNNs because it ensures consistent signal magnitudes across all neurons. This helps prevent gradients from exploding or dying during learning, especially with non-linear activation functions that respond differently to varying input ranges. By standardizing inputs uniformly, we maintain stable updates and improve model performance by preventing unstable gradients caused by temporal dependencies and matrix multiplication effects in recurrent networks.",
+    "rating": ""
+  }
+]

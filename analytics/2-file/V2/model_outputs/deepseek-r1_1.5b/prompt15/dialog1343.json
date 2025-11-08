@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Чем GRU отличается от LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Гаты (gates) Gated Recurrent Unit (GRU) отличаются от LSTM (Long Short-Term Memory) из того, что они используют гаты для掩ки, которые определяют, какmuch information flowing through the gate ( gates determines how much of the previous state is carried forward).\n\nВ GRU:\n1. Участие памяти (memory) учитывается в one step.\n2. Гаты фильтрации (gates for filtering) определяют, сколько информации о памяти нужно использовать для Update.hidden_state.\n\nВ LSTM:\n1. Участие памяти фильтрируется через гаты фильтрации (gates for filtering).\n2. Гаты фильтрации simultaneously update hidden states based on the cell's activation.\n3. Гаты掩ки определяют, сколько информации о памяти нужно использовать для Update.hidden_state.\n\nЭто отличие между GRU и LSTM в использовании гатов для у part of their updates, что может быть более эффективным при smaller networks или smaller amounts of data.",
+    "rating": ""
+  }
+]

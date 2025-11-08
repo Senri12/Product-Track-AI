@@ -28,13 +28,14 @@
 
 ## 📊 Основные отчеты
 
-### 1. RAGChecker Analysis
-**Файл:** [ragchecker_analysis_v1.xlsx](ragchecker_analysis_v1.xlsx) / [ragchecker_analysis_v2.xlsx](ragchecker_analysis_v2.xlsx)
+### 1. Lecture Comparison Analysis
+**Файл:** [../lecture_comparison_analysis.xlsx](../lecture_comparison_analysis.xlsx) (в корне проекта)
 
 **Содержит:**
-- 10 листов с различными срезами данных
-- Метрики по 6 моделям и 15 промптам
-- Матрицы сравнения (модель × промпт)
+- Сравнение метрик на всех лекциях (Classifiers, Инструменты НС, RNN)
+- Анализ по версиям промптов для каждой лекции
+- Матрицы F1 для всех комбинаций (модель × промпт × лекция)
+- Лучшие конфигурации для каждой лекции
 - Условное форматирование для быстрой визуализации
 
 **Ключевые метрики:**
@@ -44,40 +45,23 @@
 - **Hallucination** - галлюцинации модели (чем меньше, тем лучше)
 - **Faithfulness** - следование контексту
 
+**Создание отчета:**
+```bash
+cd analytics
+python3 compare_lectures.py
+```
+
 📖 [Подробная документация](docs/RAGChecker.md)
 
-### 2. Versions Comparison
-**Файл:** [versions_comparison_v2.xlsx](versions_comparison_v2.xlsx)
-
-**Содержит:**
-- Сравнение английских vs русских промптов
-- Детальный анализ изменений по всем метрикам
-- Списки улучшений и ухудшений
-- Матрицы разницы с визуализацией
-
-**Результаты:**
-- ✅ 47.8% комбинаций показали улучшение
-- ⚠️ 34.4% комбинаций ухудшились
-- 🔝 Лучшее улучшение: phi4-mini + prompt14 (+24%)
-
-📖 [Подробная документация](docs/Comparison.md)
-
-### 3. Comparison All Versions
-**Файл:** [comparison_all_versions.xlsx](comparison_all_versions.xlsx)
-
-**Содержит:**
-- Сравнение всех 3 версий (v1, v2, v3)
-- Динамика изменений метрик
-- Лучшие промпты для каждой версии
-
-### 4. Standard Format Output
+### 2. Standard Format Output
 **Директория:** [standard_format_output/](standard_format_output/)
 
 **Содержит:**
 - Overall reports (combined + по версиям)
 - System prompts (xlsx/csv/json)
-- Диалоги в стандартном формате (8100 записей)
+- Диалоги в стандартном формате
 - Метрики RAGChecker для всех комбинаций
+- Данные из ОБЕИХ папок: analytics/ и 2-file/
 
 📖 [Подробная документация](docs/StandardFormat.md)
 
@@ -90,20 +74,20 @@ analytics/
 ├── README.md                          # Этот файл (главная документация)
 │
 ├── 📊 Отчеты и анализ
-│   ├── ragchecker_analysis_v1.xlsx    # Метрики RAGChecker для v1
-│   ├── ragchecker_analysis_v2.xlsx    # Метрики RAGChecker для v2
-│   ├── versions_comparison_v2.xlsx    # Сравнение v1 vs v2
-│   ├── comparison_all_versions.xlsx   # Сравнение всех 3 версий
-│   └── standard_format_output/        # Данные в стандартном формате
+│   ├── standard_format_output/        # Данные в стандартном формате
+│   │   ├── overall_report_combined.xlsx  # Объединенный отчет всех версий
+│   │   ├── overall_report_v1_english.xlsx # Отчет для версии 1
+│   │   ├── overall_report_v2_russian.xlsx # Отчет для версии 2
+│   │   ├── overall_report_v3_russian_v2.xlsx # Отчет для версии 3
+│   │   ├── system_prompts_*.xlsx      # Системные промпты (xlsx/csv/json)
+│   │   └── dialogs_*/                 # Диалоги в стандартном формате
+│   └── ../lecture_comparison_analysis.xlsx  # Сравнение всех лекций (в корне проекта)
 │
 ├── 🐍 Скрипты анализа
-│   ├── analyze_ragchecker.py          # Анализ метрик RAGChecker
-│   ├── analyze_results.py             # Анализ корректности языка
-│   ├── compare_versions.py            # Сравнение v1 vs v2
-│   ├── compare_all_versions.py        # Сравнение всех версий
+│   ├── compare_lectures.py            # Сравнение всех лекций (version_* + 2-file)
 │   └── convert_to_standard_format.py  # Конвертация в стандартный формат
 │
-├── 📁 Данные версий
+├── 📁 Данные версий (Classifiers + Инструменты НС)
 │   ├── version_1/                     # Version 1 (английские промпты)
 │   │   ├── RAGChecker_outputs/
 │   │   ├── model_outputs/
@@ -116,6 +100,23 @@ analytics/
 │   │   └── system_prompts.json
 │   │
 │   └── version_3/                     # Version 3 (русские промпты v2) ⭐
+│       ├── RAGChecker_outputs/
+│       ├── model_outputs/
+│       ├── checking_inputs.json
+│       └── system_prompts.json
+│
+├── 📝 2-file/                         # Данные лекции RNN
+│   ├── v1/                            # Version 1 (английские промпты)
+│   │   ├── RAGChecker_OUTPUTS/
+│   │   ├── model_outputs/
+│   │   ├── checking_inputs.json
+│   │   └── system_prompts.json
+│   ├── V2/                            # Version 2 (русские промпты v1)
+│   │   ├── RAGChecker_OUTPUTS/
+│   │   ├── model_outputs/
+│   │   ├── checking_inputs.json
+│   │   └── system_prompts.json
+│   └── v3/                            # Version 3 (русские промпты v2)
 │       ├── RAGChecker_outputs/
 │       ├── model_outputs/
 │       ├── checking_inputs.json
@@ -140,17 +141,19 @@ analytics/
 ### 1. Просмотр основных результатов
 
 **Откройте в Excel:**
-- [comparison_all_versions.xlsx](comparison_all_versions.xlsx) - сравнение всех версий (начните отсюда!)
-  - Лист "Общая статистика" - общее влияние версий
-  - Лист "F1 - Разница (V3-V1)" - визуальное сравнение
+- [../lecture_comparison_analysis.xlsx](../lecture_comparison_analysis.xlsx) - сравнение всех лекций и версий (начните отсюда!)
+  - Лист "Все данные" - полная таблица всех метрик
+  - Лист "Сравнение по лекциям" - сравнение метрик между лекциями
+  - Лист "Модели по лекциям" - сравнение моделей на разных лекциях
+  - Листы "F1 [лекция]_[версия]" - матрицы F1 для каждой комбинации
 
 ### 2. Детальный анализ метрик
 
 **Откройте в Excel:**
-- [ragchecker_analysis_v2.xlsx](ragchecker_analysis_v2.xlsx) - метрики для лучшей версии (v2)
-  - Лист "F1 (модель×промпт)" - главная матрица качества
-  - Лист "Сводка по моделям" - сравнение моделей
-  - Лист "Hallucination (модель×промпт)" - проверка галлюцинаций
+- [standard_format_output/overall_report_combined.xlsx](standard_format_output/overall_report_combined.xlsx) - объединенный отчет всех версий
+  - Все метрики RAGChecker для всех комбинаций
+  - Фильтрация по версиям, моделям, промптам
+  - Статистика по лекциям
 
 ### 3. Работа с данными
 
@@ -169,21 +172,41 @@ stats = df[df['version'] == 'v3_russian_v2'].groupby('system_prompt_id')['f1'].m
 print(stats.sort_values(ascending=False).head(5))
 ```
 
-### 4. Повторный запуск анализа
+### 4. Сравнение результатов на всех лекциях
 
 ```bash
-# Анализ метрик RAGChecker
-python3 analyze_ragchecker.py
+cd analytics
+python3 compare_lectures.py
+```
 
-# Сравнение v1 vs v2
-python3 compare_versions.py
+Этот скрипт создаст в корне проекта (на уровень выше analytics/):
+- **lecture_comparison_analysis.xlsx** - полный отчет с графиками и матрицами
+- **lecture_comparison_analysis.csv** - все данные в CSV для дальнейшей аналитики
 
-# Сравнение всех версий (v1, v2, v3)
-python3 compare_all_versions.py
+Содержимое отчета:
+- Сравнение метрик на всех лекциях:
+  - Classifiers (1_Классификаторы_KNN_и_наивный_байес.tex) - из version_*
+  - Инструменты НС (3. Инструменты обучения НС.tex) - из version_*
+  - RNN (5._Рекуррентные_НС.tex) - из 2-file/
+- Анализ по версиям промптов для каждой лекции
+- Матрицы F1 для всех комбинаций (модель × промпт × лекция)
+- Лучшие конфигурации для каждой лекции
 
-# Конвертация в стандартный формат
+### 5. Конвертация всех данных в стандартный формат
+
+```bash
+cd analytics
 python3 convert_to_standard_format.py
 ```
+
+Скрипт автоматически:
+1. Объединяет данные из version_* и 2-file/ в единые версии
+2. Создает папки dialogs_v1_english, dialogs_v2_russian, dialogs_v3_russian_v2
+3. Генерирует overall_report для каждой объединенной версии
+4. Создает overall_report_combined.xlsx со всеми данными
+5. Сохраняет все в standard_format_output/
+
+**Результат:** Все диалоги из version_* и 2-file/ объединены в 3 папки (по версиям), без дублирующих суффиксов
 
 ---
 
@@ -202,7 +225,8 @@ python3 convert_to_standard_format.py
 - 6 моделей
 - 15 различных промптов
 - 3 версии промптов
-- 8100 диалогов (2700 × 3 версии)
+- 3 лекции (Classifiers, Инструменты НС, RNN)
+- Более 6000 диалогов (объединенные данные из version_* и 2-file/)
 
 ---
 
@@ -271,10 +295,10 @@ pip install pandas openpyxl numpy
 ## 📝 Следующие шаги
 
 ### Краткосрочные
-1. ✅ Откройте [comparison_all_versions.xlsx](comparison_all_versions.xlsx)
-2. ✅ Изучите лист "Общая статистика"
+1. ✅ Откройте [../lecture_comparison_analysis.xlsx](../lecture_comparison_analysis.xlsx)
+2. ✅ Изучите лист "Все данные" и "Сравнение по лекциям"
 3. ✅ Выберите лучшую модель для вашей задачи
-4. ✅ Проверьте галлюцинации
+4. ✅ Проверьте галлюцинации в стандартных отчетах
 
 ### Среднесрочные
 1. 🔄 Протестируйте топ-3 промпта на своих данных
@@ -314,8 +338,8 @@ pip install pandas openpyxl numpy
 
 Этот анализ создан для внутреннего использования в проекте Product Track AI.
 
-**Дата последнего обновления:** 28 октября 2025
-**Версия:** 2.0
+**Дата последнего обновления:** 8 ноября 2024
+**Версия:** 3.0
 **Статус:** ✅ Готово к использованию
 
 ---

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1287",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
-    "f1": 41.1,
-    "precision": 41.1,
-    "recall": 52.8,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.270200"
+    "timestamp": "2025-11-08T20:42:37.373322"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "content": "Как работает механизм внимания (Attention)?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Для вычисления скорости v_t в алгоритме Momentum необходимо применить уравнение обновления параметров:\n\nv_t = γ * v_{t-1} + ∇L\n\nВ нашем случае задано:\n\n* γ = 0.9\n* v_{t-1} = 1\n* ∇L = 2\n* η = 0.1 (эта константа не участвует в этом уравнении, но я включаю ее для полноты картины)\n\nПодставляя это в уравнение:\n\nv_t = γ * v_{t-1} + ∇L\n\nv_t = 0.9 * 1 + 2 = 3.9\n\nСогласно данным, скорость v_t равна 3.9.",
+      "model_response": "Механизм внимания (attention) — это способ моделей обрабатывать контекст data в ближайшие символы, фиксирующий weighings-weighted combination of features, которые используются для решения задач. Он был initially разработан в Attentional Networks (ATN), который использовался для классификации данных на изображениях и текстах.\n\nНа языке контекста внимание в трансформерных моделях используется для同步изации векторов, которые обрабатываются simultaneously. В модели BERT (2018) внимание реализован как акtedual attentional layers, которые фильтrowают контекст от каждого token-предиката.\n\nТаким образом, внимание учитывает всю последовательность данных и использует только информацию из токенов, выделяемых upstream layers. Это делает модель BERT градуALLY поescalенной по слоем: в начальных слоях (например, 2-го и 3-rого) внимание фиксировано, а в laterых слоях он может быть генерированным.\n\nГрадиентыattention, которые используются в моделях ATN и BERT, могут быть затухающими в случае приблизительных обработок данных. Это связано с тем, что注意力 в一定程度е фиксированной структуре требует точного匹配а контекста model-a data-a model-a.",
       "rating": ""
     }
   ]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1283",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое learning rate?",
-    "f1": 41.1,
-    "precision": 41.1,
-    "recall": 52.8,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.269404"
+    "timestamp": "2025-11-08T20:42:37.372595"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое learning rate?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Learning rate - это параметр в алгоритмах машинного обучения, который определяет скорость с которой алгоритм улучшается во время обучения на базе выборки данных. Он указывает на величину шага, которым алгоритм приближается к оптимальному решению.\n\nВо время обучения нейронной сети, для каждого шага обучения (итерации), алгоритм изменяет веса и биасы входных и скрытых слоев, чтобы уменьшить потерю функции цели. Значение learning rate определяет величину изменения весов во время обучения. Если значение learning rate слишком малое, то алгоритм может застрять в локальном минимуме и не найти глобальный оптимум. С другой стороны, если значение learning rate слишком большое, то алгоритм может очень быстро приближаться к локальному максимуму или нестабильно прыгать между различными локальными минимумами.\n\nВы можете изменить значение learning rate во время обучения и проверить, как это влияет на потерю функции цели и качество полученной нейронной сети. Можно также использовать некоторые автоматические методы для определения оптимального значения learning rate, такие как Adam и RMSprop.\n\nВы можете рассмотреть запись обучения нейронной сети с использованием различных значений learning rate в учебнике по машинному обучению от Andrew Ng - Machine Learning, который доступен бесплатно на Coursera.",
+      "model_response": "ГрупUS (Gated Recurrent Unit — GRU) — это модуль обработки данных, который оценяет гating gate на каждомtime step и удаляет state между time steps. GRU включает Fewer gates (less parameters) и удаляет statebetween time steps. Это позволяет обрабатывать последовательность без резreceive от предыдущих steps. GRU также является более простой и обновлённой моделью, особенно для задач с сложными контекстами.\n\n相比之下, LSTM (Long Short-Term Memory — LSTM) включает 4 Gates (Forget, Memory, Input, Update) и учитывает все контекст. LSTM обрабатывает рез receive от предыдущих steps и knowledge distant context. GRU может быть более гладким по Градиентам than LSTM.\n\nНо GRU может быть не Ideal для задач с сложными контекстами, так как градиенты могут быть затухающие.",
       "rating": ""
     }
   ]

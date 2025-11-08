@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0295",
-    "model_name": "deepseek-r1",
-    "model_parameters": "1.5B",
-    "system_prompt_id": "prompt15",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое RMSProp?",
-    "f1": 31.7,
-    "precision": 32.3,
-    "recall": 53.0,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 35.7,
-    "hallucination": 10.8,
-    "faithfulness": 32.8,
-    "noise_sensitivity": 18.4,
-    "self_knowledge": 6.4,
-    "timestamp": "2025-10-28T13:24:20.051640"
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 51.7,
+    "precision": 49.5,
+    "recall": 60.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 66.0,
+    "hallucination": 21.9,
+    "faithfulness": 69.2,
+    "noise_sensitivity": 28.6,
+    "self_knowledge": 8.9,
+    "timestamp": "2025-11-08T20:42:38.836823"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое RMSProp?",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "RMSProp (root mean square propagation) — это метод оптимизации нейронных сетей, который обновляет параметры на основе средней квадратной суммы градиента. differs from the standard gradient descent method by scaling the update direction by the root of the mean of squared gradients.\n\n### Основные моменты:\n1. **Критерий обновления**: RMSProp использует среднюю квадратную сумму градиентов для уменьшения изменения параметров.\n2. **Дifference от standard gradient descent**: В отличие от gradient descent, где every parameter update depends directly on the current gradient, RMSProp scales each gradient by a learning rate that is inversely proportional to the root of the mean squared norm of all gradients seen so far for that parameter.\n\n### Формула:\n\\[ \\Delta w = -\\frac{\\eta}{\\sqrt{E[g^2]}} \\cdot g \\]\nгде:\n- \\( \\Delta w \\) — изменение параметра,\n- \\( \\eta \\) — коэффициент уменьшения (rate of decay),\n- \\( E[g^2] \\) — средняя квадратическая сумма генераторных данных,\n- \\( g \\) — текущий градиент.\n\n### Важность:\nRMSProp подходит для задач с низкой корреляцией генераторных данных и линейными архитектурами. Он улучшает Convergence и обрабатывает большие gradient, что особенно полезно в initialize phase.\n\n### Использование:\nRMSProp popularized itself due to its effectiveness in practice and is often used alongside other optimization methods like Adam or SGD with momentum.",
+      "model_response": "Нормализация по мини-батчам важна для обучения RNN (рекуррентных нейронных сетей) по нескольким ключевым причинам:\n\n* **Стабилизация градиентов:** RNN склонны к взрыву градиентов во время обратного распространения ошибки. Это происходит из-за того, что градиенты, вычисленные для каждого временного шага, перемножаются. Если градиенты большие, они могут экспоненциально расти, что приводит к огромным значениям, которые делают обучение нестабильным и неэффективным. Нормализация мини-батчей уменьшает величину этих градиентов, предотвращая их взрыв.\n* **Уменьшение чувствительности к выбору размера мини-батча:** Без нормализации, размер мини-батча оказывает значительное влияние на стабильность обучения. С маленькими мини-батчами градиенты будут более шумными, а с большими – более стабильными, но также и менее репрезентативными, что может привести к недообучению. Нормализация позволяет использовать более крупные мини-батчи, не опасаясь взрыва градиентов.\n* **Более эффективное обучение:** Уменьшение колебаний градиентов позволяет алгоритму оптимизации (например, Adam) быстрее и эффективнее сходиться к оптимальному решению, т.е. к наилучшим весам сети.\n* **Улучшенное перенос обучения (Transfer Learning):** Нормализация особенно важна при переносе обучения, когда модель, обученная на одном наборе данных, используется для решения другой задачи.  Это помогает задействовать знания, полученные на первом наборе данных, и ускорить процесс обучения на втором.\n\nВ целом, нормализация по мини-батчам - это  базовая техника, которая значительно повышает эффективность и стабильность обучения RNN.\n",
       "rating": ""
     }
   ]

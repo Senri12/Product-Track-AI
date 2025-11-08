@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog1130",
-    "model_name": "granite3.2",
-    "model_parameters": "2.0B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое SGD?",
-    "f1": 33.9,
-    "precision": 29.7,
-    "recall": 51.7,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 34.1,
-    "hallucination": 12.4,
-    "faithfulness": 32.2,
-    "noise_sensitivity": 20.1,
-    "self_knowledge": 5.3,
-    "timestamp": "2025-10-28T13:24:20.193210"
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 26.5,
+    "precision": 28.7,
+    "recall": 43.8,
+    "claim_recall": 65.3,
+    "context_precision": 100.0,
+    "context_utilization": 43.1,
+    "hallucination": 33.3,
+    "faithfulness": 57.0,
+    "noise_sensitivity": 37.9,
+    "self_knowledge": 9.7,
+    "timestamp": "2025-11-08T20:42:39.095931"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое SGD?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "SGD, или Stochastic Gradient Descent (Средневесовое оптимизирование), является одним из наиболее простых и популярных алгоритмов градиентного спуска. Это метод для минимизации логарифмической потерь, используемый в различных областях адаптивного учения, таких как нейронные сети.\n\nВ SGD алгоритм на каждом шаге рандомно выбирает один открытый элемент из базы данных или случайных точек обучающего множества, а затем вычисляет градиент на основе этой точки. Это позволяет алгоритму искать оптимальную сеть или параметры более широко по всей области, чем простое градиентное спуск.\n\nОсновное преобразование от Standard Gradient Descent (СGD) от Standard Gradient Descent (SGD):\n1. Вместо использования итерации по всей общемой базе данных, выбирается одна точка в каждом шаге с пробabilistic или последовательным подходом.\n2. Процесс не зависит от целевой функции (например, ошибки), и градиент находится для выбранной точки из базы данных в каждом шаге.\n3. Для обновления параметров сети используется следующая формула:\n\n    $$w := w - \\eta \\nabla f(w; x_i)$$\n\n    где $w$ – текущие значения параметров, $\\eta$ – шаг по градиенту (параметр алгоритма), $f$ – целевая функция ошибки, $x_i$ – выбранная точка из базы данных в каждом шаге.\n\nПрименение SGD позволяет ускорить обучение и оказывает сильное предконтрационное эффект, поскольку алгоритм работает с примерами базы данных в каждом шаге. Однако, отличие от Standard Gradient Descent заключается в том, что SGD может быть более стабильным и лучше соблюдать границы области минимума функции ошибки, чем простой GD.",
+      "model_response": "Для понимания importance of bidirectional RNNs (binary convolutional RNNs) and their use in tasks with low history we can refer to the following:\n\n### Binary-convolutional RNNs:\nBinary-convolutional RNNs are designed to process sequential data more effectively by considering both forward and backward directions of time. This approach helps in capturing bidirectional dependencies, which is particularly useful in scenarios where context from previous steps (forward) and next steps (backward) is needed for accurate predictions or decisions.\n\n### Why Binary-convolutional RNNs are Needed:\n1. **Two Time Steps Approach**:\n   - In binary-convolutional RNNs, the data is processed twice: once forward in time and then again backward. This allows the network to capture dependencies from both past and future steps, enhancing the model's ability to understand context.\n\n2. **Reducing Obstacles**:\n   - They help reduce the problem of \"static nature\" by processing the same data in both directions, which is essential for tasks that rely on sequential dependencies without static representations.\n\n3. **Improved Performance**:\n   - Binary-convolutional RNNs have shown state-of-the-art results in various NLP and ML tasks due to their ability to handle low history scenarios more effectively than standard RNNs.\n\n4. **Reduced Obstacles with Standard RNNs**:\n   - They alleviate issues faced by standard RNNs, which often struggle with time dependency without the double processing of data.\n\n### Conclusion:\nBinary-convolutional RNNs are crucial for tasks requiring context from both past and future steps, offering improved performance over standard RNN approaches. Their two-time steps approach is a key advancement that enhances their utility in various NLP applications.\n\nIf you need further details on how twice the time steps approach specifically contributes to binary-convolutional RNNs or their application in specific tasks, feel free to ask!",
       "rating": ""
     }
   ]

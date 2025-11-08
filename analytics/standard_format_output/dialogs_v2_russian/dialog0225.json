@@ -3,12 +3,12 @@
     "dialog_id": "dialog0225",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
-    "f1": 28.1,
-    "precision": 35.0,
-    "recall": 31.6,
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Можно ли автоматически подбирать архитектуру рекуррентной ячейки?",
+    "f1": 14.0,
+    "precision": 13.7,
+    "recall": 35.4,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.989995"
+    "timestamp": "2025-11-08T20:42:37.298995"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "content": "Можно ли автоматически подбирать архитектуру рекуррентной ячейки?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Чтобы рассчитать вероятность того, что человек узнает, что он спAMB, мы можем использовать распределение Пи и найти P(win|спам).\n\nВероятность того, что человек не узнает о спами, равна P(not спäm), и это 1 - P(спамп). \n\nИспользуя определение P(win|спам) = P(спамп) / P(not спamps), мы можем вычислить P(not спamps):\n\nP(not спamps) = 0,5 (поскольку у нас есть вероятность того, что человек не recognizes a spam, равная 50%)\n\nИтак, P(win|спам) = P(спampp) / P(not спamps)\n\nПусть P(спамп) — это вероятность того, что человек будет спAMB. Мы можем использовать базовую вероятность (B) для обозначения вероятности того, что человек не знает о спами.\n\nТогда мы можем написать уравнение:\n\nP(not спamps) = 0,5\nP(спampp) / P(not спamps) = B\n\nПодставив значения, получим:\n\nP(спampp) / 0,5 = B\n\nПоскольку вероятность того, что человек не узнает о спами, равна 50%, мы можем написать:\n\nB = 1,0 (поскольку P(not спamps) = 0,5)\n\nТеперь, когда мы знаем B, мы можем вычислить P(win|спам):\n\nP(win|спам) = P(спampp) / P(not спamps)\n= P(спampp) / 0,5\n= (1/2) * (поскольку вероятность того, что человек будет спAMB, равна 50%)\n\nПоскольку P(win|спам) должно быть не менее 0, мы можем написать:\n\nP(win|спам) ≥ 0\n\nИтак, P(win|спам) = 1/2.",
+      "model_response": "Так! Вопрос можно решить, используя библиотеку PyTorch, которая предоставляет функцию automatic differentiation (аддитивный différentiative) для моделирования рекуррентных ячеек.\n\nДавайте разберем это шаг за шагом:\n\n1. creamroller.py:\n```python\nimport torch\nimport torch.nn as nn\n\nclass RecurrentLSTM(nn.Module):\n    def __init__(self, input_dim, hidden_dim, output_dim):\n        super(RecurrentLSTM, self).__init__()\n        self.lstm = nn.LSTM(input_size=input_dim, hidden_size=hidden_dim, batch_first=True)\n        self.fc = nn.Linear(hidden_dim, output_dim)\n\n    def forward(self, x):\n        h0 = torch.zeros(x.size(0), self.hidden_dim).to(x.device)\n        c0 = torch.zeros(x.size(0), self.hidden_dim).to(x.device)\n\n        out, _ = self.lstm(x, (h0, c0))\n        out = self.fc(out[:, -1, :])\n\n        return out\n```\nИспользуя этот класс, мы можем создать рекуррентную ячейку с architecture'ю LSTM и finally использовать ее для обучения на входных данных.\n\n2. training.py:\n```python\nfrom creamroller import RecurrentLSTM\n\n# Create a recurrent LSTM model with 10 input units, 50 hidden units and 1 output unit\nmodel = RecurrentLSTM(input_dim=10, hidden_dim=50, output_dim=1)\n\n# Compile the model for training\ncriterion = nn.MSELoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.01)\n```\n3. training_loop.py:\n```python\nfrom training import model\n\ndef train(model, loader):\n    # Train the model for 10 epochs\n    for epoch in range(10):\n        running_loss = 0.0\n        running_acc = 0.0\n        for i, (x, y) in enumerate(loader):\n            # Forward pass\n            x = torch.tensor(x).to(device)\n            out = model(x)\n            loss = criterion(out, y)\n\n            # Backward pass and optimization\n            optimizer.zero_grad()\n            loss.backward()\n            optimizer.step()\n\n            # Track accuracy\n            acc = (out.argmax(-1) == y).sum() / len(y)\n            running_acc += acc\n\n        print(f'Epoch {epoch+1}, Loss: {loss.item():.4f}, Acc: {running_acc:.4f}')\n```\nЭтот класс позволяет создать и тренировать рекуррентную ячейку на входных данных. Для обучения можно использовать заданные функции loss-цель, optimizer и такую же лайнекеризацию данных.\n\nТеперь, когда мы разберемся с architectures'ями, let's смотрим, можно ли automatically подбирать архитектуру рекуррентной ячейки.",
       "rating": ""
     }
   ]

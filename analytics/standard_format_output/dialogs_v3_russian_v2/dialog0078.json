@@ -3,26 +3,26 @@
     "dialog_id": "dialog0078",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 34.6,
-    "precision": 34.9,
-    "recall": 45.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 27.9,
-    "hallucination": 11.9,
-    "faithfulness": 32.7,
-    "noise_sensitivity": 18.6,
-    "self_knowledge": 5.4,
-    "timestamp": "2025-10-28T13:24:20.087455"
+    "system_prompt_id": "prompt6",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 34.4,
+    "precision": 32.0,
+    "recall": 47.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 48.5,
+    "hallucination": 27.0,
+    "faithfulness": 57.9,
+    "noise_sensitivity": 34.3,
+    "self_knowledge": 8.4,
+    "timestamp": "2025-11-08T20:42:39.088519"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Keras is a high-level Python library that provides a lot of user-friendly tools for building and training deep learning models. It's built on top of TensorFlow under the hood, but it offers a simpler, more accessible interface for developing custom models.\n\nHere are some key points about Keras:\n\n1. **High-Level Interface**: Keras allows you to define and build models using functional API syntax, which is easier than working directly with tensors in TensorFlow.\n\n2. **Integration with TensorFlow**: Keras leverages TensorFlow's computational graph, making it a convenient tool for deep learning tasks.\n\n3. **Custom Layers and Models**: You can create your own custom layers and model architectures using Keras, combining multiple building blocks provided by the library.\n\n4. **Deep Learning Specifics**: While Keras is high-level, it includes components like ResNet50 (for image recognition) that you'd typically find in TensorFlow for more specialized tasks.\n\nIn summary, if you're looking for a user-friendly environment to create and train models, Keras is an excellent choice. It integrates seamlessly with TensorFlow, allowing you to build complex architectures without the need for low-level tensor manipulations.",
+      "model_response": "**Итоги лекции:**\n\n1. **Рекуррентные нейронные сети (RNNs):**\n   - Решают задачи с последовательными данными, где узлы нейronов связаны в链条ах с собой и с предыдущими шагами.\n   - Основные архитектуры:\n     - GRU (Gated Recurrent Unit): У conservatorной структуре, использует тензоры на каждом шаге.\n     - LSTM (Long Short-Term Memory): Добавляет прямую связь между тензорами, фильтруя узлы нейронов.\n\n2. **Аренда методов:**\n   - GRU – most efficient for high-dimensional sequential data.\n   - LSTM – excellent for tasks requiring the importance of past elements to be highlighted.\n   - Attention-based Networks – handle visual data by considering importance via attention mechanisms.\n   - Memory-based Networks – process information along lines with tензorum in ¾-D.\n\n3. **Типы входов и выходов:**\n   - GRU, LSTM, Attention-based Networks, Memory-based Networks.\n   - Входы: Матриц или тензоры.\n   - Выходы: Некоторые отсчетные нейроны в зависимости от архитектуры.\n\n4. **Пример задач:**\n   - Формирование текста с генерацией.\n   - Предсказание следующего слова.\n   - Разделение изображений на логотипы.\n   - Классификация с последовательными данными.\n\nТеперь можно уточнить细节 по конкретным архитектурам и примерам задач.",
       "rating": ""
     }
   ]

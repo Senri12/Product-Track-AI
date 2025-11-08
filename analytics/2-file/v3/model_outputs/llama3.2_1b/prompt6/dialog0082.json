@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "С standartной LSTM ячейки входные данные представляют собой вектор, состоящий из трех частей:\n\n1. Нормализованная entrada (х): входная часть вектора.\n2. Вспомнить previous state (у): запись предыдущего состояния вектора.\n3. Вспомнить next state (у+1): запись следующего состояния вектора.\n\nПримечание: LSTM - Long Short-Term Memory, а не Long Short-Term Attention, поэтому в этом контексте нет распознавания Attention.",
+    "rating": ""
+  }
+]

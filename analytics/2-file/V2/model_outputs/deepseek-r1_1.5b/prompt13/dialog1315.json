@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "**Ответ:**\n\nГрадиенты в RNNх могут возникнуть не в целом, а именно, из-за увеличения логических трансформатов, которые dependently evolve over time. Нормализация градиентов по мини-batch (batch normalization) усилит их, что улучшает сходимость алгоритма и снижает overfitting. Это важно для RNNs, включая GRUs и LSTM,因为他们 используют свои(unique)-normalization properties, такие как self-attention and input weights, что создает разнообразия градиентов для каждого Batch-sized batch.",
+    "rating": ""
+  }
+]

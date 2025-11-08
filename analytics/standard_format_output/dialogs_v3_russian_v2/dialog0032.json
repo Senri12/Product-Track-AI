@@ -3,26 +3,26 @@
     "dialog_id": "dialog0032",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
-    "f1": 31.4,
-    "precision": 33.2,
-    "recall": 47.1,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.9,
-    "hallucination": 11.7,
-    "faithfulness": 32.8,
-    "noise_sensitivity": 18.9,
-    "self_knowledge": 5.5,
-    "timestamp": "2025-10-28T13:24:20.065753"
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 29.1,
+    "precision": 27.0,
+    "recall": 42.2,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.7,
+    "hallucination": 29.3,
+    "faithfulness": 61.8,
+    "noise_sensitivity": 43.7,
+    "self_knowledge": 8.8,
+    "timestamp": "2025-11-08T20:42:39.056470"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Как выбрать количество соседей k в k-NN?",
+      "content": "Что такое скрытое состояние в RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Для определения количества ближайших русков (k) в методе ближайших русок необходимо следовать следующему rule of thumb:\n\n- Если данные Small:\n  - Выберите k, чтобы использовать все доступные sample. Например, выберите k = 1 или 2.\n\n- Если данные Large:\n  - Выберите larger k (например, 5, 10, 20) для более гладкой классификации. Однако larger k может привести к высокому риску о认清噪声ов.\n\nВажно проверить有效性 выбора k на разных данных и compare performance на обучающей и тестовой выборках, чтобы определить оптимальное значение k для конкретной задачи классификации.",
+      "model_response": "**Skryemoe sostоiny_cast**: Скорокотыковая статистика.",
       "rating": ""
     }
   ]

@@ -3,26 +3,26 @@
     "dialog_id": "dialog0104",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
-    "f1": 36.1,
-    "precision": 36.5,
-    "recall": 46.3,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 27.2,
-    "hallucination": 8.6,
-    "faithfulness": 35.7,
-    "noise_sensitivity": 21.8,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.061920"
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 41.3,
+    "precision": 37.0,
+    "recall": 51.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 53.3,
+    "hallucination": 23.5,
+    "faithfulness": 65.3,
+    "noise_sensitivity": 39.5,
+    "self_knowledge": 11.1,
+    "timestamp": "2025-11-08T20:42:39.087017"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "To predict success on a test based on your ability to handle questions, focus on the following cognitive processes that are directly related to academic performance:\n\n1. **Sentence Structure**: Analyze complex sentences with longer words and intricate structures. These elements can be broken down into smaller parts mentally, improving problem-solving skills.\n\n2. **Word Breakdown**: Practice identifying multi-word answers by splitting them into smaller components. This enhances mental agility and efficiency during exams.\n\n3. **Cognitive Processing Speed**: Focus on breaking down questions into manageable parts. This reduces the cognitive load and increases your ability to tackle them effectively.\n\n4. **Working Memory Management**: Use chunked memorization techniques, such as acronyms or mnemonics, to store information temporarily without overwhelming working memory.\n\n5. **Emotional Regulation**: Develop strategies to manage exam anxiety by staying calm and focused during challenging questions.\n\nBy improving these skills, you'll enhance your academic performance on tests.",
+      "model_response": "The Show, Attend, and Tell (SAT) model is an advanced architecture designed for sequence modeling, particularly effective in image processing tasks. Here's how it differs from standard Recurrent Neural Networks (RNNs):\n\n1. **Component-Based Approach**: SAT employs three components—\"Show,\" \"Attend,\" and \"Sell\"—which handle local feature extraction, selective attention, and global prediction respectively. For example, \"Show\" might extract local image features, while \"Attend\" identifies which of these features are relevant for the task.\n\n2. **Attention Mechanisms**: The \"Attend\" component uses attention mechanisms to focus on specific parts of the input. This allows SAT to efficiently process different aspects of the sequence or text by directing attention to relevant elements.\n\n3. **Efficiency and Flexibility**: SAT's structured approach with multiple components is more efficient than RNNs, which often process each element sequentially without such targeted feature selection. This makes it particularly suitable for tasks requiring both detailed image analysis and broad context for predictions.\n\n4. **Integration with Sequential Data**: Unlike RNNs that might need to pad or process all time steps equally, SAT can focus on specific parts of the input at each step, making it more flexible and adaptable.\n\n5. **Integration with Neural Networks**: SAT often uses embedding layers similar to those in language models, enabling seamless integration with sequential data processing while maintaining the ability to handle varying sequence lengths through attention mechanisms.\n\nIn summary, SAT is more versatile and powerful than standard RNNs for tasks requiring both detailed feature analysis and broader context by structuring its components and using advanced attention mechanisms.",
       "rating": ""
     }
   ]

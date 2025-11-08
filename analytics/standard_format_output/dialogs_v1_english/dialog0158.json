@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0158",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 44.1,
-    "precision": 57.5,
-    "recall": 45.6,
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 20.8,
+    "precision": 25.8,
+    "recall": 41.3,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.690544"
+    "timestamp": "2025-11-08T20:42:35.600487"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Отлично! Давайте разберемся с понятием расстояния Чебышёва. Чтобы это понять наилучшим образом, я буду задавать вам вопросы, чтобы вы сами пришли к определению. \n\nНачнем с простого: что такое \"расстояние\" в математике?  Представьте себе две точки на плоскости. Что нужно знать, чтобы сказать, насколько они далеки друг от друга?\n",
+      "model_response": "Чтобы ответить на этот вопрос, нам нужно понять некоторые ключевые различия между Grammatical RNN (GRU) и Long Short-Term Memory (LSTM).\n\n1. **Постgresql**. GRU — это Grammatical RNN, а LSTM — Long Short-Term Memory.\n\n2. **Ролл**. GRU works in a one-step-ahead sequence, meaning it processes the next word based on the current state and the previous input only. In contrast, an LSTM can process multiple steps ahead, allowing for more complex sequential dependencies.\n\n3. **Среднее значение**. GRU uses the mean value of the output during each time step as the final output, whereas LSTM uses a weighted average of all output values at different time steps.\n\n4. **Восхody**. GRU can learn long-range dependencies between words in a sentence, making it suitable for tasks like text generation and machine translation. However, its performance may degrade if the input data contains many long sequences or dependencies that cannot be captured by GRU's one-step-ahead architecture.\n\n5. **Доля**. GRU requires more parameters than LSTM to capture complex sequential dependencies, which can lead to increased computational costs during training.",
       "rating": ""
     }
   ]

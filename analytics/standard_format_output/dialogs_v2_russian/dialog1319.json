@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1319",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt14",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 34.2,
-    "precision": 35.6,
-    "recall": 46.9,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.263329"
+    "timestamp": "2025-11-08T20:42:37.331685"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " В данном примере необходимо вычислить значениеlearning rate(учебной скорости) на шаге t = 5 при линейном снижении скорости обучения (linear decay) с начальным значением eta0 = 0.1 и концом T=10.\n\nЛинейный decay определяется следующим образом:\n\nηt = η0 * (1 - t / T)\n\nНа шаге t = 5 мы можем посчитать значение learning rate:\n\nη5 = η0 * (1 - 5 / 10) = 0.1 * (1 - 0.5) = 0.05\n\nТеперь, когда мы понимаем как вычисляется линейный decay, можем предложить несколько аналогичных задач:\n\n1. Вычисли learning rate на шаге t=2 при условии начальное значение eta0 = 0.05 и конце T=10.\n   Ответ: η2 = η0 * (1 - 2 / 10) = 0.05 * (1 - 0.2) = 0.03\n\n2. Вычисли learning rate на шаге t=8 при условии начальное значение eta0 = 0.2 и конце T=20.\n   Ответ: η8 = η0 * (1 - 8 / 20) = 0.2 * (1 - 0.4) = 0.12\n\n3. Вычисли learning rate на шаге t=6 при условии начальное значение eta0 = 0.3 и конце T=15.\n   Ответ: η6 = η0 * (1 - 6 / 15) = 0.3 * (1 - 0.4) = 0.18",
+      "model_response": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?\n\n1. **СimbоликProcessing:**\n   - SOTsimultaneously processes all elements of the sequence, unlike standard RNNs which typically process each element sequentially.\n   - Standard RNNs struggle with long-range dependencies due to vanishing gradients, while SOT maintains these relationships simultaneously.\n\n2. **Batch Normalization (Batch Norm):**\n   - SOT leverages batch normalization to stabilize gradients and speed up training.\n   - Standard RNNs may face issues with exploding or rapidly vanishing gradients, which can slow down learning significantly.\n\n3. **Attention Mechanism:**\n   - SOT incorporates attention mechanisms that allow the model to focus on relevant parts of the input sequence, improving interpretability and performance.\n   - Standard RNNs do not naturally employ such focused processing for each element in the sequence.\n\n4. **Contextual Understanding:**\n   - SOT processes text with contextual understanding, making it suitable for tasks like classification or regression involving textual data embedded within images.\n   - Standard RNNs primarily handle sequential input without explicit context modeling.\n\n5. **Task Examples:**\n   - For image processing tasks using SOT, models can use knowledge from the entire vocabulary and sequence structure (e.g., Word2Vec).\n   - Standard RNNs for images may not benefit from such contextual approaches but are still effective when combined with attention mechanisms.\n\n**Таким образом**, SOT, основанный на model show attend and tell, отличается от standard RNN для изображений в своей способности simultaneous processing, Batch Normalization,attention Mechanism, и Contextual Understanding. Эти аспекты делают SOT более эффектив и обобщенной для задач с текстовым контекстом.",
       "rating": ""
     }
   ]

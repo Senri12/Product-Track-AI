@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Деяточно, Standard LSTM cell включает следующие основные компоненты:\n\n1. **Forget gate**: Дирекционная сеть с sigmoid-функцией для предсказания whether unit forgets input.\n\n2. **Input gate**: Вхистка с градиентом иgate ( gated exponential gates) для обработки входных данных.\n\n3. **Output gate**: Входning гибридный слой с градиентом, фильтрирующий выделяющиеся данныеunit для передачи в позицию с последующими шагами.\n\n4. **State (hn/cn)**: Статус units, обновляемый через gradient descent.\n\n5. **Recurrent weights**: Модулирование на следующие time steps.\n\n6. **Biases**: Constants для арифметических операций.\n\nТаким образом, Standard LSTM cell включает forget gate (sigmoid), inputgate ( gated exponential gates), output gate (gated exponential gates) и state (hn/cn), обновляемые за шагами с помощью gradient descent.",
+    "rating": ""
+  }
+]

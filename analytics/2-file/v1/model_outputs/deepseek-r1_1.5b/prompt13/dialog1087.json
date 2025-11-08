@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "ЛSTM (Long Short Term Memory) — это стандартная cell, используемая в recurrent neural networks (RNN). Она позволяет моделимове обрабатывать последовательность данных, сохраняя структуру и контекст. \n\nОсновные компоненты LSTM- ячейки:\n\n1. ** Forget Gate**: Удаляет контекст из state или cell state перед вносом новой информации.\n2. **Input Gate**: Отбирает контекст для вноса в state.\n3. **Output Gate**: Внoseет новое значение для последней time step.\n\nЭти мUXы взаимодействуют с state и cell state, чтобы генерировать последнюю prediction.",
+    "rating": ""
+  }
+]

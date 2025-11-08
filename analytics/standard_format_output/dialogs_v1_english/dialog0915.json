@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0915",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
     "system_prompt_id": "prompt1",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В спам-примере, вычисли P(win|спам) с Laplace.",
-    "f1": 48.6,
-    "precision": 50.1,
-    "recall": 55.4,
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Можно ли автоматически подбирать архитектуру рекуррентной ячейки?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.295893"
+    "timestamp": "2025-11-08T20:42:35.653336"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В спам-примере, вычисли P(win|спам) с Laplace.",
+      "content": "Можно ли автоматически подбирать архитектуру рекуррентной ячейки?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " В данном случае мы можем использовать правило Лапласа для расчета вероятности события \"победы\" при условии \"спама\", учитывая то, что в нашем примере отсутствуют представители положительного класса.\n\nПравило Лапласа представляет собой:\n\nP(A|B) = count(B and A) / (count(B) + k * count(B and not A))\n\nВ нашем случае, \"спам\" - это B, и мы не знаем, как определить представителей положительного класса \"не спам\", поэтому используем значение k = 1.\n\nПоскольку мы не имеем данных о количестве сообщений \"спама\" и \"победах\", нам нельзя сказать точную вероятность P(win|spam). Однако, если применять правило Лапласа к существующим данным, можно оценить эту вероятность.\n\nНапример, если имеется 100 сообщений \"спама\" и 5 победы из них, то:\n\ncount(B and A) = 5 (количество побед среди сообщений \"спам\")\ncount(B) = 100 (количество сообщений \"спам\")\nk * count(B and not A) = 1 * 95 (вероятность появления сообщения \"спам\" без победы)\n\nПолучаем: P(win|spam) = 5 / (100 + 1*95) = 0.05 или 5%.\n\nВ реальном мире это может быть слишком низкой вероятностью для классификации сообщений как спам, поэтому обычно применяют более сложные алгоритмы.",
+      "model_response": "Мм, автоматическое подборение архитектуры рекуррентных ячейок — это сложный вопрос. Однако есть несколько подходов и методов, которые могут быть использованы для этого.\n\n1. **Autoregressive Models**: Модели, такие как Attention is all you need, используют внимательные архитектуры для обработки последовательности данных. Это может被视为 automatic construction of recurrent parts of the model.\n\n2. **Transformer-модели**: В transformer-моделях используется attention-сlicы для контекста, что может быть использовано для automatically constructing recurrent components.\n\n3. **Evolutionary Algorithms**: Проверяются генетические методы, такие как evolutionary algorithms, которые могут построить рекуррентные архитектуры на основе данных.\n\n4. **Dropout and Embedding Pretraining**: Добавление dropout и эмбедding pretraining может улучшать стабильность automatically constructed recurrent parts.\n\n5. **Optimization Methods**: Методы оптимизации, такие как Adam, могут быть использованы для automatic architectural design.\n\nВ общем, автоматическое подборение рекуррентных ячейок — неautomatic feature learning, а automatic architectural design. Однако есть доступные подходы, которые могут помочь с предложением.",
       "rating": ""
     }
   ]

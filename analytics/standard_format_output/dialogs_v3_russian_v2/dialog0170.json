@@ -3,26 +3,26 @@
     "dialog_id": "dialog0170",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt11",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое SGD?",
-    "f1": 32.3,
-    "precision": 34.2,
-    "recall": 48.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 32.1,
-    "hallucination": 10.9,
-    "faithfulness": 31.4,
-    "noise_sensitivity": 19.4,
-    "self_knowledge": 4.4,
-    "timestamp": "2025-10-28T13:24:20.094268"
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 25.5,
+    "precision": 24.7,
+    "recall": 37.1,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.7,
+    "hallucination": 29.8,
+    "faithfulness": 64.1,
+    "noise_sensitivity": 45.5,
+    "self_knowledge": 6.1,
+    "timestamp": "2025-11-08T20:42:39.067656"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое SGD?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "SGD (Stochastic Gradient Descent) — это метод оптимизации, который использует градиент descent для минимизации функции потерь. В отличие от Batch-grad descent в SGD, он processes少量 данных на каждом шаге, что делает его более быстрее для обработки large datasets.\n\n**Гradeint Descent:**\n\nНаименование gradient descent может означать разные методы оптимизации с разными характеристиками. ВSGD — это градиент descent с Learning Rate, который уменьшается или увеличивается в процессе обучения для ускорения(minimization) функции потерь.\n\n**Learning Rate Momentum:**\n\nMomentumSGD — это метод оптимизации с Learning Rate, который уменьняет Learning Rate в процессе обучения в зависимости от Momentum coefficient. This Momentum coefficient determines how much of the previous gradient is used to compute the velocity (momentum). For example, Momentum = 0.9 means that each step's velocity is a combination of the current and previous gradients.\n\n**Adam:**\n\nAdam — это метод оптимизации с Learning Rate, который использует moments градиента для минимизации функции потерь. It incorporates both beta1 (momentum for gradient) and beta2 (beta for squared gradient). This makes Adam more robust to the choice of Learning Rate compared to traditional momentum-based methods.\n\n**Adam Compared to SGD:**\n\nComparing SGD vs MomentumSGD vs Adam:\n\n- ** SGD (Batchsize=1):**\n  - Faster per-step computation.\n  - Simple, easy to implement.\n  - But may oscillate in loss function if learning rate is not properly tuned.\n\n- ** MomentumSGD:**\n  - Similar to SGD but uses Learning Rate with momentum for optimization.\n  - Can converge faster than standard SGD by reducing Learning Rate over time.\n  - Good for cases where batch size is large and data is non-stationary.\n\n- ** Adam:**\n  - Combines the benefits of both MomentumSGD and traditional momentum-based methods.\n  - Adaptive learning rate based on estimates of first and second moments of gradients.\n  - Often more robust to hyperparameters than traditional momentum-based methods.\n\n**Conclusion:**\n\n SGD, MomentumSGD, и Adam are all popular optimization algorithms used in machine learning. The choice between them depends on the specific problem, dataset size, and characteristics of the model. SGD is simple but may require careful tuning, while Adam provides better convergence properties with adaptive Learning Rates.",
+      "model_response": "Двунаправленные RNN (bidirectional recurrent networks) — это архитектуры рекуррентных нейронов, которые simultaneously process input data in both forward and backward directions. Это важно для задач, где важен контекст из предыдущих state и текущего state.\n\n### Понятие:\n\n- **Рекуррентные архитектуры** ( recurrent neural networks) work sequentially, processing each element of the input one by one. They are useful for analyzing sequential data but not inherently reversible.\n  \n- **Двунаправленные RNN** simultaneously process data in both directions. For example, forward step processes from left to right, while backward step processes from right to left.\n\n### Суть:\n\n1. **Forward Processing**: The network moves through the input sequence one element at a time, updating its state based on each element.\n   \n2. **Backward Processing**: Simultaneously or alternately, the network processes elements of the reversed input sequence, again updating its state.\n\n3. **Combining States**: The outputs from both forward and backward processing are combined to produce the final output, capturing information from both directions.\n\n### Важность:\n\n- For tasks requiring context from both previous and future steps (e.g., language modeling), bidirectional RNNs can leverage information from both directions.\n  \n- They increase computational efficiency by allowing parallel processing in two directions.\n\n### Примеры применения:\n\n1. **Natural Language Processing**: For tasks like machine translation or text generation, where understanding context from both directions is crucial.\n   \n2. **Image Captioning**: Using an encoder-decoder architecture with attention mechanisms, where the model simultaneously processes image data and generated captions from previous steps.\n\n3. **Audio Analysis**: For tasks that require analyzing sequences in forward and reverse directions, such as speech synthesis or music generation.\n\n### computational Efficiency:\n\n- Combining two RNNs into a single bidirectional cell allows for efficient parallel processing, which can be computationally beneficial.\n\n### Conclusion:\n\nДвунаправленные RNN are essential for capturing context from both directions in sequence data. They enhance model performance by leveraging information from both past and future elements, particularly useful in tasks requiring comprehensive understanding of sequential dependencies.",
       "rating": ""
     }
   ]

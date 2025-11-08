@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для устранения проблем exploding gradients, связанных с large batch size, нормализация градиентов по мини-batchам полезна. Например:\n\n1. **Normalization by squared sum**: Градиенты são предотвратены, делая их пропорциональны к квадрату-sumе текущих генерирований.\n\n2. **Layer normalization**: Генерируемые генераторы normalized по сумме квадратов, что усилит влияние толькоones batch.\n\nЭти методы помогают сократить или предотвратить exploding gradients, улучшая trainability RNN и LSTM нейронных сетей.",
+    "rating": ""
+  }
+]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0044",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
-    "f1": 47.6,
-    "precision": 46.7,
-    "recall": 60.8,
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 18.1,
+    "precision": 23.4,
+    "recall": 36.9,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.631793"
+    "timestamp": "2025-11-08T20:42:35.563389"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Okay, let's break this down. This looks like a conditional probability question.\n\n*   **P(да | пасмурно, холодно, влажно, да)** means \"The probability of 'да' (yes) given that it is 'пасмурно' (overcast), 'холодно' (cold), 'влажно' (humid), and 'да' (yes).\"\n\nEssentially, we want to know the likelihood of a 'yes' response, *given* a specific weather scenario.\n\n**To help me guide you to the answer, could you tell me:**\n\n1.  **What is the context of this problem?**  Is this related to a survey, a game, a prediction task, or something else?  Knowing the context will help me understand what \"да\" represents.\n2.  **What are the possible values for 'да'?** What does a \"yes\" response actually mean in this situation? (e.g., Does \"да\" mean \"Do you like ice cream?\" or something else entirely?)",
+      "model_response": "Этот вопрос касается моделей traitement speech (обратной работы по речи), которые были разработаны в последние годы. Одним из таких моделей является Model BERT, который был представлен в 2018 году.\n\nМодель BERT отличается от обычного RNN для обработки изображений следующими основными featureми:\n\n1. **SelfAttention Mechanism**: Модель BERT использует механизм внимания (self-attention), который позволяет models обрабатывать контекстный и последовательный информационный flux, такие как words в тексте или слоги в речь.\n2. **Multi-Layer Encoder**: Модель BERT состоит из нескольких шаблонов энкодеров, каждый из которых имеет конечную вероятность представления каждого слова на input-слоге (token).\n3. **Shared Attention Mechanism**: Каждый энкодер имеет отдельныеshared attention mechanism, который позволяет model обрабатывать контекстное связывание между word в тексте или sluggи в речь.\n4. **Sequential Modeling**: Модель BERT предназначена для обработки последовательных token (сложностей) и имеет более высокую производительность по сравнению со standartным RNN.\n\nВероятно, что вопрос «Как Show, Attend and Tell отличается от обычного RNN для обработки изображений?» будет иметь прямое ответ: Model BERT – это более advanced deep learning architecture, предназначенная для обработки текста и speech.",
       "rating": ""
     }
   ]

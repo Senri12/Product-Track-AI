@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0239",
-    "model_name": "deepseek-r1",
-    "model_parameters": "1.5B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 34.4,
-    "precision": 37.5,
-    "recall": 41.7,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 25.4,
-    "hallucination": 10.2,
-    "faithfulness": 33.3,
-    "noise_sensitivity": 18.2,
-    "self_knowledge": 6.5,
-    "timestamp": "2025-10-28T13:24:20.010951"
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 46.2,
+    "precision": 42.9,
+    "recall": 54.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 58.9,
+    "hallucination": 23.2,
+    "faithfulness": 66.2,
+    "noise_sensitivity": 33.9,
+    "self_knowledge": 10.6,
+    "timestamp": "2025-11-08T20:42:38.873665"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Для понимания определения Learning Rate Decay (η) как η₀ / (η₀ + η_T), где η₀ — learning rate at epoch 0, и η_T — learning rate at the end of training, можно построить график лог(η) поepochам для линейного размененияlearning rate с η₀=0.1, t=5, T=10.\n\nПосле визуализации графика лог(η) по epochам вы получите следующий график:\n\n```\nEpoch | Learning Rate\n---|---\n0 | 0.1\n1 | 0.09\n2 | 0.081\n3 | 0.0729\n4 | 0.0656\n5 | 0.059\n...\n10 | 0.02\n```\n\nГрафик лог(η) будет monotonously decreasing, означающий усреднениеlearning rate с роста в epochх.\n\nЭтот метод полезен для minimize gradient variance and prevent overfitting. Однако при multipleanel networks и слоев, такие как Batch Normalization, нужно watch out for convergence stability, возможно, стоит добавить batch normalization с learning rate decay для улучшения отработки сетей.\n\nВ итоге,learning rate decay помогает снизить обобщительность модели за счет minimize gradients and prevent overfitting. Однако при multipleanel networks и слоев необходимо быть внимательным к тенденциям gradients and network stability.",
+      "model_response": "Основное отличие \"Show, Attend and Tell\" от обычных RNN для обработки изображений заключается в механизме внимания (attention mechanism).  Вот ключевые различия:\n\n* **Обычные RNN:** Просто последовательно обрабатывают пиксели изображения. Они игнорируют информацию о важности разных частей изображения и рассматривают каждое пиксель как равнозначный элемент. Это плохо работает для задач, где важны локальные зависимости и фокус на конкретных областях изображения.\n\n* **\"Show, Attend and Tell\":**  Вводит **механизм внимания**, который позволяет сети динамически определять, какие части изображения наиболее важны для текущего шага обработки.  Это достигается следующим образом:\n    * **\"Show\" (Показать):**  Сеть отображает текущее состояние скрытого состояния (context vector) на все пиксели изображения.\n    * **\"Attend\" (Внимание):** Сеть вычисляет \"вес внимания\" (attention weights) для каждого пикселя, основываясь на его связи с текущим контекстным вектором.  Этот вес показывает, насколько важно это конкретное место для текущего предсказания.\n    * **\"Tell\" (Сообщить):**  Сеть суммирует пиксели, взвешенные по весам внимания, чтобы сформировать выходное представление.\n\n**Ключевое отличие:** Вместо того чтобы последовательно обрабатывать все пиксели, \"Show, Attend and Tell\" позволяет сети концентрироваться на наиболее релевантных областях изображения на каждом шагу, что значительно улучшает качество обработки изображений и позволяет лучше решать такие задачи, как классификация изображений на основе изображений с небольшим количеством классов.\n",
       "rating": ""
     }
   ]

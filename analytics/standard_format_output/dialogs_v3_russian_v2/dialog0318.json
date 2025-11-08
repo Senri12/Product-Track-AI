@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0318",
-    "model_name": "llama3.2",
-    "model_parameters": "1.0B",
-    "system_prompt_id": "prompt11",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 28.6,
-    "precision": 32.5,
-    "recall": 34.1,
-    "claim_recall": 37.3,
-    "context_precision": 50.0,
-    "context_utilization": 28.8,
-    "hallucination": 19.0,
-    "faithfulness": 29.2,
-    "noise_sensitivity": 12.2,
-    "self_knowledge": 1.8,
-    "timestamp": "2025-10-28T13:24:19.995537"
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 48.7,
+    "precision": 43.7,
+    "recall": 57.8,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 64.0,
+    "hallucination": 25.9,
+    "faithfulness": 64.7,
+    "noise_sensitivity": 30.4,
+    "self_knowledge": 9.4,
+    "timestamp": "2025-11-08T20:42:38.857809"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Керас (TensorFlow) — это открытая программная библиотека для машинного обучения, которая была разработана компанией Google и в настоящее время расширяется. Это библиотека написана на Python language и предназначена для построения и тренировки искусственных нейронных сетей (ANN).",
+      "model_response": "В задачах RNN встречаются следующие типы входов и выходов:\n\n*   **Входы:** Обычно это последовательность входных данных, например, последовательность слов в предложении, временной ряд данных или последовательность событий.\n*   **Выходы:** Выходы могут быть различными в зависимости от задачи. Например, в задачах машинного перевода, это выходное предложение на другом языке, а в задачах прогнозирования временных рядов – прогнозное значение. В задачах классификации последовательностей – класс.",
       "rating": ""
     }
   ]

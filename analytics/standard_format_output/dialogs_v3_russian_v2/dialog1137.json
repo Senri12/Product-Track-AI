@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog1137",
-    "model_name": "granite3.2",
-    "model_parameters": "2.0B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
-    "f1": 33.9,
-    "precision": 29.7,
-    "recall": 51.7,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 34.1,
-    "hallucination": 12.4,
-    "faithfulness": 32.2,
-    "noise_sensitivity": 20.1,
-    "self_knowledge": 5.3,
-    "timestamp": "2025-10-28T13:24:20.194509"
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 26.5,
+    "precision": 28.7,
+    "recall": 43.8,
+    "claim_recall": 65.3,
+    "context_precision": 100.0,
+    "context_utilization": 43.1,
+    "hallucination": 33.3,
+    "faithfulness": 57.0,
+    "noise_sensitivity": 37.9,
+    "self_knowledge": 9.7,
+    "timestamp": "2025-11-08T20:42:39.097039"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "content": "Как работает механизм внимания (Attention)?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Для найдения v_t (временного момента) при методе моментов (Momentum) с параметром градиента изменения вместе с коэффициентом скорости, который часто равен большим 0.9 (в данном случае γ = 0.9), и текущем время t, нам нужно выполнить следующие шаги:\n\n1. Начните с v_0 = 1 (поскольку в нашем примере t = 0).\n2. Задайте γ = 0.9 – это значение, которое будет регулировать сколько из прошлого градиента мы будем использовать для сборки текущего.\n3. Предположим, что при t = 1 ∇L = 2 (градиент функции потерь в этом точке).\n4. Вычислите v_t = γ * v_{t-1} - η * ∇L, где η = 0.1 – это скорость изменения.\n\n   Теперь:\n   v_1 = 0.9 * 1 - 0.1 * 2 = 0.7\n\nТаким образом, для t = 1 ваша значение временного момента (v_t) будет равно 0.7.",
+      "model_response": "The attention mechanism is a key component of transformer models that enables each model to focus on different parts of the input simultaneously. Here's an organized overview of how it works:\n\n1. **Objective**: The decoder processes one token at a time, while its output serves as context for subsequent tokens.\n\n2. **Attention Mechanism**:\n   - Each token in the decoder's context vector is compared with all tokens in the encoder's hidden states using dot products.\n   - Dot products result in attention weights that indicate which parts of the input are most relevant to each decoder token.\n\n3. **Multi-Head Attention**:\n   - The model splits its input into multiple heads, each processing a different part or comparing queries with keys for context extraction.\n   - This separation allows the model to consider various aspects of the sequence simultaneously, enhancing flexibility and efficiency.\n\n4. **Integration into Transformers**:\n   - Each layer in a transformer contains an encoder and a decoder that both use self-attention. The decoder's output serves as context for generating new tokens.\n   - After decoding, the final attention weights are integrated with the previous outputs to produce the model's output.\n\n5. **Training Considerations**:\n   - The computational efficiency is maintained through methods like scaled dot-product attention and techniques to prevent overfitting or underfitting by incorporating contextual information during training.\n\n6. **Practical Implementation**:\n   - During forward pass, both encoder and decoder outputs are combined with attention weights before feeding into the next layer.\n   - More heads might offer more focused processing but could increase computational complexity.\n\n7. **Challenges**:\n   - Addressing issues like bias, initialization, and gradient flow is crucial for successful training and avoiding numerical instabilities in attention computations.\n\nIn summary, attention within transformers enables models to learn intricate patterns by focusing on multiple parts of the input sequence simultaneously, integrating into their architecture, and enhancing both computational efficiency and model flexibility.",
       "rating": ""
     }
   ]

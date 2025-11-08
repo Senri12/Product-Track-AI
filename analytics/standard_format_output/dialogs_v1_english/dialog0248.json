@@ -3,12 +3,12 @@
     "dialog_id": "dialog0248",
     "model_name": "gemma3",
     "model_parameters": "4.3B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 45.3,
-    "precision": 44.3,
-    "recall": 55.0,
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 57.5,
+    "precision": 50.3,
+    "recall": 71.4,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.674011"
+    "timestamp": "2025-11-08T20:42:35.419134"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Okay, let's break down the concept of Chebyshev polynomials.\n\n**Explanation:**\n\nChebyshev polynomials, denoted as *T<sub>n</sub>(x)*, are a set of orthogonal polynomials defined using the recursive formula:\n\n*   *T<sub>0</sub>(x) = 1*\n*   *T<sub>1</sub>(x) = x*\n*   *T<sub>n+1</sub>(x) = 2xT<sub>n</sub>(x) - T<sub>n-1</sub>(x)*  for *n > 1*\n\nThis recursive definition means that each polynomial is built from the previous two.  They are particularly useful in approximation theory, especially for approximating functions that are smooth and periodic. Importantly, they are *orthogonal* on the interval [-1, 1]. This means the integral of the product of two Chebyshev polynomials of the same degree over that interval is zero.\n\n**Question for Student:**\n\nCan you describe, in your own words, what \"orthogonal\" means in the context of these polynomials?  (Don't worry about a formal definition, just your understanding based on the explanation.)\n\n\n\n**Suggested Exercise:**\n\nLet's calculate the first few Chebyshev polynomials:\n\n*   Calculate *T<sub>0</sub>(x)*, *T<sub>1</sub>(x)*, *T<sub>2</sub>(x)*, and *T<sub>3</sub>(x)* using the recursive formula.  (You can use x = 1 for this calculation to keep it manageable).\n\n\n\n**Feedback Loop:**\n\n(I’ll be checking your answers to the exercise.  After you've attempted it, I will provide targeted feedback.  For now, let’s just acknowledge that this is a fundamental step in understanding Chebyshev polynomials – understanding and applying the recursive formula is key). Let me know when you've tried the exercise!",
+      "model_response": "Вот основные отличия между GRU (Gated Recurrent Unit) и LSTM (Long Short-Term Memory):\n\n**1. Сложность Архитектуры:**\n\n*   **LSTM:** Имеет более сложную структуру с тремя типами ворот (input gate, forget gate, output gate) и отдельной ячейкой состояния (cell state). Это делает ее более вычислительно затратной.\n*   **GRU:** Имеет упрощенную структуру с двумя вортами: входным ворот (update gate) и рекуррентным вортом (reset gate).  Поэтому GRU проще в реализации и быстрее обучается.\n\n**2. Количество Параметров:**\n\n*   **LSTM:** Из-за трех ворот и отдельной ячейки состояния, LSTM имеет значительно больше параметров, чем GRU. Большее количество параметров может привести к переобучению, особенно при небольших наборах данных.\n*   **GRU:** GRU имеет меньше параметров, что делает его менее подверженным переобучению и более эффективным для небольших наборов данных.\n\n**3.  Функциональность Ворот:**\n\n*   **LSTM:**  Каждый тип ворот выполняет конкретную функцию:\n    *   **Forget Gate:** Решает, какую информацию из предыдущего состояния следует забыть.\n    *   **Input Gate:** Решает, какую новую информацию нужно добавить в ячейку состояния.\n    *   **Output Gate:** Решает, какую информацию из ячейки состояния нужно выдать в качестве выхода.\n*   **GRU:** Входной рекуррентный ворот выполняет обе функции – забывает и добавляет информацию, но делает это более просто и напрямую.\n\n**4.  Вычислительная Эффективность:**\n\n*   **LSTM:**  Более сложная структура приводит к более сложным вычислениям, что делает LSTM более медленной в обучении.\n*   **GRU:**  Упрощенная структура GRU позволяет выполнять вычисления быстрее, что особенно важно для больших наборов данных и глубоких сетей.\n\n**5.  Математическая Сложнеесть:**\n\n*   **LSTM:** Более сложная структура и большее количество параметров означает, что LSTM немного сложнее в реализации и понимании.\n*   **GRU:** GRU проще в понимании и реализации из-за своей более простой структуры.\n\n**Вкратце:**\n\n| Характеристика        | LSTM          | GRU           |\n| -------------------- | ------------- | ------------- |\n| Сложность структуры   | Высокая       | Низкая        |\n| Количество ворот    | 3             | 2             |\n| Вычислительная нагрузка | Высокая       | Низкая        |\n| Скорость обучения    | Медленнее    | Быстрее       |\n\n**Когда использовать что?**\n\n*   **GRU:**  Используйте GRU, если вы ограничены вычислительными ресурсами, работаете с небольшими наборами данных или если вам нужна более быстрая скорость обучения.\n*   **LSTM:** Используйте LSTM, если вам нужна максимальная производительность и вы готовы пожертвовать скоростью обучения, а также если вы уверены, что вам не потребуется оптимизация по скорости.  В некоторых задачах, особенно связанных с длинными зависимостями, LSTM может показывать лучшие результаты.\n\nВ заключение, GRU и LSTM — это оба эффективные типы рекуррентных нейронных сетей. Выбор между ними часто зависит от конкретной задачи, вычислительных ресурсов и требуемой скорости обучения.",
       "rating": ""
     }
   ]

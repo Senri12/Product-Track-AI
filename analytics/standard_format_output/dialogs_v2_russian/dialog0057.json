@@ -3,12 +3,12 @@
     "dialog_id": "dialog0057",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
-    "f1": 36.5,
-    "precision": 38.7,
-    "recall": 43.4,
+    "system_prompt_id": "prompt4",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 21.9,
+    "precision": 27.4,
+    "recall": 35.2,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.917442"
+    "timestamp": "2025-11-08T20:42:37.277805"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли v_t в Momentum: γ=0.9, v_{t-1}=1, ∇L=2, η=0.1.",
+      "content": "Как работает механизм внимания (Attention)?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Чтобы найти \\(v_t\\), мы можем использовать формулы для вычисления \\(v_t\\) на основе данных \\(\\gamma = 0,9\\), \\(v_{t-1}\\) и \\(\\nabla L\\).\n\n\\(v_t = v_{t-1} + \\frac{\\partial L}{\\partial v_t}(T - \\Delta t)\\)\n\nгде \\(\\nabla L\\) представляет производную линейной функции Л, а \\(L\\) — это уравнение линейной дифференциации, которое можно выразить как:\n\n\\(L = m \\cdot v_t + b\\)\n\nгде \\(m\\) — коэффициент скорости, а \\(b\\) — постоянный фактор. \n\nНам даны: \n- Скорость \\(\\gamma = 0,9\\)\n- Применяя задачу заданной Δт\n- Итак, мы можем выразить \\(\\nabla L\\) как:\n\n\\(L = m \\cdot v_t + b\\)\n\nгде \\(b\\) является константой. \n\nЧтобы найти скорость \\(v_t\\), используем формулу:\n\n\\(\\frac{\\partial L}{\\partial v_t} = \\gamma m\\)\n\nНам дано, что \\(\\nabla L = 2\\). Подставив это в уравнение для \\(\\frac{\\partial L}{\\partial v_t}\\) и подставив заданные значения, получим:\n\n\\(2 = 0.9m\\)\n\nТеперь, чтобы найти \\(b\\) (константу), мы сначала вычислим значение \\(\\gamma m\\) по формуле:\n\n\\(\\gamma m = 1\\)\n\nДалее мы можем решить для \\(m\\):\n\n\\(m = \\frac{1}{0.9}\\)\n\nЗатем подставив это значение в уравнение \\(\\frac{\\partial L}{\\partial v_t} = \\gamma m\\) и вычислите:\n\n\\(\\nabla L = 2 = 0,9 \\cdot \\frac{1}{0,9}\\)\n\n\\(L = b + 2\\) \n\nЧтобы найти \\(b\\), подставьте заданные значения в уравнение \\(L = m \\cdot v_t + b\\). \n\n\\(1.111 = (0.9) \\cdot v_t + b\\)\n\nЗатем мы можем вычислить значение \\(v_t\\) из \\(\\gamma, T - \\Delta t\\), где:\n\n\\(T = 10000, Δt = 0.01, γ= 0,9 , v_{t-1} = 1\\).\n\n\\(\\nabla L = 2`\n\nМы можем вычислить \\(v_t\\) следующим образом:\n\\(\\nabla L = 2 = 0,9m \\cdot v_t + b\\)\n\nТеперь, чтобы найти значение м, используем формулу:\n\n\\(1.111 = (0,9) \\cdot v_t + b\\)\n\nТеперь подставьте значения: \n\n\\(v_t = 1 + \\frac{1.111-1}{0.9}\\)\n\n\\(v_t = 1 + \\frac{0.111}{0.9}\\)\n\n\\(v_t = 1, 10\\).\n\nПоэтому\n\n\\(b = 1.111 - (0.9) \\cdot 1, 10\\)\n\n\\(b= 0,211.\\)\n\n\nИтак, мы можем заключить, что значение \\(v_{t-1} + \\frac{\\partial L}{\\partial v_t}(T – Δt)\\) составляет:\n\n\\(v_{t}=1.010\\)",
+      "model_response": "Ответ: Механизм внимания (Attention) – это специальный тип алгоритма для обработки последовательности данных, который определяется выражением:\n\n` attention(query, context)` — вектор, представляющий точку внимания на токенам input_query и input_context.\n\nВ этом выражении query представляет собой предыдущую предсказанную форму, а context представляет собой предыдущий input. Механизм Attention позволяет модели распознавать контекст и последовательность данных, что важно для решения различных задач, таких как машинное общение, отслеживание спама или тегирование слов в предложении.\n\nМеханизм Attention состоит из двух этапов:\n\n1. Self-attention: Модель внимания оценивает контекст и последовательность данных, а затем распознавает точки внимания на токенах input_query и input_context.\n2. Output attention: После Self-attention модelligenerate векторы для output_tokening, которые представляют собой предсказанную форму.\n\nГрадиенты при изменении скорости обучения:\n\n* Скорость обучения определяется выражением:\n`loss = L(input, output)`\n\nгде loss представляет собой вычитаемыйLossModelloss на input и output.\n* Для модели Attention градиентное уравнение для Self-attention равен:\n`d_attention_d_s1 = (d_output - d_input)d_context`\nгде d_attention_d_s1 представляет собой градиентное значение дляSelfAttentionAttentionattentionself attention_d_s1.\n* Для моделей Attention градиентное уравнение для output attention равен:\n`d_attention_d_o = (d_input - d_output)d_query`\n\nгде d_attention_d_o представляет собой градиентное значение для output attentionAttentionattentionoutputoutput attentiond_outputd query\n\nДля изменения скорости обучения необходимо при изменении значения gamma (специфичности) между Self-attention и output attention, что влияет на количество градiente.\n\nГрадиенты тока при изменении скорости обучения:\n\n* Скорость обучения определяется выражением:\n`loss = L(input, output)`\n\nгде loss представляет собой вычитаемыйLossModelloss на input и output.\n* Для модели Attention градиентное уравнение для Self-attention равен:\n`d_attention_d_s1 = (d_output - d_input)d_context`\nгде d_attention_d_s1 представляет собой градиентное значение дляSelfAttentionAttentionattentionself attention_d_s1.\n* Для моделей Attention градиентное уравнение для output attention равен:\n`d_attention_d_o = (d_input - d_output)d_query`\n\nгде d_attention_d_o представляет собой градиентное значение для output attentionAttentionattentionoutputoutput attentiond_outputd query\n\nДля изменения скорости обучения необходимо при изменении значения alpha (нагревной коэффициента) между Self-attention и output attention, что влияет на количество градiente.\n\nГрадиенты тока при изменении скорости обучения:\n\n* Скорость обучения определяется выражением:\n`loss = L(input, output)`\n\nгде loss представляет собой вычитаемыйLossModelloss на input и output.\n* Для модели Attention градиентное уравнение для Self-attention равен:\n`d_attention_d_s1 = (d_output - d_input)d_context`\nгде d_attention_d_s1 представляет собой градиентное значение дляSelfAttentionAttentionattentionself attention_d_s1.\n* Для моделей Attention градиентное уравнение для output attention равен:\n`d_attention_d_o = (d_input - d_output)d_query`\n\nгде д_attention_d_o представляет собой градиентное значение для output attentionAttentionattentionoutputoutput attentiond_outputd query\n\nДля изменения скорости обучения необходимо при изменении значения beta (оттиска коэффициента) между Self-attention и output attention, что влияет на количество градiente.\n\nГрадиенты тока при изменении скорости обучения:\n\n* Скорость обучения определяется выражением:\n`loss = L(input, output)`\n\nгде loss представляет собой вычитаемыйLossModelloss на input и output.\n* Для модели Attention градиентное уравнение для Self-attention равен:\n`d_attention_d_s1 = (d_output - d_input)d_context`\nгде д_attention_d_s1 представляет собой градиентное значение дляSelfAttentionAttentionattentionself attention_d_s1.\n* Для моделей Attention градиентное уравнение для output attention равен:\n`d_attention_d_o = (d_input - d_output)d_query`\n\nгде d_attention_d_o представляет собой градиентное значение для output attentionAttentionattentionoutputoutput attentiond_outputd query\n\nДля изменения скорости обучения необходимо при изменении значения gamma (специфичности) между Self-attention и output attention, что влияет на количество градiente.\n\nГрадиенты тока при изменении скорости обучения:\n\n* Скорость обучения определяется выражением:\n`loss = L(input, output)`\n\nгде loss представляет собой вычитаемыйLossModelloss на input и output.\n* Для модели Attention градиентное уравнение для Self-attention равен:\n`d_attention_d_s1 = (d_output - d_input)d_context`\nгде д_attention_d_s1 представляет собой градиентное значение дляSelfAttentionAttentionattentionself attention_d_s1.\n* Для моделей Attention гradientное уравнение для output attention равен:\n`d_attention_d_o = (d_input - d_output)d_query`\n\nгде д_attention_d_o представляет собой градиентное значение для output attentionAttentionattentionoutputoutput attentiond_outputd query",
       "rating": ""
     }
   ]

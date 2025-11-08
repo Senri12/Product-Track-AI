@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1100",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое SGD?",
-    "f1": 34.2,
-    "precision": 33.6,
-    "recall": 51.6,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.283233"
+    "timestamp": "2025-11-08T20:42:35.605050"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое SGD?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " SGD (Stochastic Gradient Descent) is an optimization algorithm used in machine learning to minimize some function by iteratively moving in the direction of steepest descent as defined by the gradient.\n\nPractice Problem: Suppose you are given a cost function J(w) for linear regression, where w is the weight vector. Implement SGD to minimize this cost function using Python.\n\nHere's a simple example of how it could look like:\n\n```python\nimport numpy as np\n\ndef sgd(X, y, learning_rate=0.01, num_iterations=100):\n    w = np.zeros(X.shape[1])  # Initialize weights to zero\n    for _ in range(num_iterations):\n        h = X @ w  # Predict the output\n        error = y - h  # Calculate the error\n        grad = X.T @ error / len(y)  # Compute the gradient of cost function\n        w -= learning_rate * grad\n    return w\n```\n\nStudent's response:\n\n```python\ndef sgd(X, y, lr=0.01, num_iters=100):\n    weights = np.zeros(X.shape[1])\n    for _ in range(num_iters):\n        pred = X @ weights\n        loss = (pred - y) ** 2\n        grad = 2 * X.T @ (pred - y) / len(y)  # Wrong gradient computation, the correct one should be: grad = 2 * X.T @ error / len(y)\n        weights -= lr * grad\n    return weights\n```\n\nEvaluation: The student's implementation is incorrect because of the square in the loss calculation and an extra parenthesis in gradient computation. The correct code should look like this:\n\n```python\ndef sgd(X, y, lr=0.01, num_iters=100):\n    weights = np.zeros(X.shape[1])\n    for _ in range(num_iters):\n        pred = X @ weights\n        error = y - pred  # Calculate the error\n        grad = 2 * X.T @ error / len(y)  # Compute the gradient of cost function\n        weights -= lr * grad\n    return weights\n```",
+      "model_response": "Двунаправленные recurrent neural networks (RNN) — это инструмент, используемый для обработки последовательных данных. Они отличаются отfeedforward-направленных RNNмоделей в том, что градиенты обновляются同步 с изменениями state, которые включают в себя последний output. Это позволяет избежать трансформированных градиентов по шагам, что привело к субсав crushingly ухудшению модели.\n\n### Вопрос: что такое двунаправленные RNN?\n\nДвунаправленные RNNмодели (TwinRNNs) — это обновление градиентов同步 в обеих Directions simultaneously. Основано на ideaх feedforward-направленных RNNмоделей, но с учетом контекста последнего time step.\n\n### Почему Twonaparametric RNN важны?\n\n1. **Использование forward and backward processing**: В Twonaparametric RNNмоделях градиенты обновляются同步 с изменениями state along time sequence, что позволяет избежать трансформирования gradients.\n\n2. **Оч-effectively уменьшает затухающие градиенты**: Feeding forward gradients sequentially can lead to vanishing gradients in RNNs, but Twonaparametric RNNmодели回避ают это.\n\n3. **Повышение performance на задачах с последовательными данными**: В примере Google, где BERT используется для тегирования слов в предложении, модели с Twonaparametric RNNмоделями обработаны на каждом шаге и приводятся к более точным ответам.\n\n### Примеры implementation\n\n1. **Twonaparametric recurrent neural networks (RNNsimultaneously process input forwards and backwards along time)**: This approach ensures that gradients are computed in both forward and backward directions, allowing the model to learn faster and more effectively.\n\n2. **Example from Google**: BERT, с Twonaparametric RNNмоделями, используется для тегирования слов в предложении, приводя к более точным ответам, чем feedforward-направленные модели.\n\n3. **Twonaparametric recurrent neural networks (RNNsimultaneously process input forwards and backwards along time)**: This is a core concept in Twonaparametric RNNмодель, which addresses the vanishing gradient problem by processing gradients simultaneously forward and backward through time.\n\n### Заключение\n\nДвунаправленные RNNмодели помогают избежать затухающих градиентов и повышат performance на задачах с последовательными данными. В примере Google, где BERT используется для тегирования слов в предложении, модели с Twonaparametric RNNмоделями обработаны на каждом шаге и приводятся к более точным ответам. Это важно дляmany задач, связанных с последовательными данными.",
       "rating": ""
     }
   ]

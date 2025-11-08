@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Зачем нужны замочные скважины (peepholes) в LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Замоки скважин (peepholes) в LSTM помогают larger gradients for later elements. Например, градиент для последних данных увеличивается, что делает train faster. Также замоки скважин обеспечивают robustness to small batch sizes и improve learning stability.\n\n**Ответ:**\n\nЗамоки скважины в LSTM помогают larger gradients для последних элементов, улучшая speed training и增进了他的 stability.",
+    "rating": ""
+  }
+]

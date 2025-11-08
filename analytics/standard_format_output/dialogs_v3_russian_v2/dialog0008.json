@@ -3,26 +3,26 @@
     "dialog_id": "dialog0008",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 34.9,
-    "precision": 37.3,
-    "recall": 45.9,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 28.9,
-    "hallucination": 11.9,
-    "faithfulness": 32.5,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.072932"
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 26.5,
+    "precision": 28.7,
+    "recall": 43.8,
+    "claim_recall": 65.3,
+    "context_precision": 100.0,
+    "context_utilization": 43.1,
+    "hallucination": 33.3,
+    "faithfulness": 57.0,
+    "noise_sensitivity": 37.9,
+    "self_knowledge": 9.7,
+    "timestamp": "2025-11-08T20:42:39.093330"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Кажется, расстояние Чебышёва – это межфакторное измерение, архивно отражает максимальную длину прямой между точками на плоскости или в других пространствах. Понятие源自 геометрии и используется для сравнения векторов на основе их maximal Euclidean distance.\n\nОпределения:\n\n1. def chebyshev_distance(x, y): return max(abs(a - b) for a, b in zip(x, y))\n\n2. def chebyshev_distance_2d(a, b):\n    return max(abs(a1 - b1), abs(a2 - b2))\n\n3. def chebyshev_distance_3d(a, b):\n    return max(abs(a1 - b1), abs(a2 - b2), abs(a3 - b3))\n\nЭти определения показывают, как расстояние Чебышё夫 вычисляется для двух векторов, которые обладают числами или табличными данными в二维 и三维 пространствах.",
+      "model_response": "К сожалению, я не могу дать точное ответ на этот вопрос. GRU (Gated Recurrent Unit) и LSTM (Long Short Term Memory) — это оба узлы в архитектуре recurrent neural networks (RNNs), но они обрабатывают последовательные данные differently.\n\n- **GRU**:\n  - Использует трансформерную функцию гоночности, которая управляет глубиной данных.\n  - Проведение фильтрации через узел GRU можно представить как использование скрытой функции гоночности в combine-гating с трансформерной функцией длижиной для взаимодействия с следующими стадиями обработки.\n\n- **LSTM**:\n  - Использует более общую сеть с трансформерной функцией длижиной, которая управляет моментами данных.\n  - Фильтры LSTM обрабатываются как скрытые состояния с трансformерной функцией гибкости для управления фильтров между предыдущими и следующими стадиями обработки.\n\n**Основное отличие**:\n- GRU专注于 глубину данных, используя трансформерную функцию гоночности.\n- LSTM专注ует на моментах данных, используя трансformерную функцию длижиной.",
       "rating": ""
     }
   ]

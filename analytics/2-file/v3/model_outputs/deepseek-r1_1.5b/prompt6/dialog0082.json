@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Стандартная LSTM (Long Short Term Memory) ячейка включает следующие основные компоненты:\n\n1. **State gate**: Фильтрует информацию из input tensor, фильтруя важную часть вектора input.  \n2. **Forget gate**: Учитывает непосредственно часть информации от input, фильтруя важную информацию.  \n3. **Update gate**: Фильтрует вектор с токенами (time steps), учитывая state gate и фильтруя важная часть.  \n4. **Cell output**: Включает в out-вectors через state gate, фильтруя state gate.  \n\nЭти компоненты work together based on geometric perception — это последовательность схем, связанных между собой. This allows standard LSTM to process time steps and extract important information from each.",
+    "rating": ""
+  }
+]

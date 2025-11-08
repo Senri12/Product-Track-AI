@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Что такое скрытое состояние в RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "В контексте РНН (Регрессивная Нейronная Нойшельд) критически важно понимать hidden state, который представляет собой hidden state layer в RNN.\n\nГлядя на графики задач TRANSFORMER и BERT Base, мы можем сделать вывод, что:\n\n* в RNN hidden state имеет вид h_t = f(W1h_t + W2h_(t-1) + b1), где h_t — hidden state, W1 и W2 — веса между hidden state и input data, а b1 —_bias для hidden state.\n* во TRANSFORMER hidden state также может быть выражен через токены input data, что дает нам hidden_state = f(W1h_t + W2h_(t-1) + b1), где h_t и h_(t-1) — hidden states для последовательности.\n\nС другой стороны, в BERT Base hidden state имеет вид hidden_state = f(W1h_t + W2h_(t-1)), что показывает, что hidden state не является токеном input data, а только на основе previous hidden states и токенов input data.\n\nВ общем случае для RNN hidden state можно выразить через tокены input data как hidden_state = f(W1h_t + W2h_(t-1)), где h_t и h_(t-1) — hidden states для последовательности.\n\nОкончательный ответ: hidden state.",
+    "rating": ""
+  }
+]

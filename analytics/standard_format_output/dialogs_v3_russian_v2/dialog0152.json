@@ -4,25 +4,25 @@
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
     "system_prompt_id": "prompt11",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Как выбрать количество соседей k в k-NN?",
-    "f1": 32.3,
-    "precision": 34.2,
-    "recall": 48.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 32.1,
-    "hallucination": 10.9,
-    "faithfulness": 31.4,
-    "noise_sensitivity": 19.4,
-    "self_knowledge": 4.4,
-    "timestamp": "2025-10-28T13:24:20.090200"
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 38.7,
+    "precision": 39.6,
+    "recall": 46.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 46.0,
+    "hallucination": 26.6,
+    "faithfulness": 60.1,
+    "noise_sensitivity": 33.8,
+    "self_knowledge": 13.3,
+    "timestamp": "2025-11-08T20:42:39.101292"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Как выбрать количество соседей k в k-NN?",
+      "content": "Что такое скрытое состояние в RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "The key idea here is that when evaluating a machine learning model, it's crucial to use an independent test set to get an unbiased estimate of its performance. The cross-validation approach, while effective, only uses the train and validation sets but might still allow for some variability or leakage due to different splits. Using the separate test set helps ensure that the model is evaluated on truly unseen data, reducing overfitting and providing a more reliable performance measure.\n\nHere's how you can use this in practice:\n\n1. **Split your dataset**: Divide it into three parts:\n   - Training set: Data used to train your model.\n   - Validation set: Used during cross-validation but not for final evaluation.\n   - Test set: Completely unused for training or evaluating the model.\n\n2. **Run cross-validation on the training and validation sets** (like k-fold cross-validation) without using the test set in this step. The goal here is to estimate how your model would perform if you used all available data during training, not just splitting into train and validation.\n\n3. **Evaluate on the test set**: Once you're satisfied with your model's performance based on the training and validation sets, you can use the test set (which hasn't been seen by your model) to measure its final performance.\n\nThis approach ensures that you're testing your model's ability to generalize to unseen data, which is crucial for real-world applications.",
+      "model_response": "**Skрытое состояние в RNN: Internal State**\n\nВ рекуррентных нейронных сетях (RNN), \"-skрытое состояние\" означает внутреннее состояние или перекладку информации, которое сохраняется по历程 последовательности обработки данных. Это отличается от Feed-Forward-Nets, где каждое слой processes input independently, без использования state information from previous layers.\n\nПрименение \"skрытое состояние\" в RNN context:\n\n1. **Историческое состояние**: В RNNах internal state typically refers to the hidden or memory units that maintain information across time steps. These states act as a form of memory for the network, allowing it to process sequences like text, speech, or other temporal data.\n\n2. **Контроль不住ания градиентов**: В RNNх несмотря на градиенты ( gradients), internal state может иметь низкие значения, что может привести кvanishing gradients, что влияет на эффективность обучения.\n\n3. **Приоритетные шаги для понимания**: Для лучшего понимания Internal State в RNNх, рекомендуется изучить:\n\n   - Принципы работы RNN.\n   - Структуру и функционал RNN (заполнение internal state).\n   - Важность internal state в задачах с последовательными данными.\n   - Основные методы обработки internal state (например, LSTM и GRU).\n\nСледовательно, internal state в RNNх играет ключевую роль для effective processing of sequential data by maintaining and propagating information across time steps.",
       "rating": ""
     }
   ]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0743",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt10",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое learning rate?",
-    "f1": 37.0,
-    "precision": 44.8,
-    "recall": 58.6,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 4.5,
+    "precision": 10.7,
+    "recall": 18.9,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.794054"
+    "timestamp": "2025-11-08T20:42:35.680181"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое learning rate?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Learning rate is a fundamental concept in machine learning (ML) that determines how quickly or slowly we want our model to learn from data.\n\nThink about it this way: when you're trying to teach your pet new tricks through rewards for good behavior, you wouldn't give them all the treats at once; instead, you'd reward small steps toward completing the trick. The rate of giving those treats is somewhat similar to learning rates in ML models — it's how fast we want our model's parameters (the weights) to change when they try out different solutions.\n\nIf your pet eats up rewards too quickly without fully understanding a task ('learning'), they'll get confused later on because they've memorized instead of learned. The same goes for an overly high learning rate; the ML algorithm might overshoot good values or fail altogether, akin to our over-excited dog chasing after treats and bumping into walls.\n\nConversely, if your pet gets rewards too slowly ('low learning rate'), it won't learn much before you stop giving them any more — that’s like an overly conservative approach where we’re not progressing quickly enough toward a good solution. We want just the right balance to ensure efficient progress without jumping around or getting stuck in suboptimal solutions.\n\nIn machine learning, choosing this 'treat-rate' is essential for guiding our models towards effective and stable optimization as they learn from data over time!",
+      "model_response": "GRU (Gated Recurrent Unit) и LSTM (Long Short-Term Memory) являются двумя типами рекуррентных нейронных сетей, используемых для обработки последовательностей данных. Оба виды имеют механизм гатов для управления потоком информации и хранения исторического контекста. Однако, GRU имеет более простую структуру, чем LSTM:\n\n1. GRU известно своим кросс-значением, которое представляет собой сумму входной и предыдущего выхода. Это позволяет GRU более эффективно обрабатывать длинные последовательности, так как оно не требует хранить полный горизонтальный список информации в состоянии.\n2. GRU имеет два гата: гаты выхода и гаты постановки. Гата выхода регулируют, как много информации из предыдущего временных уровней храниться в текущее состояние, в то время как гата постановки регулируют, какие новые данные должны быть присоединены к текущему состоянию.\n3. LSTM имеет дополнительный элемент - уникальная компонента называемая замкнутой слой (замки), которые хранят информацию в стеке, а не только последнее значение. Это позволяет LSTM сохранять долгосрочный контекст более эффективно, чем GRU.\n4. GRU также имеет легкую интуицию и более низкоуровневой архитектуру, что может привести к быстрее обучению в некоторых случаях.\n\nВ целом, GRU предлагает компромисс между эффективностью и простотой LSTM, но не всегда достигает точности в обработке долгосрочных зависимостей, что требует большего количества состояний и сохранения информации в стеке.",
       "rating": ""
     }
   ]

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Как LSTM решает проблему затухающих градиентов?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Кроме того, GRU уменьшает количество градиентов (в 1/6缩减а), а также улучшает сходностьduring training.\n\nGRU с фазированным гейтом и fewer gates (forget gate) улучшает затухание г gradients, но не решает все проблемы.\n\nLSTM улучшает GRU с фазированием и fewer gates (ru), но не уменьшает г gradients.\n\nGRU улучшает LSTM с фазированием и fewer gates (fi), но не уменьшает г gradients.",
+    "rating": ""
+  }
+]

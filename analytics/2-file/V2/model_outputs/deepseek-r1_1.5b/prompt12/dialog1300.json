@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Г gradиенты в training recurrent neural networks (RNN) связаны с изменением функцииLoss для каждого элементаbatch. Если Momentum equals 1, градиент равняется deltaLoss / deltaW для каждого W. Но если Momentum equals 0, градиент равняется сумме over all W.\n\nНо не уверен в том, как именно нормализация по мини-батчам упоминается в контексте RNN. Возможно, мешает, что Batch-momentumequals 0 приводит к высоким градиентам для независимых элементовbatch, что делает training более不稳定 и медленным.",
+    "rating": ""
+  }
+]

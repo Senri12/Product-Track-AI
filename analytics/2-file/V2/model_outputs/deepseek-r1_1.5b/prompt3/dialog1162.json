@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Компоненты стандартной LSTM ячейки:\n\n1. **state**: С – основное состояние ячейки.\n2. **cell_state**: С cell state – глобальный и локальный контекст.\n3. **gate (гating rule)**: Гating rule –rule, который decide what flows from previous steps into the current step.\n4. **forget gate**: Forget gate – rule that decides which parts of the state are retained for output.\n5. **input forget**: Input forget rule – selects parts of the state to carry forward.\n6. **output gate**: Output gate – selects parts of the hidden state as the final output.\n7. **global context (глобальный контекст)**: Сomputed from all time steps, capturing long-term dependencies.\n8. **local context (локally)**: Features from the same position in each time step.\n9. **memory cell (мemory cell)**: Updates its state based on input and forget gates.\n\nПримеры синтаксических вызовов:\n\n- **Forget gate**: decide which parts of the state are retained for output using the rule.\n- **Input gate**: determines which parts from the cell state are used for processing the current input.\n- **Output gate**: selects parts of the hidden state as the final output.\n\nЭти компоненты work together in LSTM ячейках to efficiently process sequential data.",
+    "rating": ""
+  }
+]

@@ -3,12 +3,12 @@
     "dialog_id": "dialog0560",
     "model_name": "phi4-mini",
     "model_parameters": "3.8B",
-    "system_prompt_id": "prompt4",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое SGD?",
-    "f1": 42.5,
-    "precision": 47.2,
-    "recall": 58.1,
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.786059"
+    "timestamp": "2025-11-08T20:42:37.257669"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое SGD?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "SGD означает скользящая среднее дискретное (Stochastic Gradient Descent). Это алгоритм, используемый в машинном обучении для оптимизации-loss функции.\n\nПозвольте мне объяснить это простыми словами:\n\nПредставьте, что вы ищете самую высокую гору на некоем участке земли. Каждый раз, когда двигаетесь, вы проверяете направление, ведет ли вас к вершине или в низину. Изначально вы сделаете смещение, но затем медленно уменьшите размер своего шага по мере того, как приближаетесь к вершине. Это поможет вам найти самую высокую гору без необходимости в изучении всей территории.\n\nВ контексте машинного обучения SGD используется для нахождения оптимального параметра (или параметров) модели на основе данных. \"Горная точка\" представляет собой точку, где модель совершает минимальные ошибки или максимизирует производительность. Обновление по скользящему дискретному подразумевает, что вы обучаете свою модель небольшими количеством данных в каждом шаге вместо обучения с помощью всего набора данных каждый раз.\n\nИтак, SGD - это эффективный способ тренировки моделей машинного обучения, сокращая вычисления и время, необходимые для нахождения оптимальных параметров.",
+      "model_response": "\n\n#!/usr/librevisited byC++ min-height 20000aborensubword\" happened toient functionense reachedendentiouentilinksaboriertiteratingainsituritrarrint ains isicescanits are mapped with many casesinquire\nFindierenileiersininterviewartsiterieresortiveok\r\n| |",
       "rating": ""
     }
   ]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1094",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Вычисли P(да | пасмурно, холодно, влажно, да).",
-    "f1": 34.2,
-    "precision": 33.6,
-    "recall": 51.6,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.282099"
+    "timestamp": "2025-11-08T20:42:35.610799"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли P(да | пасмурно, холодно, влажно, да).",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Let's assume that we are dealing with a hypothetical weather dataset where we have four variables: Sunny (S), Rainy (R), Cold (C), and Humid (H). The given condition is Pastry Weather (P) which depends on these four variables.\n\nThe task is to find P(да | пасмурно, холодно, влажно, да) in English it means finding the probability of having pastry weather given that it's rainy, cold, humid and sunny. However, since we don't have the exact probabilities for each condition or their dependencies, I cannot generate an accurate quiz question or practice problem with the given information.\n\nTo create a practice question, you should first know the joint and conditional probabilities of each variable (S, R, C, H) and P(да). After that, you can calculate the required probability P(P|R,C,H,S) using Bayes' theorem:\n\nP(P|R,C,H,S) = P(R,C,H,S | P) * P(P) / P(R,C,H,S)\n\nYou can use this formula as a basis for a practice problem once you have the probabilities for each variable and Pastry Weather (P).",
+      "model_response": "Сначала подумаю о том, что SAT (Show, Attend and Tell) — это нейронная модель, которая simultaneously processes each token in the sequence while attending to all tokens in the entire sequence. Это отличается от обычного RNN, который фиксирует state (state after a step), а не использует информацию о времени.\n\nТакже SAT включает enclosure encode followed by self-attention layers, что позволяет учитывать все токены из последовательности для каждого отдельного token. Это приводит к более высоким качествам обработки изображений и задачам Translate, Text-to-Text и Translation.\n\nНаверное, SAT отличается от RNN по своей структуре архитектуры и методам обучения, таких как изменение скорости обучения ( warm-up schedule) и использовать enclosure encode.",
       "rating": ""
     }
   ]

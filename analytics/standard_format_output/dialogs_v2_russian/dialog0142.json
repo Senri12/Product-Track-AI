@@ -3,12 +3,12 @@
     "dialog_id": "dialog0142",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt5",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 31.5,
-    "precision": 36.0,
-    "recall": 41.5,
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 11.0,
+    "precision": 15.8,
+    "recall": 23.8,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.925150"
+    "timestamp": "2025-11-08T20:42:37.300781"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Имем, что Adam — это-firstAdam (ямский: «Аадам»), первый человек, созданный из пшара и жизни. По библейской истории Adam является прадедкой Адама, и с тех пор становится основой для религиозной и культурной мысли о первом человека и его связи с Богом.",
+      "model_response": "Ответ: Standardized LSTM (Long Short-Term Memory) ячейка включает в себя 2 компонента:\n\n1. **Энコードор (Encoder)**: responsible за преобразование входного потока данных в векторную форму, содержащую информацию о прошлом.\n2. **Режимно-активный полносвязной слоя (Self-Attention)**: responsible за поискиPattern или векторное представление для EACH элемента input sequence.\n\nЭти два компонента构дают базовую architecture LSTM ячейки.",
       "rating": ""
     }
   ]

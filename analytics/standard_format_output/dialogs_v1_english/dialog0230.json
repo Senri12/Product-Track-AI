@@ -3,12 +3,12 @@
     "dialog_id": "dialog0230",
     "model_name": "gemma3",
     "model_parameters": "4.3B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое SGD?",
-    "f1": 45.8,
-    "precision": 43.8,
-    "recall": 58.5,
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 55.3,
+    "precision": 49.6,
+    "recall": 70.1,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.709782"
+    "timestamp": "2025-11-08T20:42:35.469756"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое SGD?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Okay, let's break down what \"SGD\" is. It stands for **Stochastic Gradient Descent**. \n\nHere's a breakdown of what that means:\n\n* **Gradient Descent:** Think of a hiker trying to get to the bottom of a valley. They feel around to determine which direction is downhill and take a step in that direction. Gradient Descent is a method used to find the *minimum* of a function (often a cost function in machine learning) by repeatedly taking steps in the direction of the steepest decline.  Essentially, it adjusts the parameters of a model to minimize the error.\n\n* **Stochastic:** This is the key part. \"Stochastic\" means random. Instead of calculating the *exact* gradient (the slope) of the entire dataset, SGD calculates the gradient using only a *small, random* subset of the data – often called a “batch.” \n\n**So, in short, SGD is a way of optimizing a model's parameters by repeatedly taking small, random steps downhill, using only a small sample of the data to estimate the direction of the descent.**\n\n**Here's a slightly simpler analogy:** Imagine you're trying to find the lowest point in a field, but you can't see the whole field. Instead, you take a quick glance around and choose a direction that *seems* to be going downhill. Then you take a step. You repeat this process many times, constantly choosing a small area to look at and updating your position.\n\n---\n\n**To make sure we’re on the same page, could you tell me:**\n\n1.  **Do you understand the basic idea of finding the minimum of a function by following the steepest slope (like our hiker)?** (Yes/No/Somewhat)\n2.  **What do you think \"stochastic\" might mean in this context?** (Just tell me your initial thought - no need to be perfectly correct!)",
+      "model_response": "Двунаправленные RNN (Recurrent Neural Networks) – это разновидность RNN, которые обрабатывают последовательности данных не только в одном направлении (от начала к концу), но и в обратном направлении (от конца к началу).  Это ключевое отличие от стандартных RNN, которые обрабатывают данные только в одном направлении.\n\n**Зачем они нужны?**\n\nОсновная причина использования двунаправленных RNN заключается в том, что многие последовательные данные содержат информацию, которая зависит от *будущих* элементов последовательности.  В стандартных RNN, когда происходит предсказание на текущем шаге, модель видит только информацию *до* текущего шага.  Это может быть ограничением, особенно когда контекст, который влияет на текущее состояние, находится дальше в последовательности.\n\n**Как это работает?**\n\nДвунаправленная RNN состоит из двух последовательно работающих RNN:\n\n1.  **Прямой RNN:** Обрабатывает последовательность от начала к концу, как и стандартный RNN.\n2.  **Обратный RNN:** Обрабатывает последовательность от конца к началу.\n\nВыходы этих двух RNN затем объединяются (обычно путем конкатенации или суммирования) и подаются на вход следующего слоя.\n\n**Преимущества двунаправленных RNN:**\n\n*   **Улучшенное понимание контекста:** Благодаря обработке последовательности в обоих направлениях, модель получает более полное представление о контексте и взаимосвязях между элементами последовательности.\n*   **Лучшие результаты в задачах, требующих учета будущего:**  Это особенно полезно в задачах, таких как:\n    *   **Машинный перевод:**  При переводе предложения, модель может учитывать не только то, что сказано ранее, но и то, что будет сказано дальше.\n    *   **Распознавание речи:**  Когда мы говорим, значение слов часто определяется контекстом, который возникает в будущем.\n    *   **Предсказание временных рядов:**  При предсказании будущих значений временного ряда (например, цены на акции), модель может использовать информацию о прошлых и будущих значениях.\n\n**В итоге:** Двунаправленные RNN более мощный инструмент для обработки последовательностей данных, позволяющий учитывать широкий спектр контекста, что, как правило, приводит к улучшению результатов.\n",
       "rating": ""
     }
   ]

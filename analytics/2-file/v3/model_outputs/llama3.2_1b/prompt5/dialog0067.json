@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Стandardная LSTM ячейка состоит из следующих компонентов:\n\n1. Селективное преобразованиеhidden state (селекторHiddenState) через функцию activation.\n2. Динамическое вращение hidden state (двигатель hidden state) на 90 градусов.\n3. Сокращение hidden state на 80 градусов.\n4. Взвешенный сложное преобразование-hidden state (селектор HiddenState) через функцию activation.\n\nОни включают в себя три этапа transformations, каждый из которых выполняется с помощью различных функций активации:\n\n1. Селектор hidden state: activation(СелекторHidden State)\n2. Двигатель hidden state: сдвиганный сlector_hidden_state (преобразуется на 90 градусов).\n3. Сокращение hidden state: сокращенный сlector_hidden_state (преобразуется на 80 градусов).\n\nТаким образом, стандартная LSTM ячейка представляет собой сложный шаблон, который включает в себя множество преобразований и преобразования Hidden State.",
+    "rating": ""
+  }
+]

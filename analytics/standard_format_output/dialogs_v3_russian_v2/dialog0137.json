@@ -4,25 +4,25 @@
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
     "system_prompt_id": "prompt10",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое TensorFlow?",
-    "f1": 39.8,
-    "precision": 42.2,
-    "recall": 51.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 33.8,
-    "hallucination": 8.7,
-    "faithfulness": 35.0,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 6.3,
-    "timestamp": "2025-10-28T13:24:20.056658"
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 26.4,
+    "precision": 23.7,
+    "recall": 38.9,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 40.5,
+    "hallucination": 40.2,
+    "faithfulness": 52.8,
+    "noise_sensitivity": 36.1,
+    "self_knowledge": 7.0,
+    "timestamp": "2025-11-08T20:42:39.074752"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое TensorFlow?",
+      "content": "Что такое скрытое состояние в RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Тensorфоулия (TensorFlow) — это открытая библиотека для машинного обучения, которая предоставляет удобный инструмент для построения нейронных сетей. Она позволяет автоматизировать процесс дифференцирования, что делает обучение нейронных сетей более простой и эффективной.",
+      "model_response": "Скрытое состояние в RNN — это внутреннее представление model, которое не видно на пycнастих данных. Это помогает model выделить контекст и учитывать past states, что важно для задач поиска и предсказания.\n\n**Ответ:** Скрытое состояние в recurrent neural networks (RNN) — это внутреннее представление model, которое не видно на пycнастих данных. Это позволяет model выделить контекст и учитывать past states, что важно для задач поиска и предсказания.",
       "rating": ""
     }
   ]

@@ -3,26 +3,26 @@
     "dialog_id": "dialog0013",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "В примере с погодой, вычисли F(да) для теста.",
-    "f1": 34.9,
-    "precision": 37.3,
-    "recall": 45.9,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 28.9,
-    "hallucination": 11.9,
-    "faithfulness": 32.5,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.073878"
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 26.5,
+    "precision": 28.7,
+    "recall": 43.8,
+    "claim_recall": 65.3,
+    "context_precision": 100.0,
+    "context_utilization": 43.1,
+    "hallucination": 33.3,
+    "faithfulness": 57.0,
+    "noise_sensitivity": 37.9,
+    "self_knowledge": 9.7,
+    "timestamp": "2025-11-08T20:42:39.094647"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В примере с погодой, вычисли F(да) для теста.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "После выполнения шагов above классификация перца будет выглядеть так:\n\nPerch – вessential, фрукт, овощ.",
+      "model_response": "Также приведу основные моменты:\n\n**Ответ:**\n\nНаибольшую роль играет注意力 в machine translation. Это связано с重要作用ом в грамматическом понимании и читании текста. Мachine, используя attention, может уделять больше внимания к токам, которые обозначают ключевые элементы контекста или глаголы, которые нужно писать. Это позволяет мachine сделать более точное грамматическое понимание и интерпретацию текста.\n\nСовременные модели, такие как BERT (трансформер), Transformer и Show, Attend and Tell, используют attention для этого. В этих моделях注意力 означает, что махна placeholders или токены определена на конкретные элементы изображения или текста. Это помогает махну вовлекать контекст-specific features и сделать грамматические правильные интерпретации.\n\nТаким образом,注意力 играет важную роль в machine translation, особенно для задач с сложным контекстом и грамматическими правильными пониманиями.",
       "rating": ""
     }
   ]

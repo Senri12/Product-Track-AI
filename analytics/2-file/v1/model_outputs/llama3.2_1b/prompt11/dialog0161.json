@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем трудность применения обычной batch normalization к RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Труба при использованииBatch Normalization в контексте РНН (Рассказные Нейронны Динамикальных уравнений) заключается в том, что Batch Normalization требует значительного количества изменений для каждого отдельного токена входной последовательности. Это связано с тем, что в batch normalization каждый токен входной последовательности должен быть в том же状态е, чтобы быть вписан в шаблонbatch, а это означает, что каждый токен должен быть внешне идентичен как к другим таковым. \n\nВ контексте РНН этого условию не может удовлетвориться, поскольку каждое отдельное слагаемое последовательности должно быть уникально и внешне разные для каждого токена. В результате batch normalization может привести к значительному увеличению времени обучения models.\n\nИтак, workaroundом при этом является use of self-normalization (сelves normalizing) technique, который позволяет batch normalize independently on each token of input sequence without requiring any changes from one to another. \n\nЭтот метод включает в себя использование few-layered neural network architecture, где output layer is designed such that it will always have the same dimensionality as previous layers. Это позволяетBatch Normalization эффективно использовать на все токены входной последовательности.",
+    "rating": ""
+  }
+]

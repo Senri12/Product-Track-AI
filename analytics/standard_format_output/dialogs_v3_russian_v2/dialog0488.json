@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0488",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt2",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 37.7,
-    "precision": 36.0,
-    "recall": 51.5,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 32.5,
-    "hallucination": 10.0,
-    "faithfulness": 34.4,
-    "noise_sensitivity": 21.1,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.257986"
+    "model_name": "phi4-mini",
+    "model_parameters": "3.8B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 34.7,
+    "precision": 42.8,
+    "recall": 43.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 45.4,
+    "hallucination": 13.3,
+    "faithfulness": 41.5,
+    "noise_sensitivity": 10.6,
+    "self_knowledge": 11.8,
+    "timestamp": "2025-11-08T20:42:38.905293"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Расстояние Чебышёва - это метрика расстояния между двумя векторами или множествами в векторном пространстве, вычисляемая по формуле $d_C(x, y) = max(|x_i - y_i|)$, где $x$ и $y$ - векторы из n-мерного векторного пространства с компонентами $x_i$ и $y_i$, а максимум находится по всем i от 1 до n.\n\nЭтот вид расстояния назван в честь Математика Пафнутия Чебышёва, который ввел его в математику для изучения дискретных множеств и функций. Расстояние Чебышёва часто используется в теории дискретных структур, например, в алгоритмике клистерных анализов. Оно также является специальным случаем так называемого L-инф нормы вектора.",
+      "model_response": "",
       "rating": ""
     }
   ]

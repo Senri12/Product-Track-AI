@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем отличие Simple RNN от глубоких RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "В通俗стве:\n\n- **Simple RNN** — это модель, которая имеет краткую скрытою state и обновляет её по шагам. Она не учитывает relationship between neurons and previous steps.\n\n- **Globally Connected RNNs (Deep RNNs)** — это более сложные модели с более высокой гибкостью в хранение state, которые могут автоматизировать скрытое состояние для задач с многообразием признаков и длинными последовательностями.\n\nВ итоге, Simple RNN определяются за его простоту и легко интерпретируемость, а Global RNNs — за их выравнивание state для сложных задач.",
+    "rating": ""
+  }
+]

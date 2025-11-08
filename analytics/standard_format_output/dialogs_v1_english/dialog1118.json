@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1118",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 39.3,
-    "precision": 42.7,
-    "recall": 55.9,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.302314"
+    "timestamp": "2025-11-08T20:42:35.632687"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " The question asks about Chebyshev distance. To ensure clarity, I will clarify that Chebyshev distance is a measure of the maximum separation between two datasets or points in a multi-dimensional space. It is also known as max norm or supremum norm.\n\nFor example, given two vectors `A` and `B`, the Chebyshev distance between them can be calculated as follows:\n\n`d_Chebyshev(A, B) = max |a_i - b_i| for all i`\n\nwhere `a_i` and `b_i` are elements of vectors `A` and `B`, respectively.\n\nTo confirm my understanding, did I correctly explain the Chebyshev distance? If there's anything unclear or missing, please let me know!",
+      "model_response": "Для оценки различий GRU от LSTM можно следить за следующими аспектами:\n\n1. **Предиктор gate ( gated)**  \n   GRU использует предиктор gate, который фильтрирует информацию. В отличие от LSTM, где gate фильтрирует информацию по independently, в GRU это предиктор фильтрируется с использованием только одной гratingы: either 0 or 1. Это может быть более простой и эффективным для определенных задач.\n\n2. **Количество параметров**  \n   GRU обычно требует fewer parameters than LSTM, так как он использует fewer gates (0-1) в структуре. Это может быть полезно для задач с низкой сложностью обработки данных.\n\n3. **Использование GRU для последовательностей**  \n   GRU может использоваться для обработки гибкlicher последовательности, где каждое упомянутое из-за предиктора gate фильтрируется или не фильтрируется. Это может быть более простой и эффективным в определенных应用场景х.\n\n4. **Применение в различных задачах**  \n   GRU также используется для задач, таких как текстовое анализы предложений, where it can be more efficient than LSTM due to its simpler structure and fewer parameters.\n\nЕсли у вас есть конкретные вопросы или need больше информации поthis topic, я могу为您提供 более детально.",
       "rating": ""
     }
   ]

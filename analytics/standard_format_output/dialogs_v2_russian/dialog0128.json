@@ -3,12 +3,12 @@
     "dialog_id": "dialog0128",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt5",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 31.5,
-    "precision": 36.0,
-    "recall": 41.5,
+    "system_prompt_id": "prompt9",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 31.2,
+    "precision": 28.6,
+    "recall": 41.2,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.921523"
+    "timestamp": "2025-11-08T20:42:37.305257"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Расстояние Чебышёва составляет 17,6 километров (10,9 мили).",
+      "model_response": "Правильный ответ: GRU (Gated Recurrent Unit) отличается от LSTM (Long Short-Term Memory) тем, что GRU имеет более простуюArchitektur и используя только одна фазу сдвига для решения сложных проблем. LSTM наоборот, использует два-slояarchitecture, с помощью которой может лучше решать более сложные задачи.\n\nGRU:\n* Использует только один сдвиг для решения problemов\n* Упрощен architektурный design\n\nLSTM:\n* Uses two layers of recurrence for better performance on complex tasks\n* Allows for more accurate long-term dependencies in the data",
       "rating": ""
     }
   ]

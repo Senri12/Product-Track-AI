@@ -1,28 +1,28 @@
 {
   "metadata": {
     "dialog_id": "dialog0238",
-    "model_name": "deepseek-r1",
-    "model_parameters": "1.5B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
-    "f1": 34.4,
-    "precision": 37.5,
-    "recall": 41.7,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 25.4,
-    "hallucination": 10.2,
-    "faithfulness": 33.3,
-    "noise_sensitivity": 18.2,
-    "self_knowledge": 6.5,
-    "timestamp": "2025-10-28T13:24:20.010781"
+    "model_name": "gemma3",
+    "model_parameters": "4.3B",
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 46.2,
+    "precision": 42.9,
+    "recall": 54.6,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 58.9,
+    "hallucination": 23.2,
+    "faithfulness": 66.2,
+    "noise_sensitivity": 33.9,
+    "self_knowledge": 10.6,
+    "timestamp": "2025-11-08T20:42:38.873447"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "",
+      "model_response": "В задачах машинного перевода механизм внимания крайне важен, потому что он позволяет модели учитывать взаимосвязь между всеми словами в исходном предложении и словами, которые она генерирует на целевом языке. Вместо того, чтобы сосредотачиваться только на последнем слове при переводе, механизм внимания позволяет модели взвешивать значимость каждого исходного слова при создании каждого слова в переводе.  Это существенно улучшает качество перевода, особенно для длинных предложений, где важно сохранить связи между различными частями исходного текста. Вкратце, внимание позволяет модели понимать контекст и более точно передавать смысл.\n",
       "rating": ""
     }
   ]

@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Чем GRU отличается от LSTM?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для проверки градиентов в контексте GRUs ( gated Recurrent Units) и LSTM (Long Short-Term Memory) важно следить за их производительностью и устойчивостью. GRUs требуют градиентов из LSTM, что может привести к постепенным усилениям обновлении параметров, как указано в seminalной статье \"Neural Networks for Text Classification, Reasoning and Retrieval\" (2015).\n\nВ отличие от GRUs, GRU не подходит для рекуррентных сетей с ненапоминающим аутентикатором. Для such networks, LSTM более подходящим является GRU.\n\nНадо убедиться в том, что градиенты отмечаются на практике и могут быть проверены, чтобы понять их производительность и устойчивость.",
+    "rating": ""
+  }
+]

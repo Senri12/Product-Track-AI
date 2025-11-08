@@ -3,26 +3,26 @@
     "dialog_id": "dialog0188",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 25.1,
-    "precision": 30.2,
-    "recall": 38.5,
-    "claim_recall": 34.5,
-    "context_precision": 50.0,
-    "context_utilization": 29.5,
-    "hallucination": 13.2,
-    "faithfulness": 31.7,
-    "noise_sensitivity": 17.3,
-    "self_knowledge": 5.1,
-    "timestamp": "2025-10-28T13:24:20.040898"
+    "system_prompt_id": "prompt13",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 27.9,
+    "precision": 28.9,
+    "recall": 45.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 46.6,
+    "hallucination": 30.6,
+    "faithfulness": 52.1,
+    "noise_sensitivity": 33.9,
+    "self_knowledge": 10.6,
+    "timestamp": "2025-11-08T20:42:39.050399"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Расстояние Чебышёва (Chebyshev distance) — это мера-distanced между двумя точками в с giverном пространстве (в say 2D или 3D). Он определяется какax|x1 - x2| + by|y1 - y2|, где ax и ay —some weights. Это maximize distance between two points in some way.\n\nДля понимания расстояния Чебышёва необходимо:\n\n1. Определитьax and ay —some weights for coordinates.\n2. Использовать формулуdistance = ax|x1 - x2| + by|y1 - y2|.\n3. Apply this metric to various problems, including cheapest path algorithms.\n\nВ practice,ax and ay weights can be selected based on specific needs or determined through standard procedures. Using Chebyshev distance for classifying objects allows us to focus on maximizing distances between groups, often leading to intuitive results in data analysis tasks.",
+      "model_response": "Среди GRU и LSTM у нас есть разные структуры recurrent neural networks с различными гатами и методами обработки данных. Вот основные различия между ними:\n\n### 1. **Гаты**\n- **GRU**: Учитывает гаты `forget gate` и `input gate`. Основная гата `forget gate` фильтрует данные, а `input gate` обновляет репrezентацию текущего токена.\n- **LSTM**: Учит три гата: `forget gate`, `input gate`, и `output gate`. Each gate independently updates the hidden state.\n\n### 2. **Репrezентация**\n- **GRU**: Обновляет репrezентацию текущего токена как сумма данных из прошлого и текущего.\n- **LSTM**: combines three gates to compute three components: forget, input, and output. These are then combined multiplicatively.\n\n### 3. **Usage**\n- **GRU**: commonly used for classification tasks where simpler processing is sufficient.\n- **LSTM**: more versatile and stable, particularly suitable for sequence-to-sequence tasks, such as translation, summarization, and time series prediction.\n\n### 4. **Training Stability**\n- **GRU**: May require tuning of weights to handle gradients effectively.\n- **LSTM**: generally more stable due to its multiple gates that process data differently based on context.\n\n### 5. **Applications**\n- **GRU**: effective for tasks like language modeling, where simplicity and efficiency are key.\n- **LSTM**: widely used in natural language processing (NLP) tasks, particularly for sequential data analysis.\n\n### Заключение\nГRU и LSTM – разные структуры recurrent neural networks, выбор между ними зависит от задачи и контекста. GRU может быть полезной для классификаций, тогда как LSTM offeret более обновляемой и стабильной структуру для sequence-to-sequence задач, таких как translation, summarization и other sequential data processing tasks.",
       "rating": ""
     }
   ]

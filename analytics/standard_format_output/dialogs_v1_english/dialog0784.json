@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0784",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt12",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В чем суть наивного байесовского классификатора?",
-    "f1": 31.7,
-    "precision": 32.7,
-    "recall": 65.8,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt8",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем отличие Simple RNN от глубоких RNN?",
+    "f1": 4.1,
+    "precision": 5.8,
+    "recall": 20.6,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.771872"
+    "timestamp": "2025-11-08T20:42:35.751072"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем суть наивного байесовского классификатора?",
+      "content": "В чем отличие Simple RNN от глубоких RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Key Points:\n\n1. Naive Bayes classifier is based upon applying Bayes theorem.\n2. It assumes that all features are independent of each other (hence \"naive\").\n3. It's particularly used for classification tasks and works well with categorical data.\n\nQuiz Questions: \n\na) Explain why the naive bayes classifier refers to as 'Naïve'?\nb) Can you mention any specific cases where this model is ideally suited?\n\nTargeted Question & Explanation:\n\nYou've mentioned that it assumes features are independent, but haven't elaborated on its implications. Remember in real-world scenarios rarely we find data points with a perfect independence of the variables; they often influence each other to some degree which can affect predictions accuracy. Can you think about any such examples?",
+      "model_response": "Сimple RNN (состоящая из нескольких линейных рекуррентных сетей) и глубокие RNN (аналогичные Simple RNN, но с более высокой степенью глубины) отличаются в следующем:\n\n1. Степень сложности: Глубкие RNN многочисленнее линейные сети Simple RNN, что позволяет им перцептронизировать более сложные последовательности и учитывать длину векста.\n2. Масштабируемость: Глубкие RNN могут обрабатывать большие входные данные, хотя это может привести к большим числам параметров и высокой риску перезагрузки.\n3. Предсказание: Однако, некоторые задачи и данных лучше подходят для Simple RNN, которые могут быть более эффективными, если необходимо обрабатывать короткие вечности или иметь ограниченные ресурсы.\n4. Сохранение информации: Глубкие RNN могут лучше сохранять детали и контекст над частью векста, в отличие от Simple RNN, которые могут быть более привлекательными для задач, требующих понимания коротких интервалов времени.\n\nВ целом, выбор между Simple RNN и глубокими RNN зависит от конкретной задачи, длины векста, видимости и доступных ресурсах.",
       "rating": ""
     }
   ]

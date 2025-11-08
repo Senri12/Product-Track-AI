@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "В чем отличие Simple RNN от глубоких RNN?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Вопрос: \"В чем отличие Simple RNN от глубоких RNN?\"\n\n**Ответ:**\n\nСimplERNN (Simple RNN) — это базовая модель, где Processing осуществляется только с предыдущего шага. Она не использует контекст для обработки каждого слоя, а притом может быть стабильной и easy-to-implement. Однако, в Simple RNNах градиентов могут перегревать и вызывать проблемы с обнаружением нулей или поглощения данных.\n\nGlamorRNN (Gated RNNs) — это глубокие RNNы, где для каждого слоя используется gate (гating mechanism), фильтруя градиенты только из-за предыдущего шага. Это позволяет снизить градиентные погрешности и улучшает обработкуlong-term dependencies.\n\nТаким образом, глубокие RNN$s (GRRN) differ от SimplERNN$s в том, что они:\n1. Используют контекст и фильтруют градиенты из-за предыдущего шага.\n2. Снижат speed of learning and gradient stability compared to Simple RNNs.",
+    "rating": ""
+  }
+]

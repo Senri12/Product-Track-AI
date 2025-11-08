@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0708",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Что такое Keras?",
-    "f1": 40.4,
-    "precision": 45.6,
-    "recall": 64.3,
+    "model_name": "granite3.2",
+    "model_parameters": "2.0B",
+    "system_prompt_id": "prompt3",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие типы входов и выходов встречаются в задачах RNN?",
+    "f1": 4.1,
+    "precision": 20.1,
+    "recall": 13.2,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.800254"
+    "timestamp": "2025-11-08T20:42:35.672892"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Keras?",
+      "content": "Какие типы входов и выходов встречаются в задачах RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "**Explanation**\nKeras is an open-source neural network library written in Python that was designed to enable fast experimentation with deep learning algorithms through a simple interface but also offers flexibility when more control over model architecture or training process is needed.\n\n**Question for Student:**\n- Can you list two key features of Keras?\n\n**Suggested Exercise:**\n- Try setting up your first neural network using the Sequential API in Keras. Define at least one layer and compile it with an optimizer, loss function, and metric that would be suitable to predict a simple dataset.\n\n**Feedback Loop:**\nAs students progress through exercises like this they should receive timely feedback on their implementation choices for defining layers as well as compiling models appropriately based upon the given task's requirements.",
+      "model_response": "В задачах РНН (Recurrent Neural Networks) типы входов и выходов могут варьироваться в зависимости от конкретной реализации или задачи. Однако, общие вхождения в основных типы:\n\n1. Входные данные: Это представление текущего состояния или тенденций данных, которые должны быть учитываться при предсказании следующего элемента в последовательность. Обычно это представлено как последовательности чисел или целочисленных интегралов в случае временных данных, а также может быть представлено как матрицы для обработки горизонтальных данных.\n\n2. Готовые выходные данные: В некоторых задачах РНН использовать готовые выходные данные, где последний элемент последовательности предсказывается, а не всё последующая прогноза. Это позволяет точно оценить модель с помощью метрики отклонения.\n\n3. Отсутствие данных: В некоторых случаях, входные данные могут быть наугадными и не предоставляться полностью. Зачастую, из-за ограничений доступных данных или времени для обучения, данные могут быть частичными или немедленно генерироваемыми в цикле входа.\n\n4. Динамические входные данные: В некоторых случаях, входные данные могут быть динамическими и изменяться по-настоящему с каждым шагом, где модель преобразует входные данные в выход.\n\n5. Многотемпературные входные данные: В некоторых случаях, входные данные могут быть представлены как набор множественных временных последовательностей или других типов данных, которые должны быть обработаны одновременно.\n\nВ целом, входные данные в RNN часто представляют собой определенный формат, который зависит от конкретной задачи и видимых данных. Выходные данные, когда они существуют, обычно представляют последнюю вычисленную или прогнозируемую значение на основе предыдущих значений входных данных.",
       "rating": ""
     }
   ]

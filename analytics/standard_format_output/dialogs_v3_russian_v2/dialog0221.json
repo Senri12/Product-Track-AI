@@ -3,26 +3,26 @@
     "dialog_id": "dialog0221",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Вычисли вероятность спама для слова 'приз' из примера.",
-    "f1": 34.4,
-    "precision": 37.5,
-    "recall": 41.7,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 25.4,
-    "hallucination": 10.2,
-    "faithfulness": 33.3,
-    "noise_sensitivity": 18.2,
-    "self_knowledge": 6.5,
-    "timestamp": "2025-10-28T13:24:20.007067"
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "В чем трудность применения обычной batch normalization к RNN?",
+    "f1": 27.0,
+    "precision": 25.6,
+    "recall": 37.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 32.0,
+    "hallucination": 34.4,
+    "faithfulness": 57.4,
+    "noise_sensitivity": 40.0,
+    "self_knowledge": 8.2,
+    "timestamp": "2025-11-08T20:42:39.072369"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли вероятность спама для слова 'приз' из примера.",
+      "content": "В чем трудность применения обычной batch normalization к RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Поскольку в таблице показано, чтоscore medium corresponds to Almost-Spam, я предполагаю, что слово 'приз' является Almost-Spam. Однако для более точной оценки вероятности стоит учитывать распределение score medium на основе других данных и аудитории пользователя.\n\nВозможно, стоит проверить распределение score medium на основе нескольких наборов данных для более точной оценки вероятности. Также можно вспомнить аудиторию platform – у пользователям, чтобы предположить, какие слова подразумевались спамом.\n\nТакже важно учитывать то, чтоscore medium может быть связано с другим аспектами языка и неalways Clearly-Spam. Например,score high может означать Spam или Another Language, если языки разные.\n\nВ целом основная вероятность 'приз' спама можно предположить medium, но для более точной оценки стоит проверить распределение score medium на базе какого-либо набора данных и учитывать аудиторию пользователя.",
+      "model_response": "Вопрос: В чем трудность применения обычной batch normalization к RNN?\n\nОтвет:\n\n1. **Повторение(batch normalization):** Batch normalization — это метод, который делает генеруя наbatch标准化, чтобы избежать overfitting и улучшить generalization. Он применяется к векторам градиентов или к weights, чтобы усилить их нормальность и minimize the effect of outliers.\n\n2. **Реализация(batch normalization):** В RNN model часто используются batch normalization как Batch gradient descent, то есть,批量 normalized layers из-за Batch Gradient Descent (BGD). Это может быть полезно для улучшения финальных отображений и предсказаний.\n\n3. **Теперь:** В RNN model(batch norm) не используется explicitly; batch norm применяется как Batch gradient descent. Это может быть стабильнее и более эффективно в условиях речей с низкой деталей, чем standart batch normalization.\n\n4. **Обозначение(batch normalization):** Если у нас есть批量 B, то each timestep t, input x_t будет генеруя center = mean(x_t) + std(x_t), std = standard deviation of x_t. Для каждого timestep t inside this layer, генеруя normalized features.\n\n5. **Примеры применения(batch normalization):** В RNN model(batch norm) используется дляbatch normalization для each timestep, чтобы улучшить финальные отображения и предсказаний. Это может быть полезно в задачах классификации или регрессии на речях с низкой детальностью.\n\n6. **Вопрос о том, как применять(batch normalization):** В RNN model(batch norm) используется batch normalization для each timestep, чтобы улучшить performance и avoid overfitting. Это может быть полезно в различных задачах, связанных с речями.",
       "rating": ""
     }
   ]

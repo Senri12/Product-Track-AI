@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0550",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt4",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
-    "f1": 31.4,
-    "precision": 43.8,
-    "recall": 51.9,
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 50.7,
+    "precision": 52.0,
+    "recall": 59.4,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.743096"
+    "timestamp": "2025-11-08T20:42:35.813560"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Hello! I'll do my best to explain this concept clearly.\n\nk-NN stands for \"k-nearest neighbors.\" It's a type of machine learning algorithm used in classification and regression problems that makes predictions based on nearby data points. Imagine you have several different types of fruit, like apples, oranges, bananas; k-NN would predict the kind of an unknown piece by looking at its nearest neighboring fruits.\n\nOn the other hand, weighted k-NN is a variation where it doesn't treat all neighbors equally important when making decisions or predictions (this means some close neighbours might have more weight compared to others). Picture you are trying to guess someone's height using their friend's heights. If your friend was closer and taller than another neighbor who wasn't so tall but farther away, weighted k-NN would consider the first person's influence stronger in predicting how high someone else is.\n\nIn short: Standard (unweighted) k-NN gives equal weight or importance based on proximity alone; Weighted k-NN considers both distance to neighbors as well as certain weights assigned for more accurate prediction. This means it's often seen that weighted methods can be better at predictions with a slight complexity added!\n\nI hope this explanation helps! If you have any questions, feel free to ask them freely – I'm here and ready in case we need further clarification or details on how these models work practically (like using datasets). Happy learning ahead!",
+      "model_response": " Нормализация по мини-батчам важна для обучения Recurrent Neural Networks (RNN) из-за нескольких причин:\n\n1. Стабилизация градиентов: РНН могут страдать от взрывающихся и затухающих градиентов, что может привести к нестабильному обучению или конвергенции к локальным минимумам. Нормализация по мини-батчам помогает регулировать размер градиента и сохранять стабильность обучения.\n2. Повышение эффективности: Нормализация по мини-батчам может улучшить эффективность обучения, снизив вероятность наличия излишне больших или малых градиентов в различных шагах обучения. Это может привести к более быстрому и стабильному сходинию к оптимальному решению.\n3. Улучшение скорости обучения: Нормализация по мини-батчам может уменьшить время, которое требуется на обучение RNN, сделав его более эффективным в практических приложениях.\n4. Сходство выборки и дистрибуции данных: Нормализация по мини-батчам помогает сделать дистрибуцию весов нейронной сети более стабильной, поскольку каждая мини-выборка будет иметь одинаковый масштаб. Это важно для избежания ситуаций, когда одни данные будут сильно влиять на обучение, а другие - нет, что может привести к неправильному обучению.\n\nВ итоге, нормализация по мини-батчам является важной частью обучения RNN, помогая стабилизировать градиенты, улучшить эффективность обучения, уменьшить время требуемое на обучение и сделать дистрибуцию весов более стабильной.",
       "rating": ""
     }
   ]

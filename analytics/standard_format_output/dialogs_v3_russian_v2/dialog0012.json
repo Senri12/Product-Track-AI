@@ -3,26 +3,26 @@
     "dialog_id": "dialog0012",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Вычисли расстояние Евклида между (1,2) и (3,4).",
-    "f1": 34.9,
-    "precision": 37.3,
-    "recall": 45.9,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 28.9,
-    "hallucination": 11.9,
-    "faithfulness": 32.5,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.073739"
+    "system_prompt_id": "prompt1",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Как работает механизм внимания (Attention)?",
+    "f1": 26.5,
+    "precision": 28.7,
+    "recall": 43.8,
+    "claim_recall": 65.3,
+    "context_precision": 100.0,
+    "context_utilization": 43.1,
+    "hallucination": 33.3,
+    "faithfulness": 57.0,
+    "noise_sensitivity": 37.9,
+    "self_knowledge": 9.7,
+    "timestamp": "2025-11-08T20:42:39.094384"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли расстояние Евклида между (1,2) и (3,4).",
+      "content": "Как работает механизм внимания (Attention)?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Расстояние Euclidом между точками (1,2) и (3,4) вычисляется по формуле:\n\n$$\nd = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n$$\n\nПодставив значения:\n\n$$\nd = \\sqrt{(3 - 1)^2 + (4 - 2)^2} = \\sqrt{2^2 + 2^2} = \\sqrt{4 + 4} = \\sqrt{8} = 2\\sqrt{2}\n$$\n\n**Ответ:** $\\boxed{2\\sqrt{2}}$",
+      "model_response": "Во-первых, вниманиеAttention в рекуррентных нейронных сетях (RNN) и включает в себя основные компоненты:\n\n1. **Гating gate**: Гating gate deciding whether neuron accept input or not.\n\n2. **Query-key-vecs**: Векторы, используемые для поиска most relevant Representations.\n\n3. **Value vectors**: Векторы, которые ищут определённые Representations.\n\n4. **Attention weights**: Слойы сжатия векторов на основании attention gate.\n\n5. **Softmax activation**: Определяет распределение注意力 между Attention weights.\n\n6. **Output vector**: Вектор, используемый для подсчёта и упрощения последнего шага.",
       "rating": ""
     }
   ]

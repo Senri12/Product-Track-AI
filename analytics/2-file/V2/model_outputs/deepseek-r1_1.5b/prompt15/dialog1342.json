@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "Для определения компонентов стандартной LSTM ячейки в тексте приведено следующее:\n\n1. **Forget Gate (f_t)**: \n   - Используется как гиперфолг для сокращения градиента и улучшает обучение.\n   - Формула: \\( f_t = \\sigma(W_f h_{t-1}) \\)\n   - Здесь \\( \\sigma \\) —活性ция sigmoid.\n\n2. **Input to Forget Gate (h_{t-1}^{\\text{input}})**:\n   - Умножение forget gate с state:\n   - Формула: \\( h_t^{\\text{input}} = W_i h_{t-1} \\)\n\n3. **Update Gate (u_t)**:\n   - Гиперфолг, который умножает update weight с state и state:\n   - Формула: \\( u_t = \\tanh(W_u h_{t-1} + U u_{t-1}) \\)\n   - Здесь \\( \\tanh \\) —活性ция гиперфолги.\n\n4. **Reset Unit (r_t)**:\n   - Гиперфолг с state:\n   - Формула: \\( r_t = \\sigma(W_r h_{t-1}) \\)\n\n5. **Cell Output**:\n   - Concatenate forget_f_t and u_t, then apply tanh:\n   - Формула: \\( c_t = f_t + u_t \\cdot r_t \\)\n   - Итоговый state: \\( h_t = \\tanh(c_t) \\)\n\nТаким образом, стандартная LSTM ячейка включает forget gate, input to forget gate, update gate, reset unit и cell output.",
+    "rating": ""
+  }
+]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1328",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt15",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Что такое расстояние Чебышёва?",
-    "f1": 43.8,
-    "precision": 44.8,
-    "recall": 56.9,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем GRU отличается от LSTM?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.316781"
+    "timestamp": "2025-11-08T20:42:37.327060"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое расстояние Чебышёва?",
+      "content": "Чем GRU отличается от LSTM?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " Расстояние Чебышёва является одним из метрик для измерения дистанции между двумя векторами в многомерном пространстве. Оно помогает определить максимальное смещение, которое может возникнуть между векторами без существенного влияния на функцию, построенную на этих векторах.\n\nРасстояние Чебышёва вычисляется следующим образом:\n\nd(A, B) = max(|a_i - b_i|), где a_i и b_i - элементы векторов A и B соответственно.\n\nПри улучшении ответа можно дать более подробное описание расстояния Чебышёва, его применений и формулы для вычисления в случае матриц, а также предложить дополнительные вопросы к теме:\n\n1. Какова роль расстояния Чебышёва в алгоритмах кластеризации?\n2. Чем отличается расстояние Чебышёва от других метрик, например, Euclidean и Manhattan?\n3. Какие особенности расстояния Чебышёва при его использовании для измерения дистанции между функциями, а не векторами?",
+      "model_response": "Для более детального изучения differences between GRU and LSTM, я подготовлю ответ:\n\n**Гated Recurrent Unit (GRU) vs LSTM:**\n\n1. **Functionality:**\n   - **LSTM:** Uses three gates (input, forget, and output): \n     - The input gate determines how much of the input should pass through.\n     - The forget gate decides which information is retained in the cell state.\n     - The output gate controls what part of the cell state is passed to the next time step.\n   - **GRU:** Uses two gates (update and forget) and combines them differently:\n     - The update gate determines how much of the previous state should be carried forward.\n     - The forget gate decides which information in the previous state is retained.\n\n2. **Parameters:**\n   - LSTM has more parameters due to its three gates, potentially leading to a larger model.\n   - GRU reduces the number of gates and operations, making it more efficient but sometimes less flexible.\n\n3. **Use Cases:**\n   - **LSTM:** Effective for sequences where previous information is important (e.g., time series analysis, NLP tasks).\n   - **GRU:** Often used in practice due to its efficiency while maintaining performance on many sequential modeling tasks.\n\n4. **Performance:**\n   - GRUs can achieve comparable or even better results than LSTM without doubling the number of parameters.\n   - They are known for being faster and more efficient, which is beneficial for large models.\n\n**Where GRUs are Used in Practice:**\n\n- In Natural Language Processing (NLP) tasks like language modeling and translation.\n- In Recurrent Neural Networks (RNNs), GRUs have been a popular choice due to their efficiency and effectiveness on sequential data.",
       "rating": ""
     }
   ]

@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1147",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt9",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
-    "f1": 34.1,
-    "precision": 39.2,
-    "recall": 48.3,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.332671"
+    "timestamp": "2025-11-08T20:42:37.340287"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " **Объяснение:** В алгоритме Найвного Байеса для классификации, мы используем уравнение Байеса для расчета вероятности принадлежности объекта к какому-либо конкретному классу. Вероятность класса определяется как произведение вероятности всех характеристик, которые удовлетворяют классу, делённая на общую вероятность всех классов.\n\n**Вопрос к студенту:** Можете вы пояснить, какой является основной формулой для вычисления вероятности принадлежности объекта к какому-либо конкретному классу в алгоритме Найвного Байеса?\n\n**Упражнение:** Вычислите вероятность, что электронная почта относится к классу спам или не спам, используя следующие данные:\n- Вероятность того, что сообщение содержит слово \"Viagra\", если оно является спамом равна 0.9\n- Вероятность того, что сообщение содержит слово \"Viagra\", если оно не является спамом равна 0.01\n- Вероятность того, что сообщение содержит слово \"Credit\" или \"Finance\", если оно является спамом равна 0.8\n- Вероятность того, что сообщение содержит слово \"Credit\" или \"Finance\", если оно не является спамом равна 0.1\n- Общая вероятность спама равна 0.05\n- Общая вероятность не спама равна 0.95\n\n**Обратная связь:** Правильный ответ: Получим вероятность принадлежности сообщения к классу \"спам\" (P(Spam|data)) как: P(Viagra|Spam)*P(Credit or Finance|Spam) * P(Spam) / P(Viagra|Spam)*P(Credit or Finance|Spam)*P(Spam)+P(Viagra|Not Spam)*P(Credit or Finance|Not Spam)*P(Not Spam). Затем для класса \"не спам\" (P(Not Spam|data)) вычисляем P(Not Spam) и делим на сумму этих двух вероятностей. В данном конкретном случае, получим вероятность принадлежности сообщения к классу \"спам\" равной 0.9578 или приблизительно 95.78%.",
+      "model_response": "LSTM (Long Short-Term Memory) ячейки — это основной компонент в LSTM-модели, которая позволяет обрабатывать последовательность данных с сохранением long-term memory. Основные элементы standard LSTM ячейки:\n\n1. **State**:\n   - *h_prev* — предыдущая гratingphaст.\n   - *c_prev* — предыдущий carry.\n\n2. **Input**:\n   - *x_t* — Current input vector.\n\n3. **Forget gate**: Управляет фильтрацией incoming information, чтобы у Blocksировать anything that's not relevant to current context.\n\n4. **Candidate activation**: КANDIdатная акция, которая формирует intermediate representation.\n\n5. **Update gate**: Управляет updateation, чтобы определить, что нужно сохранить в state.\n\n6. **Output gate**: Управляет outputting, чтобы выделить результата для current timestep.\n\nТаким образом, standard LSTM ячейка позволяет обрабатывать последовательность данных с сохранением long-term memory и фильтрацией incoming information.",
       "rating": ""
     }
   ]

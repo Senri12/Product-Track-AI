@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1198",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt10",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
-    "f1": 45.5,
-    "precision": 52.4,
-    "recall": 53.2,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.330367"
+    "timestamp": "2025-11-08T20:42:37.344583"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " В алгоритме Adagrad параметры обучаемой модели адаптивно обновляются в зависимости от частоты и величины изменений, которые они производили при тренировке.\n\nG_{t-1,ii} - это весовой коэффициент для параметра i на шаге t-1. Этот коэффициент определяет скорость обновления параметра во время учёта предыдущих шагов.\n\ng_t - это градиент потерь на текущем шаге.\n\nη - это ступенчатое значение шанхайского градиента, также известное как \"learning rate\". Оно определяет скорость обновления параметров в модели. В данном случае η = 0.1.\n\nε=1e-8 - это малая постоянная (максимум ноль), которая используется для избежания деления на нуль. Она необходима при работе с конечными числами, чтобы избежать вычислений с бесконечностью или делением на нуль.\n\nВ целом, Adagrad позволяет каждому параметру обучаемой модели адаптироваться к своим собственным тренировочным данным и изменять скорость обновления в зависимости от этой адаптации.",
+      "model_response": "Директор обработки текста от компании Google в статье \"Attention is all you need\" подчеркивает важность concentration (attention), который играет ключевую роль в задачах машинного перевода и трансформации данных. Важно отметить, что concentration помогает модельм capture complex relationships in sequential data, such as the context of individual tokens within a sentence or document. \n\nВ статье говорится, что modelbert, основная модель, включает concentration, чтобы учитывать все контекст для каждого token. Это позволяет моделим решать задачи, таких как тегирование слов в предложении или определение спама в тексте. \n\nТакже concentration playits role in making modelbert robust and effective for tasks like text classification (например, определение спама) and named entity recognition.modelbert's ability to process text as a whole sequence and maintain context between tokens is crucial for these applications.\n\nВ итоге, concentration, включившись в обработку текста как последовательных данных, является одним из ключевых факторов эффективности modelbert для задачи манипуляции с текстом.",
       "rating": ""
     }
   ]

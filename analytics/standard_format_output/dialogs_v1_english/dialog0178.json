@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0178",
-    "model_name": "gemma3",
-    "model_parameters": "4.3B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "Unknown",
-    "lecture_topic": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
-    "f1": 44.1,
-    "precision": 57.5,
-    "recall": 45.6,
+    "model_name": "llama3.2",
+    "model_parameters": "1.0B",
+    "system_prompt_id": "prompt12",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему внимание важно в задачах машинного перевода?",
+    "f1": 23.7,
+    "precision": 34.0,
+    "recall": 34.4,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.695862"
+    "timestamp": "2025-11-08T20:42:35.573117"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В Adagrad, G_{t-1,ii}=4, g_t=2, η=0.1, ε=1e-8.",
+      "content": "Почему внимание важно в задачах машинного перевода?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Okay, let's break this down. You’ve given me some parameters from the Adagrad algorithm. Let's start with the first value, G_{t-1,ii}.\n\nCan you tell me, in your own words, what G_{t-1,ii} represents in the context of Adagrad?  Don’t just tell me the definition from the textbook – I want to understand *what it's doing* in the algorithm.",
+      "model_response": "Ответ:Attention является критическим элементом для xửения и перевода text-ов, поскольку оно позволяет модели выносить приоритеты между различными wordами или фразами, чтобы они были правильны. Это имеет решающее значение в machine translation, поскольку модели must учитывать контекст и смысл каждого words или фразы, чтобы обеспечить высокий уровень перевода.",
       "rating": ""
     }
   ]

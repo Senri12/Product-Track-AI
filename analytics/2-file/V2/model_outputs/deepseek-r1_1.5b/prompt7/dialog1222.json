@@ -1,0 +1,16 @@
+[
+  {
+    "turn_number": 1,
+    "role": "user",
+    "content": "Какие компоненты включает стандартная LSTM ячейка?",
+    "model_response": "",
+    "rating": ""
+  },
+  {
+    "turn_number": 2,
+    "role": "assistant",
+    "content": "",
+    "model_response": "ЛSTM (Long Short-Term Memory) — это структура, которая используется в нейросетях для обработки последовательностей данных. Стандартная LSTM ячейка включает несколько основных компонентов:\n\n1. **cell_state**: Это суммарное состояние, который последовательно обновляется на каждом шаге для каждого элемента.\n\n2. **gate1** и **gate2**: Эти компоненты являются Scalar Values (посitive числа между 0 и 1), которые обновляют state с помощью sigmoid или tanh функций. Gate Variables allow the LSTM to selectively update the cell state based on the current context.\n\nЭти компоненты включают standards cells из библиотек, такие как TensorFlow и PyTorch, и используются для реализации LSTM ячейки в нейросетях.",
+    "rating": ""
+  }
+]

@@ -3,26 +3,26 @@
     "dialog_id": "dialog0767",
     "model_name": "mistral",
     "model_parameters": "7.0B",
-    "system_prompt_id": "prompt11",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое TensorFlow?",
-    "f1": 36.3,
-    "precision": 37.2,
-    "recall": 47.8,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 29.3,
-    "hallucination": 10.5,
-    "faithfulness": 35.3,
-    "noise_sensitivity": 18.8,
-    "self_knowledge": 4.2,
-    "timestamp": "2025-10-28T13:24:20.320666"
+    "system_prompt_id": "prompt7",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое скрытое состояние в RNN?",
+    "f1": 42.8,
+    "precision": 40.2,
+    "recall": 51.7,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 51.8,
+    "hallucination": 31.5,
+    "faithfulness": 59.7,
+    "noise_sensitivity": 28.3,
+    "self_knowledge": 8.8,
+    "timestamp": "2025-11-08T20:42:39.217808"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое TensorFlow?",
+      "content": "Что такое скрытое состояние в RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " TensorFlow — это открытый исходный код написан на Python для построения машинных обучающих моделей и выполнения расчётов с использованием графов компьютационной сети. Данная платформа разработана корпорацией Google в 2015 году и позволяет создавать сложные машинные алгоритмы, используя многоядерные процессоры, GPU и даже такие мощные вычислительные ресурсы, как TPU (Tensor Processing Unit) Google. TensorFlow часто используется для обучения нейронных сетей и разработки программ для машинного обучения.",
+      "model_response": " Скрытое состояние в рекуррентной нейронной сети (RNN) - это вектор, который по сути хранит информацию о текущем и предыдущих шагах обучения или обработки данных. Этот вектор передается из одного шага на следующий через входные, выходные и забывающие гейты, что позволяет RNN сохранять более долгосрочные связи в обрабатываемых данных. В LSTM ячейках скрытое состояние представлено как вектор кандидата на новое значение состояния (candidate cell state) и рекуррентное скрытое состояние (hidden state), которые используются для обновления памяти на очередном шаге.",
       "rating": ""
     }
   ]

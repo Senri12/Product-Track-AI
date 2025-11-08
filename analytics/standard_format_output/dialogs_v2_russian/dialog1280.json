@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1280",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "3. Инструменты обучения НС (2)",
-    "lecture_topic": "Что такое SGD?",
-    "f1": 41.1,
-    "precision": 41.1,
-    "recall": 52.8,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt11",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Что такое двунаправленные RNN и зачем они нужны?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.268534"
+    "timestamp": "2025-11-08T20:42:37.371974"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое SGD?",
+      "content": "Что такое двунаправленные RNN и зачем они нужны?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " SGD (Стохастический градиентный спуск) - это алгоритм оптимизации, который часто используется для обучения моделей машинного обучения. СGD позволяет изменять веса модели таким образом, чтобы минимизировать функцию потерь (loss function) на основе случайных выборок данных, которые называются мини-батчами. Это смягчает требования к памяти и производительности по сравнению с градиентным спуском с использованием всего набора данных (batch gradient descent).\n\nИз материала можно отметить, что SGD является одним из самых распространенных методов оптимизации для обучения моделей машинного обучения и часто используется в контексте нейронных сетей.\n\nДля глубжего понимания SGD можно продолжить изучение темы на лекциях, таких как \"Обучение нейронной сети\" или \"Основы машинного обучения\", а также в научных статьях и книгах, посвященных теме. В ходе обучения можно сделать акцент на выборе параметров алгоритма, поиск оптимальных скоростей обучения и регуляризации весов для предотвращения переобучения модели.\n\nЧто же касается SGD в конкретном контексте, то может быть полезно провести рассуждения о том, как алгоритм действует на примере конкретной задачи обучения, такой как классификация или регрессия. Это поможет лучше понять процесс обучения модели и выявить возможные преимущества и недостатки алгоритма в конкретном применении.",
+      "model_response": "**Binary Directional Recurrent Neural Networks (RNNs)**\n\nRecurrence relations are crucial in handling sequential data, but traditional RNNs operate sequentially without any look-ahead or backward processing. Binary Directional RNNs (BDRNNs) represent an advanced variant that processes each time step in both directions. Here's a structured overview:\n\n### What Are Binary Directional RNNs?\n\nBinary Directional RNNs are a type of Recurrent Neural Network designed to process sequences in two opposite directions simultaneously, enhancing their computational capabilities and performance.\n\n1. **Basic Structure**: Unlike traditional RNNs which process data sequentially from past to future, BDRNNs maintain the forward pass through normal RNN layers while performing an additional backward pass separately.\n2. **Double Outputs**: Each layer of a Binary Directional RNN produces two outputs: one from the forward direction and another from the backward direction. This results in twice the number of parameters compared to traditional RNNs but with a reduced size, approximately half as many parameters per layer.\n\n### Differences from Traditional RNNs\n\n- **Parameter Count**: BDRNNs reduce the total number of parameters by half compared to their traditional counterparts.\n- **Training Efficiency**: They train slower due to processing each time step in both directions, potentially slowing down learning. However, they often require fewer layers for optimal performance.\n- **Complexity and Design**: While more complex than simple RNNs, BDRNNs simplify the architecture, offering comparable or better results.\n\n### Performance and Training\n\n- **Speed**: BDRNNs can be slower due to processing in two directions, but this may offset training time gains with fewer parameters.\n- **Size Reduction**: They reduce model size by half (approximately 100 million to 50 million parameters) while maintaining or improving performance.\n- **Applications**: These networks are particularly useful for tasks requiring bidirectional dependency handling, such as language modeling and machine translation.\n\n### Conclusion\n\nBinary Directional RNNs offer an efficient solution by processing sequences in both directions, resulting in a smaller model size but equivalent performance. They are valuable for tasks where backward processing is beneficial without significantly increasing computational complexity.",
       "rating": ""
     }
   ]

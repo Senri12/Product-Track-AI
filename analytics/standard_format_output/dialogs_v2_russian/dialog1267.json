@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog1267",
-    "model_name": "mistral",
-    "model_parameters": "7.0B",
-    "system_prompt_id": "prompt13",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "Как вычислить вероятность класса в Naive Bayes?",
-    "f1": 41.1,
-    "precision": 41.1,
-    "recall": 52.8,
+    "model_name": "deepseek-r1",
+    "model_parameters": "1.5B",
+    "system_prompt_id": "prompt10",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:19.265932"
+    "timestamp": "2025-11-08T20:42:37.353701"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Как вычислить вероятность класса в Naive Bayes?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": " В алгоритме Наивного Бейеса для классификации каждому классу соответствует модель распределения пробability distribution P(c|x), где c - класс, а x - вектор описательных характеристик. Для вычисления вероятности класса необходимо посчитать произведение двух частей:\n\n1. Предложим, что в нашем случае m возможных классов. Тогда суммарная вероятность всех классов равна:\n   P(c_1) + P(c_2) + ... + P(c_m) = 1\n\n   (где c_i - i-ый из m классов).\n\n2. Поскольку мы считаем вероятность каждого класса, отдельно от других, то:\n   P(c_i|x) = P(c_i) * L(x|c_i) / L(x)\n\n   Здесь P(c_i) - предполагаемая вероятность i-го класса, а L(x|c_i) и L(x) - локальная и общая ликвэлисирующая функции. Они используются для нормирования значений.\n\nОбычно в практических приложениях локальную ликвидирующую функцию L(x|c_i) вычисляют как:\n\n   L(x|c_i) = ∏\\_{j=1}^{n} p(x_j|c_i)^{y_j} \\* (1 - p(x_j|c_i))^{(1-y_j)}\n\nгде n - число признаков, x_j - j-ый признак вектора описательных характеристик x, y_j - j-ый элемент целевой функции.\n\nНужно учесть, что при вычислении P(c_i|x) используется предположение наивности - независимость признаков друг от друга для данного класса, то есть p(x1, x2, ..., xn|c_i) = ∏\\_{j=1}^{n} p(x_j|c_i). Это предположение упрощает вычисления в алгоритме Наивного Бейеса, но оно не всегда точно и может приводить к недооценке вероятности класса.\n\nТаким образом, для вычисления вероятности каждого класса в алгоритме Наивного Бейеса необходимо посчитать P(c_i) и L(x|c_i), а также применить формулу для вычисления вероятности класса:\n   P(c_i|x) = P(c_i) * L(x|c_i) / L(x)\n\nПосле того, как будут посчитаны все вероятности каждого класса для каждого примера в обучающей выборке, можно найти наиболее вероятный класс для текущего примера, выбрав тот, который имеет наибольшую вероятность среди всех классов.",
+      "model_response": "The standard components of an LSTM cell include:\n\n1. **Input Gate**: Controls whether the current input is passed through to the next state. It uses sigmoid or tanh activations for gate control.\n\n2. **Forget Gate**: Determines which part of the hidden state is irrelevant and needs resetting. Similarly, it uses sigmoid or tanh activations.\n\n3. **Output Gate**: Controls whether the information in the hidden state is used to produce the next output. Again, uses sigmoid or tanh for gate operations.\n\n4. **Cell State**: The result of all gates combined, containing both the cell output and a hidden layer output, allowing the cell to maintain context across timesteps.\n\n5. **Parameters**: Weights and biases within each gate that learn how to control information flow.\n\nThis architecture enables LSTM cells to handle long-term dependencies more effectively by integrating these components during computation.",
       "rating": ""
     }
   ]

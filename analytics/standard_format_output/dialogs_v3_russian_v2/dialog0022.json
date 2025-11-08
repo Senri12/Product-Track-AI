@@ -3,26 +3,26 @@
     "dialog_id": "dialog0022",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt6",
-    "lecture_title": "3. Инструменты обучения НС",
-    "lecture_topic": "Что такое Adam?",
-    "f1": 34.9,
-    "precision": 37.3,
-    "recall": 45.9,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 28.9,
-    "hallucination": 11.9,
-    "faithfulness": 32.5,
-    "noise_sensitivity": 16.4,
-    "self_knowledge": 5.7,
-    "timestamp": "2025-10-28T13:24:20.075653"
+    "system_prompt_id": "prompt2",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Какие компоненты включает стандартная LSTM ячейка?",
+    "f1": 30.7,
+    "precision": 33.0,
+    "recall": 45.4,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 44.5,
+    "hallucination": 30.3,
+    "faithfulness": 60.1,
+    "noise_sensitivity": 36.7,
+    "self_knowledge": 9.6,
+    "timestamp": "2025-11-08T20:42:39.061432"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое Adam?",
+      "content": "Какие компоненты включает стандартная LSTM ячейка?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Adam (Adaptive Learning Rate Algorithm) — это оптимизатор, который используется для обновления параметров нейронных сетей. Он основывается на формуле:\n\nw_{t} = w_{t-1} - η * m_t * g_t,\n\nгде:\n- w_t — новое значение параметра,\n- w_{t-1} — текущее значение параметра,\n- η — Learning Rate (коэффициент, усилитель шага),\n- m_t — градиентная производная,\n- g_t — градиент.\n\nАдам использует градиентный обновление и усилитель Learning Rate, что делает его более эффективным, чем SGD в большинстве задач. Он также предполагает использование batch-parallelization и автоматического дифференцирования для вычисления градиентов.\n\nИтак, Adam — это инструмент для обновления параметров нейронных сетей, который использует градиентный обновление и усилитель Learning Rate.",
+      "model_response": "А standard LSTM (Long Short-Term Memory) ячейка включает следующие основные компоненты:\n\n1. **Издержка** — это гибридная линия с центральной и краевой позициями, которая описывает контекст для прямого трансформирования.\n\n2. **Дерived State (h’)** — трансформированный state из驱ки, который используется для прямого трансформирования.\n\n3. **Input Gate** — сеть-заполнение, фильтрирующее входные данные для Current gate.\n\n4. **Remember gate** — сеть-заполнение, фильтрирующее данные из驱ки для Remember gate.\n\n5. **Cell Output** — генерирует output в ячейке, основываясь на current state и input gate.\n\n6. **Input Gate and Forget gate** — сеть-заполнения, фильтрирующие данные для Current и Remember gates соответственно.\n\nЭти компоненты работают в circularной форме в inside cell, чтобы обрабатывать последовательности данных и предсказывать их результаты.",
       "rating": ""
     }
   ]

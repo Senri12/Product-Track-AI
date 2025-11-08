@@ -1,14 +1,14 @@
 {
   "metadata": {
     "dialog_id": "dialog0659",
-    "model_name": "phi4-mini",
-    "model_parameters": "3.8B",
-    "system_prompt_id": "prompt7",
-    "lecture_title": "Unknown",
-    "lecture_topic": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
-    "f1": 30.4,
-    "precision": 39.8,
-    "recall": 54.7,
+    "model_name": "mistral",
+    "model_parameters": "7.0B",
+    "system_prompt_id": "prompt14",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
+    "f1": 60.0,
+    "precision": 55.4,
+    "recall": 72.3,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:17.810499"
+    "timestamp": "2025-11-08T20:42:35.768987"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Вычисли learning rate decay: η0=0.1, t=5, T=10, linear.",
+      "content": "Чем Show, Attend and Tell отличается от обычного RNN для обработки изображений?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Learning Rate Decay is used in machine learning to decrease the value of learning rates as training progresses which can improve convergence during optimization.\n\nThe formula for Linear Learning Rate Decay:\n\nη_t = η_0 * (T - t) / T\n\nwhere:\n- η_t: Learning rate at epoch 't'\n- η_0: Initial learning rate\n- T: Total number of epochs\n- t: Current training iteration or epoch\n\n\nGiven your parameters, here's how you would calculate the Decayed Learning Rate:\n\nη_t = 0.1 * (10 - 5) / 10\n\nNow we'll plug in the values and solve for η_t.\n\n\nη_t = 0.1 * 5 / 10\n\nη_t = 0.05\n\n\nSo, at epoch t=5 with a total of T=10 epochs starting from an initial learning rate (η_0) of 0.1 using linear decay strategy, the new learning rate would be η_t = 0.05.\n\n\nPractice Problem:\n\nGiven η₀=0.2 and after completing 20 out of 50 training iterations with a total epoch count T=100, what will be your decayed learning rate? Calculate it assuming you are still using linear decay strategy.\n\n(Answer: The new learning rate would be calculated as follows):\n\nη_t = 0.2 * (100 - 20) / 100\n\nη_t = 0.16",
+      "model_response": " Show, Attend and Tell (SAT) отличается от обычного Recurrent Neural Network (RNN) в использовании механизма внимания (Attention Mechanism), который позволяет модели указывать на относительно важные регионы изображения и концентрироваться на них при обработке. В отличие от обычного RNN, SAT работает не с последовательностями пикселей изображений, а со всем изображением одновременно (используя механизм self-attention), что ускоряет процесс обработки и позволяет учитывать всю картинку как контекст для каждого пикселя. Этот подход позволил SAT показать лучшие результаты на различных задачах, таких как сегментация изображений и обработка естественного языка с использованием изображений.",
       "rating": ""
     }
   ]

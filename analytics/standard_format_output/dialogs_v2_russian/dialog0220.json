@@ -3,12 +3,12 @@
     "dialog_id": "dialog0220",
     "model_name": "llama3.2",
     "model_parameters": "1.0B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес (2)",
-    "lecture_topic": "В чем разница между k-NN и взвешенным k-NN?",
-    "f1": 28.1,
-    "precision": 35.0,
-    "recall": 31.6,
+    "system_prompt_id": "prompt15",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Почему нормализация по мини-батчам важна для обучения RNN?",
+    "f1": 14.0,
+    "precision": 13.7,
+    "recall": 35.4,
     "claim_recall": 0.0,
     "context_precision": 0.0,
     "context_utilization": 0.0,
@@ -16,13 +16,13 @@
     "faithfulness": 0.0,
     "noise_sensitivity": 0.0,
     "self_knowledge": 0.0,
-    "timestamp": "2025-10-28T13:24:18.987943"
+    "timestamp": "2025-11-08T20:42:37.297753"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "В чем разница между k-NN и взвешенным k-NN?",
+      "content": "Почему нормализация по мини-батчам важна для обучения RNN?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Представляем примеры:\n\n*   К-НН (K-Nearest Neighbors): вычисляет расстояние в расстоянии euclidean между новым членом и заданными членами, вычитает их из набора уникальных данных и приравнивает количество членов, которые являются кратным заданному значению, или наименьшее разность в расстоянии.\n*   Взвешенное k-НН (Weighted k-Nearest Neighbors): вычисляет расстояние между новым и предыдущими членами с учетом их значений.",
+      "model_response": "Правильный ответ:\nНормализация по мини-батчам является фундаментальной концепцией в обучении РNN, поскольку онаhelpает уменьшить динамику градиентов, что упрощает процесс обучения и снижает риск ослабления модели.",
       "rating": ""
     }
   ]

@@ -3,26 +3,26 @@
     "dialog_id": "dialog0061",
     "model_name": "deepseek-r1",
     "model_parameters": "1.5B",
-    "system_prompt_id": "prompt8",
-    "lecture_title": "1_Классификаторы_KNN_и_наивный_байес",
-    "lecture_topic": "Что такое метод k-ближайших соседей?",
-    "f1": 34.6,
-    "precision": 34.9,
-    "recall": 45.2,
-    "claim_recall": 35.5,
-    "context_precision": 50.0,
-    "context_utilization": 27.9,
-    "hallucination": 11.9,
-    "faithfulness": 32.7,
-    "noise_sensitivity": 18.6,
-    "self_knowledge": 5.4,
-    "timestamp": "2025-10-28T13:24:20.084026"
+    "system_prompt_id": "prompt5",
+    "lecture_title": "5._Рекуррентные_НС",
+    "lecture_topic": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
+    "f1": 30.7,
+    "precision": 26.1,
+    "recall": 44.5,
+    "claim_recall": 67.6,
+    "context_precision": 100.0,
+    "context_utilization": 41.9,
+    "hallucination": 35.1,
+    "faithfulness": 57.5,
+    "noise_sensitivity": 38.8,
+    "self_knowledge": 7.4,
+    "timestamp": "2025-11-08T20:42:39.063316"
   },
   "turns": [
     {
       "turn_number": 1,
       "role": "user",
-      "content": "Что такое метод k-ближайших соседей?",
+      "content": "Зачем нужны рекуррентные нейронные сети, если существуют полносвязные и сверточные?",
       "model_response": "",
       "rating": ""
     },
@@ -30,7 +30,7 @@
       "turn_number": 2,
       "role": "assistant",
       "content": "",
-      "model_response": "Метод nearest neighbors (метод k-nbrёжайших соседей) — это метод векторной обработки изображений, который основывается на来找ении closetных объектов по метрике d в тренировочном наборе данных. Основные шаги алгоритма:\n\n1. **Анализ сходства**: Вычисляется метрика d(x, x^(′)) для каждого объекта x в пространстве объектов x^(′).\n\n2. **Требование к Neighbors**: Выбирается к ближайших объектам с точки зрения метрики d.\n\n3. **Перенумерование откликов**: Отклики заindentированы согласно близости объектов, то есть первое откание —ближайший объект, второе —Next, и так далее.\n\n4. **Зависимость от类ов**: Выбор класса (y) определяется на основе классов, которые часто входят в к нейблизших объектах.\n\nТаким образом, метод k-NN来找ляет closest objects по метрике d и использует их class для классификации.",
+      "model_response": "Рекуррентные нейронные сети worklike convolutional nets (CONV nets) и сверточные слои worklike deep neural networks (deep nets). Это得益于 их ability to use past observations in a way that is both flexible and efficient._transfer learning worklike transfer learning allows models like BERT to be adapted to new tasks without retraining the entire model, leveraging knowledge from previous tasks.\n\n### Рекуррентные нейронные сети worklike convolutional nets:\n- **Рекурсивность**: Они могут использоваться как рекуррентные слои, что делает их подходящими для задач, связанных с последовательными данными или речь.\n- **ФLEXИНОСТЬ**: Используют past observations, что позволяет упростить и стабильизировать модель.\n\n### Сверточные слои worklike deep neural networks:\n- **ПОДСЧИТАЩИЯ ВЕКТОРЫ**: Сверточные слои worklike convolutional nets, используя структуру данных для стабильной и эффективной обработки.\n- **ПОДСЧИТАЩИХ МАСТРОВ**: Они позволяют модели stay on task, фиксируя их в предыдущих шагах.\n\n### Transfer Learning worklike transfer learning:\n- Использует knowledge из существующей модели для решения новой задачи без重构у全局ной модели.\n- Рекомендуется для задач с непосредственно структурированным приоритетом.\n\nВ итоге, рекуррентные нейронные сети worklike convolutional nets и сверточные слои worklike deep neural networks. Они обеспечивают оптимальное balance между честностью и эффективностью поиска, делая рекуррентные нейronные сети вовысимурирующими их схемой сверточных слоев.",
       "rating": ""
     }
   ]
