@@ -85,8 +85,15 @@
 ├── 🎨 frontend/                       # Фронтенд для использования модели
 │   └── (в разработке)
 │
-├── 📈 visualization/                  # Визуализация данных
-│   └── (скрипты для визуализации all_data.csv)
+├── 📈 visualization/                  # Визуализация данных (React)
+│   ├── src/                           # Исходный код React приложения
+│   │   ├── components/                # Компоненты (Filters, Charts, Comparison, etc.)
+│   │   ├── App.tsx                    # Главный компонент
+│   │   └── types.ts                   # TypeScript типы
+│   ├── public/                        # Публичные файлы
+│   │   └── all_data.csv               # Данные для визуализации
+│   ├── package.json                   # Зависимости npm
+│   └── README.md                       # Документация визуализации
 │
 ├── pipeline.png                        # Схема архитектуры
 ├── requirements.txt                    # Зависимости Python
@@ -166,6 +173,22 @@ python3 convert_to_standard_format.py
 - Overall reports для каждой версии (Excel + CSV)
 - Объединенный overall_report_combined.xlsx со всеми данными
 - System prompts в форматах xlsx/csv/json
+
+**Визуализация данных:**
+```bash
+cd visualization
+npm install
+npm run dev
+```
+
+Откроет интерактивное веб-приложение на `http://localhost:3333` с:
+- Фильтрацией по версиям, моделям, промптам, лекциям
+- Интерактивными графиками (Recharts)
+- Сравнением метрик между версиями и моделями
+- Статистикой (средние, минимумы, максимумы)
+- Таблицей данных с сортировкой и пагинацией
+
+📖 Подробнее: [visualization/README.md](visualization/README.md)
 
 ---
 
