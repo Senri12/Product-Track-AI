@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { DataRow } from '../types'
 import {
-  LineChart,
-  Line,
   BarChart,
   Bar,
   XAxis,

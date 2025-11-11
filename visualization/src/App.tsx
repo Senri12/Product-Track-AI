@@ -28,14 +28,14 @@ function App() {
         Papa.parse<DataRow>(csv, {
           header: true,
           skipEmptyLines: true,
-          transform: (value, field) => {
+          transform: (value: string, field: string | number) => {
             // Конвертируем числовые поля
             const numericFields = [
               'precision', 'recall', 'f1', 'claim_recall', 
               'context_precision', 'context_utilization', 
               'hallucination', 'faithfulness'
             ]
-            if (numericFields.includes(field)) {
+            if (typeof field === 'string' && numericFields.includes(field)) {
               const num = parseFloat(value)
               return isNaN(num) ? null : num
             }
@@ -45,7 +45,7 @@ function App() {
             setData(results.data as DataRow[])
             setLoading(false)
           },
-          error: (error) => {
+          error: (error: Error) => {
             setError(error.message)
             setLoading(false)
           }
