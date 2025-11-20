@@ -29,6 +29,7 @@
 │   ├── README.md                       # Главная документация аналитики
 │   ├── docs/                           # Детальная документация
 │   │   ├── RAGChecker.md               # Описание метрик RAGChecker
+│   │   ├── integration-and-admin.md    # Описание интеграции и администрирования
 │   │   ├── Comparison.md               # Сравнение версий промптов
 │   │   ├── StandardFormat.md           # Спецификация формата данных
 │   │   └── Summary.md                  # Краткая сводка результатов
@@ -342,7 +343,7 @@ print(answer)
 - **Сравнение версий:** [analytics/docs/Comparison.md](analytics/docs/Comparison.md)
 - **Стандартный формат данных:** [analytics/docs/StandardFormat.md](analytics/docs/StandardFormat.md)
 - **Краткая сводка:** [analytics/docs/Summary.md](analytics/docs/Summary.md)
-
+- **Интеграция и администрирование** [analytics/docs/integration-and-admin.md](analytics/docs/integration-and-admin.md)
 ---
 
 ## 🏁 Команда и роли
